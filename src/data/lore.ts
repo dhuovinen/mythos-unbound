@@ -84,6 +84,38 @@ const PAIR_LORE: Readonly<Record<string, string>> = {
     'They travel together constantly, and it always ends with Loki causing a catastrophe and Thor solving it with a hammer.',
   'tyr|fenrir':
     'Someone had to put a hand in the wolf’s mouth as surety while the gods bound it, knowing the binding was a trick. Týr volunteered, and paid.',
+
+  // ---- Egyptian ----
+  'osiris|set':
+    'Set built a beautiful chest to his brother’s exact measurements, threw a party, and offered it to whoever it fitted. When Osiris lay down in it Set nailed it shut and threw it in the Nile. Later he found the body again and cut it into fourteen pieces.',
+  'osiris|isis':
+    'Sister and wife. She gathered the fourteen pieces of him from across Egypt, bound them together, and breathed him back long enough to conceive their son.',
+  'set|nephthys':
+    'Married, and she sided with her murdered brother against her husband. She helped Isis collect the pieces.',
+  'set|horus':
+    'Eighty years of contendings before the assembled gods — trials, duels, transformations, and a great deal of humiliation on both sides. Horus lost an eye. Set lost more.',
+  'osiris|horus':
+    'A son conceived after his father’s death for the express purpose of avenging it, and raised in the marshes so his uncle could not find him.',
+  'isis|horus':
+    'She hid him in the reeds, healed him of every scorpion and serpent his uncle sent, and argued his case before the gods until they gave in.',
+  'ra|apep':
+    'Every single night the serpent of chaos attacks the sun boat, and every single night it is driven back. It is never killed, only delayed. This has always been the arrangement.',
+  'ra|sekhmet':
+    'He sent his own Eye out as a lioness to punish humanity, and she enjoyed it so much he had to flood the fields with red-dyed beer to trick her into stopping.',
+  'sekhmet|hathor':
+    'The same Eye of Ra in two moods — slaughter and love. Which one is present depends entirely on what she has been drinking.',
+  'ptah|sekhmet':
+    'The craftsman who spoke the world into being, married to the lioness of plague and war. Memphis worshipped them together and thought the pairing made sense.',
+  'nephthys|anubis':
+    'Conceived by deceit with her sister’s husband, and abandoned at birth. Isis found him and raised him as her own anyway.',
+  'anubis|ammit':
+    'He weighs the heart against a feather. She waits beside the scales for the ones that fail, and she is not patient.',
+  'thoth|apep':
+    'The scribe knows the serpent’s secret names, and reciting them is half of what keeps the sun rising.',
+  'set|apep':
+    'The murderer of Osiris stands in the prow of the sun boat every night, spear in hand, because chaos is still worse than he is. Egypt never entirely decided what to make of him.',
+  'ptah|imhotep':
+    'A mortal architect so good at building and medicine that Egypt eventually decided he must have been the craftsman god’s son all along.',
 };
 
 /** Fallback lore per relation kind, used for pairings without a bespoke line. */
@@ -152,6 +184,30 @@ const UNIT_LORE: Readonly<Record<DeityId, string>> = {
   njord: 'God of the sea and of wealth, married into the mountains and could not stand the wolves.',
   fenrir: 'The wolf the gods raised in their own hall because they were afraid to let it out of sight. It is bound with a ribbon made of impossible things, and it will not hold.',
   jormungandr: 'A serpent long enough to encircle the world and bite its own tail. When it lets go, the world ends.',
+
+  // ---- Egyptian ----
+  medjay: 'Desert patrol turned royal guard. Competent, mortal, and entirely outside the family quarrel.',
+  shabti: 'A funerary figurine that answers when the dead are called to work. Slow, tireless, and hard to discourage.',
+  ba: 'The part of a soul that leaves the body and flies. Quick, fragile, and difficult to pin down.',
+  anubis: 'Weighs your heart against a feather and does not negotiate the result. Invented embalming on his own father.',
+  wepwawet: 'The Opener of Ways, who goes ahead of the army and of the dead. Arrives before anything else does.',
+  imhotep: 'A real architect, deified centuries later for being extraordinarily good at building and at medicine.',
+  nefertem: 'The lotus that rose out of the first water at the beginning, carrying the sun. Beauty as a weapon.',
+  maahes: 'Lion-headed son of the plague goddess. Devours the guilty and is not fastidious about the definition.',
+  bes: 'A grotesque little household god who guards mothers and children by frightening off everything worse than himself.',
+  khonsu: 'The moon, who measures time and once gambled away five days of it. Strikes from a distance.',
+  ra: 'The sun, who sails across the sky by day and fights his way through the underworld every night without exception.',
+  osiris: 'Murdered by his brother, dismembered, reassembled, and made king of the dead instead. Slow, enormously durable.',
+  isis: 'The most capable figure in the pantheon. Reassembled her husband, hid her son, and tricked Ra into surrendering his secret name.',
+  set: 'Fratricide, storms, the red desert. Also the only one willing to stand at the front of the sun boat and fight chaos every night.',
+  horus: 'Born to avenge a father he never met, and spent eighty years doing it. The falcon, and the throne.',
+  nephthys: 'Married to the murderer and loyal to the victim. Mourns professionally, and helps quietly.',
+  thoth: 'Scribe, arbitrator, and the one who actually knows how everything works. Longest reach in the pantheon.',
+  hathor: 'Love, music and drunkenness — and the same Eye that becomes Sekhmet when provoked.',
+  sekhmet: 'The Eye of Ra sent to punish humanity, who had to be tricked into stopping. The hardest hitter here.',
+  ptah: 'Spoke the world into existence, then built the rest by hand. Immovable.',
+  apep: 'The serpent of chaos. Attacks the sun every night, is defeated every night, and is never once destroyed.',
+  ammit: 'Crocodile, lion and hippopotamus. Sits beside the scales and eats the hearts that fail the weighing.',
 };
 
 /** Backstory for a specific pairing, falling back to the relation kind. */

@@ -21,6 +21,7 @@ const TIER_ORDER: readonly Tier[] = ['chaff', 'demigod', 'god', 'titan'];
 const PANTHEON_LABEL: Readonly<Record<Pantheon, string>> = {
   greek: 'Greek',
   norse: 'Norse',
+  egyptian: 'Egyptian',
 };
 
 function el(tag: string, className?: string, text?: string): HTMLElement {
@@ -62,6 +63,8 @@ function styles(): string {
   .dk-btn:hover { border-color: #c9a227; color: #c9a227; }
   .dk-btn.primary { background: #c9a227; color: #17141a; border-color: #c9a227; }
   .dk-btn.primary:hover { background: #dcb433; color: #17141a; }
+  .dk-quick { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+  .dk-quick-label { font-size: 11px; text-transform: uppercase; letter-spacing: .6px; color: #a99c85; }
   .dk-analysis {
     margin: 16px 0 6px; padding: 13px 16px; border-radius: 10px;
     background: #1b1720; border: 1px solid #2b2620; font-size: 13px; line-height: 1.55; color: #cabfa9;
@@ -152,6 +155,39 @@ export function mountDeckBuilder(
   actions.append(reset, apply, close);
   head.append(headText, actions);
   sheet.append(head);
+
+  // Quick-pick: commit to a single pantheon, or clear and mix by hand. The whole strategic axis is
+  // this decision, so it should take one click rather than nine.
+  const quick = el('div', 'dk-quick');
+  quick.append(el('span', 'dk-quick-label', 'Fill with'));
+  const allPantheons: Pantheon[] = [...new Set(roster.map((d) => d.pantheon))];
+  for (const pantheon of allPantheons) {
+    const pick = el('button', 'dk-btn', PANTHEON_LABEL[pantheon]);
+    pick.addEventListener('click', () => {
+      // Spread across tiers rather than taking the cheapest nine, so a one-click deck is playable.
+      const pool = roster.filter((d) => d.pantheon === pantheon);
+      const byTier = TIER_ORDER.map((tier) => pool.filter((d) => d.tier === tier));
+      const picked: DeityId[] = [];
+      let round = 0;
+      while (picked.length < DECK_SIZE && round < 12) {
+        for (const group of byTier) {
+          const next = group[round];
+          if (next !== undefined && picked.length < DECK_SIZE) picked.push(next.id);
+        }
+        round++;
+      }
+      chosen = picked;
+      refresh();
+    });
+    quick.append(pick);
+  }
+  const clear = el('button', 'dk-btn', 'Clear');
+  clear.addEventListener('click', () => {
+    chosen = [];
+    refresh();
+  });
+  quick.append(clear);
+  sheet.append(quick);
 
   const analysis = el('div', 'dk-analysis');
   sheet.append(analysis);

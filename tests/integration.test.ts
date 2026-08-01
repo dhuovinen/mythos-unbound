@@ -8,6 +8,7 @@
 
 import { describe, expect, it } from 'vitest';
 import { GREEK_DEITIES, GREEK_EDGES } from '../src/data/greek';
+import { EGYPTIAN_DEITIES, EGYPTIAN_EDGES } from '../src/data/egyptian';
 import { NORSE_DEITIES, NORSE_EDGES } from '../src/data/norse';
 import { SHOWCASE_STAGE } from '../src/data/stages';
 import { chooseSummon, readBoard } from '../src/sim/advisor';
@@ -443,5 +444,87 @@ describe('the Norse pantheon', () => {
   it('keeps each pantheon own relations intact when both are loaded together', () => {
     expect(between(both, bothGraph, 'cronus', 'zeus')).toContain('Filicide');
     expect(between(both, bothGraph, 'thor', 'jormungandr')).toContain('Vengeance');
+  });
+});
+
+describe('the Egyptian pantheon', () => {
+  const egypt: DeityIndex = new Map(EGYPTIAN_DEITIES.map((d) => [d.id, d]));
+  const egyptGraph = buildGraph(EGYPTIAN_EDGES);
+  const world3: DeityIndex = new Map(
+    [...GREEK_DEITIES, ...NORSE_DEITIES, ...EGYPTIAN_DEITIES].map((d) => [d.id, d]),
+  );
+  const graph3 = buildGraph([...GREEK_EDGES, ...NORSE_EDGES, ...EGYPTIAN_EDGES]);
+
+  const of = (index: DeityIndex, id: string): Deity => {
+    const found = index.get(id);
+    if (found === undefined) throw new Error(`missing ${id}`);
+    return found;
+  };
+  const vs = (index: DeityIndex, g: RelationGraph, a: string, b: string): ModifierName[] =>
+    resolveCombat(of(index, a), of(index, b), g).map((m) => m.name);
+
+  it('references no deity id that does not exist', () => {
+    const unknown: string[] = [];
+    for (const edge of EGYPTIAN_EDGES) {
+      if (!egypt.has(edge.from)) unknown.push(edge.from);
+      if (!egypt.has(edge.to)) unknown.push(edge.to);
+    }
+    expect([...new Set(unknown)]).toEqual([]);
+  });
+
+  it('keeps chaff out of the graph', () => {
+    const chaff = EGYPTIAN_DEITIES.filter((d) => d.tier === 'chaff').map((d) => d.id);
+    const inGraph = EGYPTIAN_EDGES.flatMap((e) => [e.from, e.to]);
+    for (const id of chaff) expect(inGraph).not.toContain(id);
+  });
+
+  it('carries the fratricide the whole pantheon turns on', () => {
+    // Set murdered his brother, so Osiris fights him with Vengeance and they are siblings besides.
+    const osirisOnSet = vs(egypt, egyptGraph, 'osiris', 'set');
+    expect(osirisOnSet).toContain('Vengeance');
+    expect(osirisOnSet).toContain('Rivalry');
+  });
+
+  it('carries the generational revenge: Horus against his uncle', () => {
+    expect(vs(egypt, egyptGraph, 'set', 'horus')).toContain('Wrath');
+    expect(vs(egypt, egyptGraph, 'horus', 'set')).toContain('Defiance');
+  });
+
+  it('binds the Osiris family as siblings and spouses at once', () => {
+    const osirisOnIsis = vs(egypt, egyptGraph, 'osiris', 'isis');
+    expect(osirisOnIsis).toContain('Bound');
+    expect(osirisOnIsis).toContain('Rivalry');
+  });
+
+  it('has no devourer — Cronus stays unique across all three pantheons', () => {
+    for (const deity of [...NORSE_DEITIES, ...EGYPTIAN_DEITIES]) {
+      expect(deity.traits).not.toContain('devourer');
+    }
+    const devourers = GREEK_DEITIES.filter((d) => d.traits.includes('devourer')).map((d) => d.id);
+    expect(devourers).toEqual(['cronus']);
+  });
+
+  it('stays silent across all three pantheon boundaries', () => {
+    for (const [a, b] of [
+      ['zeus', 'ra'],
+      ['odin', 'osiris'],
+      ['cronus', 'apep'],
+      ['thor', 'set'],
+      ['fenrir', 'ammit'],
+    ]) {
+      expect(vs(world3, graph3, a, b)).toEqual([]);
+      expect(vs(world3, graph3, b, a)).toEqual([]);
+    }
+  });
+
+  it('keeps all three graphs intact when loaded together', () => {
+    expect(vs(world3, graph3, 'cronus', 'zeus')).toContain('Filicide');
+    expect(vs(world3, graph3, 'thor', 'jormungandr')).toContain('Vengeance');
+    expect(vs(world3, graph3, 'osiris', 'set')).toContain('Vengeance');
+  });
+
+  it('has no duplicate ids across the combined roster', () => {
+    const ids = [...GREEK_DEITIES, ...NORSE_DEITIES, ...EGYPTIAN_DEITIES].map((d) => d.id);
+    expect(ids.length).toBe(new Set(ids).size);
   });
 });

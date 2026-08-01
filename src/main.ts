@@ -5,6 +5,7 @@
  * are reproducible. Rendering happens once per animation frame, after catch-up.
  */
 
+import { EGYPTIAN_DEITIES, EGYPTIAN_EDGES } from './data/egyptian';
 import { GREEK_DEITIES, GREEK_EDGES } from './data/greek';
 import { NORSE_DEITIES, NORSE_EDGES } from './data/norse';
 import { SHOWCASE_STAGE } from './data/stages';
@@ -39,8 +40,8 @@ const stage = SHOWCASE_STAGE;
  * only within a pantheon — a Greek unit and a Norse one simply have no edges between them, which is
  * exactly the cross-pantheon rule the design rests on.
  */
-const ALL_DEITIES: readonly Deity[] = [...GREEK_DEITIES, ...NORSE_DEITIES];
-const ALL_EDGES = [...GREEK_EDGES, ...NORSE_EDGES];
+const ALL_DEITIES: readonly Deity[] = [...GREEK_DEITIES, ...NORSE_DEITIES, ...EGYPTIAN_DEITIES];
+const ALL_EDGES = [...GREEK_EDGES, ...NORSE_EDGES, ...EGYPTIAN_EDGES];
 
 const deities: DeityIndex = new Map(ALL_DEITIES.map((deity) => [deity.id, deity]));
 const graph = buildGraph(ALL_EDGES);

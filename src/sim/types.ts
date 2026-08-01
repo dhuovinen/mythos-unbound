@@ -17,7 +17,7 @@
 export type DeityId = string;
 
 /** Relations only resolve between units of the SAME pantheon — this is a core design rule. */
-export type Pantheon = 'greek' | 'norse';
+export type Pantheon = 'greek' | 'norse' | 'egyptian';
 
 /** Cost/power bracket. Chaff deliberately has zero relations so procs read as special. */
 export type Tier = 'chaff' | 'demigod' | 'god' | 'titan';
