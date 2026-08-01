@@ -2,3 +2,6 @@ node_modules/
 dist/
 .DS_Store
 *.local
+
+# WP-9 art tooling artefacts
+art/roster/__pycache__/

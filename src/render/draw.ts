@@ -15,6 +15,8 @@
 
 import { CANVAS_HEIGHT, CANVAS_WIDTH, LANE_LENGTH, LANE_Y } from '../sim/constants';
 import type { Deity, DrawWorld, Tier, Unit } from '../sim/types';
+import { getSettings } from '../ui/settings';
+import { getSprite } from './sprites';
 
 const INK = '#1A1A1E';
 const BONE = '#EDE6D6';
@@ -130,9 +132,60 @@ function drawBase(ctx: CanvasRenderingContext2D, unit: Unit): void {
   }
 }
 
+/** On-screen height of a titan's sprite frame; every other tier is a fraction of this. */
+const SPRITE_BASE = 98;
+
+/**
+ * Per-tier sprite scale.
+ *
+ * WP-9 asked for tier to be encoded in the art — chaff filling ~55% of its frame, titans 100% — so
+ * that drawing every frame at one size would reproduce the cost curve for free. The delivered art
+ * does not do that: measured figure heights run 86–100% of frame regardless of tier, which would
+ * render a Satyr at very nearly the size of Cronus and destroy the most important read on the
+ * battlefield. So the renderer imposes the scale itself rather than trusting 22 separate images to
+ * agree on a ratio. This stays correct even if the art is later regenerated to spec.
+ */
+const SPRITE_TIER_SCALE: Readonly<Record<Tier, number>> = {
+  chaff: 0.55,
+  demigod: 0.7,
+  god: 0.85,
+  titan: 1,
+};
+
+/** Draws a production sprite, mirrored for the enemy side since all art faces right. */
+function drawSprite(
+  ctx: CanvasRenderingContext2D,
+  unit: Unit,
+  deity: Deity,
+  image: HTMLImageElement,
+  sx: number,
+): void {
+  const box = SPRITE_BASE * SPRITE_TIER_SCALE[deity.tier];
+  const bottom = unitFootY(unit) + 4;
+  ctx.save();
+  if (unit.side === 'enemy') {
+    ctx.translate(sx, 0);
+    ctx.scale(-1, 1);
+    ctx.drawImage(image, -box / 2, bottom - box, box, box);
+  } else {
+    ctx.drawImage(image, sx - box / 2, bottom - box, box, box);
+  }
+  ctx.restore();
+}
+
 /** A unit: tier-sized body, ink outline, facing notch, and its initial for identity. */
 function drawUnit(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | undefined): void {
   const sx = worldToScreen(unit.x);
+
+  // Sprite mode falls back per unit, not globally, so a half-delivered roster still renders.
+  if (getSettings().unitGraphics === 'sprites' && deity !== undefined) {
+    const image = getSprite(deity.id);
+    if (image !== null) {
+      drawSprite(ctx, unit, deity, image, sx);
+      return;
+    }
+  }
+
   const size = TIER_SIZE[deity?.tier ?? 'chaff'];
   const isPlayer = unit.side === 'player';
   const fill = isPlayer ? BONE : BLOOD;

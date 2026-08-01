@@ -1,6 +1,36 @@
 # WP-9 — Production roster art (Style C-B)
 
-**Model tier: image generation. Status: not started.**
+**Model tier: image generation. Status: DELIVERED — 22 sprites in `art/roster/`. Revision needed.**
+
+## ⚠️ Revision notes — measured from the delivered files
+
+The art is in and wired up. Three defects, measured by sampling the actual PNGs:
+
+**1. Tier scale was not applied — the most important miss.** The brief asked for figure height to
+encode tier (chaff ~55% of frame, demigod ~70%, god ~85%, titan 100%) so that drawing every frame
+at one size reproduces the cost curve for free. Measured figure heights instead run **86–100% of
+frame regardless of tier**: Satyr 88%, Harpy 87%, Hoplite 100%, Heracles 95%, Zeus 88%, Cronus 91%.
+Drawn as delivered, a Satyr renders very nearly the size of Cronus and tier stops reading entirely.
+
+The renderer now imposes the scale itself (`SPRITE_TIER_SCALE` in `src/render/draw.ts`) so the game
+is playable regardless, but **regenerating to spec would look considerably better** — a chaff unit
+scaled down to 55% is a 55%-size image, not a small figure drawn at native detail.
+
+**2. Two sprites carry a background matte.** `heracles.png` is **60% semi-transparent pixels** — a
+grey field behind the figure that renders as a visible box on the battlefield. `hoplite.png` has
+opaque corners and a figure bounding box filling the entire 1024×1024 frame. Both need a clean
+alpha cutout. The other twenty are clean.
+
+**3. File sizes are impractical for the web.** The second-round renders are ~0.6–1.5 MB each,
+roughly 32 MB for the roster. These want compressing hard — target under 100 KB per sprite. The
+first-round files (~17–24 KB) show the target is reachable in this style.
+
+Also: `art/roster/` contains generator scripts, `__pycache__/`, an `index.html` and `test_sprite.svg`
+alongside the PNGs. Harmless, but the directory is meant to hold sprites.
+
+---
+
+## Original brief
 
 Style C-B, "Bold Woodcut (Clean)", was chosen on 2026-07-31. This brief turns that decision into
 22 production sprites. It is **art only** — wiring sprites into the renderer is a separate code task.

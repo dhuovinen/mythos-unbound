@@ -23,6 +23,7 @@ import type {
   Unit,
   World,
 } from '../sim/types';
+import { getSettings } from '../ui/settings';
 import { unitBodyHeight, unitFootY, worldToScreen } from './draw';
 
 /** Hard caps keep a thirty-unit brawl from turning into soup. Legibility beats spectacle. */
@@ -352,18 +353,25 @@ export const drawEffects: DrawEffects = (ctx, world, deities, graph, dt) => {
     lastPos.set(unit.id, { x: worldToScreen(unit.x), y: anchorY(unit, deity) });
   }
 
-  spawnFromEvents(world);
+  const settings = getSettings();
 
-  for (const tether of collectTethers(world, deities, graph)) {
-    drawTether(ctx, tether);
+  if (settings.showFloatingText) spawnFromEvents(world);
+  else floaters.length = 0;
+
+  if (settings.showTethers) {
+    for (const tether of collectTethers(world, deities, graph)) {
+      drawTether(ctx, tether);
+    }
   }
 
   // Persistent per-unit status, drawn beneath each unit.
-  const byId = new Map(world.units.map((u) => [u.id, u]));
-  for (const unit of world.units) {
-    if (unit.isBase || unit.hp <= 0) continue;
-    const status = computeStatus(unit, world, deities, graph, byId);
-    if (status !== null) drawStatus(ctx, unit, status, worldToScreen(unit.x));
+  if (settings.showStatusPips) {
+    const byId = new Map(world.units.map((u) => [u.id, u]));
+    for (const unit of world.units) {
+      if (unit.isBase || unit.hp <= 0) continue;
+      const status = computeStatus(unit, world, deities, graph, byId);
+      if (status !== null) drawStatus(ctx, unit, status, worldToScreen(unit.x));
+    }
   }
 
   ctx.save();

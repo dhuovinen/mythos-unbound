@@ -13,7 +13,9 @@ import { MAX_FRAME_DT, TICK_DT } from './sim/constants';
 import { buildGraph } from './sim/relations';
 import { createRng } from './sim/rng';
 import type { Deity, DeityId, DeityIndex, StageWave } from './sim/types';
+import { preloadSprites } from './render/sprites';
 import { createWorld, spawnUnit, tickWorld } from './sim/world';
+import { mountAdminPanel } from './ui/admin';
 import { mountCodex } from './ui/codex';
 import { mountHud } from './ui/hud';
 
@@ -44,6 +46,8 @@ const deck: Deity[] = stage.playerDeck
 const hud = mountHud(hudRoot, deck, (deityId) => summonQueue.push(deityId));
 
 mountCodex(GREEK_DEITIES, GREEK_EDGES);
+mountAdminPanel();
+preloadSprites(GREEK_DEITIES.map((deity) => deity.id));
 
 /** Spawns any scripted waves whose time has arrived, and any queued player summons. */
 function processSpawns(): void {
