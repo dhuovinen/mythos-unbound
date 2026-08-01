@@ -141,7 +141,9 @@ function spawnFromEvents(world: World): void {
       }
     }
 
-    const to = lastPos.get(event.defenderId);
+    // damage === 0 means the attack was prevented (Entranced). Keep the proc tag, drop the number:
+    // a floating "0" reads as a miss rather than as a refusal to fight.
+    const to = event.damage > 0 ? lastPos.get(event.defenderId) : undefined;
     if (to !== undefined) {
       pushFloater({
         text: `${Math.round(event.damage)}`,

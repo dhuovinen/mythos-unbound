@@ -8,10 +8,11 @@
 
 import { describe, expect, it } from 'vitest';
 import { GREEK_DEITIES, GREEK_EDGES } from '../src/data/greek';
+import { SHOWCASE_STAGE } from '../src/data/stages';
 import { TICK_DT } from '../src/sim/constants';
 import { buildGraph, resolveCombat } from '../src/sim/relations';
 import { createRng } from '../src/sim/rng';
-import type { Deity, DeityIndex, ModifierName, SimEvent, Stage } from '../src/sim/types';
+import type { Deity, DeityIndex, ModifierName, SimEvent, Stage, World } from '../src/sim/types';
 import { createWorld, spawnUnit, tickWorld } from '../src/sim/world';
 
 function deity(id: string, over: Partial<Deity> = {}): Deity {
@@ -121,7 +122,15 @@ describe('WP-1 x WP-2 integration', () => {
 
     for (let i = 0; i < 120; i++) tickWorld(world, TICK_DT, loveGraph, pair, createRng(1));
 
-    expect(world.events.filter((e) => e.kind === 'hit')).toHaveLength(0);
+    // A suppressed attack DOES emit an event, carrying damage 0 and the Entranced modifier, so the
+    // render layer can announce it. What must never happen is actual damage.
+    const hits = world.events.filter((e) => e.kind === 'hit');
+    expect(hits.length).toBeGreaterThan(0);
+    for (const hit of hits) {
+      if (hit.kind !== 'hit') continue;
+      expect(hit.damage).toBe(0);
+      expect(hit.modifiers).toContain('Entranced');
+    }
     expect(b.hp).toBe(startHp);
   });
 });
@@ -168,5 +177,98 @@ describe('the shipped Greek roster', () => {
 
   it('has Cronus carrying the devourer trait', () => {
     expect(get('cronus').traits).toContain('devourer');
+  });
+});
+
+describe('the showcase stage', () => {
+  const roster: DeityIndex = new Map(GREEK_DEITIES.map((d) => [d.id, d]));
+  const greekGraph = buildGraph(GREEK_EDGES);
+
+  /**
+   * Plays the showcase headlessly with a scripted, deliberately restrained player: it summons each
+   * beat's counter-unit and spends surplus faith on chaff, but caps its own army. That cap matters —
+   * an over-full lane buries the beat units behind their own column, and Entranced in particular
+   * only fires when the two lovers are each other's NEAREST enemy.
+   */
+  function playShowcase(): { fired: Map<ModifierName, number>; world: World } {
+    const stage = SHOWCASE_STAGE;
+    const world = createWorld(stage, roster);
+    const waves = [...stage.waves].sort((a, b) => a.at - b.at);
+    const plan = [
+      { at: 1, id: 'hoplite' },
+      { at: 12, id: 'heracles' },
+      { at: 32, id: 'artemis' },
+      { at: 38, id: 'achilles' },
+      { at: 54, id: 'asclepius' },
+      { at: 74, id: 'aphrodite' },
+      { at: 80, id: 'hephaestus' },
+      { at: 84, id: 'ares' },
+      { at: 114, id: 'zeus' },
+    ];
+    const rng = createRng(0x5eed);
+    const fired = new Map<ModifierName, number>();
+    const filler = roster.get('hoplite');
+
+    for (let step = 0; step < 60 * 180; step++) {
+      for (;;) {
+        const w = waves[0];
+        if (w === undefined || w.at > world.time) break;
+        waves.shift();
+        const d = roster.get(w.deityId);
+        if (d !== undefined) spawnUnit(world, d, w.side);
+      }
+
+      const next = plan[0];
+      if (next !== undefined && next.at <= world.time) {
+        const d = roster.get(next.id);
+        if (d === undefined) plan.shift();
+        else if (world.faith >= d.cost) {
+          world.faith -= d.cost;
+          spawnUnit(world, d, 'player');
+          plan.shift();
+        } else if (world.time > next.at + 25) plan.shift();
+      }
+
+      const own = world.units.filter((u) => u.side === 'player' && !u.isBase).length;
+      if (filler !== undefined && world.faith >= 780 && own < 5) {
+        world.faith -= filler.cost;
+        spawnUnit(world, filler, 'player');
+      }
+
+      tickWorld(world, TICK_DT, greekGraph, roster, rng);
+
+      for (const e of world.events) {
+        if (e.kind !== 'hit') continue;
+        for (const m of e.modifiers) if (!fired.has(m)) fired.set(m, world.time);
+      }
+      world.events.length = 0;
+      if (world.outcome !== 'ongoing') break;
+    }
+    return { fired, world };
+  }
+
+  it('fires every one of the fourteen modifiers', () => {
+    const { fired } = playShowcase();
+    const all: ModifierName[] = [
+      'Reluctance', 'Filicide', 'Usurpation', 'Rivalry', 'Entranced', 'Vengeance', 'Bound',
+      'Wrath', 'Defiance', 'Blessed', 'Kinship', 'Devoted', 'Jealousy', 'Resented',
+    ];
+    const missing = all.filter((m) => !fired.has(m));
+    expect(missing).toEqual([]);
+  });
+
+  it('keeps the player alive long enough to watch every beat', () => {
+    const { world } = playShowcase();
+    // Cronus, the last and most important beat, spawns at 104s and walks slowly.
+    expect(world.time).toBeGreaterThan(150);
+    expect(world.outcome).not.toBe('defeat');
+  });
+
+  it('puts Ares in the player deck, which Jealousy structurally requires', () => {
+    // Jealousy needs Aphrodite, her spouse Hephaestus and her lover Ares all on the SAME side.
+    // Without Ares summonable by the player, beat 6 can never fire no matter how it is tuned.
+    for (const id of ['aphrodite', 'hephaestus', 'ares']) {
+      expect(SHOWCASE_STAGE.playerDeck).toContain(id);
+    }
   });
 });

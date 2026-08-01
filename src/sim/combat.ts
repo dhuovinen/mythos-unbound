@@ -96,6 +96,9 @@ export function resolveAttack(
   const combined = combineModifiers(allMods);
 
   if (combined.suppress) {
+    // Entranced. The attacker refuses to strike, but it still spends its cooldown — otherwise the
+    // attempt re-evaluates every single tick and floods the event stream at 60/s.
+    attacker.cooldown = attackerDeity.attackInterval / combined.attackSpeedMult;
     return { damage: 0, suppressed: true, modifiers: allMods };
   }
 
@@ -152,16 +155,18 @@ export function processCombat(
     if (target !== null) {
       if (unit.cooldown <= 0) {
         const attackResult = resolveAttack(unit, target, world.units, graph, deities);
-        if (!attackResult.suppressed) {
-          const modNames = Array.from(new Set(attackResult.modifiers.map((m) => m.name)));
-          world.events.push({
-            kind: 'hit',
-            attackerId: unit.id,
-            defenderId: target.id,
-            damage: attackResult.damage,
-            modifiers: modNames,
-          });
-        }
+        // Emitted even when suppressed, with damage 0. A suppressed attack is the single most
+        // dramatic thing the relational engine does — two units refusing to fight — and if it
+        // emits nothing, the render layer can never announce it. Consumers must treat
+        // damage === 0 as "attack prevented" and skip the damage number while keeping the tag.
+        const modNames = Array.from(new Set(attackResult.modifiers.map((m) => m.name)));
+        world.events.push({
+          kind: 'hit',
+          attackerId: unit.id,
+          defenderId: target.id,
+          damage: attackResult.damage,
+          modifiers: modNames,
+        });
       }
     } else {
       const dir = unit.side === 'player' ? 1 : -1;

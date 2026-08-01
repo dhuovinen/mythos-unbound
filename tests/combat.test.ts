@@ -248,8 +248,16 @@ describe('combat simulation (WP-2)', () => {
 
     expect(loverA.x).toBe(100);
     expect(loverB.hp).toBe(100);
+    // The attack is prevented, but it is still reported with damage 0 so the render layer can
+    // announce Entranced. Silence here would make the engine's most dramatic state invisible.
     const hitEvents = world.events.filter((e) => e.kind === 'hit');
-    expect(hitEvents).toHaveLength(0);
+    // Both lovers attempt and are both suppressed, so expect a report per side.
+    expect(hitEvents.length).toBeGreaterThan(0);
+    for (const hit of hitEvents) {
+      if (hit.kind !== 'hit') continue;
+      expect(hit.damage).toBe(0);
+      expect(hit.modifiers).toContain('Entranced');
+    }
   });
 
   it('is deterministic: identical seeds and inputs produce byte-identical state', () => {
