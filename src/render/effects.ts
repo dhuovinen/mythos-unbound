@@ -12,17 +12,18 @@
  */
 
 import { AURA_RADIUS, CANVAS_HEIGHT, CANVAS_WIDTH, LANE_Y, MODIFIER_COLORS } from '../sim/constants';
-import { resolveAuras, resolveCombat } from '../sim/relations';
+import { combineModifiers, resolveAuras, resolveCombat } from '../sim/relations';
 import type {
   Deity,
   DeityIndex,
   DrawEffects,
+  Modifier,
   ModifierName,
   RelationGraph,
   Unit,
   World,
 } from '../sim/types';
-import { worldToScreen } from './draw';
+import { unitBodyHeight, unitFootY, worldToScreen } from './draw';
 
 /** Hard caps keep a thirty-unit brawl from turning into soup. Legibility beats spectacle. */
 const MAX_FLOATERS = 36;
@@ -30,6 +31,12 @@ const MAX_TETHERS = 10;
 
 /** Only units closer than this (world units) are considered for a tether. */
 const TETHER_RANGE = AURA_RADIUS * 1.6;
+
+/** Status pips drawn under each unit. Capped so a heavily-buffed unit stays a readable width. */
+const MAX_STATUS_PIPS = 5;
+const PIP_W = 6;
+const PIP_H = 4;
+const PIP_GAP = 2;
 
 const TAG_LIFE = 1.1;
 const DAMAGE_LIFE = 0.85;
@@ -61,19 +68,10 @@ const lastPos = new Map<number, { x: number; y: number }>();
 /** Advances with real frame time; drives pulsing effects. */
 let clock = 0;
 
-/** Screen y just above a unit's head, scaled by how big that tier draws. */
+/** Screen y just above a unit's head. Uses the renderer's own footing so nothing drifts. */
 function anchorY(unit: Unit, deity: Deity | undefined): number {
-  if (unit.isBase) return LANE_Y - 104;
-  switch (deity?.tier) {
-    case 'titan':
-      return LANE_Y - 46;
-    case 'god':
-      return LANE_Y - 38;
-    case 'demigod':
-      return LANE_Y - 30;
-    default:
-      return LANE_Y - 22;
-  }
+  if (unit.isBase) return LANE_Y - 116;
+  return unitFootY(unit) - unitBodyHeight(deity) - 6;
 }
 
 /** Adds a floater, discarding the oldest if we are at the cap. */
@@ -158,6 +156,99 @@ function spawnFromEvents(world: World): void {
       });
     }
   }
+}
+
+/** Every modifier currently acting on one unit, plus the net effect of them all. */
+interface UnitStatus {
+  readonly mods: readonly Modifier[];
+  readonly power: number;
+  readonly suppress: boolean;
+}
+
+/**
+ * What is happening to this unit *right now* — both the relation to whoever it is fighting and the
+ * auras from allies standing near it.
+ *
+ * Tethers and proc tags are transient: they announce that something fired. This is the persistent
+ * counterpart, so a unit standing in a buff visibly reads as buffed for as long as it lasts.
+ */
+function computeStatus(
+  unit: Unit,
+  world: World,
+  deities: DeityIndex,
+  graph: RelationGraph,
+  byId: ReadonlyMap<number, Unit>,
+): UnitStatus | null {
+  const self = deities.get(unit.deityId);
+  if (self === undefined || unit.isBase) return null;
+
+  const mods: Modifier[] = [];
+
+  if (unit.targetId !== null) {
+    const target = byId.get(unit.targetId);
+    const targetDeity = target === undefined ? undefined : deities.get(target.deityId);
+    if (targetDeity !== undefined) mods.push(...resolveCombat(self, targetDeity, graph));
+  }
+
+  const nearby: Deity[] = [];
+  const field: Deity[] = [];
+  for (const other of world.units) {
+    if (other.isBase || other.id === unit.id || other.side !== unit.side || other.hp <= 0) continue;
+    const deity = deities.get(other.deityId);
+    if (deity === undefined) continue;
+    field.push(deity);
+    if (Math.abs(other.x - unit.x) <= AURA_RADIUS) nearby.push(deity);
+  }
+  mods.push(...resolveAuras(self, nearby, field, graph));
+
+  if (mods.length === 0) return null;
+  const combined = combineModifiers(mods);
+  // Damage and rate of fire both matter; their product is a fair one-number read on "stronger".
+  return {
+    mods,
+    power: combined.damageMult * combined.attackSpeedMult,
+    suppress: combined.suppress,
+  };
+}
+
+/**
+ * Draws the status readout beneath a unit: one colour-coded pip per active modifier, and a caret
+ * summarising whether the unit is currently stronger, weaker, or halted outright.
+ */
+function drawStatus(ctx: CanvasRenderingContext2D, unit: Unit, status: UnitStatus, sx: number): void {
+  const mods = status.mods.slice(0, MAX_STATUS_PIPS);
+  const totalWidth = mods.length * PIP_W + (mods.length - 1) * PIP_GAP;
+  const startX = sx - totalWidth / 2;
+  const y = unitFootY(unit) + 7;
+
+  ctx.save();
+  ctx.fillStyle = 'rgba(10, 8, 8, 0.72)';
+  ctx.fillRect(startX - 3, y - 3, totalWidth + 6, PIP_H + 6);
+
+  mods.forEach((mod, i) => {
+    ctx.fillStyle = mod.color;
+    ctx.fillRect(startX + i * (PIP_W + PIP_GAP), y, PIP_W, PIP_H);
+  });
+
+  const dominant = mods[0];
+  const tint = dominant === undefined ? '#e8dcc4' : dominant.color;
+  const cy = y + PIP_H + 7;
+  ctx.fillStyle = tint;
+
+  if (status.suppress) {
+    // Halted — a pause mark, not an arrow. Entranced units are not weaker, they simply stop.
+    ctx.fillRect(sx - 4, cy - 3, 2.5, 6);
+    ctx.fillRect(sx + 1.5, cy - 3, 2.5, 6);
+  } else if (status.power > 1.03 || status.power < 0.97) {
+    const up = status.power > 1;
+    ctx.beginPath();
+    ctx.moveTo(sx, up ? cy - 4 : cy + 4);
+    ctx.lineTo(sx - 4, up ? cy + 3 : cy - 3);
+    ctx.lineTo(sx + 4, up ? cy + 3 : cy - 3);
+    ctx.closePath();
+    ctx.fill();
+  }
+  ctx.restore();
 }
 
 /** A relation currently active between two on-field units. */
@@ -265,6 +356,14 @@ export const drawEffects: DrawEffects = (ctx, world, deities, graph, dt) => {
 
   for (const tether of collectTethers(world, deities, graph)) {
     drawTether(ctx, tether);
+  }
+
+  // Persistent per-unit status, drawn beneath each unit.
+  const byId = new Map(world.units.map((u) => [u.id, u]));
+  for (const unit of world.units) {
+    if (unit.isBase || unit.hp <= 0) continue;
+    const status = computeStatus(unit, world, deities, graph, byId);
+    if (status !== null) drawStatus(ctx, unit, status, worldToScreen(unit.x));
   }
 
   ctx.save();

@@ -292,11 +292,19 @@ export function mountCodex(deities: readonly Deity[], edges: readonly Edge[]): v
       'Relationships only exist within a pantheon. Fighting across pantheons switches the entire system off and reduces the battle to raw statistics — which is itself a strategic option: bring kin for explosive synergy and exploitable weaknesses, or bring strangers for predictable, un-counterable numbers.',
     ),
   );
+  sheet.append(el('h3', undefined, 'Reading the battlefield'));
   sheet.append(
     el(
       'p',
       undefined,
-      'When a relationship fires you will see a coloured tether linking the two units and a floating tag naming the effect. If gold or colour appears on the battlefield, the graph is doing something.',
+      'Three things tell you the engine is working, and they answer different questions. A coloured tether between two units means a relationship is live between them right now. A floating tag rising off a unit means a modifier just fired on that blow, and the damage number is tinted to match.',
+    ),
+  );
+  sheet.append(
+    el(
+      'p',
+      undefined,
+      'Underneath every unit is a row of coloured pips — one per effect currently acting on it, whether from the enemy it is facing or from allies standing close enough to matter. Beneath the pips sits a small caret: pointing up means the unit is currently stronger than its base statistics, pointing down means weaker, and a pause mark means it has stopped fighting altogether. Pip colours match the tables above, so you can read what is happening to any unit at a glance without waiting for it to swing.',
     ),
   );
 

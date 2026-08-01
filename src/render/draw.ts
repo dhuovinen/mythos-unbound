@@ -48,6 +48,19 @@ function jitter(id: number): number {
   return ((Math.imul(id, 2654435761) >>> 28) % 7) - 3;
 }
 
+/**
+ * Screen y of a unit's feet, jitter included. Exported so the effects layer can anchor to exactly
+ * the same spot — otherwise tags and status pips drift a few pixels off their unit.
+ */
+export function unitFootY(unit: Unit): number {
+  return unit.isBase ? LANE_Y : LANE_Y + jitter(unit.id);
+}
+
+/** Screen height of a unit's body, by tier. */
+export function unitBodyHeight(deity: Deity | undefined): number {
+  return TIER_SIZE[deity?.tier ?? 'chaff'].h;
+}
+
 /** Draws a filled shape with the heavy ink outline the woodcut direction calls for. */
 function inked(ctx: CanvasRenderingContext2D, fill: string, lineWidth: number, path: () => void): void {
   ctx.beginPath();
