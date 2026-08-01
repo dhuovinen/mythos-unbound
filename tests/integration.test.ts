@@ -8,12 +8,21 @@
 
 import { describe, expect, it } from 'vitest';
 import { GREEK_DEITIES, GREEK_EDGES } from '../src/data/greek';
+import { NORSE_DEITIES, NORSE_EDGES } from '../src/data/norse';
 import { SHOWCASE_STAGE } from '../src/data/stages';
 import { chooseSummon, readBoard } from '../src/sim/advisor';
 import { TICK_DT } from '../src/sim/constants';
 import { buildGraph, resolveCombat } from '../src/sim/relations';
 import { createRng } from '../src/sim/rng';
-import type { Deity, DeityIndex, ModifierName, SimEvent, Stage, World } from '../src/sim/types';
+import type {
+  Deity,
+  DeityIndex,
+  ModifierName,
+  RelationGraph,
+  SimEvent,
+  Stage,
+  World,
+} from '../src/sim/types';
 import { createWorld, spawnUnit, tickWorld } from '../src/sim/world';
 
 function deity(id: string, over: Partial<Deity> = {}): Deity {
@@ -367,5 +376,72 @@ describe('the strategy consultant', () => {
     const a = readBoard(facing('cronus'), roster, greekGraph, deck, 'player', 500);
     const b = readBoard(facing('cronus'), roster, greekGraph, deck, 'player', 500);
     expect(a.recommendations.map((r) => r.deityId)).toEqual(b.recommendations.map((r) => r.deityId));
+  });
+});
+
+describe('the Norse pantheon', () => {
+  const norse: DeityIndex = new Map(NORSE_DEITIES.map((d) => [d.id, d]));
+  const norseGraph = buildGraph(NORSE_EDGES);
+  const both: DeityIndex = new Map([...GREEK_DEITIES, ...NORSE_DEITIES].map((d) => [d.id, d]));
+  const bothGraph = buildGraph([...GREEK_EDGES, ...NORSE_EDGES]);
+
+  const get = (index: DeityIndex, id: string): Deity => {
+    const found = index.get(id);
+    if (found === undefined) throw new Error(`missing ${id}`);
+    return found;
+  };
+  const between = (index: DeityIndex, g: RelationGraph, a: string, b: string): ModifierName[] =>
+    resolveCombat(get(index, a), get(index, b), g).map((m) => m.name);
+
+  it('references no deity id that does not exist', () => {
+    const unknown: string[] = [];
+    for (const edge of NORSE_EDGES) {
+      if (!norse.has(edge.from)) unknown.push(edge.from);
+      if (!norse.has(edge.to)) unknown.push(edge.to);
+    }
+    expect([...new Set(unknown)]).toEqual([]);
+  });
+
+  it('keeps chaff out of the graph, as Greek does', () => {
+    const chaff = NORSE_DEITIES.filter((d) => d.tier === 'chaff').map((d) => d.id);
+    const inGraph = NORSE_EDGES.flatMap((e) => [e.from, e.to]);
+    for (const id of chaff) expect(inGraph).not.toContain(id);
+  });
+
+  it('delivers the Ragnarök mutual kills in both directions', () => {
+    // Thor and the serpent kill each other, as do Heimdall and Loki. Both sides carry Vengeance.
+    expect(between(norse, norseGraph, 'thor', 'jormungandr')).toContain('Vengeance');
+    expect(between(norse, norseGraph, 'jormungandr', 'thor')).toContain('Vengeance');
+    expect(between(norse, norseGraph, 'heimdall', 'loki')).toContain('Vengeance');
+    expect(between(norse, norseGraph, 'loki', 'heimdall')).toContain('Vengeance');
+  });
+
+  it('gives Odin a grudge against the wolf that kills him', () => {
+    expect(between(norse, norseGraph, 'odin', 'fenrir')).toContain('Vengeance');
+  });
+
+  it('has no devourer — Norse parents hesitate where Cronus does not', () => {
+    for (const deity of NORSE_DEITIES) expect(deity.traits).not.toContain('devourer');
+    // Loki is a parent of monsters and still pulls his punches against them.
+    expect(between(norse, norseGraph, 'loki', 'fenrir')).toContain('Reluctance');
+    expect(between(norse, norseGraph, 'loki', 'fenrir')).not.toContain('Filicide');
+  });
+
+  it('switches the whole engine off across pantheons', () => {
+    // The design axis: bring strangers and nothing can be turned against you — or for you.
+    for (const [a, b] of [
+      ['zeus', 'odin'],
+      ['cronus', 'fenrir'],
+      ['heracles', 'thor'],
+      ['aphrodite', 'freyja'],
+    ]) {
+      expect(between(both, bothGraph, a, b)).toEqual([]);
+      expect(between(both, bothGraph, b, a)).toEqual([]);
+    }
+  });
+
+  it('keeps each pantheon own relations intact when both are loaded together', () => {
+    expect(between(both, bothGraph, 'cronus', 'zeus')).toContain('Filicide');
+    expect(between(both, bothGraph, 'thor', 'jormungandr')).toContain('Vengeance');
   });
 });

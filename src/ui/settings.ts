@@ -22,7 +22,12 @@ export interface Settings {
   quantifyAdvice: boolean;
   /** Let the opponent summon its own counters instead of only running the scripted timeline. */
   enemyAi: boolean;
+  /** The player's chosen deck. Null means fall back to whatever the stage supplies. */
+  deck: string[] | null;
 }
+
+/** Deck size. Nine because summon shortcuts are the number keys 1-9. */
+export const DECK_SIZE = 9;
 
 const STORAGE_KEY = 'theomachy.settings.v1';
 
@@ -33,6 +38,7 @@ const DEFAULTS: Settings = {
   showFloatingText: true,
   quantifyAdvice: false,
   enemyAi: true,
+  deck: null,
 };
 
 const current: Settings = { ...DEFAULTS };
@@ -63,6 +69,10 @@ function load(): void {
     ] as const;
     for (const key of flags) {
       if (typeof record[key] === 'boolean') current[key] = record[key];
+    }
+    const deck = record['deck'];
+    if (Array.isArray(deck) && deck.every((id) => typeof id === 'string')) {
+      current.deck = deck.slice(0, DECK_SIZE);
     }
   } catch {
     // corrupt payload — keep defaults rather than throwing during boot

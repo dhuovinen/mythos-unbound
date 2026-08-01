@@ -69,7 +69,8 @@ function styles(): string {
   `;
 }
 
-type ToggleKey = Exclude<keyof Settings, 'unitGraphics'>;
+/** Only the boolean settings can be driven by a switch. Derived, so new settings can't break it. */
+type ToggleKey = { [K in keyof Settings]: Settings[K] extends boolean ? K : never }[keyof Settings];
 
 /** Builds the gear button and the admin panel, and wires up every control. */
 export function mountAdminPanel(): void {
