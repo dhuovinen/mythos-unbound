@@ -50,6 +50,16 @@ The game is playable end to end, and a headless playthrough fires **all 14 relat
 (asserted in `tests/integration.test.ts`). Press **?** in-game for the codex: how to play, both
 modifier tables, and all 22 units with their relationships — all generated from live game data.
 
+**Phase 2 has started.** A rule-based engine (`src/sim/advisor.ts`) reads the board and ranks what
+to summon, and it drives two things at once: the **opponent's** choices, and the **strategy
+consultant** panel that explains the board to you. The advice you read is literally the reasoning
+you are playing against.
+
+The consultant speaks qualitatively — its prose never contains a number (asserted by test). The
+figures behind every claim ride along separately and are appended only when *Quantify the
+consultant's advice* is switched on in the admin panel (gear icon), so turning it on annotates the
+same sentences rather than rewriting them.
+
 Known open items:
 - **Art:** Style C-B chosen, but no production sprites exist — `src/render/draw.ts` draws
   placeholder geometry in the C-B palette. Brief for the 22 production sprites is

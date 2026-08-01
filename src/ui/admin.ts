@@ -146,7 +146,12 @@ export function mountAdminPanel(): void {
     { key: 'showFloatingText', label: 'Proc tags & damage numbers' },
   ];
 
-  const switches = toggles.map((toggle) => {
+  const consultToggles: readonly { key: ToggleKey; label: string }[] = [
+    { key: 'quantifyAdvice', label: 'Quantify the consultant’s advice' },
+    { key: 'enemyAi', label: 'Opponent summons its own counters' },
+  ];
+
+  const buildSwitch = (toggle: { key: ToggleKey; label: string }, host: HTMLElement) => {
     const row = el('div', 'ad-row');
     row.append(el('span', undefined, toggle.label));
     const sw = el('div', 'ad-switch');
@@ -164,10 +169,24 @@ export function mountAdminPanel(): void {
       }
     });
     row.append(sw);
-    overlays.append(row);
+    host.append(row);
     return { key: toggle.key, node: sw };
-  });
+  };
+
+  const switches = toggles.map((toggle) => buildSwitch(toggle, overlays));
   panel.append(overlays);
+
+  const consultGroup = el('div', 'ad-group');
+  consultGroup.append(el('div', 'ad-label', 'Consultant & opponent'));
+  switches.push(...consultToggles.map((toggle) => buildSwitch(toggle, consultGroup)));
+  panel.append(consultGroup);
+  consultGroup.append(
+    el(
+      'div',
+      'ad-note',
+      'Quantification annotates the same sentences with the figures behind them; it never rewrites the advice.',
+    ),
+  );
 
   /** Pushes current settings into the controls. */
   function sync(): void {

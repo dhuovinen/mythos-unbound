@@ -9,6 +9,7 @@
 import { describe, expect, it } from 'vitest';
 import { GREEK_DEITIES, GREEK_EDGES } from '../src/data/greek';
 import { SHOWCASE_STAGE } from '../src/data/stages';
+import { chooseSummon, readBoard } from '../src/sim/advisor';
 import { TICK_DT } from '../src/sim/constants';
 import { buildGraph, resolveCombat } from '../src/sim/relations';
 import { createRng } from '../src/sim/rng';
@@ -270,5 +271,101 @@ describe('the showcase stage', () => {
     for (const id of ['aphrodite', 'hephaestus', 'ares']) {
       expect(SHOWCASE_STAGE.playerDeck).toContain(id);
     }
+  });
+});
+
+describe('the strategy consultant', () => {
+  const roster: DeityIndex = new Map(GREEK_DEITIES.map((d) => [d.id, d]));
+  const greekGraph = buildGraph(GREEK_EDGES);
+  const deck = GREEK_DEITIES.map((d) => d.id);
+
+  /** A world with one named enemy already on the field. */
+  function facing(enemyId: string): World {
+    const world = createWorld(SHOWCASE_STAGE, roster);
+    const enemy = roster.get(enemyId);
+    if (enemy === undefined) throw new Error(`missing ${enemyId}`);
+    spawnUnit(world, enemy, 'enemy');
+    return world;
+  }
+
+  it('recommends the unit with the strongest blood claim against what is on the field', () => {
+    // Facing Cronus, the right answer is one of his children — Usurpation is the whole point.
+    const read = readBoard(facing('cronus'), roster, greekGraph, deck, 'player', 9999);
+    const top = read.recommendations[0];
+    expect(top).toBeDefined();
+    expect(['zeus', 'hera', 'poseidon', 'hades']).toContain(top?.deityId);
+  });
+
+  it('prefers the avenger over a stranger when facing the god who killed him', () => {
+    const read = readBoard(facing('zeus'), roster, greekGraph, deck, 'player', 9999);
+    const asclepius = read.recommendations.find((r) => r.deityId === 'asclepius');
+    const hoplite = read.recommendations.find((r) => r.deityId === 'hoplite');
+    expect(asclepius).toBeDefined();
+    expect(hoplite).toBeDefined();
+    if (asclepius && hoplite) expect(asclepius.score).toBeGreaterThan(hoplite.score);
+  });
+
+  it('never puts a number in its prose — only in the detail field', () => {
+    const read = readBoard(facing('cronus'), roster, greekGraph, deck, 'player', 9999);
+    const lines = read.recommendations.flatMap((r) => r.lines);
+    expect(lines.length).toBeGreaterThan(0);
+    for (const line of lines) {
+      // Quantification is opt-in and lives in `detail`; the sentence itself stays qualitative.
+      expect(line.text).not.toMatch(/[0-9]/);
+    }
+  });
+
+  it('carries the figures behind every claim it makes', () => {
+    const read = readBoard(facing('cronus'), roster, greekGraph, deck, 'player', 9999);
+    const withModifier = read.recommendations.flatMap((r) => r.lines).filter((l) => l.modifier !== undefined);
+    expect(withModifier.length).toBeGreaterThan(0);
+    for (const line of withModifier) expect(line.detail).toBeDefined();
+  });
+
+  it('reports affordability rather than hiding what cannot be bought yet', () => {
+    const read = readBoard(facing('cronus'), roster, greekGraph, deck, 'player', 50);
+    expect(read.recommendations.length).toBe(deck.length);
+    expect(read.recommendations.some((r) => !r.affordable)).toBe(true);
+  });
+
+  it('warns about the self-inflicted Jealousy trap', () => {
+    const world = createWorld(SHOWCASE_STAGE, roster);
+    for (const id of ['hephaestus', 'ares']) {
+      const d = roster.get(id);
+      if (d !== undefined) spawnUnit(world, d, 'player');
+    }
+    const read = readBoard(world, roster, greekGraph, ['aphrodite'], 'player', 9999);
+    expect(read.warnings.some((w) => w.modifier === 'Jealousy')).toBe(true);
+  });
+
+  it('takes a relational advantage the moment one exists', () => {
+    // Cronus on the field: one of his children is a favourable matchup, so it should not wait.
+    const world = facing('cronus');
+    const pick = chooseSummon(world, roster, greekGraph, deck, 'enemy', 900, 900);
+    expect(pick).not.toBeNull();
+  });
+
+  it('still fields something when no relationship favours it, rather than banking forever', () => {
+    // Facing unrelated chaff every candidate scores at or below zero once cost is charged.
+    // Holding out for a good matchup here would mean never summoning at all.
+    const world = facing('hoplite');
+    const hoarding = chooseSummon(world, roster, greekGraph, deck, 'enemy', 900, 900);
+    expect(hoarding).not.toBeNull();
+  });
+
+  it('holds its bank early rather than dribbling units into a bad matchup', () => {
+    const world = facing('hoplite');
+    expect(chooseSummon(world, roster, greekGraph, deck, 'enemy', 100, 900)).toBeNull();
+  });
+
+  it('summons nothing it cannot afford', () => {
+    const world = facing('hoplite');
+    expect(chooseSummon(world, roster, greekGraph, deck, 'enemy', 5, 900)).toBeNull();
+  });
+
+  it('is deterministic — the same board always yields the same counsel', () => {
+    const a = readBoard(facing('cronus'), roster, greekGraph, deck, 'player', 500);
+    const b = readBoard(facing('cronus'), roster, greekGraph, deck, 'player', 500);
+    expect(a.recommendations.map((r) => r.deityId)).toEqual(b.recommendations.map((r) => r.deityId));
   });
 });

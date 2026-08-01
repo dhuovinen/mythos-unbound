@@ -14,10 +14,13 @@ import { buildGraph } from './sim/relations';
 import { createRng } from './sim/rng';
 import type { Deity, DeityId, DeityIndex, StageWave } from './sim/types';
 import { preloadSprites } from './render/sprites';
+import { chooseSummon } from './sim/advisor';
 import { createWorld, spawnUnit, tickWorld } from './sim/world';
 import { mountAdminPanel } from './ui/admin';
 import { mountCodex } from './ui/codex';
+import { mountConsultant } from './ui/consultant';
 import { mountHud } from './ui/hud';
+import { getSettings } from './ui/settings';
 
 const canvas = document.querySelector<HTMLCanvasElement>('#stage');
 const hudRoot = document.querySelector<HTMLElement>('#hud');
@@ -49,6 +52,20 @@ mountCodex(GREEK_DEITIES, GREEK_EDGES);
 mountAdminPanel();
 preloadSprites(GREEK_DEITIES.map((deity) => deity.id));
 
+const consultant = mountConsultant(deities, graph, stage.playerDeck);
+
+/**
+ * The opponent runs its own economy on the same terms as the player and picks counters with the
+ * same rule engine the consultant reads from. It sits on top of the scripted timeline rather than
+ * replacing it, so the showcase beats still happen and the regression tests still hold.
+ */
+const enemyDeck: DeityId[] = GREEK_DEITIES.map((deity) => deity.id);
+let enemyFaith = stage.startingFaith;
+let enemyThinkTimer = 0;
+
+/** Seconds between opponent decisions — it deliberates rather than dumping its whole bank at once. */
+const ENEMY_THINK_INTERVAL = 2.5;
+
 /** Spawns any scripted waves whose time has arrived, and any queued player summons. */
 function processSpawns(): void {
   for (;;) {
@@ -67,6 +84,20 @@ function processSpawns(): void {
     world.faith -= deity.cost;
     spawnUnit(world, deity, 'player');
   }
+
+  if (!getSettings().enemyAi || world.outcome !== 'ongoing') return;
+
+  enemyFaith = Math.min(stage.faithMax, enemyFaith + stage.faithRegen * TICK_DT);
+  enemyThinkTimer -= TICK_DT;
+  if (enemyThinkTimer > 0) return;
+  enemyThinkTimer = ENEMY_THINK_INTERVAL;
+
+  const choice = chooseSummon(world, deities, graph, enemyDeck, 'enemy', enemyFaith, stage.faithMax);
+  if (choice === null) return;
+  const chosen = deities.get(choice);
+  if (chosen === undefined || enemyFaith < chosen.cost) return;
+  enemyFaith -= chosen.cost;
+  spawnUnit(world, chosen, 'enemy');
 }
 
 let previous = performance.now();
@@ -87,6 +118,7 @@ function frame(now: number): void {
   drawEffects(ctx, world, deities, graph, elapsed);
   world.events.length = 0;
   hud.update(world);
+  consultant.update(world, world.faith, elapsed);
 
   requestAnimationFrame(frame);
 }

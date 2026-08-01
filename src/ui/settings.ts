@@ -18,6 +18,10 @@ export interface Settings {
   showStatusPips: boolean;
   /** Floating proc tags and damage numbers. */
   showFloatingText: boolean;
+  /** Append the underlying figures to the consultant's advice. Off = prose only. */
+  quantifyAdvice: boolean;
+  /** Let the opponent summon its own counters instead of only running the scripted timeline. */
+  enemyAi: boolean;
 }
 
 const STORAGE_KEY = 'theomachy.settings.v1';
@@ -27,6 +31,8 @@ const DEFAULTS: Settings = {
   showTethers: true,
   showStatusPips: true,
   showFloatingText: true,
+  quantifyAdvice: false,
+  enemyAi: true,
 };
 
 const current: Settings = { ...DEFAULTS };
@@ -48,7 +54,14 @@ function load(): void {
     if (record['unitGraphics'] === 'blocks' || record['unitGraphics'] === 'sprites') {
       current.unitGraphics = record['unitGraphics'];
     }
-    for (const key of ['showTethers', 'showStatusPips', 'showFloatingText'] as const) {
+    const flags = [
+      'showTethers',
+      'showStatusPips',
+      'showFloatingText',
+      'quantifyAdvice',
+      'enemyAi',
+    ] as const;
+    for (const key of flags) {
       if (typeof record[key] === 'boolean') current[key] = record[key];
     }
   } catch {
