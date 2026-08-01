@@ -33,29 +33,31 @@ served at http://localhost:3033/art/concepts/ while the dev server is running.
 
 ## Status
 
-**Phase 0 (scaffold + frozen contracts): complete.**
-**Phase 1: 7 of 8 work packages complete.** 51 tests passing, `tsc --noEmit` clean.
+**Phase 0 and Phase 1: complete.** All 8 work packages done. 54 tests passing, `tsc --noEmit` clean.
 
 | WP | Deliverable | Status |
 |---|---|---|
 | WP-1 | Relational engine | done |
 | WP-2 | Sim core (targeting, damage, win/lose) | done |
 | WP-3 | Greek roster — 22 units, ~45 edges | done |
-| WP-4 | Renderer | **stub** — crude placeholder geometry |
+| WP-4 | Renderer, Style C-B palette | done |
 | WP-5 | Relational VFX (tethers, proc tags, damage numbers) | done |
 | WP-6 | HUD | done |
 | WP-7 | Art concept boards | done — **Style C-B chosen** |
-| WP-8 | Scripted showcase stage | done, **needs tuning** |
+| WP-8 | Scripted showcase stage | done and tuned |
 
-The game is playable: units fight, relations fire, and tethers/proc tags/damage numbers render.
+The game is playable end to end, and a headless playthrough fires **all 14 relational modifiers**
+(asserted in `tests/integration.test.ts`). Press **?** in-game for the codex: how to play, both
+modifier tables, and all 22 units with their relationships — all generated from live game data.
 
 Known open items:
-- **The showcase stage looks unwinnable as tuned** — the player base falls around ~40 s, well
-  before beats 5–7 (Ares 70 s, Hades 88 s, Cronus 108 s). The flagship Filicide/Usurpation
-  pairing has never been seen on screen. This blocks the Phase 1 "is it fun?" verdict.
-- **WP-4 is the last stub** — units are barely distinguishable by tier.
-- **Art direction: Style C-B "Bold Woodcut (Clean)"** (chosen 2026-07-31). No production-asset
-  pipeline exists yet; `src/render/draw.ts` still draws placeholder geometry. Spec in
-  `docs/briefs/WP-7.md`.
-- ~~Port 3033 provisional~~ — **resolved 2026-08-01.** Port 3033 is now formally reserved in
-  `~/Projects/app-registry` with branding metadata and lifecycle commands.
+- **Art:** Style C-B chosen, but no production sprites exist — `src/render/draw.ts` draws
+  placeholder geometry in the C-B palette. Brief for the 22 production sprites is
+  `docs/briefs/WP-9.md`, not yet dispatched.
+- **Phase 2 balance notes** (found while tuning, not yet addressed):
+  - *Titans are immune to chaff.* Damage floors at `max(1, raw - armor)`, so a 12-damage Hoplite
+    does exactly 1 damage to Cronus's 24 armour and 2800 HP. This is what turns a front line into
+    a permanent wall.
+  - *Entranced is congestion-fragile.* It needs the two lovers to be each other's **nearest**
+    enemy, so it fires with a lean lane and stops firing when the player spams filler.
+- ~~Port 3033 provisional~~ — **resolved 2026-08-01**, formally reserved with branding metadata.
