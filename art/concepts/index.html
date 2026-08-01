@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3 — Art Direction & 64px Readability Test | Concept Boards</title>
+  <meta name="description" content="Art direction concept boards and 64px small-size readability matrix comparing Attic Black-Figure Neon, Saturday Morning Olympus, Ink & Gold Woodcut, and Style C-B Bold Woodcut across Zeus, Heracles, and Hoplite.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+  <div class="container">
+    <header id="main-header">
+      <div class="header-badge">Part 3 — Art Direction Concept Mockups</div>
+      <h1>Olympic Art Direction & 64px Readability Test</h1>
+      <p class="subtitle">Comparing visual directions across three character tiers: <strong>Zeus</strong> (God), <strong>Heracles</strong> (Demigod), and <strong>Hoplite</strong> (Chaff). Evaluating 64px unit readability first, visual charm second.</p>
+      
+      <nav class="nav-tabs" aria-label="Page Sections">
+        <button class="tab-btn active" id="tab-matrix" onclick="scrollToSection('section-matrix')">⚡ Decision Gate: 64px Matrix</button>
+        <button class="tab-btn style-a" id="tab-style-a" onclick="scrollToSection('board-style-a')">Style A: Black-Figure Neon</button>
+        <button class="tab-btn style-b" id="tab-style-b" onclick="scrollToSection('board-style-b')">Style B: Cartoon Olympus</button>
+        <button class="tab-btn style-c" id="tab-style-c" onclick="scrollToSection('board-style-c')">Style C: Ink & Gold Woodcut</button>
+        <button class="tab-btn style-cb" id="tab-style-cb" onclick="scrollToSection('board-style-cb')">Style C-B: Bold Woodcut (Clean)</button>
+        <button class="tab-btn" id="tab-decision" onclick="scrollToSection('section-decision')">🏆 Decision Gate Verdict</button>
+      </nav>
+    </header>
+
+    <!-- SECTION 1: 64px Readability Matrix -->
+    <section id="section-matrix" class="matrix-card">
+      <div class="section-title">
+        <h2>⚡ Decision Gate — 64px Small-Size Readability Matrix</h2>
+        <span class="cell-caption">Scale Spec: 64px tall viewport test</span>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls-bar">
+        <div class="control-group">
+          <span class="control-label">Viewport Height:</span>
+          <div class="btn-toggle-group" role="radiogroup" aria-label="Height Selection">
+            <button class="btn-toggle active" id="btn-h64" onclick="setHeight('h-64')">64 px (1x Unit Scale)</button>
+            <button class="btn-toggle" id="btn-h128" onclick="setHeight('h-128')">128 px (2x)</button>
+            <button class="btn-toggle" id="btn-h256" onclick="setHeight('h-256')">256 px (4x)</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">Rendering Mode:</span>
+          <div class="btn-toggle-group" role="radiogroup" aria-label="Rendering Mode">
+            <button class="btn-toggle active" id="btn-render-crisp" onclick="setRendering('pixelated')">Pixel-Crisp</button>
+            <button class="btn-toggle" id="btn-render-smooth" onclick="setRendering('smooth')">Smooth Bicubic</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">Background:</span>
+          <div class="btn-toggle-group" role="radiogroup" aria-label="Background Theme">
+            <button class="btn-toggle active" id="bg-dark" onclick="setBg('#141010')">Ink Black</button>
+            <button class="btn-toggle" id="bg-terracotta" onclick="setBg('#C86A3A')">Terracotta</button>
+            <button class="btn-toggle" id="bg-sky" onclick="setBg('#8FD4E8')">Pastel Sky</button>
+            <button class="btn-toggle" id="bg-bone" onclick="setBg('#EDE6D6')">Bone White</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-column Matrix Grid -->
+      <div class="matrix-grid" id="readability-grid">
+        <!-- Header Row -->
+        <div class="matrix-header-cell">Character Tier</div>
+        <div class="matrix-header-cell">Style A — Black-Figure Neon</div>
+        <div class="matrix-header-cell">Style B — Saturday Morning</div>
+        <div class="matrix-header-cell">Style C — Ink & Gold Woodcut</div>
+        <div class="matrix-header-cell" style="color: var(--style-cb-gold);">Style C-B — Bold Woodcut (Clean)</div>
+
+        <!-- Row 1: Zeus (God) -->
+        <div class="matrix-row-label">
+          <span>Zeus</span>
+          <span class="tier-tag">God Tier</span>
+        </div>
+        
+        <div class="matrix-cell" id="cell-a-zeus">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-a-zeus">
+            <img src="assets/style_a_zeus.jpg" alt="Style A Zeus render" onclick="openModal('Style A — Zeus (God)', 'assets/style_a_zeus.jpg', 'Ancient Greek attic black-figure vase painting of Zeus, solid black silhouette, terracotta background, holding electric cyan neon thunderbolt.')">
+          </div>
+          <span class="cell-caption">Silhouette + Neon Bolt</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-b-zeus">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-b-zeus">
+            <img src="assets/style_b_zeus.jpg" alt="Style B Zeus render" onclick="openModal('Style B — Zeus (God)', 'assets/style_b_zeus.jpg', 'Cute chunky cartoon mascot of Zeus, thick black outline, flat pastels, 2-heads-tall chibi, oversized beard and lightning bolt.')">
+          </div>
+          <span class="cell-caption">Beard & Giant Bolt</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-c-zeus">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-c-zeus">
+            <img src="assets/style_c_zeus.jpg" alt="Style C Zeus render" onclick="openModal('Style C — Zeus (God)', 'assets/style_c_zeus.jpg', 'Woodcut engraving of Zeus, heavy black cross-hatching, oxidized gold thunderbolt tethers, blood red mantle.')">
+          </div>
+          <span class="cell-caption">Dense Ink + Gold Thunderbolt</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-cb-zeus">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-cb-zeus">
+            <img src="assets/style_cb_zeus.jpg" alt="Style C-B Zeus render" onclick="openModal('Style C-B — Zeus (God)', 'assets/style_cb_zeus.jpg', 'Minimalist bold woodcut illustration of Zeus, clean chisel ink lines with minimal cross-hatching, simplified graphic shadows, crackling gold thunderbolt.')">
+          </div>
+          <span class="cell-caption">Clean Chisel Lines + Gold Bolt</span>
+        </div>
+
+        <!-- Row 2: Heracles (Demigod) -->
+        <div class="matrix-row-label">
+          <span>Heracles</span>
+          <span class="tier-tag">Demigod Tier</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-a-heracles">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-a-heracles">
+            <img src="assets/style_a_heracles.jpg" alt="Style A Heracles render" onclick="openModal('Style A — Heracles (Demigod)', 'assets/style_a_heracles.jpg', 'Attic black-figure Heracles with lion pelt cloak, solid black silhouette, holding massive wooden club breaking outline.')">
+          </div>
+          <span class="cell-caption">Lion Pelt + Spiked Club</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-b-heracles">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-b-heracles">
+            <img src="assets/style_b_heracles.jpg" alt="Style B Heracles render" onclick="openModal('Style B — Heracles (Demigod)', 'assets/style_b_heracles.jpg', 'Cute chunky cartoon Heracles in lion pelt hood, thick black outline, flat pastel colors, giant oversized spiked club.')">
+          </div>
+          <span class="cell-caption">Chibi Lion Hood + Club</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-c-heracles">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-c-heracles">
+            <img src="assets/style_c_heracles.jpg" alt="Style C Heracles render" onclick="openModal('Style C — Heracles (Demigod)', 'assets/style_c_heracles.jpg', 'Woodcut engraving of Heracles, lion pelt, heavy cross-hatching, oxidized gold filigree tethers.')">
+          </div>
+          <span class="cell-caption">Heavy Hatching + Gold Tethers</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-cb-heracles">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-cb-heracles">
+            <img src="assets/style_cb_heracles.jpg" alt="Style C-B Heracles render" onclick="openModal('Style C-B — Heracles (Demigod)', 'assets/style_cb_heracles.jpg', 'Minimalist bold woodcut Heracles in lion pelt hood, clean ink lines, minimal cross-hatching, bold spiked club & gold tethers.')">
+          </div>
+          <span class="cell-caption">Bold Lion Pelt + Spiked Club</span>
+        </div>
+
+        <!-- Row 3: Hoplite (Chaff) -->
+        <div class="matrix-row-label">
+          <span>Hoplite</span>
+          <span class="tier-tag">Chaff / Unit</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-a-hoplite">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-a-hoplite">
+            <img src="assets/style_a_hoplite.jpg" alt="Style A Hoplite render" onclick="openModal('Style A — Hoplite (Chaff)', 'assets/style_a_hoplite.jpg', 'Attic black-figure Hoplite warrior silhouette, spear and large round shield breaking body outline.')">
+          </div>
+          <span class="cell-caption">Spear & Round Shield Silhouette</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-b-hoplite">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-b-hoplite">
+            <img src="assets/style_b_hoplite.jpg" alt="Style B Hoplite render" onclick="openModal('Style B — Hoplite (Chaff)', 'assets/style_b_hoplite.jpg', 'Cute chunky cartoon Hoplite soldier, thick black outline, flat pastels, 50% giant round shield and helmet.')">
+          </div>
+          <span class="cell-caption">Giant Shield & Plume Helmet</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-c-hoplite">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-c-hoplite">
+            <img src="assets/style_c_hoplite.jpg" alt="Style C Hoplite render" onclick="openModal('Style C — Hoplite (Chaff)', 'assets/style_c_hoplite.jpg', 'Woodcut engraving of Hoplite warrior, blood red plume accent, detailed bronze shield.')">
+          </div>
+          <span class="cell-caption">Dense Hatching + Red Plume</span>
+        </div>
+
+        <div class="matrix-cell" id="cell-cb-hoplite">
+          <div class="sprite-wrapper h-64 pixelated" id="wrap-cb-hoplite">
+            <img src="assets/style_cb_hoplite.jpg" alt="Style C-B Hoplite render" onclick="openModal('Style C-B — Hoplite (Chaff)', 'assets/style_cb_hoplite.jpg', 'Minimalist bold woodcut Hoplite, clean chisel ink lines with minimal cross-hatching, bold red plume accent, round shield.')">
+          </div>
+          <span class="cell-caption">Clean Chisel Shield & Plume</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Concept Boards -->
+    <div class="section-title">
+      <h2>🎨 Style Concept Boards</h2>
+      <span class="cell-caption">Click any thumbnail for full resolution inspection & prompt breakdown</span>
+    </div>
+
+    <div class="board-grid">
+      <!-- Style A Board -->
+      <article id="board-style-a" class="concept-board style-a-board">
+        <div class="board-header">
+          <div>
+            <h3 class="board-title" style="color: var(--style-a-cyan);">Style A — Attic Black-Figure Neon</h3>
+            <p class="board-tagline">Historical pottery meets electric neon power</p>
+          </div>
+        </div>
+
+        <div class="swatch-row">
+          <div class="swatch-pill" onclick="copyHex('#C86A3A')">
+            <div class="swatch-color" style="background: #C86A3A;"></div>
+            <span>#C86A3A</span>
+          </div>
+          <div class="swatch-pill" onclick="copyHex('#141010')">
+            <div class="swatch-color" style="background: #141010;"></div>
+            <span>#141010</span>
+          </div>
+          <div class="swatch-pill" onclick="copyHex('#4FE3E0')">
+            <div class="swatch-color" style="background: #4FE3E0; box-shadow: 0 0 8px #4FE3E0;"></div>
+            <span>#4FE3E0</span>
+          </div>
+        </div>
+
+        <div class="spec-list">
+          <div class="spec-item">
+            <strong>Line & Detail</strong>
+            No outlines — solid black silhouette figures with fine incised interior detail.
+          </div>
+          <div class="spec-item">
+            <strong>Silhouette Rule</strong>
+            Pose readable as pure black shape; attributes break body outline.
+          </div>
+        </div>
+
+        <div class="subject-row">
+          <div class="subject-thumb" onclick="openModal('Style A — Zeus', 'assets/style_a_zeus.jpg', 'Attic black-figure Zeus with neon bolt')">
+            <img src="assets/style_a_zeus.jpg" alt="Style A Zeus">
+            <div class="subject-thumb-name">Zeus (God)</div>
+          </div>
+          <div class="subject-thumb" onclick="openModal('Style A — Heracles', 'assets/style_a_heracles.jpg', 'Attic black-figure Heracles with club')">
+            <img src="assets/style_a_heracles.jpg" alt="Style A Heracles">
+            <div class="subject-thumb-name">Heracles (Demigod)</div>
+          </div>
+          <div class="subject-thumb" onclick="openModal('Style A — Hoplite', 'assets/style_a_hoplite.jpg', 'Attic black-figure Hoplite warrior')">
+            <img src="assets/style_a_hoplite.jpg" alt="Style A Hoplite">
+            <div class="subject-thumb-name">Hoplite (Chaff)</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Style B Board -->
+      <article id="board-style-b" class="concept-board style-b-board">
+        <div class="board-header">
+          <div>
+            <h3 class="board-title" style="color: var(--style-b-peach);">Style B — Saturday Morning Olympus</h3>
+            <p class="board-tagline">Battle Cats lane: chunky, goofy, minimal</p>
+          </div>
+        </div>
+
+        <div class="swatch-row">
+          <div class="swatch-pill" onclick="copyHex('#8FD4E8')">
+            <div class="swatch-color" style="background: #8FD4E8;"></div>
+            <span>#8FD4E8</span>
+          </div>
+          <div class="swatch-pill" onclick="copyHex('#F5C99B')">
+            <div class="swatch-color" style="background: #F5C99B;"></div>
+            <span>#F5C99B</span>
+          </div>
+          <div class="swatch-pill" onclick="copyHex('#2B2B33')">
+            <div class="swatch-color" style="background: #2B2B33;"></div>
+            <span>#2B2B33</span>
+          </div>
+        </div>
+
+        <div class="spec-list">
+          <div class="spec-item">
+            <strong>Line & Detail</strong>
+            Thick uniform black outline (~6px), flat pastel fills, zero gradients.
+          </div>
+          <div class="spec-item">
+            <strong>Silhouette Rule</strong>
+            2-head-tall chibi proportions; key attribute takes 40%+ of silhouette.
+          </div>
+        </div>
+
+        <div class="subject-row">
+          <div class="subject-thumb" onclick="openModal('Style B — Zeus', 'assets/style_b_zeus.jpg', 'Cute cartoon Zeus')">
+            <img src="assets/style_b_zeus.jpg" alt="Style B Zeus">
+            <div class="subject-thumb-name">Zeus (God)</div>
+          </div>
+          <div class="subject-thumb" onclick="openModal('Style B — Heracles', 'assets/style_b_heracles.jpg', 'Cute cartoon Heracles')">
+            <img src="assets/style_b_heracles.jpg" alt="Style B Heracles">
+            <div class="subject-thumb-name">Heracles (Demigod)</div>
+          </div>
+          <div class="subject-thumb" onclick="openModal('Style B — Hoplite', 'assets/style_b_hoplite.jpg', 'Cute cartoon Hoplite')">
+            <img src="assets/style_b_hoplite.jpg" alt="Style B Hoplite">
+            <div class="subject-thumb-name">Hoplite (Chaff)</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Style C Board -->
+      <article id="board-style-c" class="concept-board style-c-board">
+        <div class="board-header">
+          <div>
+            <h3 class="board-title" style="color: var(--style-c-gold);">Style C — Ink & Gold Woodcut</h3>
+            <p class="board-tagline">Heavy cross-hatching, mythic and severe</p>
+          </div>
+        </div>
+
+        <div class="swatch-row">
+          <div class="swatch-pill" onclick="copyHex('#EDE6D6')">
+            <div class="swatch-color" style="background: #EDE6D6;"></div>
+            <span>#EDE6D6</span>
+          </div>
+          <div class="swatch-pill" onclick="copyHex('#C9A227')">
+            <div class="swatch-color" style="background: #C9A227;"></div>
+            <span>#C9A227</span>
+          </div>
+          <div class="swatch-pill" onclick="copyHex('#8C2F20')">
+            <div class="swatch-color" style="background: #8C2F20;"></div>
+            <span>#8C2F20</span>
+          </div>
+        </div>
+
+        <div class="spec-list">
+          <div class="spec-item">
+            <strong>Line & Detail</strong>
+            Dense woodcut cross-hatching for all shading; hard chisel strokes.
+          </div>
+          <div class="spec-item">
+            <strong>Silhouette Rule</strong>
+            High-contrast ink mass. Gold reserved exclusively for divine tethers.
+          </div>
+        </div>
+
+        <div class="subject-row">
+          <div class="subject-thumb" onclick="openModal('Style C — Zeus', 'assets/style_c_zeus.jpg', 'Woodcut Zeus with heavy hatching')">
+            <img src="assets/style_c_zeus.jpg" alt="Style C Zeus">
+            <div class="subject-thumb-name">Zeus (God)</div>
+          </div>
+          <div class="subject-thumb" onclick="openModal('Style C — Heracles', 'assets/style_c_heracles.jpg', 'Woodcut Heracles with heavy hatching')">
+            <img src="assets/style_c_heracles.jpg" alt="Style C Heracles">
+            <div class="subject-thumb-name">Heracles (Demigod)</div>
+          </div>
+          <div class="subject-thumb" onclick="openModal('Style C — Hoplite', 'assets/style_c_hoplite.jpg', 'Woodcut Hoplite with heavy hatching')">
+            <img src="assets/style_c_hoplite.jpg" alt="Style C Hoplite">
+            <div class="subject-thumb-name">Hoplite (Chaff)</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Style C-B Board -->
+      <article id="board-style-cb" class="concept-board style-cb-board">
+        <div class="board-header">
+          <div>
+            <h3 class="board-title" style="color: var(--style-cb-gold);">Style C-B — Bold Woodcut (Clean)</h3>
+            <p class="board-tagline">Mythic woodcut look with minimal hatching for high 64px readability</p>
+          </div>
+        </div>
+
+        <div class="swatch-row">
+          <div class="swatch-pill" onclick="copyHex('#EDE6D6')">
+            <div class="swatch-color" style="background: #EDE6D6;"></div>
+            <span>#EDE6D6</span>
+          </div>
+          <div class="swatch-pill" onclick="copyHex('#E5B82A')">
+            <div class="swatch-color" style="background: #E5B82A; box-shadow: 0 0 8px #E5B82A;"></div>
+            <span>#E5B82A</span>
+          </div>
+          <div class="swatch-pill" onclick="copyHex('#B53222')">
+            <div class="swatch-color" style="background: #B53222;"></div>
+            <span>#B53222</span>
+          </div>
+        </div>
+
+        <div class="spec-list">
+          <div class="spec-item">
+            <strong>Line & Detail</strong>
+            Bold, clean chisel-edged woodcut lines with open shadow areas. Minimal interior cross-hatching to prevent visual noise at 64px.
+          </div>
+          <div class="spec-item">
+            <strong>Silhouette Rule</strong>
+            Heavy graphic ink blocks. High-contrast shapes retain severe mythic tone while remaining sharp at small icon scale.
+          </div>
+        </div>
+
+        <div class="subject-row">
+          <div class="subject-thumb" onclick="openModal('Style C-B — Zeus', 'assets/style_cb_zeus.jpg', 'Minimalist bold woodcut Zeus with clean lines')">
+            <img src="assets/style_cb_zeus.jpg" alt="Style C-B Zeus">
+            <div class="subject-thumb-name">Zeus (God)</div>
+          </div>
+          <div class="subject-thumb" onclick="openModal('Style C-B — Heracles', 'assets/style_cb_heracles.jpg', 'Minimalist bold woodcut Heracles with clean lines')">
+            <img src="assets/style_cb_heracles.jpg" alt="Style C-B Heracles">
+            <div class="subject-thumb-name">Heracles (Demigod)</div>
+          </div>
+          <div class="subject-thumb" onclick="openModal('Style C-B — Hoplite', 'assets/style_cb_hoplite.jpg', 'Minimalist bold woodcut Hoplite with clean lines')">
+            <img src="assets/style_cb_hoplite.jpg" alt="Style C-B Hoplite">
+            <div class="subject-thumb-name">Hoplite (Chaff)</div>
+          </div>
+        </div>
+
+        <div class="verdict-box">
+          <strong>Verdict:</strong> Solves Style C's small-size blurring! Retains mythic serious credibility while achieving crisp 64px readability.
+        </div>
+      </article>
+    </div>
+
+    <!-- SECTION 3: Decision Gate Evaluator -->
+    <section id="section-decision" class="evaluation-panel">
+      <div class="section-title">
+        <h2>🏆 Decision Gate Assessment & Recommendation</h2>
+        <span class="cell-caption">Criteria: 64px Readability (40%), Charm (30%), Serious Credibility (20%), Production Cost (10%)</span>
+      </div>
+
+      <div class="evaluation-grid">
+        <!-- Style A Eval -->
+        <div class="eval-card" id="eval-style-a">
+          <div class="eval-card-header">
+            <h3 style="color: var(--style-a-cyan);">Style A: Black-Figure Neon</h3>
+            <span class="score-badge">Score: 9.2 / 10</span>
+          </div>
+
+          <div class="criteria-list">
+            <div class="criteria-item">
+              <span>64px Readability:</span>
+              <strong style="color: var(--style-a-cyan);">10 / 10 (Flawless silhouette)</strong>
+            </div>
+            <div class="criteria-item">
+              <span>Bizarre Charm:</span>
+              <span>7.5 / 10 (Stylish, slick)</span>
+            </div>
+            <div class="criteria-item">
+              <span>Serious Credibility:</span>
+              <span>8.5 / 10 (Mythic history)</span>
+            </div>
+            <div class="criteria-item">
+              <span>Production Speed:</span>
+              <span>9.0 / 10 (Solid fills)</span>
+            </div>
+          </div>
+          <button class="select-btn" onclick="selectStyle('Style A — Attic Black-Figure Neon')">Recommend Style A</button>
+        </div>
+
+        <!-- Style B Eval -->
+        <div class="eval-card" id="eval-style-b">
+          <div class="eval-card-header">
+            <h3 style="color: var(--style-b-peach);">Style B: Saturday Morning</h3>
+            <span class="score-badge">Score: 8.9 / 10</span>
+          </div>
+
+          <div class="criteria-list">
+            <div class="criteria-item">
+              <span>64px Readability:</span>
+              <strong style="color: var(--style-b-peach);">9.5 / 10 (Chunky proportions)</strong>
+            </div>
+            <div class="criteria-item">
+              <span>Bizarre Charm:</span>
+              <strong style="color: var(--style-b-peach);">10 / 10 (Battle Cats tier)</strong>
+            </div>
+            <div class="criteria-item">
+              <span>Serious Credibility:</span>
+              <span>5.0 / 10 (Casual mobile feel)</span>
+            </div>
+            <div class="criteria-item">
+              <span>Production Speed:</span>
+              <span>10 / 10 (Fastest/cheapest)</span>
+            </div>
+          </div>
+          <button class="select-btn" onclick="selectStyle('Style B — Saturday Morning Olympus')">Recommend Style B</button>
+        </div>
+
+        <!-- Style C Eval -->
+        <div class="eval-card" id="eval-style-c">
+          <div class="eval-card-header">
+            <h3 style="color: var(--style-c-gold);">Style C: Ink Woodcut (Detailed)</h3>
+            <span class="score-badge">Score: 8.2 / 10</span>
+          </div>
+
+          <div class="criteria-list">
+            <div class="criteria-item">
+              <span>64px Readability:</span>
+              <span>7.0 / 10 (Hatching blurs)</span>
+            </div>
+            <div class="criteria-item">
+              <span>Bizarre Charm:</span>
+              <span>7.0 / 10 (Severe & grim)</span>
+            </div>
+            <div class="criteria-item">
+              <span>Serious Credibility:</span>
+              <strong style="color: var(--style-c-gold);">10 / 10 (Masterpiece art)</strong>
+            </div>
+            <div class="criteria-item">
+              <span>Production Speed:</span>
+              <span>6.0 / 10 (High detail pass)</span>
+            </div>
+          </div>
+          <button class="select-btn" onclick="selectStyle('Style C — Ink & Gold Woodcut (Detailed)')">Recommend Style C</button>
+        </div>
+
+        <!-- Style C-B Eval -->
+        <div class="eval-card" id="eval-style-cb">
+          <div class="eval-card-header">
+            <h3 style="color: var(--style-cb-gold);">Style C-B: Bold Woodcut (Clean)</h3>
+            <span class="score-badge" style="background: var(--style-cb-gold); color: #141010;">Score: 9.5 / 10</span>
+          </div>
+
+          <div class="criteria-list">
+            <div class="criteria-item">
+              <span>64px Readability:</span>
+              <strong style="color: var(--style-cb-gold);">9.5 / 10 (Crisp & bold)</strong>
+            </div>
+            <div class="criteria-item">
+              <span>Bizarre Charm:</span>
+              <span>8.0 / 10 (Graphic print appeal)</span>
+            </div>
+            <div class="criteria-item">
+              <span>Serious Credibility:</span>
+              <strong style="color: var(--style-cb-gold);">9.5 / 10 (Severe mythic tone)</strong>
+            </div>
+            <div class="criteria-item">
+              <span>Production Speed:</span>
+              <span>8.5 / 10 (Simplified linework)</span>
+            </div>
+          </div>
+          <button class="select-btn" style="background: var(--style-cb-gold); color: #141010;" onclick="selectStyle('Style C-B — Bold Woodcut (Clean)')">Recommend Style C-B ★</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal for High Res Zoom -->
+  <div class="modal-overlay" id="image-modal" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(event)">&times;</button>
+      <h3 class="modal-title" id="modal-title">Subject Title</h3>
+      <img src="" alt="High resolution render" class="modal-img" id="modal-img">
+      <div class="modal-prompt" id="modal-prompt">Prompt text...</div>
+    </div>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function setHeight(heightClass) {
+      const wrappers = document.querySelectorAll('.sprite-wrapper');
+      wrappers.forEach(w => {
+        w.classList.remove('h-64', 'h-128', 'h-256');
+        w.classList.add(heightClass);
+      });
+
+      document.querySelectorAll('#section-matrix .control-group:nth-child(1) .btn-toggle').forEach(b => b.classList.remove('active'));
+      if (heightClass === 'h-64') document.getElementById('btn-h64').classList.add('active');
+      if (heightClass === 'h-128') document.getElementById('btn-h128').classList.add('active');
+      if (heightClass === 'h-256') document.getElementById('btn-h256').classList.add('active');
+    }
+
+    function setRendering(modeClass) {
+      const wrappers = document.querySelectorAll('.sprite-wrapper');
+      wrappers.forEach(w => {
+        w.classList.remove('pixelated', 'smooth');
+        w.classList.add(modeClass);
+      });
+
+      document.querySelectorAll('#section-matrix .control-group:nth-child(2) .btn-toggle').forEach(b => b.classList.remove('active'));
+      if (modeClass === 'pixelated') document.getElementById('btn-render-crisp').classList.add('active');
+      if (modeClass === 'smooth') document.getElementById('btn-render-smooth').classList.add('active');
+    }
+
+    function setBg(color) {
+      const cells = document.querySelectorAll('.matrix-cell');
+      cells.forEach(c => c.style.backgroundColor = color);
+
+      document.querySelectorAll('#section-matrix .control-group:nth-child(3) .btn-toggle').forEach(b => b.classList.remove('active'));
+      if (color === '#141010') document.getElementById('bg-dark').classList.add('active');
+      if (color === '#C86A3A') document.getElementById('bg-terracotta').classList.add('active');
+      if (color === '#8FD4E8') document.getElementById('bg-sky').classList.add('active');
+      if (color === '#EDE6D6') document.getElementById('bg-bone').classList.add('active');
+    }
+
+    function openModal(title, src, prompt) {
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-img').src = src;
+      document.getElementById('modal-prompt').innerText = 'Prompt spec: ' + prompt;
+      document.getElementById('image-modal').classList.add('active');
+    }
+
+    function closeModal(event) {
+      document.getElementById('image-modal').classList.remove('active');
+    }
+
+    function copyHex(hex) {
+      navigator.clipboard.writeText(hex);
+      alert('Copied color code ' + hex + ' to clipboard!');
+    }
+
+    function selectStyle(styleName) {
+      alert('Selected ' + styleName + ' as the winning direction for production asset planning!');
+    }
+  </script>
+</body>
+</html>
