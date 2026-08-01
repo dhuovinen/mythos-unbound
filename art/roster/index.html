@@ -1,201 +1,670 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Production Roster Art Showcase (Style C-B)</title>
-  <style>
-    :root {
-      --bg-dark: #141010;
-      --card-bg: #1a1616;
-      --border-color: #3a3030;
-      --bone: #ede6d6;
-      --ink: #1a1a1e;
-      --blood: #8c2f20;
-      --gold-vfx: #c9a227;
-      --cyan: #4fe3e0;
-    }
-    body {
-      background-color: var(--bg-dark);
-      color: var(--bone);
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      margin: 0;
-      padding: 24px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 8px;
-      font-size: 28px;
-      letter-spacing: 1px;
-    }
-    .subtitle {
-      text-align: center;
-      color: #a09080;
-      margin-bottom: 32px;
-      font-size: 14px;
-    }
-    .badge-vfx {
-      color: var(--gold-vfx);
-      font-weight: bold;
-    }
-    .tier-section {
-      margin-bottom: 40px;
-    }
-    .tier-title {
-      font-size: 20px;
-      border-bottom: 2px solid var(--border-color);
-      padding-bottom: 8px;
-      margin-bottom: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .tier-scale {
-      font-size: 13px;
-      color: var(--cyan);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .card-header {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-    .sprite-full {
-      width: 180px;
-      height: 180px;
-      object-fit: contain;
-      background: radial-gradient(circle, #2a2222 0%, #141010 100%);
-      border-radius: 6px;
-      border: 1px dashed #443838;
-      margin-bottom: 12px;
-    }
-    .preview-64-wrap {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: #0a0808;
-      padding: 8px 14px;
-      border-radius: 6px;
-      width: 100%;
-      box-sizing: border-box;
-      justify-content: center;
-    }
-    .preview-64-label {
-      font-size: 11px;
-      color: #887868;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .sprite-64 {
-      height: 64px;
-      width: 64px;
-      object-fit: contain;
-      image-rendering: pixelated;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style C-B Sprite Roster — Resolution Review</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink:   #1A1A1E;
+    --bone:  #EDE6D6;
+    --blood: #8C2F20;
+    --blood-light: #C4442E;
+    --gold:  #C9A227;
+    --bg:    #0e0d0f;
+    --surface: #181719;
+    --surface2: #222124;
+    --border: #2a282e;
+    --text:  #c8c4bc;
+    --text-dim: #706c64;
+  }
+
+  html { font-size: 14px; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ──────────────────────────────────────────── */
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(180deg, var(--bg) 0%, rgba(14,13,15,0.95) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--bone);
+    white-space: nowrap;
+  }
+
+  header h1 span {
+    color: var(--blood-light);
+    font-weight: 600;
+  }
+
+  .controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+
+  .btn:hover { background: var(--surface2); border-color: #3a3840; }
+  .btn.active { background: var(--blood); border-color: var(--blood); color: var(--bone); }
+
+  .size-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    background: rgba(201,162,39,0.12);
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .stats {
+    margin-left: auto;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ── Checkerboard transparency background ────────────── */
+
+  .checker-bg {
+    background-image:
+      linear-gradient(45deg, #1a191d 25%, transparent 25%),
+      linear-gradient(-45deg, #1a191d 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #1a191d 75%),
+      linear-gradient(-45deg, transparent 75%, #1a191d 75%);
+    background-size: 16px 16px;
+    background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+    background-color: #131215;
+  }
+
+  .checker-bg-sm {
+    background-image:
+      linear-gradient(45deg, #1a191d 25%, transparent 25%),
+      linear-gradient(-45deg, #1a191d 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #1a191d 75%),
+      linear-gradient(-45deg, transparent 75%, #1a191d 75%);
+    background-size: 8px 8px;
+    background-position: 0 0, 0 4px, 4px -4px, -4px 0;
+    background-color: #131215;
+  }
+
+  /* ── Main Layout ─────────────────────────────────────── */
+
+  main { padding: 24px; }
+
+  /* ── Tier Section ────────────────────────────────────── */
+
+  .tier-section {
+    margin-bottom: 40px;
+  }
+
+  .tier-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .tier-header h2 {
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--bone);
+  }
+
+  .tier-header .tier-meta {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    font-weight: 500;
+  }
+
+  .tier-header .tier-scale {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  /* ── Sprite Card ─────────────────────────────────────── */
+
+  .sprite-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .sprite-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+  }
+
+  .sprite-card:hover { border-color: #444; }
+
+  .sprite-card .card-header {
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sprite-card .card-name {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--bone);
+    text-transform: capitalize;
+  }
+
+  .sprite-card .card-size {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .sprite-card .resolutions {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    padding: 14px;
+    flex-wrap: wrap;
+  }
+
+  .res-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .res-slot .res-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .res-slot img {
+    image-rendering: pixelated;
+    display: block;
+  }
+
+  .res-slot .img-wrap {
+    border-radius: 4px;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  /* ── Lineup view (64px comparison) ───────────────────── */
+
+  .lineup-section {
+    margin-bottom: 40px;
+    display: none;
+  }
+
+  .lineup-section.visible { display: block; }
+
+  .lineup-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    padding: 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-bottom: 12px;
+  }
+
+  .lineup-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    min-width: 56px;
+  }
+
+  .lineup-unit img {
+    image-rendering: pixelated;
+    display: block;
+  }
+
+  .lineup-unit .unit-label {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    text-align: center;
+    max-width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* ── Scale comparison view ───────────────────────────── */
+
+  .scale-section {
+    margin-bottom: 40px;
+    display: none;
+  }
+
+  .scale-section.visible { display: block; }
+
+  .scale-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    padding: 24px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+
+  .scale-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .scale-unit img {
+    image-rendering: pixelated;
+    display: block;
+  }
+
+  .scale-unit .scale-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    text-align: center;
+  }
+
+  .scale-unit .scale-tier {
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .scale-tier.chaff   { background: rgba(237,230,214,0.08); color: var(--bone); }
+  .scale-tier.demigod { background: rgba(196,68,46,0.12);   color: var(--blood-light); }
+  .scale-tier.god     { background: rgba(201,162,39,0.12);   color: var(--gold); }
+  .scale-tier.titan   { background: rgba(140,47,32,0.20);    color: #e85a3a; }
+
+  /* ── Grid view ───────────────────────────────────────── */
+
+  .grid-section { display: block; }
+  .grid-section.hidden { display: none; }
+
+  /* ── Battlefield preview ──────────────────────────────── */
+
+  .battlefield-section {
+    margin-bottom: 40px;
+    display: none;
+  }
+  .battlefield-section.visible { display: block; }
+
+  .battlefield {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .bf-sky {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 120px;
+    background: linear-gradient(180deg, #15131a 0%, #221d22 100%);
+  }
+
+  .bf-ground {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 60px;
+    background: #241f1c;
+    border-top: 2px solid #3a3229;
+  }
+
+  .bf-units {
+    position: absolute;
+    bottom: 58px;
+    left: 0; right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 20px;
+  }
+
+  .bf-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bf-unit img {
+    image-rendering: pixelated;
+    display: block;
+  }
+
+  .bf-unit .bf-label {
+    font-size: 0.55rem;
+    font-weight: 700;
+    color: rgba(237,230,214,0.4);
+    margin-top: 2px;
+  }
+
+  /* ── Footer ──────────────────────────────────────────── */
+
+  footer {
+    padding: 20px 24px;
+    border-top: 1px solid var(--border);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    text-align: center;
+  }
+</style>
 </head>
 <body>
-  <h1>Theomachy Roster — Style C-B Production Sprites</h1>
-  <div class="subtitle">
-    Palette: Bone (#EDE6D6), Ink (#1A1A1E), Blood Red (#8C2F20) | <span class="badge-vfx">NO GOLD ON CHARACTERS</span> (VFX only)
+
+<header>
+  <h1>Style C-B <span>Sprite Roster</span></h1>
+  <div class="controls">
+    <button class="btn active" data-view="grid" onclick="setView('grid')">📋 Detail Grid</button>
+    <button class="btn" data-view="lineup" onclick="setView('lineup')">📏 64px Lineup</button>
+    <button class="btn" data-view="scale" onclick="setView('scale')">📐 Tier Scale</button>
+    <button class="btn" data-view="battlefield" onclick="setView('battlefield')">⚔️ Battlefield</button>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<main>
+
+  <!-- ═══ 64px LINEUP VIEW ═══ -->
+  <div class="lineup-section" id="view-lineup">
+    <div class="tier-header">
+      <h2>64px Readability Test</h2>
+      <span class="tier-meta">All 22 sprites at game rendering size — tier must read from size alone</span>
+    </div>
+    <div id="lineup-container"></div>
   </div>
 
-  <!-- CHAFF -->
-  <div class="tier-section">
-    <div class="tier-title">
-      <span>Chaff Tier (3 Units)</span>
-      <span class="tier-scale">Scale: ~55% Frame Height</span>
+  <!-- ═══ TIER SCALE VIEW ═══ -->
+  <div class="scale-section" id="view-scale">
+    <div class="tier-header">
+      <h2>Tier Scale Comparison</h2>
+      <span class="tier-meta">One representative per tier at 128px frame — scale hierarchy must be obvious</span>
     </div>
-    <div class="grid">
-      <div class="card">
-        <div class="card-header"><span>hoplite</span><span>Chaff</span></div>
-        <img class="sprite-full" src="hoplite.png" alt="Hoplite">
-        <div class="preview-64-wrap">
-          <span class="preview-64-label">64px Test</span>
-          <img class="sprite-64" src="hoplite.png" alt="Hoplite 64px">
-        </div>
+    <div class="scale-row" id="scale-container"></div>
+  </div>
+
+  <!-- ═══ BATTLEFIELD VIEW ═══ -->
+  <div class="battlefield-section" id="view-battlefield">
+    <div class="tier-header">
+      <h2>Battlefield Preview</h2>
+      <span class="tier-meta">Sprites at in-game render scale on the battlefield background</span>
+    </div>
+    <div class="battlefield">
+      <div class="bf-sky"></div>
+      <div class="bf-ground"></div>
+      <div class="bf-units" id="bf-units"></div>
+    </div>
+  </div>
+
+  <!-- ═══ DETAIL GRID VIEW ═══ -->
+  <div class="grid-section" id="view-grid"></div>
+
+</main>
+
+<footer>
+  Style C-B (Bold Woodcut) — 22 sprites • Palette: Ink #1A1A1E / Bone #EDE6D6 / Blood #8C2F20 • No gold on characters
+</footer>
+
+<script>
+const ROSTER = [
+  // [id, name, tier, scale%]
+  ['hoplite',     'Hoplite',     'chaff',   55],
+  ['satyr',       'Satyr',       'chaff',   55],
+  ['harpy',       'Harpy',       'chaff',   55],
+  ['heracles',    'Heracles',    'demigod', 70],
+  ['perseus',     'Perseus',     'demigod', 70],
+  ['achilles',    'Achilles',    'demigod', 70],
+  ['asclepius',   'Asclepius',   'demigod', 70],
+  ['orpheus',     'Orpheus',     'demigod', 70],
+  ['dionysus',    'Dionysus',    'demigod', 70],
+  ['aeneas',      'Aeneas',     'demigod', 70],
+  ['zeus',        'Zeus',        'god',     85],
+  ['hera',        'Hera',        'god',     85],
+  ['poseidon',    'Poseidon',    'god',     85],
+  ['hades',       'Hades',       'god',     85],
+  ['athena',      'Athena',      'god',     85],
+  ['ares',        'Ares',        'god',     85],
+  ['aphrodite',   'Aphrodite',   'god',     85],
+  ['hephaestus',  'Hephaestus',  'god',     85],
+  ['apollo',      'Apollo',      'god',     85],
+  ['artemis',     'Artemis',     'god',     85],
+  ['cronus',      'Cronus',      'titan',  100],
+  ['typhon',      'Typhon',      'titan',  100],
+];
+
+const TIERS = [
+  { id: 'chaff',   label: 'Chaff',   icon: '🏛️', scale: '55%', count: 3 },
+  { id: 'demigod', label: 'Demigod', icon: '⚔️', scale: '70%', count: 7 },
+  { id: 'god',     label: 'God',     icon: '🏛️', scale: '85%', count: 10 },
+  { id: 'titan',   label: 'Titan',   icon: '👹', scale: '100%', count: 2 },
+];
+
+const RESOLUTIONS = [256, 128, 64, 48, 32];
+const SPRITE_TIER_SCALE = { chaff: 0.55, demigod: 0.7, god: 0.85, titan: 1.0 };
+
+function buildGridView() {
+  const container = document.getElementById('view-grid');
+  container.innerHTML = '';
+
+  for (const tier of TIERS) {
+    const units = ROSTER.filter(u => u[2] === tier.id);
+    const section = document.createElement('div');
+    section.className = 'tier-section';
+    section.innerHTML = `
+      <div class="tier-header">
+        <h2>${tier.icon} ${tier.label} Tier</h2>
+        <span class="tier-meta">${units.length} units</span>
+        <span class="tier-scale">~${tier.scale} frame height</span>
       </div>
-      <div class="card">
-        <div class="card-header"><span>satyr</span><span>Chaff</span></div>
-        <img class="sprite-full" src="satyr.png" alt="Satyr">
-        <div class="preview-64-wrap">
-          <span class="preview-64-label">64px Test</span>
-          <img class="sprite-64" src="satyr.png" alt="Satyr 64px">
+    `;
+
+    const grid = document.createElement('div');
+    grid.className = 'sprite-grid';
+
+    for (const [id, name, t, scale] of units) {
+      const card = document.createElement('div');
+      card.className = 'sprite-card';
+      card.innerHTML = `
+        <div class="card-header">
+          <span class="card-name">${name}</span>
+          <span class="card-size">${id}.png</span>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header"><span>harpy</span><span>Chaff</span></div>
-        <img class="sprite-full" src="harpy.png" alt="Harpy">
-        <div class="preview-64-wrap">
-          <span class="preview-64-label">64px Test</span>
-          <img class="sprite-64" src="harpy.png" alt="Harpy 64px">
+        <div class="resolutions">
+          ${RESOLUTIONS.map(sz => `
+            <div class="res-slot">
+              <span class="res-label">${sz}px</span>
+              <div class="img-wrap ${sz <= 64 ? 'checker-bg-sm' : 'checker-bg'}">
+                <img src="${id}.png" width="${sz}" height="${sz}"
+                     alt="${name} at ${sz}px" loading="lazy">
+              </div>
+            </div>
+          `).join('')}
         </div>
+      `;
+      grid.appendChild(card);
+    }
+
+    section.appendChild(grid);
+    container.appendChild(section);
+  }
+}
+
+function buildLineupView() {
+  const container = document.getElementById('lineup-container');
+  container.innerHTML = '';
+
+  for (const tier of TIERS) {
+    const units = ROSTER.filter(u => u[2] === tier.id);
+    const row = document.createElement('div');
+    row.className = 'lineup-row';
+
+    const header = document.createElement('div');
+    header.style.cssText = 'writing-mode:vertical-lr; font-size:0.65rem; font-weight:800; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.08em; padding-right:8px; border-right:1px solid var(--border); margin-right:8px; white-space:nowrap;';
+    header.textContent = `${tier.label} (${tier.scale})`;
+    row.appendChild(header);
+
+    for (const [id, name] of units) {
+      const unit = document.createElement('div');
+      unit.className = 'lineup-unit';
+      unit.innerHTML = `
+        <div class="img-wrap checker-bg-sm" style="border-radius:3px;overflow:hidden">
+          <img src="${id}.png" width="64" height="64" alt="${name}">
+        </div>
+        <span class="unit-label">${name}</span>
+      `;
+      row.appendChild(unit);
+    }
+
+    container.appendChild(row);
+  }
+}
+
+function buildScaleView() {
+  const container = document.getElementById('scale-container');
+  container.innerHTML = '';
+
+  const reps = [
+    ['hoplite',  'Hoplite',  'chaff'],
+    ['heracles', 'Heracles', 'demigod'],
+    ['zeus',     'Zeus',     'god'],
+    ['cronus',   'Cronus',   'titan'],
+  ];
+
+  const baseH = 128;
+  for (const [id, name, tier] of reps) {
+    const scale = SPRITE_TIER_SCALE[tier];
+    const h = Math.round(baseH * scale);
+    const unit = document.createElement('div');
+    unit.className = 'scale-unit';
+    unit.innerHTML = `
+      <div class="img-wrap checker-bg-sm" style="border-radius:4px;overflow:hidden">
+        <img src="${id}.png" width="${h}" height="${h}" alt="${name}">
       </div>
-    </div>
-  </div>
+      <span class="scale-label">${name}</span>
+      <span class="scale-tier ${tier}">${tier} ${Math.round(scale*100)}%</span>
+    `;
+    container.appendChild(unit);
+  }
+}
 
-  <!-- DEMIGODS -->
-  <div class="tier-section">
-    <div class="tier-title">
-      <span>Demigod Tier (7 Units)</span>
-      <span class="tier-scale">Scale: ~70% Frame Height</span>
-    </div>
-    <div class="grid">
-      <div class="card"><div class="card-header"><span>heracles</span><span>Demigod</span></div><img class="sprite-full" src="heracles.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="heracles.png"></div></div>
-      <div class="card"><div class="card-header"><span>perseus</span><span>Demigod</span></div><img class="sprite-full" src="perseus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="perseus.png"></div></div>
-      <div class="card"><div class="card-header"><span>achilles</span><span>Demigod</span></div><img class="sprite-full" src="achilles.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="achilles.png"></div></div>
-      <div class="card"><div class="card-header"><span>asclepius</span><span>Demigod</span></div><img class="sprite-full" src="asclepius.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="asclepius.png"></div></div>
-      <div class="card"><div class="card-header"><span>orpheus</span><span>Demigod</span></div><img class="sprite-full" src="orpheus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="orpheus.png"></div></div>
-      <div class="card"><div class="card-header"><span>dionysus</span><span>Demigod</span></div><img class="sprite-full" src="dionysus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="dionysus.png"></div></div>
-      <div class="card"><div class="card-header"><span>aeneas</span><span>Demigod</span></div><img class="sprite-full" src="aeneas.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="aeneas.png"></div></div>
-    </div>
-  </div>
+function buildBattlefieldView() {
+  const container = document.getElementById('bf-units');
+  container.innerHTML = '';
 
-  <!-- GODS -->
-  <div class="tier-section">
-    <div class="tier-title">
-      <span>God Tier (10 Units)</span>
-      <span class="tier-scale">Scale: ~85% Frame Height</span>
-    </div>
-    <div class="grid">
-      <div class="card"><div class="card-header"><span>zeus</span><span>God</span></div><img class="sprite-full" src="zeus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="zeus.png"></div></div>
-      <div class="card"><div class="card-header"><span>hera</span><span>God</span></div><img class="sprite-full" src="hera.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="hera.png"></div></div>
-      <div class="card"><div class="card-header"><span>poseidon</span><span>God</span></div><img class="sprite-full" src="poseidon.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="poseidon.png"></div></div>
-      <div class="card"><div class="card-header"><span>hades</span><span>God</span></div><img class="sprite-full" src="hades.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="hades.png"></div></div>
-      <div class="card"><div class="card-header"><span>athena</span><span>God</span></div><img class="sprite-full" src="athena.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="athena.png"></div></div>
-      <div class="card"><div class="card-header"><span>ares</span><span>God</span></div><img class="sprite-full" src="ares.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="ares.png"></div></div>
-      <div class="card"><div class="card-header"><span>aphrodite</span><span>God</span></div><img class="sprite-full" src="aphrodite.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="aphrodite.png"></div></div>
-      <div class="card"><div class="card-header"><span>hephaestus</span><span>God</span></div><img class="sprite-full" src="hephaestus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="hephaestus.png"></div></div>
-      <div class="card"><div class="card-header"><span>apollo</span><span>God</span></div><img class="sprite-full" src="apollo.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="apollo.png"></div></div>
-      <div class="card"><div class="card-header"><span>artemis</span><span>God</span></div><img class="sprite-full" src="artemis.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="artemis.png"></div></div>
-    </div>
-  </div>
+  const SPRITE_BASE = 98;
+  const sample = [
+    ['hoplite','Hoplite','chaff'],
+    ['satyr','Satyr','chaff'],
+    ['heracles','Heracles','demigod'],
+    ['perseus','Perseus','demigod'],
+    ['achilles','Achilles','demigod'],
+    ['zeus','Zeus','god'],
+    ['athena','Athena','god'],
+    ['ares','Ares','god'],
+    ['cronus','Cronus','titan'],
+    ['typhon','Typhon','titan'],
+  ];
 
-  <!-- TITANS -->
-  <div class="tier-section">
-    <div class="tier-title">
-      <span>Titan & Monster Tier (2 Units)</span>
-      <span class="tier-scale">Scale: 100% Frame Height</span>
-    </div>
-    <div class="grid">
-      <div class="card"><div class="card-header"><span>cronus</span><span>Titan</span></div><img class="sprite-full" src="cronus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="cronus.png"></div></div>
-      <div class="card"><div class="card-header"><span>typhon</span><span>Titan</span></div><img class="sprite-full" src="typhon.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="typhon.png"></div></div>
-    </div>
-  </div>
+  for (const [id, name, tier] of sample) {
+    const box = Math.round(SPRITE_BASE * SPRITE_TIER_SCALE[tier]);
+    const unit = document.createElement('div');
+    unit.className = 'bf-unit';
+    unit.innerHTML = `
+      <img src="${id}.png" width="${box}" height="${box}" alt="${name}" style="image-rendering:pixelated">
+      <span class="bf-label">${name}</span>
+    `;
+    container.appendChild(unit);
+  }
+}
+
+function setView(view) {
+  document.querySelectorAll('.btn[data-view]').forEach(b => {
+    b.classList.toggle('active', b.dataset.view === view);
+  });
+
+  document.getElementById('view-grid').classList.toggle('hidden', view !== 'grid');
+  document.getElementById('view-lineup').classList.toggle('visible', view === 'lineup');
+  document.getElementById('view-scale').classList.toggle('visible', view === 'scale');
+  document.getElementById('view-battlefield').classList.toggle('visible', view === 'battlefield');
+}
+
+// Init
+buildGridView();
+buildLineupView();
+buildScaleView();
+buildBattlefieldView();
+
+document.getElementById('stats').textContent =
+  `${ROSTER.length} sprites • ${RESOLUTIONS.length} resolutions`;
+</script>
 </body>
 </html>
