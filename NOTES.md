@@ -17,7 +17,8 @@ Agent briefs for distributed work: `docs/briefs/`.
 npm run dev
 ```
 
-Then open **http://localhost:3033** (port reserved for this project in `~/Projects/app-registry`).
+Then open **http://localhost:3033** — port reserved for this project in `~/Projects/app-registry`
+(frontend-only, `vite-typescript`, registered 2026-08-01).
 
 Other commands:
 
@@ -32,16 +33,31 @@ served at http://localhost:3033/art/concepts/ while the dev server is running.
 
 ## Status
 
-**Phase 0 (WP-0, scaffold + frozen contracts): complete.** Vite + TypeScript + Vitest, fixed
-60 Hz timestep loop, `src/sim/types.ts` frozen as the contract all work packages code against.
+**Phase 0 and Phase 1: complete.** All 8 work packages done. 54 tests passing, `tsc --noEmit` clean.
 
-Everything under `src/` except `main.ts`, `sim/types.ts`, `sim/constants.ts` and `sim/rng.ts` is a
-deliberately crude **stub** awaiting its work package — the game currently walks units down a lane
-and does not fight. See `docs/briefs/` for what each WP replaces.
+| WP | Deliverable | Status |
+|---|---|---|
+| WP-1 | Relational engine | done |
+| WP-2 | Sim core (targeting, damage, win/lose) | done |
+| WP-3 | Greek roster — 22 units, ~45 edges | done |
+| WP-4 | Renderer, Style C-B palette | done |
+| WP-5 | Relational VFX (tethers, proc tags, damage numbers) | done |
+| WP-6 | HUD | done |
+| WP-7 | Art concept boards | done — **Style C-B chosen** |
+| WP-8 | Scripted showcase stage | done and tuned |
 
-**Phase 1 (WP-1…WP-8): WP-7 delivered, rest not started.**
+The game is playable end to end, and a headless playthrough fires **all 14 relational modifiers**
+(asserted in `tests/integration.test.ts`). Press **?** in-game for the codex: how to play, both
+modifier tables, and all 22 units with their relationships — all generated from live game data.
 
 Known open items:
-- Port 3033 is **provisional** — the app-registry reservation is blocked by pre-existing validation
-  errors in an unrelated `chrome-copilot1` entry.
-- Art direction undecided; the three styles are awaiting the 64 px readability comparison.
+- **Art:** Style C-B chosen, but no production sprites exist — `src/render/draw.ts` draws
+  placeholder geometry in the C-B palette. Brief for the 22 production sprites is
+  `docs/briefs/WP-9.md`, not yet dispatched.
+- **Phase 2 balance notes** (found while tuning, not yet addressed):
+  - *Titans are immune to chaff.* Damage floors at `max(1, raw - armor)`, so a 12-damage Hoplite
+    does exactly 1 damage to Cronus's 24 armour and 2800 HP. This is what turns a front line into
+    a permanent wall.
+  - *Entranced is congestion-fragile.* It needs the two lovers to be each other's **nearest**
+    enemy, so it fires with a lean lane and stops firing when the player spams filler.
+- ~~Port 3033 provisional~~ — **resolved 2026-08-01**, formally reserved with branding metadata.

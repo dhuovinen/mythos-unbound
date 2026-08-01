@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Production Roster Art Showcase (Style C-B)</title>
+  <style>
+    :root {
+      --bg-dark: #141010;
+      --card-bg: #1a1616;
+      --border-color: #3a3030;
+      --bone: #ede6d6;
+      --ink: #1a1a1e;
+      --blood: #8c2f20;
+      --gold-vfx: #c9a227;
+      --cyan: #4fe3e0;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--bone);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 24px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 8px;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #a09080;
+      margin-bottom: 32px;
+      font-size: 14px;
+    }
+    .badge-vfx {
+      color: var(--gold-vfx);
+      font-weight: bold;
+    }
+    .tier-section {
+      margin-bottom: 40px;
+    }
+    .tier-title {
+      font-size: 20px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .tier-scale {
+      font-size: 13px;
+      color: var(--cyan);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    .sprite-full {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      background: radial-gradient(circle, #2a2222 0%, #141010 100%);
+      border-radius: 6px;
+      border: 1px dashed #443838;
+      margin-bottom: 12px;
+    }
+    .preview-64-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #0a0808;
+      padding: 8px 14px;
+      border-radius: 6px;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .preview-64-label {
+      font-size: 11px;
+      color: #887868;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .sprite-64 {
+      height: 64px;
+      width: 64px;
+      object-fit: contain;
+      image-rendering: pixelated;
+    }
+  </style>
+</head>
+<body>
+  <h1>Theomachy Roster — Style C-B Production Sprites</h1>
+  <div class="subtitle">
+    Palette: Bone (#EDE6D6), Ink (#1A1A1E), Blood Red (#8C2F20) | <span class="badge-vfx">NO GOLD ON CHARACTERS</span> (VFX only)
+  </div>
+
+  <!-- CHAFF -->
+  <div class="tier-section">
+    <div class="tier-title">
+      <span>Chaff Tier (3 Units)</span>
+      <span class="tier-scale">Scale: ~55% Frame Height</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-header"><span>hoplite</span><span>Chaff</span></div>
+        <img class="sprite-full" src="hoplite.png" alt="Hoplite">
+        <div class="preview-64-wrap">
+          <span class="preview-64-label">64px Test</span>
+          <img class="sprite-64" src="hoplite.png" alt="Hoplite 64px">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span>satyr</span><span>Chaff</span></div>
+        <img class="sprite-full" src="satyr.png" alt="Satyr">
+        <div class="preview-64-wrap">
+          <span class="preview-64-label">64px Test</span>
+          <img class="sprite-64" src="satyr.png" alt="Satyr 64px">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span>harpy</span><span>Chaff</span></div>
+        <img class="sprite-full" src="harpy.png" alt="Harpy">
+        <div class="preview-64-wrap">
+          <span class="preview-64-label">64px Test</span>
+          <img class="sprite-64" src="harpy.png" alt="Harpy 64px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEMIGODS -->
+  <div class="tier-section">
+    <div class="tier-title">
+      <span>Demigod Tier (7 Units)</span>
+      <span class="tier-scale">Scale: ~70% Frame Height</span>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="card-header"><span>heracles</span><span>Demigod</span></div><img class="sprite-full" src="heracles.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="heracles.png"></div></div>
+      <div class="card"><div class="card-header"><span>perseus</span><span>Demigod</span></div><img class="sprite-full" src="perseus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="perseus.png"></div></div>
+      <div class="card"><div class="card-header"><span>achilles</span><span>Demigod</span></div><img class="sprite-full" src="achilles.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="achilles.png"></div></div>
+      <div class="card"><div class="card-header"><span>asclepius</span><span>Demigod</span></div><img class="sprite-full" src="asclepius.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="asclepius.png"></div></div>
+      <div class="card"><div class="card-header"><span>orpheus</span><span>Demigod</span></div><img class="sprite-full" src="orpheus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="orpheus.png"></div></div>
+      <div class="card"><div class="card-header"><span>dionysus</span><span>Demigod</span></div><img class="sprite-full" src="dionysus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="dionysus.png"></div></div>
+      <div class="card"><div class="card-header"><span>aeneas</span><span>Demigod</span></div><img class="sprite-full" src="aeneas.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="aeneas.png"></div></div>
+    </div>
+  </div>
+
+  <!-- GODS -->
+  <div class="tier-section">
+    <div class="tier-title">
+      <span>God Tier (10 Units)</span>
+      <span class="tier-scale">Scale: ~85% Frame Height</span>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="card-header"><span>zeus</span><span>God</span></div><img class="sprite-full" src="zeus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="zeus.png"></div></div>
+      <div class="card"><div class="card-header"><span>hera</span><span>God</span></div><img class="sprite-full" src="hera.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="hera.png"></div></div>
+      <div class="card"><div class="card-header"><span>poseidon</span><span>God</span></div><img class="sprite-full" src="poseidon.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="poseidon.png"></div></div>
+      <div class="card"><div class="card-header"><span>hades</span><span>God</span></div><img class="sprite-full" src="hades.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="hades.png"></div></div>
+      <div class="card"><div class="card-header"><span>athena</span><span>God</span></div><img class="sprite-full" src="athena.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="athena.png"></div></div>
+      <div class="card"><div class="card-header"><span>ares</span><span>God</span></div><img class="sprite-full" src="ares.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="ares.png"></div></div>
+      <div class="card"><div class="card-header"><span>aphrodite</span><span>God</span></div><img class="sprite-full" src="aphrodite.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="aphrodite.png"></div></div>
+      <div class="card"><div class="card-header"><span>hephaestus</span><span>God</span></div><img class="sprite-full" src="hephaestus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="hephaestus.png"></div></div>
+      <div class="card"><div class="card-header"><span>apollo</span><span>God</span></div><img class="sprite-full" src="apollo.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="apollo.png"></div></div>
+      <div class="card"><div class="card-header"><span>artemis</span><span>God</span></div><img class="sprite-full" src="artemis.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="artemis.png"></div></div>
+    </div>
+  </div>
+
+  <!-- TITANS -->
+  <div class="tier-section">
+    <div class="tier-title">
+      <span>Titan & Monster Tier (2 Units)</span>
+      <span class="tier-scale">Scale: 100% Frame Height</span>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="card-header"><span>cronus</span><span>Titan</span></div><img class="sprite-full" src="cronus.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="cronus.png"></div></div>
+      <div class="card"><div class="card-header"><span>typhon</span><span>Titan</span></div><img class="sprite-full" src="typhon.png"><div class="preview-64-wrap"><span class="preview-64-label">64px Test</span><img class="sprite-64" src="typhon.png"></div></div>
+    </div>
+  </div>
+</body>
+</html>
