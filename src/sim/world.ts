@@ -1,15 +1,17 @@
 /**
- * STUB — owned by WP-2. Replace this file wholesale.
+ * Simulation world state management and tick execution — WP-2.
  *
- * Movement and faith only, so the scaffold is verifiably runnable. No targeting, no combat,
- * no win/lose detection — that is WP-2's job.
+ * Owns world construction, unit spawning, faith regeneration, time advancement, and fixed-timestep
+ * simulation tick execution. Pure functions only.
  */
 
-import { ENEMY_BASE_X, LANE_LENGTH, PLAYER_BASE_X } from './constants';
+import { processCombat } from './combat';
+import { ENEMY_BASE_X, PLAYER_BASE_X } from './constants';
 import type { CreateWorld, SpawnUnit, TickWorld, Unit } from './types';
 
 /** Builds initial world state from a stage definition, including both base units. */
 export const createWorld: CreateWorld = (stage, deities) => {
+  void deities;
   const world = {
     time: 0,
     units: [] as Unit[],
@@ -36,11 +38,10 @@ export const createWorld: CreateWorld = (stage, deities) => {
     });
   }
 
-  void deities;
   return world;
 };
 
-/** Appends a unit to the world and emits a 'spawn' event. */
+/** Appends a unit to the world and emits a 'spawn' event. Returns the new unit. */
 export const spawnUnit: SpawnUnit = (world, deity, side) => {
   const unit: Unit = {
     id: world.nextUnitId++,
@@ -58,19 +59,14 @@ export const spawnUnit: SpawnUnit = (world, deity, side) => {
   return unit;
 };
 
-/** Advances the world by exactly one fixed step. */
+/** Advances the world by exactly one fixed step. Mutates world in place. */
 export const tickWorld: TickWorld = (world, dt, graph, deities, rng) => {
+  if (world.outcome !== 'ongoing') {
+    return;
+  }
+
   world.time += dt;
   world.faith = Math.min(world.faithMax, world.faith + world.faithRegen * dt);
 
-  for (const unit of world.units) {
-    if (unit.isBase) continue;
-    const deity = deities.get(unit.deityId);
-    if (deity === undefined) continue;
-    const dir = unit.side === 'player' ? 1 : -1;
-    unit.x = Math.max(0, Math.min(LANE_LENGTH, unit.x + deity.speed * dir * dt));
-  }
-
-  void graph;
-  void rng;
+  processCombat(world, dt, graph, deities, rng);
 };
