@@ -17,7 +17,8 @@ Agent briefs for distributed work: `docs/briefs/`.
 npm run dev
 ```
 
-Then open **http://localhost:3033** (port reserved for this project in `~/Projects/app-registry`).
+Then open **http://localhost:3033** — port reserved for this project in `~/Projects/app-registry`
+(frontend-only, `vite-typescript`, registered 2026-08-01).
 
 Other commands:
 
@@ -32,16 +33,29 @@ served at http://localhost:3033/art/concepts/ while the dev server is running.
 
 ## Status
 
-**Phase 0 (WP-0, scaffold + frozen contracts): complete.** Vite + TypeScript + Vitest, fixed
-60 Hz timestep loop, `src/sim/types.ts` frozen as the contract all work packages code against.
+**Phase 0 (scaffold + frozen contracts): complete.**
+**Phase 1: 7 of 8 work packages complete.** 51 tests passing, `tsc --noEmit` clean.
 
-Everything under `src/` except `main.ts`, `sim/types.ts`, `sim/constants.ts` and `sim/rng.ts` is a
-deliberately crude **stub** awaiting its work package — the game currently walks units down a lane
-and does not fight. See `docs/briefs/` for what each WP replaces.
+| WP | Deliverable | Status |
+|---|---|---|
+| WP-1 | Relational engine | done |
+| WP-2 | Sim core (targeting, damage, win/lose) | done |
+| WP-3 | Greek roster — 22 units, ~45 edges | done |
+| WP-4 | Renderer | **stub** — crude placeholder geometry |
+| WP-5 | Relational VFX (tethers, proc tags, damage numbers) | done |
+| WP-6 | HUD | done |
+| WP-7 | Art concept boards | done — **Style C-B chosen** |
+| WP-8 | Scripted showcase stage | done, **needs tuning** |
 
-**Phase 1 (WP-1…WP-8): WP-7 delivered, rest not started.**
+The game is playable: units fight, relations fire, and tethers/proc tags/damage numbers render.
 
 Known open items:
-- Port 3033 is **provisional** — the app-registry reservation is blocked by pre-existing validation
-  errors in an unrelated `chrome-copilot1` entry.
-- Art direction undecided; the three styles are awaiting the 64 px readability comparison.
+- **The showcase stage looks unwinnable as tuned** — the player base falls around ~40 s, well
+  before beats 5–7 (Ares 70 s, Hades 88 s, Cronus 108 s). The flagship Filicide/Usurpation
+  pairing has never been seen on screen. This blocks the Phase 1 "is it fun?" verdict.
+- **WP-4 is the last stub** — units are barely distinguishable by tier.
+- **Art direction: Style C-B "Bold Woodcut (Clean)"** (chosen 2026-07-31). No production-asset
+  pipeline exists yet; `src/render/draw.ts` still draws placeholder geometry. Spec in
+  `docs/briefs/WP-7.md`.
+- ~~Port 3033 provisional~~ — **resolved 2026-08-01.** Port 3033 is now formally reserved in
+  `~/Projects/app-registry` with branding metadata and lifecycle commands.

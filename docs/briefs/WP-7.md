@@ -59,9 +59,25 @@ Heavy ink, cross-hatching, mythic and severe.
 - **Relational VFX:** gold filigree tethers; proc tags in engraved serif small-caps on torn parchment
 - **Prompt:** `Woodcut engraving illustration of {DEITY}, heavy black ink cross-hatching, bone white background, oxidized gold and blood red accents only, severe mythic tone, side view facing right, holding {ATTRIBUTE}, hand-carved print texture, centered full body, transparent background`
 
-### Style C-B — "Bold Woodcut (Clean)" *(added in round 2)*
+### ✅ Style C-B — "Bold Woodcut (Clean)" — **CHOSEN, 2026-07-31**
 Style C with the hatching density pulled back for small-size legibility — clean chisel lines,
 simplified graphic shadows, same four-colour palette and same gold-means-relations rule.
+
+**This is the production art direction.** All future roster art targets this style.
+
+- **Palette (four colours, no more):** bone `#EDE6D6`, ink `#1A1A1E`, oxidized gold `#C9A227`,
+  blood `#8C2F20`
+- **Line:** hard chisel-edged strokes, minimal cross-hatching. Shadows are simplified graphic
+  shapes, not hatch fields — this is what buys the 64 px legibility that Style C loses.
+- **Silhouette rule:** high-contrast ink masses readable as pure shape at 64 px.
+- **Gold is reserved exclusively for relational VFX**, never for costume or ornament. Gold on
+  screen always means "the graph is firing." This is a systemic rule, not a style preference —
+  it makes the game's core mechanic self-announcing, and the in-game tether colours in
+  `src/sim/constants.ts` should be reconciled against it when production art lands.
+- **Prompt template:** `Minimalist bold woodcut illustration of {DEITY}, clean chisel ink lines
+  with minimal cross-hatching, simplified graphic shadows, bone white background, oxidized gold
+  and blood red accents only, severe mythic tone, side view facing right, holding {ATTRIBUTE},
+  centered full body, transparent background`
 
 ## Delivered
 
@@ -73,6 +89,7 @@ Viewable at http://localhost:3033/art/concepts/ while `npm run dev` is running.
 
 ## Still open
 
-The **decision itself**. Nothing is chosen yet, and no production-asset pipeline exists — a full
-roster needs 22 units per style, with consistent scale, transparency and naming, which is a separate
-exercise from concept boards.
+**Style C-B is chosen** (2026-07-31), so the concept-board phase is closed. What does not exist yet
+is a **production-asset pipeline**: 22 units in C-B with consistent scale, transparency, naming and
+a common baseline, plus a loader replacing the placeholder geometry in `src/render/draw.ts`. That is
+a separate exercise and a separate brief — do not attempt it from this one.
