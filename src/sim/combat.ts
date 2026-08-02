@@ -28,6 +28,8 @@ const BASE_DEITY: Deity = {
 /** Result of an attack evaluation containing damage dealt, suppression status, and active modifiers. */
 export interface AttackResult {
   readonly damage: number;
+  /** What the same attack would have dealt with no relations at all. */
+  readonly baseDamage: number;
   readonly suppressed: boolean;
   readonly modifiers: readonly Modifier[];
 }
@@ -59,6 +61,14 @@ export function findTarget(
   return bestTarget;
 }
 
+/**
+ * What an attack would deal with no relations in play — base damage less unmodified armour. The
+ * post-match report subtracts this from what actually landed to state the relational swing exactly.
+ */
+function unmodifiedDamage(attacker: Deity, defender: Deity): number {
+  return Math.max(1, attacker.damage - defender.armor);
+}
+
 /** Evaluates and applies an attack between attacker and defender, returning damage and modifiers. */
 export function resolveAttack(
   attacker: Unit,
@@ -69,7 +79,7 @@ export function resolveAttack(
 ): AttackResult {
   const attackerDeity = deities.get(attacker.deityId);
   if (attackerDeity === undefined) {
-    return { damage: 0, suppressed: false, modifiers: [] };
+    return { damage: 0, baseDamage: 0, suppressed: false, modifiers: [] };
   }
 
   const defenderDeity = defender.isBase ? BASE_DEITY : deities.get(defender.deityId) ?? BASE_DEITY;
@@ -99,7 +109,7 @@ export function resolveAttack(
     // Entranced. The attacker refuses to strike, but it still spends its cooldown — otherwise the
     // attempt re-evaluates every single tick and floods the event stream at 60/s.
     attacker.cooldown = attackerDeity.attackInterval / combined.attackSpeedMult;
-    return { damage: 0, suppressed: true, modifiers: allMods };
+    return { damage: 0, baseDamage: unmodifiedDamage(attackerDeity, defenderDeity), suppressed: true, modifiers: allMods };
   }
 
   let defenderArmor = 0;
@@ -128,7 +138,12 @@ export function resolveAttack(
   attacker.cooldown = attackerDeity.attackInterval / combined.attackSpeedMult;
   defender.hp -= damage;
 
-  return { damage, suppressed: false, modifiers: allMods };
+  return {
+    damage,
+    baseDamage: unmodifiedDamage(attackerDeity, defenderDeity),
+    suppressed: false,
+    modifiers: allMods,
+  };
 }
 
 /** Processes movement, targeting, attacks, deaths, and victory conditions for one tick. */
@@ -165,6 +180,7 @@ export function processCombat(
           attackerId: unit.id,
           defenderId: target.id,
           damage: attackResult.damage,
+          baseDamage: attackResult.baseDamage,
           modifiers: modNames,
         });
       }

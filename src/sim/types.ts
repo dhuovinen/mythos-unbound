@@ -151,7 +151,14 @@ export type SimEvent =
       readonly kind: 'hit';
       readonly attackerId: number;
       readonly defenderId: number;
+      /** Damage actually dealt. Zero means the attack was prevented (Entranced). */
       readonly damage: number;
+      /**
+       * What this attack would have dealt with no relations in play at all, i.e. base damage less
+       * the defender's unmodified armour. Recorded at the source so the post-match report can state
+       * the relational swing exactly rather than reconstructing it from modifier names.
+       */
+      readonly baseDamage: number;
       readonly modifiers: readonly ModifierName[];
     }
   | { readonly kind: 'death'; readonly unitId: number }

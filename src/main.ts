@@ -17,6 +17,7 @@ import { createRng } from './sim/rng';
 import type { Deity, DeityId, DeityIndex, StageWave } from './sim/types';
 import { preloadSprites } from './render/sprites';
 import { chooseSummon } from './sim/advisor';
+import { createBattleLog, noteDeployment, recordEvents } from './sim/battlelog';
 import { createHand, playFrom } from './sim/hand';
 import { createWorld, spawnUnit, tickWorld } from './sim/world';
 import { mountAdminPanel } from './ui/admin';
@@ -24,6 +25,7 @@ import { mountCodex } from './ui/codex';
 import { mountConsultant } from './ui/consultant';
 import { mountDraftScreen } from './ui/draftscreen';
 import { mountHud } from './ui/hud';
+import { mountReport } from './ui/report';
 import { getSettings } from './ui/settings';
 
 const canvas = document.querySelector<HTMLCanvasElement>('#stage');
@@ -69,7 +71,21 @@ let hand = createHand(playerDeck);
 const toDeities = (ids: readonly DeityId[]): Deity[] =>
   ids.map((id) => deities.get(id)).filter((deity): deity is Deity => deity !== undefined);
 
+/**
+ * Records every attack for the post-match report. Deployments are noted here rather than derived
+ * from spawn events, because a unit that dies is removed from the world and its identity would be
+ * gone before the report is built.
+ */
+const battleLog = createBattleLog();
+
+/** Spawns a unit and registers it with the battle log. All spawns go through this. */
+function deploy(deity: Deity, side: 'player' | 'enemy'): void {
+  const unit = spawnUnit(world, deity, side);
+  noteDeployment(battleLog, unit.id, deity.id, side, deity.cost);
+}
+
 const hud = mountHud(hudRoot, (slotIndex) => summonQueue.push(slotIndex));
+const report = mountReport(battleLog, deities);
 
 mountCodex(ALL_DEITIES, ALL_EDGES);
 mountAdminPanel();
@@ -85,9 +101,8 @@ const consultant = mountConsultant(deities, graph, playerDeck);
  * The opponent runs its own economy on the same terms as the player and picks counters with the
  * same rule engine the consultant reads from. It sits on top of the scripted timeline rather than
  * replacing it, so the showcase beats still happen and the regression tests still hold.
- */
-/**
- * The opponent plays the deck it drafted — an opening chosen blind, then reinforcements chosen
+ *
+ * It plays the deck it drafted — an opening chosen blind, then reinforcements chosen
  * after seeing the player's opening. Without a draft it improvises from the whole roster, which is
  * strictly stronger, so an undrafted battle is the harder one.
  */
@@ -106,7 +121,7 @@ function processSpawns(): void {
     if (wave === undefined || wave.at > world.time) break;
     pendingWaves.shift();
     const deity = deities.get(wave.deityId);
-    if (deity !== undefined) spawnUnit(world, deity, wave.side);
+    if (deity !== undefined) deploy(deity, wave.side);
   }
 
   for (;;) {
@@ -117,7 +132,7 @@ function processSpawns(): void {
     const deity = deities.get(deityId);
     if (deity === undefined || world.faith < deity.cost) continue;
     world.faith -= deity.cost;
-    spawnUnit(world, deity, 'player');
+    deploy(deity, 'player');
     // Played units cycle to the back; the next reinforcement takes the slot they vacated.
     hand = playFrom(hand, slotIndex);
   }
@@ -134,7 +149,7 @@ function processSpawns(): void {
   const chosen = deities.get(choice);
   if (chosen === undefined || enemyFaith < chosen.cost) return;
   enemyFaith -= chosen.cost;
-  spawnUnit(world, chosen, 'enemy');
+  deploy(chosen, 'enemy');
 }
 
 let previous = performance.now();
@@ -153,9 +168,11 @@ function frame(now: number): void {
 
   drawWorld(ctx, world, deities);
   drawEffects(ctx, world, deities, graph, elapsed);
+  recordEvents(battleLog, world.events, world.time);
   world.events.length = 0;
   hud.update(world, toDeities(hand.slots), toDeities(hand.queue));
   consultant.update(world, world.faith, elapsed);
+  report.update(world.outcome);
 
   requestAnimationFrame(frame);
 }
