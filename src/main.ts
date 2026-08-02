@@ -17,11 +17,12 @@ import { createRng } from './sim/rng';
 import type { Deity, DeityId, DeityIndex, StageWave } from './sim/types';
 import { preloadSprites } from './render/sprites';
 import { chooseSummon } from './sim/advisor';
+import { createHand, playFrom } from './sim/hand';
 import { createWorld, spawnUnit, tickWorld } from './sim/world';
 import { mountAdminPanel } from './ui/admin';
 import { mountCodex } from './ui/codex';
 import { mountConsultant } from './ui/consultant';
-import { mountDeckBuilder } from './ui/deckbuilder';
+import { mountDraftScreen } from './ui/draftscreen';
 import { mountHud } from './ui/hud';
 import { getSettings } from './ui/settings';
 
@@ -54,14 +55,21 @@ const playerDeck: readonly DeityId[] = getSettings().deck ?? stage.playerDeck;
 /** Waves not yet spawned, ascending by time. */
 const pendingWaves: StageWave[] = [...stage.waves].sort((a, b) => a.at - b.at);
 
-/** Summons requested since the last tick. Drained on a tick boundary so input never desyncs the sim. */
-const summonQueue: DeityId[] = [];
+/**
+ * Slot indices requested since the last tick. Drained on a tick boundary so input never desyncs the
+ * sim. Slots, not ids: which unit occupies a slot changes as the hand cycles, and the player is
+ * pressing a position on screen.
+ */
+const summonQueue: number[] = [];
 
-const deck: Deity[] = playerDeck
-  .map((id) => deities.get(id))
-  .filter((deity): deity is Deity => deity !== undefined);
+/** The cycling hand. Only its visible slots are summonable; the rest arrive as cards are played. */
+let hand = createHand(playerDeck);
 
-const hud = mountHud(hudRoot, deck, (deityId) => summonQueue.push(deityId));
+/** Resolves a list of ids to deities, dropping anything unknown. */
+const toDeities = (ids: readonly DeityId[]): Deity[] =>
+  ids.map((id) => deities.get(id)).filter((deity): deity is Deity => deity !== undefined);
+
+const hud = mountHud(hudRoot, (slotIndex) => summonQueue.push(slotIndex));
 
 mountCodex(ALL_DEITIES, ALL_EDGES);
 mountAdminPanel();
@@ -69,7 +77,7 @@ preloadSprites(ALL_DEITIES.map((deity) => deity.id));
 
 // Applying a deck restarts the battle. A reload is the honest way to do that: the deck is persisted,
 // and half-swapping a roster into a battle already in progress would leave the world inconsistent.
-mountDeckBuilder(ALL_DEITIES, graph, stage.playerDeck, () => window.location.reload());
+mountDraftScreen(ALL_DEITIES, graph, () => window.location.reload());
 
 const consultant = mountConsultant(deities, graph, playerDeck);
 
@@ -78,10 +86,13 @@ const consultant = mountConsultant(deities, graph, playerDeck);
  * same rule engine the consultant reads from. It sits on top of the scripted timeline rather than
  * replacing it, so the showcase beats still happen and the regression tests still hold.
  */
-// The opponent draws from the full roster across both pantheons. Because the advisor rewards
-// relational leverage, it naturally gravitates toward the player's own pantheon — bringing kin to
-// use against them — which is the counter-play the cross-pantheon choice is meant to provoke.
-const enemyDeck: DeityId[] = ALL_DEITIES.map((deity) => deity.id);
+/**
+ * The opponent plays the deck it drafted — an opening chosen blind, then reinforcements chosen
+ * after seeing the player's opening. Without a draft it improvises from the whole roster, which is
+ * strictly stronger, so an undrafted battle is the harder one.
+ */
+const enemyDeck: readonly DeityId[] =
+  getSettings().opponentDeck ?? ALL_DEITIES.map((deity) => deity.id);
 let enemyFaith = stage.startingFaith;
 let enemyThinkTimer = 0;
 
@@ -99,12 +110,16 @@ function processSpawns(): void {
   }
 
   for (;;) {
-    const deityId = summonQueue.shift();
-    if (deityId === undefined) break;
+    const slotIndex = summonQueue.shift();
+    if (slotIndex === undefined) break;
+    const deityId = hand.slots[slotIndex];
+    if (deityId === undefined) continue;
     const deity = deities.get(deityId);
     if (deity === undefined || world.faith < deity.cost) continue;
     world.faith -= deity.cost;
     spawnUnit(world, deity, 'player');
+    // Played units cycle to the back; the next reinforcement takes the slot they vacated.
+    hand = playFrom(hand, slotIndex);
   }
 
   if (!getSettings().enemyAi || world.outcome !== 'ongoing') return;
@@ -139,7 +154,7 @@ function frame(now: number): void {
   drawWorld(ctx, world, deities);
   drawEffects(ctx, world, deities, graph, elapsed);
   world.events.length = 0;
-  hud.update(world);
+  hud.update(world, toDeities(hand.slots), toDeities(hand.queue));
   consultant.update(world, world.faith, elapsed);
 
   requestAnimationFrame(frame);

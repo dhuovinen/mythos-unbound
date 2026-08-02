@@ -265,15 +265,21 @@ export type DrawEffects = (
   dt: number,
 ) => void;
 
-/** WP-6. Live HUD handle returned by mountHud. */
+/**
+ * WP-6. Live HUD handle returned by mountHud.
+ *
+ * `slots` are the units currently summonable and `queued` is what arrives next, both supplied every
+ * frame rather than at mount time — the hand cycles, so the HUD's contents change during a battle.
+ */
 export interface HudHandle {
   /** Called once per rendered frame with current state. */
-  update(world: World): void;
+  update(world: World, slots: readonly Deity[], queued: readonly Deity[]): void;
 }
 
-/** WP-6. Builds the faith bar and summon buttons into `root`. */
-export type MountHud = (
-  root: HTMLElement,
-  deck: readonly Deity[],
-  onSummon: (deityId: DeityId) => void,
-) => HudHandle;
+/**
+ * WP-6. Builds the faith bar and summon slots into `root`.
+ *
+ * Summoning is by SLOT INDEX, not by deity id: which unit occupies a slot changes as the hand
+ * cycles, and the player is pressing a position on screen.
+ */
+export type MountHud = (root: HTMLElement, onSummonSlot: (slotIndex: number) => void) => HudHandle;

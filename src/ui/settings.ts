@@ -22,8 +22,10 @@ export interface Settings {
   quantifyAdvice: boolean;
   /** Let the opponent summon its own counters instead of only running the scripted timeline. */
   enemyAi: boolean;
-  /** The player's chosen deck. Null means fall back to whatever the stage supplies. */
+  /** The player's drafted deck, opening first. Null means fall back to the stage default. */
   deck: string[] | null;
+  /** The opponent's drafted deck, opening first. Null means it improvises from the full roster. */
+  opponentDeck: string[] | null;
 }
 
 /** Deck size. Nine because summon shortcuts are the number keys 1-9. */
@@ -39,6 +41,7 @@ const DEFAULTS: Settings = {
   quantifyAdvice: false,
   enemyAi: true,
   deck: null,
+  opponentDeck: null,
 };
 
 const current: Settings = { ...DEFAULTS };
@@ -70,9 +73,11 @@ function load(): void {
     for (const key of flags) {
       if (typeof record[key] === 'boolean') current[key] = record[key];
     }
-    const deck = record['deck'];
-    if (Array.isArray(deck) && deck.every((id) => typeof id === 'string')) {
-      current.deck = deck.slice(0, DECK_SIZE);
+    for (const key of ['deck', 'opponentDeck'] as const) {
+      const value = record[key];
+      if (Array.isArray(value) && value.every((id) => typeof id === 'string')) {
+        current[key] = value.slice(0, DECK_SIZE);
+      }
     }
   } catch {
     // corrupt payload — keep defaults rather than throwing during boot
