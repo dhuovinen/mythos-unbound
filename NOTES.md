@@ -64,6 +64,25 @@ Known open items:
 - **Art:** Style C-B chosen, but no production sprites exist — `src/render/draw.ts` draws
   placeholder geometry in the C-B palette. Brief for the 22 production sprites is
   `docs/briefs/WP-9.md`, not yet dispatched.
+- **Kinship is currently a net liability — the biggest open balance problem.** The first
+  instant-resolve run produced a Defeat in which **both sides ended with a negative relational
+  swing** (player −425, opponent −30) across 368 attacks, 68% of which were shaped by kinship.
+  The penalties simply outweigh the bonuses:
+
+  | Cost | | Gain | |
+  |---|---|---|---|
+  | Entranced (opponent) | −1056 over 16 refused attacks | Kinship | +569 |
+  | Reluctance (opponent) | −342 | Blessed | +268 |
+  | Reluctance (player) | −332 | Rivalry | +224 |
+  | | | Usurpation | +132 |
+
+  Entranced is by far the most violent number in the game: refusing an attack forfeits its entire
+  value, so a single lover pairing swung more than every bonus the opponent earned combined.
+  Reluctance at ×0.6 is likewise a bigger effect than Usurpation at ×1.6.
+
+  As it stands, "bring family" is a trap — which inverts the intended design. Worth rebalancing
+  before adding more content: either soften Reluctance and Entranced, or strengthen the bonuses.
+
 - **Phase 2 balance notes** (found while tuning, not yet addressed):
   - *Titans are immune to chaff.* Damage floors at `max(1, raw - armor)`, so a 12-damage Hoplite
     does exactly 1 damage to Cronus's 24 armour and 2800 HP. This is what turns a front line into
