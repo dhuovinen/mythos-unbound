@@ -20,6 +20,7 @@ import { chooseSummon } from './sim/advisor';
 import { createBattleLog, noteDeployment, recordEvents } from './sim/battlelog';
 import { createHand, playFrom } from './sim/hand';
 import { createWorld, spawnUnit, tickWorld } from './sim/world';
+import type { ResolveResult } from './ui/admin';
 import { mountAdminPanel } from './ui/admin';
 import { mountCodex } from './ui/codex';
 import { mountConsultant } from './ui/consultant';
@@ -88,7 +89,6 @@ const hud = mountHud(hudRoot, (slotIndex) => summonQueue.push(slotIndex));
 const report = mountReport(battleLog, deities);
 
 mountCodex(ALL_DEITIES, ALL_EDGES);
-mountAdminPanel();
 preloadSprites(ALL_DEITIES.map((deity) => deity.id));
 
 // Applying a deck restarts the battle. A reload is the honest way to do that: the deck is persisted,
@@ -151,6 +151,67 @@ function processSpawns(): void {
   enemyFaith -= chosen.cost;
   deploy(chosen, 'enemy');
 }
+
+/** Seconds between the auto-player's decisions during a fast-forward. Matches the opponent's pace. */
+const AUTO_THINK_INTERVAL = 2.5;
+let autoThinkTimer = 0;
+
+/**
+ * Plays the player's side with the same rule engine the opponent uses, respecting the cycling hand
+ * — it can only summon what is actually in a slot. Used only while fast-forwarding.
+ */
+function autoSummonForPlayer(): void {
+  autoThinkTimer -= TICK_DT;
+  if (autoThinkTimer > 0) return;
+  autoThinkTimer = AUTO_THINK_INTERVAL;
+
+  const choice = chooseSummon(world, deities, graph, hand.slots, 'player', world.faith, stage.faithMax);
+  if (choice === null) return;
+  const slot = hand.slots.indexOf(choice);
+  if (slot >= 0) summonQueue.push(slot);
+}
+
+/** Sim seconds a fast-forward will run before giving up on a stalemate. */
+const RESOLVE_BUDGET_SECONDS = 400;
+
+/**
+ * Fast-forwards the battle to its conclusion.
+ *
+ * Deliberately runs the identical tick path the animation loop uses — same spawns, same tickWorld,
+ * same event recording — just without waiting for frames. So the outcome is genuinely what would
+ * have happened if the battle were played out, not a separate approximation of it.
+ *
+ * It blocks the main thread while it runs, which is fine for a testing aid and is why the budget
+ * exists: a true stalemate would otherwise never terminate.
+ */
+function resolveInstantly(): ResolveResult {
+  const started = performance.now();
+  const startedAt = world.time;
+  const maxTicks = Math.round(RESOLVE_BUDGET_SECONDS / TICK_DT);
+  let ticks = 0;
+
+  while (world.outcome === 'ongoing' && ticks < maxTicks) {
+    autoSummonForPlayer();
+    processSpawns();
+    tickWorld(world, TICK_DT, graph, deities, rng);
+    recordEvents(battleLog, world.events, world.time);
+    world.events.length = 0;
+    ticks++;
+  }
+
+  // The report normally surfaces itself from the animation loop; drive it directly so this works
+  // even when frames are not running.
+  report.update(world.outcome);
+
+  return {
+    outcome: world.outcome === 'victory' ? 'Victory' : world.outcome === 'defeat' ? 'Defeat' : 'No result',
+    simulatedSeconds: world.time - startedAt,
+    realMilliseconds: performance.now() - started,
+    hitBudget: world.outcome === 'ongoing',
+  };
+}
+
+mountAdminPanel(resolveInstantly);
 
 let previous = performance.now();
 let accumulator = 0;

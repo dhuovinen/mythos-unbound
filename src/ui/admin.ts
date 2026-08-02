@@ -49,6 +49,13 @@ function styles(): string {
   .ad-seg button.on { background: #c9a227; color: #17141a; }
   .ad-seg button:not(.on):hover { background: #1d1913; color: #e8dcc4; }
   .ad-note { margin-top: 7px; font-size: 11.5px; line-height: 1.45; color: #6d6355; }
+  .ad-wide-btn {
+    width: 100%; background: #241d10; color: #c9a227; border: 1px solid #c9a227;
+    border-radius: 8px; padding: 9px 12px; font-size: 13px; font-weight: 700;
+    font-family: inherit; cursor: pointer;
+  }
+  .ad-wide-btn:hover:not(:disabled) { background: #2f2614; }
+  .ad-wide-btn:disabled { opacity: .5; cursor: wait; }
   .ad-note.warn { color: #c98a27; }
   .ad-row {
     display: flex; align-items: center; justify-content: space-between; gap: 10px;
@@ -72,8 +79,21 @@ function styles(): string {
 /** Only the boolean settings can be driven by a switch. Derived, so new settings can't break it. */
 type ToggleKey = { [K in keyof Settings]: Settings[K] extends boolean ? K : never }[keyof Settings];
 
-/** Builds the gear button and the admin panel, and wires up every control. */
-export function mountAdminPanel(): void {
+/** What a fast-forward returned, so the panel can report it without guessing. */
+export interface ResolveResult {
+  readonly outcome: string;
+  readonly simulatedSeconds: number;
+  readonly realMilliseconds: number;
+  readonly hitBudget: boolean;
+}
+
+/**
+ * Builds the gear button and the admin panel, and wires up every control.
+ *
+ * `onResolve` fast-forwards the current battle to its conclusion. It is a testing aid, so it lives
+ * in its own clearly-labelled section rather than beside the display toggles.
+ */
+export function mountAdminPanel(onResolve?: () => ResolveResult): void {
   if (document.getElementById('admin-open') !== null) return;
 
   const style = el('style');
@@ -211,6 +231,37 @@ export function mountAdminPanel(): void {
   window.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') setOpen(false);
   });
+
+  // ---- testing aids -------------------------------------------------------
+  if (onResolve !== undefined) {
+    const testing = el('div', 'ad-group');
+    testing.append(el('div', 'ad-label', 'Testing'));
+
+    const resolve = document.createElement('button');
+    resolve.className = 'ad-wide-btn';
+    resolve.textContent = 'Resolve battle instantly';
+    const outcomeNote = el('div', 'ad-note');
+    outcomeNote.textContent =
+      'Fast-forwards the current battle through the same simulation, playing both sides with the rule engine. The result is what would have happened if you had let it run.';
+
+    resolve.addEventListener('click', () => {
+      resolve.disabled = true;
+      resolve.textContent = 'Resolving…';
+      // Yield a frame so the disabled state paints before the loop blocks the thread.
+      window.setTimeout(() => {
+        const result = onResolve();
+        outcomeNote.className = 'ad-note';
+        outcomeNote.textContent = result.hitBudget
+          ? `Stopped at the ${Math.round(result.simulatedSeconds)}s budget without a result — the battle was still a stalemate. Took ${Math.round(result.realMilliseconds)}ms.`
+          : `${result.outcome} after ${Math.round(result.simulatedSeconds)}s of battle, simulated in ${Math.round(result.realMilliseconds)}ms.`;
+        resolve.textContent = 'Resolve battle instantly';
+        resolve.disabled = false;
+      }, 16);
+    });
+
+    testing.append(resolve, outcomeNote);
+    panel.append(testing);
+  }
 
   sync();
   document.body.append(button, panel);
