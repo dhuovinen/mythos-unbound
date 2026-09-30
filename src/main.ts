@@ -10,11 +10,12 @@ import { GREEK_DEITIES, GREEK_EDGES } from './data/greek';
 import { NORSE_DEITIES, NORSE_EDGES } from './data/norse';
 import { SHOWCASE_STAGE } from './data/stages';
 import { drawEffects } from './render/effects';
-import { drawWorld } from './render/draw';
+import { drawWorld, setAutoBackdrop } from './render/draw';
+import { pantheonsOf } from './sim/draft';
 import { MAX_FRAME_DT, TICK_DT } from './sim/constants';
 import { buildGraph } from './sim/relations';
 import { createRng } from './sim/rng';
-import type { Deity, DeityId, DeityIndex, StageWave } from './sim/types';
+import type { Deity, DeityId, DeityIndex, Pantheon, StageWave } from './sim/types';
 import { preloadSprites } from './render/sprites';
 import { chooseSummon } from './sim/advisor';
 import { createBattleLog, noteDeployment, recordEvents } from './sim/battlelog';
@@ -54,6 +55,10 @@ const world = createWorld(stage, deities);
 
 /** The player's chosen deck, falling back to whatever the stage supplies. */
 const playerDeck: readonly DeityId[] = getSettings().deck ?? stage.playerDeck;
+
+// One pantheon fights in its own realm; a mixed deck fights in the open-world city.
+const deckRealms = pantheonsOf(playerDeck, ALL_DEITIES);
+setAutoBackdrop(deckRealms.length === 1 ? (deckRealms[0] as Pantheon) : 'openworld');
 
 /** Waves not yet spawned, ascending by time. */
 const pendingWaves: StageWave[] = [...stage.waves].sort((a, b) => a.at - b.at);

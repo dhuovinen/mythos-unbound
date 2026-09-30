@@ -5,8 +5,9 @@
  * the simulation, so flipping a switch can never change how a battle plays out, only how it looks.
  */
 
+import { BACKDROPS } from '../render/backdrops';
 import { spriteStats } from '../render/sprites';
-import type { Settings, UnitGraphics } from './settings';
+import type { BackdropChoice, Settings, UnitGraphics } from './settings';
 import { getSettings, setSetting } from './settings';
 
 function el(tag: string, className?: string, text?: string): HTMLElement {
@@ -45,6 +46,8 @@ function styles(): string {
     flex: 1; background: #0f0d0d; border: none; color: #a99c85; cursor: pointer;
     padding: 8px 6px; font-size: 12.5px; font-weight: 700; font-family: inherit;
   }
+  .ad-seg.wrap { flex-wrap: wrap; }
+  .ad-seg.wrap button { flex: 1 1 33%; border-top: 1px solid #3a3229; }
   .ad-seg button + button { border-left: 1px solid #3a3229; }
   .ad-seg button.on { background: #c9a227; color: #17141a; }
   .ad-seg button:not(.on):hover { background: #1d1913; color: #e8dcc4; }
@@ -157,6 +160,26 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
   group.append(seg, note);
   panel.append(group);
 
+  // ---- battlefield backdrop -----------------------------------------------
+  const scene = el('div', 'ad-group');
+  scene.append(el('div', 'ad-label', 'Battlefield'));
+  const sceneSeg = el('div', 'ad-seg wrap');
+  const sceneOptions: readonly { value: BackdropChoice; label: string }[] = [
+    { value: 'auto', label: 'Auto' },
+    ...BACKDROPS.map((b) => ({ value: b.id as BackdropChoice, label: b.label })),
+  ];
+  const sceneButtons = sceneOptions.map((option) => {
+    const node = el('button', undefined, option.label);
+    node.addEventListener('click', () => {
+      setSetting('backdrop', option.value);
+      sync();
+    });
+    sceneSeg.append(node);
+    return { option, node };
+  });
+  scene.append(sceneSeg, el('div', 'ad-note', 'Auto picks the realm your deck belongs to, or the city if it mixes pantheons.'));
+  panel.append(scene);
+
   // ---- overlay toggles ----------------------------------------------------
   const overlays = el('div', 'ad-group');
   overlays.append(el('div', 'ad-label', 'Relational overlays'));
@@ -214,6 +237,9 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
     const settings = getSettings();
     for (const entry of buttons) {
       entry.node.classList.toggle('on', settings.unitGraphics === entry.option.value);
+    }
+    for (const entry of sceneButtons) {
+      entry.node.classList.toggle('on', settings.backdrop === entry.option.value);
     }
     for (const entry of switches) {
       entry.node.classList.toggle('on', settings[entry.key]);

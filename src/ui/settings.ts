@@ -9,7 +9,14 @@
 /** How units are drawn on the battlefield. */
 export type UnitGraphics = 'blocks' | 'sprites';
 
+/** Which battlefield scene to draw. 'auto' follows the deck: one pantheon gets its realm, a mix gets the city. */
+export type BackdropChoice = 'auto' | 'greek' | 'norse' | 'egyptian' | 'openworld';
+
+export const BACKDROP_CHOICES: readonly BackdropChoice[] = ['auto', 'greek', 'norse', 'egyptian', 'openworld'];
+
 export interface Settings {
+  /** The battlefield scene. */
+  backdrop: BackdropChoice;
   /** 'blocks' is the built-in placeholder geometry; 'sprites' uses art from art/roster/. */
   unitGraphics: UnitGraphics;
   /** Coloured arcs linking units that currently have a live relationship. */
@@ -34,6 +41,7 @@ export const DECK_SIZE = 9;
 const STORAGE_KEY = 'mythos-unbound.settings.v1';
 
 const DEFAULTS: Settings = {
+  backdrop: 'auto',
   unitGraphics: 'blocks',
   showTethers: true,
   showStatusPips: true,
@@ -63,6 +71,8 @@ function load(): void {
     if (record['unitGraphics'] === 'blocks' || record['unitGraphics'] === 'sprites') {
       current.unitGraphics = record['unitGraphics'];
     }
+    const backdrop = record['backdrop'];
+    if (BACKDROP_CHOICES.some((choice) => choice === backdrop)) current.backdrop = backdrop as BackdropChoice;
     const flags = [
       'showTethers',
       'showStatusPips',
