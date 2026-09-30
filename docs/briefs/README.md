@@ -1,4 +1,4 @@
-# Agent briefs — Theomachy Phase 1
+# Agent briefs — Mythos Unbound Phase 1
 
 Eight work packages. **WP-0 (scaffold + frozen contracts) is done.** WP-1 through WP-8 are fully
 parallel: seven agents can run at once with zero file overlap. WP-7 (art) is already delivered.

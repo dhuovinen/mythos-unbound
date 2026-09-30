@@ -10,7 +10,7 @@ import type { Stage } from '../sim/types';
 /** The Phase 1 scripted battle. Deterministic — no AI, no randomness. */
 export const SHOWCASE_STAGE: Stage = {
   id: 'greek-showcase',
-  name: 'Showcase: Theomachy',
+  name: 'Showcase: Mythos Unbound',
   // Ares is in the PLAYER deck deliberately: Jealousy needs Aphrodite, her spouse Hephaestus and
   // her lover Ares all fielded on the SAME side. Without him beat 6 can never fire.
   playerDeck: [

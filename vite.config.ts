@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 
-// Port 3033 is reserved for games-strategy-001 in ~/Projects/app-registry (frontend range 3000-3999).
+// Port 3033 is reserved for mythos-unbound in ~/Projects/app-registry (frontend range 3000-3999).
 //
 // host: true binds both IP stacks. Without it Vite binds IPv6 only, so http://127.0.0.1:3033 is
 // refused and any browser resolving "localhost" to IPv4 sees connection-refused — which looks

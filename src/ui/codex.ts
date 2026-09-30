@@ -251,7 +251,7 @@ export function mountCodex(deities: readonly Deity[], edges: readonly Edge[]): v
   // ---- header -------------------------------------------------------------
   const head = el('div', 'cx-head');
   const headText = el('div');
-  headText.append(el('h1', undefined, 'Theomachy — Codex'));
+  headText.append(el('h1', undefined, 'Mythos Unbound — Codex'));
   headText.append(
     el('p', undefined, 'Every table below is generated from the live game data, not written by hand.'),
   );
@@ -282,7 +282,7 @@ export function mountCodex(deities: readonly Deity[], edges: readonly Edge[]): v
     el(
       'p',
       undefined,
-      'This is what makes Theomachy different from other lane battlers. Units do not simply trade damage — they react to who they are fighting. A father hesitates against his own son. That son strikes back harder than he ever would against a stranger. Lovers refuse to fight at all, and simply stand there. Cronus, who devoured his children, feels no hesitation whatsoever.',
+      'This is what makes Mythos Unbound different from other lane battlers. Units do not simply trade damage — they react to who they are fighting. A father hesitates against his own son. That son strikes back harder than he ever would against a stranger. Lovers refuse to fight at all, and simply stand there. Cronus, who devoured his children, feels no hesitation whatsoever.',
     ),
   );
   sheet.append(

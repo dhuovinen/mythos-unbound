@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "theomachy",
+      "name": "mythos-unbound",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 3033

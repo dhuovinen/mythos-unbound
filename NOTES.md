@@ -2,7 +2,7 @@
 
 ## What this is
 
-**Theomachy** (working title) — a browser lane-battler where mythological units change their
+**Mythos Unbound** — a browser lane-battler where mythological units change their
 behaviour based on their *genealogical relationship* to the units they face. Cronus deals bonus
 damage to his own children; Zeus deals bonus damage back to his father; Ares and Aphrodite refuse
 to fight each other. Relations only resolve within a pantheon, so fighting cross-pantheon

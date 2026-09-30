@@ -31,7 +31,7 @@ export interface Settings {
 /** Deck size. Nine because summon shortcuts are the number keys 1-9. */
 export const DECK_SIZE = 9;
 
-const STORAGE_KEY = 'theomachy.settings.v1';
+const STORAGE_KEY = 'mythos-unbound.settings.v1';
 
 const DEFAULTS: Settings = {
   unitGraphics: 'blocks',
