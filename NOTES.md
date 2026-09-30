@@ -31,6 +31,15 @@ npm run build     # typecheck + vite build
 Art concept boards (WP-7 output, 9 renders across 3 styles) live in `art/concepts/` and are
 served at http://localhost:3033/art/concepts/ while the dev server is running.
 
+## Branches
+
+- `main` — the original line of development.
+- `olympus` — a variant of Mythos Unbound that evolves independently of `main`. It was forked from
+  `feat/status-readout` (commit `2280032`, the Mythos Unbound rename), which carries everything
+  through the Egyptian pantheon, deck building, the battle report and the admin panel; `main` had
+  none of that at the time. `olympus` is not expected to merge back, so changes made on one line do
+  not flow to the other automatically — port them deliberately (cherry-pick) when wanted.
+
 ## Status
 
 **Phase 0 and Phase 1: complete.** All 8 work packages done. 54 tests passing, `tsc --noEmit` clean.
