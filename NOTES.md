@@ -40,6 +40,21 @@ served at http://localhost:3033/art/concepts/ while the dev server is running.
   none of that at the time. `olympus` is not expected to merge back, so changes made on one line do
   not flow to the other automatically — port them deliberately (cherry-pick) when wanted.
 
+## Olympus: visual overhaul (in progress)
+
+The `olympus` branch is about looks; gameplay is unchanged.
+
+- **Backdrops — done.** `src/render/backdrops.ts`: Greek, Norse, Egyptian and an open-world city,
+  plus a themed base for each. The admin panel's *Battlefield* setting is `Auto` by default: one
+  pantheon fights in its own realm, a mixed deck in the city. No gold anywhere in the scenes.
+- **Character rig — prototype.** `src/render/rig/`: one skeleton drawn in Canvas 2D, animated
+  procedurally (idle, walk, attack, hit, death). Five recipes exist: Hoplite, Anubis, Zeus, Thor,
+  Cronus. Try it at `/rig.html` (dev server) or switch *Unit graphics* to **Rig** in the admin
+  panel. Other deities fall back to blocks.
+- **Sprite comparison — waiting on art.** `docs/briefs/SPRITE-COMPARE.md` is the brief for
+  generating the same five deities as sprites, to be judged side by side against the rig.
+- **Next:** decide rig vs sprites, then the realm-based team picker with a family-tree view.
+
 ## Status
 
 **Phase 0 and Phase 1: complete.** All 8 work packages done. 54 tests passing, `tsc --noEmit` clean.

@@ -7,7 +7,7 @@
  */
 
 /** How units are drawn on the battlefield. */
-export type UnitGraphics = 'blocks' | 'sprites';
+export type UnitGraphics = 'blocks' | 'sprites' | 'rig';
 
 /** Which battlefield scene to draw. 'auto' follows the deck: one pantheon gets its realm, a mix gets the city. */
 export type BackdropChoice = 'auto' | 'greek' | 'norse' | 'egyptian' | 'openworld';
@@ -17,7 +17,7 @@ export const BACKDROP_CHOICES: readonly BackdropChoice[] = ['auto', 'greek', 'no
 export interface Settings {
   /** The battlefield scene. */
   backdrop: BackdropChoice;
-  /** 'blocks' is the built-in placeholder geometry; 'sprites' uses art from art/roster/. */
+  /** 'blocks' is placeholder geometry; 'sprites' uses art from art/roster/; 'rig' draws animated figures in code. */
   unitGraphics: UnitGraphics;
   /** Coloured arcs linking units that currently have a live relationship. */
   showTethers: boolean;
@@ -68,7 +68,7 @@ function load(): void {
     const parsed: unknown = JSON.parse(raw);
     if (typeof parsed !== 'object' || parsed === null) return;
     const record = parsed as Record<string, unknown>;
-    if (record['unitGraphics'] === 'blocks' || record['unitGraphics'] === 'sprites') {
+    if (record['unitGraphics'] === 'blocks' || record['unitGraphics'] === 'sprites' || record['unitGraphics'] === 'rig') {
       current.unitGraphics = record['unitGraphics'];
     }
     const backdrop = record['backdrop'];

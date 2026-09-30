@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mythos Unbound — rig prototype</title>
+    <style>
+      :root { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #141010; color: #e8dcc4; font-family: ui-sans-serif, system-ui, sans-serif; padding: 20px; }
+      h1 { margin: 0 0 4px; font-size: 20px; }
+      p.sub { margin: 0 0 16px; color: #a99c85; font-size: 13px; max-width: 80ch; line-height: 1.5; }
+      .bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
+      .bar button { background: #1a1616; color: #e8dcc4; border: 1px solid #4a4038; border-radius: 6px; padding: 7px 14px; font: 700 13px inherit; cursor: pointer; }
+      .bar button.on { background: #e8dcc4; color: #141010; }
+      .cards { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+      .card { background: #1b1720; border: 1px solid #3a3229; border-radius: 10px; padding: 10px; width: 232px; }
+      .card h2 { margin: 0 0 2px; font-size: 15px; }
+      .card .meta { font-size: 11px; color: #a99c85; margin-bottom: 8px; text-transform: uppercase; letter-spacing: .6px; }
+      canvas { display: block; background: #231f26; border-radius: 6px; }
+      .stage canvas { width: 100%; max-width: 960px; border: 1px solid #3a3229; }
+      .label { font-size: 11px; color: #857a68; margin: 8px 0 4px; text-transform: uppercase; letter-spacing: .6px; }
+    </style>
+  </head>
+  <body>
+    <h1>Rig prototype</h1>
+    <p class="sub">
+      Five deities drawn and animated entirely in code, from one skeleton. Each card shows the figure large, then a
+      portrait crop. The battlefield below draws them at real game scale (tier sets the size) on a real backdrop.
+    </p>
+    <div class="bar" id="bar"></div>
+    <div class="cards" id="cards"></div>
+    <div class="stage" id="stage"></div>
+    <script type="module" src="/src/render/rig/preview.ts"></script>
+  </body>
+</html>

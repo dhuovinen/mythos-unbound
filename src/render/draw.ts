@@ -18,6 +18,7 @@ import type { Deity, DrawWorld, Tier, Unit } from '../sim/types';
 import { getSettings } from '../ui/settings';
 import { BASE_HEIGHT, drawBackdropScene, drawBaseStructure } from './backdrops';
 import type { BackdropId } from './backdrops';
+import { drawGhosts, drawRigUnit, hasRig, updateRigs } from './rig/animator';
 import { getSprite } from './sprites';
 
 const INK = '#1A1A1E';
@@ -55,7 +56,18 @@ export function unitFootY(unit: Unit): number {
 
 /** Screen height of a unit's body, by tier. */
 export function unitBodyHeight(deity: Deity | undefined): number {
-  return TIER_SIZE[deity?.tier ?? 'chaff'].h;
+  const tier = deity?.tier ?? 'chaff';
+  // Figures (sprites, rigs) stand far taller than the placeholder blocks, and everything anchored
+  // above a unit — health bar, tags, pips — has to clear the body actually on screen.
+  if (deity !== undefined && drawnAsFigure(deity)) return SPRITE_BASE * SPRITE_TIER_SCALE[tier];
+  return TIER_SIZE[tier].h;
+}
+
+/** True when this deity is currently drawn as a full figure rather than a placeholder block. */
+function drawnAsFigure(deity: Deity): boolean {
+  const mode = getSettings().unitGraphics;
+  if (mode === 'rig') return hasRig(deity.id);
+  return mode === 'sprites' && getSprite(deity.id) !== null;
 }
 
 /** Draws a filled shape with the heavy ink outline the woodcut direction calls for. */
@@ -127,7 +139,12 @@ function drawSprite(
 function drawUnit(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | undefined): void {
   const sx = worldToScreen(unit.x);
 
-  // Sprite mode falls back per unit, not globally, so a half-delivered roster still renders.
+  // Figure modes fall back per unit, not globally, so a half-delivered roster still renders.
+  if (getSettings().unitGraphics === 'rig' && deity !== undefined && hasRig(deity.id)) {
+    const scale = (SPRITE_BASE * SPRITE_TIER_SCALE[deity.tier]) / 100;
+    drawRigUnit(ctx, unit, deity, sx, unitFootY(unit), scale, performance.now() / 1000);
+    return;
+  }
   if (getSettings().unitGraphics === 'sprites' && deity !== undefined) {
     const image = getSprite(deity.id);
     if (image !== null) {
@@ -185,8 +202,7 @@ function drawHealth(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | un
   const frac = Math.max(0, Math.min(1, unit.hp / unit.maxHp));
   const width = unit.isBase ? 46 : Math.max(20, TIER_SIZE[deity?.tier ?? 'chaff'].w + 8);
   const height = unit.isBase ? 6 : 4;
-  const size = TIER_SIZE[deity?.tier ?? 'chaff'];
-  const y = unit.isBase ? LANE_Y - BASE_HEIGHT - 22 : LANE_Y + jitter(unit.id) - size.h - 9;
+  const y = unit.isBase ? LANE_Y - BASE_HEIGHT - 22 : LANE_Y + jitter(unit.id) - unitBodyHeight(deity) - 9;
 
   ctx.fillStyle = INK;
   ctx.fillRect(sx - width / 2 - 1, y - 1, width + 2, height + 2);
@@ -215,7 +231,9 @@ export const drawWorld: DrawWorld = (ctx, world, deities) => {
 
   const realm = activeBackdrop();
   for (const base of bases) drawBaseStructure(ctx, realm, worldToScreen(base.x), base.side);
+  updateRigs(world, performance.now() / 1000);
   for (const unit of mobile) drawUnit(ctx, unit, deities.get(unit.deityId));
+  drawGhosts(ctx, deities, performance.now() / 1000);
   for (const base of bases) drawHealth(ctx, base, undefined);
   for (const unit of mobile) drawHealth(ctx, unit, deities.get(unit.deityId));
 

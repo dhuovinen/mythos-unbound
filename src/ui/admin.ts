@@ -126,6 +126,7 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
   const options: readonly { value: UnitGraphics; label: string }[] = [
     { value: 'blocks', label: 'Blocks' },
     { value: 'sprites', label: 'Sprites' },
+    { value: 'rig', label: 'Rig' },
   ];
   const note = el('div', 'ad-note');
 
@@ -134,6 +135,11 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
     if (getSettings().unitGraphics === 'blocks') {
       note.className = 'ad-note';
       note.textContent = 'Placeholder geometry: tier-sized shapes with each unit’s initial.';
+      return;
+    }
+    if (getSettings().unitGraphics === 'rig') {
+      note.className = 'ad-note';
+      note.textContent = 'Animated figures drawn in code. Prototype: Hoplite, Anubis, Zeus, Thor and Cronus; everyone else falls back to blocks.';
       return;
     }
     if (stats.ready === 0) {
