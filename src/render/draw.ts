@@ -58,7 +58,7 @@ export function unitBodyHeight(deity: Deity | undefined): number {
   const tier = deity?.tier ?? 'chaff';
   // Figures (sprites, rigs) stand far taller than the placeholder blocks, and everything anchored
   // above a unit — health bar, tags, pips — has to clear the body actually on screen.
-  if (deity !== undefined && drawnAsFigure(deity)) return SPRITE_BASE * SPRITE_TIER_SCALE[tier];
+  if (deity !== undefined && drawnAsFigure(deity)) return figureHeight(tier);
   return TIER_SIZE[tier].h;
 }
 
@@ -94,6 +94,11 @@ export function activeBackdrop(): BackdropId {
 /** On-screen height of a titan's sprite frame; every other tier is a fraction of this. */
 const SPRITE_BASE = 98;
 
+/** On-screen height of a figure of this tier, after the player's size setting. */
+function figureHeight(tier: Tier): number {
+  return SPRITE_BASE * SPRITE_TIER_SCALE[tier] * getSettings().unitScale;
+}
+
 /**
  * Per-tier sprite scale.
  *
@@ -105,9 +110,9 @@ const SPRITE_BASE = 98;
  * agree on a ratio. This stays correct even if the art is later regenerated to spec.
  */
 const SPRITE_TIER_SCALE: Readonly<Record<Tier, number>> = {
-  chaff: 0.55,
-  demigod: 0.7,
-  god: 0.85,
+  chaff: 0.62,
+  demigod: 0.76,
+  god: 0.88,
   titan: 1,
 };
 
@@ -117,7 +122,7 @@ function drawUnit(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | unde
 
   // Figure modes fall back per unit, not globally, so a half-delivered roster still renders.
   if (deity !== undefined && hasFigure(deity)) {
-    const scale = (SPRITE_BASE * SPRITE_TIER_SCALE[deity.tier]) / 100;
+    const scale = figureHeight(deity.tier) / 100;
     drawFigureUnit(ctx, unit, deity, sx, unitFootY(unit), scale, performance.now() / 1000);
     return;
   }
@@ -169,7 +174,8 @@ function drawUnit(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | unde
 function drawHealth(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | undefined): void {
   const sx = worldToScreen(unit.x);
   const frac = Math.max(0, Math.min(1, unit.hp / unit.maxHp));
-  const width = unit.isBase ? 46 : Math.max(20, TIER_SIZE[deity?.tier ?? 'chaff'].w + 8);
+  const figure = deity !== undefined && !unit.isBase && drawnAsFigure(deity);
+  const width = unit.isBase ? 46 : figure ? Math.max(34, unitBodyHeight(deity) * 0.42) : Math.max(20, TIER_SIZE[deity?.tier ?? 'chaff'].w + 8);
   const height = unit.isBase ? 6 : 4;
   const y = unit.isBase ? LANE_Y - BASE_HEIGHT - 22 : LANE_Y + jitter(unit.id) - unitBodyHeight(deity) - 9;
 

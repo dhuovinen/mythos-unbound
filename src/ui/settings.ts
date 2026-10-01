@@ -17,6 +17,8 @@ export const BACKDROP_CHOICES: readonly BackdropChoice[] = ['auto', 'greek', 'no
 export interface Settings {
   /** The battlefield scene. */
   backdrop: BackdropChoice;
+  /** Size multiplier for drawn figures (art and rig); blocks are unaffected. 1 is the original size. */
+  unitScale: number;
   /** How much the backdrops are lightened, 0 (as painted) to 1 (as light as it goes). */
   backdropLight: number;
   /** 'blocks' is placeholder geometry; 'rig' draws animated figures in code; 'sprites' uses hand-drawn art, falling back to the rig. */
@@ -45,6 +47,7 @@ const STORAGE_KEY = 'mythos-unbound.settings.v1';
 const DEFAULTS: Settings = {
   backdrop: 'auto',
   backdropLight: 0.3,
+  unitScale: 1.45,
   unitGraphics: 'sprites',
   showTethers: true,
   showStatusPips: true,
@@ -76,6 +79,8 @@ function load(): void {
     }
     const backdrop = record['backdrop'];
     if (BACKDROP_CHOICES.some((choice) => choice === backdrop)) current.backdrop = backdrop as BackdropChoice;
+    const size = record['unitScale'];
+    if (typeof size === 'number' && Number.isFinite(size)) current.unitScale = Math.min(2.2, Math.max(0.8, size));
     const light = record['backdropLight'];
     if (typeof light === 'number' && Number.isFinite(light)) current.backdropLight = Math.min(1, Math.max(0, light));
     const flags = [

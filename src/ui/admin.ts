@@ -157,6 +157,24 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
     return { option, node: optionButton };
   });
   group.append(seg, note);
+
+  const size = el('div', 'ad-row-block');
+  size.append(el('div', 'ad-label', 'Unit size'));
+  const sizeRow = el('div', 'ad-slider');
+  const sizeSlider = document.createElement('input');
+  sizeSlider.type = 'range';
+  sizeSlider.min = '80';
+  sizeSlider.max = '220';
+  sizeSlider.step = '5';
+  sizeSlider.setAttribute('aria-label', 'Unit size');
+  const sizeValue = el('span');
+  sizeSlider.addEventListener('input', () => {
+    setSetting('unitScale', Number(sizeSlider.value) / 100);
+    sizeValue.textContent = `${sizeSlider.value}%`;
+  });
+  sizeRow.append(sizeSlider, sizeValue);
+  size.append(sizeRow, el('div', 'ad-note', 'How large art and rig figures are drawn. Blocks are unaffected.'));
+  group.append(size);
   panel.append(group);
 
   // ---- battlefield backdrop -----------------------------------------------
@@ -255,6 +273,8 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
     for (const entry of buttons) {
       entry.node.classList.toggle('on', settings.unitGraphics === entry.option.value);
     }
+    sizeSlider.value = String(Math.round(settings.unitScale * 100));
+    sizeValue.textContent = `${sizeSlider.value}%`;
     slider.value = String(Math.round(settings.backdropLight * 100));
     lightValue.textContent = `${slider.value}%`;
     for (const entry of sceneButtons) {
