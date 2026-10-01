@@ -10,9 +10,10 @@ import { GREEK_DEITIES, GREEK_EDGES } from './data/greek';
 import { NORSE_DEITIES, NORSE_EDGES } from './data/norse';
 import { SHOWCASE_STAGE } from './data/stages';
 import { drawEffects } from './render/effects';
+import { setBackdropScale } from './render/backdrops';
 import { drawWorld, setAutoBackdrop } from './render/draw';
 import { pantheonsOf } from './sim/draft';
-import { MAX_FRAME_DT, TICK_DT } from './sim/constants';
+import { CANVAS_HEIGHT, CANVAS_WIDTH, MAX_FRAME_DT, TICK_DT } from './sim/constants';
 import { buildGraph } from './sim/relations';
 import { createRng } from './sim/rng';
 import type { Deity, DeityId, DeityIndex, Pantheon, StageWave } from './sim/types';
@@ -37,6 +38,24 @@ if (canvas === null || hudRoot === null) throw new Error('index.html is missing 
 const maybeCtx = canvas.getContext('2d');
 if (maybeCtx === null) throw new Error('2D canvas context unavailable');
 const ctx: CanvasRenderingContext2D = maybeCtx;
+
+/**
+ * The canvas is shown as large as the window allows (see index.html). Its drawing buffer is sized to
+ * match, so scenery and figures stay sharp, while everything is still drawn in the fixed logical
+ * 960x540 coordinates the game uses — `renderScale` is the one number that bridges them.
+ */
+let renderScale = 1;
+function fitCanvas(): void {
+  const dpr = window.devicePixelRatio || 1;
+  const shown = canvas?.clientWidth ?? CANVAS_WIDTH;
+  renderScale = Math.min(2.5, Math.max(1, (shown * dpr) / CANVAS_WIDTH));
+  if (canvas === null) return;
+  canvas.width = Math.round(CANVAS_WIDTH * renderScale);
+  canvas.height = Math.round(CANVAS_HEIGHT * renderScale);
+  setBackdropScale(renderScale);
+}
+fitCanvas();
+window.addEventListener('resize', fitCanvas);
 
 const stage = SHOWCASE_STAGE;
 
@@ -232,6 +251,7 @@ function frame(now: number): void {
     accumulator -= TICK_DT;
   }
 
+  ctx.setTransform(renderScale, 0, 0, renderScale, 0, 0);
   drawWorld(ctx, world, deities);
   drawEffects(ctx, world, deities, graph, elapsed);
   recordEvents(battleLog, world.events, world.time);

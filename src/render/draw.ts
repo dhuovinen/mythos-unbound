@@ -38,19 +38,18 @@ export function worldToScreen(x: number): number {
 }
 
 /**
- * Deterministic per-unit vertical offset so a stack of units on the same lane position stays
- * countable. Derived from the id — never random, which would shimmer frame to frame.
+ * Depth rows. The simulation is a single lane, so units at the same position overlap exactly. The
+ * renderer fans them across four rows of ground instead, assigned from the unit id so consecutive
+ * summons land on different rows and a stack stays readable. Purely visual: nothing in the sim knows.
  */
-function jitter(id: number): number {
-  return ((Math.imul(id, 2654435761) >>> 28) % 7) - 3;
-}
+const DEPTH_ROWS: readonly number[] = [0, 30, 15, 45];
 
 /**
- * Screen y of a unit's feet, jitter included. Exported so the effects layer can anchor to exactly
- * the same spot — otherwise tags and status pips drift a few pixels off their unit.
+ * Screen y of a unit's feet, depth row included. Exported so the effects layer can anchor to exactly
+ * the same spot — otherwise tags and status pips drift off their unit.
  */
 export function unitFootY(unit: Unit): number {
-  return unit.isBase ? LANE_Y : LANE_Y + jitter(unit.id);
+  return unit.isBase ? LANE_Y : LANE_Y + (DEPTH_ROWS[unit.id % DEPTH_ROWS.length] ?? 0);
 }
 
 /** Screen height of a unit's body, by tier. */
@@ -131,7 +130,7 @@ function drawUnit(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | unde
   const isPlayer = unit.side === 'player';
   const fill = isPlayer ? BONE : BLOOD;
   const facing = isPlayer ? 1 : -1;
-  const baseY = LANE_Y + jitter(unit.id);
+  const baseY = unitFootY(unit);
   const top = baseY - size.h;
 
   // Body — a tapered slab, wider at the shoulders, which keeps tiers distinguishable in silhouette.
@@ -177,7 +176,7 @@ function drawHealth(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | un
   const figure = deity !== undefined && !unit.isBase && drawnAsFigure(deity);
   const width = unit.isBase ? 46 : figure ? Math.max(34, unitBodyHeight(deity) * 0.42) : Math.max(20, TIER_SIZE[deity?.tier ?? 'chaff'].w + 8);
   const height = unit.isBase ? 6 : 4;
-  const y = unit.isBase ? LANE_Y - BASE_HEIGHT - 22 : LANE_Y + jitter(unit.id) - unitBodyHeight(deity) - 9;
+  const y = unit.isBase ? LANE_Y - BASE_HEIGHT - 22 : unitFootY(unit) - unitBodyHeight(deity) - 9;
 
   ctx.fillStyle = INK;
   ctx.fillRect(sx - width / 2 - 1, y - 1, width + 2, height + 2);
@@ -193,15 +192,16 @@ export const drawWorld: DrawWorld = (ctx, world, deities) => {
   ctx.save();
   drawBackdropScene(ctx, activeBackdrop(), performance.now() / 1000);
 
-  // Bases first so units read as standing in front of them. Within units, draw by descending tier
-  // so a big unit never hides behind a chaff body it is standing on top of.
+  // Bases first so units read as standing in front of them. Units further back (higher on screen)
+  // draw first so nearer rows overlap them; within a row, descending tier so a big unit never hides
+  // behind a chaff body it is standing on top of.
   const bases = world.units.filter((u) => u.isBase);
   const mobile = world.units.filter((u) => !u.isBase);
   const order: Record<Tier, number> = { titan: 0, god: 1, demigod: 2, chaff: 3 };
   mobile.sort((a, b) => {
     const ta = deities.get(a.deityId)?.tier ?? 'chaff';
     const tb = deities.get(b.deityId)?.tier ?? 'chaff';
-    return order[ta] - order[tb] || a.id - b.id;
+    return unitFootY(a) - unitFootY(b) || order[ta] - order[tb] || a.id - b.id;
   });
 
   const realm = activeBackdrop();

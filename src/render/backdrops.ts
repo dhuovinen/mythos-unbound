@@ -881,21 +881,38 @@ const ANIMATE: Readonly<Record<BackdropId, (ctx: Ctx, t: number) => void>> = {
 
 const cache = new Map<BackdropId, HTMLCanvasElement>();
 
+/** Pixels per logical unit the static layers are painted at. Raised when the display is larger. */
+let layerScale = 1;
+
+/**
+ * Tells the scenery how large it will be shown, so its painted layers stay crisp instead of being
+ * stretched. Only a meaningful change repaints them.
+ */
+export function setBackdropScale(scale: number): void {
+  const next = Math.min(2.5, Math.max(1, scale));
+  if (Math.abs(next - layerScale) < 0.15) return;
+  layerScale = next;
+  cache.clear();
+}
+
 function staticLayer(id: BackdropId): HTMLCanvasElement {
   const existing = cache.get(id);
   if (existing !== undefined) return existing;
   const layer = document.createElement('canvas');
-  layer.width = W;
-  layer.height = H;
+  layer.width = Math.round(W * layerScale);
+  layer.height = Math.round(H * layerScale);
   const ctx = layer.getContext('2d');
-  if (ctx !== null) PAINT[id](ctx);
+  if (ctx !== null) {
+    ctx.scale(layerScale, layerScale);
+    PAINT[id](ctx);
+  }
   cache.set(id, layer);
   return layer;
 }
 
 /** Draws the scene for `id`. `seconds` drives ambient motion only — it never affects gameplay. */
 export function drawBackdropScene(ctx: Ctx, id: BackdropId, seconds: number): void {
-  ctx.drawImage(staticLayer(id), 0, 0);
+  ctx.drawImage(staticLayer(id), 0, 0, W, H);
   ctx.save();
   ANIMATE[id](ctx, seconds);
   ctx.restore();

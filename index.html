@@ -8,6 +8,8 @@
     <style>
       :root {
         color-scheme: dark;
+        /* As wide as the window allows, but never so tall that the HUD below is pushed off screen. */
+        --stage-w: min(calc(100vw - 32px), calc((100vh - 200px) * 16 / 9));
         --bone: #e8dcc4;
         --ink: #141010;
       }
@@ -25,13 +27,16 @@
         font-family: ui-sans-serif, system-ui, sans-serif;
       }
       #app {
+        width: var(--stage-w);
         display: flex;
         flex-direction: column;
         gap: 8px;
       }
       #stage {
         display: block;
-        max-width: 100%;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
         background: #1d1a17;
         border: 1px solid #3a3229;
       }
