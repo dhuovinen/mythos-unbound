@@ -105,7 +105,7 @@
     {
       "name": "Harpy",
       "id": "harpy",
-      "type": "chaff · flyer",
+      "type": "chaff \u00b7 flyer",
       "pantheon": "Greek",
       "subject": "Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.",
       "portrait": "Three-quarter view, head to hips, wings flared up behind both shoulders, one clawed hand raised, hungry stare.",
@@ -143,7 +143,7 @@
       "id": "asclepius",
       "type": "demigod",
       "pantheon": "Greek",
-      "subject": "Bearded physician-god in a plain draped robe, carrying a staff wound with exactly one serpent (never two: this is not the caduceus) — bone serpent with ink pattern and a blood-red tongue. Satchel of instruments at the hip. The staff and its serpent define the silhouette. No gold.",
+      "subject": "Bearded physician-god in a plain draped robe, carrying a staff wound with exactly one serpent (never two: this is not the caduceus) \u2014 bone serpent with ink pattern and a blood-red tongue. Satchel of instruments at the hip. The staff and its serpent define the silhouette. No gold.",
       "portrait": "Three-quarter view, head to hips, staff held upright in front with the serpent's head near his shoulder, calm hooded eyes.",
       "notes": "attack_01: staff drawn back, serpent coiled tight. attack_02: staff thrust forward, the serpent striking out of its coil. No glow or healing effects."
     },
@@ -179,7 +179,7 @@
       "id": "hera",
       "type": "god",
       "pantheon": "Greek",
-      "subject": "Tall imperious queen: tall diadem (a bone crown with ink points — not gold), a long veil, peacock-feather motif (a fan of eyed feathers behind one shoulder in bone, ink and blood), a tall sceptre topped with a lotus bud, long robe with layered folds. Stands very straight. The diadem, the feather fan and the sceptre define the silhouette. No gold.",
+      "subject": "Tall imperious queen: tall diadem (a bone crown with ink points \u2014 not gold), a long veil, peacock-feather motif (a fan of eyed feathers behind one shoulder in bone, ink and blood), a tall sceptre topped with a lotus bud, long robe with layered folds. Stands very straight. The diadem, the feather fan and the sceptre define the silhouette. No gold.",
       "portrait": "Three-quarter view, head to hips, veiled, diadem, sceptre held upright at the shoulder, cold stare down the nose.",
       "notes": ""
     },
@@ -242,7 +242,7 @@
       "id": "apollo",
       "type": "god",
       "pantheon": "Greek",
-      "subject": "Youthful, beautiful archer-god: laurel wreath (ink leaves), a drawn bow, a small lyre slung at the hip, short curled hair, bone chiton, and a ring of radiating ink lines behind the head like a sunburst (linework only — no glow, no gold). The bow and the radiating lines define the silhouette.",
+      "subject": "Youthful, beautiful archer-god: laurel wreath (ink leaves), a drawn bow, a small lyre slung at the hip, short curled hair, bone chiton, and a ring of radiating ink lines behind the head like a sunburst (linework only \u2014 no glow, no gold). The bow and the radiating lines define the silhouette.",
       "portrait": "Three-quarter view, head to hips, laurel crown, rays of ink lines behind the head, bow held across the body.",
       "notes": "attack_01: arrow nocked and bow drawn. attack_02: arrow just released, bow arm extended."
     },
@@ -258,7 +258,7 @@
     {
       "name": "Typhon",
       "id": "typhon",
-      "type": "titan · monster",
+      "type": "titan \u00b7 monster",
       "pantheon": "Greek",
       "subject": "The monster: a vast torso with several snarling heads (three to five) on writhing serpent necks, huge bat-like wings, clawed arms, and instead of legs thick serpentine coils that pile up on the ground. Ink-black scales with bone belly plates and blood-red eyes. Least human shape in the roster. Nothing about it is dignified. No fire, smoke or lightning effects. No gold.",
       "portrait": "Three-quarter view of the heads and shoulders, three heads snarling at different angles, wings rising behind, filling the frame.",
@@ -301,7 +301,7 @@
       "notes": ""
     },
     {
-      "name": "Víðarr",
+      "name": "V\u00ed\u00f0arr",
       "id": "vidar",
       "type": "demigod",
       "pantheon": "Norse",
@@ -319,7 +319,7 @@
       "notes": ""
     },
     {
-      "name": "Höðr",
+      "name": "H\u00f6\u00f0r",
       "id": "hodr",
       "type": "demigod",
       "pantheon": "Norse",
@@ -328,7 +328,7 @@
       "notes": "attack_01: dart drawn back over the shoulder. attack_02: dart just thrown, arm extended."
     },
     {
-      "name": "Váli",
+      "name": "V\u00e1li",
       "id": "vali",
       "type": "demigod",
       "pantheon": "Norse",
@@ -341,12 +341,12 @@
       "id": "magni",
       "type": "demigod",
       "pantheon": "Norse",
-      "subject": "Thor's son, stronger than Thor at three days old: a stocky young powerhouse with a beardless face, braided hair, a fur mantle over bare muscled shoulders, and a huge two-handed maul with a rough-hewn stone head (not Mjölnir). Deliberately different from Thor: no helm, no red cloak, no beard. The maul and the mantle define the silhouette. No gold.",
+      "subject": "Thor's son, stronger than Thor at three days old: a stocky young powerhouse with a beardless face, braided hair, a fur mantle over bare muscled shoulders, and a huge two-handed maul with a rough-hewn stone head (not Mj\u00f6lnir). Deliberately different from Thor: no helm, no red cloak, no beard. The maul and the mantle define the silhouette. No gold.",
       "portrait": "Three-quarter view, head to hips, maul resting on the shoulder, young proud grin.",
       "notes": "attack_01: maul raised overhead in both hands. attack_02: maul slammed down."
     },
     {
-      "name": "Skaði",
+      "name": "Ska\u00f0i",
       "id": "skadi",
       "type": "demigod",
       "pantheon": "Norse",
@@ -395,7 +395,7 @@
       "id": "freyja",
       "type": "god",
       "pantheon": "Norse",
-      "subject": "Warrior goddess of love and war: a falcon-feather cloak in bone, ink and blood spread from the shoulders, a necklace of heavy beads (Brísingamen) drawn in bone and ink, a short sword and a small round shield, long braided hair. The feather cloak and the necklace define the silhouette. No gold.",
+      "subject": "Warrior goddess of love and war: a falcon-feather cloak in bone, ink and blood spread from the shoulders, a necklace of heavy beads (Br\u00edsingamen) drawn in bone and ink, a short sword and a small round shield, long braided hair. The feather cloak and the necklace define the silhouette. No gold.",
       "portrait": "Three-quarter view, head to hips, feather cloak flared behind both shoulders, necklace at the throat, sword raised.",
       "notes": ""
     },
@@ -409,7 +409,7 @@
       "notes": "attack_01: antler raised overhead. attack_02: antler swung down."
     },
     {
-      "name": "Týr",
+      "name": "T\u00fdr",
       "id": "tyr",
       "type": "god",
       "pantheon": "Norse",
@@ -427,7 +427,7 @@
       "notes": ""
     },
     {
-      "name": "Njörðr",
+      "name": "Nj\u00f6r\u00f0r",
       "id": "njord",
       "type": "god",
       "pantheon": "Norse",
@@ -438,16 +438,16 @@
     {
       "name": "Fenrir",
       "id": "fenrir",
-      "type": "titan · beast",
+      "type": "titan \u00b7 beast",
       "pantheon": "Norse",
       "subject": "The great wolf: huge, hunched, shaggy, a ridge of raised hackles down the spine, jaws bared with long fangs, red pinpoint eyes, and the heavy remnants of a broken chain with thick ink links hanging from the neck. Chained-then-free. Occupies the full frame width. No fire, no glowing. No gold.",
       "portrait": "Three-quarter view of the head and shoulders, snarling, broken chain across the chest, ears flat.",
       "notes": "BEAST, not a biped: fills the frame width (about 460 px nose to tail), paws on the baseline. walk_01/walk_02: trot, diagonal legs alternating. attack_01: crouched low, head drawn back. attack_02: lunging bite, jaws wide. hit: thrown back, head up. death: lying on its side, legs out, jaws slack."
     },
     {
-      "name": "Jörmungandr",
+      "name": "J\u00f6rmungandr",
       "id": "jormungandr",
-      "type": "titan · serpent",
+      "type": "titan \u00b7 serpent",
       "pantheon": "Norse",
       "subject": "The world-serpent: a thick scaled body that coils on the ground in loops, the front third reared high with a heavy, wedge-shaped head and open jaws, a ridge of spines along the neck, ink-black scales with bone belly plates and a diamond pattern along the back, a blood-red eye. Fills the frame. No fire, no water effects. No gold.",
       "portrait": "Three-quarter view of the head and neck, jaws parted, spines along the neck, coils in the lower part of the frame.",
@@ -474,7 +474,7 @@
     {
       "name": "Ba",
       "id": "ba",
-      "type": "chaff · flyer",
+      "type": "chaff \u00b7 flyer",
       "pantheon": "Egyptian",
       "subject": "The soul-bird: a falcon's body with a calm bearded human head, wings spread, small hooked talons, one holding a shen ring. Bone and ink feathers with blood-red wing tips. Quick and light. The human head on the bird body defines the silhouette. No halo, no glow. No gold.",
       "portrait": "Three-quarter view, head and chest, human face serene on a falcon's body, wings raised behind.",
@@ -627,18 +627,18 @@
     {
       "name": "Apep",
       "id": "apep",
-      "type": "titan · serpent",
+      "type": "titan \u00b7 serpent",
       "pantheon": "Egyptian",
-      "subject": "The serpent of chaos: a huge black serpent with a broad flat head, a hood like a cobra's, open jaws, blood-red eyes, bone belly bands, and several small bone knives still stuck in the coils from the nightly fight. Distinct from Jörmungandr: no diamond pattern, a flatter head, and the embedded knives. Fills the frame. No fire. No gold.",
+      "subject": "The serpent of chaos: a huge black serpent with a broad flat head, a hood like a cobra's, open jaws, blood-red eyes, bone belly bands, and several small bone knives still stuck in the coils from the nightly fight. Distinct from J\u00f6rmungandr: no diamond pattern, a flatter head, and the embedded knives. Fills the frame. No fire. No gold.",
       "portrait": "Three-quarter view of the head and hood, jaws wide, red eyes, a couple of knives stuck in the neck.",
       "notes": "SERPENT, not a biped: fills the frame width (about 460 px), coiled body on the baseline, head reared. idle: head swaying. walk_01/walk_02: slither, humps shifted between the two frames. attack_01: head drawn back in an S-curve, hood flared. attack_02: head lunged forward and down, jaws wide. hit: head thrown back. death: flat on the ground, head down."
     },
     {
       "name": "Ammit",
       "id": "ammit",
-      "type": "titan · beast",
+      "type": "titan \u00b7 beast",
       "pantheon": "Egyptian",
-      "subject": "The devourer: a four-legged composite beast — a crocodile head with a long toothed snout, a lion's forequarters with a heavy ink mane, and the heavy rear of a hippopotamus. Waits and watches, then devours. Fills the frame width. No gold.",
+      "subject": "The devourer: a four-legged composite beast \u2014 a crocodile head with a long toothed snout, a lion's forequarters with a heavy ink mane, and the heavy rear of a hippopotamus. Waits and watches, then devours. Fills the frame width. No gold.",
       "portrait": "Three-quarter view of the head and shoulders, crocodile jaws partly open, ink mane behind, a heavy low gaze.",
       "notes": "BEAST, not a biped: fills the frame width (about 460 px nose to tail), paws on the baseline. walk_01/walk_02: heavy trot, diagonal legs alternating. attack_01: crouched low, head drawn back. attack_02: lunging bite, jaws wide. hit: thrown back. death: lying on its side, legs out, jaws slack."
     }
@@ -652,6 +652,11 @@
     "perseus": {
       "ratio": 0.9230184596844874,
       "anchor_x": 0.52,
+      "baseline": 480
+    },
+    "achilles": {
+      "ratio": 0.8850118172268907,
+      "anchor_x": 0.55,
       "baseline": 480
     }
   },
@@ -716,7 +721,7 @@
       "id": "heracles",
       "pose": "attack_02",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-1aa358ef-44c8-4a09-9926-e1e930305de2.png",
-      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Heracles idle, EXACT identity and weapon reference. Preserve same HUGE knotted club, length and thickness—do not shrink it or foreshorten it. Other images style only.\nSubject: Massive demigod, the heaviest silhouette of any demigod: lion pelt worn as a hood and cloak (bone fur with ink hatching, the lion's head over his own, paws knotted at the chest), huge knotted club, bare muscled arms, short ink beard, bone loincloth. The pelt and the club are over a third of the visual mass. No brown or tan: the club is ink with bone highlights. No gold.\n512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nATTACK STRIKE: heavy body committed forward, right arm extended forward RIGHT, hand grips the LOWER THIRD of the huge club's handle; club held diagonally UPRIGHT in front of him, club head ahead of face and above extended hand. Club full length is at least HALF of standing body height, same as idle, its massive knotty head aboutone head-and-shoulder width. NOT a tiny baton. Whole club inside frame. Lion hood/pelt and chest-knotted paws same asidle, short INK beard, massive arms. No shortening weapon tofit: orient club upright with tipatupperright, keep fullbody and weapon visible.",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Heracles idle, EXACT identity and weapon reference. Preserve same HUGE knotted club, length and thickness\u2014do not shrink it or foreshorten it. Other images style only.\nSubject: Massive demigod, the heaviest silhouette of any demigod: lion pelt worn as a hood and cloak (bone fur with ink hatching, the lion's head over his own, paws knotted at the chest), huge knotted club, bare muscled arms, short ink beard, bone loincloth. The pelt and the club are over a third of the visual mass. No brown or tan: the club is ink with bone highlights. No gold.\n512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nATTACK STRIKE: heavy body committed forward, right arm extended forward RIGHT, hand grips the LOWER THIRD of the huge club's handle; club held diagonally UPRIGHT in front of him, club head ahead of face and above extended hand. Club full length is at least HALF of standing body height, same as idle, its massive knotty head aboutone head-and-shoulder width. NOT a tiny baton. Whole club inside frame. Lion hood/pelt and chest-knotted paws same asidle, short INK beard, massive arms. No shortening weapon tofit: orient club upright with tipatupperright, keep fullbody and weapon visible.",
       "file": "heracles/heracles_attack_02.png",
       "bytes": 33929
     },
@@ -783,11 +788,76 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Perseus idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Lean heroic youth: short winged sandals (small bone wings at each ankle), a curved harpe sword, a round polished shield of concentric bone-and-ink rings (the mirror), a short blood-red cloak, bare head with short hair, bone chiton. Wings at the ankles, the curved blade and the round shield define the silhouette. No gold.\nPortrait 768x1024 vertical 3:4, HEAD TO HIPS, THREE QUARTER viewpoint turned slightly RIGHT, BOTH shoulders and both eyes with the far eye partly visible. Face in upper half. Three-quarter view, head to hips, harpe raised beside the head, mirrored shield held low at the side, alert eyes. Do NOT reuse sprite's strict profile. Hair, headgear, identifying weapon and both arms fully inside the frame; leave at least24px transparent left/right margins and top margin. No fullbody framing.",
       "file": "perseus/perseus_portrait.png",
       "bytes": 131949
+    },
+    {
+      "id": "achilles",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-d8f0d4c3-4bca-43c7-b7d3-b0db33e80627.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage1 EDIT TARGET: Achilles idle. Correct costume ONLY, preserve face/helmet/crest, lean proportions, spear, back shield, ornamented greaves, subtle left-heel wrap, pose, framing and transparency.\nSubject: Tall lean warrior built for speed, not bulk: tall crested helm with a long blood-red horsehair crest, long spear, ornate greaves with an ink pattern, a sleek bone muscled cuirass, a strap-bound left heel (the single weak point, subtly marked), small round shield slung on the back. The crest and the spear define the silhouette. No gold.\nREMOVE the red cloak entirely: Achilles has NO CLOAK OR CAPE. Show the lean bone cuirass and the small round shield strapped on his BACK. Convert all brown shoulder/shield straps and buckles to BONE and INK. No brown, tan, yellow, amber, orange, gold or bronze pixels. Keep large blood-red horsehair crest and subtle blood-red LEFT heel binding. Armour in bone/ink, no extra clothing or ornaments. Same right-facing idle stance, no changes to weapon or body scale.",
+      "file": "achilles/achilles_idle_01.png",
+      "bytes": 26895
+    },
+    {
+      "id": "achilles",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-894be16f-006e-4d1e-b4ee-f72919da63ce.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Achilles idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Tall lean warrior built for speed, not bulk: tall crested helm with a long blood-red horsehair crest, long spear, ornate greaves with an ink pattern, a sleek bone muscled cuirass, a strap-bound left heel (the single weak point, subtly marked), small round shield slung on the back. The crest and the spear define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose walk_01: Walk CONTACT: right/front leg forward, heel down, opposite leg behind, clear walking motion toward right.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "achilles/achilles_walk_01.png",
+      "bytes": 25466
+    },
+    {
+      "id": "achilles",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-cbaf4725-f6f2-46f1-932b-543127fa6991.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Achilles idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Tall lean warrior built for speed, not bulk: tall crested helm with a long blood-red horsehair crest, long spear, ornate greaves with an ink pattern, a sleek bone muscled cuirass, a strap-bound left heel (the single weak point, subtly marked), small round shield slung on the back. The crest and the spear define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose walk_02: Walk PASSING: one supporting leg near vertical under hip, foot y480; other leg bends and crosses beneath torso, raised foot beside supporting knee. Feet CLOSE horizontally (less than one head width), only one foot on ground. Body slightly raised at most6px. Do NOT show two feet planted in a wide stride.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "achilles/achilles_walk_02.png",
+      "bytes": 24392
+    },
+    {
+      "id": "achilles",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-c8dceb2a-0833-40f9-a094-0ddc60e98419.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Achilles idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Tall lean warrior built for speed, not bulk: tall crested helm with a long blood-red horsehair crest, long spear, ornate greaves with an ink pattern, a sleek bone muscled cuirass, a strap-bound left heel (the single weak point, subtly marked), small round shield slung on the back. The crest and the spear define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose attack_01: Attack WIND-UP: weapon drawn back toward left, body coiled, weight settled on back foot, about to attack right.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "achilles/achilles_attack_01.png",
+      "bytes": 27595
+    },
+    {
+      "id": "achilles",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9094d8ff-bd70-4d1f-83bf-de4ad8596f90.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Achilles idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Tall lean warrior built for speed, not bulk: tall crested helm with a long blood-red horsehair crest, long spear, ornate greaves with an ink pattern, a sleek bone muscled cuirass, a strap-bound left heel (the single weak point, subtly marked), small round shield slung on the back. The crest and the spear define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose attack_02: Attack STRIKE: weapon and striking arm at full extension toward right, body committed forward, rear leg braces. Keep weapon exactly same design and size as idle; entire weapon inside image. Clearly different from wind-up.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "achilles/achilles_attack_02.png",
+      "bytes": 21232
+    },
+    {
+      "id": "achilles",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-955e817f-2ffe-4ec0-ba57-d719f8ef1a43.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Achilles idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Tall lean warrior built for speed, not bulk: tall crested helm with a long blood-red horsehair crest, long spear, ornate greaves with an ink pattern, a sleek bone muscled cuirass, a strap-bound left heel (the single weak point, subtly marked), small round shield slung on the back. The crest and the spear define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose hit_01: HIT reaction: head snapped back left, torso recoils back, knees flex, right facing; supporting foot y480.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "achilles/achilles_hit_01.png",
+      "bytes": 28872
+    },
+    {
+      "id": "achilles",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e151610a-f547-4ed4-af42-8469c45729b7.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Achilles idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Tall lean warrior built for speed, not bulk: tall crested helm with a long blood-red horsehair crest, long spear, ornate greaves with an ink pattern, a sleek bone muscled cuirass, a strap-bound left heel (the single weak point, subtly marked), small round shield slung on the back. The crest and the spear define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose death_01: DEATH falling: lose balance, torso tipping back left, knees buckle, weapon loosens and drops, one supporting foot still near y480. Mid-fall, not standing hit pose. Preserve original body size; do not enlarge falling body to fill frame.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "achilles/achilles_death_01.png",
+      "bytes": 25161
+    },
+    {
+      "id": "achilles",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-302d9ded-c352-41ac-8d63-6eef457026ed.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Achilles idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Tall lean warrior built for speed, not bulk: tall crested helm with a long blood-red horsehair crest, long spear, ornate greaves with an ink pattern, a sleek bone muscled cuirass, a strap-bound left heel (the single weak point, subtly marked), small round shield slung on the back. The crest and the spear define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nPortrait 768x1024 vertical 3:4, HEAD TO HIPS, THREE QUARTER viewpoint turned slightly RIGHT, BOTH shoulders and both eyes with the far eye partly visible. Face in upper half. Three-quarter view, head to hips, helm crest sweeping behind, spear upright beside the head, proud jaw. Do NOT reuse sprite's strict profile. Hair, headgear, identifying weapon and both arms fully inside the frame; leave at least24px transparent left/right margins and top margin. No fullbody framing.\nCRITICAL CAMERA: Face nearly front-on, turned only25degrees to viewer RIGHT, nose well INSIDE face outline, TWO EYES visibly separated by nose, cheeks on both sides. Both shoulders equally visible. This is a new close portrait pose; never side profile. Helmet face opening must visibly contain BOTH eyes. Preserve the approved idle's bone muscle cuirass, red horsehair crest, ornate greaves, back shield, long spear; no cloak. Head-to-hips, entire spear tip and crest inside canvas. Transparent margins.",
+      "file": "achilles/achilles_portrait.png",
+      "bytes": 106779
     }
   ],
   "completed": [
     "heracles",
-    "perseus"
+    "perseus",
+    "achilles"
   ],
-  "active": "achilles"
+  "active": "athena"
 }
