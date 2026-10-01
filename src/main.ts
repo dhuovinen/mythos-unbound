@@ -16,7 +16,7 @@ import { MAX_FRAME_DT, TICK_DT } from './sim/constants';
 import { buildGraph } from './sim/relations';
 import { createRng } from './sim/rng';
 import type { Deity, DeityId, DeityIndex, Pantheon, StageWave } from './sim/types';
-import { preloadSprites } from './render/sprites';
+import { preloadArt } from './render/art/sprites';
 import { chooseSummon } from './sim/advisor';
 import { createBattleLog, noteDeployment, recordEvents } from './sim/battlelog';
 import { createHand, playFrom } from './sim/hand';
@@ -94,7 +94,7 @@ const hud = mountHud(hudRoot, (slotIndex) => summonQueue.push(slotIndex));
 const report = mountReport(battleLog, deities);
 
 mountCodex(ALL_DEITIES, ALL_EDGES);
-preloadSprites(ALL_DEITIES.map((deity) => deity.id));
+preloadArt();
 
 // Applying a deck restarts the battle. A reload is the honest way to do that: the deck is persisted,
 // and half-swapping a roster into a battle already in progress would leave the world inconsistent.

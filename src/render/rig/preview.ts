@@ -5,6 +5,7 @@
  * backdrop, and a catalogue of the shared parts so the library can be reviewed as a contact sheet.
  */
 
+import { artIds, preloadArt, spriteFigure } from '../art/sprites';
 import { drawBackdropScene } from '../backdrops';
 import type { BackdropId } from '../backdrops';
 import type { AnimName, Figure } from './figure';
@@ -20,7 +21,10 @@ const ANIMS: readonly AnimName[] = ['idle', 'walk', 'attack', 'hit', 'death'];
 const TIER_SCALE = { chaff: 0.55, demigod: 0.7, god: 0.85, titan: 1 } as const;
 const SCENES: readonly BackdropId[] = ['greek', 'norse', 'egyptian', 'openworld'];
 
+type Style = 'rig' | 'art';
+let style: Style = 'art';
 let anim: AnimName = 'walk';
+preloadArt();
 let scene: BackdropId = 'greek';
 
 const bar = document.getElementById('bar') as HTMLElement;
@@ -47,6 +51,7 @@ function makeButtons<T extends string>(values: readonly T[], current: () => T, s
 
 makeButtons(ANIMS, () => anim, (v) => (anim = v));
 makeButtons(SCENES, () => scene, (v) => (scene = v));
+makeButtons<Style>(['rig', 'art'], () => style, (v) => (style = v));
 
 /** One-shots replay on a loop so they can be judged; looping animations just run. */
 function animTime(seconds: number): number {
@@ -71,6 +76,8 @@ interface Card {
   figure: Figure;
   big: CanvasRenderingContext2D;
   portrait: CanvasRenderingContext2D;
+  /** The hand-drawn version, where the deity has art. */
+  art: CanvasRenderingContext2D | null;
 }
 
 const cards: Card[] = FIGURES.map((figure) => {
@@ -83,8 +90,17 @@ const cards: Card[] = FIGURES.map((figure) => {
   label.textContent = 'Portrait crop';
   const portrait = document.createElement('canvas');
   node.append(big, label, portrait);
+  let art: CanvasRenderingContext2D | null = null;
+  if (artIds().includes(figure.id)) {
+    const artLabel = document.createElement('div');
+    artLabel.className = 'label';
+    artLabel.textContent = 'Hand-drawn';
+    const artCanvas = document.createElement('canvas');
+    node.append(artLabel, artCanvas);
+    art = hiDpi(artCanvas, 212, 250);
+  }
   cardsHost.append(node);
-  return { figure, big: hiDpi(big, 212, 250), portrait: hiDpi(portrait, 212, 212) };
+  return { figure, big: hiDpi(big, 212, 250), portrait: hiDpi(portrait, 212, 212), art };
 });
 
 const stageCanvas = document.createElement('canvas');
@@ -243,7 +259,18 @@ for (const group of catalogue) {
 
 function draw(seconds: number): void {
   const t = animTime(seconds);
-  for (const { figure, big, portrait } of cards) {
+  for (const { figure, big, portrait, art } of cards) {
+    if (art !== null) {
+      art.clearRect(0, 0, 212, 250);
+      const sprite = spriteFigure(figure.id, figure.name, figure.tier);
+      if (sprite !== null) {
+        art.save();
+        art.translate(106, 236);
+        art.scale(2.0, 2.0);
+        sprite.draw(art, anim, t, seconds);
+        art.restore();
+      }
+    }
     big.clearRect(0, 0, 212, 250);
     big.save();
     big.translate(figure.body === 'serpent' ? 150 : figure.body === 'beast' ? 78 : 106, 236);
@@ -265,7 +292,8 @@ function draw(seconds: number): void {
   stageCtx.clearRect(0, 0, 960, 540);
   drawBackdropScene(stageCtx, scene, seconds);
   const n = FIGURES.length;
-  FIGURES.forEach((figure, i) => {
+  FIGURES.forEach((rigFigure, i) => {
+    const figure = style === 'art' ? (spriteFigure(rigFigure.id, rigFigure.name, rigFigure.tier) ?? rigFigure) : rigFigure;
     const k = 0.98 * TIER_SCALE[figure.tier];
     const x = 70 + (i * (900 - 70)) / Math.max(1, n - 1);
     stageCtx.save();

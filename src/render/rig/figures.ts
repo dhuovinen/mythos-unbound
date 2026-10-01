@@ -3,6 +3,9 @@
  * beasts and flyers built from the other body plans.
  */
 
+import { spriteFigure } from '../art/sprites';
+import type { UnitGraphics } from '../../ui/settings';
+import type { Deity } from '../../sim/types';
 import { makeBeast } from './beast';
 import type { Figure } from './figure';
 import { makeFlyer } from './flyer';
@@ -77,3 +80,27 @@ const HARPY = makeFlyer({
 export const FIGURES: readonly Figure[] = [...BIPED_FIGURES, JORMUNGANDR, TYPHON, FENRIR, HARPY];
 
 export const FIGURE_BY_ID: ReadonlyMap<string, Figure> = new Map(FIGURES.map((f) => [f.id, f]));
+
+const spriteCache = new Map<string, Figure>();
+
+/**
+ * The figure to draw for a deity under the chosen graphics mode, or undefined to draw a block.
+ *
+ * `sprites` prefers hand-drawn art and falls back to the rig, then to blocks, so a half-delivered
+ * roster still renders a complete battlefield. `rig` uses the code-drawn figures only.
+ */
+export function figureFor(deity: Pick<Deity, 'id' | 'name' | 'tier'>, mode: UnitGraphics): Figure | undefined {
+  if (mode === 'blocks') return undefined;
+  if (mode === 'sprites') {
+    let sprite = spriteCache.get(deity.id);
+    if (sprite === undefined) {
+      const made = spriteFigure(deity.id, deity.name, deity.tier);
+      if (made !== null) {
+        spriteCache.set(deity.id, made);
+        sprite = made;
+      }
+    }
+    if (sprite !== undefined) return sprite;
+  }
+  return FIGURE_BY_ID.get(deity.id);
+}

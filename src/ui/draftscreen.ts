@@ -221,6 +221,8 @@ function styles(): string {
   .df-empty { color: #7d7263; font-style: italic; font-size: 12px; }
 
   .df-dossier h2 { margin: 0; font-size: 18px; }
+  .df-dhead { display: flex; gap: 12px; align-items: flex-end; margin-bottom: 6px; }
+  .df-dportrait { border-radius: 9px; border: 1px solid rgba(255,255,255,.2); flex: none; }
   .df-dossier .df-sub { font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: .7px; font-weight: 700; margin: 2px 0 8px; }
   .df-dossier .df-lore { font-size: 12.5px; line-height: 1.5; color: #cabfa9; margin-bottom: 9px; }
   .df-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 10px; }
@@ -692,8 +694,13 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
       return;
     }
     dossier.style.setProperty('--accent', REALM_ACCENT[deity.pantheon]);
-    dossier.append(el('h2', undefined, deity.name));
-    dossier.append(el('div', 'df-sub', `${REALM_LABEL[deity.pantheon]} · ${deity.tier}`));
+    const head = el('div', 'df-dhead');
+    const portrait = portraitFor(deity, 96, 128);
+    portrait.className = 'df-dportrait';
+    const titles = el('div');
+    titles.append(el('h2', undefined, deity.name), el('div', 'df-sub', `${REALM_LABEL[deity.pantheon]} · ${deity.tier}`));
+    head.append(portrait, titles);
+    dossier.append(head);
     dossier.append(el('p', 'df-lore', unitLore(deity.id)));
 
     const stats = el('div', 'df-stats');

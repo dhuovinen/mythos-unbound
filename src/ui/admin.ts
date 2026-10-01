@@ -6,7 +6,7 @@
  */
 
 import { BACKDROPS } from '../render/backdrops';
-import { spriteStats } from '../render/sprites';
+import { spriteStats } from '../render/art/sprites';
 import type { BackdropChoice, Settings, UnitGraphics } from './settings';
 import { getSettings, setSetting } from './settings';
 
@@ -129,32 +129,21 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
   const seg = el('div', 'ad-seg');
   const options: readonly { value: UnitGraphics; label: string }[] = [
     { value: 'blocks', label: 'Blocks' },
-    { value: 'sprites', label: 'Sprites' },
     { value: 'rig', label: 'Rig' },
+    { value: 'sprites', label: 'Art' },
   ];
   const note = el('div', 'ad-note');
 
   const refreshNote = (): void => {
-    const stats = spriteStats();
-    if (getSettings().unitGraphics === 'blocks') {
-      note.className = 'ad-note';
+    note.className = 'ad-note';
+    const mode = getSettings().unitGraphics;
+    if (mode === 'blocks') {
       note.textContent = 'Placeholder geometry: tier-sized shapes with each unit’s initial.';
-      return;
-    }
-    if (getSettings().unitGraphics === 'rig') {
-      note.className = 'ad-note';
-      note.textContent = 'Animated figures drawn in code. Prototype: Hoplite, Anubis, Zeus, Thor and Cronus; everyone else falls back to blocks.';
-      return;
-    }
-    if (stats.ready === 0) {
-      note.className = 'ad-note warn';
-      note.textContent = `No sprites found in art/roster/ (${stats.total} expected). Every unit is falling back to blocks — deliver WP-9 to populate them.`;
-    } else if (stats.ready < stats.total) {
-      note.className = 'ad-note warn';
-      note.textContent = `${stats.ready} of ${stats.total} sprites loaded. Units without one fall back to blocks individually.`;
+    } else if (mode === 'rig') {
+      note.textContent = 'Animated figures drawn in code. Deities without one fall back to blocks.';
     } else {
-      note.className = 'ad-note';
-      note.textContent = `All ${stats.total} sprites loaded from art/roster/.`;
+      const stats = spriteStats();
+      note.textContent = `Hand-drawn art for ${stats.sets} deities (${stats.ready} loaded). Anyone without it uses the code-drawn rig, then blocks.`;
     }
   };
 

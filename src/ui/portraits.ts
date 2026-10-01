@@ -1,14 +1,15 @@
 /**
  * Portraits for the team picker.
  *
- * A deity with a rig is drawn from it — the same figure that fights, cropped to head and chest.
+ * Three tiers, best first. A deity with hand-drawn portrait art (`<id>_portrait.png`) uses it. One
+ * with only a rig is drawn from that — the same figure that fights, cropped to head and chest.
  * Everyone else gets a heraldic crest: a monogram inside a frame that grows more elaborate with
- * tier, in the realm's accent colour, so the picker already has a consistent look while the rest of
- * the roster waits for a figure.
+ * tier, in the realm's accent colour, so the picker has a consistent look while the roster waits for art.
  *
  * Portraits are painted once and cached; the picker redraws them as cheap image blits.
  */
 
+import { onArtLoaded, portraitImage } from '../render/art/sprites';
 import { FIGURE_BY_ID } from '../render/rig/figures';
 import type { Deity, Pantheon, Tier } from '../sim/types';
 
@@ -120,17 +121,53 @@ function paintRig(deity: Deity, w: number, h: number): HTMLCanvasElement | null 
   return canvas;
 }
 
-/** A cached portrait canvas for the deity. Clone it with `cloneCanvas` before inserting twice. */
+/** Every canvas handed out, so a portrait that finishes loading later can replace its stand-in. */
+const live: { canvas: HTMLCanvasElement; deity: Deity; w: number; h: number }[] = [];
+
+/** Paints the hand-drawn portrait to fill the frame, cropped from the top so the face stays in view. */
+function paintArt(canvas: HTMLCanvasElement, image: HTMLImageElement, w: number, h: number): void {
+  const ctx = canvas.getContext('2d');
+  if (ctx === null) return;
+  ctx.setTransform(2, 0, 0, 2, 0, 0);
+  const sh = Math.min(image.naturalHeight, (image.naturalWidth * h) / w);
+  ctx.drawImage(image, 0, 0, image.naturalWidth, sh, 0, 0, w, h);
+}
+
+/** The art over a flat backdrop in the realm's colours. */
+function paintBacked(canvas: HTMLCanvasElement, deity: Deity, image: HTMLImageElement, w: number, h: number): void {
+  const ctx = canvas.getContext('2d');
+  if (ctx === null) return;
+  ctx.setTransform(2, 0, 0, 2, 0, 0);
+  backdrop(ctx, deity.pantheon, w, h);
+  paintArt(canvas, image, w, h);
+}
+
+onArtLoaded((id) => {
+  for (const entry of live) {
+    if (entry.deity.id !== id) continue;
+    const image = portraitImage(id);
+    if (image !== null) paintBacked(entry.canvas, entry.deity, image, entry.w, entry.h);
+  }
+});
+
+/**
+ * A portrait canvas for the deity. Each call returns a fresh canvas, so the same portrait can sit in
+ * the tree, the tray and the dossier; art that is still loading is swapped in when it arrives.
+ */
 export function portraitFor(deity: Deity, w: number, h: number): HTMLCanvasElement {
   const key = `${deity.id}:${w}x${h}`;
-  let canvas = cache.get(key);
-  if (canvas === undefined) {
-    canvas = paintRig(deity, w, h) ?? paintCrest(deity, w, h);
-    canvas.style.width = `${w}px`;
-    canvas.style.height = `${h}px`;
-    cache.set(key, canvas);
+  let base = cache.get(key);
+  if (base === undefined) {
+    base = paintRig(deity, w, h) ?? paintCrest(deity, w, h);
+    base.style.width = `${w}px`;
+    base.style.height = `${h}px`;
+    cache.set(key, base);
   }
-  return cloneCanvas(canvas);
+  const canvas = cloneCanvas(base);
+  const image = portraitImage(deity.id);
+  if (image !== null) paintBacked(canvas, deity, image, w, h);
+  live.push({ canvas, deity, w, h });
+  return canvas;
 }
 
 /** Copies a painted canvas so the same portrait can sit in the tree, the tray and the dossier. */

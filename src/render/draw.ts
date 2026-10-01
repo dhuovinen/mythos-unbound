@@ -18,8 +18,7 @@ import type { Deity, DrawWorld, Tier, Unit } from '../sim/types';
 import { getSettings } from '../ui/settings';
 import { BASE_HEIGHT, drawBackdropScene, drawBaseStructure } from './backdrops';
 import type { BackdropId } from './backdrops';
-import { drawGhosts, drawRigUnit, hasRig, updateRigs } from './rig/animator';
-import { getSprite } from './sprites';
+import { drawFigureUnit, drawGhosts, hasFigure, updateRigs } from './rig/animator';
 
 const INK = '#1A1A1E';
 const BONE = '#EDE6D6';
@@ -65,9 +64,7 @@ export function unitBodyHeight(deity: Deity | undefined): number {
 
 /** True when this deity is currently drawn as a full figure rather than a placeholder block. */
 function drawnAsFigure(deity: Deity): boolean {
-  const mode = getSettings().unitGraphics;
-  if (mode === 'rig') return hasRig(deity.id);
-  return mode === 'sprites' && getSprite(deity.id) !== null;
+  return hasFigure(deity);
 }
 
 /** Draws a filled shape with the heavy ink outline the woodcut direction calls for. */
@@ -114,43 +111,15 @@ const SPRITE_TIER_SCALE: Readonly<Record<Tier, number>> = {
   titan: 1,
 };
 
-/** Draws a production sprite, mirrored for the enemy side since all art faces right. */
-function drawSprite(
-  ctx: CanvasRenderingContext2D,
-  unit: Unit,
-  deity: Deity,
-  image: HTMLImageElement,
-  sx: number,
-): void {
-  const box = SPRITE_BASE * SPRITE_TIER_SCALE[deity.tier];
-  const bottom = unitFootY(unit) + 4;
-  ctx.save();
-  if (unit.side === 'enemy') {
-    ctx.translate(sx, 0);
-    ctx.scale(-1, 1);
-    ctx.drawImage(image, -box / 2, bottom - box, box, box);
-  } else {
-    ctx.drawImage(image, sx - box / 2, bottom - box, box, box);
-  }
-  ctx.restore();
-}
-
 /** A unit: tier-sized body, ink outline, facing notch, and its initial for identity. */
 function drawUnit(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | undefined): void {
   const sx = worldToScreen(unit.x);
 
   // Figure modes fall back per unit, not globally, so a half-delivered roster still renders.
-  if (getSettings().unitGraphics === 'rig' && deity !== undefined && hasRig(deity.id)) {
+  if (deity !== undefined && hasFigure(deity)) {
     const scale = (SPRITE_BASE * SPRITE_TIER_SCALE[deity.tier]) / 100;
-    drawRigUnit(ctx, unit, deity, sx, unitFootY(unit), scale, performance.now() / 1000);
+    drawFigureUnit(ctx, unit, deity, sx, unitFootY(unit), scale, performance.now() / 1000);
     return;
-  }
-  if (getSettings().unitGraphics === 'sprites' && deity !== undefined) {
-    const image = getSprite(deity.id);
-    if (image !== null) {
-      drawSprite(ctx, unit, deity, image, sx);
-      return;
-    }
   }
 
   const size = TIER_SIZE[deity?.tier ?? 'chaff'];
@@ -233,7 +202,7 @@ export const drawWorld: DrawWorld = (ctx, world, deities) => {
   for (const base of bases) drawBaseStructure(ctx, realm, worldToScreen(base.x), base.side);
   updateRigs(world, performance.now() / 1000);
   for (const unit of mobile) drawUnit(ctx, unit, deities.get(unit.deityId));
-  drawGhosts(ctx, deities, performance.now() / 1000);
+  drawGhosts(ctx, performance.now() / 1000);
   for (const base of bases) drawHealth(ctx, base, undefined);
   for (const unit of mobile) drawHealth(ctx, unit, deities.get(unit.deityId));
 

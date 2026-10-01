@@ -19,7 +19,7 @@ export interface Settings {
   backdrop: BackdropChoice;
   /** How much the backdrops are lightened, 0 (as painted) to 1 (as light as it goes). */
   backdropLight: number;
-  /** 'blocks' is placeholder geometry; 'sprites' uses art from art/roster/; 'rig' draws animated figures in code. */
+  /** 'blocks' is placeholder geometry; 'rig' draws animated figures in code; 'sprites' uses hand-drawn art, falling back to the rig. */
   unitGraphics: UnitGraphics;
   /** Coloured arcs linking units that currently have a live relationship. */
   showTethers: boolean;
@@ -45,7 +45,7 @@ const STORAGE_KEY = 'mythos-unbound.settings.v1';
 const DEFAULTS: Settings = {
   backdrop: 'auto',
   backdropLight: 0.3,
-  unitGraphics: 'blocks',
+  unitGraphics: 'sprites',
   showTethers: true,
   showStatusPips: true,
   showFloatingText: true,

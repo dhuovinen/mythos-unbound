@@ -9,13 +9,14 @@
  * Render-only: it reads the world, never writes it, and its clocks are wall time, not sim time.
  */
 
-import type { Deity, DeityIndex, Side, Unit, World } from '../../sim/types';
+import type { Deity, Side, Unit, World } from '../../sim/types';
 import type { AnimName, Figure } from './figure';
 import { ANIM_SECONDS, hitFlash } from './figure';
-import { FIGURE_BY_ID } from './figures';
+import { getSettings } from '../../ui/settings';
+import { figureFor } from './figures';
 
 interface Snapshot {
-  deityId: string;
+  figure: Figure;
   side: Side;
   sx: number;
   footY: number;
@@ -42,9 +43,9 @@ const ghosts: Ghost[] = [];
 /** How long a fallen unit lies there before it is cleared. */
 const GHOST_LINGER = ANIM_SECONDS.death + 0.6;
 
-/** Which deities have a rig at all. Others keep falling back to blocks. */
-export function hasRig(deityId: string): boolean {
-  return FIGURE_BY_ID.has(deityId);
+/** Whether this deity is drawn as an animated figure (art or rig) rather than a block. */
+export function hasFigure(deity: Deity): boolean {
+  return figureFor(deity, getSettings().unitGraphics) !== undefined;
 }
 
 function stateFor(unit: Unit, now: number): State {
@@ -162,7 +163,7 @@ function flashLayer(): HTMLCanvasElement {
 }
 
 /** Draws one live unit. `scale` converts rig units (figure ~100 tall) to screen pixels. */
-export function drawRigUnit(
+export function drawFigureUnit(
   ctx: CanvasRenderingContext2D,
   unit: Unit,
   deity: Deity,
@@ -171,18 +172,17 @@ export function drawRigUnit(
   scale: number,
   now: number,
 ): void {
-  const figure = FIGURE_BY_ID.get(deity.id);
+  const figure = figureFor(deity, getSettings().unitGraphics);
   if (figure === undefined) return;
   const state = stateFor(unit, now);
-  state.snap = { deityId: deity.id, side: unit.side, sx, footY, scale };
+  state.snap = { figure, side: unit.side, sx, footY, scale };
   paint(ctx, figure, state.snap, state.anim, now - state.since, state.seed, now);
 }
 
 /** Draws units that have just died, mid-fall or lying where they dropped. */
-export function drawGhosts(ctx: CanvasRenderingContext2D, deities: DeityIndex, now: number): void {
+export function drawGhosts(ctx: CanvasRenderingContext2D, now: number): void {
   for (const ghost of ghosts) {
-    const figure = FIGURE_BY_ID.get(ghost.snap.deityId);
-    if (figure === undefined || deities.get(ghost.snap.deityId) === undefined) continue;
+    const figure = ghost.snap.figure;
     const t = now - ghost.since;
     // Fade out over the last stretch so bodies do not pile up forever.
     const fade = Math.min(1, (GHOST_LINGER - t) / 0.5);
