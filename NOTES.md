@@ -53,7 +53,12 @@ The `olympus` branch is about looks; gameplay is unchanged.
   panel. Other deities fall back to blocks.
 - **Sprite comparison — waiting on art.** `docs/briefs/SPRITE-COMPARE.md` is the brief for
   generating the same five deities as sprites, to be judged side by side against the rig.
-- **Next:** decide rig vs sprites, then the realm-based team picker with a family-tree view.
+- **Team picker — done.** `src/ui/draftscreen.ts` is now a realm picker: Greek, Norse, Egyptian and
+  Open World tabs, each over its own backdrop, with a family tree per pantheon (layout in
+  `src/ui/familytree.ts`, portraits in `src/ui/portraits.ts`). The two-phase draft and reveal are
+  unchanged. Beginning a battle sets the battlefield: one pantheon fights in its realm, the Open World
+  tab or any mixed deck in the city.
+- **Next:** decide rig vs sprites; portraits are crests until a deity has a figure.
 
 ## Status
 
