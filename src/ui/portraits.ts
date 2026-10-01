@@ -9,8 +9,7 @@
  * Portraits are painted once and cached; the picker redraws them as cheap image blits.
  */
 
-import { RECIPE_BY_ID } from '../render/rig/recipes';
-import { animate, drawRig } from '../render/rig/rig';
+import { FIGURE_BY_ID } from '../render/rig/figures';
 import type { Deity, Pantheon, Tier } from '../sim/types';
 
 export const REALM_ACCENT: Readonly<Record<Pantheon | 'openworld', string>> = {
@@ -100,16 +99,17 @@ function paintCrest(deity: Deity, w: number, h: number): HTMLCanvasElement {
 }
 
 function paintRig(deity: Deity, w: number, h: number): HTMLCanvasElement | null {
-  const recipe = RECIPE_BY_ID.get(deity.id);
-  if (recipe === undefined) return null;
+  const figure = FIGURE_BY_ID.get(deity.id);
+  if (figure === undefined) return null;
   const { canvas, ctx } = makeCanvas(w, h);
   backdrop(ctx, deity.pantheon, w, h);
-  // Head and chest fill the frame; the figure is 100 rig units tall with the head near the top.
-  const scale = (h / 62) * (recipe.tier === 'titan' ? 0.92 : 1);
+  // Fit the figure's portrait box into the frame, centred.
+  const v = figure.view;
+  const scale = Math.min(w / v.w, h / v.h);
   ctx.save();
-  ctx.translate(w / 2 - 6 * scale * 0.4, h * 0.97 + 38 * scale * 0.5);
+  ctx.translate(w / 2 - (v.x + v.w / 2) * scale, h / 2 - (v.y + v.h / 2) * scale);
   ctx.scale(scale, scale);
-  drawRig(ctx, recipe, animate(recipe, 'idle', 0.4), 0.4);
+  figure.draw(ctx, 'idle', 0.4, 0.4);
   ctx.restore();
   // A soft fade at the bottom so the crop does not end on a hard cut through the body.
   const fade = ctx.createLinearGradient(0, h * 0.7, 0, h);

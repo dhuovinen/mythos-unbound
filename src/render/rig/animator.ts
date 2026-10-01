@@ -10,9 +10,9 @@
  */
 
 import type { Deity, DeityIndex, Side, Unit, World } from '../../sim/types';
-import type { AnimName, Recipe } from './rig';
-import { ANIM_SECONDS, animate, drawRig } from './rig';
-import { RECIPE_BY_ID } from './recipes';
+import type { AnimName, Figure } from './figure';
+import { ANIM_SECONDS, hitFlash } from './figure';
+import { FIGURE_BY_ID } from './figures';
 
 interface Snapshot {
   deityId: string;
@@ -44,7 +44,7 @@ const GHOST_LINGER = ANIM_SECONDS.death + 0.6;
 
 /** Which deities have a rig at all. Others keep falling back to blocks. */
 export function hasRig(deityId: string): boolean {
-  return RECIPE_BY_ID.has(deityId);
+  return FIGURE_BY_ID.has(deityId);
 }
 
 function stateFor(unit: Unit, now: number): State {
@@ -110,41 +110,41 @@ export function updateRigs(world: World, now: number): void {
 
 function paint(
   ctx: CanvasRenderingContext2D,
-  recipe: Recipe,
+  figure: Figure,
   snap: Snapshot,
   anim: AnimName,
   t: number,
   seed: number,
   now: number,
 ): void {
-  const state = animate(recipe, anim, t);
+  const flash = hitFlash(anim, t);
 
   // A soft contact shadow grounds the figure.
   ctx.save();
   ctx.translate(snap.sx, snap.footY);
   ctx.fillStyle = 'rgba(0,0,0,0.32)';
   ctx.beginPath();
-  ctx.ellipse(0, 1, 15 * snap.scale + 4, 3.4, 0, 0, Math.PI * 2);
+  ctx.ellipse(0, 1, (figure.body === 'serpent' ? 34 : figure.body === 'beast' ? 30 : 15) * snap.scale + 4, 3.4, 0, 0, Math.PI * 2);
   ctx.fill();
 
   if (snap.side === 'enemy') ctx.scale(-1, 1);
   ctx.scale(snap.scale, snap.scale);
-  if (state.flash > 0) {
+  if (flash > 0) {
     const layer = flashLayer();
     const lctx = layer.getContext('2d');
     if (lctx !== null) {
       lctx.clearRect(0, 0, layer.width, layer.height);
       lctx.save();
       lctx.translate(layer.width / 2, layer.height - 12);
-      drawRig(lctx, recipe, state, now + seed);
+      figure.draw(lctx, anim, t, now + seed);
       lctx.globalCompositeOperation = 'source-atop';
-      lctx.fillStyle = `rgba(255,255,255,${state.flash * 0.85})`;
+      lctx.fillStyle = `rgba(255,255,255,${flash * 0.85})`;
       lctx.fillRect(-layer.width / 2, -layer.height, layer.width, layer.height);
       lctx.restore();
       ctx.drawImage(layer, -layer.width / 2, -layer.height + 12);
     }
   } else {
-    drawRig(ctx, recipe, state, now + seed);
+    figure.draw(ctx, anim, t, now + seed);
   }
   ctx.restore();
 }
@@ -155,7 +155,7 @@ let flash: HTMLCanvasElement | null = null;
 function flashLayer(): HTMLCanvasElement {
   if (flash === null) {
     flash = document.createElement('canvas');
-    flash.width = 260;
+    flash.width = 360;
     flash.height = 240;
   }
   return flash;
@@ -171,24 +171,24 @@ export function drawRigUnit(
   scale: number,
   now: number,
 ): void {
-  const recipe = RECIPE_BY_ID.get(deity.id);
-  if (recipe === undefined) return;
+  const figure = FIGURE_BY_ID.get(deity.id);
+  if (figure === undefined) return;
   const state = stateFor(unit, now);
   state.snap = { deityId: deity.id, side: unit.side, sx, footY, scale };
-  paint(ctx, recipe, state.snap, state.anim, now - state.since, state.seed, now);
+  paint(ctx, figure, state.snap, state.anim, now - state.since, state.seed, now);
 }
 
 /** Draws units that have just died, mid-fall or lying where they dropped. */
 export function drawGhosts(ctx: CanvasRenderingContext2D, deities: DeityIndex, now: number): void {
   for (const ghost of ghosts) {
-    const recipe = RECIPE_BY_ID.get(ghost.snap.deityId);
-    if (recipe === undefined || deities.get(ghost.snap.deityId) === undefined) continue;
+    const figure = FIGURE_BY_ID.get(ghost.snap.deityId);
+    if (figure === undefined || deities.get(ghost.snap.deityId) === undefined) continue;
     const t = now - ghost.since;
     // Fade out over the last stretch so bodies do not pile up forever.
     const fade = Math.min(1, (GHOST_LINGER - t) / 0.5);
     ctx.save();
     ctx.globalAlpha = Math.max(0, fade);
-    paint(ctx, recipe, ghost.snap, 'death', t, ghost.seed, now);
+    paint(ctx, figure, ghost.snap, 'death', t, ghost.seed, now);
     ctx.restore();
   }
 }

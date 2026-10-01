@@ -256,6 +256,9 @@ function styles(): string {
   .df-slot canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
   .df-slot span { position: absolute; left: 0; right: 0; bottom: 0; font-size: 9px; font-weight: 700; text-align: center; background: rgba(10,8,12,.8); color: #e8dcc4; padding: 1px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .df-slot.filled:hover:not(.locked)::after { content: '✕'; position: absolute; top: 2px; right: 4px; color: #fff; font-size: 11px; text-shadow: 0 0 3px #000; }
+  .df-next { padding: 10px 18px; font-size: 13.5px; align-self: center; }
+  .df-next:not(:disabled) { animation: df-pulse 1.6s ease-in-out infinite; }
+  @keyframes df-pulse { 0%, 100% { box-shadow: 0 0 0 0 var(--accent); } 50% { box-shadow: 0 0 0 6px transparent; } }
   .df-stage { margin-left: auto; align-self: center; font-size: 12px; color: #b8ac95; text-align: right; }
   .df-stage b { color: var(--accent); }
 
@@ -498,7 +501,9 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
     (i < OPENING_SIZE ? openGroup : reinGroup).append(slot);
   }
   const stageNote = el('div', 'df-stage');
-  tray.append(openGroup, reinGroup, stageNote);
+  const nextBtn = el('button', 'df-btn primary df-next');
+  nextBtn.addEventListener('click', () => advance.click());
+  tray.append(openGroup, reinGroup, nextBtn, stageNote);
 
   shell.append(top, realmBar, main, tray);
 
@@ -850,6 +855,16 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
         : 'Their opening is face up. Lock in six reinforcements knowing it. Share their pantheon and blood cuts both ways; go foreign and neither side can use it against the other, leaving a fight decided by raw statistics.';
     advance.textContent = phase === 'opening' ? 'Reveal openings' : 'Begin battle';
     advance.disabled = picked().length !== limit();
+    const ready = !advance.disabled;
+    nextBtn.disabled = advance.disabled;
+    nextBtn.textContent = ready
+      ? `${advance.textContent} →`
+      : phase === 'opening'
+        ? `Pick ${limit() - picked().length} more to open with`
+        : `Pick ${limit() - picked().length} more reinforcements`;
+    if (ready) {
+      step.textContent += phase === 'opening' ? ' — complete. Reveal their opening to choose reinforcements.' : ' — complete. Ready to fight.';
+    }
 
     const deckIds = [...opening, ...reinforcements];
     const deck = resolve(deckIds);

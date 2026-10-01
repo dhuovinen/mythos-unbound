@@ -15,6 +15,9 @@
  *  - Deterministic: no Math.random(). Anything that flutters is driven by the time passed in.
  */
 
+import type { AnimName, Figure } from './figure';
+import { ANIM_SECONDS } from './figure';
+
 export interface P {
   x: number;
   y: number;
@@ -28,7 +31,6 @@ export const SLATE = '#4a4850';
 export const BLOOD = '#C4442E';
 export const BLOOD_DARK = '#8C2F20';
 
-export type AnimName = 'idle' | 'walk' | 'attack' | 'hit' | 'death';
 export type AttackStyle = 'thrust' | 'overhead' | 'sweep';
 
 /** Every joint the rig animates. */
@@ -225,13 +227,6 @@ export interface Animated {
   drop: number;
 }
 
-/** Duration in seconds of each one-shot animation. */
-export const ANIM_SECONDS: Readonly<Record<'attack' | 'hit' | 'death', number>> = {
-  attack: 0.7,
-  hit: 0.32,
-  death: 0.9,
-};
-
 /**
  * The pose for an animation at time `t` seconds into it. Looping animations (idle, walk) wrap;
  * one-shots (attack, hit, death) clamp, so death holds its final frame.
@@ -424,3 +419,17 @@ export function drawRig(ctx: CanvasRenderingContext2D, recipe: Recipe, anim: Ani
 
 /** Nominal figure height in rig units, for callers that need to size things. */
 export const RIG_HEIGHT = 100;
+
+/** Wraps a biped recipe as a Figure so the rest of the game can treat every body alike. */
+export function bipedFigure(recipe: Recipe, view: { x: number; y: number; w: number; h: number }): Figure {
+  return {
+    id: recipe.id,
+    name: recipe.name,
+    tier: recipe.tier,
+    body: 'biped',
+    view,
+    draw(ctx, anim, t, time) {
+      drawRig(ctx, recipe, animate(recipe, anim, t), time);
+    },
+  };
+}

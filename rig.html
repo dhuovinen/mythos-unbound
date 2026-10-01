@@ -19,6 +19,11 @@
       .card .meta { font-size: 11px; color: #a99c85; margin-bottom: 8px; text-transform: uppercase; letter-spacing: .6px; }
       canvas { display: block; background: #231f26; border-radius: 6px; }
       .stage canvas { width: 100%; max-width: 960px; border: 1px solid #3a3229; }
+      .group { margin: 22px 0 6px; }
+      .group h3 { margin: 0 0 8px; font-size: 14px; color: #a99c85; text-transform: uppercase; letter-spacing: .8px; }
+      .row { display: flex; flex-wrap: wrap; gap: 8px; }
+      .cell { background: #1b1720; border: 1px solid #3a3229; border-radius: 8px; padding: 6px; font-size: 11px; color: #a99c85; text-align: center; }
+      .cell canvas { background: #2a2530; border-radius: 4px; }
       .label { font-size: 11px; color: #857a68; margin: 8px 0 4px; text-transform: uppercase; letter-spacing: .6px; }
     </style>
   </head>
@@ -31,6 +36,8 @@
     <div class="bar" id="bar"></div>
     <div class="cards" id="cards"></div>
     <div class="stage" id="stage"></div>
+    <h2 style="margin:26px 0 0">Parts library</h2>
+    <div id="parts"></div>
     <script type="module" src="/src/render/rig/preview.ts"></script>
   </body>
 </html>

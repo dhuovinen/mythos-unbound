@@ -47,10 +47,14 @@ The `olympus` branch is about looks; gameplay is unchanged.
 - **Backdrops — done.** `src/render/backdrops.ts`: Greek, Norse, Egyptian and an open-world city,
   plus a themed base for each. The admin panel's *Battlefield* setting is `Auto` by default: one
   pantheon fights in its own realm, a mixed deck in the city. No gold anywhere in the scenes.
-- **Character rig — prototype.** `src/render/rig/`: one skeleton drawn in Canvas 2D, animated
-  procedurally (idle, walk, attack, hit, death). Five recipes exist: Hoplite, Anubis, Zeus, Thor,
-  Cronus. Try it at `/rig.html` (dev server) or switch *Unit graphics* to **Rig** in the admin
-  panel. Other deities fall back to blocks.
+- **Character rig — prototype.** `src/render/rig/`: animated figures drawn in Canvas 2D, procedural
+  idle, walk, attack, hit and death. A character is a *spec over a shared parts library*
+  (`parts.ts`: heads, headgear, beards, hair, clothing, weapons, shields, capes, wings), turned into
+  a figure by `compose.ts`. Four body plans, all presenting the same `Figure` interface
+  (`figure.ts`): biped (`rig.ts`), serpent, four-legged beast, flyer. Built so far: Hoplite, Anubis,
+  Zeus, Thor, Cronus (biped); Jormungandr, Typhon (serpent); Fenrir (beast); Harpy (flyer). Every
+  other deity falls back to blocks. `/rig.html` shows every figure plus a contact sheet of every
+  part; switch *Unit graphics* to **Rig** in the admin panel to see them in battle.
 - **Sprite comparison — waiting on art.** `docs/briefs/SPRITE-COMPARE.md` is the brief for
   generating the same five deities as sprites, to be judged side by side against the rig.
 - **Team picker — done.** `src/ui/draftscreen.ts` is now a realm picker: Greek, Norse, Egyptian and
