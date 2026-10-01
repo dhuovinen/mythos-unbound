@@ -7,6 +7,8 @@
 
 import { BACKDROPS } from '../render/backdrops';
 import { spriteStats } from '../render/art/sprites';
+import type { Deity } from '../sim/types';
+import { mountArtViewer } from './artviewer';
 import type { BackdropChoice, Settings, UnitGraphics } from './settings';
 import { getSettings, setSetting } from './settings';
 
@@ -32,6 +34,7 @@ function styles(): string {
     display: none; background: #17141a; border: 1px solid #3a3229; border-radius: 12px;
     padding: 16px 18px 18px; color: #e8dcc4; font-family: ui-sans-serif, system-ui, sans-serif;
     box-shadow: 0 16px 40px rgba(0,0,0,.6);
+    max-height: calc(100dvh - 90px); overflow-y: auto;
   }
   #admin-panel.open { display: block; }
   .ad-title { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
@@ -100,7 +103,7 @@ export interface ResolveResult {
  * `onResolve` fast-forwards the current battle to its conclusion. It is a testing aid, so it lives
  * in its own clearly-labelled section rather than beside the display toggles.
  */
-export function mountAdminPanel(onResolve?: () => ResolveResult): void {
+export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readonly Deity[] = []): void {
   if (document.getElementById('admin-open') !== null) return;
 
   const style = el('style');
@@ -296,6 +299,19 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
   window.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') setOpen(false);
   });
+
+  if (deities.length > 0) {
+    const openViewer = mountArtViewer(deities);
+    const art = el('div', 'ad-group');
+    art.append(el('div', 'ad-label', 'Character art'));
+    const view = el('button', 'ad-wide-btn', 'View character images');
+    view.addEventListener('click', () => {
+      setOpen(false);
+      openViewer();
+    });
+    art.append(view, el('div', 'ad-note', 'Inspect portraits, character details and animated PNG poses.'));
+    panel.append(art);
+  }
 
   // ---- testing aids -------------------------------------------------------
   if (onResolve !== undefined) {

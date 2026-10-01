@@ -36,6 +36,15 @@ for (const source of [compare, production]) {
 const KEY_FRAMES = ['idle_01', 'walk_01', 'walk_02', 'attack_01', 'attack_02', 'hit_01', 'death_01'] as const;
 type KeyFrame = (typeof KEY_FRAMES)[number];
 
+/** The actual discovered files, in portrait/animation order, using production precedence. */
+export function artAssets(id: string): readonly { frame: string; url: string }[] {
+  const frames = registry.get(id);
+  return ['portrait', ...KEY_FRAMES].flatMap((frame) => {
+    const url = frames?.get(frame);
+    return url === undefined ? [] : [{ frame, url }];
+  });
+}
+
 const images = new Map<string, HTMLImageElement>();
 const listeners = new Set<(id: string) => void>();
 

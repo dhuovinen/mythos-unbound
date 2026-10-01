@@ -247,7 +247,7 @@ function resolveInstantly(): ResolveResult {
   };
 }
 
-mountAdminPanel(resolveInstantly);
+mountAdminPanel(resolveInstantly, ALL_DEITIES);
 
 let previous = performance.now();
 let accumulator = 0;

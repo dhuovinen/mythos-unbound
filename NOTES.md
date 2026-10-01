@@ -28,6 +28,10 @@ npm run typecheck # tsc --noEmit
 npm run build     # typecheck + vite build
 ```
 
+To inspect generated character art, open the gear menu and choose **View character images**.
+Select a character to see its portrait and stats, play its PNG pose sequence, or preview individual
+in-game animations. Missing images are marked explicitly; alignment guides help check pose placement.
+
 Art concept boards (WP-7 output, 9 renders across 3 styles) live in `art/concepts/` and are
 served at http://localhost:3033/art/concepts/ while the dev server is running.
 
