@@ -648,6 +648,11 @@
       "ratio": 0.93,
       "anchor_x": 0.59,
       "baseline": 480
+    },
+    "perseus": {
+      "ratio": 0.9230184596844874,
+      "anchor_x": 0.52,
+      "baseline": 480
     }
   },
   "frames": [
@@ -714,6 +719,14 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Heracles idle, EXACT identity and weapon reference. Preserve same HUGE knotted club, length and thickness—do not shrink it or foreshorten it. Other images style only.\nSubject: Massive demigod, the heaviest silhouette of any demigod: lion pelt worn as a hood and cloak (bone fur with ink hatching, the lion's head over his own, paws knotted at the chest), huge knotted club, bare muscled arms, short ink beard, bone loincloth. The pelt and the club are over a third of the visual mass. No brown or tan: the club is ink with bone highlights. No gold.\n512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nATTACK STRIKE: heavy body committed forward, right arm extended forward RIGHT, hand grips the LOWER THIRD of the huge club's handle; club held diagonally UPRIGHT in front of him, club head ahead of face and above extended hand. Club full length is at least HALF of standing body height, same as idle, its massive knotty head aboutone head-and-shoulder width. NOT a tiny baton. Whole club inside frame. Lion hood/pelt and chest-knotted paws same asidle, short INK beard, massive arms. No shortening weapon tofit: orient club upright with tipatupperright, keep fullbody and weapon visible.",
       "file": "heracles/heracles_attack_02.png",
       "bytes": 33929
+    },
+    {
+      "id": "perseus",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-d8208f27-bd6b-4f55-982d-3f090e9a74ee.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lean heroic youth: short winged sandals (small bone wings at each ankle), a curved harpe sword, a round polished shield of concentric bone-and-ink rings (the mirror), a short blood-red cloak, bare head with short hair, bone chiton. Wings at the ankles, the curved blade and the round shield define the silhouette. No gold.\n512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose idle_01: neutral standing, weight settled, identifying weapon held at rest. Head or headgear is the highest point of the figure; weapon tip should be no higher than head/helm. Keep whole figure in frame, face right. No tier-based size change. Special pose/archetype notes: ",
+      "file": "perseus/perseus_idle_01.png",
+      "bytes": 29623
     }
   ],
   "completed": [

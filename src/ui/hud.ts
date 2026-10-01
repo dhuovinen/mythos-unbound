@@ -14,6 +14,23 @@ import type { HudHandle, MountHud } from '../sim/types';
 
 let activeKeyHandler: ((event: KeyboardEvent) => void) | null = null;
 
+/** What the field limits currently look like to the player, pushed in from the game loop. */
+export interface FieldStatus {
+  readonly units: number;
+  readonly unitsMax: number;
+  readonly heavy: number;
+  readonly heavyMax: number;
+  /** Per hand slot: why that card cannot be played right now, or null. */
+  readonly blocked: readonly (string | null)[];
+}
+
+let applyFieldStatus: ((status: FieldStatus) => void) | null = null;
+
+/** Updates the field counter and marks any summon card the limits are currently blocking. */
+export function setFieldStatus(status: FieldStatus): void {
+  applyFieldStatus?.(status);
+}
+
 function ensureStyles(): void {
   if (document.getElementById('hud-styles') !== null) return;
   const style = document.createElement('style');
@@ -45,6 +62,15 @@ function ensureStyles(): void {
       height: 100%; background: linear-gradient(90deg, #8C2F20, #c9a227);
       border-radius: 5px; transition: width .1s linear;
     }
+    .hud-field { font-weight: 600; font-size: 12px; color: #a99c85; }
+    .hud-field b { color: #e8dcc4; }
+    .hud-field .full { color: #e0614a; }
+    .hud-blocked {
+      position: absolute; left: 0; right: 0; bottom: 6px; text-align: center; font-size: 10px; font-weight: 800;
+      letter-spacing: .6px; text-transform: uppercase; color: #e0614a; display: none;
+    }
+    .hud-slot.blocked .hud-blocked { display: block; }
+    .hud-slot.blocked .hud-progress, .hud-slot.blocked .hud-pantheon { display: none; }
     .hud-hand { display: flex; gap: 10px; justify-content: center; align-items: stretch; }
     .hud-slot {
       position: relative; flex: 1 1 0; max-width: 200px; min-width: 118px;
@@ -102,6 +128,7 @@ interface SlotRefs {
   readonly cost: HTMLElement;
   readonly pantheon: HTMLElement;
   readonly progress: HTMLElement;
+  readonly blocked: HTMLElement;
 }
 
 /** Builds the faith bar and the cycling hand into `root`. */
@@ -125,7 +152,8 @@ export const mountHud: MountHud = (root, onSummonSlot) => {
   const faithHeader = el('div', 'hud-faith-header');
   const faithText = el('span', undefined, 'Faith: 0 / 0');
   const faithRegen = el('span', undefined, '+0.0/s');
-  faithHeader.append(faithText, faithRegen);
+  const fieldInfo = el('span', 'hud-field');
+  faithHeader.append(faithText, fieldInfo, faithRegen);
   const faithTrack = el('div', 'hud-faith-track');
   const faithFill = el('div', 'hud-faith-fill');
   faithFill.style.width = '0%';
@@ -144,10 +172,11 @@ export const mountHud: MountHud = (root, onSummonSlot) => {
     const pantheon = el('div', 'hud-pantheon');
     const progress = el('div', 'hud-progress');
     progress.style.width = '0%';
-    slot.append(el('div', 'hud-key', `${i + 1}`), name, cost, pantheon, progress);
+    const blocked = el('div', 'hud-blocked');
+    slot.append(el('div', 'hud-key', `${i + 1}`), name, cost, pantheon, blocked, progress);
     slot.addEventListener('click', () => onSummonSlot(i));
     handRow.append(slot);
-    slots.push({ root: slot, name, cost, pantheon, progress });
+    slots.push({ root: slot, name, cost, pantheon, progress, blocked });
   }
 
   const nextRow = el('div', 'hud-next');
@@ -174,6 +203,17 @@ export const mountHud: MountHud = (root, onSummonSlot) => {
   };
   activeKeyHandler = handleKeyDown;
   window.addEventListener('keydown', handleKeyDown);
+
+  applyFieldStatus = (status): void => {
+    const unitsFull = status.units >= status.unitsMax;
+    const heavyFull = status.heavy >= status.heavyMax;
+    fieldInfo.innerHTML = `Field <b class="${unitsFull ? 'full' : ''}">${status.units}/${status.unitsMax}</b> · Gods &amp; titans <b class="${heavyFull ? 'full' : ''}">${status.heavy}/${status.heavyMax}</b>`;
+    slots.forEach((refs, i) => {
+      const reason = status.blocked[i] ?? null;
+      refs.root.classList.toggle('blocked', reason !== null);
+      refs.blocked.textContent = reason ?? '';
+    });
+  };
 
   let lastSlotIds = '';
   let lastQueueIds = '';
@@ -227,7 +267,7 @@ export const mountHud: MountHud = (root, onSummonSlot) => {
       slots.forEach((refs, i) => {
         const deity = handSlots[i];
         if (deity === undefined) return;
-        const affordable = !over && world.faith >= deity.cost;
+        const affordable = !over && world.faith >= deity.cost && !refs.root.classList.contains('blocked');
         refs.root.classList.toggle('disabled', !affordable);
         refs.progress.style.width = `${Math.min(100, (world.faith / deity.cost) * 100)}%`;
       });

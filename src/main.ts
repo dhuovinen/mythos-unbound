@@ -21,13 +21,14 @@ import { preloadArt } from './render/art/sprites';
 import { chooseSummon } from './sim/advisor';
 import { createBattleLog, noteDeployment, recordEvents } from './sim/battlelog';
 import { createHand, playFrom } from './sim/hand';
+import { BLOCK_LABEL, deployBlock, fieldCounts, MAX_FIELD_UNITS, MAX_HEAVY_UNITS } from './sim/limits';
 import { createWorld, spawnUnit, tickWorld } from './sim/world';
 import type { ResolveResult } from './ui/admin';
 import { mountAdminPanel } from './ui/admin';
 import { mountCodex } from './ui/codex';
 import { mountConsultant } from './ui/consultant';
 import { mountDraftScreen } from './ui/draftscreen';
-import { mountHud } from './ui/hud';
+import { mountHud, setFieldStatus } from './ui/hud';
 import { mountReport } from './ui/report';
 import { getSettings } from './ui/settings';
 
@@ -155,6 +156,8 @@ function processSpawns(): void {
     if (deityId === undefined) continue;
     const deity = deities.get(deityId);
     if (deity === undefined || world.faith < deity.cost) continue;
+    // A refused summon costs nothing: the faith is only spent once the unit is allowed on the field.
+    if (deployBlock(world, deities, deity, 'player') !== null) continue;
     world.faith -= deity.cost;
     deploy(deity, 'player');
     // Played units cycle to the back; the next reinforcement takes the slot they vacated.
@@ -168,7 +171,12 @@ function processSpawns(): void {
   if (enemyThinkTimer > 0) return;
   enemyThinkTimer = ENEMY_THINK_INTERVAL;
 
-  const choice = chooseSummon(world, deities, graph, enemyDeck, 'enemy', enemyFaith, stage.faithMax);
+  // The opponent obeys the same field limits, so it only considers what it may actually summon.
+  const allowed = enemyDeck.filter((id) => {
+    const candidate = deities.get(id);
+    return candidate !== undefined && deployBlock(world, deities, candidate, 'enemy') === null;
+  });
+  const choice = chooseSummon(world, deities, graph, allowed, 'enemy', enemyFaith, stage.faithMax);
   if (choice === null) return;
   const chosen = deities.get(choice);
   if (chosen === undefined || enemyFaith < chosen.cost) return;
@@ -189,7 +197,11 @@ function autoSummonForPlayer(): void {
   if (autoThinkTimer > 0) return;
   autoThinkTimer = AUTO_THINK_INTERVAL;
 
-  const choice = chooseSummon(world, deities, graph, hand.slots, 'player', world.faith, stage.faithMax);
+  const summonable = hand.slots.filter((id) => {
+    const candidate = deities.get(id);
+    return candidate !== undefined && deployBlock(world, deities, candidate, 'player') === null;
+  });
+  const choice = chooseSummon(world, deities, graph, summonable, 'player', world.faith, stage.faithMax);
   if (choice === null) return;
   const slot = hand.slots.indexOf(choice);
   if (slot >= 0) summonQueue.push(slot);
@@ -257,6 +269,18 @@ function frame(now: number): void {
   recordEvents(battleLog, world.events, world.time);
   world.events.length = 0;
   hud.update(world, toDeities(hand.slots), toDeities(hand.queue));
+  const mine = fieldCounts(world, deities, 'player');
+  setFieldStatus({
+    units: mine.units,
+    unitsMax: MAX_FIELD_UNITS,
+    heavy: mine.heavy,
+    heavyMax: MAX_HEAVY_UNITS,
+    blocked: hand.slots.map((id) => {
+      const candidate = deities.get(id);
+      const block = candidate === undefined ? null : deployBlock(world, deities, candidate, 'player');
+      return block === null ? null : BLOCK_LABEL[block];
+    }),
+  });
   consultant.update(world, world.faith, elapsed);
   report.update(world.outcome);
 

@@ -62,6 +62,11 @@ The `olympus` branch is about looks; gameplay is unchanged.
   `src/ui/familytree.ts`, portraits in `src/ui/portraits.ts`). The two-phase draft and reveal are
   unchanged. Beginning a battle sets the battlefield: one pantheon fights in its realm, the Open World
   tab or any mixed deck in the city.
+- **Field limits — done.** `src/sim/limits.ts`: each side may have at most 8 units in play and at
+  most 2 gods or titans among them (tested in `tests/limits.test.ts`). A refused summon costs no
+  faith, the HUD shows the counts and marks blocked cards, and the opponent obeys the same limits.
+  Scripted stage waves are exempt but count toward the totals. The battlefield also fills the window
+  and fans units across four depth rows (visual only).
 - **Next:** decide rig vs sprites; portraits are crests until a deity has a figure.
 
 ## Status
