@@ -658,6 +658,11 @@
       "ratio": 0.8850118172268907,
       "anchor_x": 0.55,
       "baseline": 480
+    },
+    "athena": {
+      "ratio": 0.9079000538793104,
+      "anchor_x": 0.53,
+      "baseline": 480
     }
   },
   "frames": [
@@ -852,6 +857,62 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Achilles idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Tall lean warrior built for speed, not bulk: tall crested helm with a long blood-red horsehair crest, long spear, ornate greaves with an ink pattern, a sleek bone muscled cuirass, a strap-bound left heel (the single weak point, subtly marked), small round shield slung on the back. The crest and the spear define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nPortrait 768x1024 vertical 3:4, HEAD TO HIPS, THREE QUARTER viewpoint turned slightly RIGHT, BOTH shoulders and both eyes with the far eye partly visible. Face in upper half. Three-quarter view, head to hips, helm crest sweeping behind, spear upright beside the head, proud jaw. Do NOT reuse sprite's strict profile. Hair, headgear, identifying weapon and both arms fully inside the frame; leave at least24px transparent left/right margins and top margin. No fullbody framing.\nCRITICAL CAMERA: Face nearly front-on, turned only25degrees to viewer RIGHT, nose well INSIDE face outline, TWO EYES visibly separated by nose, cheeks on both sides. Both shoulders equally visible. This is a new close portrait pose; never side profile. Helmet face opening must visibly contain BOTH eyes. Preserve the approved idle's bone muscle cuirass, red horsehair crest, ornate greaves, back shield, long spear; no cloak. Head-to-hips, entire spear tip and crest inside canvas. Transparent margins.",
       "file": "achilles/achilles_portrait.png",
       "bytes": 106779
+    },
+    {
+      "id": "athena",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-f965d620-bec8-4218-970a-2ade83b1e436.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume, not a second character). Measured, upright stance. The crest, the spear and the aegis define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\n512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose idle_01: neutral standing, weight settled, identifying weapon held at rest. Head or headgear is the highest point of the figure; weapon tip should be no higher than head/helm. Keep whole figure in frame, face right. No tier-based size change. Special pose/archetype notes: ",
+      "file": "athena/athena_idle_01.png",
+      "bytes": 25132
+    },
+    {
+      "id": "athena",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-218cac57-d0dc-415e-9d96-f4d564aa2a52.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Athena idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume, not a second character). Measured, upright stance. The crest, the spear and the aegis define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose walk_01: Walk CONTACT: right/front leg forward, heel down, opposite leg behind, clear walking motion toward right.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "athena/athena_walk_01.png",
+      "bytes": 26876
+    },
+    {
+      "id": "athena",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-a49ed951-bbd8-4824-b799-b8761e033abc.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Athena idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume, not a second character). Measured, upright stance. The crest, the spear and the aegis define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose walk_02: Walk PASSING: one supporting leg near vertical under hip, foot y480; other leg bends and crosses beneath torso, raised foot beside supporting knee. Feet CLOSE horizontally (less than one head width), only one foot on ground. Body slightly raised at most6px. Do NOT show two feet planted in a wide stride.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "athena/athena_walk_02.png",
+      "bytes": 24216
+    },
+    {
+      "id": "athena",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-ee641349-d58a-496c-8f91-329e7919c09f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Athena idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume, not a second character). Measured, upright stance. The crest, the spear and the aegis define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose attack_01: Attack WIND-UP: weapon drawn back toward left, body coiled, weight settled on back foot, about to attack right.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "athena/athena_attack_01.png",
+      "bytes": 28905
+    },
+    {
+      "id": "athena",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-29513856-886e-4ac8-bd04-4001a3f50e7d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Athena idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume, not a second character). Measured, upright stance. The crest, the spear and the aegis define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose attack_02: Attack STRIKE: weapon and striking arm at full extension toward right, body committed forward, rear leg braces. Keep weapon exactly same design and size as idle; entire weapon inside image. Clearly different from wind-up.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "athena/athena_attack_02.png",
+      "bytes": 22740
+    },
+    {
+      "id": "athena",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-09c4c9a7-afe6-434c-b321-eccfd35a168a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Athena idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume, not a second character). Measured, upright stance. The crest, the spear and the aegis define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose hit_01: HIT reaction: head snapped back left, torso recoils back, knees flex, right facing; supporting foot y480.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "athena/athena_hit_01.png",
+      "bytes": 26374
+    },
+    {
+      "id": "athena",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-33636c49-df53-4960-900b-ff51e6b7bfdd.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Athena idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume, not a second character). Measured, upright stance. The crest, the spear and the aegis define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose death_01: DEATH falling: lose balance, torso tipping back left, knees buckle, weapon loosens and drops, one supporting foot still near y480. Mid-fall, not standing hit pose. Preserve original body size; do not enlarge falling body to fill frame.\nSpecial pose notes (override generic pose where they conflict): ",
+      "file": "athena/athena_death_01.png",
+      "bytes": 29676
     }
   ],
   "completed": [
@@ -859,5 +920,98 @@
     "perseus",
     "achilles"
   ],
-  "active": "athena"
+  "active": "athena",
+  "status": "blocked_image_generation_usage_limit",
+  "pending": {
+    "athena": [
+      "portrait"
+    ],
+    "remaining_deities": [
+      "satyr",
+      "harpy",
+      "asclepius",
+      "orpheus",
+      "dionysus",
+      "aeneas",
+      "hera",
+      "poseidon",
+      "hades",
+      "ares",
+      "aphrodite",
+      "hephaestus",
+      "apollo",
+      "artemis",
+      "typhon",
+      "einherjar",
+      "draugr",
+      "valkyrie",
+      "sigurd",
+      "vidar",
+      "brynhildr",
+      "hodr",
+      "vali",
+      "magni",
+      "skadi",
+      "odin",
+      "loki",
+      "baldr",
+      "frigg",
+      "freyja",
+      "freyr",
+      "tyr",
+      "heimdall",
+      "njord",
+      "fenrir",
+      "jormungandr",
+      "medjay",
+      "shabti",
+      "ba",
+      "wepwawet",
+      "imhotep",
+      "nefertem",
+      "maahes",
+      "bes",
+      "khonsu",
+      "ra",
+      "osiris",
+      "isis",
+      "set",
+      "horus",
+      "nephthys",
+      "thoth",
+      "hathor",
+      "sekhmet",
+      "ptah",
+      "apep",
+      "ammit"
+    ]
+  },
+  "usage_limit": {
+    "resets_at": 1790902542,
+    "resets_at_timezone": "America/New_York",
+    "failed_action": "Athena portrait three-quarter camera correction",
+    "error": "usage_limit_reached",
+    "fallback_used": false
+  },
+  "review": {
+    "small_size_checked": [
+      "heracles",
+      "perseus",
+      "achilles",
+      "athena"
+    ],
+    "athena_battle": "approved",
+    "athena_portrait": "unapproved_profile_camera_needs_regeneration"
+  },
+  "rejected_frames": [
+    {
+      "id": "athena",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-889a1d8f-332f-4d2f-a295-14c029d7ed5f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Athena idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume, not a second character). Measured, upright stance. The crest, the spear and the aegis define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nPortrait 768x1024 vertical 3:4, HEAD TO HIPS, THREE QUARTER viewpoint turned only25degrees RIGHT from frontal: nose well inside face silhouette, BOTH eyes visible separated by nose, both cheeks and BOTH shoulders visible. Far eye only slightly smaller; no side profile. Face in upper half. Three-quarter view, head to hips, helm, owl on the near shoulder, spear upright beside the head, level gaze. Do NOT reuse sprite's strict profile. Hair, headgear, identifying weapon and both arms fully inside the frame; leave at least24px transparent left/right margins and top margin. No fullbody framing.",
+      "file": "athena/athena_portrait.png",
+      "bytes": 102578,
+      "rejection_reason": "Portrait camera too close to strict profile; regeneration blocked by builtin usage limit"
+    }
+  ]
 }
