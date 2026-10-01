@@ -17,6 +17,7 @@
 import { CANVAS_HEIGHT as H, CANVAS_WIDTH as W, LANE_Y } from '../sim/constants';
 import type { Side } from '../sim/types';
 import type { BackdropChoice } from '../ui/settings';
+import { getSettings } from '../ui/settings';
 
 export type BackdropId = Exclude<BackdropChoice, 'auto'>;
 
@@ -897,6 +898,24 @@ export function drawBackdropScene(ctx: Ctx, id: BackdropId, seconds: number): vo
   ctx.drawImage(staticLayer(id), 0, 0);
   ctx.save();
   ANIMATE[id](ctx, seconds);
+  ctx.restore();
+  lighten(ctx, getSettings().backdropLight);
+}
+
+/**
+ * Brightens whatever has been drawn so far by adding the canvas to itself, plus a faint cool wash
+ * to lift the shadows. Called before any unit is drawn, so only the scenery is affected.
+ */
+function lighten(ctx: Ctx, level: number): void {
+  if (level <= 0) return;
+  ctx.save();
+  ctx.globalCompositeOperation = 'lighter';
+  ctx.globalAlpha = level * 0.85;
+  ctx.drawImage(ctx.canvas, 0, 0, ctx.canvas.width, ctx.canvas.height, 0, 0, W, H);
+  ctx.globalCompositeOperation = 'screen';
+  ctx.globalAlpha = 1;
+  ctx.fillStyle = `rgba(150,160,190,${level * 0.22})`;
+  ctx.fillRect(0, 0, W, H);
   ctx.restore();
 }
 

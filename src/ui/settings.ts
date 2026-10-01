@@ -17,6 +17,8 @@ export const BACKDROP_CHOICES: readonly BackdropChoice[] = ['auto', 'greek', 'no
 export interface Settings {
   /** The battlefield scene. */
   backdrop: BackdropChoice;
+  /** How much the backdrops are lightened, 0 (as painted) to 1 (as light as it goes). */
+  backdropLight: number;
   /** 'blocks' is placeholder geometry; 'sprites' uses art from art/roster/; 'rig' draws animated figures in code. */
   unitGraphics: UnitGraphics;
   /** Coloured arcs linking units that currently have a live relationship. */
@@ -42,6 +44,7 @@ const STORAGE_KEY = 'mythos-unbound.settings.v1';
 
 const DEFAULTS: Settings = {
   backdrop: 'auto',
+  backdropLight: 0.3,
   unitGraphics: 'blocks',
   showTethers: true,
   showStatusPips: true,
@@ -73,6 +76,8 @@ function load(): void {
     }
     const backdrop = record['backdrop'];
     if (BACKDROP_CHOICES.some((choice) => choice === backdrop)) current.backdrop = backdrop as BackdropChoice;
+    const light = record['backdropLight'];
+    if (typeof light === 'number' && Number.isFinite(light)) current.backdropLight = Math.min(1, Math.max(0, light));
     const flags = [
       'showTethers',
       'showStatusPips',

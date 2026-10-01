@@ -46,6 +46,10 @@ function styles(): string {
     flex: 1; background: #0f0d0d; border: none; color: #a99c85; cursor: pointer;
     padding: 8px 6px; font-size: 12.5px; font-weight: 700; font-family: inherit;
   }
+  .ad-row-block { margin-top: 12px; }
+  .ad-slider { display: flex; align-items: center; gap: 10px; }
+  .ad-slider input { flex: 1; accent-color: #e8dcc4; }
+  .ad-slider span { width: 38px; text-align: right; font-size: 12px; color: #cabfa9; }
   .ad-seg.wrap { flex-wrap: wrap; }
   .ad-seg.wrap button { flex: 1 1 33%; border-top: 1px solid #3a3229; }
   .ad-seg button + button { border-left: 1px solid #3a3229; }
@@ -186,6 +190,24 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
   scene.append(sceneSeg, el('div', 'ad-note', 'Auto picks the realm your deck belongs to, or the city if it mixes pantheons.'));
   panel.append(scene);
 
+  const light = el('div', 'ad-row-block');
+  light.append(el('div', 'ad-label', 'Backdrop brightness'));
+  const lightRow = el('div', 'ad-slider');
+  const slider = document.createElement('input');
+  slider.type = 'range';
+  slider.min = '0';
+  slider.max = '100';
+  slider.step = '5';
+  slider.setAttribute('aria-label', 'Backdrop brightness');
+  const lightValue = el('span');
+  slider.addEventListener('input', () => {
+    setSetting('backdropLight', Number(slider.value) / 100);
+    lightValue.textContent = `${slider.value}%`;
+  });
+  lightRow.append(slider, lightValue);
+  light.append(lightRow, el('div', 'ad-note', 'Lightens the battlefield scenery and the picker background. Units are not affected.'));
+  scene.append(light);
+
   // ---- overlay toggles ----------------------------------------------------
   const overlays = el('div', 'ad-group');
   overlays.append(el('div', 'ad-label', 'Relational overlays'));
@@ -244,6 +266,8 @@ export function mountAdminPanel(onResolve?: () => ResolveResult): void {
     for (const entry of buttons) {
       entry.node.classList.toggle('on', settings.unitGraphics === entry.option.value);
     }
+    slider.value = String(Math.round(settings.backdropLight * 100));
+    lightValue.textContent = `${slider.value}%`;
     for (const entry of sceneButtons) {
       entry.node.classList.toggle('on', settings.backdrop === entry.option.value);
     }

@@ -134,6 +134,31 @@ function styles(): string {
   .df-tab.on b { background: rgba(0,0,0,.22); color: #101018; }
   .df-blurb { align-self: center; font-size: 12px; color: #b8ac95; margin-left: 6px; max-width: 70ch; line-height: 1.45; }
 
+  .df-gateway {
+    position: absolute; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: flex-start;
+    gap: 16px; padding: 24px; overflow-y: auto;
+  }
+  #draft-overlay.gateway .df-gateway { display: flex; }
+  .df-gateway > :first-child { margin-top: auto; }
+  .df-gateway > :last-child { margin-bottom: auto; }
+  #draft-overlay.gateway .df-shell { display: none; }
+  .df-gateway h1 { margin: 0; font-size: 28px; text-align: center; letter-spacing: .4px; }
+  .df-gateway p.lead { margin: 0; max-width: 64ch; text-align: center; font-size: 14px; line-height: 1.55; color: #cabfa9; }
+  .df-realmcards { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+  .df-realmcard {
+    width: 222px; text-align: left; cursor: pointer; border-radius: 14px; overflow: hidden; padding: 0;
+    background: rgba(14,11,18,.88); border: 2px solid rgba(255,255,255,.14); color: #e8dcc4; font-family: inherit;
+    transition: transform .15s, border-color .15s, box-shadow .15s;
+  }
+  .df-realmcard:hover, .df-realmcard:focus-visible { transform: translateY(-4px); border-color: var(--c); box-shadow: 0 12px 30px -8px var(--c); outline: none; }
+  .df-realmcard canvas { display: block; width: 100%; height: 112px; object-fit: cover; }
+  .df-realmcard .body { padding: 11px 14px 14px; }
+  .df-realmcard h2 { margin: 0 0 4px; font-size: 19px; color: var(--c); }
+  .df-realmcard p { margin: 0; font-size: 12px; line-height: 1.5; color: #b8ac95; }
+  .df-realmcard .count { display: inline-block; margin-top: 8px; font-size: 11px; font-weight: 700; color: #e8dcc4; }
+  .df-realmcard .go { display: block; margin-top: 10px; font-size: 12px; font-weight: 800; color: var(--c); text-transform: uppercase; letter-spacing: .8px; }
+  .df-realmlabel { align-self: center; font-size: 11px; text-transform: uppercase; letter-spacing: .9px; color: #a99c85; font-weight: 700; margin-right: 2px; }
+  .df-change { border-color: #6d6355; }
   .df-main { flex: 1; min-height: 0; display: flex; gap: 12px; }
   .df-viewport {
     flex: 1; min-width: 0; overflow: auto; border-radius: 12px; padding: 12px 10px 16px;
@@ -333,7 +358,7 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
     (adjacency.get(edge.to) ?? adjacency.set(edge.to, new Set()).get(edge.to))?.add(edge.from);
   }
 
-  const button = el('button', undefined, '⚔  Draft');
+  const button = el('button', undefined, '⚔  Pick team');
   button.id = 'draft-open';
 
   const overlay = el('div');
@@ -345,6 +370,7 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
   let reinforcements: DeityId[] = [];
   let enemyOpening: DeityId[] = [];
   let tab: RealmId = 'greek';
+  let view: 'gateway' | 'tree' = 'gateway';
   let hovered: DeityId | null = null;
   let selected: DeityId | null = null;
 
@@ -368,10 +394,46 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
   defs.append(defsInner);
   overlay.append(defs);
 
+  // The front door: pick a mythology before anything else.
+  const gateway = el('div', 'df-gateway');
+  gateway.append(el('h1', undefined, 'Choose a mythology'));
+  gateway.append(
+    el(
+      'p',
+      'lead',
+      'Each mythology is a family of gods with its own feuds, marriages and murders. Pick one to build your team from its family tree — or take the Open World and mix them.',
+    ),
+  );
+  const realmCards = el('div', 'df-realmcards');
+  gateway.append(realmCards);
+  const gatewayClose = el('button', 'df-btn', 'Back to the battle');
+  gateway.append(gatewayClose);
+  overlay.append(gateway);
+
+  const thumbs = new Map<RealmId, { canvas: HTMLCanvasElement; count: HTMLElement }>();
+  for (const realm of REALMS) {
+    const card = el('button', 'df-realmcard');
+    card.style.setProperty('--c', REALM_ACCENT[realm.id]);
+    const canvas = el('canvas');
+    canvas.width = 960;
+    canvas.height = 540;
+    const body = el('div', 'body');
+    const count = el('span', 'count');
+    body.append(el('h2', undefined, realm.label), el('p', undefined, realm.blurb), count, el('span', 'go', 'Choose →'));
+    card.append(canvas, body);
+    card.addEventListener('click', () => {
+      tab = realm.id;
+      view = 'tree';
+      renderView();
+    });
+    realmCards.append(card);
+    thumbs.set(realm.id, { canvas, count });
+  }
+
   const top = el('div', 'df-top');
   const headText = el('div');
   const step = el('div', 'df-step');
-  headText.append(el('h1', undefined, 'Choose your pantheon'), step);
+  headText.append(el('h1', undefined, 'Build your team'), step);
   const instruction = el('p', 'df-instruction');
   headText.append(instruction);
   const actions = el('div', 'df-actions');
@@ -382,6 +444,12 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
   top.append(headText, actions);
 
   const realmBar = el('div', 'df-realms');
+  const change = el('button', 'df-tab df-change', '◀  Change mythology');
+  change.addEventListener('click', () => {
+    view = 'gateway';
+    renderView();
+  });
+  realmBar.append(change, el('span', 'df-realmlabel', 'Viewing'));
   const tabNodes = new Map<RealmId, { node: HTMLElement; count: HTMLElement }>();
   for (const realm of REALMS) {
     const node = el('button', 'df-tab');
@@ -724,6 +792,25 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
     renderTab();
   }
 
+  /** Shows either the mythology gateway or the family tree. */
+  function renderView(): void {
+    overlay.classList.toggle('gateway', view === 'gateway');
+    if (view === 'gateway') {
+      const deck = resolve([...opening, ...reinforcements]);
+      for (const realm of REALMS) {
+        const entry = thumbs.get(realm.id);
+        if (entry === undefined) continue;
+        const ctx = entry.canvas.getContext('2d');
+        if (ctx !== null) drawBackdropScene(ctx, realm.id === 'openworld' ? 'openworld' : realm.id, 0);
+        const n = realm.id === 'openworld' ? deck.length : deck.filter((d) => d.pantheon === realm.id).length;
+        entry.count.textContent = n > 0 ? `${n} in your deck` : '';
+      }
+      gatewayClose.hidden = false;
+    } else {
+      renderTab();
+    }
+  }
+
   // ---- picking --------------------------------------------------------------------------------
   const picked = (): DeityId[] => (phase === 'opening' ? opening : reinforcements);
   const limit = (): number => (phase === 'opening' ? OPENING_SIZE : REINFORCEMENT_SIZE);
@@ -924,6 +1011,8 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
     reinforcements = [];
     enemyOpening = [];
     selected = null;
+    view = 'gateway';
+    renderView();
     refresh();
     applyFocus();
   };
@@ -968,11 +1057,17 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
     } else {
       reset();
     }
+    view = saved !== null && saved.length > 0 ? 'tree' : 'gateway';
     open();
-    renderTab();
+    renderView();
     applyFocus();
   });
 
-  setTab('greek');
+  gatewayClose.addEventListener('click', shut);
+
+  renderTab();
   document.body.append(button, overlay);
+
+  // First launch: no deck yet, so the mythology gateway is the first thing you see.
+  if (getSettings().deck === null) button.click();
 }
