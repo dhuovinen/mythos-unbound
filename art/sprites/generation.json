@@ -698,6 +698,11 @@
       "ratio": 0.9417862838915471,
       "anchor_x": 0.53,
       "baseline": 480
+    },
+    "freyja": {
+      "ratio": 0.9074960127591707,
+      "anchor_x": 0.57,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1539,6 +1544,85 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 BALDR exactapprovedidentity: sameyoungclean-shavensereneface,longbonehair,plainwhitebone sleevelessopenneck tunic,bareunarmouredshoulders/chest,simpleinkbeltwithMISTLETOEspriginkleavesboneberries,onebone/inkroundshield LEFT arm,onestraightboneswordRIGHT hand. OtherreferencesstyleONLY. NO cloak/helm/crown/beard/jewels/gold/halo/glow/rays.\nONE VERTICAL3:4portrait768x1024HEAD TO HIPS, NEW NEARFRONTAL THREEQUARTER20degRIGHT,BOTHEYES andBOTHSHOULDERS visible,noseINSIDEfaceoutline. Sereneuntroubledwarmgentlegaze. Hairdrapedbehindshoulders,sprigclearlyatbelt. Shieldpartlyvisiblebesidebodyandfullswordheldlowdiagonallytoconsiderfit. Entirehair,sword,shield,bothhandsinside35pxtransparentmargins. Faceupperhalf,nolegs,nofullbody. BottomhipcutoutcontinuousPUREINKborder, no bonefillrightatedge/no tinycoloredpixelnoise.",
       "file": "baldr/baldr_portrait.png",
       "bytes": 106491
+    },
+    {
+      "id": "freyja",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-6a68e5d6-8476-4dc3-8db3-63efcfde3ad0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nNEW deity FREYJA,Norsewarriorgoddessofloveandwar, strongadultwomanwithlongBRAIDEDbonehair,barehead. FALCON-FEATHER CLOAK attachedatshoulders, layeredlongink/bone featherswithbloodredtips spreadbackfromshoulders(notwings,notflying). Heavy roundBONEandINKbeadnecklaceatthroat BRISINGAMEN,no gold. Simple bone/inkfittedwarriortunic,bloodwaistwrap,inkboots/leggings. SHORTstraightboneswordRIGHT handlowered, SMALLroundbone/inkshieldLEFT arm. Fiercebeautifuldeterminedface. Feathercloakandheavybeadnecklacedefinesilhouette. No crown/helmet/cats/birds/magic/fire/glow/gold. Twoarms,twohands,twolegs,one shortsword,one smallshield.\nAttachedreferencesSTYLEONLY. Battleidle_01 square512x512truealpha,STRICT RIGHT SIDE PROFILEfullbody. Tophairy50,feetplantedy480,height430,pelvisx256,relaxedready stancefeetmoderatelyapart. Entirebraids,feathercloak,sword,shield,andfeetinside20pxtransparentmargins,no clippedfeathertips.",
+      "file": "freyja/freyja_idle_01.png",
+      "bytes": 35641
+    },
+    {
+      "id": "freyja",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8b543ec2-738a-4efb-b6cb-21e5db68603b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED FREYJA exactidentity: sameadultbeautifulsternwoman, longlargeBONEBRAIDflowingback,tunicbonewithbloodwaistwrap,heavyboneandinkROUND BEADNECKLACE BRISINGAMEN atthroat, attachedlayeredfalconFEATHERCLOAK boneinkbloodtips (a cloakNOT anatomicalwings), boots/leggings, sameSHORTSTRAIGHTbone swordRIGHT handroundpommelcrossguard,SMALLroundinkshieldbone rimcentralbonebossLEFTarm. Images2\u20134STYLEONLY. No helm/crown/gold/cats/birds/flying/glow. Maintainexactfacebodybraidcostumeshieldpatternbladefeatherformsnecklace, lightupperleft,flatfilluniforminkoutline. ExactlyTWOarms/hands/legs,ONEsword ONEshield.\nBattle512squaretruealphafullbodySTRICT RIGHTSIDE PROFILE,standinghairtopy50feet480height430,pelvisx256. Entirefeathercloak/braid/sword/shieldandfeetinside20pxtransparentmargins. Samephysicalbodysizeandhipanchorallposes.\nWalk CONTACT: purposefulRIGHTstep frontfootaheadrearfootbackBOTHcontact480, legsseparate,armsmodestcounter-swing RIGHTshortswordlow/LEFTshieldnearhip. FeathercloaktrailsbehindasONEattachedcloak,no detachedfeathers,braidfollows. Headtopy50samebodyscale.",
+      "file": "freyja/freyja_walk_01.png",
+      "normalization": {
+        "ratio": 0.8652312599681021,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 35784
+    },
+    {
+      "id": "freyja",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e0cae0be-69b6-4d4a-8a39-1e730673e0c3.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED FREYJA exactidentity: sameadultbeautifulsternwoman, longlargeBONEBRAIDflowingback,tunicbonewithbloodwaistwrap,heavyboneandinkROUND BEADNECKLACE BRISINGAMEN atthroat, attachedlayeredfalconFEATHERCLOAK boneinkbloodtips (a cloakNOT anatomicalwings), boots/leggings, sameSHORTSTRAIGHTbone swordRIGHT handroundpommelcrossguard,SMALLroundinkshieldbone rimcentralbonebossLEFTarm. Images2\u20134STYLEONLY. No helm/crown/gold/cats/birds/flying/glow. Maintainexactfacebodybraidcostumeshieldpatternbladefeatherformsnecklace, lightupperleft,flatfilluniforminkoutline. ExactlyTWOarms/hands/legs,ONEsword ONEshield.\nBattle512squaretruealphafullbodySTRICT RIGHTSIDE PROFILE,standinghairtopy50feet480height430,pelvisx256. Entirefeathercloak/braid/sword/shieldandfeetinside20pxtransparentmargins. Samephysicalbodysizeandhipanchorallposes.\nWalk PASSING: ONLYONEplantedfootunderhipcontacts480, OTHER knee bendsandfootraisesnexttosupportshin y400cleartransparentgapunderfoot. Feetclose,4pxrise,one shortswordRIGHThandandonesmallshieldLEFTarm,attachedfeathercloakandbraid.",
+      "file": "freyja/freyja_walk_02.png",
+      "normalization": {
+        "ratio": 0.8819776714513556,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 33639
+    },
+    {
+      "id": "freyja",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9c1f2cd2-366e-4eea-a461-b66b30eca2ad.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED FREYJA exactidentity: sameadultbeautifulsternwoman, longlargeBONEBRAIDflowingback,tunicbonewithbloodwaistwrap,heavyboneandinkROUND BEADNECKLACE BRISINGAMEN atthroat, attachedlayeredfalconFEATHERCLOAK boneinkbloodtips (a cloakNOT anatomicalwings), boots/leggings, sameSHORTSTRAIGHTbone swordRIGHT handroundpommelcrossguard,SMALLroundinkshieldbone rimcentralbonebossLEFTarm. Images2\u20134STYLEONLY. No helm/crown/gold/cats/birds/flying/glow. Maintainexactfacebodybraidcostumeshieldpatternbladefeatherformsnecklace, lightupperleft,flatfilluniforminkoutline. ExactlyTWOarms/hands/legs,ONEsword ONEshield.\nBattle512squaretruealphafullbodySTRICT RIGHTSIDE PROFILE,standinghairtopy50feet480height430,pelvisx256. Entirefeathercloak/braid/sword/shieldandfeetinside20pxtransparentmargins. Samephysicalbodysizeandhipanchorallposes.\nAttack WINDUP: RIGHTshortsworddrawnbackaboveRIGHT shoulder withbladeupbackLEFTat30degreeangle, elbowbent, LEFTsmallshieldraisedahead chestguard. Kneesflexweightback,headstillright. ExactlyTWOarms (swordarm+shieldarm),ONE sword,ONEshield. Hairnecklacefeathercloakremainattached. Entirebladeinside20pxmargin.",
+      "file": "freyja/freyja_attack_01.png",
+      "bytes": 33959
+    },
+    {
+      "id": "freyja",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-77f635fe-72a3-403c-9e1a-ddb8aebae63c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED FREYJA exactidentity: sameadultbeautifulsternwoman, longlargeBONEBRAIDflowingback,tunicbonewithbloodwaistwrap,heavyboneandinkROUND BEADNECKLACE BRISINGAMEN atthroat, attachedlayeredfalconFEATHERCLOAK boneinkbloodtips (a cloakNOT anatomicalwings), boots/leggings, sameSHORTSTRAIGHTbone swordRIGHT handroundpommelcrossguard,SMALLroundinkshieldbone rimcentralbonebossLEFTarm. Images2\u20134STYLEONLY. No helm/crown/gold/cats/birds/flying/glow. Maintainexactfacebodybraidcostumeshieldpatternbladefeatherformsnecklace, lightupperleft,flatfilluniforminkoutline. ExactlyTWOarms/hands/legs,ONEsword ONEshield.\nBattle512squaretruealphafullbodySTRICT RIGHTSIDE PROFILE,standinghairtopy50feet480height430,pelvisx256. Entirefeathercloak/braid/sword/shieldandfeetinside20pxtransparentmargins. Samephysicalbodysizeandhipanchorallposes.\nAttack STRIKE: singledecisiveforwardRIGHTslash, RIGHT swordarmextendsatshoulderheight swordstraightbladeslightdownrighttipx460, LEFTshieldheldnearLEFT chestguard. Frontkneebentbackfootbraced,torsoleansforward10deg,pelvisx256. Compactshortswordfullyinside20pxmargins, no3rdarm orsecondweapon, feathercloakfollowsturn,no detachedfeathers.",
+      "file": "freyja/freyja_attack_02.png",
+      "normalization": {
+        "ratio": 0.84,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 37451
+    },
+    {
+      "id": "freyja",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-1d468fd8-1eeb-4a61-a220-98710f958815.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED FREYJA exactidentity: sameadultbeautifulsternwoman, longlargeBONEBRAIDflowingback,tunicbonewithbloodwaistwrap,heavyboneandinkROUND BEADNECKLACE BRISINGAMEN atthroat, attachedlayeredfalconFEATHERCLOAK boneinkbloodtips (a cloakNOT anatomicalwings), boots/leggings, sameSHORTSTRAIGHTbone swordRIGHT handroundpommelcrossguard,SMALLroundinkshieldbone rimcentralbonebossLEFTarm. Images2\u20134STYLEONLY. No helm/crown/gold/cats/birds/flying/glow. Maintainexactfacebodybraidcostumeshieldpatternbladefeatherformsnecklace, lightupperleft,flatfilluniforminkoutline. ExactlyTWOarms/hands/legs,ONEsword ONEshield.\nBattle512squaretruealphafullbodySTRICT RIGHTSIDE PROFILE,standinghairtopy50feet480height430,pelvisx256. Entirefeathercloak/braid/sword/shieldandfeetinside20pxtransparentmargins. Samephysicalbodysizeandhipanchorallposes.\nHIT: headandshouldersjoltbackLEFT15degrees,kneesflex,onesupportfoot480,otherraisedslightly. RIGHTarmholdsswordlooseandlow,LEFTarmholdsshieldacrosschestprotectively, exactlyTWOarms. Braidswingstowardback,feathercloak attached,intactnecklace, hurtdefiantface. Samebodyscale.",
+      "file": "freyja/freyja_hit_01.png",
+      "bytes": 35650
+    },
+    {
+      "id": "freyja",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b9babeb4-ce74-48a6-a26a-2fbe267fbd82.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED FREYJA exactidentity: sameadultbeautifulsternwoman, longlargeBONEBRAIDflowingback,tunicbonewithbloodwaistwrap,heavyboneandinkROUND BEADNECKLACE BRISINGAMEN atthroat, attachedlayeredfalconFEATHERCLOAK boneinkbloodtips (a cloakNOT anatomicalwings), boots/leggings, sameSHORTSTRAIGHTbone swordRIGHT handroundpommelcrossguard,SMALLroundinkshieldbone rimcentralbonebossLEFTarm. Images2\u20134STYLEONLY. No helm/crown/gold/cats/birds/flying/glow. Maintainexactfacebodybraidcostumeshieldpatternbladefeatherformsnecklace, lightupperleft,flatfilluniforminkoutline. ExactlyTWOarms/hands/legs,ONEsword ONEshield.\nBattle512squaretruealphafullbodySTRICT RIGHTSIDE PROFILE,standinghairtopy50feet480height430,pelvisx256. Entirefeathercloak/braid/sword/shieldandfeetinside20pxtransparentmargins. Samephysicalbodysizeandhipanchorallposes.\nDEATH: hipsdropkneesbuckle,torsofallsbackLEFT35degrees,onefootlastcontacts480otherraisedclearly. RIGHTswordhandlooseoutward holdingbladepointdown,LEFTshieldarmdropsnearhip. Exactlyone sword/one shield/twoarms, necklacebraidandfeathercloak stayattached. Samebodyphysicalsize,intactcostume,clearlyfalling nofloor/effects.",
+      "file": "freyja/freyja_death_01.png",
+      "bytes": 35504
+    },
+    {
+      "id": "freyja",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b1f72e36-5c71-47a7-88ce-ff4e683359d2.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED Freyja identity: sameadultsternbeauty,longlargeBONEBRAID,heavyroundBONE/INKBEADnecklaceBRISINGAMEN atthroat,bonewarriortunic,bloodwaistwrap,layeredfalconFEATHERCLOAK inkbonebloodtips,SHORTSTRAIGHTboneswordRIGHT hand,SMALLroundinkshieldbonerimbonebossLEFTarm. OtherrefsSTYLEONLY. NO gold/crown/helm/cats/birds/wingedflight/glow.\nONE VERTICAL3:4portrait768x1024HEADTOHIPS, NEWnear-frontalTHREEQUARTER20degRIGHT, BOTH eyes/noseinsidefaceoutline/BOTHshouldersvisible. Determinedcommandingface. FeathercloakflaredcompactlybehindBOTHshoulders,necklaceveryclear,longbraidoverone shoulder. Swordraisedbesideheadtiltedslightlytowardcenter andsmallshieldheldlowbesidehip. ENTIREbraid/feathercloak/sword/shield/bothhandsinsidegenerous35pxtransparentmargins. Faceupperhalf,nolegs,nofullbody,nosquare. BottomhipcutoutPUREINKborder,no boneorredatedge/no tinycoloredpixelnoise.",
+      "file": "freyja/freyja_portrait.png",
+      "bytes": 109270
     }
   ],
   "completed": [
@@ -1552,13 +1636,13 @@
     "hera",
     "odin",
     "loki",
-    "baldr"
+    "baldr",
+    "freyja"
   ],
-  "active": "freyja",
+  "active": "tyr",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "freyja",
       "tyr",
       "heimdall",
       "frigg",
@@ -1623,7 +1707,8 @@
       "hera",
       "odin",
       "loki",
-      "baldr"
+      "baldr",
+      "freyja"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -1633,7 +1718,8 @@
     "hera": "approved",
     "odin": "approved",
     "loki": "approved",
-    "baldr": "approved"
+    "baldr": "approved",
+    "freyja": "approved"
   },
   "rejected_frames": [
     {
