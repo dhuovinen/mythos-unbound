@@ -713,6 +713,11 @@
       "ratio": 0.919457735247209,
       "anchor_x": 0.56,
       "baseline": 480
+    },
+    "frigg": {
+      "ratio": 0.9744816586921851,
+      "anchor_x": 0.54,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1786,6 +1791,90 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4733a392-37a0-442e-83ca-7d1181acc6f3.png",
       "file": "heimdall/heimdall_portrait.png",
       "bytes": 112480
+    },
+    {
+      "id": "frigg",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b0181a4f-59d6-4b58-adf9-d92e6d0d6d72.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images: three references STYLE ONLY. Subject: FRIGG, Norse queen of Asgard. Veil and tall headdress held with pins, long robe, ring of household keys at belt, distaff spinning staff with BOUND WOOL AT TOP, usedasstaff. Knows everyfate, saysnothing. Quiet mature knowingface, distinctive tallpinned headdress and distaffsilhouette. Veil is PALE BONE with inkfolds, longink/bone robe with bloodred sash and panel; keysBONE/INK atbelt NO gold. Exactly TWO arms/hands and ONE distaff. Wool atstafftop clearly bound bybands, compactelongatedbundle, nofloating wisps, no glow. NO weaponblade/scythe/spear, distaffisinkshaftwithboneboundwool.\nComposition: 512x512square fullbody, strictRIGHTprofile. Neutral standing idle_01, bothfeet atbaseline y480 underrobe visibleboots, hipcenterx256, standing430pxtall fromheaddresstopnear50. Distaffhelduprightinforwardhand, tipofwoolinsidecanvas nearheadheight. Freehand relaxedatbelt besidekeyring. Entireheaddress, veil, keys, robeandstaff visiblewithmargins, nostaffextendingbeyondframe. No floor/shadow.",
+      "file": "frigg/frigg_idle_01.png",
+      "bytes": 28707
+    },
+    {
+      "id": "frigg",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: exact approved FRIGG idle identity/edit target. Images2\u20134 STYLE ONLY. Preserve mature quiet knowingface, tallpointedpinnedbone/inkheaddress, boneveil, longbone/inkrobes withbloodredshoulderwrap+sashandfrontpanel, bonekeyringwiththreehouseholdkeys atbelt. ONE distaff: inkshaft with largeBONE woolbundle spirallyBOUND IN BLOODRED BANDS, notspear/blade. Exactly TWO hands/arms. Keepsameidentity, bodyproportions, linewidth/palette. 512x512square, fullbodystrictRIGHTprofile. Hipcenterx256, plantedfeet/hem baseliney480. Standing430px fromheaddressnear50 tofeet480. Crouch/fallnaturallylowershead, doNOTenlarge. Entireheaddress/veil/limbs/robe/distaffinsidecanvas; tipandbaseofstaffcomplete. NO healingglow, gold, aura, sparks, floatingwisps/fragments.\nPose: Walking CONTACT frame, frontlegforwardheelgrounded, rearfootbacktoedown, BOTHfeet touchbaseline. Longrobenaturallyopens athem exposingwalkingboots, no extra legs. Distaffheldupright slightlytiltedforward, keysstaybelt, veiltrailsbackLEFT.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-be912218-ddb4-4850-91b0-afbf60eaa4d4.png",
+      "file": "frigg/frigg_walk_01.png",
+      "normalization": {
+        "ratio": 0.9258373205741627,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 33300
+    },
+    {
+      "id": "frigg",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: exact approved FRIGG idle identity/edit target. Images2\u20134 STYLE ONLY. Preserve mature quiet knowingface, tallpointedpinnedbone/inkheaddress, boneveil, longbone/inkrobes withbloodredshoulderwrap+sashandfrontpanel, bonekeyringwiththreehouseholdkeys atbelt. ONE distaff: inkshaft with largeBONE woolbundle spirallyBOUND IN BLOODRED BANDS, notspear/blade. Exactly TWO hands/arms. Keepsameidentity, bodyproportions, linewidth/palette. 512x512square, fullbodystrictRIGHTprofile. Hipcenterx256, plantedfeet/hem baseliney480. Standing430px fromheaddressnear50 tofeet480. Crouch/fallnaturallylowershead, doNOTenlarge. Entireheaddress/veil/limbs/robe/distaffinsidecanvas; tipandbaseofstaffcomplete. NO healingglow, gold, aura, sparks, floatingwisps/fragments.\nPose: Walking PASSING frame, ONE legplantedbaseline beneathhips, otherknee lifted andfoot clearlyraisedOFFGROUND crossingbehindplantedleg. Bodyraisedslightly. Longrobeopens modestly athem toshowpassingshoe. Distaffupright samehand, veiltrailsbackLEFT.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-3d380263-075b-4186-8c6c-6855d00df7c8.png",
+      "file": "frigg/frigg_walk_02.png",
+      "normalization": {
+        "ratio": 0.930622009569378,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 30376
+    },
+    {
+      "id": "frigg",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: exact approved FRIGG idle identity/edit target. Images2\u20134 STYLE ONLY. Preserve mature quiet knowingface, tallpointedpinnedbone/inkheaddress, boneveil, longbone/inkrobes withbloodredshoulderwrap+sashandfrontpanel, bonekeyringwiththreehouseholdkeys atbelt. ONE distaff: inkshaft with largeBONE woolbundle spirallyBOUND IN BLOODRED BANDS, notspear/blade. Exactly TWO hands/arms. Keepsameidentity, bodyproportions, linewidth/palette. 512x512square, fullbodystrictRIGHTprofile. Hipcenterx256, plantedfeet/hem baseliney480. Standing430px fromheaddressnear50 tofeet480. Crouch/fallnaturallylowershead, doNOTenlarge. Entireheaddress/veil/limbs/robe/distaffinsidecanvas; tipandbaseofstaffcomplete. NO healingglow, gold, aura, sparks, floatingwisps/fragments.\nPose: Hit reaction: torso/head recoilbackLEFT nosefacesRIGHT, bentknees, veilfollowingrecoil, distaffprotectivelytilteduprightinoriginalhand. Freehandopenraisedprotectively. Keysattachedbelt.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-261c851c-2432-42e3-95e9-55284840599e.png",
+      "file": "frigg/frigg_hit_01.png",
+      "bytes": 30190
+    },
+    {
+      "id": "frigg",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: exact approved FRIGG idle identity/edit target. Images2\u20134 STYLE ONLY. Preserve mature quiet knowingface, tallpointedpinnedbone/inkheaddress, boneveil, longbone/inkrobes withbloodredshoulderwrap+sashandfrontpanel, bonekeyringwiththreehouseholdkeys atbelt. ONE distaff: inkshaft with largeBONE woolbundle spirallyBOUND IN BLOODRED BANDS, notspear/blade. Exactly TWO hands/arms. Keepsameidentity, bodyproportions, linewidth/palette. 512x512square, fullbodystrictRIGHTprofile. Hipcenterx256, plantedfeet/hem baseliney480. Standing430px fromheaddressnear50 tofeet480. Crouch/fallnaturallylowershead, doNOTenlarge. Entireheaddress/veil/limbs/robe/distaffinsidecanvas; tipandbaseofstaffcomplete. NO healingglow, gold, aura, sparks, floatingwisps/fragments.\nPose: Falling backward LEFT losingbalance, torso/headtiltedbacknoseRIGHT, onefootplantedbaselineandotherlifted fromrobe, keysattachedbelt, veilfallswithbody. Distaffslipslowinoriginalhandandtiltsdiagonally, bothendpointsinsidecanvas. Beginningoffall, notcorpse. Samephysicalsize.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-d3df92ee-705a-4593-aacd-9f5990e1bce4.png",
+      "file": "frigg/frigg_death_01.png",
+      "bytes": 35125
+    },
+    {
+      "id": "frigg",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 exactapprovedFRIGGidle identity. Images2\u20134 styleonly. Preserve tallpinnedpointedbone/inkheaddress, boneveil, maturequietknowinglook, longbone/inkrobe, bloodredshoulderwrap/sash/frontpanel, BONEkeyringandthreehouseholdkeys atbelt. ONE distaff inkshaft withlargeBONE woolbundletop spirallybound by BLOODREDbands, helduprightinonehand; otherhandrelaxedatbelt. No sword, no secondstaff, nohealingglow. VERTICAL3:4 768x1024HEAD TO HIPS portrait, NEW nearfrontalTHREEQUARTER turnedonly20degRIGHT. BOTHeyes/BOTHcheeks/BOTHshouldersvisible, noseINSIDEfaceoutline. Wholeheaddress/veilvisible, faceupperhalf. Keyringfullyvisibleatbelt nearbottom, wrist/handdistaffclearlyinsidecanvas. Entirewoolbundleandtallheaddress inside30pxmargins. Distaffbaseendsnaturally atcroppedhipedge, notfullbodyframe. Stop BELOWKEYRINGatupperhips, NOlegs/knees/boots/feet. CleancontinuousINKbottomhipcontour, no speckledpixelnoise. Allotheredgesandheadgear insidecanvaswithcleartransparentspace.\nImage1 is current head-to-hips portrait edit target; image2 exact idle identity. Surgical change ONLY BOTTOM EDGE: replace noisy speckled pixels along bottom cropped hips with a clean continuous pure INK #1A1A1E outline and leave 30px transparent space below. Keep full keyring, three keys, head-to-hips framing, both eyes, quiet face, tall headdress and veil, staff and wool, two arms and costume exactly. No colorful fringe, gold, yellow or stray floating pixels. No legs or full-body view.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-20b123dc-64b7-4ad0-9fd2-47dedc908ae1.png",
+      "file": "frigg/frigg_portrait.png",
+      "bytes": 88911
+    },
+    {
+      "id": "frigg",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 edit target current Frigg WIND-UP frame; image2 exact idle identity. Change ONLY distaff geometry. It must be a STRAIGHT RIGID spinning staff with wool bundle aligned on SAME STRAIGHT AXIS as shaft. Remove 90-degree kink at bundle connection. Her raised hand stays gripping staff behind shoulder. Rotate wool bundle to continue straight axis diagonally from lowerLEFT shaft base to upperRIGHT wool tip, FULL bundle stays above/behind shoulder inside canvas. Preserve bundle bone wool and blood binding bands, same staff length/design, one staff only. Keep exact body, crouch, headdress, robes, veil, keys, free open hand, face RIGHT, transparent background, scale and composition.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9206b78f-6e23-4256-8539-395dce019f02.png",
+      "file": "frigg/frigg_attack_01.png",
+      "normalization": {
+        "ratio": 0.88,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 35676
+    },
+    {
+      "id": "frigg",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: exact approved FRIGG idle identity/edit target. Images2\u20134 STYLE ONLY. Preserve mature quiet knowingface, tallpointedpinnedbone/inkheaddress, boneveil, longbone/inkrobes withbloodredshoulderwrap+sashandfrontpanel, bonekeyringwiththreehouseholdkeys atbelt. ONE distaff: inkshaft with largeBONE woolbundle spirallyBOUND IN BLOODRED BANDS, notspear/blade. Exactly TWO hands/arms. Keepsameidentity, bodyproportions, linewidth/palette. 512x512square, fullbodystrictRIGHTprofile. Hipcenterx256, plantedfeet/hem baseliney480. Standing430px fromheaddressnear50 tofeet480. Crouch/fallnaturallylowershead, doNOTenlarge. Entireheaddress/veil/limbs/robe/distaffinsidecanvas; tipandbaseofstaffcomplete. NO healingglow, gold, aura, sparks, floatingwisps/fragments.\nPose: Distaff FORWARDTHRUST RIGHT. Torso committedforward, frontkneebent, rearlegbraced, samehandfullyextendsstaffRIGHT withwoolbundletip towardRIGHT; freehandOPENforwardnear chest. Both endpoints ofstaffinsidecanvas, NOTblade/spear. NOhealingglow.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-254808ac-4137-4d12-aeb8-5c82b6a520f3.png",
+      "file": "frigg/frigg_attack_02.png",
+      "normalization": {
+        "ratio": 0.82,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 36860
     }
   ],
   "completed": [
@@ -1802,13 +1891,13 @@
     "baldr",
     "freyja",
     "tyr",
-    "heimdall"
+    "heimdall",
+    "frigg"
   ],
-  "active": "frigg",
+  "active": "njord",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "frigg",
       "njord",
       "freyr",
       "einherjar",
@@ -1873,7 +1962,8 @@
       "baldr",
       "freyja",
       "tyr",
-      "heimdall"
+      "heimdall",
+      "frigg"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -1886,7 +1976,8 @@
     "baldr": "approved",
     "freyja": "approved",
     "tyr": "approved",
-    "heimdall": "approved"
+    "heimdall": "approved",
+    "frigg": "approved"
   },
   "rejected_frames": [
     {
@@ -1993,6 +2084,18 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-fffb401b-afa2-4588-8689-84360c2b3bcc.png",
       "rejection_reason": "Horn clearance too tight at right edge"
+    },
+    {
+      "id": "frigg",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e1a379d0-4931-4f78-980f-c3e345cae0bc.png",
+      "rejection_reason": "Bent distaff connection, replaced with straight shaft and aligned wool"
+    },
+    {
+      "id": "frigg",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e79a36f9-e57d-4aa2-8a48-31d28d31e7e7.png",
+      "rejection_reason": "Colored pixel noise at cropped hip contour"
     }
   ]
 }
