@@ -27,11 +27,12 @@ const signed = (n: number): string => `${n >= 0 ? '+' : ''}${Math.round(n)}`;
 function styles(): string {
   return `
   #report-open {
-    position: fixed; top: 16px; left: 258px; z-index: 41; display: none;
+    position: fixed; top: 66px; left: 16px; z-index: 41; display: none;
     height: 40px; padding: 0 14px; border-radius: 20px;
     background: #241d10; color: #c9a227; border: 2px solid #c9a227;
     font: 700 12px ui-sans-serif, system-ui, sans-serif; cursor: pointer;
   }
+  @media(max-width:560px) { #report-open { left:128px; } }
   #report-open.available { display: inline-block; }
   #report-overlay {
     position: fixed; inset: 0; z-index: 60; display: none;
@@ -100,7 +101,7 @@ export interface ReportHandle {
 }
 
 /** Builds the report button and overlay. Both stay hidden until a battle finishes. */
-export function mountReport(log: BattleLog, deities: DeityIndex): ReportHandle {
+export function mountReport(log: BattleLog, deities: DeityIndex, onDiagnostics?: () => void): ReportHandle {
   const style = el('style');
   style.textContent = styles();
   document.head.append(style);
@@ -138,6 +139,12 @@ export function mountReport(log: BattleLog, deities: DeityIndex): ReportHandle {
     head.append(headText, close);
     close.addEventListener('click', () => overlay.classList.remove('open'));
     sheet.append(head);
+    if (onDiagnostics) {
+      const fullLog = el('button', 'rp-btn', 'Open full diagnostic log & export');
+      fullLog.style.marginTop = '14px';
+      fullLog.addEventListener('click', onDiagnostics);
+      sheet.append(fullLog);
+    }
 
     // ---- headline figures ----
     const cards = el('div', 'rp-cards');

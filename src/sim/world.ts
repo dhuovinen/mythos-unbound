@@ -6,6 +6,7 @@
  */
 
 import { processCombat } from './combat';
+import type { CombatObserver } from './combat';
 import { ENEMY_BASE_X, PLAYER_BASE_X } from './constants';
 import type { CreateWorld, SpawnUnit, TickWorld, Unit } from './types';
 
@@ -61,6 +62,12 @@ export const spawnUnit: SpawnUnit = (world, deity, side) => {
 
 /** Advances the world by exactly one fixed step. Mutates world in place. */
 export const tickWorld: TickWorld = (world, dt, graph, deities, rng) => {
+  tickWorldObserved(world, dt, graph, deities, rng);
+};
+
+/** The same fixed-step path with an optional recording observer. No simulation rules change. */
+export function tickWorldObserved(...args: [...Parameters<TickWorld>, CombatObserver?]): void {
+  const [world, dt, graph, deities, rng, observer] = args;
   if (world.outcome !== 'ongoing') {
     return;
   }
@@ -68,5 +75,5 @@ export const tickWorld: TickWorld = (world, dt, graph, deities, rng) => {
   world.time += dt;
   world.faith = Math.min(world.faithMax, world.faith + world.faithRegen * dt);
 
-  processCombat(world, dt, graph, deities, rng);
-};
+  processCombat(world, dt, graph, deities, rng, observer);
+}

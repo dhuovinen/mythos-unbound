@@ -104,7 +104,7 @@ export interface ResolveResult {
  * `onResolve` fast-forwards the current battle to its conclusion. It is a testing aid, so it lives
  * in its own clearly-labelled section rather than beside the display toggles.
  */
-export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readonly Deity[] = []): void {
+export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readonly Deity[] = [], onDiagnostics?: () => void): void {
   if (document.getElementById('admin-open') !== null) return;
 
   const style = el('style');
@@ -320,6 +320,14 @@ export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readon
   }
 
   // ---- testing aids -------------------------------------------------------
+  if (onDiagnostics) {
+    const diagnostics = el('div', 'ad-group');
+    diagnostics.append(el('div', 'ad-label', 'Battle diagnostics'));
+    const view = el('button', 'ad-wide-btn', 'View full battle log');
+    view.addEventListener('click', () => { setOpen(false); onDiagnostics(); });
+    diagnostics.append(view, el('div', 'ad-note', 'Inspect every attack and deployment, then export the complete log, game instructions and an external review prompt.'));
+    panel.append(diagnostics);
+  }
   if (onResolve !== undefined) {
     const testing = el('div', 'ad-group');
     testing.append(el('div', 'ad-label', 'Testing'));

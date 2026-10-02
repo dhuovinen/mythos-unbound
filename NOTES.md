@@ -5,8 +5,8 @@
 **Mythos Unbound** — a browser lane-battler where mythological units change their
 behaviour based on their *genealogical relationship* to the units they face. Cronus deals bonus
 damage to his own children; Zeus deals bonus damage back to his father; Ares and Aphrodite refuse
-to fight each other. Relations only resolve within a pantheon, so fighting cross-pantheon
-deliberately switches the whole engine off.
+to fight each other. Enemy combat relationships resolve within a pantheon; allied auras can
+still affect a unit fighting a foreign pantheon.
 
 Full design and work breakdown: `~/.claude/plans/pure-percolating-lovelace.md`.
 Agent briefs for distributed work: `docs/briefs/`.
@@ -42,6 +42,27 @@ The standalone page includes a collapsible shared parts catalogue and is include
 
 Art concept boards (WP-7 output, 9 renders across 3 styles) live in `art/concepts/` and are
 served at http://localhost:3033/art/concepts/ while the dev server is running.
+
+Open **Battle log** in the main game, or **gear → Battle diagnostics → View full battle log**.
+If the team picker is open, choose **Back to the battle** first. The completed battle report also
+links to the full diagnostic viewer. Recording starts automatically on page load; reloading or
+starting a new deck begins a new log. The viewer freezes a snapshot while the battle keeps running;
+**Refresh snapshot** captures subsequent events.
+
+Filter or search the chronological events and select one to inspect exact attack arithmetic,
+relationships, unit instance IDs, positions, cooldowns, HP, full field state and summon availability.
+The log includes both economies, the cycling hand, decisions, successful/refused summons, free
+scripted waves, deaths, settings, fast-forward periods and outcomes. Field checkpoints are roughly
+once per second; every attack has its own full pre-attack field. It does not record every movement tick.
+
+**Export review packet (.md)** or **Export JSON** saves the complete snapshot, independent of viewer
+filters and pages, with game instructions, roster, relationship graph, simulation source and an
+example external analysis prompt. Live exports are labelled in progress. **Copy complete export**
+provides an alternative when a browser cannot download files; if clipboard permission is denied,
+the complete text is selected for manual copying. The on-screen preview shows only the first 20,000
+characters, while downloads and the copy button always include every event.
+To request a review, attach the packet in a separate model conversation and paste the included prompt.
+The game performs no diagnostic analysis and makes no model requests.
 
 ## Branches
 

@@ -7,6 +7,7 @@
 
 import { AURA_RADIUS, LANE_LENGTH } from './constants';
 import { combineModifiers, resolveAuras, resolveCombat } from './relations';
+import type { CombinedModifiers } from './relations';
 import type { Deity, DeityIndex, Modifier, RelationGraph, Rng, Unit, World } from './types';
 
 /** Dummy Deity representation for base units so relation functions receive a valid object. */
@@ -32,6 +33,33 @@ export interface AttackResult {
   readonly baseDamage: number;
   readonly suppressed: boolean;
   readonly modifiers: readonly Modifier[];
+  /** Exact inputs used by the resolver, captured without recomputing after the field changes. */
+  readonly calculation?: AttackCalculation;
+}
+
+export interface AttackCalculation {
+  combatModifiers: readonly Modifier[];
+  attackerAuras: readonly Modifier[];
+  defenderAuras: readonly Modifier[];
+  attackerCombined: CombinedModifiers;
+  defenderCombined: CombinedModifiers | null;
+  attackerAllies: number[];
+  defenderAllies: number[];
+  attackerNearbyAllies: number[];
+  defenderNearbyAllies: number[];
+  defenderAurasEvaluated: boolean;
+  baseDamageStat: number;
+  baseArmorStat: number;
+  effectiveArmor: number | null;
+  rawDamage: number | null;
+  cooldownAssigned: number;
+}
+
+export interface CombatObserver {
+  attack(trace: { attackerBefore: Unit; defenderBefore: Unit; attackerAfter: Unit; defenderAfter: Unit;
+    fieldBefore: Unit[]; result: AttackResult }): void;
+  target(unit: Unit, previousTargetId: number | null, target: Unit | null): void;
+  death(unit: Unit): void;
 }
 
 /** Finds the nearest living enemy unit within attack range, breaking ties by lowest ID. */
@@ -88,14 +116,18 @@ export function resolveAttack(
 
   const nearbyAllies: Deity[] = [];
   const fieldAllies: Deity[] = [];
+  const allyIds: number[] = [];
+  const nearbyIds: number[] = [];
 
   for (const u of units) {
     if (u.side === attacker.side && u.hp > 0 && !u.isBase && u.id !== attacker.id) {
       const d = deities.get(u.deityId);
       if (d !== undefined) {
         fieldAllies.push(d);
+        allyIds.push(u.id);
         if (Math.abs(attacker.x - u.x) <= AURA_RADIUS) {
           nearbyAllies.push(d);
+          nearbyIds.push(u.id);
         }
       }
     }
@@ -104,12 +136,19 @@ export function resolveAttack(
   const auraMods = resolveAuras(attackerDeity, nearbyAllies, fieldAllies, graph);
   const allMods = [...combatMods, ...auraMods];
   const combined = combineModifiers(allMods);
+  const calculation: AttackCalculation = {
+    combatModifiers: combatMods, attackerAuras: auraMods, defenderAuras: [],
+    attackerCombined: combined, defenderCombined: null,
+    attackerAllies: allyIds, attackerNearbyAllies: nearbyIds, defenderAllies: [], defenderNearbyAllies: [],
+    defenderAurasEvaluated: false, baseDamageStat: attackerDeity.damage, baseArmorStat: defenderDeity.armor,
+    effectiveArmor: null, rawDamage: null, cooldownAssigned: attackerDeity.attackInterval / combined.attackSpeedMult,
+  };
 
   if (combined.suppress) {
     // Entranced. The attacker refuses to strike, but it still spends its cooldown — otherwise the
     // attempt re-evaluates every single tick and floods the event stream at 60/s.
     attacker.cooldown = attackerDeity.attackInterval / combined.attackSpeedMult;
-    return { damage: 0, baseDamage: unmodifiedDamage(attackerDeity, defenderDeity), suppressed: true, modifiers: allMods };
+    return { damage: 0, baseDamage: unmodifiedDamage(attackerDeity, defenderDeity), suppressed: true, modifiers: allMods, calculation };
   }
 
   let defenderArmor = 0;
@@ -121,18 +160,25 @@ export function resolveAttack(
         const d = deities.get(u.deityId);
         if (d !== undefined) {
           defFieldAllies.push(d);
+          calculation.defenderAllies.push(u.id);
           if (Math.abs(defender.x - u.x) <= AURA_RADIUS) {
             defNearbyAllies.push(d);
+            calculation.defenderNearbyAllies.push(u.id);
           }
         }
       }
     }
     const defAuraMods = resolveAuras(defenderDeity, defNearbyAllies, defFieldAllies, graph);
     const defCombined = combineModifiers(defAuraMods);
+    calculation.defenderAuras = defAuraMods;
+    calculation.defenderCombined = defCombined;
+    calculation.defenderAurasEvaluated = true;
     defenderArmor = defenderDeity.armor * defCombined.armorMult;
   }
 
   const rawDamage = attackerDeity.damage * combined.damageMult;
+  calculation.effectiveArmor = defenderArmor;
+  calculation.rawDamage = rawDamage;
   const damage = Math.max(1, rawDamage - defenderArmor);
 
   attacker.cooldown = attackerDeity.attackInterval / combined.attackSpeedMult;
@@ -143,6 +189,7 @@ export function resolveAttack(
     baseDamage: unmodifiedDamage(attackerDeity, defenderDeity),
     suppressed: false,
     modifiers: allMods,
+    calculation,
   };
 }
 
@@ -153,6 +200,7 @@ export function processCombat(
   graph: RelationGraph,
   deities: DeityIndex,
   rng: Rng,
+  observer?: CombatObserver,
 ): void {
   void rng;
 
@@ -165,11 +213,20 @@ export function processCombat(
     unit.cooldown = Math.max(0, unit.cooldown - dt);
 
     const target = findTarget(unit, deity, world.units);
+    const previousTargetId = unit.targetId;
     unit.targetId = target ? target.id : null;
+    if (unit.targetId !== previousTargetId) observer?.target({ ...unit }, previousTargetId, target ? { ...target } : null);
 
     if (target !== null) {
       if (unit.cooldown <= 0) {
+        const attackerBefore = observer ? { ...unit } : undefined;
+        const defenderBefore = observer ? { ...target } : undefined;
+        const fieldBefore = observer ? world.units.map((u) => ({ ...u })) : undefined;
         const attackResult = resolveAttack(unit, target, world.units, graph, deities);
+        if (observer && attackerBefore && defenderBefore && fieldBefore) {
+          observer.attack({ attackerBefore, defenderBefore, fieldBefore,
+            attackerAfter: { ...unit }, defenderAfter: { ...target }, result: attackResult });
+        }
         // Emitted even when suppressed, with damage 0. A suppressed attack is the single most
         // dramatic thing the relational engine does — two units refusing to fight — and if it
         // emits nothing, the render layer can never announce it. Consumers must treat
@@ -193,6 +250,7 @@ export function processCombat(
   const deadUnits: number[] = [];
   for (const unit of world.units) {
     if (!unit.isBase && unit.hp <= 0) {
+      observer?.death({ ...unit });
       deadUnits.push(unit.id);
     }
   }

@@ -20,9 +20,10 @@ import type { Deity, DeityId, DeityIndex, Pantheon, StageWave } from './sim/type
 import { preloadArt } from './render/art/sprites';
 import { chooseSummon } from './sim/advisor';
 import { createBattleLog, noteDeployment, recordEvents } from './sim/battlelog';
+import { createDiagnosticLog, diagnosticCombatObserver, diagnosticState, noteDiagnostic, unitLabel } from './sim/diagnostics';
 import { createHand, playFrom } from './sim/hand';
 import { BLOCK_LABEL, deployBlock, fieldCounts, MAX_FIELD_UNITS, MAX_HEAVY_UNITS } from './sim/limits';
-import { createWorld, spawnUnit, tickWorld } from './sim/world';
+import { createWorld, spawnUnit, tickWorldObserved } from './sim/world';
 import type { ResolveResult } from './ui/admin';
 import { mountAdminPanel } from './ui/admin';
 import { mountCodex } from './ui/codex';
@@ -31,6 +32,7 @@ import { mountDraftScreen } from './ui/draftscreen';
 import { mountHud, setFieldStatus } from './ui/hud';
 import { mountReport } from './ui/report';
 import { getSettings } from './ui/settings';
+import { mountDiagnostics } from './ui/diagnostics';
 
 const canvas = document.querySelector<HTMLCanvasElement>('#stage');
 const hudRoot = document.querySelector<HTMLElement>('#hud');
@@ -88,7 +90,7 @@ const pendingWaves: StageWave[] = [...stage.waves].sort((a, b) => a.at - b.at);
  * sim. Slots, not ids: which unit occupies a slot changes as the hand cycles, and the player is
  * pressing a position on screen.
  */
-const summonQueue: number[] = [];
+const summonQueue: { slot: number; source: 'manual' | 'auto-player' }[] = [];
 
 /** The cycling hand. Only its visible slots are summonable; the rest arrive as cards are played. */
 let hand = createHand(playerDeck);
@@ -105,13 +107,16 @@ const toDeities = (ids: readonly DeityId[]): Deity[] =>
 const battleLog = createBattleLog();
 
 /** Spawns a unit and registers it with the battle log. All spawns go through this. */
-function deploy(deity: Deity, side: 'player' | 'enemy'): void {
+function deploy(deity: Deity, side: 'player' | 'enemy', source: 'scripted-wave' | 'manual' | 'auto-player' | 'enemy-ai', paidCost: number, scheduledAt?: number): void {
   const unit = spawnUnit(world, deity, side);
-  noteDeployment(battleLog, unit.id, deity.id, side, deity.cost);
+  noteDeployment(battleLog, unit.id, deity.id, side, paidCost);
+  noteDiagnostic(diagnosticLog, world.time, 'deployment', `${unitLabel(unit, deities)} deployed (${source})`, {
+    unit, source, scheduledAt: scheduledAt ?? null, listedCost: deity.cost, paidCost, stateAfter: currentDiagnosticState(),
+  });
 }
 
-const hud = mountHud(hudRoot, (slotIndex) => summonQueue.push(slotIndex));
-const report = mountReport(battleLog, deities);
+const hud = mountHud(hudRoot, (slotIndex) => summonQueue.push({ slot: slotIndex, source: 'manual' }));
+for (const base of world.units) battleLog.identities.set(base.id, { deityId: base.deityId, side: base.side });
 
 mountCodex(ALL_DEITIES, ALL_EDGES);
 preloadArt();
@@ -138,30 +143,49 @@ let enemyThinkTimer = 0;
 
 /** Seconds between opponent decisions — it deliberates rather than dumping its whole bank at once. */
 const ENEMY_THINK_INTERVAL = 2.5;
+const AUTO_THINK_INTERVAL = 2.5;
+const RESOLVE_BUDGET_SECONDS = 400;
+const diagnosticLog = createDiagnosticLog({
+  createdAt: new Date().toISOString(), stage, roster: ALL_DEITIES, relationships: ALL_EDGES,
+  playerDeck, enemyDeck, seed: 0x5eed, settings: { ...getSettings() },
+  enemyThinkInterval: ENEMY_THINK_INTERVAL, autoThinkInterval: AUTO_THINK_INTERVAL, resolveBudget: RESOLVE_BUDGET_SECONDS,
+});
+const combatObserver = diagnosticCombatObserver(diagnosticLog, world, deities);
+function currentDiagnosticState() {
+  return diagnosticState(world, deities, hand, enemyDeck, enemyFaith, getSettings().enemyAi);
+}
+noteDiagnostic(diagnosticLog, 0, 'start', 'Battle initialised', { state: currentDiagnosticState() });
+let nextSnapshotAt = 1;
+let lastLoggedSettings = JSON.stringify(getSettings());
 
 /** Spawns any scripted waves whose time has arrived, and any queued player summons. */
 function processSpawns(): void {
+  if (world.outcome !== 'ongoing') return;
   for (;;) {
     const wave = pendingWaves[0];
     if (wave === undefined || wave.at > world.time) break;
     pendingWaves.shift();
     const deity = deities.get(wave.deityId);
-    if (deity !== undefined) deploy(deity, wave.side);
+    if (deity !== undefined) deploy(deity, wave.side, 'scripted-wave', 0, wave.at);
   }
 
   for (;;) {
-    const slotIndex = summonQueue.shift();
-    if (slotIndex === undefined) break;
+    const request = summonQueue.shift();
+    if (request === undefined) break;
+    const slotIndex = request.slot;
     const deityId = hand.slots[slotIndex];
-    if (deityId === undefined) continue;
-    const deity = deities.get(deityId);
-    if (deity === undefined || world.faith < deity.cost) continue;
+    const deity = deityId === undefined ? undefined : deities.get(deityId);
+    const block = deity === undefined ? null : deployBlock(world, deities, deity, 'player');
+    const reason = deity === undefined ? 'invalid-slot-or-deity' : world.faith < deity.cost ? 'insufficient-faith' : block;
+    noteDiagnostic(diagnosticLog, world.time, 'summon-attempt', `${request.source} slot ${slotIndex + 1}: ${reason ?? 'accepted'}`, {
+      slotIndex, deityId: deityId ?? null, source: request.source, accepted: reason === null, reason, stateBefore: currentDiagnosticState(),
+    });
+    if (deity === undefined || reason !== null) continue;
     // A refused summon costs nothing: the faith is only spent once the unit is allowed on the field.
-    if (deployBlock(world, deities, deity, 'player') !== null) continue;
     world.faith -= deity.cost;
-    deploy(deity, 'player');
     // Played units cycle to the back; the next reinforcement takes the slot they vacated.
     hand = playFrom(hand, slotIndex);
+    deploy(deity, 'player', request.source, deity.cost);
   }
 
   if (!getSettings().enemyAi || world.outcome !== 'ongoing') return;
@@ -177,15 +201,17 @@ function processSpawns(): void {
     return candidate !== undefined && deployBlock(world, deities, candidate, 'enemy') === null;
   });
   const choice = chooseSummon(world, deities, graph, allowed, 'enemy', enemyFaith, stage.faithMax);
+  noteDiagnostic(diagnosticLog, world.time, 'decision', `Opponent decision: ${choice ?? 'wait'}`, {
+    side: 'enemy', source: 'enemy-ai', choice, allowed, stateBefore: currentDiagnosticState(),
+  });
   if (choice === null) return;
   const chosen = deities.get(choice);
   if (chosen === undefined || enemyFaith < chosen.cost) return;
   enemyFaith -= chosen.cost;
-  deploy(chosen, 'enemy');
+  deploy(chosen, 'enemy', 'enemy-ai', chosen.cost);
 }
 
 /** Seconds between the auto-player's decisions during a fast-forward. Matches the opponent's pace. */
-const AUTO_THINK_INTERVAL = 2.5;
 let autoThinkTimer = 0;
 
 /**
@@ -202,13 +228,32 @@ function autoSummonForPlayer(): void {
     return candidate !== undefined && deployBlock(world, deities, candidate, 'player') === null;
   });
   const choice = chooseSummon(world, deities, graph, summonable, 'player', world.faith, stage.faithMax);
+  noteDiagnostic(diagnosticLog, world.time, 'decision', `Auto-player decision: ${choice ?? 'wait'}`, {
+    side: 'player', source: 'auto-player', choice, allowed: summonable, stateBefore: currentDiagnosticState(),
+  });
   if (choice === null) return;
   const slot = hand.slots.indexOf(choice);
-  if (slot >= 0) summonQueue.push(slot);
+  if (slot >= 0) summonQueue.push({ slot, source: 'auto-player' });
 }
 
-/** Sim seconds a fast-forward will run before giving up on a stalemate. */
-const RESOLVE_BUDGET_SECONDS = 400;
+/** Record hits at their exact simulation tick, even when a rendered frame advances several steps. */
+function stepSimulation(): void {
+  if (world.outcome !== 'ongoing') return;
+  const settings = JSON.stringify(getSettings());
+  if (settings !== lastLoggedSettings) {
+    noteDiagnostic(diagnosticLog, world.time, 'settings', 'Runtime settings changed', { settings: { ...getSettings() } });
+    lastLoggedSettings = settings;
+  }
+  const eventStart = world.events.length;
+  processSpawns();
+  tickWorldObserved(world, TICK_DT, graph, deities, rng, combatObserver);
+  recordEvents(battleLog, world.events.slice(eventStart), world.time);
+  if (world.time >= nextSnapshotAt || world.outcome !== 'ongoing') {
+    noteDiagnostic(diagnosticLog, world.time, 'snapshot', 'Field, economy and availability checkpoint', { state: currentDiagnosticState() });
+    nextSnapshotAt = world.time + 1;
+  }
+  if (world.outcome !== 'ongoing') noteDiagnostic(diagnosticLog, world.time, 'outcome', `Battle ended: ${world.outcome}`, { state: currentDiagnosticState() });
+}
 
 /**
  * Fast-forwards the battle to its conclusion.
@@ -225,12 +270,11 @@ function resolveInstantly(): ResolveResult {
   const startedAt = world.time;
   const maxTicks = Math.round(RESOLVE_BUDGET_SECONDS / TICK_DT);
   let ticks = 0;
+  noteDiagnostic(diagnosticLog, world.time, 'mode', 'Fast-forward started; player controlled by the existing summon rule engine', { mode: 'fast-forward', budgetSeconds: RESOLVE_BUDGET_SECONDS });
 
   while (world.outcome === 'ongoing' && ticks < maxTicks) {
     autoSummonForPlayer();
-    processSpawns();
-    tickWorld(world, TICK_DT, graph, deities, rng);
-    recordEvents(battleLog, world.events, world.time);
+    stepSimulation();
     world.events.length = 0;
     ticks++;
   }
@@ -238,6 +282,7 @@ function resolveInstantly(): ResolveResult {
   // The report normally surfaces itself from the animation loop; drive it directly so this works
   // even when frames are not running.
   report.update(world.outcome);
+  noteDiagnostic(diagnosticLog, world.time, 'mode', 'Fast-forward stopped', { mode: 'normal', ticks, budgetReached: world.outcome === 'ongoing' });
 
   return {
     outcome: world.outcome === 'victory' ? 'Victory' : world.outcome === 'defeat' ? 'Defeat' : 'No result',
@@ -247,7 +292,9 @@ function resolveInstantly(): ResolveResult {
   };
 }
 
-mountAdminPanel(resolveInstantly, ALL_DEITIES);
+const openDiagnostics = mountDiagnostics(() => ({ log: diagnosticLog, state: currentDiagnosticState(), time: world.time }));
+const report = mountReport(battleLog, deities, openDiagnostics);
+mountAdminPanel(resolveInstantly, ALL_DEITIES, openDiagnostics);
 
 let previous = performance.now();
 let accumulator = 0;
@@ -258,15 +305,13 @@ function frame(now: number): void {
   accumulator += elapsed;
 
   while (accumulator >= TICK_DT) {
-    processSpawns();
-    tickWorld(world, TICK_DT, graph, deities, rng);
+    stepSimulation();
     accumulator -= TICK_DT;
   }
 
   ctx.setTransform(renderScale, 0, 0, renderScale, 0, 0);
   drawWorld(ctx, world, deities);
   drawEffects(ctx, world, deities, graph, elapsed);
-  recordEvents(battleLog, world.events, world.time);
   world.events.length = 0;
   hud.update(world, toDeities(hand.slots), toDeities(hand.queue));
   const mine = fieldCounts(world, deities, 'player');
