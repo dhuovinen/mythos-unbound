@@ -738,6 +738,11 @@
       "ratio": 0.8995215311004785,
       "anchor_x": 0.5,
       "baseline": 480
+    },
+    "valkyrie": {
+      "ratio": 0.9035087719298246,
+      "anchor_x": 0.6,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2226,6 +2231,95 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-556316da-bb5d-43e8-ae33-0f9fb2fd1815.png",
       "file": "draugr/draugr_portrait.png",
       "bytes": 115225
+    },
+    {
+      "id": "valkyrie",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8862e4e6-303a-4fd3-951e-39b700021027.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Valkyrie, Norse chaff: fast, light female chooser of the slain, stern face, bone winged helm with compact swept-back wings, ONE straight spear with bone point, ONE round bone shield ink radial details blood-red boss, long blood-red cape streaming LEFT behind, light bone/ink mail and wrapped boots. Winged helm and streaming cape define silhouette. Exactly two arms and two legs. Strict RIGHT-facing profile, one visible eye. Forward-leaning idle stance with both feet planted, poised to stride, spear diagonal up toward RIGHT held in rear hand, shield forward in other hand, no extra hands, no scabbard or second weapon. Entire character, both helm wings, cape, spear point and butt visible within margins. Square512x512, top of helmet wings y50, feet y480, hips x256. Transparent background. Style references ONLY, no gold.",
+      "file": "valkyrie/valkyrie_idle_01.png",
+      "bytes": 37282
+    },
+    {
+      "id": "valkyrie",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Valkyrie identity; remaining references STYLE ONLY. Preserve stern female face, bone-white windblown hair, bone winged helm (two compact swept-back wings), same diamond-pattern light bone/ink mail, blood cape and skirt panels, wrapped bone/ink boots. EXACTLY TWO ARMS: rear hand holds ONE straight continuous spear, forward arm holds ONE round bone shield with ink radial marks and flat blood-red boss; shield forearm may be hidden behind shield, NO extra arm or hand. Strict RIGHT side profile one visible eye, full-body square512x512. Standing wing tops y50, feet y480, hips near x256. Same physical body, spear and shield scale as idle. Crouches/falls lower head naturally; never enlarge fallen body. Entire wings/cape/spear point/butt/shield/feet INSIDE canvas margins; no cropping. Fast walking CONTACT phase RIGHT, forward-leaning broad stride: front boot extended right, rear boot left, BOTH soles touching baseline. Spear diagonally up toward right, forward shield. Long cape flowing left, full edges inside margins.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-805f500b-c3cc-44fd-ac71-b79612f7a68c.png",
+      "file": "valkyrie/valkyrie_walk_01.png",
+      "normalization": {
+        "ratio": 0.8875598086124402,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 37754
+    },
+    {
+      "id": "valkyrie",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Valkyrie identity; remaining references STYLE ONLY. Preserve stern female face, bone-white windblown hair, bone winged helm (two compact swept-back wings), same diamond-pattern light bone/ink mail, blood cape and skirt panels, wrapped bone/ink boots. EXACTLY TWO ARMS: rear hand holds ONE straight continuous spear, forward arm holds ONE round bone shield with ink radial marks and flat blood-red boss; shield forearm may be hidden behind shield, NO extra arm or hand. Strict RIGHT side profile one visible eye, full-body square512x512. Standing wing tops y50, feet y480, hips near x256. Same physical body, spear and shield scale as idle. Crouches/falls lower head naturally; never enlarge fallen body. Entire wings/cape/spear point/butt/shield/feet INSIDE canvas margins; no cropping. Fast walking PASSING phase RIGHT, ONE boot planted beneath body, other knee lifted with boot clearly OFF ground, narrower silhouette, forward lean. Spear up diagonally and forward shield, cape flowing left.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-41e5cf9b-f50b-46f5-b7d3-84570c351b74.png",
+      "file": "valkyrie/valkyrie_walk_02.png",
+      "normalization": {
+        "ratio": 0.8779904306220095,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 39117
+    },
+    {
+      "id": "valkyrie",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Valkyrie identity; remaining references STYLE ONLY. Preserve stern female face, bone-white windblown hair, bone winged helm (two compact swept-back wings), same diamond-pattern light bone/ink mail, blood cape and skirt panels, wrapped bone/ink boots. EXACTLY TWO ARMS: rear hand holds ONE straight continuous spear, forward arm holds ONE round bone shield with ink radial marks and flat blood-red boss; shield forearm may be hidden behind shield, NO extra arm or hand. Strict RIGHT side profile one visible eye, full-body square512x512. Standing wing tops y50, feet y480, hips near x256. Same physical body, spear and shield scale as idle. Crouches/falls lower head naturally; never enlarge fallen body. Entire wings/cape/spear point/butt/shield/feet INSIDE canvas margins; no cropping. Spear attack WINDUP: bend knees, shift weight backward, pull spear rearhand back near hip, shaft roughly horizontal, point aimed forward RIGHT, shield held forward. One continuous shaft aligned through hand, whole spear inside canvas; no duplicate shaft.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-093e9745-fa6b-47f9-b77d-fe56b1a0907a.png",
+      "file": "valkyrie/valkyrie_attack_01.png",
+      "normalization": {
+        "ratio": 0.9035087719298246,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 33917
+    },
+    {
+      "id": "valkyrie",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Valkyrie identity; remaining references STYLE ONLY. Preserve stern female face, bone-white windblown hair, bone winged helm (two compact swept-back wings), same diamond-pattern light bone/ink mail, blood cape and skirt panels, wrapped bone/ink boots. EXACTLY TWO ARMS: rear hand holds ONE straight continuous spear, forward arm holds ONE round bone shield with ink radial marks and flat blood-red boss; shield forearm may be hidden behind shield, NO extra arm or hand. Strict RIGHT side profile one visible eye, full-body square512x512. Standing wing tops y50, feet y480, hips near x256. Same physical body, spear and shield scale as idle. Crouches/falls lower head naturally; never enlarge fallen body. Entire wings/cape/spear point/butt/shield/feet INSIDE canvas margins; no cropping. Spear attack STRIKE: strong forward RIGHT lunge, thrust spear ahead RIGHT along ONE straight horizontal line through rearhand, shield raised forward in other arm. Keep whole tip and butt visible, no extra hands, no trails.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-59b9093e-7a06-4675-9112-d69d64d76b96.png",
+      "file": "valkyrie/valkyrie_attack_02.png",
+      "normalization": {
+        "ratio": 0.9035087719298246,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 30100
+    },
+    {
+      "id": "valkyrie",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Valkyrie identity; remaining references STYLE ONLY. Preserve stern female face, bone-white windblown hair, bone winged helm (two compact swept-back wings), same diamond-pattern light bone/ink mail, blood cape and skirt panels, wrapped bone/ink boots. EXACTLY TWO ARMS: rear hand holds ONE straight continuous spear, forward arm holds ONE round bone shield with ink radial marks and flat blood-red boss; shield forearm may be hidden behind shield, NO extra arm or hand. Strict RIGHT side profile one visible eye, full-body square512x512. Standing wing tops y50, feet y480, hips near x256. Same physical body, spear and shield scale as idle. Crouches/falls lower head naturally; never enlarge fallen body. Entire wings/cape/spear point/butt/shield/feet INSIDE canvas margins; no cropping. HIT recoil backward LEFT while still facing RIGHT, knees bent, shield jolted toward chest, spear angled lower right in rearhand, cape folding back. Exactly two arms. No sparks.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4a0765ac-2a0c-4b38-85d3-973bfd03229d.png",
+      "file": "valkyrie/valkyrie_hit_01.png",
+      "bytes": 33865
+    },
+    {
+      "id": "valkyrie",
+      "pose": "death_01",
+      "prompt": "Use case: precise-object-edit. Edit the FIRST image, Valkyrie death sprite. Fix ONLY framing: zoom out slightly and center the complete fallen character, fallen straight spear and ROUND SHIELD, restoring the shield's cropped right rim and cape's cropped left end. Require clear transparent margins at least4% around the entire subject, no objects touching edges. Keep exact fallen pose, identity, two helm wings, eyes closed, bone/ink/red palette, costume, linework, shield pattern, all body parts and ONE spear unchanged. Square full-body transparent RGBA sprite. No ground, no shadow or glow. Do not change her pose or add arms. Other image is identity reference ONLY.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9bc1fa6d-821d-4da4-b63b-dad39b75e05d.png",
+      "file": "valkyrie/valkyrie_death_01.png",
+      "normalization": {
+        "ratio": 0.9035087719298246,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 27983
+    },
+    {
+      "id": "valkyrie",
+      "pose": "portrait",
+      "prompt": "Use case: precise-object-edit. Edit FIRST image, Valkyrie portrait. Fix ONLY framing and helmet wing count: zoom out about10% retaining vertical3:4 head-to-hips composition, ensure clear transparent margin on ALL FOUR edges so complete spearpoint, butt, cape and full round shield no longer touch or clip edges. Helmet must have EXACTLY TWO wing ornaments, one on each side: retain the large LEFT wing and the small RIGHT wing, REMOVE extra middle wing projecting behind/between them. Preserve beautiful exact female face, near-frontal THREEQUARTER pose with both eyes and cheeks, hair, body, costume, straight spear alignment, shield pattern, blood cape, bone/ink/red palette, heavy woodcut outlines. Same portrait no legs/knees. Clean solid ink bottom contour, no stray colored pixels. True RGBA transparency, no ground/shadow/gold/glow. Image2 identity reference ONLY.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b5ce24a6-da5d-49e4-97e8-66b86dc273cd.png",
+      "file": "valkyrie/valkyrie_portrait.png",
+      "bytes": 103778
     }
   ],
   "completed": [
@@ -2247,13 +2341,13 @@
     "njord",
     "freyr",
     "einherjar",
-    "draugr"
+    "draugr",
+    "valkyrie"
   ],
-  "active": "valkyrie",
+  "active": "sigurd",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "valkyrie",
       "sigurd",
       "vidar",
       "brynhildr",
@@ -2318,7 +2412,8 @@
       "njord",
       "freyr",
       "einherjar",
-      "draugr"
+      "draugr",
+      "valkyrie"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -2336,7 +2431,8 @@
     "njord": "approved",
     "freyr": "approved",
     "einherjar": "approved",
-    "draugr": "approved"
+    "draugr": "approved",
+    "valkyrie": "approved"
   },
   "rejected_frames": [
     {
@@ -2485,6 +2581,18 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-de703ae5-1ad8-410c-ab15-c56a5171d0a8.png",
       "rejection_reason": "First edit retained kinked axe handle"
+    },
+    {
+      "id": "valkyrie",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-955e8a86-5e85-4c7c-98fd-f18ae6368b0b.png",
+      "rejection_reason": "Shield right rim and cape left edge cropped; restored full silhouette with edit."
+    },
+    {
+      "id": "valkyrie",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-83e70614-068b-4ca9-84ea-f8aee1fa343b.png",
+      "rejection_reason": "Spear tip, cape and shield touched or clipped canvas edges; extra middle helmet wing removed in edit."
     }
   ]
 }
