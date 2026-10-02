@@ -718,6 +718,11 @@
       "ratio": 0.9744816586921851,
       "anchor_x": 0.54,
       "baseline": 480
+    },
+    "njord": {
+      "ratio": 0.9298245614035088,
+      "anchor_x": 0.56,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1875,6 +1880,95 @@
         "baseline": 480
       },
       "bytes": 36860
+    },
+    {
+      "id": "njord",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8f2855d0-0e46-4cf7-b791-447ab0a3240d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images: three references STYLE ONLY. Subject: NJORD, Norse god of the sea and wealth. Weathered salt-white beard, heavy sea-cloak with ink wave patterns, a harpoon with coiled line, BARE FEET, calm patient face. Old, broad and slow. Harpoon and wave-patterned cloak define silhouette. NO gold. Long thick BONE beard, balding salt-white hair, broad elderly powerful build. Heavy BONE sea-cloak with crisp INK carved wave patterns at shoulder and hem, simple bone/ink tunic and blood sash underneath. Harpoon: ONE straight dark shaft, ONE barbed bone spearhead, a thick BONE/INK rope neatly coiled and attached near his gripping hand, not floating. Exactly TWO arms and hands; no second spear, trident or sword. No crown or helmet.\nComposition: 512x512 square, full body strictly RIGHT profile. Idle_01 neutral calm stance, both BARE FEET planted y480, body hip center x256. Standing about430px from scalp near y50 to feet480. Harpoon held upright in forward hand with its whole barbed head and base inside canvas. Free hand gently supports rope coil at belt. Entire beard, cloak, limbs and all harpoon endpoints inside margin, no clipping. No floor or shadow.",
+      "file": "njord/njord_idle_01.png",
+      "bytes": 33217
+    },
+    {
+      "id": "njord",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved NJORD idle identity, edit ONLY pose. Images2\u20134: STYLE ONLY. Preserve weathered calm patient face, balding pale scalp, salt-white long hair and thick long BONE beard, broad old powerful build, BONE sea-cloak with INK carved wave motifs on shoulder and hem and blood lining. Same bone/ink short tunic and BLOOD sash/front panel. BARE feet, no boots, shoes, helmet or crown. ONE harpoon: straight INK shaft with ONE BONE large barbed arrow-shaped head and rope wrappings; ONE thick BONE rope coil held by opposite hand, with its attached line leading to harpoon. Exactly TWO arms/hands and ONE weapon. No trident/sword/second shaft. Same physical body scale, costume and line weight. Full body strict RIGHT profile on square512x512, nose RIGHT, hip center x256, planted foot y480. Standing scalp near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge body. Entire harpoon head and base, rope, feet, cloak and all limbs inside canvas, no clipping. No aura/glow/sparks/particles/fragments, no floor/shadow.\nPose: Walking CONTACT pose: front bare heel planted forward, rear bare toes planted back, BOTH feet on baseline. Broad old man taking slow heavy stride. Harpoon nearly upright in original hand, opposite hand holds attached rope coil at belt; cloak trails back LEFT.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-2af23ded-a230-4200-8d63-f529553f8205.png",
+      "file": "njord/njord_walk_01.png",
+      "normalization": {
+        "ratio": 0.8604465709728868,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 35622
+    },
+    {
+      "id": "njord",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved NJORD idle identity, edit ONLY pose. Images2\u20134: STYLE ONLY. Preserve weathered calm patient face, balding pale scalp, salt-white long hair and thick long BONE beard, broad old powerful build, BONE sea-cloak with INK carved wave motifs on shoulder and hem and blood lining. Same bone/ink short tunic and BLOOD sash/front panel. BARE feet, no boots, shoes, helmet or crown. ONE harpoon: straight INK shaft with ONE BONE large barbed arrow-shaped head and rope wrappings; ONE thick BONE rope coil held by opposite hand, with its attached line leading to harpoon. Exactly TWO arms/hands and ONE weapon. No trident/sword/second shaft. Same physical body scale, costume and line weight. Full body strict RIGHT profile on square512x512, nose RIGHT, hip center x256, planted foot y480. Standing scalp near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge body. Entire harpoon head and base, rope, feet, cloak and all limbs inside canvas, no clipping. No aura/glow/sparks/particles/fragments, no floor/shadow.\nPose: Walking PASSING pose: ONE bare foot planted under hips, other knee raised with bare foot clearly OFFGROUND crossing behind planted leg. Body slightly raised, slow heavy gait. Harpoon near upright in same hand, rope coil held in other, line attached, cloak trails LEFT.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8c50f8ee-5905-4101-8eb1-ef7e3ecacaa4.png",
+      "file": "njord/njord_walk_02.png",
+      "normalization": {
+        "ratio": 0.8716108452950558,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 34623
+    },
+    {
+      "id": "njord",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved NJORD idle identity, edit ONLY pose. Images2\u20134: STYLE ONLY. Preserve weathered calm patient face, balding pale scalp, salt-white long hair and thick long BONE beard, broad old powerful build, BONE sea-cloak with INK carved wave motifs on shoulder and hem and blood lining. Same bone/ink short tunic and BLOOD sash/front panel. BARE feet, no boots, shoes, helmet or crown. ONE harpoon: straight INK shaft with ONE BONE large barbed arrow-shaped head and rope wrappings; ONE thick BONE rope coil held by opposite hand, with its attached line leading to harpoon. Exactly TWO arms/hands and ONE weapon. No trident/sword/second shaft. Same physical body scale, costume and line weight. Full body strict RIGHT profile on square512x512, nose RIGHT, hip center x256, planted foot y480. Standing scalp near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge body. Entire harpoon head and base, rope, feet, cloak and all limbs inside canvas, no clipping. No aura/glow/sparks/particles/fragments, no floor/shadow.\nPose: Harpoon WIND-UP: bent knees and body coiled, original weapon hand draws harpoon back ABOVE shoulder ready to thrust RIGHT, arrow head points RIGHT near head height, back end extends LEFT but both ends fully inside canvas. Opposite hand securely holds rope coil, line attached to weapon, no second weapon.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-c3ac5df8-0a45-4f19-b146-75766a3b65c3.png",
+      "file": "njord/njord_attack_01.png",
+      "normalization": {
+        "ratio": 0.87,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 39530
+    },
+    {
+      "id": "njord",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved NJORD idle identity, edit ONLY pose. Images2\u20134: STYLE ONLY. Preserve weathered calm patient face, balding pale scalp, salt-white long hair and thick long BONE beard, broad old powerful build, BONE sea-cloak with INK carved wave motifs on shoulder and hem and blood lining. Same bone/ink short tunic and BLOOD sash/front panel. BARE feet, no boots, shoes, helmet or crown. ONE harpoon: straight INK shaft with ONE BONE large barbed arrow-shaped head and rope wrappings; ONE thick BONE rope coil held by opposite hand, with its attached line leading to harpoon. Exactly TWO arms/hands and ONE weapon. No trident/sword/second shaft. Same physical body scale, costume and line weight. Full body strict RIGHT profile on square512x512, nose RIGHT, hip center x256, planted foot y480. Standing scalp near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge body. Entire harpoon head and base, rope, feet, cloak and all limbs inside canvas, no clipping. No aura/glow/sparks/particles/fragments, no floor/shadow.\nPose: Harpoon STRIKE: deep committed forward lunge RIGHT, front knee bent and rear leg braced, weapon arm fully extends straight harpoon horizontally RIGHT, complete barbed head inside right edge, back end inside left edge. Opposite hand grips rope coil at hip, attached line slack behind thrust, no extra hands.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-f382e035-2afb-4cfc-95c2-ae8d39e19c23.png",
+      "file": "njord/njord_attack_02.png",
+      "normalization": {
+        "ratio": 0.84,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 27518
+    },
+    {
+      "id": "njord",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved NJORD idle identity, edit ONLY pose. Images2\u20134: STYLE ONLY. Preserve weathered calm patient face, balding pale scalp, salt-white long hair and thick long BONE beard, broad old powerful build, BONE sea-cloak with INK carved wave motifs on shoulder and hem and blood lining. Same bone/ink short tunic and BLOOD sash/front panel. BARE feet, no boots, shoes, helmet or crown. ONE harpoon: straight INK shaft with ONE BONE large barbed arrow-shaped head and rope wrappings; ONE thick BONE rope coil held by opposite hand, with its attached line leading to harpoon. Exactly TWO arms/hands and ONE weapon. No trident/sword/second shaft. Same physical body scale, costume and line weight. Full body strict RIGHT profile on square512x512, nose RIGHT, hip center x256, planted foot y480. Standing scalp near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge body. Entire harpoon head and base, rope, feet, cloak and all limbs inside canvas, no clipping. No aura/glow/sparks/particles/fragments, no floor/shadow.\nPose: Hit reaction: head and torso recoil back LEFT but nose RIGHT, bent knees, one bare foot slightly raised. Harpoon tilts up protectively in original hand, opposite hand grips rope coil, connected rope line visible. All weapon endpoints inside frame.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-a14175bb-8d04-4b8c-9b16-e3bbfb255b45.png",
+      "file": "njord/njord_hit_01.png",
+      "normalization": {
+        "ratio": 0.9,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 32574
+    },
+    {
+      "id": "njord",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved NJORD idle identity, edit ONLY pose. Images2\u20134: STYLE ONLY. Preserve weathered calm patient face, balding pale scalp, salt-white long hair and thick long BONE beard, broad old powerful build, BONE sea-cloak with INK carved wave motifs on shoulder and hem and blood lining. Same bone/ink short tunic and BLOOD sash/front panel. BARE feet, no boots, shoes, helmet or crown. ONE harpoon: straight INK shaft with ONE BONE large barbed arrow-shaped head and rope wrappings; ONE thick BONE rope coil held by opposite hand, with its attached line leading to harpoon. Exactly TWO arms/hands and ONE weapon. No trident/sword/second shaft. Same physical body scale, costume and line weight. Full body strict RIGHT profile on square512x512, nose RIGHT, hip center x256, planted foot y480. Standing scalp near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge body. Entire harpoon head and base, rope, feet, cloak and all limbs inside canvas, no clipping. No aura/glow/sparks/particles/fragments, no floor/shadow.\nPose: Falling backward LEFT losing balance, torso/head tilted back, nose RIGHT, one bare foot planted baseline and other raised forward. Harpoon droops low diagonal in original hand, rope coil slips lower in opposite hand but attached rope still connects. Entire barbed head and shaft base inside canvas. Beginning of fall, not corpse. Same physical scale.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9e87eb74-d9c7-499f-9522-8bd0be398584.png",
+      "file": "njord/njord_death_01.png",
+      "bytes": 32508
+    },
+    {
+      "id": "njord",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1 exact approved NJORD idle identity; images2\u20134 STYLE ONLY. Preserve calm patient weathered face, balding scalp, long salt-white hair and thick pale beard, broad old build, BONE sea-cloak with INK wave motifs at shoulders, BLOOD lining/sash/front panel, short bone/ink tunic. ONE harpoon, straight INK shaft and ONE large BONE barbed arrow-shaped head, rope wrappings connected to ONE BONE rope coil held in opposite hand near belt. Exactly TWO arms/hands and ONE harpoon, no trident, crown or helmet. VERTICAL3:4 768x1024 portrait HEAD TO HIPS, NEW nearfrontal THREEQUARTER camera turned only20degRIGHT. BOTH eyes/cheeks/shoulders clearly visible, nose inside face outline, calm confident look. Whole scalp, hair and beard visible, face in upper half. Harpoon held upright beside head, barbed head completely inside30px margins; coil fully visible near belt. End body just BELOW BELT at upperhips, NO knees, legs, feet or fullbody. Shaft base continues naturally to cropped hip edge. Clean continuous pure INK bottom outline, no speckled/color pixel noise, all other edges have transparent clearance.\nImage1 current portrait EDIT TARGET; image2 exact idle identity. Correct portrait CAMERA to NEARFRONTAL with head turned only15degRIGHT, BOTH complete eyes and both cheek planes visible, nose betweeneyes nearcenter of face, BOTH broad shoulders facing viewer, calm patient expression. Preserve balding scalp, thick beard, hair, cloak wave designs, blood sash and two hands holding same harpoon and rope coil. Move harpoon a little LEFT so whole arrow-shaped barb has35px transparent clearance at RIGHT EDGE. Keep close HEAD-TO-HIPS framing only, whole coil visible above cropped hips. NO fullbody, legs or feet. Bottom crop must end in clean continuous flat INK outline with30px transparent margin below, no speckled colored noise. Entire head/hair/weapon inside canvas.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-d2d65fd9-8eda-451f-939d-8fbe7cb582f0.png",
+      "file": "njord/njord_portrait.png",
+      "bytes": 109871
     }
   ],
   "completed": [
@@ -1892,13 +1986,13 @@
     "freyja",
     "tyr",
     "heimdall",
-    "frigg"
+    "frigg",
+    "njord"
   ],
-  "active": "njord",
+  "active": "freyr",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "njord",
       "freyr",
       "einherjar",
       "draugr",
@@ -1963,7 +2057,8 @@
       "freyja",
       "tyr",
       "heimdall",
-      "frigg"
+      "frigg",
+      "njord"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -1977,7 +2072,8 @@
     "freyja": "approved",
     "tyr": "approved",
     "heimdall": "approved",
-    "frigg": "approved"
+    "frigg": "approved",
+    "njord": "approved"
   },
   "rejected_frames": [
     {
@@ -2096,6 +2192,12 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e79a36f9-e57d-4aa2-8a48-31d28d31e7e7.png",
       "rejection_reason": "Colored pixel noise at cropped hip contour"
+    },
+    {
+      "id": "njord",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-3efc81b7-c51d-4d6a-8e69-4983d0439f46.png",
+      "rejection_reason": "Portrait angle too close to side profile and tight harpoon clearance"
     }
   ]
 }
