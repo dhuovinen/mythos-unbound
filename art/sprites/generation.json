@@ -728,6 +728,11 @@
       "ratio": 0.9457735247208932,
       "anchor_x": 0.54,
       "baseline": 480
+    },
+    "einherjar": {
+      "ratio": 0.9186602870813397,
+      "anchor_x": 0.5,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2053,6 +2058,90 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-fc1421b5-1091-44b4-a262-f3e7039e2b1d.png",
       "file": "freyr/freyr_portrait.png",
       "bytes": 91719
+    },
+    {
+      "id": "einherjar",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-55a42ee8-bbd5-4c15-9339-4e3532ee69ba.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images: three references STYLE ONLY. Subject: EINHERJAR, warrior chosen for Valhalla. Round Viking helm with nasal bar, round shield with INK SPOKES and BLOOD RED BOSS, ONE axe, mail shirt as INK CROSS-HATCHING ON BONE, braided beard. Grim and cheerful at once. Shield and helm define silhouette. NO gold. Sturdy bearded warrior; bone/ink simple rounded unhorned helmet, one long braided pale beard, ink/bone cross-hatched mail hauberk, blood sash, bone/ink leg wraps and boots. ONE round bone shield with clear radial INK spokes and circular BLOOD boss held by near hand; ONE straight-shaft axe with BONE single crescent blade in other hand. Axe shaft bone/ink, no brown wood. Exactly TWO arms/hands, ONE shield, ONE axe. No sword/spear, no horned helmet. Simple silhouette, minimal decoration.\nComposition:512x512 square, full body STRICT RIGHT PROFILE, nose RIGHT. Neutral standing idle_01 stance, both boots y480, body hipcenter x256, 430px standing from helmet near y50 to feet480. Shield at torso height, axe held diagonally up-right ready. Whole shield, axe blade and shaft base inside margin, all limbs and helm visible, no clipping. Same scale as gods despite chaff tier; game scales tier.\nImage1 CURRENT idle edit target. Correct ONLY shield/arm anatomy and remove extra object: REMOVE ENTIRE stray diagonal shaft protruding down-left from below the shield. The near LEFT arm bends naturally forward with LEFT forearm directly BEHIND round shield, LEFT hand grips a short shield handle entirely HIDDEN behind shield. No shaft protrudes from shield or left hand. Keep opposite RIGHT hand visibly holding ONE axe with ONE straight shaft, same axehead. Exactly TWO arms and TWO hands total, ONE shield and ONE axe; no extra staff/shaft. Shield boss stays bloodred, radial spokes ink on bone. Preserve face, helmet, braid, cross-hatched mail, cape, sash, legs/boots, strict rightprofile, neutral stance, scale and transparent canvas. Keep full axe endpoints and character inside margin.",
+      "file": "einherjar/einherjar_idle_01.png",
+      "bytes": 32874
+    },
+    {
+      "id": "einherjar",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1 EXACT approved EINHERJAR idle identity, edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve plain round BONE/INK Viking helmet with nasal bar, braided pale beard, grim cheerful face, ink cross-hatching on bone mail shirt/hauberk, blood cape and sash, bone/ink wrapped legs and boots. ONE round BONE shield with INK radial spokes and BLOOD RED boss, near LEFT arm bent with forearm and shield handle HIDDEN directly behind shield; no shaft protrudes from shield. Opposite RIGHT hand holds ONE axe: straight bone/ink shaft, single bone crescent blade. Exactly TWO arms/hands, ONE shield, ONE axe. No extra staff/shaft/sword/spear. Preserve physical scale, proportions, costume, palette and line weight. Fullbody square512x512 strict RIGHT profile, nose RIGHT, hip centerx256, plantedbootbaseliney480. Standing helmettop near y50, 430pxbody. Crouch/fall naturally lowers helmet; do NOT enlarge. Entire axeblade/shaft/helm/shield/limbs insidecanvas no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floatingfragments.\nPose: Walking CONTACT frame: front boot forward heel planted, rear boot back toe planted, BOTH feet on baseline. Shield held at chest by left arm, axe ready diagonally up-right in right hand, cape trails LEFT.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-5ab2388b-482b-4724-91ec-efe2cb3d76fd.png",
+      "file": "einherjar/einherjar_walk_01.png",
+      "normalization": {
+        "ratio": 0.8437001594896332,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 34940
+    },
+    {
+      "id": "einherjar",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1 EXACT approved EINHERJAR idle identity, edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve plain round BONE/INK Viking helmet with nasal bar, braided pale beard, grim cheerful face, ink cross-hatching on bone mail shirt/hauberk, blood cape and sash, bone/ink wrapped legs and boots. ONE round BONE shield with INK radial spokes and BLOOD RED boss, near LEFT arm bent with forearm and shield handle HIDDEN directly behind shield; no shaft protrudes from shield. Opposite RIGHT hand holds ONE axe: straight bone/ink shaft, single bone crescent blade. Exactly TWO arms/hands, ONE shield, ONE axe. No extra staff/shaft/sword/spear. Preserve physical scale, proportions, costume, palette and line weight. Fullbody square512x512 strict RIGHT profile, nose RIGHT, hip centerx256, plantedbootbaseliney480. Standing helmettop near y50, 430pxbody. Crouch/fall naturally lowers helmet; do NOT enlarge. Entire axeblade/shaft/helm/shield/limbs insidecanvas no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floatingfragments.\nPose: Walking PASSING frame: ONE boot planted beneath hips, other knee lifted and boot clearly OFFGROUND crossing behind planted leg. Body raised slightly. Shield guards chest and axe ready in original hand, cape trails LEFT.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-89757691-59cb-4afd-806e-c3543302ae75.png",
+      "file": "einherjar/einherjar_walk_02.png",
+      "normalization": {
+        "ratio": 0.8532695374800638,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 32742
+    },
+    {
+      "id": "einherjar",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1 EXACT approved EINHERJAR idle identity, edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve plain round BONE/INK Viking helmet with nasal bar, braided pale beard, grim cheerful face, ink cross-hatching on bone mail shirt/hauberk, blood cape and sash, bone/ink wrapped legs and boots. ONE round BONE shield with INK radial spokes and BLOOD RED boss, near LEFT arm bent with forearm and shield handle HIDDEN directly behind shield; no shaft protrudes from shield. Opposite RIGHT hand holds ONE axe: straight bone/ink shaft, single bone crescent blade. Exactly TWO arms/hands, ONE shield, ONE axe. No extra staff/shaft/sword/spear. Preserve physical scale, proportions, costume, palette and line weight. Fullbody square512x512 strict RIGHT profile, nose RIGHT, hip centerx256, plantedbootbaseliney480. Standing helmettop near y50, 430pxbody. Crouch/fall naturally lowers helmet; do NOT enlarge. Entire axeblade/shaft/helm/shield/limbs insidecanvas no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floatingfragments.\nPose: AXE WIND-UP: knees bent and weight back, original RIGHT axe hand raised HIGH OVERHEAD/BACK behind shoulder preparing chop RIGHT. LEFT forearm stays hidden behind shield raised to chest. ONE axe, full crescent blade and shaftbase insidecanvas.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-7437a003-0458-4b80-b509-8d20a748b26c.png",
+      "file": "einherjar/einherjar_attack_01.png",
+      "normalization": {
+        "ratio": 0.9186602870813397,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 30850
+    },
+    {
+      "id": "einherjar",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1 EXACT approved EINHERJAR idle identity, edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve plain round BONE/INK Viking helmet with nasal bar, braided pale beard, grim cheerful face, ink cross-hatching on bone mail shirt/hauberk, blood cape and sash, bone/ink wrapped legs and boots. ONE round BONE shield with INK radial spokes and BLOOD RED boss, near LEFT arm bent with forearm and shield handle HIDDEN directly behind shield; no shaft protrudes from shield. Opposite RIGHT hand holds ONE axe: straight bone/ink shaft, single bone crescent blade. Exactly TWO arms/hands, ONE shield, ONE axe. No extra staff/shaft/sword/spear. Preserve physical scale, proportions, costume, palette and line weight. Fullbody square512x512 strict RIGHT profile, nose RIGHT, hip centerx256, plantedbootbaseliney480. Standing helmettop near y50, 430pxbody. Crouch/fall naturally lowers helmet; do NOT enlarge. Entire axeblade/shaft/helm/shield/limbs insidecanvas no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floatingfragments.\nPose: AXE CHOP STRIKE: committed forward lunge RIGHT, front knee bent, original RIGHT hand swings axe DOWN-forward with single crescent blade fully inside lower-right canvas. LEFT shield arm guards front chest, one round shield. Full shaft and blade insideframe. No impact effects.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4d248de6-4c98-440c-a7fd-2c4b77141850.png",
+      "file": "einherjar/einherjar_attack_02.png",
+      "normalization": {
+        "ratio": 0.84,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 39665
+    },
+    {
+      "id": "einherjar",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1 EXACT approved EINHERJAR idle identity, edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve plain round BONE/INK Viking helmet with nasal bar, braided pale beard, grim cheerful face, ink cross-hatching on bone mail shirt/hauberk, blood cape and sash, bone/ink wrapped legs and boots. ONE round BONE shield with INK radial spokes and BLOOD RED boss, near LEFT arm bent with forearm and shield handle HIDDEN directly behind shield; no shaft protrudes from shield. Opposite RIGHT hand holds ONE axe: straight bone/ink shaft, single bone crescent blade. Exactly TWO arms/hands, ONE shield, ONE axe. No extra staff/shaft/sword/spear. Preserve physical scale, proportions, costume, palette and line weight. Fullbody square512x512 strict RIGHT profile, nose RIGHT, hip centerx256, plantedbootbaseliney480. Standing helmettop near y50, 430pxbody. Crouch/fall naturally lowers helmet; do NOT enlarge. Entire axeblade/shaft/helm/shield/limbs insidecanvas no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floatingfragments.\nPose: Hit reaction: head and torso recoil LEFT but nose RIGHT, knees bent and one boot slightlyraised, LEFT shield raised protectively nearer face, RIGHT axe lowered diagonally-right, complete blade/shaft insidecanvas.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-aa914563-0558-44da-8619-1b6b40740549.png",
+      "file": "einherjar/einherjar_hit_01.png",
+      "bytes": 30291
+    },
+    {
+      "id": "einherjar",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1 EXACT approved EINHERJAR idle identity, edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve plain round BONE/INK Viking helmet with nasal bar, braided pale beard, grim cheerful face, ink cross-hatching on bone mail shirt/hauberk, blood cape and sash, bone/ink wrapped legs and boots. ONE round BONE shield with INK radial spokes and BLOOD RED boss, near LEFT arm bent with forearm and shield handle HIDDEN directly behind shield; no shaft protrudes from shield. Opposite RIGHT hand holds ONE axe: straight bone/ink shaft, single bone crescent blade. Exactly TWO arms/hands, ONE shield, ONE axe. No extra staff/shaft/sword/spear. Preserve physical scale, proportions, costume, palette and line weight. Fullbody square512x512 strict RIGHT profile, nose RIGHT, hip centerx256, plantedbootbaseliney480. Standing helmettop near y50, 430pxbody. Crouch/fall naturally lowers helmet; do NOT enlarge. Entire axeblade/shaft/helm/shield/limbs insidecanvas no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floatingfragments.\nPose: Falling backward LEFT losing balance, torso/head tiltedback noseRIGHT, onebootplantedbaseline andotherlegraisedforward. RIGHT axe droopingdiagonallylowRIGHT, LEFT shield loweredtohip with forearmbehindit. Whole axe/shield/limbs insideframe. Beginningoffall notcorpse, samephysicalscale.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e4a6191f-9a05-4f82-b604-90843a6fc7c1.png",
+      "file": "einherjar/einherjar_death_01.png",
+      "bytes": 29473
+    },
+    {
+      "id": "einherjar",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 EXACT approved EINHERJAR idle identity; images2\u20134 STYLE ONLY. Preserve plain round BONE/INK Viking helm with nasal bar, braided pale beard, grim cheerful face, ink cross-hatching on bone mail hauberk, blood cape/sash. ONE round BONE shield with INK radial spokes and BLOOD RED boss RAISED at chest in near LEFT arm, forearm/hand hidden directly behind shield; no protruding handle. Opposite RIGHT hand holds ONE axe OVER SHOULDER with entire crescent blade and straight shaft insidecanvas. Exactly TWO arms/hands, ONEshield/ONEaxe, no extra shafts/sword/spear. VERTICAL3:4 768x1024 HEAD-TO-HIPS portrait. NEW nearfrontal THREEQUARTER turned only15degRIGHT; BOTH eyes and BOTH cheek planes visible either side of central nasal bar, nose nearcenter offace, BOTH shoulders visible, faceupperhalf. Entire helmet/beard, round shield and axe endpoints inside30pxmargins. Stop just BELOW BELT at upperhips, no legs/knees/boots/feet/fullbody. CLEAN CONTINUOUS PURE INK bottom hip contour,30pxtransparentmarginbelow, no speckled colored noise/gold pixels.\nImage1 current portrait EDIT TARGET; image2 idle exact identity. Critical axe correction: REMOVE the axehead at UPPER LEFT and REMOVE its shaft running down-right behind hair. Keep the raised gripping hand at viewer LEFT. That hand's shaft runs straight from pommel LOWER LEFT through the hand toward UPPER RIGHT. Extend this SAME single straight shaft up-right behind his shoulder and put ONE crescent axehead at UPPER RIGHT ABOVE HELMET. Axehead and existing grip/pommel must align on ONE diagonal lowerleft-to-upperright. Exactly ONE axehead and ONE straight shaft, no kink, V shape, fork or second shaft. All weapon endpoints inside30px margins. Preserve entire face/helmet/braid/mail/cape/shield, head-to-hips verticalportrait, BOTH eyes visible, TWO arms total. Only move the axehead and replace its geometry. No legs, gold, glow or floating fragments.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4642e901-153b-40c9-b834-cab84302bbdd.png",
+      "file": "einherjar/einherjar_portrait.png",
+      "bytes": 126220
     }
   ],
   "completed": [
@@ -2072,13 +2161,13 @@
     "heimdall",
     "frigg",
     "njord",
-    "freyr"
+    "freyr",
+    "einherjar"
   ],
-  "active": "einherjar",
+  "active": "draugr",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "einherjar",
       "draugr",
       "valkyrie",
       "sigurd",
@@ -2143,7 +2232,8 @@
       "heimdall",
       "frigg",
       "njord",
-      "freyr"
+      "freyr",
+      "einherjar"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -2159,7 +2249,8 @@
     "heimdall": "approved",
     "frigg": "approved",
     "njord": "approved",
-    "freyr": "approved"
+    "freyr": "approved",
+    "einherjar": "approved"
   },
   "rejected_frames": [
     {
@@ -2290,6 +2381,24 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-708082a0-9738-49af-beb2-e5968620ffba.png",
       "rejection_reason": "Colored pixel noise at cropped hips and tight antler clearance"
+    },
+    {
+      "id": "einherjar",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-32a4b689-b1cc-48ed-ac95-0ea1724deff1.png",
+      "rejection_reason": "Extra shaft below shield, shield grip corrected"
+    },
+    {
+      "id": "einherjar",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-dd09f568-796b-4a8b-a4bc-5f7d3cf251d6.png",
+      "rejection_reason": "Kinked V-shaped axe handle"
+    },
+    {
+      "id": "einherjar",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-de703ae5-1ad8-410c-ab15-c56a5171d0a8.png",
+      "rejection_reason": "First edit retained kinked axe handle"
     }
   ]
 }
