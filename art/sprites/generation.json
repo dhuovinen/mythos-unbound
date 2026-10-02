@@ -733,6 +733,11 @@
       "ratio": 0.9186602870813397,
       "anchor_x": 0.5,
       "baseline": 480
+    },
+    "draugr": {
+      "ratio": 0.8995215311004785,
+      "anchor_x": 0.5,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2142,6 +2147,85 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4642e901-153b-40c9-b834-cab84302bbdd.png",
       "file": "einherjar/einherjar_portrait.png",
       "bytes": 126220
+    },
+    {
+      "id": "draugr",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-362fa3d5-40f7-4b4b-ab41-6b9015ef1632.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Draugr, Norse chaff. Corpse that stayed in its barrow: hunched, gaunt, desiccated, tattered bone-grey burial wrappings and chipped ink-grey mail, a notched bone-grey sword, dented unhorned bone helm over hollow eyes with flat blood-red pinpoints (no glowing light). Ragged burial-cloth hood around the helm and neck. Slow and heavy. Hunch and notched sword define silhouette. Exactly two arms, two legs, one sword, no shield. Strict RIGHT-facing side profile; one visible eye. Idle stance, both feet planted, sword held low in front with tip safely above ground, free hand hanging. Entire body and weapon visible, square 512x512 composition. Consistent game scale: top of hunched helmet about y50, boots on y480, hips near x256. No ground or shadow. References are STYLE ONLY.",
+      "file": "draugr/draugr_idle_01.png",
+      "bytes": 33158
+    },
+    {
+      "id": "draugr",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Draugr identity reference; all other images STYLE ONLY. Preserve gaunt skeletal face, flat red pinpoint eye, dented bone unhorned helmet/nasal guard surrounded by ragged blood-red burial hood and cape, bone wrappings, ink-grey chainmail, exposed bony hands, boots and ONE long bone notched sword. Exactly two arms and two legs; no shield. Strict RIGHT-facing side profile, one eye. Single full-body battle sprite square512x512. Full body, feet and entire sword visible with margins. Same physical body and sword size as idle; hips near x256, foot baseline y480, standing helm top y50; crouches/falls lower the head naturally, do not enlarge body. Walking contact phase RIGHT. Slow hunched weight; front boot extended right, rear boot left, BOTH feet touching baseline, broad stride. Sword carried low forward. Clearly distinct from idle.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-022b228e-4b40-429e-b026-26aba617991a.png",
+      "file": "draugr/draugr_walk_01.png",
+      "normalization": {
+        "ratio": 0.8819776714513556,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 35901
+    },
+    {
+      "id": "draugr",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Draugr identity reference; all other images STYLE ONLY. Preserve gaunt skeletal face, flat red pinpoint eye, dented bone unhorned helmet/nasal guard surrounded by ragged blood-red burial hood and cape, bone wrappings, ink-grey chainmail, exposed bony hands, boots and ONE long bone notched sword. Exactly two arms and two legs; no shield. Strict RIGHT-facing side profile, one eye. Single full-body battle sprite square512x512. Full body, feet and entire sword visible with margins. Same physical body and sword size as idle; hips near x256, foot baseline y480, standing helm top y50; crouches/falls lower the head naturally, do not enlarge body. Walking passing phase RIGHT: ONE planted boot beneath body, other knee bent and boot raised visibly OFF ground. Hunch maintained, slow dragging gait. Sword held low. Clearly distinct from contact.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b0320bb2-1ac2-42af-bbd5-2d37afa878ef.png",
+      "file": "draugr/draugr_walk_02.png",
+      "normalization": {
+        "ratio": 0.8604465709728868,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 31526
+    },
+    {
+      "id": "draugr",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Draugr identity reference; all other images STYLE ONLY. Preserve gaunt skeletal face, flat red pinpoint eye, dented bone unhorned helmet/nasal guard surrounded by ragged blood-red burial hood and cape, bone wrappings, ink-grey chainmail, exposed bony hands, boots and ONE long bone notched sword. Exactly two arms and two legs; no shield. Strict RIGHT-facing side profile, one eye. Single full-body battle sprite square512x512. Full body, feet and entire sword visible with margins. Same physical body and sword size as idle; hips near x256, foot baseline y480, standing helm top y50; crouches/falls lower the head naturally, do not enlarge body. Attack windup: rearward weight on bent legs, sword drawn UP AND BACK overhead, its full blade inside canvas; tense free hand forward. No trails.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-a54d21c2-8480-4687-a1fb-62094d78e773.png",
+      "file": "draugr/draugr_attack_01.png",
+      "bytes": 35663
+    },
+    {
+      "id": "draugr",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Draugr identity reference; all other images STYLE ONLY. Preserve gaunt skeletal face, flat red pinpoint eye, dented bone unhorned helmet/nasal guard surrounded by ragged blood-red burial hood and cape, bone wrappings, ink-grey chainmail, exposed bony hands, boots and ONE long bone notched sword. Exactly two arms and two legs; no shield. Strict RIGHT-facing side profile, one eye. Single full-body battle sprite square512x512. Full body, feet and entire sword visible with margins. Same physical body and sword size as idle; hips near x256, foot baseline y480, standing helm top y50; crouches/falls lower the head naturally, do not enlarge body. Attack strike: deep forward RIGHT lunge, notched sword extended right in a forceful downward slash, entire point inside frame, other arm pulled back. Strong dynamic silhouette, no slash effects.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9b47e1ae-4eed-4350-b7b2-f38e9d828beb.png",
+      "file": "draugr/draugr_attack_02.png",
+      "normalization": {
+        "ratio": 0.84,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 32383
+    },
+    {
+      "id": "draugr",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Draugr identity reference; all other images STYLE ONLY. Preserve gaunt skeletal face, flat red pinpoint eye, dented bone unhorned helmet/nasal guard surrounded by ragged blood-red burial hood and cape, bone wrappings, ink-grey chainmail, exposed bony hands, boots and ONE long bone notched sword. Exactly two arms and two legs; no shield. Strict RIGHT-facing side profile, one eye. Single full-body battle sprite square512x512. Full body, feet and entire sword visible with margins. Same physical body and sword size as idle; hips near x256, foot baseline y480, standing helm top y50; crouches/falls lower the head naturally, do not enlarge body. Hit reaction: recoil BACK to left while still facing RIGHT, torso hunched and head jerked back, knees bent, sword lowered, free hand lifted defensively. No blood spray or effects.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-06171083-8567-421a-9b34-f74542043997.png",
+      "file": "draugr/draugr_hit_01.png",
+      "bytes": 32286
+    },
+    {
+      "id": "draugr",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Draugr identity reference; all other images STYLE ONLY. Preserve gaunt skeletal face, flat red pinpoint eye, dented bone unhorned helmet/nasal guard surrounded by ragged blood-red burial hood and cape, bone wrappings, ink-grey chainmail, exposed bony hands, boots and ONE long bone notched sword. Exactly two arms and two legs; no shield. Strict RIGHT-facing side profile, one eye. Single full-body battle sprite square512x512. Full body, feet and entire sword visible with margins. Same physical body and sword size as idle; hips near x256, foot baseline y480, standing helm top y50; crouches/falls lower the head naturally, do not enlarge body. SPECIAL DEATH requirement from brief: undead body CRUMBLES APART, bones and mail spilling into a collapsing heap, NOT a clean intact fallen body. Head with helm and hood sagging right, spine and ribs collapsing, arms and legs physically separating into recognizable bone pieces directly beneath the body; ONE notched sword fallen nearby. This pose expressly allows dropped bones and mail pieces as physical remains, overriding generic ban on floating fragments, but no sparks, dust, particles, or glow. Keep all remains and entire sword inside frame. Body reduced naturally into low heap at foot baseline, never enlarge to fill canvas.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8e3f1654-5230-4558-a9e0-e3f0732d1fcf.png",
+      "file": "draugr/draugr_death_01.png",
+      "bytes": 28792
+    },
+    {
+      "id": "draugr",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1: EXACT Draugr identity; other images STYLE ONLY. Portrait, vertical3:4 768x1024 HEAD TO HIPS only. Near-frontal face turned15 degrees RIGHT, CLEARLY BOTH hollow eye sockets and flat blood-red pinpoints, both cheeks and both shoulders; nose inside face outline, not a profile view. Desiccated gaunt undead face, same dented bone helm/nasal bar, ragged blood-red burial cloth hood and cape, ink-grey chipped chainmail and bone wrappings. One notched bone sword held low. Whole helmet, head and shoulders visible with margin, all sword parts inside portrait; stop cleanly at hips along smooth solid ink silhouette, no legs or knees. Face occupies upper half. Exactly two arms/hands. New three-quarter portrait composition, not a crop of the side-profile idle. No gold, glow, or stray colored edge pixels.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-556316da-bb5d-43e8-ae33-0f9fb2fd1815.png",
+      "file": "draugr/draugr_portrait.png",
+      "bytes": 115225
     }
   ],
   "completed": [
@@ -2162,13 +2246,13 @@
     "frigg",
     "njord",
     "freyr",
-    "einherjar"
+    "einherjar",
+    "draugr"
   ],
-  "active": "draugr",
+  "active": "valkyrie",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "draugr",
       "valkyrie",
       "sigurd",
       "vidar",
@@ -2233,7 +2317,8 @@
       "frigg",
       "njord",
       "freyr",
-      "einherjar"
+      "einherjar",
+      "draugr"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -2250,7 +2335,8 @@
     "frigg": "approved",
     "njord": "approved",
     "freyr": "approved",
-    "einherjar": "approved"
+    "einherjar": "approved",
+    "draugr": "approved"
   },
   "rejected_frames": [
     {
