@@ -688,6 +688,11 @@
       "ratio": 0.8740031897926634,
       "anchor_x": 0.55,
       "baseline": 480
+    },
+    "loki": {
+      "ratio": 0.967304625199362,
+      "anchor_x": 0.54,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1361,6 +1366,90 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nEdit this exact Odin portrait into a VERTICAL THREE-TO-FOUR canvas768x1024. Preserve same natural body/head proportions and exact identity. Reframe head to hips with both shoulders visible and near-frontal20degree RIGHT camera, anatomicalLEFTeye(imageRIGHT)coveredeyepatch otherold eyeexposed, single attached shoulder raven, widebrimhat, longbonebeard, bloodlinedcloak, rune spearheldupright. ENTIRE spearhead and small butt cap, ENTIRE hatandbird inside35pxtransparentmargins. Faceupperhalf, nolegs. Extend robe down tohips tofill verticalcomposition; do notstretch. Make bottomhipcutout continuousflatPUREINK border with bonehatchingending20pxaboveedge, no colored/yellow/whitepixelnoise atedge. ONE output VERTICAL3:4 RGBA transparentimage; NOT square.",
       "file": "odin/odin_portrait.png",
       "bytes": 109434
+    },
+    {
+      "id": "loki",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-f2bf8abf-9640-46f7-86fb-cc80a4ff441f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nNEW deity LOKI, Slender sly youthful male Norse trickster, lean forwardslouched stance, charmingdangerouscrookedsmirk. ASYMMETRICAL ink hornedhelm: exactlyoneLONG CURLEDbonehorn atbackside(leftoutline) andoneSHORT BROKENbonehorn atfrontside(rightoutline). Slim bonetunic, darkink fitted trousers, boots, ragged ink cloak with bloodredlining. Exactlyone rune-carvedbone-bladed dagger inEACH of two hands, two daggers total, compact blades, no other weapons. Horns/twindaggersdefinesilhouette. NO beard/fire/gold/jewellery/armor/shield/companions.\nReferences woodcut STYLE ONLY. FullbodyBattleidle_01 square512x512truealpha, STRICT RIGHT SIDE PROFILE, humanoidhelm-horntopaty50,feetplantedy480, standing430px,heightsameproportions,pelvisx256. Slouchedslenderstanceonefoot slightlyforward, eacharmanddaggerseparatelyvisible lownearhip, bladepointsforwarddown, two hands. Wholehorns,cloak,feet,anddaggersinside20pxmargins.",
+      "file": "loki/loki_idle_01.png",
+      "bytes": 25600
+    },
+    {
+      "id": "loki",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-3ec21ac1-ca9d-4250-8715-6fde3bdc02d8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED LOKI identity, preserve EXACT same asymmetricalhelm (longCURLED horn atrearleft, SHORTBROKENhornfront), youthfulslysmirkingclean-shavenface,longinkhair, leanbody, bonetunic,inktrousersboots,raggedinkcloak bloodlining, TWO curved rune daggers exactlyONEINEACHHAND withsamebladeandguard. Images2\u20134 styleonly. No beard,fire,gold,eye-glow,extraweapons. Twoarms,twohands,twolegs. Slenderforwardslouch.\nBattle512square transparent. STRICT RIGHTFACING SIDE PROFILE, fullbodyeveryhorn/weapon/capeinside20pxmargins. Standinghorntop50, feety480, fullbodyheight430,pelvisx256,samebodyscale,outlineweight,paletteandupperleftlighting.\nWalk CONTACT: slyquickstepRIGHT, forwardfoot aheadandbackfoot behind,bothcontact480,slenderupperbodyleansmodestlyforward. Armscounter-swing exactlyonedaggerineach hand heldsafe low. Hornscrown50, samebodyproportions. Cloaktrailsbehind.",
+      "file": "loki/loki_walk_01.png",
+      "normalization": {
+        "ratio": 0.8763955342902712,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 26389
+    },
+    {
+      "id": "loki",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-43615256-3522-4600-b6b9-6d841a298afe.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED LOKI identity, preserve EXACT same asymmetricalhelm (longCURLED horn atrearleft, SHORTBROKENhornfront), youthfulslysmirkingclean-shavenface,longinkhair, leanbody, bonetunic,inktrousersboots,raggedinkcloak bloodlining, TWO curved rune daggers exactlyONEINEACHHAND withsamebladeandguard. Images2\u20134 styleonly. No beard,fire,gold,eye-glow,extraweapons. Twoarms,twohands,twolegs. Slenderforwardslouch.\nBattle512square transparent. STRICT RIGHTFACING SIDE PROFILE, fullbodyeveryhorn/weapon/capeinside20pxmargins. Standinghorntop50, feety480, fullbodyheight430,pelvisx256,samebodyscale,outlineweight,paletteandupperleftlighting.\nWalk PASSING: ONLYONEfootunderhipcontacts480, otherknee bent andfoot raisednexttosupportshin y400, transparentgapunderraisedfoot. Feetclose, distinctpassingpose. Slight4pxrise. EXACTLYtwodaggersoneineachhand,counter-swingarms, cloakfollowsthestep.",
+      "file": "loki/loki_walk_02.png",
+      "normalization": {
+        "ratio": 0.8915470494417863,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 25250
+    },
+    {
+      "id": "loki",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9e5b787f-864e-4142-9cf5-61c6b382cd31.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED LOKI identity, preserve EXACT same asymmetricalhelm (longCURLED horn atrearleft, SHORTBROKENhornfront), youthfulslysmirkingclean-shavenface,longinkhair, leanbody, bonetunic,inktrousersboots,raggedinkcloak bloodlining, TWO curved rune daggers exactlyONEINEACHHAND withsamebladeandguard. Images2\u20134 styleonly. No beard,fire,gold,eye-glow,extraweapons. Twoarms,twohands,twolegs. Slenderforwardslouch.\nBattle512square transparent. STRICT RIGHTFACING SIDE PROFILE, fullbodyeveryhorn/weapon/capeinside20pxmargins. Standinghorntop50, feety480, fullbodyheight430,pelvisx256,samebodyscale,outlineweight,paletteandupperleftlighting.\nAttack WINDUP: BOTH daggers drawn back and CROSSED in X nearrearLEFT shoulder atchestheight. Handsandforearmsclearlyseparate, onebladeineachhand, NO THIRDdagger. Tworune bladescross tips upwardback. Kneesflex,weightback,headrightsmirk. Hornandcloakfullyvisible.",
+      "file": "loki/loki_attack_01.png",
+      "normalization": {
+        "ratio": 0.8963317384370016,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 32346
+    },
+    {
+      "id": "loki",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4e93b9a2-6093-43bf-acab-136b7acff141.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED LOKI identity, preserve EXACT same asymmetricalhelm (longCURLED horn atrearleft, SHORTBROKENhornfront), youthfulslysmirkingclean-shavenface,longinkhair, leanbody, bonetunic,inktrousersboots,raggedinkcloak bloodlining, TWO curved rune daggers exactlyONEINEACHHAND withsamebladeandguard. Images2\u20134 styleonly. No beard,fire,gold,eye-glow,extraweapons. Twoarms,twohands,twolegs. Slenderforwardslouch.\nBattle512square transparent. STRICT RIGHTFACING SIDE PROFILE, fullbodyeveryhorn/weapon/capeinside20pxmargins. Standinghorntop50, feety480, fullbodyheight430,pelvisx256,samebodyscale,outlineweight,paletteandupperleftlighting.\nAttack STRIKE: quickslashFORWARD RIGHT, nearrightarmextendedforward withcurvedrunedaggeratx450andchestheight,otherarmkeepsSECONDdagger drawnbacknearlefthipwithbladedown. Onebladeineachhand EXACTLYTWO. Off-balance,frontkneebent,rearlegbraced,torsoleansforward15deg,andgrinning. Noextrahands/particles/motionlines. Keepbodyx256,foot480.",
+      "file": "loki/loki_attack_02.png",
+      "normalization": {
+        "ratio": 0.82,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 27963
+    },
+    {
+      "id": "loki",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-43b3de49-3908-4d0f-be4b-69325a45e323.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED LOKI identity, preserve EXACT same asymmetricalhelm (longCURLED horn atrearleft, SHORTBROKENhornfront), youthfulslysmirkingclean-shavenface,longinkhair, leanbody, bonetunic,inktrousersboots,raggedinkcloak bloodlining, TWO curved rune daggers exactlyONEINEACHHAND withsamebladeandguard. Images2\u20134 styleonly. No beard,fire,gold,eye-glow,extraweapons. Twoarms,twohands,twolegs. Slenderforwardslouch.\nBattle512square transparent. STRICT RIGHTFACING SIDE PROFILE, fullbodyeveryhorn/weapon/capeinside20pxmargins. Standinghorntop50, feety480, fullbodyheight430,pelvisx256,samebodyscale,outlineweight,paletteandupperleftlighting.\nHIT: slenderbodyjoltsbackLEFT15degrees,kneesbuckling,frontsupportfoot480,rearfootlifts. Twoarmsbend defensivelytowardchest, exactlyONErune daggereachhand. Hornhelmtiltswithhead,capeattached, mouthgrimace, noextralimbs/blades. Samebody scale.",
+      "file": "loki/loki_hit_01.png",
+      "bytes": 24218
+    },
+    {
+      "id": "loki",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8c6718a8-fdeb-4af5-9508-6857756f4f9e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED LOKI identity, preserve EXACT same asymmetricalhelm (longCURLED horn atrearleft, SHORTBROKENhornfront), youthfulslysmirkingclean-shavenface,longinkhair, leanbody, bonetunic,inktrousersboots,raggedinkcloak bloodlining, TWO curved rune daggers exactlyONEINEACHHAND withsamebladeandguard. Images2\u20134 styleonly. No beard,fire,gold,eye-glow,extraweapons. Twoarms,twohands,twolegs. Slenderforwardslouch.\nBattle512square transparent. STRICT RIGHTFACING SIDE PROFILE, fullbodyeveryhorn/weapon/capeinside20pxmargins. Standinghorntop50, feety480, fullbodyheight430,pelvisx256,samebodyscale,outlineweight,paletteandupperleftlighting.\nDEATH: hipsdrop,kneesbuckled,torsotopplesbackLEFT35deg,onefootlasttouches480,otherlifts. Headtiltsbackleft,armsfalloutlimply, exactlyTWOdaggers looselyheldoneineachhand, nofloatingthirdweapon. Samebodysize,costume,hornhelm,raggedcapeattached. Wholefigureinsideframe.",
+      "file": "loki/loki_death_01.png",
+      "bytes": 24571
+    },
+    {
+      "id": "loki",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-3e17ef82-4779-40ea-9b51-8c2a06bdacfb.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED Loki identity. Preserve exact asymmetrichelm ONE long curled rearhorn andONE shortbrokenfronthorn, sly youthfulclean-shaven smirk,longinkhair,bonetunic,raggedinkcloakwbloodlining, two samecurvedrune daggers oneineachhand. Otherreferencesstyleonly. Slendertrickster.\nONE VERTICAL3:4 image768x1024, HEAD TO HIPS portrait; NEW NEAR-FRONTAL THREEQUARTER camera20degreesRIGHT, BOTH EYES visible,noseINSIDEfaceoutline, bothshoulders. Mischievousknowinggrin,one dagger turninginraisedhand atchestheightandotherheldlowbesidehip. Entiretwohorns,both daggersandbothhandswith35pxtransparentmargin allaround. Faceupperhalf,nofullbody/nolegs. BottomhipcutoutpureINK solidborder, bone/redshapesend20pxaboveedge, no coloredpixelnoise. Truealpha. NO squareformat, nofiregoldglowextraarms.",
+      "file": "loki/loki_portrait.png",
+      "bytes": 107312
     }
   ],
   "completed": [
@@ -1372,13 +1461,13 @@
     "poseidon",
     "hades",
     "hera",
-    "odin"
+    "odin",
+    "loki"
   ],
-  "active": "loki",
+  "active": "baldr",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "loki",
       "baldr",
       "freyja",
       "tyr",
@@ -1443,7 +1532,8 @@
       "poseidon",
       "hades",
       "hera",
-      "odin"
+      "odin",
+      "loki"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -1451,7 +1541,8 @@
     "poseidon": "approved",
     "hades": "approved",
     "hera": "approved",
-    "odin": "approved"
+    "odin": "approved",
+    "loki": "approved"
   },
   "rejected_frames": [
     {
