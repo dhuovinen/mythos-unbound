@@ -678,6 +678,11 @@
       "ratio": 0.9210526315789473,
       "anchor_x": 0.52,
       "baseline": 480
+    },
+    "hera": {
+      "ratio": 0.9481658692185008,
+      "anchor_x": 0.55,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1178,6 +1183,90 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: approved Hades idle, EXACT identity reference. Preserve same domed ink helm, shadow concealing brow and eyes, bone lower face, robes, cloak with blood-red lining, bident's EXACTLY TWO prongs and plain blunt butt, palette, line weight, lighting and proportions. Images2\u20134 style only. No extra beard, crest, crown or horns.\nSubject: Still and heavy, the least dynamic pose in the roster: a bident (two prongs), a shadowed helm of darkness (ink dome that hides the brow and eyes in shadow), long ink robes with blood-red lining, a heavy cloak. He barely moves. The bident and the helm define the silhouette. No gold.\nPortrait 768x1024 vertical3:4, HEAD TO HIPS, NEW near-frontal THREE QUARTER view turned only25degrees RIGHT, BOTH shoulders visible, nose inside face outline, both eye positions in deep helm shadow. Face half-lost in helmet darkness. Upright two-pronged bident perfectly still beside head, entire weapon including butt fits inside frame. Entire helm, hands, cloak and weapon with at least35px transparent top and side margins. Face in upper half, no legs or fullbody framing. Deliberate smooth ink cutout edge at hip cloth, clean transparent pixels below it, no coloured edge noise. No glow, gold, aura, sparks, background or floor.\nCORRECTION: Rotate camera toward front substantially, head and chest almost frontal with only 20 degrees rightward turn. Symmetric visible left AND right helmet cheeks and lower face, nose INSIDE the facial silhouette, two shoulders equally visible. Shadow still covers BOTH eye positions under domed helm. Keep EXACT same costume and helmet identity from reference2. This is head-to-hips character portrait, NOT side profile or fullbody. Smooth solid ink cutout bottom edge without multicolor pixel noise. Full two-pronged bident inside frame.\nFinal surgical correction: Keep this exact near-frontal portrait, pose, identity, silhouette and framing. Replace the bottom 5% of robe's cutout with a clean continuous FLAT PURE INK #1A1A1E edge, with no hatching right at bottom. Remove every tiny yellow, white, red or multicolored pixel speck along this bottom edge. Solid smoothly antialiased alpha contour only. No yellow anywhere in image. Only bone/ink/blood colors. Maintain genuine transparent background.",
       "file": "hades/hades_portrait.png",
       "bytes": 93016
+    },
+    {
+      "id": "hera",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-18f77f21-6d1b-41e7-b608-f2705e86082e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse attached images for woodcut STYLE ONLY. NEW character Hera: Tall imperious queen, long bone-and-ink layered robe, long veil, tall bone diadem with ink crown points; five eyed peacock feathers form a compact fan behind LEFT shoulder, bone/ink/blood only. Tall sceptre topped with exactly one closed LOTUS BUD in bone/ink, no orb. Cold stern adult woman with strong nose, tall very straight posture. No gold, no jewellery beyond bone diadem, no armor, no extra people. Diadem, veil, fan and sceptre define silhouette.\nBattle idle_01 sprite: square 512x512 transparent canvas. STRICT RIGHT-FACING SIDE PROFILE, entire full body and every feather/sceptre/crown visible. Top of crown at y50, bottom planted feet y480, 430px standing height, torso and hips centered x256. Sceptre held upright ahead near right shoulder, tip and butt inside margins. Relaxed composed stance, feet close but distinct. No floor or shadows.",
+      "file": "hera/hera_idle_01.png",
+      "bytes": 34134
+    },
+    {
+      "id": "hera",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9a708fc8-1d6d-4ef3-8425-afa5e4e7adb2.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Hera idle: EXACT identity. Preserve tall angular BONE crown, long bone veil with blood edge, five eyed peacock feathers joined compact fan behind left shoulder, bone chiton, blood sash and mantle, lotus-bud sceptre with pointed plain butt, stern adult feminine face. All feather eyes bone/blood/ink. Images2-4 woodcut style only. NO gold. Same costume, face, crown, feather arrangement, width, light direction, outline weight. Body and limbs same scale throughout poses. Entire weapons, feathers, veil, feet must fit.\nBattle frames square512x512 true alpha, STRICT RIGHT PROFILE. Body crown-to-foot standing height430px, crown topy50, foot baseliney480, pelvis centeredx256. No floating feathers or glows.\nWalk CONTACT frame: measured long-robed queen step RIGHT, front foot ahead and rear foot back both contacting y480, robe folds expose two distinct feet. Arms counter-swing modestly, sceptre held upright ahead. Straight torso, crown y50. Fan stays attached behind left shoulder.",
+      "file": "hera/hera_walk_01.png",
+      "normalization": {
+        "ratio": 0.8915470494417863,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 36050
+    },
+    {
+      "id": "hera",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-72d348cc-8496-48ba-a62d-59c4d461d03f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Hera idle: EXACT identity. Preserve tall angular BONE crown, long bone veil with blood edge, five eyed peacock feathers joined compact fan behind left shoulder, bone chiton, blood sash and mantle, lotus-bud sceptre with pointed plain butt, stern adult feminine face. All feather eyes bone/blood/ink. Images2-4 woodcut style only. NO gold. Same costume, face, crown, feather arrangement, width, light direction, outline weight. Body and limbs same scale throughout poses. Entire weapons, feathers, veil, feet must fit.\nBattle frames square512x512 true alpha, STRICT RIGHT PROFILE. Body crown-to-foot standing height430px, crown topy50, foot baseliney480, pelvis centeredx256. No floating feathers or glows.\nAttack WIND-UP frame: plant both feet at y480, twist shoulder slightly back but strict right head profile. Draw sceptre back across body at steep diagonal, lotus bud above left shoulder behind crown and plain pointed butt low right; elbows bent ready to swing. Whole weapon inside frame. Left hand balances. Attached feather fan compact.",
+      "file": "hera/hera_attack_01.png",
+      "normalization": {
+        "ratio": 0.886762360446571,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 36753
+    },
+    {
+      "id": "hera",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-a543a190-c297-4e4f-b700-0d601b024401.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Hera idle: EXACT identity. Preserve tall angular BONE crown, long bone veil with blood edge, five eyed peacock feathers joined compact fan behind left shoulder, bone chiton, blood sash and mantle, lotus-bud sceptre with pointed plain butt, stern adult feminine face. All feather eyes bone/blood/ink. Images2-4 woodcut style only. NO gold. Same costume, face, crown, feather arrangement, width, light direction, outline weight. Body and limbs same scale throughout poses. Entire weapons, feathers, veil, feet must fit.\nBattle frames square512x512 true alpha, STRICT RIGHT PROFILE. Body crown-to-foot standing height430px, crown topy50, foot baseliney480, pelvis centeredx256. No floating feathers or glows.\nDEATH falling frame: knees buckle deeply under robe, hips sink, torso falls backward LEFT by35degrees, one foot last contacts y480 and other raises visibly. Head tilts backward left, hand releases loose diagonal sceptre but it remains adjacent, lotus bud clearly on only ONE end. Left arm limply out. Same body size as idle, falling not shrunken. Compact fan stays attached.",
+      "file": "hera/hera_death_01.png",
+      "bytes": 35530
+    },
+    {
+      "id": "hera",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b3fe6429-c4a5-4fef-b19e-549d85fddbef.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 current Hera frame; image2 exact approved identity.\nKeep EXACT identity and style. Change ONLY feet and robe lower pose into true PASSING walk: one supporting right leg vertical at x260, its foot touches y480. The OTHER knee is bent forward under robe, and that foot is raised next to supporting mid-calf at y410, with clear transparent gap below it. ONE ground foot only. Feet close together, no stride split. Lift robe just around raised ankle to show it. Same standing430px scale and hips x256. Crown near y46. Sceptre upright. Do not create extra legs.",
+      "file": "hera/hera_walk_02.png",
+      "normalization": {
+        "ratio": 0.9473684210526315,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 32063
+    },
+    {
+      "id": "hera",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-64c48209-99dd-4b36-9151-6b4f97b693d5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 current Hera frame; image2 exact approved identity.\nKeep this strong forward RIGHT horizontal lotus-sceptre thrust, but zoom out sufficiently to show ALL the sceptre lotus tip and every veil/feather/foot within generous transparent margin60px in source. Do NOT crop lotus on right. Use slightly shorter sceptre shaft if necessary so body remains430px and weapon fits512square final. Exactly2 arms,2hands,5attachedpeacockfeathers, sameidentity and palette.",
+      "file": "hera/hera_attack_02.png",
+      "normalization": {
+        "ratio": 0.8,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 42002
+    },
+    {
+      "id": "hera",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4359733d-b1f1-4572-b9ca-9a8715efac41.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 current Hera frame; image2 exact approved identity.\nCorrect anatomy: EXACTLY TWO ARMS AND TWO HANDS. REMOVE the extra arm hanging straight down on the LEFT side. There should only be left arm bent across chest with protective hand, and right arm holding sceptre. Reconstruct robe/veil where deleted left hanging arm was. Preserve backward recoil, tilted head, knees, crown,fan,weapon,profile,transparentbackground,palette and body scale.",
+      "file": "hera/hera_hit_01.png",
+      "bytes": 35679
+    },
+    {
+      "id": "hera",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-c6cee2db-e807-46e2-9246-86df842eed2d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 current Hera frame; image2 exact approved identity.\nKeep exact near-frontal THREE QUARTER portrait, both eyes,diadem,featherfan,sceptre,composition and colors. Surgical correction bottom5% robe cutout: render continuous flat PURE INK #1A1A1E border along bottom, no bone touching edge and no tiny yellow,white,red,multicoloredpixelnoise. Solid smoothly antialiased alpha silhouette. Every feather,diadempoint,andlotussceptre within transparent margins35px. Head-to-hips, nofullbody.",
+      "file": "hera/hera_portrait.png",
+      "bytes": 124360
     }
   ],
   "completed": [
@@ -1187,13 +1276,13 @@
     "athena",
     "ares",
     "poseidon",
-    "hades"
+    "hades",
+    "hera"
   ],
-  "active": "hera",
+  "active": "odin",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "hera",
       "odin",
       "loki",
       "baldr",
@@ -1258,13 +1347,15 @@
       "athena",
       "ares",
       "poseidon",
-      "hades"
+      "hades",
+      "hera"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
     "ares": "approved",
     "poseidon": "approved",
-    "hades": "approved"
+    "hades": "approved",
+    "hera": "approved"
   },
   "rejected_frames": [
     {
@@ -1317,6 +1408,30 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-eb65d7fb-9d6f-4c49-85b3-64e7a78598a9.png",
       "reason": "Colored noise on bottom cutout edge; replaced with clean solid ink contour"
+    },
+    {
+      "id": "hera",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-3441c85d-6771-47ef-810b-0c8e9565c51f.png",
+      "rejection_reason": "Keep EXACT identity and style. Change ONLY feet and robe lower pose into true PASSING walk: one supporting right leg vertical at x260, its foot touches y480. The OTHER knee is bent forward under robe, and that foot is raised next to supporting mid-calf at y410, with clear transparent gap below it. ONE ground foot only. Feet close together, no stride split. Lift robe just around raised ankle to show it. Same standing430px scale and hips x256. Crown near y46. Sceptre upright. Do not create extra legs."
+    },
+    {
+      "id": "hera",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-45181923-282b-4ba3-99e3-49c6db04388a.png",
+      "rejection_reason": "Keep this strong forward RIGHT horizontal lotus-sceptre thrust, but zoom out sufficiently to show ALL the sceptre lotus tip and every veil/feather/foot within generous transparent margin60px in source. Do NOT crop lotus on right. Use slightly shorter sceptre shaft if necessary so body remains430px and weapon fits512square final. Exactly2 arms,2hands,5attachedpeacockfeathers, sameidentity and palette."
+    },
+    {
+      "id": "hera",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-ed9fa1f8-28f8-496f-a103-36199ac6c618.png",
+      "rejection_reason": "Correct anatomy: EXACTLY TWO ARMS AND TWO HANDS. REMOVE the extra arm hanging straight down on the LEFT side. There should only be left arm bent across chest with protective hand, and right arm holding sceptre. Reconstruct robe/veil where deleted left hanging arm was. Preserve backward recoil, tilted head, knees, crown,fan,weapon,profile,transparentbackground,palette and body scale."
+    },
+    {
+      "id": "hera",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e5abaffe-b053-435b-a882-98289b933cce.png",
+      "rejection_reason": "Keep exact near-frontal THREE QUARTER portrait, both eyes,diadem,featherfan,sceptre,composition and colors. Surgical correction bottom5% robe cutout: render continuous flat PURE INK #1A1A1E border along bottom, no bone touching edge and no tiny yellow,white,red,multicoloredpixelnoise. Solid smoothly antialiased alpha silhouette. Every feather,diadempoint,andlotussceptre within transparent margins35px. Head-to-hips, nofullbody."
     }
   ]
 }
