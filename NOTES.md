@@ -28,11 +28,16 @@ npm run typecheck # tsc --noEmit
 npm run build     # typecheck + vite build
 ```
 
-To inspect generated character art, open the gear menu and choose **View character images**.
+The main game keeps options, faith and summon cards in a vertical side rail. The battlefield uses
+the remaining space; on phones the controls move below it. Bases and figures have extra edge
+clearance, and the framing fits long rigs and the full unit-size range. This changes rendering only;
+simulation positions, movement, ranges and battle timing stay the same.
+
+To inspect generated character art, open **Display settings** and choose **View character images**.
 Select a character to see its portrait and stats, play its PNG pose sequence, or preview individual
 in-game animations. Missing images are marked explicitly; alignment guides help check pose placement.
 
-To review the procedural rigs, choose **View Rig scenario** in the gear menu, or open
+To review the procedural rigs, choose **View Rig scenario** in **Display settings**, or open
 **http://localhost:3033/rig.html**. All 66 roster entities have rigs and all five animation states.
 Filter Greek, Norse, Egyptian or all pantheons; select a character in the roster to inspect it next
 to the animated lineup. Playback supports a full cycle, individual animations, pause, restart,
@@ -43,7 +48,7 @@ The standalone page includes a collapsible shared parts catalogue and is include
 Art concept boards (WP-7 output, 9 renders across 3 styles) live in `art/concepts/` and are
 served at http://localhost:3033/art/concepts/ while the dev server is running.
 
-Open **Battle log** in the main game, or **gear → Battle diagnostics → View full battle log**.
+Open **Battle log** in the main game, or **Display settings → Battle diagnostics → View full battle log**.
 If the team picker is open, choose **Back to the battle** first. The completed battle report also
 links to the full diagnostic viewer. Recording starts automatically on page load; reloading or
 starting a new deck begins a new log. The viewer freezes a snapshot while the battle keeps running;

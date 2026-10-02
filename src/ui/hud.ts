@@ -207,7 +207,7 @@ export const mountHud: MountHud = (root, onSummonSlot) => {
   applyFieldStatus = (status): void => {
     const unitsFull = status.units >= status.unitsMax;
     const heavyFull = status.heavy >= status.heavyMax;
-    fieldInfo.innerHTML = `Field <b class="${unitsFull ? 'full' : ''}">${status.units}/${status.unitsMax}</b> · Gods &amp; titans <b class="${heavyFull ? 'full' : ''}">${status.heavy}/${status.heavyMax}</b>`;
+    fieldInfo.innerHTML = `<span>Field <b class="${unitsFull ? 'full' : ''}">${status.units}/${status.unitsMax}</b></span><span>Gods &amp; titans <b class="${heavyFull ? 'full' : ''}">${status.heavy}/${status.heavyMax}</b></span>`;
     slots.forEach((refs, i) => {
       const reason = status.blocked[i] ?? null;
       refs.root.classList.toggle('blocked', reason !== null);

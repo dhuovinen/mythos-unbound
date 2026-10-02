@@ -1,4 +1,13 @@
-# Battle diagnostics implementation
+# Battlefield spacing iteration
+
+- Objective: keep bases and figures clear of the screen edges, with controls stacked outside the playing area.
+- Current finding: the original projection puts bases only 32 canvas pixels from the edge, clipping base silhouettes and wide poses. The bottom HUD also limits the battlefield's width through its height budget, while fixed controls overlap the scene.
+- Applied: adaptive render framing based on the widest rig and selected figure scale, with a minimum gutter. Bases move inward visually and full figures fit at both ends. Shared projection and figure sizing keep health bars, status pips, tethers and death ghosts aligned. Simulation coordinates are unchanged.
+- Applied: options and HUD in a 200px side rail (170px on smaller windows), leaving the remaining width/height for the stage. Phones show the battlefield first and controls below. Clear Codex/Display settings button labels; field counts wrap as complete groups. A ResizeObserver maintains the canvas drawing buffer as its container changes.
+- Verification: actual rig drawing paths for all 66 entities, five animation states, five times per animation, both directions and both base positions stay inside the canvas at 80%, 145% and 220%. Browser checks at 1280px, 768px and 390px show no horizontal overflow, and controls outside the field. Largest-size UI verified, original 145% restored. No browser warnings/errors. Screenshots: `/tmp/battlefield-spacing.jpg`, `/tmp/battlefield-spacing-large.jpg`, `/tmp/battlefield-spacing-phone.jpg`.
+- Final checks: all 159 tests pass, production build/typecheck and registry validation pass, and the full diff was reviewed with clean whitespace checks. Runbook updated for the side rail and named settings entry. Ready for evaluation.
+
+## Previous increment: battle diagnostics
 
 - Objective: complete factual battle capture with a readable viewer and self-contained evidence exports for separate analysis.
 - Implemented: optional combat observer on the same tick path; exact per-tick report recording; attack calculations and full pre-attack fields; target changes and deaths; initial state and one-second checkpoints; summon attempts, availability, free scripted waves, paid deployments, AI decisions, settings and fast-forward mode transitions.

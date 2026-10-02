@@ -8,8 +8,7 @@
     <style>
       :root {
         color-scheme: dark;
-        /* As wide as the window allows, but never so tall that the HUD below is pushed off screen. */
-        --stage-w: min(calc(100vw - 32px), calc((100vh - 200px) * 16 / 9));
+        --rail-width: 200px;
         --bone: #e8dcc4;
         --ink: #141010;
       }
@@ -18,7 +17,7 @@
       }
       body {
         margin: 0;
-        min-height: 100vh;
+        min-height: 100dvh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -27,28 +26,116 @@
         font-family: ui-sans-serif, system-ui, sans-serif;
       }
       #app {
-        width: var(--stage-w);
+        width: calc(100vw - 32px);
+        height: calc(100dvh - 32px);
+        display: grid;
+        grid-template-columns: var(--rail-width) minmax(0, 1fr);
+        gap: 16px;
+      }
+      #game-rail {
+        min-height: 0;
+        overflow-y: auto;
+        padding: 12px;
+        border: 1px solid #3a3229;
+        border-radius: 12px;
+        background: #171313;
+        scrollbar-width: thin;
+      }
+      .game-title {
+        margin: 0 0 12px;
+        font: 500 19px Georgia, serif;
+      }
+      #game-controls {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 6px;
+        margin-bottom: 14px;
+      }
+      #game-controls > button {
+        position: static;
+        inset: auto;
+        width: 100%;
+        min-height: 34px;
+        height: auto;
+        padding: 7px 10px;
+        border-radius: 7px;
+        text-align: left;
+        font: 700 12px ui-sans-serif, system-ui, sans-serif;
+        box-shadow: none;
+        flex-shrink: 0;
+      }
+      #game-controls > button:hover { transform: none; }
+      #battlefield {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        min-height: 0;
       }
       #stage {
         display: block;
-        width: 100%;
+        width: min(100%, calc((100dvh - 32px) * 16 / 9));
         height: auto;
         aspect-ratio: 16 / 9;
         background: #1d1a17;
         border: 1px solid #3a3229;
       }
       #hud {
-        min-height: 96px;
+        border-top: 1px solid #3a3229;
+        padding-top: 12px;
+      }
+      #game-rail .hud-faith-wrap { padding: 8px 10px; }
+      #game-rail .hud-faith-header { flex-wrap: wrap; gap: 5px; font-size: 12px; }
+      #game-rail .hud-field { flex-basis: 100%; order: 2; font-size: 10px; display: flex; flex-wrap: wrap; gap: 3px 8px; }
+      #game-rail .hud-field > span { white-space: nowrap; }
+      #game-rail .hud-hand { flex-direction: column; gap: 6px; }
+      #game-rail .hud-slot {
+        flex: none;
+        min-width: 0;
+        max-width: none;
+        padding: 7px 8px 10px 30px;
+        align-items: flex-start;
+      }
+      #game-rail .hud-key { top: 9px; left: 7px; padding: 1px 4px; }
+      #game-rail .hud-name { margin: 0; font-size: 13px; text-align: left; }
+      #game-rail .hud-cost { margin-top: 1px; font-size: 11px; }
+      #game-rail .hud-pantheon { font-size: 8px; }
+      #game-rail .hud-blocked { position: static; margin-top: 3px; text-align: left; }
+      #game-rail .hud-next { justify-content: flex-start; gap: 5px; }
+      #game-rail .hud-next-label { flex-basis: 100%; }
+      #game-rail .hud-next-item { padding: 3px 6px; font-size: 10px; }
+      #game-rail .hud-banner { font-size: 15px; padding: 8px; }
+      @media(max-width:900px) {
+        :root { --rail-width: 170px; }
+        #app { width: calc(100vw - 16px); height: calc(100dvh - 16px); gap: 8px; }
+        #game-rail { padding: 10px; }
+        .game-title { font-size: 17px; }
+        #stage { width: min(100%, calc((100dvh - 16px) * 16 / 9)); }
+      }
+      @media(max-width:600px) {
+        body { align-items: flex-start; }
+        #app { height: auto; margin: 8px; grid-template-columns: minmax(0, 1fr); }
+        #battlefield { grid-row: 1; }
+        #stage { width: 100%; }
+        #game-rail { overflow: visible; }
+        #game-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        #game-rail .hud-hand { flex-direction: row; }
+        #game-rail .hud-slot { flex: 1; padding: 24px 7px 10px; }
+        #game-rail .hud-key { top: 5px; }
+        #game-rail .hud-faith-header { gap: 8px; }
       }
     </style>
   </head>
   <body>
     <div id="app">
-      <canvas id="stage" width="960" height="540"></canvas>
-      <div id="hud"></div>
+      <aside id="game-rail" aria-label="Battle controls">
+        <h1 class="game-title">Mythos Unbound</h1>
+        <nav id="game-controls" aria-label="Game options"></nav>
+        <div id="hud"></div>
+      </aside>
+      <main id="battlefield" aria-label="Battlefield">
+        <canvas id="stage" width="960" height="540"></canvas>
+      </main>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>

@@ -59,6 +59,7 @@ function fitCanvas(): void {
 }
 fitCanvas();
 window.addEventListener('resize', fitCanvas);
+new ResizeObserver(fitCanvas).observe(canvas);
 
 const stage = SHOWCASE_STAGE;
 
@@ -295,6 +296,15 @@ function resolveInstantly(): ResolveResult {
 const openDiagnostics = mountDiagnostics(() => ({ log: diagnosticLog, state: currentDiagnosticState(), time: world.time }));
 const report = mountReport(battleLog, deities, openDiagnostics);
 mountAdminPanel(resolveInstantly, ALL_DEITIES, openDiagnostics);
+const gameControls = document.querySelector<HTMLElement>('#game-controls');
+for (const id of ['draft-open', 'consult-open', 'diagnostic-open', 'codex-open', 'admin-open', 'report-open']) {
+  const button = document.getElementById(id);
+  if (button && gameControls) gameControls.append(button);
+}
+const codexButton = document.getElementById('codex-open');
+if (codexButton) codexButton.textContent = 'Codex · how to play';
+const settingsButton = document.getElementById('admin-open');
+if (settingsButton) settingsButton.textContent = 'Display settings';
 
 let previous = performance.now();
 let accumulator = 0;

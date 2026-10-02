@@ -13,7 +13,7 @@
  * derived from unit.id, or it would shimmer every frame.
  */
 
-import { CANVAS_HEIGHT, CANVAS_WIDTH, LANE_LENGTH, LANE_Y } from '../sim/constants';
+import { CANVAS_HEIGHT, CANVAS_WIDTH, LANE_LENGTH, LANE_Y, PLAYER_BASE_X } from '../sim/constants';
 import type { Deity, DrawWorld, Tier, Unit } from '../sim/types';
 import { getSettings } from '../ui/settings';
 import { BASE_HEIGHT, drawBackdropScene, drawBaseStructure } from './backdrops';
@@ -32,9 +32,24 @@ const TIER_SIZE: Readonly<Record<Tier, { w: number; h: number }>> = {
   titan: { w: 29, h: 47 },
 };
 
-/** World-space x to screen-space x. */
+/** Minimum framing space outside the original lane, before it is fitted to the canvas. */
+const BATTLEFIELD_PADDING = 128;
+/** Widest rig overhang: the long serpent bodies, with room for outlines and pose motion. */
+const FIGURE_OVERHANG = 185;
+
+/** Fit the lane plus full figures to the screen, including the largest unit-size setting. */
+function battlefieldScale(): number {
+  const settings = getSettings();
+  const overhang = settings.unitGraphics === 'blocks' ? 0 : FIGURE_OVERHANG * SPRITE_BASE / 100 * settings.unitScale;
+  const baseOffset = PLAYER_BASE_X / LANE_LENGTH * CANVAS_WIDTH;
+  const padding = Math.max(BATTLEFIELD_PADDING, overhang - baseOffset + 20);
+  return CANVAS_WIDTH / (CANVAS_WIDTH + padding * 2);
+}
+
+/** World-space x to screen-space x. Shared with effects; gameplay coordinates stay unchanged. */
 export function worldToScreen(x: number): number {
-  return (x / LANE_LENGTH) * CANVAS_WIDTH;
+  const scale = battlefieldScale();
+  return CANVAS_WIDTH * (1 - scale) / 2 + (x / LANE_LENGTH) * CANVAS_WIDTH * scale;
 }
 
 /**
@@ -95,7 +110,7 @@ const SPRITE_BASE = 98;
 
 /** On-screen height of a figure of this tier, after the player's size setting. */
 function figureHeight(tier: Tier): number {
-  return SPRITE_BASE * SPRITE_TIER_SCALE[tier] * getSettings().unitScale;
+  return SPRITE_BASE * SPRITE_TIER_SCALE[tier] * getSettings().unitScale * battlefieldScale();
 }
 
 /**
