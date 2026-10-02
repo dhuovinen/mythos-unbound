@@ -1,4 +1,13 @@
-# Battlefield spacing iteration
+# Roster / deployment mismatch
+
+- Objective: drafted battles must field units from the selected decks, with an understandable roster comparison in the report.
+- Confirmed cause: main always uses SHOWCASE_STAGE.waves, even when saved player/opponent decks replace the default rosters. Every zero-cost Greek row in the user's Egyptian battle matches a scripted wave. The report is recording real deployments, not mislabelling them.
+- Applied: select a wave-free stage when either side has a draft; preserve the showcase timeline only with no saved drafts. The report lists both effective rosters, reinforcement policy and repeat-summon counting. Diagnostic instructions/source exports include the scenario selection rules.
+- Regression verification: nine new tests cover Egyptian/Norse/mixed/Greek and one-sided saved drafts, a real Egyptian-vs-Egyptian simulation with repeated paid summons, and the evidence packet's effective stage and decks.
+- Browser verification: drafted the user's nine Egyptian units and fought the revealed Norse opponent. The completed report names both rosters and the no-scripted-reinforcements policy; every fielded row belongs to its side's roster. No Greek showcase deployments appeared, and no browser warnings/errors. Screenshot: `/tmp/roster-battle-report.jpg`.
+- Final checks: all 168 tests pass, production build/typecheck and registry validation pass. Re-read the complete diff for bugs; whitespace checks clean. Runbook updated. Existing historical logs keep their original deployments; reload/start a new battle for the corrected scenario selection.
+
+## Previous increment: battlefield spacing
 
 - Objective: keep bases and figures clear of the screen edges, with controls stacked outside the playing area.
 - Current finding: the original projection puts bases only 32 canvas pixels from the edge, clipping base silhouettes and wide poses. The bottom HUD also limits the battlefield's width through its height budget, while fixed controls overlap the scene.

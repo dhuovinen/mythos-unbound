@@ -33,6 +33,12 @@ the remaining space; on phones the controls move below it. Bases and figures hav
 clearance, and the framing fits long rigs and the full unit-size range. This changes rendering only;
 simulation positions, movement, ranges and battle timing stay the same.
 
+Beginning a drafted battle uses the selected rosters for both sides, with no free scripted
+reinforcements. The original showcase timeline runs only when neither side has a saved draft.
+The completed report lists both battle rosters; **What was fielded** counts repeat summons and
+includes only units that were actually deployed. Reload and begin a new battle to use this fix;
+an existing battle log remains a record of what occurred in that battle.
+
 To inspect generated character art, open **Display settings** and choose **View character images**.
 Select a character to see its portrait and stats, play its PNG pose sequence, or preview individual
 in-game animations. Missing images are marked explicitly; alignment guides help check pose placement.

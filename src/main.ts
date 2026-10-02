@@ -16,6 +16,7 @@ import { pantheonsOf } from './sim/draft';
 import { CANVAS_HEIGHT, CANVAS_WIDTH, MAX_FRAME_DT, TICK_DT } from './sim/constants';
 import { buildGraph } from './sim/relations';
 import { createRng } from './sim/rng';
+import { selectBattleStage } from './sim/scenario';
 import type { Deity, DeityId, DeityIndex, Pantheon, StageWave } from './sim/types';
 import { preloadArt } from './render/art/sprites';
 import { chooseSummon } from './sim/advisor';
@@ -61,7 +62,7 @@ fitCanvas();
 window.addEventListener('resize', fitCanvas);
 new ResizeObserver(fitCanvas).observe(canvas);
 
-const stage = SHOWCASE_STAGE;
+const stage = selectBattleStage(SHOWCASE_STAGE, getSettings().deck, getSettings().opponentDeck);
 
 /**
  * Both pantheons are loaded into one roster and one graph. That is safe because relations resolve
@@ -77,7 +78,7 @@ const rng = createRng(0x5eed);
 const world = createWorld(stage, deities);
 
 /** The player's chosen deck, falling back to whatever the stage supplies. */
-const playerDeck: readonly DeityId[] = getSettings().deck ?? stage.playerDeck;
+const playerDeck: readonly DeityId[] = stage.playerDeck;
 
 // One pantheon fights in its own realm; a mixed deck fights in the open-world city.
 const deckRealms = pantheonsOf(playerDeck, ALL_DEITIES);
@@ -130,8 +131,8 @@ const consultant = mountConsultant(deities, graph, playerDeck);
 
 /**
  * The opponent runs its own economy on the same terms as the player and picks counters with the
- * same rule engine the consultant reads from. It sits on top of the scripted timeline rather than
- * replacing it, so the showcase beats still happen and the regression tests still hold.
+ * same rule engine the consultant reads from. Undrafted showcase battles also run their scripted
+ * timeline; drafted roster battles contain only deck summons.
  *
  * It plays the deck it drafted — an opening chosen blind, then reinforcements chosen
  * after seeing the player's opening. Without a draft it improvises from the whole roster, which is
@@ -294,7 +295,9 @@ function resolveInstantly(): ResolveResult {
 }
 
 const openDiagnostics = mountDiagnostics(() => ({ log: diagnosticLog, state: currentDiagnosticState(), time: world.time }));
-const report = mountReport(battleLog, deities, openDiagnostics);
+const report = mountReport(battleLog, deities, openDiagnostics, {
+  stageName: stage.name, playerDeck, enemyDeck, scriptedReinforcements: stage.waves.length,
+});
 mountAdminPanel(resolveInstantly, ALL_DEITIES, openDiagnostics);
 const gameControls = document.querySelector<HTMLElement>('#game-controls');
 for (const id of ['draft-open', 'consult-open', 'diagnostic-open', 'codex-open', 'admin-open', 'report-open']) {

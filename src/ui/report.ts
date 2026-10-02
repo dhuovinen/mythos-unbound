@@ -100,8 +100,15 @@ export interface ReportHandle {
   update(outcome: Outcome): void;
 }
 
+export interface ReportContext {
+  stageName: string;
+  playerDeck: readonly string[];
+  enemyDeck: readonly string[];
+  scriptedReinforcements: number;
+}
+
 /** Builds the report button and overlay. Both stay hidden until a battle finishes. */
-export function mountReport(log: BattleLog, deities: DeityIndex, onDiagnostics?: () => void): ReportHandle {
+export function mountReport(log: BattleLog, deities: DeityIndex, onDiagnostics?: () => void, context?: ReportContext): ReportHandle {
   const style = el('style');
   style.textContent = styles();
   document.head.append(style);
@@ -144,6 +151,17 @@ export function mountReport(log: BattleLog, deities: DeityIndex, onDiagnostics?:
       fullLog.style.marginTop = '14px';
       fullLog.addEventListener('click', onDiagnostics);
       sheet.append(fullLog);
+    }
+    if (context) {
+      const rosters = el('section'); rosters.setAttribute('aria-label', 'Battle rosters');
+      rosters.append(el('h2', undefined, 'Battle rosters'));
+      rosters.append(el('p', 'rp-note', context.scriptedReinforcements === 0
+        ? `${context.stageName} · Summons come from the battle rosters. No scripted reinforcements.`
+        : `${context.stageName} · Includes ${context.scriptedReinforcements} free scripted reinforcements alongside roster summons.`));
+      const names = (ids: readonly string[]): string => ids.map((id) => deities.get(id)?.name ?? id).join(', ');
+      rosters.append(el('p', undefined, `Your roster: ${names(context.playerDeck)}`));
+      rosters.append(el('p', undefined, `Opponent roster: ${names(context.enemyDeck)}`));
+      sheet.append(rosters);
     }
 
     // ---- headline figures ----
@@ -192,6 +210,7 @@ export function mountReport(log: BattleLog, deities: DeityIndex, onDiagnostics?:
 
     // ---- what was fielded ----
     sheet.append(el('h2', undefined, 'What was fielded'));
+    sheet.append(el('p', 'rp-note', 'Counts include repeat summons over the entire battle. Roster members appear here only if they were deployed.'));
     if (summary.deployments.length === 0) {
       sheet.append(el('p', 'rp-empty', 'Nothing was deployed.'));
     } else {

@@ -7,6 +7,7 @@ import limitsSource from './limits.ts?raw';
 import constantsSource from './constants.ts?raw';
 import advisorSource from './advisor.ts?raw';
 import mainSource from '../main.ts?raw';
+import scenarioSource from './scenario.ts?raw';
 import { buildGraph, resolveAuras, resolveCombat } from './relations';
 import type { Modifier, ModifierName } from './types';
 import type { DiagnosticLog } from './diagnostics';
@@ -58,7 +59,7 @@ export function gameInstructions(log: DiagnosticLog): string {
 
 ## How to play
 
-Destroy the enemy base while keeping your base alive. Pick a mythology and draft a deck, or use the stage's default deck. Click a visible summon card or press its numbered shortcut to spend faith and deploy it. The first three deck entries form your initial hand. Playing a card moves it to the back of the queue and replaces its slot with the next queued card; a deck with no queue keeps its current cards. These choices are distinct from the units already on the field.
+Destroy the enemy base while keeping your base alive. Pick a mythology and draft a deck, or use the stage's default deck. Drafting either side selects a roster battle with no scripted reinforcements; only an undrafted showcase runs its demonstration waves. The effective stage and both battle rosters are recorded in metadata. Click a visible summon card or press its numbered shortcut to spend faith and deploy it. The first three deck entries form your initial hand. Playing a card moves it to the back of the queue and replaces its slot with the next queued card; a deck with no queue keeps its current cards. These choices are distinct from the units already on the field. Deployment counts include repeated summons, and a roster member may never be summoned.
 
 Faith regenerates to the cap. Each side's normal summons are limited to ${c.maxUnits} units and ${c.maxHeavy} gods/titans combined; bases do not count. A rejected summon spends nothing and does not cycle the hand. Scripted waves are free, bypass those limits, and still count toward later field capacity. Opponent AI considers its entire configured deck rather than a cycling hand. Without an opponent draft, that deck is the full roster. Its economy advances only while AI is enabled. Existing rule-based AI decisions are recorded as decisions, not as a diagnostic assessment.
 
@@ -101,7 +102,8 @@ export function buildDiagnosticPacket(capture: DiagnosticCapture, exportedAt: st
     gameInstructions: gameInstructions(capture.log), exampleAnalysisPrompt: ANALYSIS_PROMPT,
     engineSources: { 'src/sim/combat.ts': combatSource, 'src/sim/relations.ts': relationsSource,
       'src/sim/world.ts': worldSource, 'src/sim/hand.ts': handSource, 'src/sim/limits.ts': limitsSource,
-      'src/sim/constants.ts': constantsSource, 'src/sim/advisor.ts': advisorSource, 'src/main.ts': mainSource },
+      'src/sim/constants.ts': constantsSource, 'src/sim/advisor.ts': advisorSource,
+      'src/sim/scenario.ts': scenarioSource, 'src/main.ts': mainSource },
     battle: { ...capture.log, currentState: capture.state },
   };
 }
