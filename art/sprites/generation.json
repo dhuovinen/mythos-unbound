@@ -663,6 +663,11 @@
       "ratio": 0.9079000538793104,
       "anchor_x": 0.53,
       "baseline": 480
+    },
+    "ares": {
+      "ratio": 0.9019138755980861,
+      "anchor_x": 0.54,
+      "baseline": 480
     }
   },
   "frames": [
@@ -913,35 +918,118 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small animal companion is permitted only if the Subject explicitly lists it as part of the costume; it is not a second character.\nImage 1: approved Athena idle, EXACT identity/design reference. Preserve costume, proportions, face, hair, weapon design and size, lighting, palette and line weight. Other images style only. NO gold, NO aura, glow, sparks or floating fragments.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume, not a second character). Measured, upright stance. The crest, the spear and the aegis define the silhouette. No gold. NO extra cloak or cape; match the listed costume.\nChange POSE ONLY. 512x512 square image. Full body, strict side view facing RIGHT. Body centre at x=256, feet rest at y=480. Head or helm top near y=50, about430px standing figure height regardless of tier. Preserve anatomy, scale and hip anchor across poses. Entire character, extended limbs and weapon must fit inside frame with no clipping, no ground marks.\nPose death_01: DEATH falling: lose balance, torso tipping back left, knees buckle, weapon loosens and drops, one supporting foot still near y480. Mid-fall, not standing hit pose. Preserve original body size; do not enlarge falling body to fill frame.\nSpecial pose notes (override generic pose where they conflict): ",
       "file": "athena/athena_death_01.png",
       "bytes": 29676
+    },
+    {
+      "id": "athena",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9f5575e0-4890-4946-b2fa-e7f58347a927.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. A small owl companion is permitted as part of Athena's costume.\nImage 1: approved Athena idle, EXACT identity/design reference. Preserve helm, crest, hair, facial identity, costume, aegis, owl, spear design, proportions, palette and line weight. Images 2\u20134: style references only, do not copy their gold, props, background or ground marks.\nSubject: Disciplined war goddess: crested helm with a blood-red crest, an aegis across the chest bearing a gorgoneion (a face ringed with snakes, ink on bone), a long spear, and a small bone-and-ink owl perched on one shoulder (part of her costume). No added cloak or cape.\nComposition: Portrait 768x1024 vertical 3:4, HEAD TO HIPS. A NEW near-frontal THREE QUARTER viewpoint turned only 25 degrees RIGHT: both eyes clearly visible with the nose between them, both cheeks and BOTH shoulders visible. The nose must remain inside the face outline, never side profile. Turn the torso toward the camera too. Owl on near shoulder, spear upright beside head, measured level gaze. Face in upper half. Fully include hair, crest, headgear and identifying spear, leave transparent margins at the top and sides. No full-body framing. No gold, aura, glow, sparks or floating fragments. Genuine transparent alpha background.",
+      "file": "athena/athena_portrait.png",
+      "bytes": 112979
+    },
+    {
+      "id": "ares",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-5f6c45ff-b6bb-4e0d-9f31-84a6670c5147.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImages 1\u20133: approved style references only, NOT character identity. Do not copy their crowns, faces, props, gold, floors or backgrounds.\nSubject: War as an appetite: full-face war helm with a narrow eye slit and a blood-red crest, spear and shield, forward aggressive stance, bare scarred torso under bone cuirass straps, a blood-red cloak. Hunched to charge. The helm and the lunging stance define the silhouette. No gold.\nComposition: 512x512 square production sprite. Full body strict side view facing RIGHT. Body centre of mass x256, both feet resting y480, top of helm near y50, standing height about430px regardless of tier. All limbs, crest, cloak, shield and entire spear inside the frame with transparent margins; no clipping. No drawn baseline.\nPose idle_01: Neutral weight settled, slight forward aggressive hunch, both feet planted; spear held at rest nearly upright beside body with tip no higher than crest, round shield carried at near arm, narrow eye slit facing right. Shield must not hide the bare scarred torso and bone cuirass straps. Blood-red cloak and crest only; all other material bone and ink. Exactly one Ares, no other characters. No gold, glow, aura, sparks, particles or floating fragments.",
+      "file": "ares/ares_idle_01.png",
+      "bytes": 32646,
+      "normalization": {
+        "ratio": 0.9019138755980861,
+        "anchor_x": 0.54,
+        "baseline": 480
+      }
+    },
+    {
+      "id": "ares",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-a7e49ba5-73aa-42ae-955e-b2e356fcf6d0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Ares idle, EXACT identity/design reference. Preserve full-face helm, blood-red crest, narrow eye slit, scarred bare torso, bone straps, cloak, shield, spear design and size, anatomy, line weight and lighting. Images 2\u20134: style only. NO gold, aura, glow, sparks or floating fragments.\nSubject: War as an appetite: full-face war helm with a narrow eye slit and a blood-red crest, spear and shield, forward aggressive stance, bare scarred torso under bone cuirass straps, a blood-red cloak. Hunched to charge. The helm and the lunging stance define the silhouette. No gold.\n512x512 square. Full body strict side view facing RIGHT, body centre x256, supporting foot y480, crest top near y50, about430px standing figure height. Preserve idle scale and hip anchor. Whole weapon, limbs and cloak inside frame, no clipping or ground marks.\nPose walk_01: Walk CONTACT toward right. Front/right leg steps forward with heel touching y480, opposite leg behind, unmistakable wide contact stride. Shield stays on near arm and spear held upright close to body, same design and length as idle. Slight forward hunch. No extra weapons or arms.",
+      "file": "ares/ares_walk_01.png",
+      "bytes": 35535,
+      "normalization": {
+        "ratio": 0.8484848484848485,
+        "anchor_x": 0.54,
+        "baseline": 480
+      }
+    },
+    {
+      "id": "ares",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-a2aef521-a3f3-4413-bac0-58bfca3badf3.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Ares idle, EXACT identity/design reference. Preserve full-face helm, blood-red crest, narrow eye slit, scarred bare torso, bone straps, cloak, shield, spear design and size, anatomy, line weight and lighting. Images 2\u20134: style only. NO gold, aura, glow, sparks or floating fragments.\nSubject: War as an appetite: full-face war helm with a narrow eye slit and a blood-red crest, spear and shield, forward aggressive stance, bare scarred torso under bone cuirass straps, a blood-red cloak. Hunched to charge. The helm and the lunging stance define the silhouette. No gold.\n512x512 square. Full body strict side view facing RIGHT, body centre x256, supporting foot y480, crest top near y50, about430px standing figure height. Preserve idle scale and hip anchor. Whole weapon, limbs and cloak inside frame, no clipping or ground marks.\nPose walk_02: WALK PASSING, clearly different from contact stride. One supporting leg vertical under hip, its foot on y480. Other thigh swings forward with knee bent, shin folds back and raised foot passes next to supporting knee. Feet CLOSE horizontally, less than one head width apart; ONLY ONE foot touches the ground. Torso and crest at nearly identical height to idle, raised at most6px. No wide stride or two planted feet. Same shield, spear upright close to body and red cloak. Preserve exact idle body proportions and costume.",
+      "file": "ares/ares_walk_02.png",
+      "normalization": {
+        "ratio": 0.84688995215311,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 29761
+    },
+    {
+      "id": "ares",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-ae903ed8-587b-4183-9d8e-fd611705a4a7.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Ares idle, EXACT identity/design reference. Preserve full-face helm, blood-red crest, narrow eye slit, scarred bare torso, bone straps, cloak, shield, spear design and size, anatomy, line weight and lighting. Images 2\u20134: style only. NO gold, aura, glow, sparks or floating fragments.\nSubject: War as an appetite: full-face war helm with a narrow eye slit and a blood-red crest, spear and shield, forward aggressive stance, bare scarred torso under bone cuirass straps, a blood-red cloak. Hunched to charge. The helm and the lunging stance define the silhouette. No gold.\n512x512 square. Full body strict side view facing RIGHT, body centre x256, supporting foot y480, crest top near y50, about430px standing figure height. Preserve idle scale and hip anchor. Whole weapon, limbs and cloak inside frame, no clipping or ground marks.\nPose attack_01: Attack WIND-UP for a spear thrust toward right. Back hand draws the SAME long spear back to the LEFT, shaft nearly horizontal at shoulder level, pointed tip still aiming RIGHT. Torso coils back left while facing right, rear knee bends, weight on back foot, small forward shield guard. Striking hand near rear shoulder and spear butt reaches left transparent margin. No striking extension yet. Same spear length, same helm, blood-red crest, cloak, scars, bone straps and same round shield design as idle. All of the long spear fully inside square: leave transparent margin at both ends.",
+      "file": "ares/ares_attack_01.png",
+      "bytes": 30158
+    },
+    {
+      "id": "ares",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-39250cfb-78fc-43b8-b097-5ff3ac9319a1.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: precise-object-edit. Image 1: edit target Ares strike. Image 2: approved Ares idle, exact identity reference.\nChange ONLY the SPEAR ARM and spear grip to a true STRIKE toward RIGHT. Move the spear hand from behind his back on the LEFT to FAR IN FRONT of his chest on the RIGHT. Shoulder -> upper arm -> straight elbow -> forearm -> fist must form one continuous extended RIGHTWARD arm. Fist must be RIGHT of the face, above the shield, and near the spearhead (grip about two-thirds along shaft toward the tip). Keep exactly two arms: shield arm holds shield near chest; spear arm reaches right. Spear butt extends back left, tip at right margin, whole same-length spear visible. NO arm drawn backward, NO bent elbow behind torso. Keep same forward lunging legs, shield, helm, crest, scarred torso, straps, cloak, face, palette, heavy outlines, 512x512 right-facing side-view composition and genuine transparent background. No gold, glow, aura, sparks, particles, clipping or extra figures.",
+      "file": "ares/ares_attack_02.png",
+      "bytes": 28909
+    },
+    {
+      "id": "ares",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9c42acf4-3097-4217-9da6-270b1cd71f0e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Ares idle, EXACT identity/design reference. Preserve full-face helm, blood-red crest, narrow eye slit, scarred bare torso, bone straps, cloak, shield, spear design and size, anatomy, line weight and lighting. Images 2\u20134: style only. NO gold, aura, glow, sparks or floating fragments.\nSubject: War as an appetite: full-face war helm with a narrow eye slit and a blood-red crest, spear and shield, forward aggressive stance, bare scarred torso under bone cuirass straps, a blood-red cloak. Hunched to charge. The helm and the lunging stance define the silhouette. No gold.\n512x512 square. Full body strict side view facing RIGHT, body centre x256, supporting foot y480, crest top near y50, about430px standing figure height. Preserve idle scale and hip anchor. Whole weapon, limbs and cloak inside frame, no clipping or ground marks.\nPose hit_01: HIT REACTION, still facing right. Head and helmet jerk backward toward LEFT, neck extended, shoulders and chest recoil left, knees flex, supporting foot stays at y480. Spear tilts backward but remains held; same round shield lowers slightly near body. Distinct from idle and attack, visibly surprised off balance while upright. Same scar marks, bone straps, red crest and cloak, same body scale. Keep exactly two arms and two legs, no impact flashes, no new wounds, no blood splatter, no aura or glow.",
+      "file": "ares/ares_hit_01.png",
+      "bytes": 33858
+    },
+    {
+      "id": "ares",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e84731db-297e-48b8-a0af-fbcd134d3364.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: precise-object-edit. Image 1: edit target Ares death mid-fall. Image 2: approved Ares idle, identity and correct spear reference.\nChange ONLY the end of the dropped spear at the LEFT edge: replace that extra pointed blade with a simple SMALL BLUNT CYLINDRICAL BONE CAP on the ink shaft, matching the idle's blunt butt. Ares has a SINGLE-HEADED SPEAR: exactly ONE pointed diamond-shaped spearhead at the LOWER RIGHT end, with a plain round-ended butt at upper left. Never a double-headed weapon. Keep the falling body pose, opening hands, exactly two arms and two legs, torso, helm, crest, scar marks, straps, red cloak, round shield, line weight, palette, lighting, scale, positioning, transparent margins and genuine transparent alpha unchanged. The weapon remains fully inside the 512x512 square, no clipping. No gold, no glow, aura, sparks or effects.",
+      "file": "ares/ares_death_01.png",
+      "bytes": 34440
+    },
+    {
+      "id": "ares",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-422a9178-649c-4126-bd61-48070956c01d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: precise-object-edit. Image 1: Ares portrait edit target. Image 2: approved Ares idle identity and correct spear reference.\nCorrect ONLY the composition and clipped edges. Reduce the existing HEAD-TO-HIPS portrait content as a whole by about12percent and centre it in the 768x1024 vertical3:4 frame. COMPLETE the clipped spear butt at the LEFT with its plain rounded bone-and-ink cap. Show BOTH spear ends, including entire existing pointed head at lower right. Leave at least35px completely transparent margins at TOP, LEFT and RIGHT, and20px below spearhead. Entire crest and entire shield fit with margins. Remove any edge noise at the hips; clean deliberate portrait cutoff through cloth below waist. Retain same three-quarter near-frontal helm angle, two red eye pinpoints with no glow, both shoulders, scarred torso, bone straps, cloak, shield emblem, spear design and length, exactly two arms, proportions, palette, flat fills and heavy line weight. Do not introduce legs or fullbody view. Genuine transparent alpha, no gold, aura, glow, sparks, floor or background.",
+      "file": "ares/ares_portrait.png",
+      "bytes": 97999
     }
   ],
   "completed": [
     "heracles",
     "perseus",
-    "achilles"
+    "achilles",
+    "athena",
+    "ares"
   ],
-  "active": "athena",
-  "status": "blocked_image_generation_usage_limit",
+  "active": "poseidon",
+  "status": "in_progress",
   "pending": {
-    "athena": [
-      "portrait"
-    ],
     "remaining_deities": [
-      "satyr",
-      "harpy",
-      "asclepius",
-      "orpheus",
-      "dionysus",
-      "aeneas",
-      "hera",
       "poseidon",
       "hades",
-      "ares",
-      "aphrodite",
-      "hephaestus",
-      "apollo",
-      "artemis",
-      "typhon",
+      "hera",
+      "odin",
+      "loki",
+      "baldr",
+      "freyja",
+      "tyr",
+      "heimdall",
+      "frigg",
+      "njord",
+      "freyr",
       "einherjar",
       "draugr",
       "valkyrie",
@@ -952,26 +1040,6 @@
       "vali",
       "magni",
       "skadi",
-      "odin",
-      "loki",
-      "baldr",
-      "frigg",
-      "freyja",
-      "freyr",
-      "tyr",
-      "heimdall",
-      "njord",
-      "fenrir",
-      "jormungandr",
-      "medjay",
-      "shabti",
-      "ba",
-      "wepwawet",
-      "imhotep",
-      "nefertem",
-      "maahes",
-      "bes",
-      "khonsu",
       "ra",
       "osiris",
       "isis",
@@ -982,26 +1050,44 @@
       "hathor",
       "sekhmet",
       "ptah",
+      "satyr",
+      "asclepius",
+      "orpheus",
+      "dionysus",
+      "aeneas",
+      "aphrodite",
+      "hephaestus",
+      "apollo",
+      "artemis",
+      "medjay",
+      "shabti",
+      "wepwawet",
+      "imhotep",
+      "nefertem",
+      "maahes",
+      "bes",
+      "khonsu",
+      "harpy",
+      "typhon",
+      "fenrir",
+      "jormungandr",
+      "ba",
       "apep",
       "ammit"
     ]
   },
-  "usage_limit": {
-    "resets_at": 1790902542,
-    "resets_at_timezone": "America/New_York",
-    "failed_action": "Athena portrait three-quarter camera correction",
-    "error": "usage_limit_reached",
-    "fallback_used": false
-  },
+  "usage_limit": null,
   "review": {
     "small_size_checked": [
       "heracles",
       "perseus",
       "achilles",
-      "athena"
+      "athena",
+      "ares"
     ],
     "athena_battle": "approved",
-    "athena_portrait": "unapproved_profile_camera_needs_regeneration"
+    "athena_portrait": "approved_three_quarter",
+    "ares": "approved"
   },
   "rejected_frames": [
     {
@@ -1012,6 +1098,27 @@
       "file": "athena/athena_portrait.png",
       "bytes": 102578,
       "rejection_reason": "Portrait camera too close to strict profile; regeneration blocked by builtin usage limit"
+    },
+    {
+      "id": "ares",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-49328a09-54fa-495c-97a8-35b544ba22a8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Ares idle, EXACT identity/design reference. Preserve full-face helm, blood-red crest, narrow eye slit, scarred bare torso, bone straps, cloak, shield, spear design and size, anatomy, line weight and lighting. Images 2\u20134: style only. NO gold, aura, glow, sparks or floating fragments.\nSubject: War as an appetite: full-face war helm with a narrow eye slit and a blood-red crest, spear and shield, forward aggressive stance, bare scarred torso under bone cuirass straps, a blood-red cloak. Hunched to charge. The helm and the lunging stance define the silhouette. No gold.\n512x512 square. Full body strict side view facing RIGHT, body centre x256, supporting foot y480, crest top near y50, about430px standing figure height. Preserve idle scale and hip anchor. Whole weapon, limbs and cloak inside frame, no clipping or ground marks.\nPose attack_02: Attack STRIKE, a committed rightward spear thrust, clearly different from the wind-up. Striking arm extends forward toward RIGHT, torso lunges forward, forward knee bends, rear leg braced. Same full-length spear (about same length as the idle standing figure), near-horizontal thrust at shoulder height; spear point fully visible near right margin, spear butt visible toward left. Position grip and shaft so the WHOLE spear remains within the frame, do not shorten or enlarge it. Shield stays close to near chest, red cloak trails back left. Preserve character anatomy and hip anchor, no extra arms, no contact victim, blood-red scars remain graphic marks, no effects.",
+      "rejection_reason": "Spear arm remained drawn back rather than extended toward right."
+    },
+    {
+      "id": "ares",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8a59f60b-d3eb-4712-a7ec-78bdf6ca6a7d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Ares idle, EXACT identity/design reference. Preserve full-face helm, blood-red crest, narrow eye slit, scarred bare torso, bone straps, cloak, shield, spear design and size, anatomy, line weight and lighting. Images 2\u20134: style only. NO gold, aura, glow, sparks or floating fragments.\nSubject: War as an appetite: full-face war helm with a narrow eye slit and a blood-red crest, spear and shield, forward aggressive stance, bare scarred torso under bone cuirass straps, a blood-red cloak. Hunched to charge. The helm and the lunging stance define the silhouette. No gold.\n512x512 square. Full body strict side view facing RIGHT, body centre x256, supporting foot y480, crest top near y50, about430px standing figure height. Preserve idle scale and hip anchor. Whole weapon, limbs and cloak inside frame, no clipping or ground marks.\nPose death_01: DEATH, a clear MID-FALL backward toward LEFT, far beyond an upright hit reaction. Knees buckle deeply, hips sink, torso tilts about45degrees backward left, head tipped back, body losing balance. One supporting foot still near y480, other foot lifts as knee folds. Spear loosens from opening hand and tips down diagonally, same round shield drops near bent knee, blood-red cloak crumples. Keep original anatomy and original body size, do not enlarge crouched/falling figure to fill frame. Same scar marks, helm and crest, bone straps, spear and shield. Entire body and weapon inside square. No corpse gore, no extra wounds, no blood puddle, no effects, no extra limbs.",
+      "rejection_reason": "Generated a second pointed head on the spear butt."
+    },
+    {
+      "id": "ares",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-3b13c83c-185e-4476-8bf3-f8239cb1770f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Ares idle, EXACT identity/design reference. Preserve helm design, crest, narrow eye slit, scarred bare torso, bone cuirass straps, cloak, shield emblem, spear design, proportions, lighting, palette and line weight. Images 2\u20134: style references only. No gold, aura, glow, sparks or floating fragments.\nSubject: War as an appetite: full-face war helm with a narrow eye slit and a blood-red crest, spear and shield, forward aggressive stance, bare scarred torso under bone cuirass straps, a blood-red cloak. Hunched to charge. The helm and the lunging stance define the silhouette. No gold.\nPortrait 768x1024 vertical3:4, HEAD TO HIPS. NEW three-quarter near-frontal viewpoint turned only25degrees RIGHT, BOTH shoulders clearly visible, front of helm and both eye-slit sides visible with small blood-red pinpoints inside the narrow slit, not glowing light. Helmet facing toward viewer with nose guard inside face silhouette, do not reuse strict profile sprite. Aggressive proud pose. Spear lowered diagonally across foreground, round shield edge across chest, crest swept above head, blood-red cloak. Spear and both arms entirely within portrait frame with transparent margins; weapon may be tilted to fit. Face in upper half, no full-body framing, no text or background.",
+      "rejection_reason": "Spear butt and cloak clipped at left frame edge; crest touches top edge."
     }
   ]
 }
