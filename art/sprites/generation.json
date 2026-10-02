@@ -753,6 +753,11 @@
       "ratio": 0.8556618819776715,
       "anchor_x": 0.55,
       "baseline": 480
+    },
+    "brynhildr": {
+      "ratio": 0.919457735247209,
+      "anchor_x": 0.55,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2513,6 +2518,48 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4041e7b8-bc5a-43ee-a6cc-3b6867043b26.png",
       "file": "vidar/vidar_portrait.png",
       "bytes": 99012
+    },
+    {
+      "id": "brynhildr",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-6514f8cf-40ca-4b3f-bf06-ed6311480754.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Brynhildr Norse demigod shield-maiden stripped of valkyrie wings. Resolute female face, long bone-white BRAID over near shoulder down chest, unhelmeted head, no wings anywhere. Plain bone/ink MAIL, blood-red tunic/sash and skirt, bone/ink wrapped boots. Cloak made of hanging SWAN FEATHERS in bone/ink over shoulders and back, layered drooping feathers attached to cape, NOT outstretched wings. ONE round bone/ink shield with blood-red boss on forward forearm, ONE bone LONGSWORD in rear hand. Exactly2arms/hands/legs. Braid and feather cloak define silhouette, no gold. Strict RIGHT profile one visible eye. Idle both boots planted, sword low diagonal forwardRIGHT with tip above soles, shield forward. Fullbody all cloakfeathers/braid/fullblade/shield inside4%transparent margins. Square512x512, scalptop y50, feet y480, hipx256. References STYLE ONLY, do not copy helmet/wingornaments.",
+      "file": "brynhildr/brynhildr_idle_01.png",
+      "bytes": 35521
+    },
+    {
+      "id": "brynhildr",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Brynhildr identity, others STYLE ONLY. Preserve resolute female face, unhelmeted bone-white hair with ONE long thick BRAID over near shoulder down chest, same hanging cloak of SWAN FEATHERS bone/ink over shoulders/back, NOT wings, no wings/helmet. Bone/ink chainmail, blood-red tunic, skirt and sash, wrapped bone/ink boots. ONE round bone/ink shield with blood-red boss on forward forearm, ONE straight long bone sword in rearhand. Exactly2arms/hands/legs, shieldforearm can hide, no extra grip or weapon. Strict RIGHT side profile oneeye, fullbody square512x512. Scalptop y50 feetbaseline480 hipsx256, same body/sword/shieldscale asidle, crouches/falls lowerheadnaturally neverenlargefallenbody. Fullcloakfeathers/braid/sword/shieldfeet safely INSIDE margins, no featherparticles. Walk CONTACT RIGHT, broad stride BOTH boots touchingbaseline, front bootRIGHT rearbootLEFT, shieldforward swordlowforward, braid swings on nearshoulder, hangingfeathercloak trailsLEFT.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-5b2937f6-a4a9-44c0-91c1-a9d8d3c823f9.png",
+      "file": "brynhildr/brynhildr_walk_01.png",
+      "normalization": {
+        "ratio": 0.919457735247209,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 38867
+    },
+    {
+      "id": "brynhildr",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Brynhildr identity, others STYLE ONLY. Preserve resolute female face, unhelmeted bone-white hair with ONE long thick BRAID over near shoulder down chest, same hanging cloak of SWAN FEATHERS bone/ink over shoulders/back, NOT wings, no wings/helmet. Bone/ink chainmail, blood-red tunic, skirt and sash, wrapped bone/ink boots. ONE round bone/ink shield with blood-red boss on forward forearm, ONE straight long bone sword in rearhand. Exactly2arms/hands/legs, shieldforearm can hide, no extra grip or weapon. Strict RIGHT side profile oneeye, fullbody square512x512. Scalptop y50 feetbaseline480 hipsx256, same body/sword/shieldscale asidle, crouches/falls lowerheadnaturally neverenlargefallenbody. Fullcloakfeathers/braid/sword/shieldfeet safely INSIDE margins, no featherparticles. Walk PASSING RIGHT, ONEboot plantedbeneathhips otherkneebentfootclearlyOFFground, narrowstride, shieldforward swordlowforward, braid shifts, feathercloak trailsLEFT. Distinct from contact.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-866c0f60-b334-488c-9e76-344e1f59e2df.png",
+      "file": "brynhildr/brynhildr_walk_02.png",
+      "normalization": {
+        "ratio": 0.8763955342902712,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 37924
+    },
+    {
+      "id": "brynhildr",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Brynhildr identity, others STYLE ONLY. Preserve resolute female face, unhelmeted bone-white hair with ONE long thick BRAID over near shoulder down chest, same hanging cloak of SWAN FEATHERS bone/ink over shoulders/back, NOT wings, no wings/helmet. Bone/ink chainmail, blood-red tunic, skirt and sash, wrapped bone/ink boots. ONE round bone/ink shield with blood-red boss on forward forearm, ONE straight long bone sword in rearhand. Exactly2arms/hands/legs, shieldforearm can hide, no extra grip or weapon. Strict RIGHT side profile oneeye, fullbody square512x512. Scalptop y50 feetbaseline480 hipsx256, same body/sword/shieldscale asidle, crouches/falls lowerheadnaturally neverenlargefallenbody. Fullcloakfeathers/braid/sword/shieldfeet safely INSIDE margins, no featherparticles. Sword attack WINDUP: kneesbend weightback, rearhand raises longsword UP AND BACK overhead ready toslash, FULLbladepointinsidecanvas, shieldforward, braid and hangingcloakfollowmotion. Exactly2arms no extrahand.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b1072838-8ccb-4517-b89a-ac0a053ded13.png",
+      "file": "brynhildr/brynhildr_attack_01.png",
+      "bytes": 40128
     }
   ],
   "completed": [
@@ -2540,10 +2587,9 @@
     "vidar"
   ],
   "active": "brynhildr",
-  "status": "in_progress",
+  "status": "blocked_usage_limit",
   "pending": {
     "remaining_deities": [
-      "brynhildr",
       "hodr",
       "vali",
       "magni",
@@ -2582,9 +2628,31 @@
       "ba",
       "apep",
       "ammit"
+    ],
+    "brynhildr": [
+      "portrait",
+      "attack_02",
+      "hit_01",
+      "death_01"
     ]
   },
-  "usage_limit": null,
+  "usage_limit": {
+    "error_type": "usage_limit_reached",
+    "message": "The usage limit has been reached",
+    "plan_type": "plus",
+    "resets_at": 1790991137,
+    "resets_at_utc": "2026-10-03T01:32:17Z",
+    "resets_at_local": "2026-10-02T21:32:17-04:00",
+    "timezone": "America/New_York",
+    "blocked_character": "brynhildr",
+    "blocked_frames": [
+      "attack_02",
+      "hit_01",
+      "death_01",
+      "portrait"
+    ],
+    "raw_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790991137,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":70473}}\")"
+  },
   "review": {
     "small_size_checked": [
       "heracles",
@@ -2608,7 +2676,8 @@
       "draugr",
       "valkyrie",
       "sigurd",
-      "vidar"
+      "vidar",
+      "brynhildr"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -2629,7 +2698,8 @@
     "draugr": "approved",
     "valkyrie": "approved",
     "sigurd": "approved",
-    "vidar": "approved"
+    "vidar": "approved",
+    "brynhildr": "approved_partial_idle_walks_attack_windup"
   },
   "rejected_frames": [
     {
