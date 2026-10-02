@@ -708,6 +708,11 @@
       "ratio": 0.9043062200956937,
       "anchor_x": 0.52,
       "baseline": 480
+    },
+    "heimdall": {
+      "ratio": 0.919457735247209,
+      "anchor_x": 0.56,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1707,6 +1712,80 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nCreate corrected TYR PORTRAIT from image1 exacthead-to-hips framing andimage2 correctNEARFRONTALface/helmet orientation. VERTICAL768x1024 THREEQUARTER head-to-hips. CAMERA CLOSE UP: NO legs/knees/boots/feet inimage; END CHARACTER immediately BELOW BELT atUPPER HIPS. HEAD+HELMEToccupies upperTHIRD ofimage, bigface NOT tinyfullbody. Keepheadturnednearfront20degRIGHT showingBOTHEYESbesidecentralnoseguard,BOTHhelmetcheekplates,beardsteadygrimjaw. EXACToriginalmailcostume,bloodcloakandsash,one sword heldbyLEFT hand(imageRIGHT),smallroundshieldstrappedRIGHTforearm(imageLEFT),cleanbonebandagedRIGHTwriststumpraisedatlowerchestprominentpastshield; ONE intacthandtotal. StumpendsflatINKcapgreyhatchingonly,nohandfingers/brownskin/hole/gore/prosthetic. Repose swordangleddiagonallyuprightwithFULLbladeandpommelinside35pxmargins alongsideface. Entirehelmet,shield,arms,weaponfit, nobodiesbelowhips. AtBOTTOM drawcleancontinuouspureINKcroppedhipcontour. Onlyonehead-to-hipportrait, NOFULLBODY.",
       "file": "tyr/tyr_portrait.png",
       "bytes": 105228
+    },
+    {
+      "id": "heimdall",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9d7d291d-e014-4bec-bb3f-21ed7472a5cc.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images: all three STYLE ONLY. Subject: HEIMDALL, Norse watchman of the rainbow bridge. Huge curved war-horn Gjallarhorn in one hand, longsword Hofud in the other; long PALE BONE cloak, wide-open alert eyes, pale beard, mail. Waiting for one specific sound. Horn and open stare define silhouette. NO gold. Simple unhorned helmet, pale beard and bone cloak over ink mail with sparse bone arcs, blood sash. Exactly TWO arms, TWO hands, ONE curved horn and ONE straight sword. Horn is opaque bone and ink, dark open bell, no decorative gold. Pale cloak flat bone with ink folds.\nComposition: 512x512 square full body strict side view facing RIGHT, nose toward right edge. Humanoid standing430px high, head/helmet near y50, feet y480, hip x256. Entire beard/cloak/curved horn/sword inside margins. Pose idle_01: neutral watchful stance, both feet planted, huge curved horn held at chest near mouth ready to sound; opposite hand holds sword diagonally down-right ready. Keep full blade point inside canvas. Clean distinct silhouette.",
+      "file": "heimdall/heimdall_idle_01.png",
+      "bytes": 34429
+    },
+    {
+      "id": "heimdall",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved Heimdall idle identity, edit ONLY pose. Images2\u20134: style only. Preserve plain pointed unhorned helmet, alert wide eyes, long pale beard and hair, huge curved BONE/INK horn with dark open bell in near hand, ONE straight sword in opposite hand, long BONE cloak, ink/bone arc-pattern mail, blood sash and panel, bone/ink greaves and boots. Exactly TWO arms and TWO hands, ONE sword and ONE horn. No extra limb or shield. SAME physical body scale/proportions. 512x512 square full body strict RIGHT profile, face and nose to right edge. Body hipanchor x256, lowest planted foot y480; standing helmettop near y50, standing body430px. Crouch/fall may naturally lower helmettop, do NOT enlarge body. ALL weapons, horn, beard, cloak, feet and limbs inside margins. No floor/shadow. NO gold/aura/glow/sparks/particles/floating fragments.\nPose: Walk CONTACT frame: front leg forward heel down on ground, rear foot back toe down, BOTH feet touchsamebaseline. Horn heldnear mouth, sword safely diagonal down-right. Cloak flows gentlybackleft.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-199cabef-6c97-49e6-997d-d7c9e92bbfe2.png",
+      "file": "heimdall/heimdall_walk_01.png",
+      "normalization": {
+        "ratio": 0.8628389154704944,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 34191
+    },
+    {
+      "id": "heimdall",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved Heimdall idle identity, edit ONLY pose. Images2\u20134: style only. Preserve plain pointed unhorned helmet, alert wide eyes, long pale beard and hair, huge curved BONE/INK horn with dark open bell in near hand, ONE straight sword in opposite hand, long BONE cloak, ink/bone arc-pattern mail, blood sash and panel, bone/ink greaves and boots. Exactly TWO arms and TWO hands, ONE sword and ONE horn. No extra limb or shield. SAME physical body scale/proportions. 512x512 square full body strict RIGHT profile, face and nose to right edge. Body hipanchor x256, lowest planted foot y480; standing helmettop near y50, standing body430px. Crouch/fall may naturally lower helmettop, do NOT enlarge body. ALL weapons, horn, beard, cloak, feet and limbs inside margins. No floor/shadow. NO gold/aura/glow/sparks/particles/floating fragments.\nPose: Walk PASSING frame: legs crossing underhips, ONE foot alone plantedatbaseline; other knee lifted and foot clearly OFFGROUND behindplantedleg. Body slightly raised, horn/sword samehandsandidentity. Cloak pulledbackleft. Clearly differentfromcontact pose.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-7b4281c3-4d98-440c-b7c4-b3b9bf07ca10.png",
+      "file": "heimdall/heimdall_walk_02.png",
+      "normalization": {
+        "ratio": 0.8692185007974481,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 33108
+    },
+    {
+      "id": "heimdall",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved Heimdall idle identity, edit ONLY pose. Images2\u20134: style only. Preserve plain pointed unhorned helmet, alert wide eyes, long pale beard and hair, huge curved BONE/INK horn with dark open bell in near hand, ONE straight sword in opposite hand, long BONE cloak, ink/bone arc-pattern mail, blood sash and panel, bone/ink greaves and boots. Exactly TWO arms and TWO hands, ONE sword and ONE horn. No extra limb or shield. SAME physical body scale/proportions. 512x512 square full body strict RIGHT profile, face and nose to right edge. Body hipanchor x256, lowest planted foot y480; standing helmettop near y50, standing body430px. Crouch/fall may naturally lower helmettop, do NOT enlarge body. ALL weapons, horn, beard, cloak, feet and limbs inside margins. No floor/shadow. NO gold/aura/glow/sparks/particles/floating fragments.\nPose: SWORD ATTACK WIND-UP: crouched knees, weightback, sword raised backover shoulder/helmet preparing rightwardslash. Horn inotherhand lowered to chest outofswordway, fullbellvisible. Exactlytwohands/oneblade/onehorn.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-13968554-4d28-4263-ba2d-6bf90a52c72c.png",
+      "file": "heimdall/heimdall_attack_01.png",
+      "bytes": 33902
+    },
+    {
+      "id": "heimdall",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved Heimdall idle identity, edit ONLY pose. Images2\u20134: style only. Preserve plain pointed unhorned helmet, alert wide eyes, long pale beard and hair, huge curved BONE/INK horn with dark open bell in near hand, ONE straight sword in opposite hand, long BONE cloak, ink/bone arc-pattern mail, blood sash and panel, bone/ink greaves and boots. Exactly TWO arms and TWO hands, ONE sword and ONE horn. No extra limb or shield. SAME physical body scale/proportions. 512x512 square full body strict RIGHT profile, face and nose to right edge. Body hipanchor x256, lowest planted foot y480; standing helmettop near y50, standing body430px. Crouch/fall may naturally lower helmettop, do NOT enlarge body. ALL weapons, horn, beard, cloak, feet and limbs inside margins. No floor/shadow. NO gold/aura/glow/sparks/particles/floating fragments.\nPose: SWORD ATTACK STRIKE: deep forwardlungeRIGHT, sword fullyextended diagonallydownright, wholepointinsidecanvas. Torso committedforward, bentfrontknee, straightrearleg. Horn tucked inotherhand againstchest, bellfullyvisible. Exactlytwohands/oneblade/onehorn.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8c01c87f-9398-4f27-8e08-ffc0288184e6.png",
+      "file": "heimdall/heimdall_attack_02.png",
+      "bytes": 30882
+    },
+    {
+      "id": "heimdall",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved Heimdall idle identity, edit ONLY pose. Images2\u20134: style only. Preserve plain pointed unhorned helmet, alert wide eyes, long pale beard and hair, huge curved BONE/INK horn with dark open bell in near hand, ONE straight sword in opposite hand, long BONE cloak, ink/bone arc-pattern mail, blood sash and panel, bone/ink greaves and boots. Exactly TWO arms and TWO hands, ONE sword and ONE horn. No extra limb or shield. SAME physical body scale/proportions. 512x512 square full body strict RIGHT profile, face and nose to right edge. Body hipanchor x256, lowest planted foot y480; standing helmettop near y50, standing body430px. Crouch/fall may naturally lower helmettop, do NOT enlarge body. ALL weapons, horn, beard, cloak, feet and limbs inside margins. No floor/shadow. NO gold/aura/glow/sparks/particles/floating fragments.\nPose: Hit reaction: torso/head snappedbackLEFT, face stillRIGHT, kneesbent, onefootlightlyraised, hornprotectivelyraisedinitsoriginalhand and swordlowinoppositehand. Preserve allweapons/bodyinsideframe.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b0e6d4e7-69d1-4188-9dd3-2aca7e1cfa72.png",
+      "file": "heimdall/heimdall_hit_01.png",
+      "bytes": 34044
+    },
+    {
+      "id": "heimdall",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved Heimdall idle identity, edit ONLY pose. Images2\u20134: style only. Preserve plain pointed unhorned helmet, alert wide eyes, long pale beard and hair, huge curved BONE/INK horn with dark open bell in near hand, ONE straight sword in opposite hand, long BONE cloak, ink/bone arc-pattern mail, blood sash and panel, bone/ink greaves and boots. Exactly TWO arms and TWO hands, ONE sword and ONE horn. No extra limb or shield. SAME physical body scale/proportions. 512x512 square full body strict RIGHT profile, face and nose to right edge. Body hipanchor x256, lowest planted foot y480; standing helmettop near y50, standing body430px. Crouch/fall may naturally lower helmettop, do NOT enlarge body. ALL weapons, horn, beard, cloak, feet and limbs inside margins. No floor/shadow. NO gold/aura/glow/sparks/particles/floating fragments.\nPose: Falling backward LEFT losingbalance, torso/head tiltedback, face stillRIGHT, onefootplantedbaseline andotherraised, sworddroopsfromoriginalhand, hornloweredandtiltedinotherhand, palecloakfollowsfall. Beginningoffall, notrestingcorpse; maintainnormalbodyscale.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-d1f38143-89cf-44df-b1bc-710b1a113163.png",
+      "file": "heimdall/heimdall_death_01.png",
+      "bytes": 32309
+    },
+    {
+      "id": "heimdall",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 exact approved Heimdall idle identity; Images2\u20134 STYLE ONLY. Preserve unhorned pointed bone/ink helmet, long pale hair and beard, long BONE cloak, ink/bone mail, blood sash and panel, huge curved BONE/INK horn with dark bell in one hand, ONE longsword in other. Exactly TWO arms/hands. Portrait VERTICAL3:4 768x1024 HEAD TO HIPS. NEW NEARFRONTAL THREEQUARTER CAMERA turned only20degRIGHT, BOTH eyes and BOTH shoulders clearly visible, nose insidefaceoutline not sideprofile. Big alert wide-eyed face in upperhalf; wholehelmet and beard visible. Horn lifted towardmouth prominent, otherhand on swordhilt with full blade angled upright besidehead. Repose the weapons to fitwholehornbell and swordblade/pommel inside35pxmargins. End body BELOW BELT at upperhips, NO knees/legs/boots/feet/fullbody. BOTTOM hipedge cleancontinuousflatinkcontour, no noisytexture. Samephysicalidentity butNEW closeuppose, no simpleenlargementofbattleframe.\nImage1 edit target CURRENT portrait. Surgical correction: keep exact nearfrontal face, wide eyes, head-to-hips pose/costume, BOTH hands and all weapons. Recompose horn a little LEFT and make it 10% smaller so entire horn bell has at least35px CLEAR TRANSPARENT SPACE at RIGHT EDGE. All foreground edges must stay30px from canvas. Preserve vertical3:4 framing. Remove isolated gold/yellow/colored fringe pixels at edges; strict bone/ink/blood only. Flat clean continuous ink outline at bottom hips, no speckled noise, ragged fragments or texture.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4733a392-37a0-442e-83ca-7d1181acc6f3.png",
+      "file": "heimdall/heimdall_portrait.png",
+      "bytes": 112480
     }
   ],
   "completed": [
@@ -1722,13 +1801,13 @@
     "loki",
     "baldr",
     "freyja",
-    "tyr"
+    "tyr",
+    "heimdall"
   ],
-  "active": "heimdall",
+  "active": "frigg",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "heimdall",
       "frigg",
       "njord",
       "freyr",
@@ -1793,7 +1872,8 @@
       "loki",
       "baldr",
       "freyja",
-      "tyr"
+      "tyr",
+      "heimdall"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -1805,7 +1885,8 @@
     "loki": "approved",
     "baldr": "approved",
     "freyja": "approved",
-    "tyr": "approved"
+    "tyr": "approved",
+    "heimdall": "approved"
   },
   "rejected_frames": [
     {
@@ -1906,6 +1987,12 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-39864a0b-6a21-4fdb-aca5-c8c38b0e0062.png",
       "rejection_reason": "Full body instead of head-to-hips"
+    },
+    {
+      "id": "heimdall",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-fffb401b-afa2-4588-8689-84360c2b3bcc.png",
+      "rejection_reason": "Horn clearance too tight at right edge"
     }
   ]
 }
