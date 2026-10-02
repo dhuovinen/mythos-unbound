@@ -683,6 +683,11 @@
       "ratio": 0.9481658692185008,
       "anchor_x": 0.55,
       "baseline": 480
+    },
+    "odin": {
+      "ratio": 0.8740031897926634,
+      "anchor_x": 0.55,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1267,6 +1272,95 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 current Hera frame; image2 exact approved identity.\nKeep exact near-frontal THREE QUARTER portrait, both eyes,diadem,featherfan,sceptre,composition and colors. Surgical correction bottom5% robe cutout: render continuous flat PURE INK #1A1A1E border along bottom, no bone touching edge and no tiny yellow,white,red,multicoloredpixelnoise. Solid smoothly antialiased alpha silhouette. Every feather,diadempoint,andlotussceptre within transparent margins35px. Head-to-hips, nofullbody.",
       "file": "hera/hera_portrait.png",
       "bytes": 124360
+    },
+    {
+      "id": "odin",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-708065ff-5195-44cf-bdd0-e022279867e7.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nNew character ODIN: elderly lean Norse all-father, wide-brimmed soft pointed INK hat pulled low, eyepatch covering anatomical LEFT eye, long pointed bone-white beard, heavy ink cloak with blood-red lining, plain bone/ink layered tunic and ink boots, long spear Gungnir with small incised rune marks along shaft, bone spearhead and PLAIN small blunt butt cap. Exactly ONE small black raven physically PERCHED on near shoulder (costume companion attached to shoulder), not flying. Hat, beard and spear define silhouette, calm old certain gaze, no horned helm, armor, gold, jewellery,stafforb or extra birds.\nReferences STYLE ONLY. Battle idle_01 512x512square fullbody, strictly RIGHT SIDE PROFILE. Figure crown of hat y50, planted feety480 430px standingheight, body/pelvis centeredx256. Spear held vertically ahead right of body, its entire tip and butt inside generous20px margins, raven attached shoulder facingright. All hat brim, cloak, spear and bird fully inside frame. Quiet relaxed stance two feet slightly apart. Genuine transparent alpha.",
+      "file": "odin/odin_idle_01.png",
+      "bytes": 31110
+    },
+    {
+      "id": "odin",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e8736aaf-455e-4495-b6ce-e872214c0f91.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 exact approved ODIN identity: SAME wide-brimmed bent soft pointed ink hat, long bone beard, anatomical LEFT eye patch, plain right eye, blood mantle with ink folds, same simple bone/ink tunic, ink boots, beltbrooch, incised rune spear single long leaf spearhead and SMALL butt cap. Exactly ONE small black raven physically perched on near shoulder, attached in all poses. NEVER another bird. Images2-4 STYLE ONLY. Old and certain. No armor/horns/gold. EXACTLY TWO ARMS/TWO HANDS/TWO LEGS. Maintain identity, body proportions, hat dimensions, beard, costume, palette,lighting,strokeweight.\nBattle sprite512square transparent. Strict RIGHT SIDE PROFILE. Body hat-toptofoot430pxstandingheight, hat topy50,footbaseliney480,pelvisx256. Entire hat/beard/raven/cloak/spear whollyinsideframe; generously fit long weapon, shorten shaft slightly in horizontalpose ifneededtofit withoutcuttingtip. No detachedfloatingfragments/effects.\nWalk CONTACT: step right, forward foot ahead and rear foot back both toes groundedy480. Clear gap between legs; old but purposeful medium stride. Left arm swings gentlyforward, right holds verticalspear. Raven grips shoulder, cloakmoves behind. Hat top50, samebodywidth.",
+      "file": "odin/odin_walk_01.png",
+      "normalization": {
+        "ratio": 0.8349282296650717,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 31096
+    },
+    {
+      "id": "odin",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-49e914d1-0bf4-4ded-81cd-81ef9ba22093.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 exact approved ODIN identity: SAME wide-brimmed bent soft pointed ink hat, long bone beard, anatomical LEFT eye patch, plain right eye, blood mantle with ink folds, same simple bone/ink tunic, ink boots, beltbrooch, incised rune spear single long leaf spearhead and SMALL butt cap. Exactly ONE small black raven physically perched on near shoulder, attached in all poses. NEVER another bird. Images2-4 STYLE ONLY. Old and certain. No armor/horns/gold. EXACTLY TWO ARMS/TWO HANDS/TWO LEGS. Maintain identity, body proportions, hat dimensions, beard, costume, palette,lighting,strokeweight.\nBattle sprite512square transparent. Strict RIGHT SIDE PROFILE. Body hat-toptofoot430pxstandingheight, hat topy50,footbaseliney480,pelvisx256. Entire hat/beard/raven/cloak/spear whollyinsideframe; generously fit long weapon, shorten shaft slightly in horizontalpose ifneededtofit withoutcuttingtip. No detachedfloatingfragments/effects.\nWalk PASSING: ONLY ONE supporting foot directlyunder pelvis touchesy480, OTHER knee bent and foot clearlyraised nexttosupport midcalf y400 with transparent gap below. Feetclose, no stride split. Slight4pxrise. Hands modestcounter-swing with spearstillvertical, ravenattached.",
+      "file": "odin/odin_walk_02.png",
+      "normalization": {
+        "ratio": 0.8500797448165869,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 28017
+    },
+    {
+      "id": "odin",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-423e93ad-402d-4e3e-b167-69707d740f27.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 exact approved ODIN identity: SAME wide-brimmed bent soft pointed ink hat, long bone beard, anatomical LEFT eye patch, plain right eye, blood mantle with ink folds, same simple bone/ink tunic, ink boots, beltbrooch, incised rune spear single long leaf spearhead and SMALL butt cap. Exactly ONE small black raven physically perched on near shoulder, attached in all poses. NEVER another bird. Images2-4 STYLE ONLY. Old and certain. No armor/horns/gold. EXACTLY TWO ARMS/TWO HANDS/TWO LEGS. Maintain identity, body proportions, hat dimensions, beard, costume, palette,lighting,strokeweight.\nBattle sprite512square transparent. Strict RIGHT SIDE PROFILE. Body hat-toptofoot430pxstandingheight, hat topy50,footbaseliney480,pelvisx256. Entire hat/beard/raven/cloak/spear whollyinsideframe; generously fit long weapon, shorten shaft slightly in horizontalpose ifneededtofit withoutcuttingtip. No detachedfloatingfragments/effects.\nAttack WINDUP: legs planted, draw rune spear behind upperbody into diagonal over rear LEFT shoulder; sharp leafhead upperLEFT and smallbutt lowRIGHT, bothhands onshaft, elbowsbent. Torso coiledbackslightly,face right. Raven remains shoulderperched. Hat/weapon all fit40pxmargins.",
+      "file": "odin/odin_attack_01.png",
+      "normalization": {
+        "ratio": 0.8349282296650717,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 35839
+    },
+    {
+      "id": "odin",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-1715d5a5-12f2-46e1-ba61-e93d8d1ab988.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 exact approved ODIN identity: SAME wide-brimmed bent soft pointed ink hat, long bone beard, anatomical LEFT eye patch, plain right eye, blood mantle with ink folds, same simple bone/ink tunic, ink boots, beltbrooch, incised rune spear single long leaf spearhead and SMALL butt cap. Exactly ONE small black raven physically perched on near shoulder, attached in all poses. NEVER another bird. Images2-4 STYLE ONLY. Old and certain. No armor/horns/gold. EXACTLY TWO ARMS/TWO HANDS/TWO LEGS. Maintain identity, body proportions, hat dimensions, beard, costume, palette,lighting,strokeweight.\nBattle sprite512square transparent. Strict RIGHT SIDE PROFILE. Body hat-toptofoot430pxstandingheight, hat topy50,footbaseliney480,pelvisx256. Entire hat/beard/raven/cloak/spear whollyinsideframe; generously fit long weapon, shorten shaft slightly in horizontalpose ifneededtofit withoutcuttingtip. No detachedfloatingfragments/effects.\nAttack STRIKE: single spear thrust straightRIGHT, long singleleaf spearhead farRIGHT x470, plain SMALL butt cap LEFT x80, shaft horizontalchestheight. BOTH hands gripping spear, arms extendedforward butelbows slightlybent; torsoleans10degforward,frontkneebent,rearlegbraced. Entireweapon fits generously: moderatecompactshaft,length350px, doNOT extend beyondedge. Hat/raven intact. No lungeoutsideframe.",
+      "file": "odin/odin_attack_02.png",
+      "normalization": {
+        "ratio": 0.8740031897926634,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 26947
+    },
+    {
+      "id": "odin",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-44cf248d-c134-4bed-a892-11600e086dee.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 exact approved ODIN identity: SAME wide-brimmed bent soft pointed ink hat, long bone beard, anatomical LEFT eye patch, plain right eye, blood mantle with ink folds, same simple bone/ink tunic, ink boots, beltbrooch, incised rune spear single long leaf spearhead and SMALL butt cap. Exactly ONE small black raven physically perched on near shoulder, attached in all poses. NEVER another bird. Images2-4 STYLE ONLY. Old and certain. No armor/horns/gold. EXACTLY TWO ARMS/TWO HANDS/TWO LEGS. Maintain identity, body proportions, hat dimensions, beard, costume, palette,lighting,strokeweight.\nBattle sprite512square transparent. Strict RIGHT SIDE PROFILE. Body hat-toptofoot430pxstandingheight, hat topy50,footbaseliney480,pelvisx256. Entire hat/beard/raven/cloak/spear whollyinsideframe; generously fit long weapon, shorten shaft slightly in horizontalpose ifneededtofit withoutcuttingtip. No detachedfloatingfragments/effects.\nHIT reaction: head and shoulders joltbackLEFT15deg, kneesflex, supportfooty480. RIGHTarmholdsspear tiltedback butfullyvisible; LEFTarmbent with handonchest; EXACTLY theseTWOarms, no danglingthirdarm. Samebodyandcostume, ravenattachedshoulderfoldswingsclosed, beardfollowsrecoil.",
+      "file": "odin/odin_hit_01.png",
+      "bytes": 33644
+    },
+    {
+      "id": "odin",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-01f523f5-1a44-43fe-9325-645f79e8b36d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 exact approved ODIN identity: SAME wide-brimmed bent soft pointed ink hat, long bone beard, anatomical LEFT eye patch, plain right eye, blood mantle with ink folds, same simple bone/ink tunic, ink boots, beltbrooch, incised rune spear single long leaf spearhead and SMALL butt cap. Exactly ONE small black raven physically perched on near shoulder, attached in all poses. NEVER another bird. Images2-4 STYLE ONLY. Old and certain. No armor/horns/gold. EXACTLY TWO ARMS/TWO HANDS/TWO LEGS. Maintain identity, body proportions, hat dimensions, beard, costume, palette,lighting,strokeweight.\nBattle sprite512square transparent. Strict RIGHT SIDE PROFILE. Body hat-toptofoot430pxstandingheight, hat topy50,footbaseliney480,pelvisx256. Entire hat/beard/raven/cloak/spear whollyinsideframe; generously fit long weapon, shorten shaft slightly in horizontalpose ifneededtofit withoutcuttingtip. No detachedfloatingfragments/effects.\nDEATH falling: hips sinkandkneesbuckle, torsofallsbackLEFT35deg, hatandbeardfollow, onefootlasttouches480andotherraised. Lefthandlimpout, righthandlooselyholdsspear diagonallyfallingwithhim; exactlytwoarms. Raven stays physicallyperchedonshoulder, not flying. Same bodyscale, no shrinkingfigure. Fullyvisibleweapon.",
+      "file": "odin/odin_death_01.png",
+      "normalization": {
+        "ratio": 0.8740031897926634,
+        "anchor_x": 0.55,
+        "baseline": 492
+      },
+      "bytes": 32138
+    },
+    {
+      "id": "odin",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e809d0d2-6694-4d75-8d1b-c9ff008b7dbd.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nEdit this exact Odin portrait into a VERTICAL THREE-TO-FOUR canvas768x1024. Preserve same natural body/head proportions and exact identity. Reframe head to hips with both shoulders visible and near-frontal20degree RIGHT camera, anatomicalLEFTeye(imageRIGHT)coveredeyepatch otherold eyeexposed, single attached shoulder raven, widebrimhat, longbonebeard, bloodlinedcloak, rune spearheldupright. ENTIRE spearhead and small butt cap, ENTIRE hatandbird inside35pxtransparentmargins. Faceupperhalf, nolegs. Extend robe down tohips tofill verticalcomposition; do notstretch. Make bottomhipcutout continuousflatPUREINK border with bonehatchingending20pxaboveedge, no colored/yellow/whitepixelnoise atedge. ONE output VERTICAL3:4 RGBA transparentimage; NOT square.",
+      "file": "odin/odin_portrait.png",
+      "bytes": 109434
     }
   ],
   "completed": [
@@ -1277,13 +1371,13 @@
     "ares",
     "poseidon",
     "hades",
-    "hera"
+    "hera",
+    "odin"
   ],
-  "active": "odin",
+  "active": "loki",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "odin",
       "loki",
       "baldr",
       "freyja",
@@ -1348,14 +1442,16 @@
       "ares",
       "poseidon",
       "hades",
-      "hera"
+      "hera",
+      "odin"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
     "ares": "approved",
     "poseidon": "approved",
     "hades": "approved",
-    "hera": "approved"
+    "hera": "approved",
+    "odin": "approved"
   },
   "rejected_frames": [
     {
@@ -1432,6 +1528,12 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e5abaffe-b053-435b-a882-98289b933cce.png",
       "rejection_reason": "Keep exact near-frontal THREE QUARTER portrait, both eyes,diadem,featherfan,sceptre,composition and colors. Surgical correction bottom5% robe cutout: render continuous flat PURE INK #1A1A1E border along bottom, no bone touching edge and no tiny yellow,white,red,multicoloredpixelnoise. Solid smoothly antialiased alpha silhouette. Every feather,diadempoint,andlotussceptre within transparent margins35px. Head-to-hips, nofullbody."
+    },
+    {
+      "id": "odin",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9e7ea91a-39a5-407e-8b85-271d44f753f6.png",
+      "rejection_reason": "Square source framing; replaced with vertical three-quarter portrait"
     }
   ]
 }
