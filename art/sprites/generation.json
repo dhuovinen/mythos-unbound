@@ -703,6 +703,11 @@
       "ratio": 0.9074960127591707,
       "anchor_x": 0.57,
       "baseline": 480
+    },
+    "tyr": {
+      "ratio": 0.9043062200956937,
+      "anchor_x": 0.52,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1623,6 +1628,85 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED Freyja identity: sameadultsternbeauty,longlargeBONEBRAID,heavyroundBONE/INKBEADnecklaceBRISINGAMEN atthroat,bonewarriortunic,bloodwaistwrap,layeredfalconFEATHERCLOAK inkbonebloodtips,SHORTSTRAIGHTboneswordRIGHT hand,SMALLroundinkshieldbonerimbonebossLEFTarm. OtherrefsSTYLEONLY. NO gold/crown/helm/cats/birds/wingedflight/glow.\nONE VERTICAL3:4portrait768x1024HEADTOHIPS, NEWnear-frontalTHREEQUARTER20degRIGHT, BOTH eyes/noseinsidefaceoutline/BOTHshouldersvisible. Determinedcommandingface. FeathercloakflaredcompactlybehindBOTHshoulders,necklaceveryclear,longbraidoverone shoulder. Swordraisedbesideheadtiltedslightlytowardcenter andsmallshieldheldlowbesidehip. ENTIREbraid/feathercloak/sword/shield/bothhandsinsidegenerous35pxtransparentmargins. Faceupperhalf,nolegs,nofullbody,nosquare. BottomhipcutoutPUREINKborder,no boneorredatedge/no tinycoloredpixelnoise.",
       "file": "freyja/freyja_portrait.png",
       "bytes": 109270
+    },
+    {
+      "id": "tyr",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-eca95e90-7807-4d17-9ba9-698238c62769.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nNEW deity TYR god of oaths,Norsegrimsteadyadultmale, plainroundedINK HELMET with boneedge nohorns/nocrest, close-croppedinkbeard, mailhauberk renderedasBOLDsimpleinterlockingbone/inkarc patterns, inkboots/trousers,plainbloodbelt. EXACTLYTWOARMS butONLYONEHAND: his anatomicalRIGHTarm(neararmvisible onviewerLEFT) endsat WRISTinCLEAN BOUNDSTUMP wrappedbonebandagewithflatinkclosedend, NO fingers/hand/glove/prosthesis/noblood. RIGHTstumpdeliberatelyheldforwardatlowchestvisible. SMALLROUNDshieldstrappedtoRIGHTforearmnearELBOWside, shielddoesNOTcoverwriststump,nohandneededtogripit. AnatomicalLEFTarm(farside/frontviewerRIGHT) hasONEintactlefthandholdingSTRAIGHTboneswordraiseddiagonallyuprightahead. ONEswordONEshield ONEhand total. Missinghandandraisedsworddefine silhouette. No gold/horns/wolf/companions/gore/glow.\nReferencesSTYLEONLY. Battleidle_01 square512x512truealpha,fullbodySTRICT RIGHTSIDE PROFILE. Headtop50plantedfeet480bodyheight430pelvis256. Uprightquietgrim stance,samebodysize. Entireblade,shield,stump,helmet,feetinside20pxmargins. Keep boundstumpclearly visible outside shield's silhouette.",
+      "file": "tyr/tyr_idle_01.png",
+      "bytes": 28739
+    },
+    {
+      "id": "tyr",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-92352143-99f0-45ac-9554-a67e17aad156.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 EXACT approved TYR identity: sameplaindomedink/bonenohornhelmet,shortinkbeardgrimface,mailhauberkbonearclinkpattern,bloodcloakandsash,boots,STRAIGHTboneswordlefthand,SMALLroundshieldstrappedRIGHTFOREARMnearelbow. His anatomicalRIGHTarmnearviewerendsWRISTinCLEANBOUNDSTUMP bonebandageflatinkend. NO RIGHTHAND/FINGERS/GLOVE/PROSTHESIS, no gore; stumpALWAYSclearlyvisibleoutsideSHIELD. AnatomicalLEFTarmfarside/viewerRIGHT hasONLYintacthandholdingsword. TWOarms butONEHANDtotal. Shieldattachedrightforearmwithstrapsandnevergrippedbyhand. Preserve exactcostumedesign,shield,sword,faceproportions,outlines,light,palette,scale. Images2\u20134STYLEONLY. No extrahelmcrest/horns/gold/wolf/glow.\nBattle512squaretruealphaFULLBODYSTRICT RIGHTSIDE PROFILE. Headtop50,plantedfoot480,height430,pelvis256,entireweapon/cape/shield/stump/feetfullyinside20pxtransparentmargins,samebodysize.\nWalk CONTACT: firmRIGHTstride frontfoot aheadrearback BOTHcontact480, legsseparate. LEFT intacthandcarriesraiseddiagonalswordahead,RIGHT boundstump-armwithstrappedshield counter-swingsgentlyforward; alwaysstump visiblebeyondshield,no fingers. Samehead50bodyscale.",
+      "file": "tyr/tyr_walk_01.png",
+      "normalization": {
+        "ratio": 0.8604465709728868,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 31191
+    },
+    {
+      "id": "tyr",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-1631d742-0874-437f-a40e-787c1089850f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 EXACT approved TYR identity: sameplaindomedink/bonenohornhelmet,shortinkbeardgrimface,mailhauberkbonearclinkpattern,bloodcloakandsash,boots,STRAIGHTboneswordlefthand,SMALLroundshieldstrappedRIGHTFOREARMnearelbow. His anatomicalRIGHTarmnearviewerendsWRISTinCLEANBOUNDSTUMP bonebandageflatinkend. NO RIGHTHAND/FINGERS/GLOVE/PROSTHESIS, no gore; stumpALWAYSclearlyvisibleoutsideSHIELD. AnatomicalLEFTarmfarside/viewerRIGHT hasONLYintacthandholdingsword. TWOarms butONEHANDtotal. Shieldattachedrightforearmwithstrapsandnevergrippedbyhand. Preserve exactcostumedesign,shield,sword,faceproportions,outlines,light,palette,scale. Images2\u20134STYLEONLY. No extrahelmcrest/horns/gold/wolf/glow.\nBattle512squaretruealphaFULLBODYSTRICT RIGHTSIDE PROFILE. Headtop50,plantedfoot480,height430,pelvis256,entireweapon/cape/shield/stump/feetfullyinside20pxtransparentmargins,samebodysize.\nAttack WINDUP: LEFT intactswordhanddrawsbladebackaboveLEFTshoulder into diagonalslashpreparation, bladeupbackLEFT,onehandgripONLY. RIGHT boundstump-armwithshieldstrappedforearm pushesguardforward, wriststumpclearlyvisibleabove/pastshieldedge. Twoarms/ONEhand. Weightbackkneesflex,headRIGHT. Entirebladeinside20pxmargin.",
+      "file": "tyr/tyr_attack_01.png",
+      "bytes": 28323
+    },
+    {
+      "id": "tyr",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-a619e9bb-68dc-4a11-b3d7-0b4e2f68332a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 EXACT approved TYR identity: sameplaindomedink/bonenohornhelmet,shortinkbeardgrimface,mailhauberkbonearclinkpattern,bloodcloakandsash,boots,STRAIGHTboneswordlefthand,SMALLroundshieldstrappedRIGHTFOREARMnearelbow. His anatomicalRIGHTarmnearviewerendsWRISTinCLEANBOUNDSTUMP bonebandageflatinkend. NO RIGHTHAND/FINGERS/GLOVE/PROSTHESIS, no gore; stumpALWAYSclearlyvisibleoutsideSHIELD. AnatomicalLEFTarmfarside/viewerRIGHT hasONLYintacthandholdingsword. TWOarms butONEHANDtotal. Shieldattachedrightforearmwithstrapsandnevergrippedbyhand. Preserve exactcostumedesign,shield,sword,faceproportions,outlines,light,palette,scale. Images2\u20134STYLEONLY. No extrahelmcrest/horns/gold/wolf/glow.\nBattle512squaretruealphaFULLBODYSTRICT RIGHTSIDE PROFILE. Headtop50,plantedfoot480,height430,pelvis256,entireweapon/cape/shield/stump/feetfullyinside20pxtransparentmargins,samebodysize.\nAttack STRIKE: LEFT intacthandextendsstraightboneswordFORWARDRIGHT atchestheightbladeangleddownrighttipx465insideframe. RIGHTboundstump-armcarriesstrappedshieldnearchestguardwithboundwristvisible. TWOarmsONEhand. Frontkneebentbackfootbraced, torso10degforward. Keepweaponcompacttofitnoedgeclipping. No secondgrippinghand.",
+      "file": "tyr/tyr_attack_02.png",
+      "normalization": {
+        "ratio": 0.82,
+        "anchor_x": 0.48,
+        "baseline": 480
+      },
+      "bytes": 33665
+    },
+    {
+      "id": "tyr",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-d51c9dee-ebe3-4d1f-9919-decd53db1699.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 EXACT approved TYR identity: sameplaindomedink/bonenohornhelmet,shortinkbeardgrimface,mailhauberkbonearclinkpattern,bloodcloakandsash,boots,STRAIGHTboneswordlefthand,SMALLroundshieldstrappedRIGHTFOREARMnearelbow. His anatomicalRIGHTarmnearviewerendsWRISTinCLEANBOUNDSTUMP bonebandageflatinkend. NO RIGHTHAND/FINGERS/GLOVE/PROSTHESIS, no gore; stumpALWAYSclearlyvisibleoutsideSHIELD. AnatomicalLEFTarmfarside/viewerRIGHT hasONLYintacthandholdingsword. TWOarms butONEHANDtotal. Shieldattachedrightforearmwithstrapsandnevergrippedbyhand. Preserve exactcostumedesign,shield,sword,faceproportions,outlines,light,palette,scale. Images2\u20134STYLEONLY. No extrahelmcrest/horns/gold/wolf/glow.\nBattle512squaretruealphaFULLBODYSTRICT RIGHTSIDE PROFILE. Headtop50,plantedfoot480,height430,pelvis256,entireweapon/cape/shield/stump/feetfullyinside20pxtransparentmargins,samebodysize.\nHIT: headshouldersjoltbackLEFT15deg,kneesflexonesupportfoot480otherlifts. LEFT swordhandholdslooseblade low, RIGHT stump-armwithstrappedshieldraisesprotectivelyacrosschest,stump visibleabove shield. EXACTLYONEhand, nostump fingers/glove. Samebodyscale,intactcostume.",
+      "file": "tyr/tyr_hit_01.png",
+      "bytes": 28787
+    },
+    {
+      "id": "tyr",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-23f50d3c-4948-4144-a714-10272f0a378c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 EXACT approved TYR identity: sameplaindomedink/bonenohornhelmet,shortinkbeardgrimface,mailhauberkbonearclinkpattern,bloodcloakandsash,boots,STRAIGHTboneswordlefthand,SMALLroundshieldstrappedRIGHTFOREARMnearelbow. His anatomicalRIGHTarmnearviewerendsWRISTinCLEANBOUNDSTUMP bonebandageflatinkend. NO RIGHTHAND/FINGERS/GLOVE/PROSTHESIS, no gore; stumpALWAYSclearlyvisibleoutsideSHIELD. AnatomicalLEFTarmfarside/viewerRIGHT hasONLYintacthandholdingsword. TWOarms butONEHANDtotal. Shieldattachedrightforearmwithstrapsandnevergrippedbyhand. Preserve exactcostumedesign,shield,sword,faceproportions,outlines,light,palette,scale. Images2\u20134STYLEONLY. No extrahelmcrest/horns/gold/wolf/glow.\nBattle512squaretruealphaFULLBODYSTRICT RIGHTSIDE PROFILE. Headtop50,plantedfoot480,height430,pelvis256,entireweapon/cape/shield/stump/feetfullyinside20pxtransparentmargins,samebodysize.\nDEATH: kneesbucklehipssink,torsofallsbackLEFT35deg,onefootlastcontacts480otherraised. LEFTintactswordhandlooselyholdsbladepointdown,RIGHTboundstump-armwithstrappedshielddropstowardside withwristendvisible. ExactlyONEhand/twoarms/one sword/one shield. Samephysicalbodysize,fullyvisibleweapons,clearlyfalling.",
+      "file": "tyr/tyr_death_01.png",
+      "bytes": 29403
+    },
+    {
+      "id": "tyr",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-41c58551-af51-4e3b-bc33-6b697326ddd0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1target,currentTYRframe;Image2exactapprovedidentity.\nSurgical correction ONLY at boundwristend: replace ALLbrown/tan/orange/mottledtexturewith a CLEAN CLOSED FLAT PURE INK #1A1A1E fabriccap surroundedbybonebandage. NO exposedflesh/blood/socket/hole/wood/prosthesis/fingers/hand. SameanatomicalRIGHTwrist, sameposition. Keep walkingpassinglegpose, exactcostume,leftswordhand,rightforearmshield,face/body/frame/alpha. No brownanywhere. Boundwristendsasclosedflatinkcap.",
+      "file": "tyr/tyr_walk_02.png",
+      "normalization": {
+        "ratio": 0.8740031897926634,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 29129
+    },
+    {
+      "id": "tyr",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-90be3358-a74d-430d-a348-a03effec2532.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nCreate corrected TYR PORTRAIT from image1 exacthead-to-hips framing andimage2 correctNEARFRONTALface/helmet orientation. VERTICAL768x1024 THREEQUARTER head-to-hips. CAMERA CLOSE UP: NO legs/knees/boots/feet inimage; END CHARACTER immediately BELOW BELT atUPPER HIPS. HEAD+HELMEToccupies upperTHIRD ofimage, bigface NOT tinyfullbody. Keepheadturnednearfront20degRIGHT showingBOTHEYESbesidecentralnoseguard,BOTHhelmetcheekplates,beardsteadygrimjaw. EXACToriginalmailcostume,bloodcloakandsash,one sword heldbyLEFT hand(imageRIGHT),smallroundshieldstrappedRIGHTforearm(imageLEFT),cleanbonebandagedRIGHTwriststumpraisedatlowerchestprominentpastshield; ONE intacthandtotal. StumpendsflatINKcapgreyhatchingonly,nohandfingers/brownskin/hole/gore/prosthetic. Repose swordangleddiagonallyuprightwithFULLbladeandpommelinside35pxmargins alongsideface. Entirehelmet,shield,arms,weaponfit, nobodiesbelowhips. AtBOTTOM drawcleancontinuouspureINKcroppedhipcontour. Onlyonehead-to-hipportrait, NOFULLBODY.",
+      "file": "tyr/tyr_portrait.png",
+      "bytes": 105228
     }
   ],
   "completed": [
@@ -1637,13 +1721,13 @@
     "odin",
     "loki",
     "baldr",
-    "freyja"
+    "freyja",
+    "tyr"
   ],
-  "active": "tyr",
+  "active": "heimdall",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "tyr",
       "heimdall",
       "frigg",
       "njord",
@@ -1708,7 +1792,8 @@
       "odin",
       "loki",
       "baldr",
-      "freyja"
+      "freyja",
+      "tyr"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -1719,7 +1804,8 @@
     "odin": "approved",
     "loki": "approved",
     "baldr": "approved",
-    "freyja": "approved"
+    "freyja": "approved",
+    "tyr": "approved"
   },
   "rejected_frames": [
     {
@@ -1802,6 +1888,24 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-9e7ea91a-39a5-407e-8b85-271d44f753f6.png",
       "rejection_reason": "Square source framing; replaced with vertical three-quarter portrait"
+    },
+    {
+      "id": "tyr",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-bbaa7a63-9fec-40d0-8782-693840f9fa1d.png",
+      "rejection_reason": "Brown texture at bound wrist end"
+    },
+    {
+      "id": "tyr",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-50c36101-5a00-4a61-a707-ab40de35ad25.png",
+      "rejection_reason": "Side profile instead of three-quarter portrait"
+    },
+    {
+      "id": "tyr",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-39864a0b-6a21-4fdb-aca5-c8c38b0e0062.png",
+      "rejection_reason": "Full body instead of head-to-hips"
     }
   ]
 }
