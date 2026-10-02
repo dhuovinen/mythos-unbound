@@ -723,6 +723,11 @@
       "ratio": 0.9298245614035088,
       "anchor_x": 0.56,
       "baseline": 480
+    },
+    "freyr": {
+      "ratio": 0.9457735247208932,
+      "anchor_x": 0.54,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1969,6 +1974,85 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-d2d65fd9-8eda-451f-939d-8fbe7cb582f0.png",
       "file": "njord/njord_portrait.png",
       "bytes": 109871
+    },
+    {
+      "id": "freyr",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-c770e7b5-6202-4473-bf1d-a8a154de36e3.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images: three references STYLE ONLY. Subject: FREYR, Norse god of the harvest who GAVE AWAY HIS SWORD. Bare-chested young adult powerful man, boar-crested helm, stag antler held like a CLUB as ONLY weapon. NO sword. Open, sunlit, unarmed in the way that matters. Boar crest and branching antler define silhouette. NO gold: boar crest drawn BONE and INK. Helmet top features small sculpted BOAR with snout and two tusks as part of helmet, not an animal companion. Open calm confident face, short pale hair, clean-shaven jaw. BARE muscular chest, simple bone/ink short warrior skirt and blood sash, bone/ink leg wraps and boots. ONE stag antler club with irregular branching tines, solid BONE with ink outlines; no blade or straight sword handle, grip at antler base. Exactly TWO arms/hands, ONE antler. No shield, no spear, no sword, no extra boar.\nComposition: square512x512 full body strict RIGHT profile. Neutral idle_01 stance, both feet planted y480, hip centerx256, 430px standing from BOAR CREST near y50 tofeet480. Antler held ready diagonally up-right in forward hand with every tine inside clear margin, free hand relaxed near belt. Whole helmet/crest, limbs and antler complete insidecanvas, no clipping. No glow/aura/sparks or groundshadow.",
+      "file": "freyr/freyr_idle_01.png",
+      "bytes": 26572
+    },
+    {
+      "id": "freyr",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved FREYR idle identity; edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve clean-shaven young face, short pale hair, BONE/INK boar-head helmet with snout/two tusks and BLOOD red swept plume, muscular BARE CHEST, blood half-cape at back, bone/ink short skirt, blood sash and trailing panel, bone/ink leg wraps and boots. ONE large branching BONE stag antler club with irregular tines, grip at base. ONLY weapon is antler. NO sword, spear, shield, blade or extra boar animal. Exactly TWO arms/hands. SAME physique/proportions, antler design, costume, palette and line weight. Full body 512x512 square strict RIGHT profile, face nose RIGHT, hip centerx256, planted feet y480; standing top of helmet/plume near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge. Every antler tine, plume, limb and garment inside canvas, no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floating fragments.\nPose: Walking CONTACT frame: front leg forward heel down, rear foot back toes down, BOTH feet on baseline. Antler ready diagonally up-right in original hand, free arm relaxed near belt, cape/plume trails LEFT.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-fddc29f5-8672-4614-a404-5cf4840b0da8.png",
+      "file": "freyr/freyr_walk_01.png",
+      "normalization": {
+        "ratio": 0.8740031897926634,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 30577
+    },
+    {
+      "id": "freyr",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved FREYR idle identity; edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve clean-shaven young face, short pale hair, BONE/INK boar-head helmet with snout/two tusks and BLOOD red swept plume, muscular BARE CHEST, blood half-cape at back, bone/ink short skirt, blood sash and trailing panel, bone/ink leg wraps and boots. ONE large branching BONE stag antler club with irregular tines, grip at base. ONLY weapon is antler. NO sword, spear, shield, blade or extra boar animal. Exactly TWO arms/hands. SAME physique/proportions, antler design, costume, palette and line weight. Full body 512x512 square strict RIGHT profile, face nose RIGHT, hip centerx256, planted feet y480; standing top of helmet/plume near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge. Every antler tine, plume, limb and garment inside canvas, no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floating fragments.\nPose: Walking PASSING frame: ONE foot planted beneath hips, other knee lifted with foot clearly OFFGROUND crossing behind planted leg. Body slightly raised. Antler upright ready in same hand, free arm swings slightly, cape and plume trail LEFT.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-f21892fc-d543-496c-9765-aa5e9e44e6e1.png",
+      "file": "freyr/freyr_walk_02.png",
+      "normalization": {
+        "ratio": 0.8389154704944178,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 28915
+    },
+    {
+      "id": "freyr",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved FREYR idle identity; edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve clean-shaven young face, short pale hair, BONE/INK boar-head helmet with snout/two tusks and BLOOD red swept plume, muscular BARE CHEST, blood half-cape at back, bone/ink short skirt, blood sash and trailing panel, bone/ink leg wraps and boots. ONE large branching BONE stag antler club with irregular tines, grip at base. ONLY weapon is antler. NO sword, spear, shield, blade or extra boar animal. Exactly TWO arms/hands. SAME physique/proportions, antler design, costume, palette and line weight. Full body 512x512 square strict RIGHT profile, face nose RIGHT, hip centerx256, planted feet y480; standing top of helmet/plume near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge. Every antler tine, plume, limb and garment inside canvas, no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floating fragments.\nPose: ANTLER WIND-UP: knees bent, weight back, torso coiled, same weapon hand raises antler OVERHEAD and BACK behind shoulder ready for downward swing RIGHT. Free hand open forward for balance. Whole antler base and every tine inside canvas, exactly ONE antler club, no sword.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-99d0062d-0715-43a7-92cf-9c760563ae0d.png",
+      "file": "freyr/freyr_attack_01.png",
+      "bytes": 25870
+    },
+    {
+      "id": "freyr",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved FREYR idle identity; edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve clean-shaven young face, short pale hair, BONE/INK boar-head helmet with snout/two tusks and BLOOD red swept plume, muscular BARE CHEST, blood half-cape at back, bone/ink short skirt, blood sash and trailing panel, bone/ink leg wraps and boots. ONE large branching BONE stag antler club with irregular tines, grip at base. ONLY weapon is antler. NO sword, spear, shield, blade or extra boar animal. Exactly TWO arms/hands. SAME physique/proportions, antler design, costume, palette and line weight. Full body 512x512 square strict RIGHT profile, face nose RIGHT, hip centerx256, planted feet y480; standing top of helmet/plume near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge. Every antler tine, plume, limb and garment inside canvas, no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floating fragments.\nPose: ANTLER STRIKE: committed forward lunge RIGHT, front knee bent, antler swung DOWN and extended diagonally forward-right from original hand toward target; every branching tine inside frame. Free hand open behind or at chest for balance. ONE club, no sword, no impact effects.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8798af6a-07cb-4639-b1ab-4ca871ece0cb.png",
+      "file": "freyr/freyr_attack_02.png",
+      "normalization": {
+        "ratio": 0.84,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 29816
+    },
+    {
+      "id": "freyr",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved FREYR idle identity; edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve clean-shaven young face, short pale hair, BONE/INK boar-head helmet with snout/two tusks and BLOOD red swept plume, muscular BARE CHEST, blood half-cape at back, bone/ink short skirt, blood sash and trailing panel, bone/ink leg wraps and boots. ONE large branching BONE stag antler club with irregular tines, grip at base. ONLY weapon is antler. NO sword, spear, shield, blade or extra boar animal. Exactly TWO arms/hands. SAME physique/proportions, antler design, costume, palette and line weight. Full body 512x512 square strict RIGHT profile, face nose RIGHT, hip centerx256, planted feet y480; standing top of helmet/plume near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge. Every antler tine, plume, limb and garment inside canvas, no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floating fragments.\nPose: Hit reaction: head and bare torso recoil backward LEFT while nose RIGHT, knees bent, one foot slightly raised; antler held protectively diagonally upright in original hand, free hand raised open near chest. Whole antler/plume/limbs inside.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-57e30a65-6bc2-4c36-aa15-8f8075396cdb.png",
+      "file": "freyr/freyr_hit_01.png",
+      "bytes": 27527
+    },
+    {
+      "id": "freyr",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1: EXACT approved FREYR idle identity; edit ONLY pose. Images2\u20134 STYLE ONLY. Preserve clean-shaven young face, short pale hair, BONE/INK boar-head helmet with snout/two tusks and BLOOD red swept plume, muscular BARE CHEST, blood half-cape at back, bone/ink short skirt, blood sash and trailing panel, bone/ink leg wraps and boots. ONE large branching BONE stag antler club with irregular tines, grip at base. ONLY weapon is antler. NO sword, spear, shield, blade or extra boar animal. Exactly TWO arms/hands. SAME physique/proportions, antler design, costume, palette and line weight. Full body 512x512 square strict RIGHT profile, face nose RIGHT, hip centerx256, planted feet y480; standing top of helmet/plume near y50, body430px. Crouches/falls naturally lower head, do NOT enlarge. Every antler tine, plume, limb and garment inside canvas, no clipping, no floor/shadow. No gold/aura/glow/sparks/particles/floating fragments.\nPose: Falling backward LEFT losing balance, head/torso tilted back nose RIGHT, one foot plantedbaseline other leg raised forward. Antler droops diagonally lower-right from original hand, free arm open for balance, plume/cape follows fall. Every tine and whole character inside frame. Beginning of fall not corpse, keep physical scale.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-d72f3238-e10d-4fef-9e03-1b8e8c57af45.png",
+      "file": "freyr/freyr_death_01.png",
+      "bytes": 27437
+    },
+    {
+      "id": "freyr",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image1 EXACT approved FREYR idle identity; images2\u20134 STYLE ONLY. Preserve youthful clean-shaven face, short pale hair, BONE/INK boar-head helmet with snout/two tusks and BLOOD swept plume, muscular BARE CHEST, blood half-cape, bone/ink short skirt and blood sash. ONE irregular branching BONE stag antler club is his ONLY weapon, held diagonally ACROSS CHEST in same hand; free hand relaxed near belt. NO sword/spear/shield/blade/extra boar. Exactly TWO hands and arms. Vertical3:4 768x1024 HEAD-TO-HIPS portrait. NEW nearfrontal THREEQUARTER view turned only15degRIGHT; BOTH complete eyes, both cheeks and BOTH shoulders visible, nose inside face outline near face center. Open confident look, face upperhalf. Entire boar helm, plume, hair and antler tines visible inside30px margins; turn antler to fit complete branching silhouette across chest beside face. Stop just BELOW BELT at upperhips, NO knees/legs/feet/fullbody. Bottom crop: clean continuous pure INK contour with30px transparent space below, no speckled colored pixel noise. Keep flat bone/ink/blood palette, no gold or glow.\nImage1 CURRENT portrait edit target; image2 approved idle identity. Surgical corrections ONLY: (1) Replace all noisy gold/yellow/colored pixels at bottom cropped hips with CLEAN CONTINUOUS PURE INK #1A1A1E outline and30px transparent margin beneath. (2) move antler tines very slightly LEFT to leave30px clear space at RIGHT edge. Preserve exactly face nearfrontal orientation, both eyes, expression, boar helmet/plume, bare chest, same two hands and antler across chest, blood cape/sash, head-to-hips framing and scale. No extra branches/limbs/objects, no legs or fullbody. No gold anywhere, no scattered pixel fragments.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-fc1421b5-1091-44b4-a262-f3e7039e2b1d.png",
+      "file": "freyr/freyr_portrait.png",
+      "bytes": 91719
     }
   ],
   "completed": [
@@ -1987,13 +2071,13 @@
     "tyr",
     "heimdall",
     "frigg",
-    "njord"
+    "njord",
+    "freyr"
   ],
-  "active": "freyr",
+  "active": "einherjar",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "freyr",
       "einherjar",
       "draugr",
       "valkyrie",
@@ -2058,7 +2142,8 @@
       "tyr",
       "heimdall",
       "frigg",
-      "njord"
+      "njord",
+      "freyr"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -2073,7 +2158,8 @@
     "tyr": "approved",
     "heimdall": "approved",
     "frigg": "approved",
-    "njord": "approved"
+    "njord": "approved",
+    "freyr": "approved"
   },
   "rejected_frames": [
     {
@@ -2198,6 +2284,12 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-3efc81b7-c51d-4d6a-8e69-4983d0439f46.png",
       "rejection_reason": "Portrait angle too close to side profile and tight harpoon clearance"
+    },
+    {
+      "id": "freyr",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-708082a0-9738-49af-beb2-e5968620ffba.png",
+      "rejection_reason": "Colored pixel noise at cropped hips and tight antler clearance"
     }
   ]
 }
