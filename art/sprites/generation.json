@@ -668,6 +668,11 @@
       "ratio": 0.9019138755980861,
       "anchor_x": 0.54,
       "baseline": 480
+    },
+    "poseidon": {
+      "ratio": 0.9059011164274322,
+      "anchor_x": 0.56,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1005,6 +1010,85 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: precise-object-edit. Image 1: Ares portrait edit target. Image 2: approved Ares idle identity and correct spear reference.\nCorrect ONLY the composition and clipped edges. Reduce the existing HEAD-TO-HIPS portrait content as a whole by about12percent and centre it in the 768x1024 vertical3:4 frame. COMPLETE the clipped spear butt at the LEFT with its plain rounded bone-and-ink cap. Show BOTH spear ends, including entire existing pointed head at lower right. Leave at least35px completely transparent margins at TOP, LEFT and RIGHT, and20px below spearhead. Entire crest and entire shield fit with margins. Remove any edge noise at the hips; clean deliberate portrait cutoff through cloth below waist. Retain same three-quarter near-frontal helm angle, two red eye pinpoints with no glow, both shoulders, scarred torso, bone straps, cloak, shield emblem, spear design and length, exactly two arms, proportions, palette, flat fills and heavy line weight. Do not introduce legs or fullbody view. Genuine transparent alpha, no gold, aura, glow, sparks, floor or background.",
       "file": "ares/ares_portrait.png",
       "bytes": 97999
+    },
+    {
+      "id": "poseidon",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-f475d836-6eed-4983-be68-d9edb6a9e67b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImages 1\u20133 are style references ONLY, not identity: do not copy Zeus's crown, lightning or toga, Heracles's lion hood or club, or Hoplite's helm or shield.\nSubject: Heavy sea god: trident (three prongs, long haft), wild windswept beard and hair, bare chest, a sea-cloak with ink wave-swirl motifs, broad and low. The trident and the beard define the silhouette. No gold.\nCostume: NO crown, no helm, no jewellery, no shield. Ink-and-bone sea-cloak with bold ink wave-swirl motifs and only small blood-red lining accents, bare heavy chest, wild bone hair and full bone-and-ink beard. Broad heavy build distinct from lean warriors.\n512x512 square production sprite. Full body strict side profile facing RIGHT. Body centre x256, feet rest y480, wild hair top near y50, standing figure about430px high. Entire body, hands and trident visible with transparent margins. EXACTLY THREE long trident prongs, bone and ink only, no gold. Trident upright close beside forward shoulder; tips no higher than hair. Neutral settled broad low idle stance. No waves, water, rocks or ground drawn; wave shapes appear only as ink patterns on cloak. No glow, aura, sparks or particles.",
+      "file": "poseidon/poseidon_idle_01.png",
+      "bytes": 34767
+    },
+    {
+      "id": "poseidon",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-ad59c094-df68-4ef7-a891-3e357c1a783f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Poseidon idle, EXACT identity/design reference. Preserve wild hair, full beard, bare heavy chest, sea-cloak's ink wave motifs and small blood-red lining, trident design and EXACTLY THREE prongs, proportions, lighting and outlines. Images 2\u20134: style only. No crown, helmet, shield or jewellery, no gold. Subject: Heavy sea god: trident (three prongs, long haft), wild windswept beard and hair, bare chest, a sea-cloak with ink wave-swirl motifs, broad and low. The trident and the beard define the silhouette. No gold.\n512x512 square, full-body strict right-facing side view. Same body scale and hip anchor as idle, x256 and supporting foot y480, hair top near y50 when upright. Whole figure, trident and cloak inside transparent margins. No waves, water or background; patterns only on cloak. No glow, aura, sparks, particles, extra limbs or floating fragments.\nPose WALK CONTACT: step toward right, front leg forward heel resting y480, opposite leg behind in a wide contact stride. Trident upright beside forward shoulder, same length and three prongs, cloak trails back. Body and hair at same scale as idle.",
+      "file": "poseidon/poseidon_walk_01.png",
+      "normalization": {
+        "ratio": 0.8716108452950558,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 36128
+    },
+    {
+      "id": "poseidon",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-0aaa32a2-8858-4892-9365-caa5b2b40682.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Poseidon idle, EXACT identity/design reference. Preserve wild hair, full beard, bare heavy chest, sea-cloak's ink wave motifs and small blood-red lining, trident design and EXACTLY THREE prongs, proportions, lighting and outlines. Images 2\u20134: style only. No crown, helmet, shield or jewellery, no gold. Subject: Heavy sea god: trident (three prongs, long haft), wild windswept beard and hair, bare chest, a sea-cloak with ink wave-swirl motifs, broad and low. The trident and the beard define the silhouette. No gold.\n512x512 square, full-body strict right-facing side view. Same body scale and hip anchor as idle, x256 and supporting foot y480, hair top near y50 when upright. Whole figure, trident and cloak inside transparent margins. No waves, water or background; patterns only on cloak. No glow, aura, sparks, particles, extra limbs or floating fragments.\nPose WALK PASSING: one supporting leg vertical under hip with foot y480, other knee bent forward and shin folded back, raised foot beside supporting knee. Feet CLOSE horizontally, less than one head width apart. ONLY ONE foot planted. Not a wide stride. Body raised no more6px, same body proportions and size as idle. Trident upright close to body, exactly same three prongs and length.",
+      "file": "poseidon/poseidon_walk_02.png",
+      "normalization": {
+        "ratio": 0.8397129186602871,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 34111
+    },
+    {
+      "id": "poseidon",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-a71daa51-fb44-4704-8712-70da994b5491.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Poseidon idle, EXACT identity/design reference. Preserve wild hair, full beard, bare heavy chest, sea-cloak's ink wave motifs and small blood-red lining, trident design and EXACTLY THREE prongs, proportions, lighting and outlines. Images 2\u20134: style only. No crown, helmet, shield or jewellery, no gold. Subject: Heavy sea god: trident (three prongs, long haft), wild windswept beard and hair, bare chest, a sea-cloak with ink wave-swirl motifs, broad and low. The trident and the beard define the silhouette. No gold.\n512x512 square, full-body strict right-facing side view. Same body scale and hip anchor as idle, x256 and supporting foot y480, hair top near y50 when upright. Whole figure, trident and cloak inside transparent margins. No waves, water or background; patterns only on cloak. No glow, aura, sparks, particles, extra limbs or floating fragments.\nPose ATTACK WIND-UP: draw trident and weapon hand far back toward LEFT, near-horizontal shaft at shoulder height, EXACTLY THREE prongs point RIGHT at far end. Torso coiled back, rear knee bends, back foot bears weight. Weapon hand LEFT of chest, not extended forward yet. Free arm near forward chest. Hair and sea-cloak swept back. Same trident length as idle, both ends fully within margins.",
+      "file": "poseidon/poseidon_attack_01.png",
+      "bytes": 34480
+    },
+    {
+      "id": "poseidon",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-81da07b9-3da3-4c0e-a231-606d3e233dd8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Poseidon idle, EXACT identity/design reference. Preserve wild hair, full beard, bare heavy chest, sea-cloak's ink wave motifs and small blood-red lining, trident design and EXACTLY THREE prongs, proportions, lighting and outlines. Images 2\u20134: style only. No crown, helmet, shield or jewellery, no gold. Subject: Heavy sea god: trident (three prongs, long haft), wild windswept beard and hair, bare chest, a sea-cloak with ink wave-swirl motifs, broad and low. The trident and the beard define the silhouette. No gold.\n512x512 square, full-body strict right-facing side view. Same body scale and hip anchor as idle, x256 and supporting foot y480, hair top near y50 when upright. Whole figure, trident and cloak inside transparent margins. No waves, water or background; patterns only on cloak. No glow, aura, sparks, particles, extra limbs or floating fragments.\nPose ATTACK STRIKE: fully extend trident arm toward RIGHT. Shoulder, straight elbow, forearm and fist form continuous rightward reaching arm. Weapon hand must be RIGHT of FACE, in front of chest, gripping near front two-thirds of shaft. Trident butt extends behind toward LEFT, THREE prongs aimed RIGHT near margin; whole same-length trident visible. Torso lunges forward, front knee bent, rear leg braced, free hand guards chest. This is full forward extension, NOT a hand drawn back left. Same body size and costume, no effects.",
+      "file": "poseidon/poseidon_attack_02.png",
+      "normalization": {
+        "ratio": 0.9059011164274322,
+        "anchor_x": 0.45,
+        "baseline": 480
+      },
+      "bytes": 27548
+    },
+    {
+      "id": "poseidon",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-c6e0362c-4870-4964-b2b8-c108545ec038.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Poseidon idle, EXACT identity/design reference. Preserve wild hair, full beard, bare heavy chest, sea-cloak's ink wave motifs and small blood-red lining, trident design and EXACTLY THREE prongs, proportions, lighting and outlines. Images 2\u20134: style only. No crown, helmet, shield or jewellery, no gold. Subject: Heavy sea god: trident (three prongs, long haft), wild windswept beard and hair, bare chest, a sea-cloak with ink wave-swirl motifs, broad and low. The trident and the beard define the silhouette. No gold.\n512x512 square, full-body strict right-facing side view. Same body scale and hip anchor as idle, x256 and supporting foot y480, hair top near y50 when upright. Whole figure, trident and cloak inside transparent margins. No waves, water or background; patterns only on cloak. No glow, aura, sparks, particles, extra limbs or floating fragments.\nPose HIT REACTION: head snapped back left, wild hair flung backward, chest and shoulders recoil backward left, knees flex, still facing right and one foot grounded y480. Trident tilts backward but is held, no new prongs. Same proportions and original standing body scale. Clear recoiling upright hit, not idle. No wounds, blood splatter or impact effect.",
+      "file": "poseidon/poseidon_hit_01.png",
+      "bytes": 39697
+    },
+    {
+      "id": "poseidon",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-a351e10c-21f9-4854-861a-225b89111ff7.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Poseidon idle, EXACT identity/design reference. Preserve wild hair, full beard, bare heavy chest, sea-cloak's ink wave motifs and small blood-red lining, trident design and EXACTLY THREE prongs, proportions, lighting and outlines. Images 2\u20134: style only. No crown, helmet, shield or jewellery, no gold. Subject: Heavy sea god: trident (three prongs, long haft), wild windswept beard and hair, bare chest, a sea-cloak with ink wave-swirl motifs, broad and low. The trident and the beard define the silhouette. No gold.\n512x512 square, full-body strict right-facing side view. Same body scale and hip anchor as idle, x256 and supporting foot y480, hair top near y50 when upright. Whole figure, trident and cloak inside transparent margins. No waves, water or background; patterns only on cloak. No glow, aura, sparks, particles, extra limbs or floating fragments.\nPose DEATH MID-FALL: torso tilts45degrees backward toward LEFT, hips sink, knees buckle deeply, one foot supporting near y480 and other foot lifts. One opening hand loses hold of same trident, which tips diagonally downward, all THREE PRONGS visible at one end and same small pointed butt cap at other end as idle. Sea-cloak crumples. Preserve original body size, do NOT enlarge falling figure to fill square. Clearly falling, not standing recoil. No new weapon, no extra hands or legs, no gore, no floor.",
+      "file": "poseidon/poseidon_death_01.png",
+      "bytes": 30502
+    },
+    {
+      "id": "poseidon",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-39c65eb8-f437-477c-af3e-74615f95e369.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: precise-object-edit. Image1 is edit target Poseidon portrait, Image2 is approved idle identity.\nClean ONLY the LOWER portrait cutout boundary around the hip cloth: remove the thin strip of yellow/red/white pixel noise, checkerboard-like ragged pixels and stray edge fragments at the bottom. Replace with one deliberate smooth HARD INK edge defining the head-to-hips crop, with pure transparent pixels below it. No gold or yellow pixels anywhere. Do NOT change character identity, face or its near-frontal three-quarter camera, hair and beard, shoulders, arms and hands, cloak motifs, trident's three prongs or pointed butt, palette, outline weight, pose, proportions or framing. Preserve real transparent alpha background, including below the hem, and 768x1024 vertical3:4. No added background, floor, baseline, shadow, text, border, glow, aura or effects.",
+      "file": "poseidon/poseidon_portrait.png",
+      "bytes": 125198
     }
   ],
   "completed": [
@@ -1012,13 +1096,13 @@
     "perseus",
     "achilles",
     "athena",
-    "ares"
+    "ares",
+    "poseidon"
   ],
-  "active": "poseidon",
+  "active": "hades",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "poseidon",
       "hades",
       "hera",
       "odin",
@@ -1083,11 +1167,13 @@
       "perseus",
       "achilles",
       "athena",
-      "ares"
+      "ares",
+      "poseidon"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
-    "ares": "approved"
+    "ares": "approved",
+    "poseidon": "approved"
   },
   "rejected_frames": [
     {
@@ -1119,6 +1205,15 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-3b13c83c-185e-4476-8bf3-f8239cb1770f.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved Ares idle, EXACT identity/design reference. Preserve helm design, crest, narrow eye slit, scarred bare torso, bone cuirass straps, cloak, shield emblem, spear design, proportions, lighting, palette and line weight. Images 2\u20134: style references only. No gold, aura, glow, sparks or floating fragments.\nSubject: War as an appetite: full-face war helm with a narrow eye slit and a blood-red crest, spear and shield, forward aggressive stance, bare scarred torso under bone cuirass straps, a blood-red cloak. Hunched to charge. The helm and the lunging stance define the silhouette. No gold.\nPortrait 768x1024 vertical3:4, HEAD TO HIPS. NEW three-quarter near-frontal viewpoint turned only25degrees RIGHT, BOTH shoulders clearly visible, front of helm and both eye-slit sides visible with small blood-red pinpoints inside the narrow slit, not glowing light. Helmet facing toward viewer with nose guard inside face silhouette, do not reuse strict profile sprite. Aggressive proud pose. Spear lowered diagonally across foreground, round shield edge across chest, crest swept above head, blood-red cloak. Spear and both arms entirely within portrait frame with transparent margins; weapon may be tilted to fit. Face in upper half, no full-body framing, no text or background.",
       "rejection_reason": "Spear butt and cloak clipped at left frame edge; crest touches top edge."
+    },
+    {
+      "id": "poseidon",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-647245f5-022b-40be-8e51-db1603116c59.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: approved Poseidon idle, EXACT identity reference. Preserve wild windswept bone hair and full beard, bare heavy chest, bone/ink wave motifs on cloak, small blood-red lining, trident with EXACTLY THREE prongs and same small butt cap, body proportions, palette and outline style. Images2\u20134 style ONLY. No crown, helm, shield or jewellery.\nSubject: Heavy sea god: trident (three prongs, long haft), wild windswept beard and hair, bare chest, a sea-cloak with ink wave-swirl motifs, broad and low. The trident and the beard define the silhouette. No gold.\nPortrait 768x1024 vertical3:4 HEAD TO HIPS. NEW near-frontal THREE QUARTER camera turned only25degrees RIGHT: BOTH eyes visible with nose between, both cheeks and BOTH shoulders visible, nose inside face outline, no strict profile. Hair and beard blow sideways, stormy glare, trident upright beside head. Face in upper half. ENTIRE hair, trident with all three prongs and butt cap, cloak and hands within transparent margins at least35px top and both sides. No full-body or legs. No waves outside cloak, no gold, glow, aura, sparks or effects.",
+      "file": "poseidon/poseidon_portrait.png",
+      "bytes": 121037,
+      "rejection_reason": "Coloured pixel noise along lower portrait cutout edge"
     }
   ]
 }
