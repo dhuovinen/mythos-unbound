@@ -73,9 +73,15 @@ export function faceHuman(ctx: Ctx, r: number, skin: string): void {
   inked(ctx, skin, 1.2, () => ctx.arc(-r * 0.15, r * 0.12, r * 0.22, 0, Math.PI * 2));
 }
 
-export type HeadKind = 'human' | 'skull' | 'jackal' | 'wolf' | 'falcon' | 'ibis' | 'lion' | 'setbeast';
+export type HeadKind = 'human' | 'skull' | 'jackal' | 'wolf' | 'falcon' | 'ibis' | 'lion' | 'setbeast' | 'crocodile';
 
 export const HEADS: Readonly<Record<HeadKind, (ctx: Ctx, r: number, t: Tones) => void>> = {
+  crocodile: (ctx, r, t) => {
+    inked(ctx, t.fur, 1.8, () => poly(ctx, [[-r, -r * 0.8], [r * 0.8, -r * 0.8], [r * 3, -r * 0.15], [r * 3, r * 0.65], [-r, r * 0.8]]));
+    line(ctx, INK, 1.5, [[r * 0.3, r * 0.35], [r * 2.8, r * 0.35]]);
+    for (let i = 0; i < 5; i++) inked(ctx, BONE, 0.7, () => poly(ctx, [[r * (0.6 + i * 0.4), r * 0.2], [r * (0.8 + i * 0.4), r * 0.6], [r * (0.95 + i * 0.4), r * 0.2]]));
+    inked(ctx, t.accent, 1, () => ctx.ellipse(r * 0.6, -r * 0.55, r * 0.25, r * 0.16, 0, 0, Math.PI * 2));
+  },
   human: (ctx, r, t) => faceHuman(ctx, r, t.skin),
 
   skull: (ctx, r, t) => {
@@ -208,7 +214,12 @@ export type GearKind =
   | 'crescent'
   | 'feathers'
   | 'cap'
-  | 'topknot';
+  | 'topknot'
+  | 'horns'
+  | 'lionPelt'
+  | 'lotus'
+  | 'throne'
+  | 'temple';
 
 const dome = (ctx: Ctx, r: number, fill: string): void => {
   inked(ctx, fill, 1.6, () => {
@@ -221,6 +232,32 @@ const dome = (ctx: Ctx, r: number, fill: string): void => {
 };
 
 export const GEAR: Readonly<Record<GearKind, (ctx: Ctx, r: number, t: Tones) => void>> = {
+  horns: (ctx, r) => {
+    for (const d of [-1, 1]) inked(ctx, BONE_SHADE, 1.6, () => {
+      ctx.moveTo(d * r * 0.5, -r * 0.8);
+      ctx.quadraticCurveTo(d * r * 1.7, -r * 2, d * r * 0.5, -r * 2.3);
+      ctx.quadraticCurveTo(d * r, -r * 1.5, d * r * 0.15, -r * 0.9);
+      ctx.closePath();
+    });
+  },
+  lionPelt: (ctx, r, t) => {
+    inked(ctx, '#8d7967', 1.8, () => ctx.ellipse(-r * 0.2, -r * 0.45, r * 1.35, r * 1.1, 0, Math.PI, Math.PI * 2));
+    for (const d of [-1, 1]) inked(ctx, '#8d7967', 1.4, () => ctx.arc(d * r * 0.9, -r * 1.15, r * 0.35, 0, Math.PI * 2));
+    line(ctx, t.accent, 2, [[r * 0.3, -r * 1], [r * 0.7, -r * 0.8]]);
+  },
+  lotus: (ctx, r, t) => {
+    for (const d of [-1, 0, 1]) inked(ctx, d === 0 ? t.accent : t.cloth, 1.6, () => {
+      poly(ctx, [[0, -r * 0.9], [d * r * 1.3 - r * 0.3, -r * 2.1], [d * r * 1.3, -r * 2.6], [d * r * 1.3 + r * 0.3, -r * 2.1]]);
+    });
+  },
+  throne: (ctx, r, t) => {
+    inked(ctx, t.accent, 1.8, () => poly(ctx, [[-r * 0.6, -r * 1], [-r * 0.6, -r * 2.6], [-r * 0.1, -r * 2.6], [-r * 0.1, -r * 1.6], [r * 0.7, -r * 1.6], [r * 0.7, -r * 1]]));
+  },
+  temple: (ctx, r, t) => {
+    inked(ctx, t.cloth, 1.8, () => ctx.rect(-r * 0.75, -r * 2.1, r * 1.5, r));
+    line(ctx, t.accent, 2.4, [[-r * 0.9, -r * 2.25], [r * 0.9, -r * 2.25]]);
+    inked(ctx, t.accent, 1.4, () => ctx.rect(-r * 0.2, -r * 1.9, r * 0.4, r * 0.55));
+  },
   corinthian: (ctx, r, t) => {
     dome(ctx, r, t.metal);
     inked(ctx, t.metal, 1.6, () => poly(ctx, [[r * 0.3, r * 0.1], [r * 0.85, r * 0.15], [r * 0.6, r * 0.95], [r * 0.15, r * 0.8]]));
@@ -554,7 +591,11 @@ export type WeaponKind =
   | 'forgeHammer'
   | 'scroll'
   | 'harpe'
-  | 'dagger';
+  | 'dagger'
+  | 'rose'
+  | 'spindle'
+  | 'horn'
+  | 'sistrum';
 
 const shaft = (ctx: Ctx, y0: number, y1: number, w: number, color: string): void =>
   capsule(ctx, { x: 0, y: y0 }, { x: 0, y: y1 }, w, color);
@@ -573,6 +614,29 @@ const blade = (ctx: Ctx, y: number, len: number, w: number, fill: string): void 
 };
 
 export const WEAPONS: Readonly<Record<WeaponKind, (ctx: Ctx, t: Tones) => void>> = {
+  rose: (ctx, t) => {
+    shaft(ctx, 8, -28, 2, '#647567');
+    inked(ctx, t.accent, 1.6, () => ctx.arc(0, -33, 7, 0, Math.PI * 2));
+    line(ctx, INK, 1.4, [[-3, -33], [0, -36], [3, -33], [0, -30]]);
+  },
+  spindle: (ctx, t) => {
+    shaft(ctx, 10, -40, 2, t.metal);
+    inked(ctx, t.cloth, 1.8, () => ctx.ellipse(0, -20, 6, 13, 0, 0, Math.PI * 2));
+    for (let i = 0; i < 5; i++) line(ctx, t.cloth2, 1, [[-5, -28 + i * 4], [5, -25 + i * 4]]);
+  },
+  horn: (ctx, t) => {
+    inked(ctx, t.metal, 1.8, () => {
+      ctx.moveTo(-2, 4); ctx.quadraticCurveTo(0, -24, 22, -40);
+      ctx.lineTo(31, -28); ctx.quadraticCurveTo(9, -16, 3, 5); ctx.closePath();
+    });
+    line(ctx, t.accent, 3, [[22, -40], [31, -28]]);
+  },
+  sistrum: (ctx, t) => {
+    shaft(ctx, 12, -18, 3, t.metal);
+    inked(ctx, t.metal, 1.6, () => ctx.ellipse(0, -34, 10, 18, 0, 0, Math.PI * 2));
+    inked(ctx, t.cloth2, 1, () => ctx.ellipse(0, -34, 6, 14, 0, 0, Math.PI * 2));
+    for (let i = 0; i < 3; i++) line(ctx, t.accent, 2.5, [[-8, -43 + i * 9], [8, -43 + i * 9]]);
+  },
   spear: (ctx, t) => {
     shaft(ctx, 26, -74, 2.4, BONE_SHADE);
     leaf(ctx, -72, 18, 5, BONE);

@@ -36,6 +36,7 @@ export interface BipedSpec {
   readonly weapon?: WeaponKind;
   readonly offhand?: OffhandKind;
   readonly view?: View;
+  readonly motion?: Recipe['motion'];
 }
 
 /** Headgear that sits behind the face rather than over it. */
@@ -56,6 +57,7 @@ export function makeBiped(spec: BipedSpec): { recipe: Recipe; figure: Figure } {
     limbColor: spec.limb,
     attack: spec.attack,
     weaponRest: spec.rest,
+    motion: spec.motion,
     drawBehind(ctx, s) {
       for (const kind of spec.behind ?? []) BEHIND[kind](ctx, s, tones);
     },

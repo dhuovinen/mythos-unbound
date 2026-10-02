@@ -31,7 +31,7 @@ export const SLATE = '#4a4850';
 export const BLOOD = '#C4442E';
 export const BLOOD_DARK = '#8C2F20';
 
-export type AttackStyle = 'thrust' | 'overhead' | 'sweep';
+export type AttackStyle = 'thrust' | 'overhead' | 'sweep' | 'cast' | 'shoot';
 
 /** Every joint the rig animates. */
 export interface Pose {
@@ -88,6 +88,7 @@ export interface Recipe {
   readonly attack: AttackStyle;
   /** Resting weapon angle, radians from straight up, positive forward. */
   readonly weaponRest: number;
+  readonly motion?: { cadence: number; stride: number; sway: number; weight: number };
   /** Drawn behind everything — capes, wings, a held staff's far end. */
   drawBehind?(ctx: CanvasRenderingContext2D, s: Skel): void;
   /** Clothing and armour over the torso and hips. */
@@ -191,6 +192,20 @@ const p = (over: Partial<Pose>): Pose => ({ ...REST_POSE, ...over });
 
 /** Attack timelines. Each spends its first ~40% winding up, so the strike reads as a snap. */
 const ATTACKS: Readonly<Record<AttackStyle, readonly (readonly [number, Pose])[]>> = {
+  cast: [
+    [0, p({})],
+    [0.4, p({ lean: -0.08, armF: [0.7, 1.0], armB: [0.45, 0.8], w: -0.2, tilt: 0.1 })],
+    [0.56, p({ lean: 0.12, armF: [1.4, 0.25], armB: [1.0, 0.6], w: 0.35, tilt: -0.08 })],
+    [0.8, p({ lean: 0.1, armF: [1.35, 0.3], armB: [0.8, 0.6], w: 0.3 })],
+    [1, p({})],
+  ],
+  shoot: [
+    [0, p({})],
+    [0.4, p({ lean: -0.1, armF: [1.55, 0.05], armB: [1.0, 1.8], w: 0, legF: [0.3, 0.15], legB: [-0.3, 0.1] })],
+    [0.56, p({ lean: -0.04, armF: [1.5, 0.08], armB: [-0.3, 1.3], w: 0.08 })],
+    [0.8, p({ armF: [1.4, 0.12], armB: [-0.2, 0.8], w: 0.06 })],
+    [1, p({})],
+  ],
   thrust: [
     [0, p({})],
     [0.4, p({ lean: -0.18, armF: [0.2, 1.5], armB: [0.5, 0.6], legF: [0.35, 0.3], legB: [-0.45, 0.2], w: 0.9, tilt: 0.1 })],
@@ -233,9 +248,10 @@ export interface Animated {
  */
 export function animate(recipe: Recipe, anim: AnimName, t: number): Animated {
   const base: Animated = { pose: REST_POSE, flash: 0, fall: 0, drop: 0 };
+  const motion = recipe.motion ?? { cadence: 1, stride: 1, sway: 1, weight: 1 };
   switch (anim) {
     case 'idle': {
-      const breathe = Math.sin(t * 2.2);
+      const breathe = Math.sin(t * 2.2 * motion.cadence) * motion.sway;
       return {
         ...base,
         pose: p({
@@ -247,7 +263,7 @@ export function animate(recipe: Recipe, anim: AnimName, t: number): Animated {
       };
     }
     case 'walk': {
-      const ph = t * Math.PI * 2 * 1.25;
+      const ph = t * Math.PI * 2 * 1.25 * motion.cadence;
       const s = Math.sin(ph);
       const c = Math.cos(ph);
       const sb = Math.sin(ph + Math.PI);
@@ -255,12 +271,12 @@ export function animate(recipe: Recipe, anim: AnimName, t: number): Animated {
       return {
         ...base,
         pose: p({
-          bob: Math.abs(s) * 1.6,
+          bob: Math.abs(s) * 1.6 * motion.weight,
           lean: 0.06,
-          legF: [0.62 * s, 0.12 + 0.75 * Math.max(0, c)],
-          legB: [0.62 * sb, 0.12 + 0.75 * Math.max(0, cb)],
+          legF: [0.62 * s * motion.stride, 0.12 + 0.75 * Math.max(0, c) * motion.stride],
+          legB: [0.62 * sb * motion.stride, 0.12 + 0.75 * Math.max(0, cb) * motion.stride],
           armF: [0.25 - 0.14 * s, 0.45],
-          armB: [-0.1 - 0.55 * s, 0.35],
+          armB: [-0.1 - 0.55 * s * motion.sway, 0.35],
           w: -0.08 * s,
         }),
       };

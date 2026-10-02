@@ -4,6 +4,9 @@
  */
 
 import { spriteFigure } from '../art/sprites';
+import { GREEK_DEITIES } from '../../data/greek';
+import { NORSE_DEITIES } from '../../data/norse';
+import { EGYPTIAN_DEITIES } from '../../data/egyptian';
 import type { UnitGraphics } from '../../ui/settings';
 import type { Deity } from '../../sim/types';
 import { makeBeast } from './beast';
@@ -12,6 +15,7 @@ import { makeFlyer } from './flyer';
 import { BIPED_FIGURES } from './recipes';
 import { makeSerpent } from './serpent';
 import { BLOOD, BONE, BONE_SHADE, GREY, SLATE } from './rig';
+import { RIG_THEMES } from './themes';
 
 const JORMUNGANDR = makeSerpent({
   id: 'jormungandr',
@@ -20,7 +24,7 @@ const JORMUNGANDR = makeSerpent({
   length: 150,
   girth: 20,
   rear: 66,
-  color: '#46505a',
+  color: '#465b61',
   belly: BONE_SHADE,
   pattern: 'diamond',
   patternColor: '#262a30',
@@ -77,7 +81,41 @@ const HARPY = makeFlyer({
   headScale: 1.15,
 });
 
-export const FIGURES: readonly Figure[] = [...BIPED_FIGURES, JORMUNGANDR, TYPHON, FENRIR, HARPY];
+const APEP = makeSerpent({
+  id: 'apep', name: 'Apep', tier: 'titan', length: 170, girth: 24, rear: 60,
+  color: '#554556', belly: '#ad9384', pattern: 'bands', patternColor: '#292430',
+  eye: RIG_THEMES.egyptian.accent,
+});
+
+const AMMIT = makeBeast({
+  id: 'ammit', name: 'Ammit', tier: 'titan', length: 82, depth: 38, leg: 26,
+  color: '#71636b', belly: '#ae9885', head: 'crocodile', headScale: 1.2,
+  tail: 'whip', ridge: true, tones: { fur: '#65756d', accent: '#bd8c7b' },
+  decorate(ctx, shoulder, hip) {
+    // Lion's mane at the shoulders, broad hippopotamus hindquarters.
+    ctx.strokeStyle = '#ae9885'; ctx.lineWidth = 3;
+    for (let i = 0; i < 6; i++) {
+      ctx.beginPath(); ctx.moveTo(shoulder.x - 12 - i * 2, shoulder.y - 13);
+      ctx.lineTo(shoulder.x - 8 - i * 2, shoulder.y + 15); ctx.stroke();
+    }
+    ctx.fillStyle = '#8d7a80'; ctx.beginPath();
+    ctx.ellipse(hip.x + 4, hip.y, 15, 12, 0, 0, Math.PI * 2); ctx.fill();
+  },
+});
+
+const BA = makeFlyer({
+  id: 'ba', name: 'Ba', tier: 'chaff', hover: 36, wing: 52,
+  torso: '#c6ae9b', feathers: '#54465d', feathers2: '#b9a99b', legs: '#ad9384',
+  head: 'human', gear: ['nemes'], tones: RIG_THEMES.egyptian.tones,
+});
+
+export const RIG_ROSTER = [...GREEK_DEITIES, ...NORSE_DEITIES, ...EGYPTIAN_DEITIES];
+const built = new Map([...BIPED_FIGURES, JORMUNGANDR, TYPHON, FENRIR, HARPY, APEP, AMMIT, BA].map((f) => [f.id, f]));
+/** Roster order and display names are shared with the game, including accented names. */
+export const FIGURES: readonly Figure[] = RIG_ROSTER.flatMap((deity) => {
+  const figure = built.get(deity.id);
+  return figure === undefined ? [] : [{ ...figure, name: deity.name }];
+});
 
 export const FIGURE_BY_ID: ReadonlyMap<string, Figure> = new Map(FIGURES.map((f) => [f.id, f]));
 

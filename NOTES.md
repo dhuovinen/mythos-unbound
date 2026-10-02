@@ -23,7 +23,7 @@ Then open **http://localhost:3033** — port reserved for this project in `~/Pro
 Other commands:
 
 ```bash
-npm test          # vitest, sim layer only
+npm test          # vitest, simulation, UI geometry and rig coverage
 npm run typecheck # tsc --noEmit
 npm run build     # typecheck + vite build
 ```
@@ -31,6 +31,14 @@ npm run build     # typecheck + vite build
 To inspect generated character art, open the gear menu and choose **View character images**.
 Select a character to see its portrait and stats, play its PNG pose sequence, or preview individual
 in-game animations. Missing images are marked explicitly; alignment guides help check pose placement.
+
+To review the procedural rigs, choose **View Rig scenario** in the gear menu, or open
+**http://localhost:3033/rig.html**. All 66 roster entities have rigs and all five animation states.
+Filter Greek, Norse, Egyptian or all pantheons; select a character in the roster to inspect it next
+to the animated lineup. Playback supports a full cycle, individual animations, pause, restart,
+frame stepping, speed, scrubbing, mirroring and alignment guides. The viewer previews rigs without
+changing the saved graphics setting; choose **Unit graphics → Rig** to use them in battle.
+The standalone page includes a collapsible shared parts catalogue and is included in production builds.
 
 Art concept boards (WP-7 output, 9 renders across 3 styles) live in `art/concepts/` and are
 served at http://localhost:3033/art/concepts/ while the dev server is running.
@@ -51,14 +59,15 @@ The `olympus` branch is about looks; gameplay is unchanged.
 - **Backdrops — done.** `src/render/backdrops.ts`: Greek, Norse, Egyptian and an open-world city,
   plus a themed base for each. The admin panel's *Battlefield* setting is `Auto` by default: one
   pantheon fights in its own realm, a mixed deck in the city. No gold anywhere in the scenes.
-- **Character rig — prototype.** `src/render/rig/`: animated figures drawn in Canvas 2D, procedural
-  idle, walk, attack, hit and death. A character is a *spec over a shared parts library*
-  (`parts.ts`: heads, headgear, beards, hair, clothing, weapons, shields, capes, wings), turned into
-  a figure by `compose.ts`. Four body plans, all presenting the same `Figure` interface
-  (`figure.ts`): biped (`rig.ts`), serpent, four-legged beast, flyer. Built so far: Hoplite, Anubis,
-  Zeus, Thor, Cronus (biped); Jormungandr, Typhon (serpent); Fenrir (beast); Harpy (flyer). Every
-  other deity falls back to blocks. `/rig.html` shows every figure plus a contact sheet of every
-  part; switch *Unit graphics* to **Rig** in the admin panel to see them in battle.
+- **Character rig — iteration 01, full coverage.** `src/render/rig/`: all 66 Greek, Norse and
+  Egyptian entities use procedural idle, walk, attack, hit and death animations. Four body plans:
+  biped, serpent, beast and flyer. Authored character specs give each deity its equipment, head,
+  clothing and proportions; new parts include ceremonial crowns, instruments and a crocodile head.
+  Greek figures use marble/wine tones and poised strides; Norse figures use iron/frost tones and
+  heavier movement; Egyptian figures use linen/obsidian tones and measured movement. Casting and
+  archery have separate attack poses. **View Rig scenario** in admin and `/rig.html` share the same
+  evaluator with the full roster and themed lineups. These are a first visual pass for feedback;
+  the next iteration should refine silhouettes, motion and individual character details.
 - **Sprite comparison — waiting on art.** `docs/briefs/SPRITE-COMPARE.md` is the brief for
   generating the same five deities as sprites, to be judged side by side against the rig.
 - **Team picker — done.** `src/ui/draftscreen.ts` is now a realm picker: Greek, Norse, Egyptian and
@@ -71,7 +80,7 @@ The `olympus` branch is about looks; gameplay is unchanged.
   faith, the HUD shows the counts and marks blocked cards, and the opponent obeys the same limits.
   Scripted stage waves are exempt but count toward the totals. The battlefield also fills the window
   and fans units across four depth rows (visual only).
-- **Next:** decide rig vs sprites; portraits are crests until a deity has a figure.
+- **Next:** evaluate the full rig roster and pantheon feel, then refine the selected direction; hand-drawn portraits still take priority over rig portraits.
 
 ## Status
 

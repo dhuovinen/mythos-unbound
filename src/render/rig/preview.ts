@@ -1,65 +1,18 @@
-/**
- * Standalone preview page for the rig (rig.html). Not part of the game bundle.
- *
- * Shows every animated figure large with a portrait crop, the same figures at game scale on a real
- * backdrop, and a catalogue of the shared parts so the library can be reviewed as a contact sheet.
- */
-
-import { artIds, preloadArt, spriteFigure } from '../art/sprites';
-import { drawBackdropScene } from '../backdrops';
-import type { BackdropId } from '../backdrops';
-import type { AnimName, Figure } from './figure';
-import { ANIM_SECONDS } from './figure';
-import { FIGURES } from './figures';
+/** Standalone rig evaluator plus the shared parts catalogue. */
+import { createRigExplorer } from '../../ui/rigviewer';
+import { RIG_ROSTER } from './figures';
 import type { BeardKind, BehindKind, BodyKind, GearKind, HairKind, HeadKind, OffhandKind, Tones, WeaponKind } from './parts';
 import { BEARDS, BEHIND, BODY, DEFAULT_TONES, GEAR, HAIR, HEADS, OFFHAND, WEAPONS } from './parts';
 import { animate, drawRig } from './rig';
 import type { Recipe } from './rig';
 import { RECIPES } from './recipes';
 
-const ANIMS: readonly AnimName[] = ['idle', 'walk', 'attack', 'hit', 'death'];
-const TIER_SCALE = { chaff: 0.55, demigod: 0.7, god: 0.85, titan: 1 } as const;
-const SCENES: readonly BackdropId[] = ['greek', 'norse', 'egyptian', 'openworld'];
-
-type Style = 'rig' | 'art';
-let style: Style = 'art';
-let anim: AnimName = 'walk';
-preloadArt();
-let scene: BackdropId = 'greek';
-
-const bar = document.getElementById('bar') as HTMLElement;
-const cardsHost = document.getElementById('cards') as HTMLElement;
-const stageHost = document.getElementById('stage') as HTMLElement;
+const host = document.getElementById('explorer') as HTMLElement;
 const partsHost = document.getElementById('parts') as HTMLElement;
-
-function makeButtons<T extends string>(values: readonly T[], current: () => T, set: (v: T) => void): void {
-  const nodes = values.map((v) => {
-    const b = document.createElement('button');
-    b.textContent = v;
-    b.addEventListener('click', () => {
-      set(v);
-      nodes.forEach((n) => n.classList.toggle('on', n.textContent === current()));
-    });
-    bar.append(b);
-    return b;
-  });
-  nodes.forEach((n) => n.classList.toggle('on', n.textContent === current()));
-  const gap = document.createElement('span');
-  gap.style.width = '14px';
-  bar.append(gap);
-}
-
-makeButtons(ANIMS, () => anim, (v) => (anim = v));
-makeButtons(SCENES, () => scene, (v) => (scene = v));
-makeButtons<Style>(['rig', 'art'], () => style, (v) => (style = v));
-
-/** One-shots replay on a loop so they can be judged; looping animations just run. */
-function animTime(seconds: number): number {
-  if (anim === 'attack' || anim === 'hit' || anim === 'death') {
-    return seconds % (ANIM_SECONDS[anim] + 0.7);
-  }
-  return seconds;
-}
+const explorer = createRigExplorer(RIG_ROSTER);
+host.append(explorer.root);
+explorer.start();
+document.addEventListener('visibilitychange', () => document.hidden ? explorer.stop() : explorer.start());
 
 function hiDpi(canvas: HTMLCanvasElement, w: number, h: number): CanvasRenderingContext2D {
   const dpr = Math.min(2, window.devicePixelRatio || 1);
@@ -71,41 +24,6 @@ function hiDpi(canvas: HTMLCanvasElement, w: number, h: number): CanvasRendering
   ctx.scale(dpr, dpr);
   return ctx;
 }
-
-interface Card {
-  figure: Figure;
-  big: CanvasRenderingContext2D;
-  portrait: CanvasRenderingContext2D;
-  /** The hand-drawn version, where the deity has art. */
-  art: CanvasRenderingContext2D | null;
-}
-
-const cards: Card[] = FIGURES.map((figure) => {
-  const node = document.createElement('div');
-  node.className = 'card';
-  node.innerHTML = `<h2>${figure.name}</h2><div class="meta">${figure.tier} · ${figure.body}</div>`;
-  const big = document.createElement('canvas');
-  const label = document.createElement('div');
-  label.className = 'label';
-  label.textContent = 'Portrait crop';
-  const portrait = document.createElement('canvas');
-  node.append(big, label, portrait);
-  let art: CanvasRenderingContext2D | null = null;
-  if (artIds().includes(figure.id)) {
-    const artLabel = document.createElement('div');
-    artLabel.className = 'label';
-    artLabel.textContent = 'Hand-drawn';
-    const artCanvas = document.createElement('canvas');
-    node.append(artLabel, artCanvas);
-    art = hiDpi(artCanvas, 212, 250);
-  }
-  cardsHost.append(node);
-  return { figure, big: hiDpi(big, 212, 250), portrait: hiDpi(portrait, 212, 212), art };
-});
-
-const stageCanvas = document.createElement('canvas');
-const stageCtx = hiDpi(stageCanvas, 960, 540);
-stageHost.append(stageCanvas);
 
 // ---- parts catalogue ------------------------------------------------------------------------------
 
@@ -254,57 +172,3 @@ for (const group of catalogue) {
   section.append(row);
   partsHost.append(section);
 }
-
-// ---- animation loop -------------------------------------------------------------------------------
-
-function draw(seconds: number): void {
-  const t = animTime(seconds);
-  for (const { figure, big, portrait, art } of cards) {
-    if (art !== null) {
-      art.clearRect(0, 0, 212, 250);
-      const sprite = spriteFigure(figure.id, figure.name, figure.tier);
-      if (sprite !== null) {
-        art.save();
-        art.translate(106, 236);
-        art.scale(2.0, 2.0);
-        sprite.draw(art, anim, t, seconds);
-        art.restore();
-      }
-    }
-    big.clearRect(0, 0, 212, 250);
-    big.save();
-    big.translate(figure.body === 'serpent' ? 150 : figure.body === 'beast' ? 78 : 106, 236);
-    const scale = figure.body === 'serpent' ? 1.25 : figure.body === 'beast' ? 1.45 : 2.25;
-    big.scale(scale, scale);
-    figure.draw(big, anim, t, seconds);
-    big.restore();
-
-    portrait.clearRect(0, 0, 212, 212);
-    const v = figure.view;
-    const k = Math.min(212 / v.w, 212 / v.h);
-    portrait.save();
-    portrait.translate(106 - (v.x + v.w / 2) * k, 106 - (v.y + v.h / 2) * k);
-    portrait.scale(k, k);
-    figure.draw(portrait, 'idle', seconds, seconds);
-    portrait.restore();
-  }
-
-  stageCtx.clearRect(0, 0, 960, 540);
-  drawBackdropScene(stageCtx, scene, seconds);
-  const n = FIGURES.length;
-  FIGURES.forEach((rigFigure, i) => {
-    const figure = style === 'art' ? (spriteFigure(rigFigure.id, rigFigure.name, rigFigure.tier) ?? rigFigure) : rigFigure;
-    const k = 0.98 * TIER_SCALE[figure.tier];
-    const x = 70 + (i * (900 - 70)) / Math.max(1, n - 1);
-    stageCtx.save();
-    stageCtx.translate(x, 404);
-    if (i >= n / 2) stageCtx.scale(-1, 1);
-    stageCtx.scale(k, k);
-    figure.draw(stageCtx, anim, t + i * 0.23, seconds);
-    stageCtx.restore();
-  });
-
-  requestAnimationFrame((now) => draw(now / 1000));
-}
-
-requestAnimationFrame((now) => draw(now / 1000));

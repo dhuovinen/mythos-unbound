@@ -7,6 +7,7 @@ import { defineConfig } from 'vite';
 // exactly like the dev server not running. It also breaks the 127.0.0.1 health_url registered for
 // this app in ~/Projects/app-registry. Note this does expose the dev server on the local network.
 export default defineConfig({
+  build: { rollupOptions: { input: ['index.html', 'rig.html'] } },
   server: { port: 3033, strictPort: true, host: true },
   preview: { port: 3033, strictPort: true, host: true },
 });

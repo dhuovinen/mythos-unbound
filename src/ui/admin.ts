@@ -9,6 +9,7 @@ import { BACKDROPS } from '../render/backdrops';
 import { spriteStats } from '../render/art/sprites';
 import type { Deity } from '../sim/types';
 import { mountArtViewer } from './artviewer';
+import { mountRigViewer } from './rigviewer';
 import type { BackdropChoice, Settings, UnitGraphics } from './settings';
 import { getSettings, setSetting } from './settings';
 
@@ -143,10 +144,10 @@ export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readon
     if (mode === 'blocks') {
       note.textContent = 'Placeholder geometry: tier-sized shapes with each unit’s initial.';
     } else if (mode === 'rig') {
-      note.textContent = 'Animated figures drawn in code. Deities without one fall back to blocks.';
+      note.textContent = 'The full roster animated in code, with distinct Greek, Norse and Egyptian styling.';
     } else {
       const stats = spriteStats();
-      note.textContent = `Hand-drawn art for ${stats.sets} deities (${stats.ready} loaded). Anyone without it uses the code-drawn rig, then blocks.`;
+      note.textContent = `Hand-drawn art for ${stats.sets} deities (${stats.ready} loaded). The rest of the roster uses its code-drawn rig.`;
     }
   };
 
@@ -310,6 +311,11 @@ export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readon
       openViewer();
     });
     art.append(view, el('div', 'ad-note', 'Inspect portraits, character details and animated PNG poses.'));
+    const openRigViewer = mountRigViewer(deities);
+    const rigs = el('button', 'ad-wide-btn', 'View Rig scenario');
+    rigs.style.marginTop = '10px';
+    rigs.addEventListener('click', () => { setOpen(false); openRigViewer(); });
+    art.append(rigs, el('div', 'ad-note', 'Review every rig, themed pantheon lineups and all five animations.'));
     panel.append(art);
   }
 

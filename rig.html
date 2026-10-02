@@ -3,22 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mythos Unbound — rig prototype</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Mythos Unbound — Rig scenario</title>
     <style>
       :root { color-scheme: dark; }
       * { box-sizing: border-box; }
-      body { margin: 0; background: #141010; color: #e8dcc4; font-family: ui-sans-serif, system-ui, sans-serif; padding: 20px; }
-      h1 { margin: 0 0 4px; font-size: 20px; }
-      p.sub { margin: 0 0 16px; color: #a99c85; font-size: 13px; max-width: 80ch; line-height: 1.5; }
-      .bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
-      .bar button { background: #1a1616; color: #e8dcc4; border: 1px solid #4a4038; border-radius: 6px; padding: 7px 14px; font: 700 13px inherit; cursor: pointer; }
-      .bar button.on { background: #e8dcc4; color: #141010; }
-      .cards { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
-      .card { background: #1b1720; border: 1px solid #3a3229; border-radius: 10px; padding: 10px; width: 232px; }
-      .card h2 { margin: 0 0 2px; font-size: 15px; }
-      .card .meta { font-size: 11px; color: #a99c85; margin-bottom: 8px; text-transform: uppercase; letter-spacing: .6px; }
+      body { margin: 0 auto; max-width: 1280px; background: #11121a; color: #e8dcc4; font-family: ui-sans-serif, system-ui, sans-serif; padding: 24px; }
       canvas { display: block; background: #231f26; border-radius: 6px; }
-      .stage canvas { width: 100%; max-width: 960px; border: 1px solid #3a3229; }
       .group { margin: 22px 0 6px; }
       .group h3 { margin: 0 0 8px; font-size: 14px; color: #a99c85; text-transform: uppercase; letter-spacing: .8px; }
       .row { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -28,16 +19,12 @@
     </style>
   </head>
   <body>
-    <h1>Rig prototype</h1>
-    <p class="sub">
-      Five deities drawn and animated entirely in code, from one skeleton. Each card shows the figure large, then a
-      portrait crop. The battlefield below draws them at real game scale (tier sets the size) on a real backdrop.
-    </p>
-    <div class="bar" id="bar"></div>
-    <div class="cards" id="cards"></div>
-    <div class="stage" id="stage"></div>
-    <h2 style="margin:26px 0 0">Parts library</h2>
-    <div id="parts"></div>
+    <a href="/" style="display:inline-block; color:#aaa6ae; font-size:12px; margin-bottom:20px">← Back to game</a>
+    <div id="explorer"></div>
+    <details style="margin-top:30px">
+      <summary style="cursor:pointer; color:#aaa6ae">Shared parts library</summary>
+      <div id="parts"></div>
+    </details>
     <script type="module" src="/src/render/rig/preview.ts"></script>
   </body>
 </html>
