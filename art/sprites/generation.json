@@ -743,6 +743,11 @@
       "ratio": 0.9035087719298246,
       "anchor_x": 0.6,
       "baseline": 480
+    },
+    "sigurd": {
+      "ratio": 0.9649122807017544,
+      "anchor_x": 0.53,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2320,6 +2325,95 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b5ce24a6-da5d-49e4-97e8-66b86dc273cd.png",
       "file": "valkyrie/valkyrie_portrait.png",
       "bytes": 103778
+    },
+    {
+      "id": "sigurd",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-d2b04ae2-961e-4b3b-ad40-7fe80be192a6.png",
+      "prompt": "Use case: precise-object-edit. Edit FIRST image Sigurd idle. Change ONLY Gram's reforging seam: remove long black crack running along almost the whole blade. Instead draw ONE short thin jagged INK repair line CROSSWISE across the blade at its midpoint, perpendicular to blade's long axis, showing where two broken pieces were rejoined. Blade stays straight, intact, one bone-colored long sword with same outline, guard, hilt, grip and angle. Preserve exact character, two helm wings, tired face/short beard, scale-pattern cloak, round shield, all costume and exactly two arms, full-body strict RIGHT side profile and square framing. Palette bone/ink/blood, no gold, no glow. True RGBA alpha background.",
+      "file": "sigurd/sigurd_idle_01.png",
+      "bytes": 33527
+    },
+    {
+      "id": "sigurd",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Sigurd idle identity, other images STYLE ONLY. Preserve young tired face with short bone-white beard, plain bone helm with TWO small wings, hair, long INK dragon-scale cloak with bone-grey scale rims, blood tunic/cape lining, bone/ink mail and wrapped boots. ONE round bone shield with ink radial pattern and blood-red boss on forward forearm; ONE long bone sword Gram in rear hand, straight intact blade with ONE short jagged INK seam CROSSWISE at midpoint, perpendicular to long axis, NOT a lengthwise crack. Exactly two arms/hands, shield arm may hide behind shield, no extra limbs/scabbard/weapon. Strict RIGHT side profile one eye, whole body and complete weapons INSIDE margins, square512x512. Consistent physical scale as idle, standing helmwingtop y50, feet baseline480, hips x256; crouches/falls lower head naturally, do not enlarge fallen body. Walk CONTACT RIGHT: front boot right, rear boot left, BOTH soles on baseline, broad stride, shield forward, sword low diagonal forward. Cloak swings back.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4bd144fb-43a5-4648-94fa-b9343a269efe.png",
+      "file": "sigurd/sigurd_walk_01.png",
+      "normalization": {
+        "ratio": 0.9202551834130781,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 35575
+    },
+    {
+      "id": "sigurd",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Sigurd idle identity, other images STYLE ONLY. Preserve young tired face with short bone-white beard, plain bone helm with TWO small wings, hair, long INK dragon-scale cloak with bone-grey scale rims, blood tunic/cape lining, bone/ink mail and wrapped boots. ONE round bone shield with ink radial pattern and blood-red boss on forward forearm; ONE long bone sword Gram in rear hand, straight intact blade with ONE short jagged INK seam CROSSWISE at midpoint, perpendicular to long axis, NOT a lengthwise crack. Exactly two arms/hands, shield arm may hide behind shield, no extra limbs/scabbard/weapon. Strict RIGHT side profile one eye, whole body and complete weapons INSIDE margins, square512x512. Consistent physical scale as idle, standing helmwingtop y50, feet baseline480, hips x256; crouches/falls lower head naturally, do not enlarge fallen body. Walk PASSING RIGHT: ONE boot planted beneath hips, other knee bent and foot lifted OFF ground, clearly different narrow stride. Shield forward and sword held low, scale cloak shifts.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-fcc4c8d0-9741-4bef-a345-82d33c6aac4d.png",
+      "file": "sigurd/sigurd_walk_02.png",
+      "normalization": {
+        "ratio": 0.9354066985645934,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 33131
+    },
+    {
+      "id": "sigurd",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Sigurd idle identity, other images STYLE ONLY. Preserve young tired face with short bone-white beard, plain bone helm with TWO small wings, hair, long INK dragon-scale cloak with bone-grey scale rims, blood tunic/cape lining, bone/ink mail and wrapped boots. ONE round bone shield with ink radial pattern and blood-red boss on forward forearm; ONE long bone sword Gram in rear hand, straight intact blade with ONE short jagged INK seam CROSSWISE at midpoint, perpendicular to long axis, NOT a lengthwise crack. Exactly two arms/hands, shield arm may hide behind shield, no extra limbs/scabbard/weapon. Strict RIGHT side profile one eye, whole body and complete weapons INSIDE margins, square512x512. Consistent physical scale as idle, standing helmwingtop y50, feet baseline480, hips x256; crouches/falls lower head naturally, do not enlarge fallen body. Sword attack WINDUP: knees flex, lean slightly back, rear sword arm raised over head ready to swing, complete blade drawn UP AND BACK insidecanvas, round shield forward. Crosswise midpoint repair seam visible.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-3e358ba0-ee3e-483e-abc6-90f7cf4d13d2.png",
+      "file": "sigurd/sigurd_attack_01.png",
+      "normalization": {
+        "ratio": 0.9,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 38695
+    },
+    {
+      "id": "sigurd",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Sigurd idle identity, other images STYLE ONLY. Preserve young tired face with short bone-white beard, plain bone helm with TWO small wings, hair, long INK dragon-scale cloak with bone-grey scale rims, blood tunic/cape lining, bone/ink mail and wrapped boots. ONE round bone shield with ink radial pattern and blood-red boss on forward forearm; ONE long bone sword Gram in rear hand, straight intact blade with ONE short jagged INK seam CROSSWISE at midpoint, perpendicular to long axis, NOT a lengthwise crack. Exactly two arms/hands, shield arm may hide behind shield, no extra limbs/scabbard/weapon. Strict RIGHT side profile one eye, whole body and complete weapons INSIDE margins, square512x512. Consistent physical scale as idle, standing helmwingtop y50, feet baseline480, hips x256; crouches/falls lower head naturally, do not enlarge fallen body. Sword attack STRIKE: deep forward RIGHT lunge, Gram swept down and forward to RIGHT, full intact long sword insidecanvas, midpoint crosswise jagged seam visible, shield pulled toward chest. Exactly2arms no extra grip. No effects.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-aa9477d9-0d05-466a-9b47-6a513490b6e2.png",
+      "file": "sigurd/sigurd_attack_02.png",
+      "normalization": {
+        "ratio": 0.9649122807017544,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 31800
+    },
+    {
+      "id": "sigurd",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Sigurd idle identity, other images STYLE ONLY. Preserve young tired face with short bone-white beard, plain bone helm with TWO small wings, hair, long INK dragon-scale cloak with bone-grey scale rims, blood tunic/cape lining, bone/ink mail and wrapped boots. ONE round bone shield with ink radial pattern and blood-red boss on forward forearm; ONE long bone sword Gram in rear hand, straight intact blade with ONE short jagged INK seam CROSSWISE at midpoint, perpendicular to long axis, NOT a lengthwise crack. Exactly two arms/hands, shield arm may hide behind shield, no extra limbs/scabbard/weapon. Strict RIGHT side profile one eye, whole body and complete weapons INSIDE margins, square512x512. Consistent physical scale as idle, standing helmwingtop y50, feet baseline480, hips x256; crouches/falls lower head naturally, do not enlarge fallen body. HIT recoil LEFT while still RIGHT-facing, shoulders back and knees bent, shield tilted against chest, Gram sagging low ahead; expression grimace. No particles.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-514fbc70-74bd-4618-80dd-01c58a1f44cc.png",
+      "file": "sigurd/sigurd_hit_01.png",
+      "bytes": 33634
+    },
+    {
+      "id": "sigurd",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Sigurd idle identity, other images STYLE ONLY. Preserve young tired face with short bone-white beard, plain bone helm with TWO small wings, hair, long INK dragon-scale cloak with bone-grey scale rims, blood tunic/cape lining, bone/ink mail and wrapped boots. ONE round bone shield with ink radial pattern and blood-red boss on forward forearm; ONE long bone sword Gram in rear hand, straight intact blade with ONE short jagged INK seam CROSSWISE at midpoint, perpendicular to long axis, NOT a lengthwise crack. Exactly two arms/hands, shield arm may hide behind shield, no extra limbs/scabbard/weapon. Strict RIGHT side profile one eye, whole body and complete weapons INSIDE margins, square512x512. Consistent physical scale as idle, standing helmwingtop y50, feet baseline480, hips x256; crouches/falls lower head naturally, do not enlarge fallen body. DEATH: collapsed lying on LEFT/back at baseline, head and helm toward RIGHT, eyes shut, knees folded, ink scale cloak crumpled beneath. Round shield and ONE long intact sword fallen alongside, midpoint crosswise repair seam visible. Full sword and body with helm wings insidecanvas, natural low silhouette, never enlarge.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-c86824d0-c14e-460e-8eee-10469d2102d6.png",
+      "file": "sigurd/sigurd_death_01.png",
+      "normalization": {
+        "ratio": 0.9649122807017544,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 28254
+    },
+    {
+      "id": "sigurd",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Sigurd identity, others STYLE ONLY. Vertical3:4 768x1024 HEAD-TO-HIPS portrait, new near-frontal pose turned15degrees RIGHT, BOTH wary eyes/cheeks/shoulders clearly visible, nose inside face contour, NOT a side profile. Young tired dragon-slayer, short bone-white beard, plain bone helm with exactlyTWO small wings, same INK dragon-scale cloak with bone-grey rims at shoulder, blood tunic and bone/ink mail. ONE long bone sword Gram held UPRIGHT beside LEFT side of face: entiretip ABOVEface besidehelm, straight blade with ONE short jagged INK CROSSWISE reforge seam at midpoint, perpendicular to blade axis, no lengthwise crack. Round bone/ink shield bloodboss on other forearm low to right. Exactly two arms/hands, no extras. Frame through hips, no legs/knees, face upperhalf, FULL sword tip/pommel, helmet wings and shield within clear4%transparent margins, clean solid ink bottom contour. No gold/no glow.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-1fa40ccc-ac3e-49a6-916f-00d5acb7f5ab.png",
+      "file": "sigurd/sigurd_portrait.png",
+      "bytes": 112442
     }
   ],
   "completed": [
@@ -2342,13 +2436,13 @@
     "freyr",
     "einherjar",
     "draugr",
-    "valkyrie"
+    "valkyrie",
+    "sigurd"
   ],
-  "active": "sigurd",
+  "active": "vidar",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "sigurd",
       "vidar",
       "brynhildr",
       "hodr",
@@ -2413,7 +2507,8 @@
       "freyr",
       "einherjar",
       "draugr",
-      "valkyrie"
+      "valkyrie",
+      "sigurd"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -2432,7 +2527,8 @@
     "freyr": "approved",
     "einherjar": "approved",
     "draugr": "approved",
-    "valkyrie": "approved"
+    "valkyrie": "approved",
+    "sigurd": "approved"
   },
   "rejected_frames": [
     {
@@ -2593,6 +2689,12 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-83e70614-068b-4ca9-84ea-f8aee1fa343b.png",
       "rejection_reason": "Spear tip, cape and shield touched or clipped canvas edges; extra middle helmet wing removed in edit."
+    },
+    {
+      "id": "sigurd",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-60978e50-d406-488a-ad99-10a03aacf922.png",
+      "rejection_reason": "Gram had a lengthwise crack; corrected to a single crosswise jagged reforging seam."
     }
   ]
 }
