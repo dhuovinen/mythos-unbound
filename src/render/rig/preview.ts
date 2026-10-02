@@ -9,7 +9,8 @@ import { RECIPES } from './recipes';
 
 const host = document.getElementById('explorer') as HTMLElement;
 const partsHost = document.getElementById('parts') as HTMLElement;
-const explorer = createRigExplorer(RIG_ROSTER);
+const explorer = createRigExplorer(RIG_ROSTER, new URLSearchParams(location.search).get('study') === 'anubis'
+  ? { study: 'anubis' } : {});
 host.append(explorer.root);
 explorer.start();
 document.addEventListener('visibilitychange', () => document.hidden ? explorer.stop() : explorer.start());

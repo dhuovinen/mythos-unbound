@@ -5,6 +5,7 @@ import { FIGURE_BY_ID } from '../render/rig/figures';
 import { previewDuration, samplePreview } from '../render/rig/previewstate';
 import type { PreviewAnimation } from '../render/rig/previewstate';
 import { RIG_THEMES } from '../render/rig/themes';
+import { createAnubisStudy } from './anubisstudy';
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, className?: string, text?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
@@ -16,6 +17,7 @@ function el<K extends keyof HTMLElementTagNameMap>(tag: K, className?: string, t
 const CSS = `
   .rv { --rv-accent: #b4becf; color: #e6e0d5; font-family: ui-sans-serif, system-ui, sans-serif; }
   .rv * { box-sizing: border-box; }
+  .rv [hidden] { display: none !important; }
   .rv button, .rv select, .rv input[type=search] {
     font: inherit; color: #d9d4ca; background: #22222c; border: 1px solid #42414e;
     border-radius: 7px; padding: 8px 11px;
@@ -83,7 +85,7 @@ function canvasContext(canvas: HTMLCanvasElement, width: number, height: number)
 }
 
 /** Shared by the admin modal and /rig.html. All renderers are the same ones used in battle. */
-export function createRigExplorer(roster: readonly Deity[]): { root: HTMLElement; start: () => void; stop: () => void } {
+export function createRigExplorer(roster: readonly Deity[], options: { study?: 'anubis' } = {}): { root: HTMLElement; start: () => void; stop: () => void } {
   installStyles();
   const root = el('section', 'rv');
   const titleRow = el('div', 'rv-top');
@@ -92,6 +94,9 @@ export function createRigExplorer(roster: readonly Deity[]): { root: HTMLElement
     el('p', 'rv-sub', 'Explore the whole roster in motion. Choose a realm, select a character, and review each pose.'));
   const covered = roster.filter((d) => FIGURE_BY_ID.has(d.id));
   titleRow.append(title, el('div', 'rv-badge', `${covered.length} / ${roster.length} characters rigged`));
+  const compare = el('button', undefined, 'Compare Anubis designs');
+  compare.setAttribute('aria-expanded', 'false');
+  titleRow.append(compare);
   root.append(titleRow);
   const tabs = el('div', 'rv-tabs'); tabs.setAttribute('aria-label', 'Pantheon filter');
   const feel = el('p', 'rv-feel');
@@ -147,6 +152,9 @@ export function createRigExplorer(roster: readonly Deity[]): { root: HTMLElement
   const gallery = el('div', 'rv-gallery');
   const empty = el('p', 'rv-empty', 'No characters match this search.'); empty.hidden = true;
   root.append(rosterHead, gallery, empty);
+  const study = createAnubisStudy(); study.root.hidden = true;
+  root.append(study.root);
+  let comparing = false;
 
   let realm: Pantheon | 'all' = 'greek';
   let selected = covered[0];
@@ -171,6 +179,7 @@ export function createRigExplorer(roster: readonly Deity[]): { root: HTMLElement
   }
 
   function draw(): void {
+    if (comparing) return;
     const duration = previewDuration(currentAnimation());
     scrub.value = String(playhead % duration);
     readout.textContent = `${(playhead % duration).toFixed(2)} / ${duration.toFixed(2)}s`;
@@ -292,11 +301,23 @@ export function createRigExplorer(roster: readonly Deity[]): { root: HTMLElement
   scrub.addEventListener('input', () => { playing = false; playhead = Number(scrub.value); refresh(); });
   flip.addEventListener('change', () => { if (active) draw(); });
   guides.addEventListener('change', () => { if (active) draw(); });
+  function setComparison(value: boolean): void {
+    comparing = value;
+    for (const node of [tabs, feel, controls, scrubRow, previews, rosterHead, gallery]) node.hidden = comparing;
+    empty.hidden = comparing || cards.some((entry) => !entry.button.hidden);
+    study.root.hidden = !comparing;
+    compare.textContent = comparing ? 'Back to full roster' : 'Compare Anubis designs';
+    compare.setAttribute('aria-expanded', String(comparing));
+    if (comparing) { cancelAnimationFrame(raf); if (active) study.start(); }
+    else { study.stop(); refresh(); }
+  }
+  compare.addEventListener('click', () => setComparison(!comparing));
   setRealm('greek'); if (selected) select(selected);
+  if (options.study === 'anubis') setComparison(true);
   return {
     root,
-    start: () => { if (active) return; active = true; refresh(); },
-    stop: () => { active = false; cancelAnimationFrame(raf); },
+    start: () => { if (active) return; active = true; if (comparing) study.start(); else refresh(); },
+    stop: () => { active = false; cancelAnimationFrame(raf); study.stop(); },
   };
 }
 

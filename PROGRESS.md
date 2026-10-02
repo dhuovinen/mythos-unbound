@@ -1,4 +1,14 @@
-# Roster / deployment mismatch
+# Egyptian rig detail study
+
+- Objective: evaluate three detailed, visually distinct animated versions of a single Egyptian unit before extending the direction across the pantheon. Selected Anubis.
+- Direction: ceremonial obsidian guardian; agile desert hunter; spectral guide. Custom geometry, ornament, materials and motion over the existing rig skeleton, with synchronized playback and battle-size previews in the Rig scenario.
+- Scope: evaluation only; the battle roster's existing rig remains unchanged until a direction is selected.
+- Implemented: three custom rig recipes with faceted jackal heads, beaded collars, layered linen, engraved plates, joint-bound bracers and shin detail. Each direction has a different weapon, build, palette and motion; the spectral version glides with translucent veils and an orbiting halo.
+- Viewer: synchronized five-state playback, full cycle, pause, restart, frame stepping, scrubbing, speed, mirroring, guides and enlarged focus. Same-scale current/study pairs beneath every detail figure. Both the main-game Rig modal and `/rig.html?study=anubis` verified in-browser, including enlarged focus, attacks and mirrored walks. No warnings/errors. Screenshots: `/tmp/anubis-three-directions.png`, `/tmp/anubis-attack.png`.
+- Verification: 171 tests pass, including conservative path bounds for all three studies, five states, 31 samples and both directions. Raised weapons and fallen bodies fit their stage; styles are excluded from the live battle registry. Production build/typecheck and registry validation pass. Optional phone viewport automation timed out; that breakpoint was not visually verified.
+- Final pass: re-read all new rendering/viewer code, integration changes and tests for bugs. Runbook updated; whitespace checks clean. Ready for evaluation, with the existing battle rig preserved until the user chooses a direction.
+
+## Previous increment: roster / deployment mismatch
 
 - Objective: drafted battles must field units from the selected decks, with an understandable roster comparison in the report.
 - Confirmed cause: main always uses SHOWCASE_STAGE.waves, even when saved player/opponent decks replace the default rosters. Every zero-cost Greek row in the user's Egyptian battle matches a scripted wave. The report is recording real deployments, not mislabelling them.

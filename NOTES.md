@@ -51,6 +51,13 @@ frame stepping, speed, scrubbing, mirroring and alignment guides. The viewer pre
 changing the saved graphics setting; choose **Unit graphics → Rig** to use them in battle.
 The standalone page includes a collapsible shared parts catalogue and is included in production builds.
 
+For the first Egyptian detail evaluation, choose **Compare Anubis designs** in the Rig viewer,
+or open **http://localhost:3033/rig.html?study=anubis**. Three animated directions — Necropolis
+guardian, Dune stalker and Guide of the Duat — share playback, scrubbing, frame stepping, speed,
+mirroring and alignment controls. Enlarge a direction to inspect ornament and materials. Each
+card compares its study with the current Anubis rig at the same small scale. These concepts are
+for evaluation; selecting or viewing one does not replace a battle unit or change gameplay.
+
 Art concept boards (WP-7 output, 9 renders across 3 styles) live in `art/concepts/` and are
 served at http://localhost:3033/art/concepts/ while the dev server is running.
 
