@@ -693,6 +693,11 @@
       "ratio": 0.967304625199362,
       "anchor_x": 0.54,
       "baseline": 480
+    },
+    "baldr": {
+      "ratio": 0.9417862838915471,
+      "anchor_x": 0.53,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1450,6 +1455,90 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 APPROVED Loki identity. Preserve exact asymmetrichelm ONE long curled rearhorn andONE shortbrokenfronthorn, sly youthfulclean-shaven smirk,longinkhair,bonetunic,raggedinkcloakwbloodlining, two samecurvedrune daggers oneineachhand. Otherreferencesstyleonly. Slendertrickster.\nONE VERTICAL3:4 image768x1024, HEAD TO HIPS portrait; NEW NEAR-FRONTAL THREEQUARTER camera20degreesRIGHT, BOTH EYES visible,noseINSIDEfaceoutline, bothshoulders. Mischievousknowinggrin,one dagger turninginraisedhand atchestheightandotherheldlowbesidehip. Entiretwohorns,both daggersandbothhandswith35pxtransparentmargin allaround. Faceupperhalf,nofullbody/nolegs. BottomhipcutoutpureINK solidborder, bone/redshapesend20pxaboveedge, no coloredpixelnoise. Truealpha. NO squareformat, nofiregoldglowextraarms.",
       "file": "loki/loki_portrait.png",
       "bytes": 107312
+    },
+    {
+      "id": "baldr",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-489d93aa-b4a0-4ef9-9b14-802eb38adeaa.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nNEW BALDR god, youthful sereneuntroubled male, plainwhite BONE sleeveless tunic openneckchest,bareunarmouredshoulders, bareheadwithLONG LIGHT BONE hair, nohelmet/crown/beard/jewels/armor/cloak. Simpleinkbeltwithsmall MISTLETOE SPRIG pinned clearlyatfront: inkleaves/boneberries,no green. Barelowerarms,ink trousersandplainboots. ROUND simpleinkrimBONEshield on LEFT arm, simpleplainstraightBONE sword in RIGHT handheldloosely loweredbladefrontdown. Serene handsomegentleface; calmface/openunarmouredchestdefinesilhouette. No halo/glow/rays/radiatinglines/gold. Quietnaturalposture notaggressive.\nReferencesSTYLEONLY. FullbodyBattleidle_01 square512x512truealpha STRICT RIGHT SIDE PROFILE. Hairtopy50 plantedfeet480, standing430px pelvix256. Entirehair/sword/shield/sprig/feetwithin20pxtransparentmargins. Swordandshieldbothvisible, exacttwoarms/twohands/twolegs.",
+      "file": "baldr/baldr_idle_01.png",
+      "bytes": 24683
+    },
+    {
+      "id": "baldr",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4141fb94-d339-49c2-9653-d10060985d1b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved BALDR exactidentity: sameyoungclean-shavenserene face,longbonehair,barehead,plainsleevelessboneopenneck tunic,barearms,noarmor,inkbeltwithsingleinkMISTLETOE sprigandboneberries,bone/inkroundshieldheldLEFTarm,simpleSTRAIGHTbone swordRIGHT handwithroundpommelandcrossguard,inktrousersboots. No cloak,helm,crown,halo,glow,rays,gold,jewels orbeard. Images2\u20134styleONLY. Exactlytwoarms/hands/legs,one sword,one shield. Samehead/hair/bodyproportions,sworddesign/shieldpattern/sprig,outlines,palette,upperleftlight. Flatfillsminimalhatching.\nBattle512squaretruealpha,fullbodySTRICT RIGHT SIDE PROFILE. Standinghairtopy50,feety480,height430,pelvisx256. KeepALLhair/weapon/shieldinside20pxtransparentmargins. Consistentbody/hipanchorsandphysicalscale.\nWalk CONTACT: measuredRIGHTstep,frontfoot aheadrearfootbehindBOTHcontacty480,legsseparate. Calmhead,longhairflowingback,RIGHTswordlowheldloosely,LEFTshield carriednearhip. Armsmodestcounter-swing, nochangeweaponorcostume.",
+      "file": "baldr/baldr_walk_01.png",
+      "normalization": {
+        "ratio": 0.8716108452950558,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 23745
+    },
+    {
+      "id": "baldr",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-5a976fa7-a179-4c92-b5f5-da11d5e11c26.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved BALDR exactidentity: sameyoungclean-shavenserene face,longbonehair,barehead,plainsleevelessboneopenneck tunic,barearms,noarmor,inkbeltwithsingleinkMISTLETOE sprigandboneberries,bone/inkroundshieldheldLEFTarm,simpleSTRAIGHTbone swordRIGHT handwithroundpommelandcrossguard,inktrousersboots. No cloak,helm,crown,halo,glow,rays,gold,jewels orbeard. Images2\u20134styleONLY. Exactlytwoarms/hands/legs,one sword,one shield. Samehead/hair/bodyproportions,sworddesign/shieldpattern/sprig,outlines,palette,upperleftlight. Flatfillsminimalhatching.\nBattle512squaretruealpha,fullbodySTRICT RIGHT SIDE PROFILE. Standinghairtopy50,feety480,height430,pelvisx256. KeepALLhair/weapon/shieldinside20pxtransparentmargins. Consistentbody/hipanchorsandphysicalscale.\nWalk PASSING: ONE plantedfootunderhipy480, OTHER knee bent andfoot raisednexttosupportshin y400, cleartransparentgapunderraisedfoot. Feetclose,headslightlyraised4px, bodyuprightserene. Shieldleftarm/swordrighthandlow, mistletoeintact.",
+      "file": "baldr/baldr_walk_02.png",
+      "normalization": {
+        "ratio": 0.8939393939393939,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 25146
+    },
+    {
+      "id": "baldr",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-47769db1-4f83-4ee3-80cc-1ebbc18166d9.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved BALDR exactidentity: sameyoungclean-shavenserene face,longbonehair,barehead,plainsleevelessboneopenneck tunic,barearms,noarmor,inkbeltwithsingleinkMISTLETOE sprigandboneberries,bone/inkroundshieldheldLEFTarm,simpleSTRAIGHTbone swordRIGHT handwithroundpommelandcrossguard,inktrousersboots. No cloak,helm,crown,halo,glow,rays,gold,jewels orbeard. Images2\u20134styleONLY. Exactlytwoarms/hands/legs,one sword,one shield. Samehead/hair/bodyproportions,sworddesign/shieldpattern/sprig,outlines,palette,upperleftlight. Flatfillsminimalhatching.\nBattle512squaretruealpha,fullbodySTRICT RIGHT SIDE PROFILE. Standinghairtopy50,feety480,height430,pelvisx256. KeepALLhair/weapon/shieldinside20pxtransparentmargins. Consistentbody/hipanchorsandphysicalscale.\nAttack WINDUP: draw RIGHT sword BACK above RIGHT shoulder into diagonalslashpreparation, bladeupbackLEFT, elbowbent. LEFT roundshieldraisedaheadatfrontchestguard. Exactlytwoarmswithswordhandandshieldarmseparate,headstillright,weightbackkneesflex,fullyvisiblelongswordwithtipinside20pxmargin. Hairflowsnaturally.",
+      "file": "baldr/baldr_attack_01.png",
+      "bytes": 28001
+    },
+    {
+      "id": "baldr",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-543b50a6-466b-4290-b598-733b6c835ad2.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved BALDR exactidentity: sameyoungclean-shavenserene face,longbonehair,barehead,plainsleevelessboneopenneck tunic,barearms,noarmor,inkbeltwithsingleinkMISTLETOE sprigandboneberries,bone/inkroundshieldheldLEFTarm,simpleSTRAIGHTbone swordRIGHT handwithroundpommelandcrossguard,inktrousersboots. No cloak,helm,crown,halo,glow,rays,gold,jewels orbeard. Images2\u20134styleONLY. Exactlytwoarms/hands/legs,one sword,one shield. Samehead/hair/bodyproportions,sworddesign/shieldpattern/sprig,outlines,palette,upperleftlight. Flatfillsminimalhatching.\nBattle512squaretruealpha,fullbodySTRICT RIGHT SIDE PROFILE. Standinghairtopy50,feety480,height430,pelvisx256. KeepALLhair/weapon/shieldinside20pxtransparentmargins. Consistentbody/hipanchorsandphysicalscale.\nAttack STRIKE: singleforwardRIGHT swordslash, RIGHT swordarm extendsforwardchestheight, bladeangledslightlydownrightandtipx470fullyinsideframe, keepstraightbladenotcurved. LEFT shield staysnearleftchestguard, no3rdarm. Frontkneebent,rearfootbraced,pelvisx256. Swordlengthcompactenoughtofitnoedgeclip. Calmconcentratedface.",
+      "file": "baldr/baldr_attack_02.png",
+      "normalization": {
+        "ratio": 0.8038277511961722,
+        "anchor_x": 0.48,
+        "baseline": 480
+      },
+      "bytes": 27537
+    },
+    {
+      "id": "baldr",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-20230898-41e3-4b9a-be77-6791c5fb1adc.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved BALDR exactidentity: sameyoungclean-shavenserene face,longbonehair,barehead,plainsleevelessboneopenneck tunic,barearms,noarmor,inkbeltwithsingleinkMISTLETOE sprigandboneberries,bone/inkroundshieldheldLEFTarm,simpleSTRAIGHTbone swordRIGHT handwithroundpommelandcrossguard,inktrousersboots. No cloak,helm,crown,halo,glow,rays,gold,jewels orbeard. Images2\u20134styleONLY. Exactlytwoarms/hands/legs,one sword,one shield. Samehead/hair/bodyproportions,sworddesign/shieldpattern/sprig,outlines,palette,upperleftlight. Flatfillsminimalhatching.\nBattle512squaretruealpha,fullbodySTRICT RIGHT SIDE PROFILE. Standinghairtopy50,feety480,height430,pelvisx256. KeepALLhair/weapon/shieldinside20pxtransparentmargins. Consistentbody/hipanchorsandphysicalscale.\nHIT reaction: headshouldersrecoilbackLEFT15deg,kneesflex,onesupportfoot480. RIGHTarmholdsswordlowbackwards, LEFTarmholdsshieldacrosschestprotectively, EXACTLYtwoarms noextrahand. Longhairfollowshead,mistletoeatbelt,expressionpainedbutnoblood/effects. Samebodyscale.",
+      "file": "baldr/baldr_hit_01.png",
+      "bytes": 27463
+    },
+    {
+      "id": "baldr",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-0e3ae8dc-e526-47e8-a3b0-ba83359d6d2c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved BALDR exactidentity: sameyoungclean-shavenserene face,longbonehair,barehead,plainsleevelessboneopenneck tunic,barearms,noarmor,inkbeltwithsingleinkMISTLETOE sprigandboneberries,bone/inkroundshieldheldLEFTarm,simpleSTRAIGHTbone swordRIGHT handwithroundpommelandcrossguard,inktrousersboots. No cloak,helm,crown,halo,glow,rays,gold,jewels orbeard. Images2\u20134styleONLY. Exactlytwoarms/hands/legs,one sword,one shield. Samehead/hair/bodyproportions,sworddesign/shieldpattern/sprig,outlines,palette,upperleftlight. Flatfillsminimalhatching.\nBattle512squaretruealpha,fullbodySTRICT RIGHT SIDE PROFILE. Standinghairtopy50,feety480,height430,pelvisx256. KeepALLhair/weapon/shieldinside20pxtransparentmargins. Consistentbody/hipanchorsandphysicalscale.\nDEATH falling: kneesbucklehipssink,torsotopplesbackLEFT35degrees,onefootlastgroundcontact480otherraised. Hairfollowshead,RIGHThandlooselyholdssworddiagonaldown,LEFTarmlooselyholdsshieldtiltednearhip. Samehumanbodyphysicalsize,clearlyfalling ratherthan idle. Exactlyone sword/one shield/twoarms;fullyvisibleweapons.",
+      "file": "baldr/baldr_death_01.png",
+      "normalization": {
+        "ratio": 0.9417862838915471,
+        "anchor_x": 0.53,
+        "baseline": 484
+      },
+      "bytes": 24865
+    },
+    {
+      "id": "baldr",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4388f5c2-69a3-409d-82c3-15559db81057.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 BALDR exactapprovedidentity: sameyoungclean-shavensereneface,longbonehair,plainwhitebone sleevelessopenneck tunic,bareunarmouredshoulders/chest,simpleinkbeltwithMISTLETOEspriginkleavesboneberries,onebone/inkroundshield LEFT arm,onestraightboneswordRIGHT hand. OtherreferencesstyleONLY. NO cloak/helm/crown/beard/jewels/gold/halo/glow/rays.\nONE VERTICAL3:4portrait768x1024HEAD TO HIPS, NEW NEARFRONTAL THREEQUARTER20degRIGHT,BOTHEYES andBOTHSHOULDERS visible,noseINSIDEfaceoutline. Sereneuntroubledwarmgentlegaze. Hairdrapedbehindshoulders,sprigclearlyatbelt. Shieldpartlyvisiblebesidebodyandfullswordheldlowdiagonallytoconsiderfit. Entirehair,sword,shield,bothhandsinside35pxtransparentmargins. Faceupperhalf,nolegs,nofullbody. BottomhipcutoutcontinuousPUREINKborder, no bonefillrightatedge/no tinycoloredpixelnoise.",
+      "file": "baldr/baldr_portrait.png",
+      "bytes": 106491
     }
   ],
   "completed": [
@@ -1462,13 +1551,13 @@
     "hades",
     "hera",
     "odin",
-    "loki"
+    "loki",
+    "baldr"
   ],
-  "active": "baldr",
+  "active": "freyja",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "baldr",
       "freyja",
       "tyr",
       "heimdall",
@@ -1533,7 +1622,8 @@
       "hades",
       "hera",
       "odin",
-      "loki"
+      "loki",
+      "baldr"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -1542,7 +1632,8 @@
     "hades": "approved",
     "hera": "approved",
     "odin": "approved",
-    "loki": "approved"
+    "loki": "approved",
+    "baldr": "approved"
   },
   "rejected_frames": [
     {
