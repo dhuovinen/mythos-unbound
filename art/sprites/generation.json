@@ -673,6 +673,11 @@
       "ratio": 0.9059011164274322,
       "anchor_x": 0.56,
       "baseline": 480
+    },
+    "hades": {
+      "ratio": 0.9210526315789473,
+      "anchor_x": 0.52,
+      "baseline": 480
     }
   },
   "frames": [
@@ -1089,6 +1094,90 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: precise-object-edit. Image1 is edit target Poseidon portrait, Image2 is approved idle identity.\nClean ONLY the LOWER portrait cutout boundary around the hip cloth: remove the thin strip of yellow/red/white pixel noise, checkerboard-like ragged pixels and stray edge fragments at the bottom. Replace with one deliberate smooth HARD INK edge defining the head-to-hips crop, with pure transparent pixels below it. No gold or yellow pixels anywhere. Do NOT change character identity, face or its near-frontal three-quarter camera, hair and beard, shoulders, arms and hands, cloak motifs, trident's three prongs or pointed butt, palette, outline weight, pose, proportions or framing. Preserve real transparent alpha background, including below the hem, and 768x1024 vertical3:4. No added background, floor, baseline, shadow, text, border, glow, aura or effects.",
       "file": "poseidon/poseidon_portrait.png",
       "bytes": 125198
+    },
+    {
+      "id": "hades",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-8ef21835-da2d-4782-9bc7-ac2aa01fbc14.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImages1\u20133: STYLE ONLY, not character identity. Do not copy Zeus's beard, hair, crown or lightning, Heracles's lion hood or club, Hoplite's crested helm, spear or shield.\nSubject: Still and heavy, the least dynamic pose in the roster: a bident (two prongs), a shadowed helm of darkness (ink dome that hides the brow and eyes in shadow), long ink robes with blood-red lining, a heavy cloak. He barely moves. The bident and the helm define the silhouette. No gold.\n512x512 square, full body strict side view facing RIGHT. Body centrex256, feet resty480, helm topneary50, about430px standing height. Pose IDLE: nearly motionless, upright and heavy, minimal open stance. Long ink robes to ankles, heavy ink cloak with blood-red lining and bone hard-edged folds, two feet visible below hem, one hand holds upright bident perfectly still close to shoulder, the other hangs quietly. Plain INK DOMED helm shades brow and eyes; lower face in bone, no crest, no horns, no crown or ornaments. EXACTLY TWO bident prongs, bone-and-ink, tips no higher than helm, same long haft fully visible in margins. No skulls, flames, souls, companions or background. Whole character and weapon inside frame. No gold, aura, glow, sparks or floating fragments.",
+      "file": "hades/hades_idle_01.png",
+      "bytes": 26673
+    },
+    {
+      "id": "hades",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-6b75be05-4d3b-4da5-9637-ea01c53e5651.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: approved Hades idle, EXACT identity/design reference. Preserve ink domed shadowed helm, hidden brow and eyes, bone lower face, long ink robes, hard bone folds, heavy cloak with blood-red lining, bident with EXACTLY TWO prongs, proportions, scale, palette, line weight and lighting. Images2\u20134 style only. Subject: Still and heavy, the least dynamic pose in the roster: a bident (two prongs), a shadowed helm of darkness (ink dome that hides the brow and eyes in shadow), long ink robes with blood-red lining, a heavy cloak. He barely moves. The bident and the helm define the silhouette. No gold.\n512x512 square, full body strict side view facing RIGHT, body centre x256, feet y480, helm near y50 when upright. Same body scale and hip anchor across poses. Entire character, cloak and same long bident inside transparent margins, no clipping. Special Hades constraint: EVERY POSE RESTRAINED; barely moves. Attack is slow lift followed by single downward thrust, NEVER a lunge. No beard, crown, horns, skulls, companions, gold, glow, aura, flames, souls, sparks or particles.\nPose WALK CONTACT: quiet short measured step right, forward foot heel y480 and back foot slightly behind, small stride largely hidden beneath long robes. Body upright and nearly motionless, cloak barely shifts, bident held perfectly upright same height and scale. NO wide athletic stride, no running.",
+      "file": "hades/hades_walk_01.png",
+      "normalization": {
+        "ratio": 0.8740031897926634,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 26982
+    },
+    {
+      "id": "hades",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-51202511-7240-47ee-b387-7799fb538b35.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: approved Hades idle, EXACT identity/design reference. Preserve ink domed shadowed helm, hidden brow and eyes, bone lower face, long ink robes, hard bone folds, heavy cloak with blood-red lining, bident with EXACTLY TWO prongs, proportions, scale, palette, line weight and lighting. Images2\u20134 style only. Subject: Still and heavy, the least dynamic pose in the roster: a bident (two prongs), a shadowed helm of darkness (ink dome that hides the brow and eyes in shadow), long ink robes with blood-red lining, a heavy cloak. He barely moves. The bident and the helm define the silhouette. No gold.\n512x512 square, full body strict side view facing RIGHT, body centre x256, feet y480, helm near y50 when upright. Same body scale and hip anchor across poses. Entire character, cloak and same long bident inside transparent margins, no clipping. Special Hades constraint: EVERY POSE RESTRAINED; barely moves. Attack is slow lift followed by single downward thrust, NEVER a lunge. No beard, crown, horns, skulls, companions, gold, glow, aura, flames, souls, sparks or particles.\nPose WALK PASSING: quiet small step, one support foot y480 beneath hip, other knee bends gently under robe with foot lifted briefly beside lower shin, ONLY ONE foot planted. Feet close horizontally. Body raised no more6px, robe folds shift subtly, bident perfectly upright, cloak still. Restrained but clearly different from two planted feet.",
+      "file": "hades/hades_walk_02.png",
+      "normalization": {
+        "ratio": 0.8851674641148325,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 29117
+    },
+    {
+      "id": "hades",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e8f1803f-c7bb-4b98-93d9-cce415aa2a95.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: approved Hades idle, EXACT identity/design reference. Preserve ink domed shadowed helm, hidden brow and eyes, bone lower face, long ink robes, hard bone folds, heavy cloak with blood-red lining, bident with EXACTLY TWO prongs, proportions, scale, palette, line weight and lighting. Images2\u20134 style only. Subject: Still and heavy, the least dynamic pose in the roster: a bident (two prongs), a shadowed helm of darkness (ink dome that hides the brow and eyes in shadow), long ink robes with blood-red lining, a heavy cloak. He barely moves. The bident and the helm define the silhouette. No gold.\n512x512 square, full body strict side view facing RIGHT, body centre x256, feet y480, helm near y50 when upright. Same body scale and hip anchor across poses. Entire character, cloak and same long bident inside transparent margins, no clipping. Special Hades constraint: EVERY POSE RESTRAINED; barely moves. Attack is slow lift followed by single downward thrust, NEVER a lunge. No beard, crown, horns, skulls, companions, gold, glow, aura, flames, souls, sparks or particles.\nPose ATTACK WIND-UP: slow restrained LIFT of the bident about20px above idle. Hand and elbow bend slightly higher, two prongs remain UP near y25, shaft butt near y450. Torso perfectly upright, both feet still y480, cloak still. Whole weapon inside margins. Preparing a downward thrust, no lunge or sweeping attack.",
+      "file": "hades/hades_attack_01.png",
+      "normalization": {
+        "ratio": 0.8452950558213717,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 27673
+    },
+    {
+      "id": "hades",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-6d23468b-86b1-4e7a-898e-42145de0ae05.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: approved Hades idle, EXACT identity/design reference. Preserve ink domed shadowed helm, hidden brow and eyes, bone lower face, long ink robes, hard bone folds, heavy cloak with blood-red lining, bident with EXACTLY TWO prongs, proportions, scale, palette, line weight and lighting. Images2\u20134 style only. Subject: Still and heavy, the least dynamic pose in the roster: a bident (two prongs), a shadowed helm of darkness (ink dome that hides the brow and eyes in shadow), long ink robes with blood-red lining, a heavy cloak. He barely moves. The bident and the helm define the silhouette. No gold.\n512x512 square, full body strict side view facing RIGHT, body centre x256, feet y480, helm near y50 when upright. Same body scale and hip anchor across poses. Entire character, cloak and same long bident inside transparent margins, no clipping. Special Hades constraint: EVERY POSE RESTRAINED; barely moves. Attack is slow lift followed by single downward thrust, NEVER a lunge. No beard, crown, horns, skulls, companions, gold, glow, aura, flames, souls, sparks or particles.\nPose ATTACK STRIKE: single restrained DOWNWARD THRUST. Tilt and reverse the same bident so its EXACTLY TWO prongs point diagonally DOWN and RIGHT near y465 ahead of forward foot, and its plain blunt shaft butt angles UP behind the forearm. One arm extends slightly DOWNWARD in front of body, elbow still bent. Body remains upright, both feet settled, long robes and cloak nearly still. Clear downward stroke, NO horizontal lunge, no spearhead added at butt, no extra arms.",
+      "file": "hades/hades_attack_02.png",
+      "normalization": {
+        "ratio": 0.8740031897926634,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 27485
+    },
+    {
+      "id": "hades",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-88c0daf7-6385-440f-beb5-6da2c4a70356.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: approved Hades idle, EXACT identity/design reference. Preserve ink domed shadowed helm, hidden brow and eyes, bone lower face, long ink robes, hard bone folds, heavy cloak with blood-red lining, bident with EXACTLY TWO prongs, proportions, scale, palette, line weight and lighting. Images2\u20134 style only. Subject: Still and heavy, the least dynamic pose in the roster: a bident (two prongs), a shadowed helm of darkness (ink dome that hides the brow and eyes in shadow), long ink robes with blood-red lining, a heavy cloak. He barely moves. The bident and the helm define the silhouette. No gold.\n512x512 square, full body strict side view facing RIGHT, body centre x256, feet y480, helm near y50 when upright. Same body scale and hip anchor across poses. Entire character, cloak and same long bident inside transparent margins, no clipping. Special Hades constraint: EVERY POSE RESTRAINED; barely moves. Attack is slow lift followed by single downward thrust, NEVER a lunge. No beard, crown, horns, skulls, companions, gold, glow, aura, flames, souls, sparks or particles.\nPose HIT REACTION: restrained backward shudder. Head tips back slightly left, shoulders recoil a little, knees flex under long robe, support foot y480. Still facing right, bident tilts back slightly but held. Distinct from idle without dramatic flailing or lunging. No gore, wounds, impact flashes or particles.",
+      "file": "hades/hades_hit_01.png",
+      "bytes": 26497
+    },
+    {
+      "id": "hades",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-59468aad-455e-4552-a07d-4f61787b82bf.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: approved Hades idle, EXACT identity/design reference. Preserve ink domed shadowed helm, hidden brow and eyes, bone lower face, long ink robes, hard bone folds, heavy cloak with blood-red lining, bident with EXACTLY TWO prongs, proportions, scale, palette, line weight and lighting. Images2\u20134 style only. Subject: Still and heavy, the least dynamic pose in the roster: a bident (two prongs), a shadowed helm of darkness (ink dome that hides the brow and eyes in shadow), long ink robes with blood-red lining, a heavy cloak. He barely moves. The bident and the helm define the silhouette. No gold.\n512x512 square, full body strict side view facing RIGHT, body centre x256, feet y480, helm near y50 when upright. Same body scale and hip anchor across poses. Entire character, cloak and same long bident inside transparent margins, no clipping. Special Hades constraint: EVERY POSE RESTRAINED; barely moves. Attack is slow lift followed by single downward thrust, NEVER a lunge. No beard, crown, horns, skulls, companions, gold, glow, aura, flames, souls, sparks or particles.\nPose DEATH MID-FALL: knees slowly buckle beneath long robes, hips sink, torso tips backward LEFT about35degrees, one foot near y480 and other lifting. Hand loosens and same two-pronged bident slips diagonally downward, cloak folds inward. Clearly losing balance and beginning to fall rather than upright hit. Preserve idle anatomy and original body size; do not enlarge falling figure to fill image. No gore, no floor, no souls or effects.",
+      "file": "hades/hades_death_01.png",
+      "bytes": 26902
+    },
+    {
+      "id": "hades",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-5728c512-e653-4be2-9e4d-616661340920.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1: approved Hades idle, EXACT identity reference. Preserve same domed ink helm, shadow concealing brow and eyes, bone lower face, robes, cloak with blood-red lining, bident's EXACTLY TWO prongs and plain blunt butt, palette, line weight, lighting and proportions. Images2\u20134 style only. No extra beard, crest, crown or horns.\nSubject: Still and heavy, the least dynamic pose in the roster: a bident (two prongs), a shadowed helm of darkness (ink dome that hides the brow and eyes in shadow), long ink robes with blood-red lining, a heavy cloak. He barely moves. The bident and the helm define the silhouette. No gold.\nPortrait 768x1024 vertical3:4, HEAD TO HIPS, NEW near-frontal THREE QUARTER view turned only25degrees RIGHT, BOTH shoulders visible, nose inside face outline, both eye positions in deep helm shadow. Face half-lost in helmet darkness. Upright two-pronged bident perfectly still beside head, entire weapon including butt fits inside frame. Entire helm, hands, cloak and weapon with at least35px transparent top and side margins. Face in upper half, no legs or fullbody framing. Deliberate smooth ink cutout edge at hip cloth, clean transparent pixels below it, no coloured edge noise. No glow, gold, aura, sparks, background or floor.\nCORRECTION: Rotate camera toward front substantially, head and chest almost frontal with only 20 degrees rightward turn. Symmetric visible left AND right helmet cheeks and lower face, nose INSIDE the facial silhouette, two shoulders equally visible. Shadow still covers BOTH eye positions under domed helm. Keep EXACT same costume and helmet identity from reference2. This is head-to-hips character portrait, NOT side profile or fullbody. Smooth solid ink cutout bottom edge without multicolor pixel noise. Full two-pronged bident inside frame.\nFinal surgical correction: Keep this exact near-frontal portrait, pose, identity, silhouette and framing. Replace the bottom 5% of robe's cutout with a clean continuous FLAT PURE INK #1A1A1E edge, with no hatching right at bottom. Remove every tiny yellow, white, red or multicolored pixel speck along this bottom edge. Solid smoothly antialiased alpha contour only. No yellow anywhere in image. Only bone/ink/blood colors. Maintain genuine transparent background.",
+      "file": "hades/hades_portrait.png",
+      "bytes": 93016
     }
   ],
   "completed": [
@@ -1097,13 +1186,13 @@
     "achilles",
     "athena",
     "ares",
-    "poseidon"
+    "poseidon",
+    "hades"
   ],
-  "active": "hades",
+  "active": "hera",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "hades",
       "hera",
       "odin",
       "loki",
@@ -1168,12 +1257,14 @@
       "achilles",
       "athena",
       "ares",
-      "poseidon"
+      "poseidon",
+      "hades"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
     "ares": "approved",
-    "poseidon": "approved"
+    "poseidon": "approved",
+    "hades": "approved"
   },
   "rejected_frames": [
     {
@@ -1214,6 +1305,18 @@
       "file": "poseidon/poseidon_portrait.png",
       "bytes": 121037,
       "rejection_reason": "Coloured pixel noise along lower portrait cutout edge"
+    },
+    {
+      "id": "hades",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-ac9f7f9c-4cf4-4636-ae26-a598add8efac.png",
+      "reason": "Side-profile camera; corrected to three-quarter"
+    },
+    {
+      "id": "hades",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-eb65d7fb-9d6f-4c49-85b3-64e7a78598a9.png",
+      "reason": "Colored noise on bottom cutout edge; replaced with clean solid ink contour"
     }
   ]
 }
