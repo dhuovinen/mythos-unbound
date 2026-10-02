@@ -748,6 +748,11 @@
       "ratio": 0.9649122807017544,
       "anchor_x": 0.53,
       "baseline": 480
+    },
+    "vidar": {
+      "ratio": 0.8556618819776715,
+      "anchor_x": 0.55,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2414,6 +2419,100 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-1fa40ccc-ac3e-49a6-916f-00d5acb7f5ab.png",
       "file": "sigurd/sigurd_portrait.png",
       "bytes": 112442
+    },
+    {
+      "id": "vidar",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-0435fab3-c5c6-451a-ab71-1754085c4f5e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: V\u00ed\u00f0arr, Norse demigod silent avenger: hooded INK cloak with blood-red lining, grim clean-shaven set mouth, plain bone/ink mail. ONE enormous thick-soled IRON boot drawn ink/bone grey on FRONT RIGHT leg, clearly twice bulk and sole thickness of other ordinary wrapped boot. Oversized boot used to pin a wolf's jaw, essential silhouette. ONE long straight bone-grey spear, no shield or second weapon, exactly two arms/hands and two legs. Spear and huge boot define silhouette. Strict RIGHT profile, one visible eye. Hood UP, face stoic silent, idle with BOTH boots planted, rear hand carrying spear diagonally upward to RIGHT, freehand relaxed at side, NO spear line beneath huge boot. All head/cloak/hugeboot/normalboot/spearpoint/butt safely inside4%transparent margins. Fullbody square512x512, hoodtop y50, boots y480, hip x256. References STYLE ONLY; iron is matte ink grey, NO metallic shine or gold.",
+      "file": "vidar/vidar_idle_01.png",
+      "bytes": 31114
+    },
+    {
+      "id": "vidar",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Vidar idle identity, other references STYLE ONLY. Preserve stoic clean-shaven set face, hood UP blood-red with ink interiors, long blood/ink cloak, plain bone mail with scale links, bone/ink tunic and wrapped forearms. ONE huge thick-soled iron boot in ink/bone greys with TWO strap buckles on NEAR leg (shown left/back in idle), twice bulk of the ONE normal wrapped boot on far leg. Keep same boots on SAME legs across poses, no swapping or making both huge. ONE long straight bone spear, exactly2arms/hands and2legs, no shield/helmet/beard or other weapons. Strict RIGHT-facing side profile oneeye, square512x512 fullbody with all spearpoint/butt/cape/boots visible inside margins. Standing hoodtop y50, solesbaseline480, hipx256. Same physical body/spear/boot scale as idle, crouches/falls lower head naturally, never enlarge fallen body. Walk CONTACT RIGHT: broad stride with BOTH boots on baseline, huge NEAR-leg iron boot stepping forward to RIGHT and normal FAR-leg wrapped boot trailing LEFT. Huge boot two buckles/sole twice bulk retained. Hood up, spear diagonally upward in one hand, freehand counter-swings.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-b662e0dc-2400-4c0c-83da-4611c9437ee7.png",
+      "file": "vidar/vidar_walk_01.png",
+      "normalization": {
+        "ratio": 0.8460925039872408,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 34157
+    },
+    {
+      "id": "vidar",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Vidar idle identity, other references STYLE ONLY. Preserve stoic clean-shaven set face, hood UP blood-red with ink interiors, long blood/ink cloak, plain bone mail with scale links, bone/ink tunic and wrapped forearms. ONE huge thick-soled iron boot in ink/bone greys with TWO strap buckles on NEAR leg (shown left/back in idle), twice bulk of the ONE normal wrapped boot on far leg. Keep same boots on SAME legs across poses, no swapping or making both huge. ONE long straight bone spear, exactly2arms/hands and2legs, no shield/helmet/beard or other weapons. Strict RIGHT-facing side profile oneeye, square512x512 fullbody with all spearpoint/butt/cape/boots visible inside margins. Standing hoodtop y50, solesbaseline480, hipx256. Same physical body/spear/boot scale as idle, crouches/falls lower head naturally, never enlarge fallen body. Walk PASSING RIGHT: huge NEAR-leg iron boot planted beneath hips, normal FAR-leg wrapped boot knee bent and foot lifted visibly OFFground. Huge boot two buckles and thicksole retained. Hood up, spear diagonal up, freehand counter-swings. Distinct from contact.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-f1dfde9a-030a-4299-a497-3223977681d9.png",
+      "file": "vidar/vidar_walk_02.png",
+      "normalization": {
+        "ratio": 0.8460925039872408,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 33674
+    },
+    {
+      "id": "vidar",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Vidar idle identity, other references STYLE ONLY. Preserve stoic clean-shaven set face, hood UP blood-red with ink interiors, long blood/ink cloak, plain bone mail with scale links, bone/ink tunic and wrapped forearms. ONE huge thick-soled iron boot in ink/bone greys with TWO strap buckles on NEAR leg (shown left/back in idle), twice bulk of the ONE normal wrapped boot on far leg. Keep same boots on SAME legs across poses, no swapping or making both huge. ONE long straight bone spear, exactly2arms/hands and2legs, no shield/helmet/beard or other weapons. Strict RIGHT-facing side profile oneeye, square512x512 fullbody with all spearpoint/butt/cape/boots visible inside margins. Standing hoodtop y50, solesbaseline480, hipx256. Same physical body/spear/boot scale as idle, crouches/falls lower head naturally, never enlarge fallen body. Attack WINDUP: crouch on both boots, normal far boot forward, huge near boot back LEFT; pull one spear backward near hip, tip aimed RIGHT, one straight shaft horizontal, freehand forward clenched. Fullspearinsidecanvas. Hoodup no effects.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-bb2c2859-3b2b-48b6-acac-2d00a42b57a2.png",
+      "file": "vidar/vidar_attack_01.png",
+      "normalization": {
+        "ratio": 0.8556618819776715,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 28936
+    },
+    {
+      "id": "vidar",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Vidar idle identity, other references STYLE ONLY. Preserve stoic clean-shaven set face, hood UP blood-red with ink interiors, long blood/ink cloak, plain bone mail with scale links, bone/ink tunic and wrapped forearms. ONE huge thick-soled iron boot in ink/bone greys with TWO strap buckles on NEAR leg (shown left/back in idle), twice bulk of the ONE normal wrapped boot on far leg. Keep same boots on SAME legs across poses, no swapping or making both huge. ONE long straight bone spear, exactly2arms/hands and2legs, no shield/helmet/beard or other weapons. Strict RIGHT-facing side profile oneeye, square512x512 fullbody with all spearpoint/butt/cape/boots visible inside margins. Standing hoodtop y50, solesbaseline480, hipx256. Same physical body/spear/boot scale as idle, crouches/falls lower head naturally, never enlarge fallen body. Attack STRIKE: forceful RIGHT lunge and horizontal spear thrust, huge NEAR iron boot planted forward RIGHT with thicksole visibly stamping down, normal FAR boot behind LEFT. Spear arm extended through ONE straightshaft, freehand rearbalance. Hoodup, entire spearpoint/butt visible, no extra arms or trails.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-211d69ff-1422-4755-92d7-e3b90b5eb579.png",
+      "file": "vidar/vidar_attack_02.png",
+      "normalization": {
+        "ratio": 0.8556618819776715,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 26757
+    },
+    {
+      "id": "vidar",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Vidar idle identity, other references STYLE ONLY. Preserve stoic clean-shaven set face, hood UP blood-red with ink interiors, long blood/ink cloak, plain bone mail with scale links, bone/ink tunic and wrapped forearms. ONE huge thick-soled iron boot in ink/bone greys with TWO strap buckles on NEAR leg (shown left/back in idle), twice bulk of the ONE normal wrapped boot on far leg. Keep same boots on SAME legs across poses, no swapping or making both huge. ONE long straight bone spear, exactly2arms/hands and2legs, no shield/helmet/beard or other weapons. Strict RIGHT-facing side profile oneeye, square512x512 fullbody with all spearpoint/butt/cape/boots visible inside margins. Standing hoodtop y50, solesbaseline480, hipx256. Same physical body/spear/boot scale as idle, crouches/falls lower head naturally, never enlarge fallen body. HIT recoil backward LEFT while facing RIGHT, shoulders back, huge nearboot planted, normal boot bends, spear lowers diagonally toward RIGHT, freehand raised defensively, mouth shut grim. Preserve huge sole/buckles. No effects.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-03f99e3d-5450-492c-ac18-fa3b8d0e118a.png",
+      "file": "vidar/vidar_hit_01.png",
+      "normalization": {
+        "ratio": 0.8556618819776715,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 34118
+    },
+    {
+      "id": "vidar",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Vidar idle identity, other references STYLE ONLY. Preserve stoic clean-shaven set face, hood UP blood-red with ink interiors, long blood/ink cloak, plain bone mail with scale links, bone/ink tunic and wrapped forearms. ONE huge thick-soled iron boot in ink/bone greys with TWO strap buckles on NEAR leg (shown left/back in idle), twice bulk of the ONE normal wrapped boot on far leg. Keep same boots on SAME legs across poses, no swapping or making both huge. ONE long straight bone spear, exactly2arms/hands and2legs, no shield/helmet/beard or other weapons. Strict RIGHT-facing side profile oneeye, square512x512 fullbody with all spearpoint/butt/cape/boots visible inside margins. Standing hoodtop y50, solesbaseline480, hipx256. Same physical body/spear/boot scale as idle, crouches/falls lower head naturally, never enlarge fallen body. DEATH fallen onto LEFT/back atbaseline, head/hood remains toward RIGHT, eyesclosed mouthshut, huge NEAR iron boot clearly visible thicksole and two buckles, normal FARboot smaller and wrapped, knees folded. Cape crumpled beneath, ONE straight spear fallen alongside fullpoint/butt insidecanvas. Natural low body, never enlarged.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-e06610dc-9846-46ac-b1d3-2b3863e12b3f.png",
+      "file": "vidar/vidar_death_01.png",
+      "normalization": {
+        "ratio": 0.8556618819776715,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 26947
+    },
+    {
+      "id": "vidar",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EXACT Vidar identity, others STYLE ONLY. Vertical3:4 768x1024 HEAD TO HIPS portrait, hood UP. New near-frontalthreequarter view turned15degrees RIGHT, clearly BOTH eyes/cheeks/shoulders, nose inside faceoutline not profile. Stoic silent clean-shaven face, jaw set eyes forward. Blood-red hood with INK interiors, long blood/ink cloak, plain bone scale-link mail, wrapped forearms and tunic. ONE straight spear upright near LEFT edge with ONE continuous shaft through gripping hand; full point and butt inside4%transparent margins, no extra hands/weapons. Exactly2arms/hands, other hand resting at hip. Face upperhalf, framed throughhips clean solidINKbottomcontour, no legs/boots/knees or pixelnoise. Fullhoodheadhandsandweaponinsidecanvas, no gold/glow/shadows.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0f4f0-aca2-7df2-b2c5-eb5cd8ea67ae/exec-4041e7b8-bc5a-43ee-a6cc-3b6867043b26.png",
+      "file": "vidar/vidar_portrait.png",
+      "bytes": 99012
     }
   ],
   "completed": [
@@ -2437,13 +2536,13 @@
     "einherjar",
     "draugr",
     "valkyrie",
-    "sigurd"
+    "sigurd",
+    "vidar"
   ],
-  "active": "vidar",
+  "active": "brynhildr",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "vidar",
       "brynhildr",
       "hodr",
       "vali",
@@ -2508,7 +2607,8 @@
       "einherjar",
       "draugr",
       "valkyrie",
-      "sigurd"
+      "sigurd",
+      "vidar"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -2528,7 +2628,8 @@
     "einherjar": "approved",
     "draugr": "approved",
     "valkyrie": "approved",
-    "sigurd": "approved"
+    "sigurd": "approved",
+    "vidar": "approved"
   },
   "rejected_frames": [
     {
