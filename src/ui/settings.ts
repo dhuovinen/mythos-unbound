@@ -8,6 +8,7 @@
 
 /** How units are drawn on the battlefield. */
 export type UnitGraphics = 'blocks' | 'sprites' | 'rig';
+export type EgyptianRigVersion = 'v1' | 'v2';
 
 /** Which battlefield scene to draw. 'auto' follows the deck: one pantheon gets its realm, a mix gets the city. */
 export type BackdropChoice = 'auto' | 'greek' | 'norse' | 'egyptian' | 'openworld';
@@ -23,6 +24,8 @@ export interface Settings {
   backdropLight: number;
   /** 'blocks' is placeholder geometry; 'rig' draws animated figures in code; 'sprites' uses hand-drawn art, falling back to the rig. */
   unitGraphics: UnitGraphics;
+  /** Egyptian procedural rig set. Greek/Norse appearances are unchanged. */
+  egyptianRigVersion: EgyptianRigVersion;
   /** Coloured arcs linking units that currently have a live relationship. */
   showTethers: boolean;
   /** The persistent pip row and net caret beneath each unit. */
@@ -49,6 +52,7 @@ const DEFAULTS: Settings = {
   backdropLight: 0.3,
   unitScale: 1.45,
   unitGraphics: 'sprites',
+  egyptianRigVersion: 'v2',
   showTethers: true,
   showStatusPips: true,
   showFloatingText: true,
@@ -78,6 +82,7 @@ function load(): void {
       current.unitGraphics = record['unitGraphics'];
     }
     const backdrop = record['backdrop'];
+    if (record['egyptianRigVersion'] === 'v1' || record['egyptianRigVersion'] === 'v2') current.egyptianRigVersion = record['egyptianRigVersion'];
     if (BACKDROP_CHOICES.some((choice) => choice === backdrop)) current.backdrop = backdrop as BackdropChoice;
     const size = record['unitScale'];
     if (typeof size === 'number' && Number.isFinite(size)) current.unitScale = Math.min(2.2, Math.max(0.8, size));

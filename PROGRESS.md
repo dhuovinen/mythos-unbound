@@ -1,4 +1,16 @@
-# Egyptian rig detail study
+# Egyptian rigs v2
+
+- Objective: preserve every Egyptian v1 rig, then deliver a varied, detailed and fully animated v2 rig for all 22 units. Anubis uses Guide of the Duat.
+- Backup completed before edits: `art/rig-backups/egyptian-v1.tar.gz` includes the original rig engines, all recipes/creatures, roster data, viewers and all three Anubis studies. JSON manifest records source commit, all 22 IDs and SHA-256 hashes.
+- Delivered: all 22 v2 figures are registered with their original unit IDs, names, tiers and body types. Anubis uses Guide of the Duat with visible floating breath, drifting limbs/veils, travelling glide, invocation, hit recoil and collapse. The other 21 designs vary in silhouette, palette, materials, ornaments and motion. Ba/Apep have bespoke v2 body plans; Ammit has new joint-bound crocodile/lion/hippo detail.
+- V1 preserved: original recipes and shared body engines are untouched; v1 remains selectable in both battle and the Rig viewer. The three Anubis studies stay available as an explicitly labelled v1 concept archive. The backup archive and all 20 restored files pass SHA-256 verification against the manifest.
+- UI: Egyptian V1/V2 selectors in Display settings and the Rig scenario; viewer defaults to Egyptian v2 and starts playing automatically. Each v2 design has a visible description. Use Egyptian V2 in battle saves v2 and switches graphics to Rig; Art still prioritizes PNGs where available. Direct URL: `/rig.html?pantheon=egyptian&version=v2`.
+- Framing fix: dense preview checks caught a fallen spear/banner extending beyond the detail viewport. The camera now eases back and up during a fall; the lineup also leaves room below its bottom row. All 22 v2 figures, five states, 31 samples and both directions fit the detail preview. Bottom-row death bounds and the existing battlefield tests at all size settings pass.
+- Browser verification: v1/v2 selection, real-time full-cycle/idle/walk playback, paused attack frame stepping, completed death frame, version application, main-game Rig entry, and actual Anubis/Wepwawet deployment. The full Egyptian lineup and all 22 gallery cards reviewed; no browser warnings/errors. Proof: `/tmp/egyptian-v2-rigs.png`, `/tmp/egyptian-v2-attack.png`, `/tmp/egyptian-v2-battle.png`.
+- Final checks: 198 tests pass; production build/typecheck and app-registry validation pass; original source backup is verified. Re-read the complete rendering, integration, UI and test changes for bugs, and updated the runbook/backup restoration instructions. Whitespace checks clean. Complete, ready for user evaluation on branch `olympus`.
+- Last known-good: completed Egyptian v2 delivery, 198 tests and production build passing. Previous increment: `be45a65` (171 tests).
+
+## Previous increment: Egyptian rig detail study
 
 - Objective: evaluate three detailed, visually distinct animated versions of a single Egyptian unit before extending the direction across the pantheon. Selected Anubis.
 - Direction: ceremonial obsidian guardian; agile desert hunter; spectral guide. Custom geometry, ornament, materials and motion over the existing rig skeleton, with synchronized playback and battle-size previews in the Rig scenario.

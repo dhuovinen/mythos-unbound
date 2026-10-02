@@ -1,10 +1,14 @@
 import type { Deity, Pantheon } from '../sim/types';
 import { drawBackdropScene } from '../render/backdrops';
 import type { Figure } from '../render/rig/figure';
-import { FIGURE_BY_ID } from '../render/rig/figures';
+import { ANIM_SECONDS, clamp01 } from '../render/rig/figure';
+import { FIGURE_BY_ID, V1_FIGURE_BY_ID } from '../render/rig/figures';
 import { previewDuration, samplePreview } from '../render/rig/previewstate';
 import type { PreviewAnimation } from '../render/rig/previewstate';
 import { RIG_THEMES } from '../render/rig/themes';
+import { EGYPTIAN_V2_DESIGNS } from '../render/rig/egyptianv2';
+import { setSetting } from './settings';
+import type { EgyptianRigVersion } from './settings';
 import { createAnubisStudy } from './anubisstudy';
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, className?: string, text?: string): HTMLElementTagNameMap[K] {
@@ -85,12 +89,12 @@ function canvasContext(canvas: HTMLCanvasElement, width: number, height: number)
 }
 
 /** Shared by the admin modal and /rig.html. All renderers are the same ones used in battle. */
-export function createRigExplorer(roster: readonly Deity[], options: { study?: 'anubis' } = {}): { root: HTMLElement; start: () => void; stop: () => void } {
+export function createRigExplorer(roster: readonly Deity[], options: { study?: 'anubis'; pantheon?: Pantheon; version?: EgyptianRigVersion } = {}): { root: HTMLElement; start: () => void; stop: () => void } {
   installStyles();
   const root = el('section', 'rv');
   const titleRow = el('div', 'rv-top');
   const title = el('div');
-  title.append(el('div', 'rv-eyebrow', 'Animation study · iteration 01'), el('h2', undefined, 'Rig scenario'),
+  title.append(el('div', 'rv-eyebrow', 'Animation lab · Egyptian v1 / v2'), el('h2', undefined, 'Rig scenario'),
     el('p', 'rv-sub', 'Explore the whole roster in motion. Choose a realm, select a character, and review each pose.'));
   const covered = roster.filter((d) => FIGURE_BY_ID.has(d.id));
   titleRow.append(title, el('div', 'rv-badge', `${covered.length} / ${roster.length} characters rigged`));
@@ -100,7 +104,18 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
   root.append(titleRow);
   const tabs = el('div', 'rv-tabs'); tabs.setAttribute('aria-label', 'Pantheon filter');
   const feel = el('p', 'rv-feel');
-  root.append(tabs, feel);
+  const versionRow = el('div', 'rv-controls');
+  const versionLabel = el('label', undefined, 'Egyptian rigs');
+  const version = el('select'); version.setAttribute('aria-label', 'Egyptian rig version');
+  for (const [value, text] of [['v2', 'V2 · dynamic'], ['v1', 'V1 · original']]) {
+    const option = el('option', undefined, text); option.value = value; version.append(option);
+  }
+  version.value = options.version ?? 'v2'; versionLabel.append(version);
+  const useInBattle = el('button', undefined, 'Use Egyptian V2 in battle');
+  const applied = el('span', 'rv-meta'); applied.setAttribute('role', 'status');
+  versionRow.append(versionLabel, useInBattle, applied);
+  root.append(tabs, versionRow, feel);
+  const figureMap = () => version.value === 'v1' ? V1_FIGURE_BY_ID : FIGURE_BY_ID;
   const previews = el('div', 'rv-previews');
   const solo = el('section', 'rv-pane');
   const soloHead = el('div', 'rv-pane-head');
@@ -108,7 +123,8 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
   const soloCanvas = el('canvas'); soloCanvas.setAttribute('aria-label', 'Selected character rig animation');
   const soloCtx = canvasContext(soloCanvas, 640, 480);
   const caption = el('div', 'rv-pane-foot');
-  solo.append(soloHead, soloCanvas, caption);
+  const designNote = el('div', 'rv-pane-foot');
+  solo.append(soloHead, soloCanvas, caption, designNote);
   const lineup = el('section', 'rv-pane');
   const lineupHead = el('div', 'rv-pane-head');
   const lineupTitle = el('h3'); const lineupCount = el('span', 'rv-meta');
@@ -156,14 +172,14 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
   root.append(study.root);
   let comparing = false;
 
-  let realm: Pantheon | 'all' = 'greek';
+  let realm: Pantheon | 'all' = options.pantheon ?? 'egyptian';
   let selected = covered[0];
   let playing = true;
   let active = false;
   let playhead = 0;
   let last = 0;
   let raf = 0;
-  const cards: { deity: Deity; button: HTMLButtonElement }[] = [];
+  const cards: { deity: Deity; button: HTMLButtonElement; ctx: CanvasRenderingContext2D }[] = [];
   const realmButtons = new Map<Pantheon | 'all', HTMLButtonElement>();
   const visibleRoster = (): readonly Deity[] => roster.filter((d) => realm === 'all' || d.pantheon === realm);
   const currentAnimation = (): PreviewAnimation => animation.value as PreviewAnimation;
@@ -190,19 +206,22 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
     soloCtx.fillStyle = gradient; soloCtx.fillRect(0, 0, 640, 480);
     soloCtx.strokeStyle = theme.accent; soloCtx.globalAlpha = 0.2;
     soloCtx.beginPath(); soloCtx.arc(320, 235, 140, 0, Math.PI * 2); soloCtx.stroke(); soloCtx.globalAlpha = 1;
-    const figure = selected ? FIGURE_BY_ID.get(selected.id) : undefined;
+    const figure = selected ? figureMap().get(selected.id) : undefined;
+    const pose = samplePreview(currentAnimation(), playhead);
+    // Pull back gently as a body falls, keeping long spear tips visible below the feet.
+    const fall = pose.anim === 'death' ? clamp01(pose.t / ANIM_SECONDS.death) : 0;
+    const footY = 390 - fall * 40;
     if (figure) {
       // Leave room above crowns, behind serpent tails and beside the fallen body.
       const anchor = figure.body === 'serpent' ? 400 : figure.body === 'beast' ? 280 : 320;
       const x = flip.checked ? 640 - anchor : anchor;
-      paintFigure(soloCtx, figure, x, 390, 2.05, playhead);
+      paintFigure(soloCtx, figure, x, footY, 2.05 - fall * .4, playhead);
     }
     if (guides.checked) {
       soloCtx.strokeStyle = '#8c8798'; soloCtx.setLineDash([6, 6]); soloCtx.beginPath();
-      soloCtx.moveTo(0, 390); soloCtx.lineTo(640, 390); soloCtx.moveTo(320, 0); soloCtx.lineTo(320, 480);
+      soloCtx.moveTo(0, footY); soloCtx.lineTo(640, footY); soloCtx.moveTo(320, 0); soloCtx.lineTo(320, 480);
       soloCtx.stroke(); soloCtx.setLineDash([]);
     }
-    const pose = samplePreview(currentAnimation(), playhead);
     caption.textContent = `${pose.anim[0].toUpperCase() + pose.anim.slice(1)} · ${playing ? 'playing' : 'paused'} · ${speed.value}× · ${flip.checked ? 'facing left' : 'facing right'}`;
 
     lineupCtx.clearRect(0, 0, 960, 540);
@@ -212,10 +231,10 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
     const cols = realm === 'all' ? 11 : 6;
     const rows = Math.ceil(entries.length / cols);
     entries.forEach((deity, i) => {
-      const f = FIGURE_BY_ID.get(deity.id);
+      const f = figureMap().get(deity.id);
       const cell = 920 / cols;
       const x = 20 + cell * ((i % cols) + 0.5);
-      const y = 160 + Math.floor(i / cols) * (355 / Math.max(1, rows - 1));
+      const y = 160 + Math.floor(i / cols) * (355 / Math.max(1, rows - 1)) - fall * 45;
       const tierScale = { chaff: 0.57, demigod: 0.7, god: 0.8, titan: 0.85 }[deity.tier];
       const k = tierScale * (realm === 'all' ? 0.52 : 0.83);
       if (f) paintFigure(lineupCtx, f, x + (f.body === 'serpent' ? cell * 0.17 * (flip.checked ? -1 : 1) : 0), y, k, playhead);
@@ -255,8 +274,12 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
   function select(deity: Deity): void {
     selected = deity;
     name.textContent = deity.name;
-    const figure = FIGURE_BY_ID.get(deity.id);
-    meta.textContent = `${deity.tier} · ${figure?.body ?? 'missing rig'}`;
+    const figure = figureMap().get(deity.id);
+    meta.textContent = `${deity.tier} · ${figure?.body ?? 'missing rig'}${deity.pantheon === 'egyptian' ? ` · ${version.value.toUpperCase()}` : ''}`;
+    const design = deity.pantheon === 'egyptian' && version.value === 'v2' ? EGYPTIAN_V2_DESIGNS[deity.id] : undefined;
+    designNote.hidden = !design;
+    designNote.textContent = design?.description ?? '';
+    name.textContent = design ? `${deity.name} · ${design.title}` : deity.name;
     soloCanvas.setAttribute('aria-label', `${deity.name} rig animation`);
     for (const entry of cards) entry.button.setAttribute('aria-pressed', String(entry.deity.id === deity.id));
     if (active) draw();
@@ -265,7 +288,9 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
     realm = next;
     root.style.setProperty('--rv-accent', next === 'all' ? '#b19cc1' : RIG_THEMES[next].accent);
     for (const [key, button] of realmButtons) button.setAttribute('aria-pressed', String(key === realm));
-    feel.textContent = next === 'all' ? 'All three pantheons together · compare silhouettes, proportions and motion.' : RIG_THEMES[next].feel;
+    feel.textContent = next === 'all' ? 'All three pantheons together · compare silhouettes, proportions and motion.'
+      : next === 'egyptian' && version.value === 'v2' ? '22 individual v2 designs · floating spirits, living ceramics, feathered wings, storm banners and stalking creatures'
+      : RIG_THEMES[next].feel;
     lineupTitle.textContent = next === 'all' ? 'All pantheons' : `${RIG_THEMES[next].label} realm`;
     lineupCount.textContent = `${visibleRoster().length} characters`;
     filterCards();
@@ -282,7 +307,7 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
   for (const deity of roster) {
     const button = el('button', 'rv-card'); button.setAttribute('aria-label', `Inspect ${deity.name} rig`);
     const thumbnail = el('canvas'); const ctx = canvasContext(thumbnail, 180, 120);
-    const figure = FIGURE_BY_ID.get(deity.id);
+    const figure = figureMap().get(deity.id);
     if (figure) {
       ctx.save();
       ctx.translate(figure.body === 'serpent' ? 130 : figure.body === 'beast' ? 66 : 90, 113);
@@ -290,8 +315,26 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
     }
     button.append(thumbnail, el('span', undefined, deity.name), el('small', undefined, `${deity.tier} · ${deity.pantheon}`));
     button.addEventListener('click', () => select(deity));
-    gallery.append(button); cards.push({ deity, button });
+    gallery.append(button); cards.push({ deity, button, ctx });
   }
+  version.addEventListener('change', () => {
+    useInBattle.textContent = `Use Egyptian ${version.value.toUpperCase()} in battle`;
+    applied.textContent = '';
+    for (const { deity, ctx } of cards) {
+      ctx.clearRect(0, 0, 180, 120);
+      const figure = figureMap().get(deity.id);
+      if (!figure) continue;
+      ctx.save(); ctx.translate(figure.body === 'serpent' ? 130 : figure.body === 'beast' ? 66 : 90, 113);
+      ctx.scale(.72, .72); figure.draw(ctx, 'idle', .4, .4); ctx.restore();
+    }
+    playhead = 0; setRealm(realm); if (selected) select(selected); refresh();
+  });
+  useInBattle.textContent = `Use Egyptian ${version.value.toUpperCase()} in battle`;
+  useInBattle.addEventListener('click', () => {
+    setSetting('egyptianRigVersion', version.value as EgyptianRigVersion);
+    setSetting('unitGraphics', 'rig');
+    applied.textContent = `${version.value.toUpperCase()} applied · battle graphics set to Rig`;
+  });
   search.addEventListener('input', filterCards);
   play.addEventListener('click', () => { playing = !playing; refresh(); });
   restart.addEventListener('click', () => { playhead = 0; refresh(); });
@@ -303,7 +346,7 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
   guides.addEventListener('change', () => { if (active) draw(); });
   function setComparison(value: boolean): void {
     comparing = value;
-    for (const node of [tabs, feel, controls, scrubRow, previews, rosterHead, gallery]) node.hidden = comparing;
+    for (const node of [tabs, versionRow, feel, controls, scrubRow, previews, rosterHead, gallery]) node.hidden = comparing;
     empty.hidden = comparing || cards.some((entry) => !entry.button.hidden);
     study.root.hidden = !comparing;
     compare.textContent = comparing ? 'Back to full roster' : 'Compare Anubis designs';
@@ -312,7 +355,7 @@ export function createRigExplorer(roster: readonly Deity[], options: { study?: '
     else { study.stop(); refresh(); }
   }
   compare.addEventListener('click', () => setComparison(!comparing));
-  setRealm('greek'); if (selected) select(selected);
+  setRealm(realm); if (selected) select(selected);
   if (options.study === 'anubis') setComparison(true);
   return {
     root,

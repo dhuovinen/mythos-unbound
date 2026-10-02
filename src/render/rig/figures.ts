@@ -16,6 +16,8 @@ import { BIPED_FIGURES } from './recipes';
 import { makeSerpent } from './serpent';
 import { BLOOD, BONE, BONE_SHADE, GREY, SLATE } from './rig';
 import { RIG_THEMES } from './themes';
+import { EGYPTIAN_V2_FIGURES } from './egyptianv2';
+import { getSettings } from '../../ui/settings';
 
 const JORMUNGANDR = makeSerpent({
   id: 'jormungandr',
@@ -112,10 +114,15 @@ const BA = makeFlyer({
 export const RIG_ROSTER = [...GREEK_DEITIES, ...NORSE_DEITIES, ...EGYPTIAN_DEITIES];
 const built = new Map([...BIPED_FIGURES, JORMUNGANDR, TYPHON, FENRIR, HARPY, APEP, AMMIT, BA].map((f) => [f.id, f]));
 /** Roster order and display names are shared with the game, including accented names. */
-export const FIGURES: readonly Figure[] = RIG_ROSTER.flatMap((deity) => {
+export const V1_FIGURES: readonly Figure[] = RIG_ROSTER.flatMap((deity) => {
   const figure = built.get(deity.id);
   return figure === undefined ? [] : [{ ...figure, name: deity.name }];
 });
+
+/** Original Egyptian recipes/body plans remain available; v2 replaces only the Egyptian roster. */
+export const V1_FIGURE_BY_ID: ReadonlyMap<string, Figure> = new Map(V1_FIGURES.map((f) => [f.id, f]));
+const v2 = new Map(EGYPTIAN_V2_FIGURES.map((f) => [f.id, f]));
+export const FIGURES: readonly Figure[] = V1_FIGURES.map((f) => v2.get(f.id) ?? f);
 
 export const FIGURE_BY_ID: ReadonlyMap<string, Figure> = new Map(FIGURES.map((f) => [f.id, f]));
 
@@ -140,5 +147,5 @@ export function figureFor(deity: Pick<Deity, 'id' | 'name' | 'tier'>, mode: Unit
     }
     if (sprite !== undefined) return sprite;
   }
-  return FIGURE_BY_ID.get(deity.id);
+  return (getSettings().egyptianRigVersion === 'v1' ? V1_FIGURE_BY_ID : FIGURE_BY_ID).get(deity.id);
 }

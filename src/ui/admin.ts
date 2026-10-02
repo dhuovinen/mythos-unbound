@@ -10,7 +10,7 @@ import { spriteStats } from '../render/art/sprites';
 import type { Deity } from '../sim/types';
 import { mountArtViewer } from './artviewer';
 import { mountRigViewer } from './rigviewer';
-import type { BackdropChoice, Settings, UnitGraphics } from './settings';
+import type { BackdropChoice, EgyptianRigVersion, Settings, UnitGraphics } from './settings';
 import { getSettings, setSetting } from './settings';
 
 function el(tag: string, className?: string, text?: string): HTMLElement {
@@ -144,7 +144,7 @@ export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readon
     if (mode === 'blocks') {
       note.textContent = 'Placeholder geometry: tier-sized shapes with each unit’s initial.';
     } else if (mode === 'rig') {
-      note.textContent = 'The full roster animated in code, with distinct Greek, Norse and Egyptian styling.';
+      note.textContent = 'The full roster animated in code. Egyptian units use the selected version below.';
     } else {
       const stats = spriteStats();
       note.textContent = `Hand-drawn art for ${stats.sets} deities (${stats.ready} loaded). The rest of the roster uses its code-drawn rig.`;
@@ -161,6 +161,19 @@ export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readon
     return { option, node: optionButton };
   });
   group.append(seg, note);
+  const versionGroup = el('div', 'ad-row-block');
+  versionGroup.append(el('div', 'ad-label', 'Egyptian rigs'));
+  const versionSeg = el('div', 'ad-seg');
+  const versions: readonly { value: EgyptianRigVersion; label: string }[] = [
+    { value: 'v1', label: 'V1 · original' }, { value: 'v2', label: 'V2 · dynamic' },
+  ];
+  const versionButtons = versions.map((option) => {
+    const node = el('button', undefined, option.label);
+    node.addEventListener('click', () => { setSetting('egyptianRigVersion', option.value); sync(); });
+    versionSeg.append(node); return { option, node };
+  });
+  versionGroup.append(versionSeg, el('div', 'ad-note', 'Choose Rig above to see all 22 animated Egyptian designs. Art uses images where available.'));
+  group.append(versionGroup);
 
   const size = el('div', 'ad-row-block');
   size.append(el('div', 'ad-label', 'Unit size'));
@@ -276,6 +289,11 @@ export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readon
     const settings = getSettings();
     for (const entry of buttons) {
       entry.node.classList.toggle('on', settings.unitGraphics === entry.option.value);
+    }
+    for (const entry of versionButtons) {
+      const selected = settings.egyptianRigVersion === entry.option.value;
+      entry.node.classList.toggle('on', selected);
+      entry.node.setAttribute('aria-pressed', String(selected));
     }
     sizeSlider.value = String(Math.round(settings.unitScale * 100));
     sizeValue.textContent = `${sizeSlider.value}%`;

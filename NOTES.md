@@ -47,16 +47,32 @@ To review the procedural rigs, choose **View Rig scenario** in **Display setting
 **http://localhost:3033/rig.html**. All 66 roster entities have rigs and all five animation states.
 Filter Greek, Norse, Egyptian or all pantheons; select a character in the roster to inspect it next
 to the animated lineup. Playback supports a full cycle, individual animations, pause, restart,
-frame stepping, speed, scrubbing, mirroring and alignment guides. The viewer previews rigs without
-changing the saved graphics setting; choose **Unit graphics → Rig** to use them in battle.
+frame stepping, speed, scrubbing, mirroring and alignment guides. The viewer starts playing automatically. Its version selector previews either Egyptian set;
+**Use Egyptian V2 in battle** applies v2 and switches battle graphics to Rig. You can also choose
+**Unit graphics → Rig** and **Egyptian rigs → V2 · dynamic** in Display settings. Art continues
+to prefer PNG images where available, so choose Rig to see the complete new set.
 The standalone page includes a collapsible shared parts catalogue and is included in production builds.
 
 For the first Egyptian detail evaluation, choose **Compare Anubis designs** in the Rig viewer,
 or open **http://localhost:3033/rig.html?study=anubis**. Three animated directions — Necropolis
 guardian, Dune stalker and Guide of the Duat — share playback, scrubbing, frame stepping, speed,
 mirroring and alignment controls. Enlarge a direction to inspect ornament and materials. Each
-card compares its study with the current Anubis rig at the same small scale. These concepts are
-for evaluation; selecting or viewing one does not replace a battle unit or change gameplay.
+card compares its study with the original v1 Anubis rig at the same small scale. The three concepts remain archived for comparison. Guide of the Duat is now Anubis’s v2 battle
+rig, with visible floating breath, drifting limbs and veils, travelling glide, ankh invocation,
+hit recoil and collapse. Opening the archived study does not change the chosen battle version.
+
+The **Egyptian v2 set is complete: all 22 units**, each with idle, walk, attack, hit and death.
+Open **http://localhost:3033/rig.html?pantheon=egyptian&version=v2** to evaluate the full set.
+The Rig scenario now opens on Egypt by default. Select a unit to read its design description;
+use the animation selector and Step frame to inspect its movement. Designs vary between linen
+sentries, glazed faience, floating spirits, lunar/solar crowns, articulated wings, storm banners,
+engraved weapons, dancing beads, a painted soul-bird, an eclipse serpent and the scaled devourer.
+All visual changes use the existing battle animation events and leave unit rules unchanged.
+
+The original **v1** set remains selectable in both viewers and battle settings. A source backup
+including all three Anubis directions is stored in `art/rig-backups/egyptian-v1.tar.gz`, with
+unit IDs, source commit and SHA-256 checksums in `egyptian-v1.json`. See that folder’s README for
+safe extraction into a temporary directory. The archive and all 20 extracted files were verified.
 
 Art concept boards (WP-7 output, 9 renders across 3 styles) live in `art/concepts/` and are
 served at http://localhost:3033/art/concepts/ while the dev server is running.
@@ -107,6 +123,12 @@ The `olympus` branch is about looks; gameplay is unchanged.
   archery have separate attack poses. **View Rig scenario** in admin and `/rig.html` share the same
   evaluator with the full roster and themed lineups. These are a first visual pass for feedback;
   the next iteration should refine silhouettes, motion and individual character details.
+- **Egyptian rigs — v2 delivered.** All 22 Egyptian units now have individual detailed designs,
+  secondary movement and the full five-state animation set. Anubis uses Guide of the Duat. The
+  live registry defaults to v2 for Egyptian procedural figures; original v1 recipes and figures
+  remain selectable, and the source is backed up with checksums in `art/rig-backups/`. Greek/Norse
+  rigs retain their existing appearance. The viewer eases its camera back during falls to keep
+  long spear tips visible. Motion and framing are checked against actual drawn geometry.
 - **Sprite comparison — waiting on art.** `docs/briefs/SPRITE-COMPARE.md` is the brief for
   generating the same five deities as sprites, to be judged side by side against the rig.
 - **Team picker — done.** `src/ui/draftscreen.ts` is now a realm picker: Greek, Norse, Egyptian and

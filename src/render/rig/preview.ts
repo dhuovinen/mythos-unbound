@@ -9,8 +9,13 @@ import { RECIPES } from './recipes';
 
 const host = document.getElementById('explorer') as HTMLElement;
 const partsHost = document.getElementById('parts') as HTMLElement;
-const explorer = createRigExplorer(RIG_ROSTER, new URLSearchParams(location.search).get('study') === 'anubis'
-  ? { study: 'anubis' } : {});
+const query = new URLSearchParams(location.search);
+const pantheon = query.get('pantheon');
+const explorer = createRigExplorer(RIG_ROSTER, {
+  study: query.get('study') === 'anubis' ? 'anubis' : undefined,
+  pantheon: pantheon === 'greek' || pantheon === 'norse' ? pantheon : 'egyptian',
+  version: query.get('version') === 'v1' ? 'v1' : 'v2',
+});
 host.append(explorer.root);
 explorer.start();
 document.addEventListener('visibilitychange', () => document.hidden ? explorer.stop() : explorer.start());

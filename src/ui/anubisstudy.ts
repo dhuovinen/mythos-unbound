@@ -1,5 +1,5 @@
 import { ANUBIS_STUDIES, anubisStudyFrame } from '../render/rig/anubisstudies';
-import { FIGURE_BY_ID } from '../render/rig/figures';
+import { V1_FIGURE_BY_ID } from '../render/rig/figures';
 import type { Figure } from '../render/rig/figure';
 import { previewDuration, samplePreview } from '../render/rig/previewstate';
 import type { PreviewAnimation } from '../render/rig/previewstate';
@@ -46,8 +46,8 @@ export function createAnubisStudy(): { root: HTMLElement; start: () => void; sto
   }
   const root = el('section', 'as'); root.setAttribute('aria-label', 'Anubis rig design comparison');
   const intro = el('div', 'as-intro'), heading = el('div');
-  heading.append(el('div', 'rv-eyebrow', 'Egyptian detail study · Anubis'), el('h3', undefined, 'One jackal. Three directions.'),
-    el('p', undefined, 'Compare form, materials and movement before choosing a direction for the Egyptian roster. All three use a shared playhead. The small figures compare each study with the current battle rig at the same scale.'));
+  heading.append(el('div', 'rv-eyebrow', 'Anubis concept archive · v1'), el('h3', undefined, 'One jackal. Three directions.'),
+    el('p', undefined, 'Revisit the three original studies of form, materials and movement. All three use a shared playhead. The small figures compare each study with the original v1 battle rig at the same scale.'));
   const all = el('button', undefined, 'Show all three'); all.hidden = true;
   intro.append(heading, all); root.append(intro);
   const controls = el('div', 'as-controls'); controls.setAttribute('aria-label', 'Anubis comparison playback');
@@ -86,7 +86,7 @@ export function createAnubisStudy(): { root: HTMLElement; start: () => void; sto
     });
     return { study, card, ctx };
   });
-  root.append(el('p', 'as-note', 'Evaluation concepts · the current battle appearance and unit rules are unchanged. Review the large figure for detail, the small pair for readability, and Walk / Attack for character.'));
+  root.append(el('p', 'as-note', 'Archived v1 concepts · Guide of the Duat is now the animated v2 Anubis. Review the large figure for detail, the small pair for readability, and Walk / Attack for character.'));
   let playing = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let active = false, playhead = 0, last = 0, raf = 0;
   const currentAnimation = (): PreviewAnimation => animation.value as PreviewAnimation;
@@ -122,12 +122,12 @@ export function createAnubisStudy(): { root: HTMLElement; start: () => void; sto
       }
       ctx.fillStyle = '#131922'; ctx.fillRect(0, 330, 440, 110);
       ctx.strokeStyle = '#343e49'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(18, 330); ctx.lineTo(422, 330); ctx.stroke();
-      const baseline = FIGURE_BY_ID.get('anubis');
+      const baseline = V1_FIGURE_BY_ID.get('anubis');
       const sampleY = pose.anim === 'death' ? 386 : 421, sampleScale = pose.anim === 'death' ? .38 : .55;
       if (baseline) paint(ctx, baseline, 155, sampleY, sampleScale);
       paint(ctx, study.figure, 285, sampleY, sampleScale);
       ctx.font = '9px system-ui'; ctx.textAlign = 'center'; ctx.fillStyle = '#aeb7bc';
-      ctx.fillText('CURRENT', 155, 437); ctx.fillStyle = study.accent; ctx.fillText('STUDY', 285, 437);
+      ctx.fillText('V1 ORIGINAL', 155, 437); ctx.fillStyle = study.accent; ctx.fillText('STUDY', 285, 437);
       ctx.textAlign = 'left'; ctx.fillStyle = '#818c97'; ctx.fillText('BATTLE', 18, 350); ctx.fillText('SIZE', 18, 363);
     }
   }
