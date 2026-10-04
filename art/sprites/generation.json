@@ -758,6 +758,11 @@
       "ratio": 0.919457735247209,
       "anchor_x": 0.55,
       "baseline": 480
+    },
+    "hodr": {
+      "ratio": 0.9322169059011164,
+      "anchor_x": 0.51,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2602,6 +2607,100 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-fcb01841-e6b5-47d5-80ce-121123e55739.png",
       "file": "brynhildr/brynhildr_portrait.png",
       "bytes": 122690
+    },
+    {
+      "id": "hodr",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-00fee84e-7168-4923-b039-be31cd8a19dd.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images: all three are STYLE references only. Subject: H\u00f6\u00f0r, a blind Norse warrior with a cloth blindfold over his eyes, plain tunic, one hand outstretched feeling the air, and in his other hand a slender dart whose tip is a sprig of mistletoe (ink leaves). Not a villain; a man handed a weapon and told where to throw it. The blindfold and dart define the silhouette. No gold. Plain bone tunic with ink folds, blood-red blindfold and simple belt, unadorned bone/ink boots. Exactly two arms and two legs. No helmet, cape, armour, shield or extra weapons. The dart is a slim bone/ink stem with small ink leaves at its tip, not a metal spear. 512x512 square, full body strict RIGHT profile. Hip anchor x256, feet baseline480, scalp near50, standing height430. All dart and limbs fully inside with margins. Pose idle_01: standing cautiously upright, free hand reaching forward to feel the air, other hand holding the complete mistletoe dart ready beside the body. Both feet planted.",
+      "file": "hodr/hodr_idle_01.png",
+      "bytes": 23127
+    },
+    {
+      "id": "hodr",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-08504aac-a8f8-478f-925e-78b7c12f9c6e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved H\u00f6\u00f0r idle, EXACT identity/design reference. Images 2-4 style only. Preserve his bone/ink hair and beard, blood-red cloth blindfold covering both eyes, blindfold tails, plain sleeveless bone tunic, red sash, ink/bone wrapped boots, exact proportions and line weight. Exactly two arms and two legs. No armour, cape, shield or additional weapons. Weapon is the SAME slender bone/ink mistletoe dart with ink leaves at its tip, no gold and no green. Blind gentle warrior, not a villain. 512x512 square full body strict RIGHT profile. Same physical body scale as idle, hip anchor x256 and support baseline480, standing scalp near50, height430; crouching/falling head naturally lower, do not enlarge. Fully include all limbs and the complete dart with margin, no clipping. Pose: Walk contact: right-facing step, front leg extended forward heel down, back leg behind touching floor; free hand feeling air ahead, dart held at waist like idle.",
+      "file": "hodr/hodr_walk_01.png",
+      "normalization": {
+        "ratio": 0.9114832535885168,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 25622
+    },
+    {
+      "id": "hodr",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-f9320619-f5c4-42b4-ae2a-286f5a6ddd07.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved H\u00f6\u00f0r idle, EXACT identity/design reference. Images 2-4 style only. Preserve his bone/ink hair and beard, blood-red cloth blindfold covering both eyes, blindfold tails, plain sleeveless bone tunic, red sash, ink/bone wrapped boots, exact proportions and line weight. Exactly two arms and two legs. No armour, cape, shield or additional weapons. Weapon is the SAME slender bone/ink mistletoe dart with ink leaves at its tip, no gold and no green. Blind gentle warrior, not a villain. 512x512 square full body strict RIGHT profile. Same physical body scale as idle, hip anchor x256 and support baseline480, standing scalp near50, height430; crouching/falling head naturally lower, do not enlarge. Fully include all limbs and the complete dart with margin, no clipping. Pose: Walk passing: supporting foot firmly planted under hips, other knee lifted and bent passing it, legs crossing, cautious forward motion, free hand reaching, dart at waist.\nEdit target image1; approved idle identity image2; others style only. Change the legs only to a DISTINCT PASSING WALK POSE: ONE supporting leg vertical with foot planted beneath hip. OTHER leg bent at knee, knee raised forwards, foot lifted well above ground beside supporting calf. Legs overlap/cross in profile. Do not show two outstretched legs or two feet down. Keep upper body, reaching free hand and waist-held dart identical.",
+      "file": "hodr/hodr_walk_02.png",
+      "normalization": {
+        "ratio": 0.919457735247209,
+        "anchor_x": 0.51,
+        "baseline": 480
+      },
+      "bytes": 22612
+    },
+    {
+      "id": "hodr",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-0742244f-1e41-4968-b6ec-5d469654af8e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved H\u00f6\u00f0r idle, EXACT identity/design reference. Images 2-4 style only. Preserve his bone/ink hair and beard, blood-red cloth blindfold covering both eyes, blindfold tails, plain sleeveless bone tunic, red sash, ink/bone wrapped boots, exact proportions and line weight. Exactly two arms and two legs. No armour, cape, shield or additional weapons. Weapon is the SAME slender bone/ink mistletoe dart with ink leaves at its tip, no gold and no green. Blind gentle warrior, not a villain. 512x512 square full body strict RIGHT profile. Same physical body scale as idle, hip anchor x256 and support baseline480, standing scalp near50, height430; crouching/falling head naturally lower, do not enlarge. Fully include all limbs and the complete dart with margin, no clipping. Pose: Throw wind-up: mistletoe dart drawn back OVER SHOULDER, throwing elbow bent high, torso coiled, free hand reaching cautiously toward RIGHT to aim. Complete dart visible, tip points RIGHT ready to throw.",
+      "file": "hodr/hodr_attack_01.png",
+      "normalization": {
+        "ratio": 0.8564593301435407,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 26630
+    },
+    {
+      "id": "hodr",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-60941d4b-2355-4cea-a9bb-e7ebfc9ab9fd.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved H\u00f6\u00f0r idle, EXACT identity/design reference. Images 2-4 style only. Preserve his bone/ink hair and beard, blood-red cloth blindfold covering both eyes, blindfold tails, plain sleeveless bone tunic, red sash, ink/bone wrapped boots, exact proportions and line weight. Exactly two arms and two legs. No armour, cape, shield or additional weapons. Weapon is the SAME slender bone/ink mistletoe dart with ink leaves at its tip, no gold and no green. Blind gentle warrior, not a villain. 512x512 square full body strict RIGHT profile. Same physical body scale as idle, hip anchor x256 and support baseline480, standing scalp near50, height430; crouching/falling head naturally lower, do not enlarge. Fully include all limbs and the complete dart with margin, no clipping. Pose: Hit reaction: recoiling backward with head snapped back slightly but face still RIGHT; knees bent, free arm recoils, hand retains the complete mistletoe dart at waist. Exactly two arms.",
+      "file": "hodr/hodr_hit_01.png",
+      "normalization": {
+        "ratio": 0.9322169059011164,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 24015
+    },
+    {
+      "id": "hodr",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-add96edd-f02d-4c97-88c4-ad2b05971208.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved H\u00f6\u00f0r idle, EXACT identity/design reference. Images 2-4 style only. Preserve his bone/ink hair and beard, blood-red cloth blindfold covering both eyes, blindfold tails, plain sleeveless bone tunic, red sash, ink/bone wrapped boots, exact proportions and line weight. Exactly two arms and two legs. No armour, cape, shield or additional weapons. Weapon is the SAME slender bone/ink mistletoe dart with ink leaves at its tip, no gold and no green. Blind gentle warrior, not a villain. 512x512 square full body strict RIGHT profile. Same physical body scale as idle, hip anchor x256 and support baseline480, standing scalp near50, height430; crouching/falling head naturally lower, do not enlarge. Fully include all limbs and the complete dart with margin, no clipping. Pose: Falling: right-facing man losing balance, bent legs fold under him as torso sinks backward, free hand catches fall, other hand loosening as dart drops beside body. Full body, no dismemberment. Fallen same physical scale, do not enlarge.",
+      "file": "hodr/hodr_death_01.png",
+      "normalization": {
+        "ratio": 1.04,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 19791
+    },
+    {
+      "id": "hodr",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-fab9c259-9589-42b5-b6c0-d23063503206.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1 approved H\u00f6\u00f0r idle EXACT identity reference; images2-4 style only. Preserve exact bone/ink hair and beard, red blindfold/tails and sash, plain sleeveless bone tunic, mistletoe dart design, proportions and line weight. Subject: blind warrior, not a villain, eyes entirely covered by red cloth. Portrait 768x1024 vertical3:4 head to hips. NEW near-frontal three-quarter view turned only15degrees RIGHT, BOTH cheeks and BOTH shoulders visible, blindfold covering both eyes. Face in upper half and lifted, dart held back ready to throw beside his head, mistletoe ink leaves clear, COMPLETE dart stem ends and leaves inside frame. Include all hair/beard, arms and hands. No legs or full-body framing. No gold, aura, glow or particles.\nEdit target image1 is the corrected portrait, image2 approved idle identity, other images style only. Keep this EXACT near-frontal face and pose, proportions, head, hands and dart. Remove the stray yellow/red/white pixel glitch strip along the very bottom edge, redraw that lower edge as a clean head-to-hips crop of bone/ink tunic and red sash ending ABOVE the canvas edge with transparent padding. Enforce bone #EDE6D6, ink #1A1A1E, blood #8C2F20 ONLY. No yellow pixels, fragments or glitches anywhere. Add modest transparent breathing room around all outer edges, preserve genuine alpha.",
+      "file": "hodr/hodr_portrait.png",
+      "bytes": 85578
+    },
+    {
+      "id": "hodr",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ca1a5d82-c432-4acf-908d-3dfc98aad007.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved H\u00f6\u00f0r idle, EXACT identity/design reference. Images 2-4 style only. Preserve his bone/ink hair and beard, blood-red cloth blindfold covering both eyes, blindfold tails, plain sleeveless bone tunic, red sash, ink/bone wrapped boots, exact proportions and line weight. Exactly two arms and two legs. No armour, cape, shield or additional weapons. Weapon is the SAME slender bone/ink mistletoe dart with ink leaves at its tip, no gold and no green. Blind gentle warrior, not a villain. 512x512 square full body strict RIGHT profile. Same physical body scale as idle, hip anchor x256 and support baseline480, standing scalp near50, height430; crouching/falling head naturally lower, do not enlarge. Fully include all limbs and the complete dart with margin, no clipping. Pose: Throw strike after releasing the single mistletoe dart. CRITICAL frame layout: same-sized head, torso and limbs as approved idle image1; do not shrink warrior to fit projectile. Keep hips centered, support foot at480 and scalp around75 with a modest forward lean. Throwing arm fully extended RIGHT with empty open hand. Counterbalancing OTHER arm BENT close beside ribs, not stretched left. Narrow step with rear foot under hip and forward foot slightly right, not an enormous split lunge. Single complete dart just released on an upward-right diagonal directly ABOVE extended hand, its butt beside wrist and leaf tip near upper right corner, all within canvas. This compact layout lets full-size warrior AND complete dart fit. Exactly2arms2legs1dart. No effects or particles.",
+      "file": "hodr/hodr_attack_02.png",
+      "normalization": {
+        "ratio": 0.95,
+        "anchor_x": 0.4,
+        "baseline": 480
+      },
+      "bytes": 20279
     }
   ],
   "completed": [
@@ -2627,13 +2726,13 @@
     "valkyrie",
     "sigurd",
     "vidar",
-    "brynhildr"
+    "brynhildr",
+    "hodr"
   ],
-  "active": "hodr",
+  "active": "vali",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "hodr",
       "vali",
       "magni",
       "skadi",
@@ -2698,7 +2797,8 @@
       "valkyrie",
       "sigurd",
       "vidar",
-      "brynhildr"
+      "brynhildr",
+      "hodr"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -2720,7 +2820,8 @@
     "valkyrie": "approved",
     "sigurd": "approved",
     "vidar": "approved",
-    "brynhildr": "approved"
+    "brynhildr": "approved",
+    "hodr": "approved"
   },
   "rejected_frames": [
     {
@@ -2893,6 +2994,34 @@
       "pose": "portrait",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-95ce7141-00fc-4115-8407-7433ebae939c.png",
       "rejection_reason": "Shield bottom rim cropped flat; reframed to include full shield and clean ink bottom contour."
+    },
+    {
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-bbc0aea9-3235-405b-9c49-18cd4ff10a6d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved H\u00f6\u00f0r idle, EXACT identity/design reference. Images 2-4 style only. Preserve his bone/ink hair and beard, blood-red cloth blindfold covering both eyes, blindfold tails, plain sleeveless bone tunic, red sash, ink/bone wrapped boots, exact proportions and line weight. Exactly two arms and two legs. No armour, cape, shield or additional weapons. Weapon is the SAME slender bone/ink mistletoe dart with ink leaves at its tip, no gold and no green. Blind gentle warrior, not a villain. 512x512 square full body strict RIGHT profile. Same physical body scale as idle, hip anchor x256 and support baseline480, standing scalp near50, height430; crouching/falling head naturally lower, do not enlarge. Fully include all limbs and the complete dart with margin, no clipping. Pose: Walk passing: supporting foot firmly planted under hips, other knee lifted and bent passing it, legs crossing, cautious forward motion, free hand reaching, dart at waist.",
+      "id": "hodr",
+      "rejection_reason": "Passing walk repeated the contact step."
+    },
+    {
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-02af211a-d729-45cd-aa63-09368ddb6a71.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1 approved H\u00f6\u00f0r idle EXACT identity reference; images2-4 style only. Preserve exact bone/ink hair and beard, red blindfold/tails and sash, plain sleeveless bone tunic, mistletoe dart design, proportions and line weight. Subject: blind warrior, not a villain, eyes entirely covered by red cloth. Portrait 768x1024 vertical3:4 head to hips. NEW near-frontal three-quarter view turned only15degrees RIGHT, BOTH cheeks and BOTH shoulders visible, blindfold covering both eyes. Face in upper half and lifted, dart held back ready to throw beside his head, mistletoe ink leaves clear, COMPLETE dart stem ends and leaves inside frame. Include all hair/beard, arms and hands. No legs or full-body framing. No gold, aura, glow or particles.",
+      "id": "hodr",
+      "rejection_reason": "Portrait viewpoint too close to profile."
+    },
+    {
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b2168eda-64dc-4134-8554-51054dcd42de.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1 approved H\u00f6\u00f0r idle EXACT identity reference; images2-4 style only. Preserve exact bone/ink hair and beard, red blindfold/tails and sash, plain sleeveless bone tunic, mistletoe dart design, proportions and line weight. Subject: blind warrior, not a villain, eyes entirely covered by red cloth. Portrait 768x1024 vertical3:4 head to hips. NEW near-frontal three-quarter view turned only15degrees RIGHT, BOTH cheeks and BOTH shoulders visible, blindfold covering both eyes. Face in upper half and lifted, dart held back ready to throw beside his head, mistletoe ink leaves clear, COMPLETE dart stem ends and leaves inside frame. Include all hair/beard, arms and hands. No legs or full-body framing. No gold, aura, glow or particles.\nEdit target image1; approved idle identity image2; others style only. Change viewpoint/framing only: turn face and torso almost FRONTALLY toward viewer, a gentle15degree turn RIGHT. Show BOTH cheeks, bridge of nose centered on face, BOTH sides of jaw. Cloth covers both eyes completely. Face lifted gently. Both shoulders visible. Current face was too close to profile. Keep same haircut, beard, red blindfold and sash, tunic, complete dart over shoulder and hand reaching, all within vertical3:4 head-hips frame with breathing space on right.",
+      "id": "hodr",
+      "rejection_reason": "Stray yellow/red pixels along lower crop."
+    },
+    {
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-940199bf-9c34-4cef-b1ca-429296e7e098.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved H\u00f6\u00f0r idle, EXACT identity/design reference. Images 2-4 style only. Preserve his bone/ink hair and beard, blood-red cloth blindfold covering both eyes, blindfold tails, plain sleeveless bone tunic, red sash, ink/bone wrapped boots, exact proportions and line weight. Exactly two arms and two legs. No armour, cape, shield or additional weapons. Weapon is the SAME slender bone/ink mistletoe dart with ink leaves at its tip, no gold and no green. Blind gentle warrior, not a villain. 512x512 square full body strict RIGHT profile. Same physical body scale as idle, hip anchor x256 and support baseline480, standing scalp near50, height430; crouching/falling head naturally lower, do not enlarge. Fully include all limbs and the complete dart with margin, no clipping. Pose: Throw strike: right-facing torso committed forward, throwing arm fully extended RIGHT with EMPTY open hand, mistletoe dart just released visible wholly in flight to RIGHT of hand. Exactly one dart, no duplicate held weapon, no effects or motion streaks. Other arm counterbalances. Forward support foot planted. The single in-flight physical dart is required.",
+      "id": "hodr",
+      "rejection_reason": "Extended projectile layout forced smaller body scale."
     }
   ]
 }
