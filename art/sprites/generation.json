@@ -783,6 +783,11 @@
       "ratio": 0.9417862838915471,
       "anchor_x": 0.53,
       "baseline": 480
+    },
+    "osiris": {
+      "ratio": 0.9800637958532695,
+      "anchor_x": 0.54,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3092,6 +3097,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Portrait768x1024vertical3:4 head-to-hips NEW near-frontal three-quarter turned15degreesRIGHT, both sides of falcon face and BOTH hard eyes visible, both shoulders visible, face in upper half. Crown red disc and complete cobra fully included. SPEAR upright beside head, complete triangular spearhead and butt end in frame; angle long shaft slightly across shoulder so it fits head-to-hips portrait without adding legs. Generous30px transparent margin on ALL sides. Clean lower head-to-hips continuous ink contour, transparent padding below, no glitch fragments. Disc fully flat blood red, no gold/yellow/glow/aura/particles.\nEdit image1 portrait, image2 approved idle identity, other images style only. CHANGE viewpoint: turn FALCON HEAD almost FRONTALLY toward viewer, 15degreesRIGHT, explicitly show TWO EYES on opposite sides of beak, BOTH cheek feather patches; beak points mostly toward viewer with slightRIGHT turn, not silhouette side profile. Both shoulders visible. Keep exact spear/crown/cobra/collar/kilt and palette. Head-to-HIPS, stop lower body at belt/upper kilt; no thighs or legs. Clean continuous ink contour at lower cutout with empty transparent padding, remove ALL yellow/red/white glitch pixels beneath figure. Include full spear tip/butt and whole disc with generous margins. Disc flatblood-red.",
       "file": "ra/ra_portrait.png",
       "bytes": 76621
+    },
+    {
+      "id": "osiris",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-f44060bc-1687-44eb-9cab-e4d40d60bcc8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Osiris, murdered and reassembled Egyptian king of the dead. Mummiform heavy upright body in bone wrappings, legs bound together; tall white atef crown in bone with two ink-edged feathers, false beard. Crook and flail crossed on chest. Solemn severe face, no gold. All eight images must have this identical costume and equipment. Composition: one full body Osiris alone, pure RIGHT-facing profile, exactly one visible eye, 512x512 square sprite. Standing idle_01, stiff and enormously heavy, both feet close together beneath bound wrappings. Crown and crossed crook and flail define silhouette. Entire crown, both feathers, feet, crook and all flail strands visible with ample clear padding. Standing silhouette including crown approximately 430 of512 high, head about50px, feet baseline480, hips x256. Exactly two arms and two legs; legs wrapped closely together, never a wide stride. Clear flat shapes, no glow or shadow. Image references are style only.",
+      "file": "osiris/osiris_idle_01.png",
+      "bytes": 19043
+    },
+    {
+      "id": "osiris",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e9d95541-ec0d-4a3b-9c0d-c342e73e1416.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Osiris, murdered and reassembled Egyptian king of the dead. Mummiform heavy upright body in bone wrappings, legs bound together; tall white atef crown in bone with two ink-edged feathers, false beard. Crook and flail crossed on chest. Solemn severe face, no gold. All eight images must have this identical costume and equipment. Input image1 is the approved Osiris identity; keep its exact face, crown, feathers, beard, wraps, physique, crook and flail. Remaining images are style references. Composition: one full body character facing RIGHT in strict side profile, exactly one visible eye. 512x512 square, transparent. Match idle physical body/head size, head about50px, standing body incl crown430px, hips centered near x256, feet baseline480. Preserve short bound legs and narrow stiff stance, not ordinary walking. Keep ALL crown feathers, body and equipment inside canvas with padding. No dropped disconnected pieces, extra limbs or effects. Pose: Short rigid shuffling contact pose: front right-pointing foot slightly forward, rear foot close behind, bound legs remain together. Tiny lean forward; crook and flail crossed at chest.",
+      "file": "osiris/osiris_walk_01.png",
+      "normalization": {
+        "ratio": 0.9800637958532695,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 19408
+    },
+    {
+      "id": "osiris",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-55ab06af-edcb-403e-b360-d361357b044d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Osiris, murdered and reassembled Egyptian king of the dead. Mummiform heavy upright body in bone wrappings, legs bound together; tall white atef crown in bone with two ink-edged feathers, false beard. Crook and flail crossed on chest. Solemn severe face, no gold. All eight images must have this identical costume and equipment. Input image1 is the approved Osiris identity; keep its exact face, crown, feathers, beard, wraps, physique, crook and flail. Remaining images are style references. Composition: one full body character facing RIGHT in strict side profile, exactly one visible eye. 512x512 square, transparent. Match idle physical body/head size, head about50px, standing body incl crown430px, hips centered near x256, feet baseline480. Preserve short bound legs and narrow stiff stance, not ordinary walking. Keep ALL crown feathers, body and equipment inside canvas with padding. No dropped disconnected pieces, extra limbs or effects. Pose: Different passing shuffle pose: nearly upright, rear foot lifts its heel very slightly while front foot supports body; wrapped legs remain close together. Distinct foot contour from contact pose, barely stepping. Crossed crook and flail.",
+      "file": "osiris/osiris_walk_02.png",
+      "normalization": {
+        "ratio": 0.9784688995215312,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 21136
+    },
+    {
+      "id": "osiris",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a6836fa4-8d58-45a7-9a6f-cabcb2548772.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Osiris, murdered and reassembled Egyptian king of the dead. Mummiform heavy upright body in bone wrappings, legs bound together; tall white atef crown in bone with two ink-edged feathers, false beard. Crook and flail crossed on chest. Solemn severe face, no gold. All eight images must have this identical costume and equipment. Input image1 is the approved Osiris identity; keep its exact face, crown, feathers, beard, wraps, physique, crook and flail. Remaining images are style references. Composition: one full body character facing RIGHT in strict side profile, exactly one visible eye. 512x512 square, transparent. Match idle physical body/head size, head about50px, standing body incl crown430px, hips centered near x256, feet baseline480. Preserve short bound legs and narrow stiff stance, not ordinary walking. Keep ALL crown feathers, body and equipment inside canvas with padding. No dropped disconnected pieces, extra limbs or effects. Pose: Flail attack wind-up. Right-facing rigid stance, flail hand drawn back close behind shoulder, all three tassels together hanging behind. Crook held in other hand close to chest. Exactly two hands, one crook one flail. Crown upright, wrapped legs narrow.",
+      "file": "osiris/osiris_attack_01.png",
+      "normalization": {
+        "ratio": 0.981658692185008,
+        "anchor_x": 0.61,
+        "baseline": 480
+      },
+      "bytes": 23291
+    },
+    {
+      "id": "osiris",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2c57e6c2-275c-4709-b4cd-33321ac19176.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Osiris, murdered and reassembled Egyptian king of the dead. Mummiform heavy upright body in bone wrappings, legs bound together; tall white atef crown in bone with two ink-edged feathers, false beard. Crook and flail crossed on chest. Solemn severe face, no gold. All eight images must have this identical costume and equipment. Input image1 is the approved Osiris identity; keep its exact face, crown, feathers, beard, wraps, physique, crook and flail. Remaining images are style references. Composition: one full body character facing RIGHT in strict side profile, exactly one visible eye. 512x512 square, transparent. Match idle physical body/head size, head about50px, standing body incl crown430px, hips centered near x256, feet baseline480. Preserve short bound legs and narrow stiff stance, not ordinary walking. Keep ALL crown feathers, body and equipment inside canvas with padding. No dropped disconnected pieces, extra limbs or effects. Pose: Flail attack forward strike from shoulder. One arm extends flail toward RIGHT; three attached flail tassels swing forward as solid physical straps, compact enough to fit. Other hand holds crook at chest. Exactly two hands. Slight torso lean, feet barely separated, bound legs intact.",
+      "file": "osiris/osiris_attack_02.png",
+      "normalization": {
+        "ratio": 0.9768740031897927,
+        "anchor_x": 0.38,
+        "baseline": 480
+      },
+      "bytes": 22331
+    },
+    {
+      "id": "osiris",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-75c19ce2-6ad2-48e8-9fcd-6ea11b4d98da.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Osiris, murdered and reassembled Egyptian king of the dead. Mummiform heavy upright body in bone wrappings, legs bound together; tall white atef crown in bone with two ink-edged feathers, false beard. Crook and flail crossed on chest. Solemn severe face, no gold. All eight images must have this identical costume and equipment. Input image1 is the approved Osiris identity; keep its exact face, crown, feathers, beard, wraps, physique, crook and flail. Remaining images are style references. Composition: one full body character facing RIGHT in strict side profile, exactly one visible eye. 512x512 square, transparent. Match idle physical body/head size, head about50px, standing body incl crown430px, hips centered near x256, feet baseline480. Preserve short bound legs and narrow stiff stance, not ordinary walking. Keep ALL crown feathers, body and equipment inside canvas with padding. No dropped disconnected pieces, extra limbs or effects. Pose: Recoiling from hit, shoulders tilt backward LEFT, face still RIGHT, knees stiff and together, one heel lifts slightly. Crook and flail still in two hands. No wound effects or particles.",
+      "file": "osiris/osiris_hit_01.png",
+      "normalization": {
+        "ratio": 0.9800637958532695,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 20466
+    },
+    {
+      "id": "osiris",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8372e2a9-7b0d-4499-a9c2-88c14a63fb28.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Osiris, murdered and reassembled Egyptian king of the dead. Mummiform heavy upright body in bone wrappings, legs bound together; tall white atef crown in bone with two ink-edged feathers, false beard. Crook and flail crossed on chest. Solemn severe face, no gold. All eight images must have this identical costume and equipment. Input image1 is the approved Osiris identity; keep its exact face, crown, feathers, beard, wraps, physique, crook and flail. Remaining images are style references. Composition: one full body character facing RIGHT in strict side profile, exactly one visible eye. 512x512 square, transparent. Match idle physical body/head size, head about50px, standing body incl crown430px, hips centered near x256, feet baseline480. Preserve short bound legs and narrow stiff stance, not ordinary walking. Keep ALL crown feathers, body and equipment inside canvas with padding. No dropped disconnected pieces, extra limbs or effects. Pose: Defeated falling pose, still facingRIGHT, heavy mummiform body tips diagonally backward towardLEFT; wrapped legs remain together, feet near ground. Crown intact fullyvisible, crook and flail remain in hands, no detached objects. No floor or effects.",
+      "file": "osiris/osiris_death_01.png",
+      "normalization": {
+        "ratio": 0.9800637958532695,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 22137
+    },
+    {
+      "id": "osiris",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-bb5ae02a-4a46-4a21-8cd4-0f1bc6916682.png",
+      "prompt": "Edit image1, Osiris portrait. Change ONLY the lower crop edge and framing: remove the entire stray colored pixel strip underneath hips, finish a single smooth heavy INK #1A1A1E lower contour at hips, with at least30pixels of truly transparent padding below. Give whole silhouette a small margin on all sides, keep crown/feathers/crook/flail fully visible. Keep BOTH eyes, nearly frontal15degreeRIGHT head-to-hips portrait, identical character face, crown, clothing, weapon positions and woodcut style. Strict bone #EDE6D6 ink #1A1A1E blood #8C2F20 palette. No yellow or random pixels, no glow, floor, shadows, background.768x1024 vertical3:4 transparent RGBA. Image2 is identity and images3-5 style.",
+      "file": "osiris/osiris_portrait.png",
+      "bytes": 82345
     }
   ],
   "completed": [
@@ -3122,13 +3221,13 @@
     "vali",
     "magni",
     "skadi",
-    "ra"
+    "ra",
+    "osiris"
   ],
-  "active": "osiris",
+  "active": "isis",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "osiris",
       "isis",
       "set",
       "horus",
@@ -3193,7 +3292,8 @@
       "vali",
       "magni",
       "skadi",
-      "ra"
+      "ra",
+      "osiris"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3220,7 +3320,8 @@
     "vali": "approved",
     "magni": "approved",
     "skadi": "approved",
-    "ra": "approved"
+    "ra": "approved",
+    "osiris": "approved"
   },
   "rejected_frames": [
     {
@@ -3484,6 +3585,13 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d449e232-cdab-41ac-a39d-5fdf6f1dc347.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Portrait768x1024vertical3:4 head-to-hips NEW near-frontal three-quarter turned15degreesRIGHT, both sides of falcon face and BOTH hard eyes visible, both shoulders visible, face in upper half. Crown red disc and complete cobra fully included. SPEAR upright beside head, complete triangular spearhead and butt end in frame; angle long shaft slightly across shoulder so it fits head-to-hips portrait without adding legs. Generous30px transparent margin on ALL sides. Clean lower head-to-hips continuous ink contour, transparent padding below, no glitch fragments. Disc fully flat blood red, no gold/yellow/glow/aura/particles.",
       "rejection_reason": "Portrait has profile falcon head and stray pixel noise at lower crop; needs near-frontal head-to-hips."
+    },
+    {
+      "id": "osiris",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-20044cd2-21a0-4e0b-bd78-bcf49f605d88.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Osiris, murdered and reassembled Egyptian king of the dead. Mummiform heavy upright body in bone wrappings, legs bound together; tall white atef crown in bone with two ink-edged feathers, false beard. Crook and flail crossed on chest. Solemn severe face, no gold. All eight images must have this identical costume and equipment. Image1 is approved identity, remaining images style. Asset: portrait 768x1024 vertical3:4. New head-to-hips three-quarter composition turned ONLY15degrees towardRIGHT, nearly frontal face, BOTH eyes and BOTH shoulders clearly visible, solemn stare. Tall atef crown and both feathers fully framed with generous top/side margins, crook and flail crossed at chest fully visible. Face in upperhalf; lower edge at hips not thighs, no legs. Keep exact identity/costume/face from image1, redraw pose for near-frontal portrait. Entire silhouette within frame, continuous clean lower ink contour, transparent margin underneath. No stray pixels.",
+      "rejection_reason": "Portrait has stray colored pixel strip along the lower hip crop; needs clean ink contour and transparent padding."
     }
   ]
 }
