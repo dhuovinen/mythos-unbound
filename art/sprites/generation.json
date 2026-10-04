@@ -878,6 +878,11 @@
       "ratio": 0.8373205741626795,
       "anchor_x": 0.54,
       "baseline": 480
+    },
+    "shabti": {
+      "ratio": 0.8955342902711324,
+      "anchor_x": 0.52,
+      "baseline": 480
     }
   },
   "frames": [
@@ -4973,6 +4978,100 @@
         "baseline": 480
       },
       "bytes": 26443
+    },
+    {
+      "id": "shabti",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e0bc8b46-85fa-41ce-821e-24945d77d45f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Funerary servant figurine: a mummiform wrapped body in bone linen with blood-red hieroglyph bands, a false beard, a striped nemes headcloth, arms crossed holding a hoe and a pick. Stiff and doll-like, with a fixed painted face. The tools in the crossed arms and the stiff mummiform body define the silhouette. No gold.\nGenerate Shabti idle battle frame. Inputs 1\u20133 are style references only. Composition: square full-body sprite in strict right-facing side profile, one visible painted eye, head, body and feet facing right. Rigid standing pose with the forearms crossed across the chest, one hand holding a short hoe and the other a short pick. Exactly two arms and two legs; the feet are close together under a bound mummiform linen body. Bone-white false beard, bone-and-ink striped nemes, blood-red bands with abstract hieroglyph markings, no readable text. The hoe and pick have bone handles and ink blades with bone edge cuts. The fixed painted face and tools must read at 64 pixels. Flat bone linen with minimal shadow blocks, no ornate jewelry. Target 512\u00d7512 composition: body height about 430 pixels, top of headcloth about y=50, lowest foot y=480, hip center x=256. Leave clear transparent padding around headcloth, feet and both tools. No pedestal or tomb, no other figures.",
+      "file": "shabti/shabti_idle_01.png",
+      "bytes": 22026
+    },
+    {
+      "id": "shabti",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-c588734d-f461-45b6-9bf8-917cc733255f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Funerary servant figurine: a mummiform wrapped body in bone linen with blood-red hieroglyph bands, a false beard, a striped nemes headcloth, arms crossed holding a hoe and a pick. Stiff and doll-like, with a fixed painted face. The tools in the crossed arms and the stiff mummiform body define the silhouette. No gold.\nInput 1 is the approved Shabti idle and exact identity reference. Inputs 2\u20134 are style references only. Preserve the same fixed painted face, bone-white false beard, striped nemes headcloth, bone linen wraps and blood-red abstract hieroglyph bands, body proportions, hoe and pick shapes, and heavy uniform outlines. Exactly two arms, two legs, one hoe and one pick. Strict right-facing full-body side profile, one visible eye; no additional tools, no companions. Battle composition square 512\u00d7512, standing body about 430 pixels tall, hips centered x=256, lowest foot y=480; retain the idle's physical body scale in every pose. Keep all tools, limbs and headgear fully inside transparent margins. Legs remain bound together with minimal knee bend.\nPose: Contact shuffle: one wrapped foot makes a short step forward toward the right and touches down at the heel, the other trails closely. Rigid upright body with legs still bound; arms crossed holding the hoe and pick at the chest.",
+      "file": "shabti/shabti_walk_01.png",
+      "normalization": {
+        "ratio": 0.8955342902711324,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 23698
+    },
+    {
+      "id": "shabti",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-aa645c41-2638-47ce-b700-e152bc57edcf.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Funerary servant figurine: a mummiform wrapped body in bone linen with blood-red hieroglyph bands, a false beard, a striped nemes headcloth, arms crossed holding a hoe and a pick. Stiff and doll-like, with a fixed painted face. The tools in the crossed arms and the stiff mummiform body define the silhouette. No gold.\nInput 1 is the approved Shabti idle and exact identity reference. Inputs 2\u20134 are style references only. Preserve the same fixed painted face, bone-white false beard, striped nemes headcloth, bone linen wraps and blood-red abstract hieroglyph bands, body proportions, hoe and pick shapes, and heavy uniform outlines. Exactly two arms, two legs, one hoe and one pick. Strict right-facing full-body side profile, one visible eye; no additional tools, no companions. Battle composition square 512\u00d7512, standing body about 430 pixels tall, hips centered x=256, lowest foot y=480; retain the idle's physical body scale in every pose. Keep all tools, limbs and headgear fully inside transparent margins. Legs remain bound together with minimal knee bend.\nPose: Passing shuffle: the feet cross closely beneath the bound linen body, one foot visibly lifted just above the baseline and the other supporting the body. Body slightly raised, little knee bend, no long stride. Arms still crossed with the same tools.",
+      "file": "shabti/shabti_walk_02.png",
+      "normalization": {
+        "ratio": 0.8955342902711324,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 21512
+    },
+    {
+      "id": "shabti",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-57fefebb-bed3-4bb0-a067-8aacd49d2f5b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Funerary servant figurine: a mummiform wrapped body in bone linen with blood-red hieroglyph bands, a false beard, a striped nemes headcloth, arms crossed holding a hoe and a pick. Stiff and doll-like, with a fixed painted face. The tools in the crossed arms and the stiff mummiform body define the silhouette. No gold.\nInput 1 is the approved Shabti idle and exact identity reference. Inputs 2\u20134 are style references only. Preserve the same fixed painted face, bone-white false beard, striped nemes headcloth, bone linen wraps and blood-red abstract hieroglyph bands, body proportions, hoe and pick shapes, and heavy uniform outlines. Exactly two arms, two legs, one hoe and one pick. Strict right-facing full-body side profile, one visible eye; no additional tools, no companions. Battle composition square 512\u00d7512, standing body about 430 pixels tall, hips centered x=256, lowest foot y=480; retain the idle's physical body scale in every pose. Keep all tools, limbs and headgear fully inside transparent margins. Legs remain bound together with minimal knee bend.\nPose: Wind-up: the same hoe raised clearly over the head with one arm, the other arm keeps the pick close to the chest. Rigid body leaning slightly backward, wrapped feet close together. Exactly two arms. Keep both complete tools and raised hoe inside the frame.",
+      "file": "shabti/shabti_attack_01.png",
+      "normalization": {
+        "ratio": 0.852,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 24957
+    },
+    {
+      "id": "shabti",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8f0494e4-a3b4-4dbc-ab26-12047c5fcca6.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Funerary servant figurine: a mummiform wrapped body in bone linen with blood-red hieroglyph bands, a false beard, a striped nemes headcloth, arms crossed holding a hoe and a pick. Stiff and doll-like, with a fixed painted face. The tools in the crossed arms and the stiff mummiform body define the silhouette. No gold.\nInput 1 is the approved Shabti idle and exact identity reference. Inputs 2\u20134 are style references only. Preserve the same fixed painted face, bone-white false beard, striped nemes headcloth, bone linen wraps and blood-red abstract hieroglyph bands, body proportions, hoe and pick shapes, and heavy uniform outlines. Exactly two arms, two legs, one hoe and one pick. Strict right-facing full-body side profile, one visible eye; no additional tools, no companions. Battle composition square 512\u00d7512, standing body about 430 pixels tall, hips centered x=256, lowest foot y=480; retain the idle's physical body scale in every pose. Keep all tools, limbs and headgear fully inside transparent margins. Legs remain bound together with minimal knee bend.\nPose: Strike: one arm chops the hoe down and forward toward the right at full extension, the other holds the pick close to the chest. Stiff wrapped body inclines forward over closely planted feet. Keep the full hoe head, both handles and all fingers inside the frame.",
+      "file": "shabti/shabti_attack_02.png",
+      "normalization": {
+        "ratio": 0.8955342902711324,
+        "anchor_x": 0.37,
+        "baseline": 480
+      },
+      "bytes": 25647
+    },
+    {
+      "id": "shabti",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b6c8ecf6-6c1e-433c-bd0d-7e4f8161eac9.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Funerary servant figurine: a mummiform wrapped body in bone linen with blood-red hieroglyph bands, a false beard, a striped nemes headcloth, arms crossed holding a hoe and a pick. Stiff and doll-like, with a fixed painted face. The tools in the crossed arms and the stiff mummiform body define the silhouette. No gold.\nInput 1 is the approved Shabti idle and exact identity reference. Inputs 2\u20134 are style references only. Preserve the same fixed painted face, bone-white false beard, striped nemes headcloth, bone linen wraps and blood-red abstract hieroglyph bands, body proportions, hoe and pick shapes, and heavy uniform outlines. Exactly two arms, two legs, one hoe and one pick. Strict right-facing full-body side profile, one visible eye; no additional tools, no companions. Battle composition square 512\u00d7512, standing body about 430 pixels tall, hips centered x=256, lowest foot y=480; retain the idle's physical body scale in every pose. Keep all tools, limbs and headgear fully inside transparent margins. Legs remain bound together with minimal knee bend.\nPose: Hit reaction: head snaps back and the wrapped body recoils slightly toward the left, crossed tool-bearing arms tighten defensively at the chest. Feet remain close together and one supports the recoil. Keep the face in right profile and the headgear unchanged.",
+      "file": "shabti/shabti_hit_01.png",
+      "normalization": {
+        "ratio": 0.8955342902711324,
+        "anchor_x": 0.59,
+        "baseline": 480
+      },
+      "bytes": 22936
+    },
+    {
+      "id": "shabti",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-49d69591-4a52-4c97-8b21-afcba85ccc24.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Funerary servant figurine: a mummiform wrapped body in bone linen with blood-red hieroglyph bands, a false beard, a striped nemes headcloth, arms crossed holding a hoe and a pick. Stiff and doll-like, with a fixed painted face. The tools in the crossed arms and the stiff mummiform body define the silhouette. No gold.\nInput 1 is the approved Shabti idle and exact identity reference. Inputs 2\u20134 are style references only. Preserve the same fixed painted face, bone-white false beard, striped nemes headcloth, bone linen wraps and blood-red abstract hieroglyph bands, body proportions, hoe and pick shapes, and heavy uniform outlines. Exactly two arms, two legs, one hoe and one pick. Strict right-facing full-body side profile, one visible eye; no additional tools, no companions. Battle composition square 512\u00d7512, standing body about 430 pixels tall, hips centered x=256, lowest foot y=480; retain the idle's physical body scale in every pose. Keep all tools, limbs and headgear fully inside transparent margins. Legs remain bound together with minimal knee bend.\nPose: Falling: rigid mummiform body tips backward toward the left, losing balance over one planted foot, other foot lifts close beside it. The two arms loosen, one hoe and one pick lower as if dropping, each complete and beside the body, no duplicated tools or fragments. Face remains right-facing profile. Keep the entire tilted figure inside the frame.",
+      "file": "shabti/shabti_death_01.png",
+      "normalization": {
+        "ratio": 0.8955342902711324,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 25955
+    },
+    {
+      "id": "shabti",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-aa3b9f14-085d-4838-82d3-6cc101979af8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Funerary servant figurine: a mummiform wrapped body in bone linen with blood-red hieroglyph bands, a false beard, a striped nemes headcloth, arms crossed holding a hoe and a pick. Stiff and doll-like, with a fixed painted face. The tools in the crossed arms and the stiff mummiform body define the silhouette. No gold.\nInput 1 is the approved idle and exact identity reference; inputs 2\u20134 are style only. Create a NEW Shabti portrait in vertical 3:4 composition, intended export 768\u00d71024. Head to hips only, true three-quarter view turned slightly right, both shoulders visible and both painted eyes visible, the far eye partly visible. Preserve the idle's exact striped nemes, fixed painted face, long bone false beard, linen wraps, red abstract hieroglyph bands and short hoe and pick. Arms crossed with one hand gripping each tool, exactly two arms. Full headcloth, beard, both complete tools and handles visible inside clear transparent padding. Face in the upper half. No thighs or full-body framing. No pedestal or other figures. No gold, glow, aura, sparks, particles or floating fragments.",
+      "file": "shabti/shabti_portrait.png",
+      "bytes": 75535
     }
   ],
   "completed": [
@@ -5022,13 +5121,13 @@
     "hephaestus",
     "apollo",
     "artemis",
-    "medjay"
+    "medjay",
+    "shabti"
   ],
-  "active": "shabti",
+  "active": "wepwawet",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "shabti",
       "wepwawet",
       "imhotep",
       "nefertem",
@@ -5093,7 +5192,8 @@
       "hephaestus",
       "apollo",
       "artemis",
-      "medjay"
+      "medjay",
+      "shabti"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -5139,7 +5239,8 @@
     "hephaestus": "approved",
     "apollo": "approved",
     "artemis": "approved",
-    "medjay": "approved"
+    "medjay": "approved",
+    "shabti": "approved"
   },
   "rejected_frames": [
     {
