@@ -793,6 +793,11 @@
       "ratio": 0.9800637958532695,
       "anchor_x": 0.53,
       "baseline": 480
+    },
+    "set": {
+      "ratio": 0.9242424242424242,
+      "anchor_x": 0.51,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3290,6 +3295,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Isis, the capable Egyptian goddess. Throne-glyph headdress, long close-fitting BONE sheath dress, BLOOD-RED sash, winged arms: sleeves open into broad feathered wings in BONE and INK. An INK and BONE ankh in one hand. Wings and throne headdress define silhouette. No halo, glow or gold. Exactly TWO arms with wing feathers integrated into sleeves, no extra separate limbs. Input image 1 is character identity, remaining images are style references. Portrait 768x1024 vertical 3:4, new head-to-hips three-quarter view turned only 15 degrees RIGHT, nearly frontal. BOTH eyes and BOTH shoulders clearly visible; face in upper half. Throne headdress fully visible. Wings opening behind both shoulders, all feather tips inside frame with generous side margins. Ankh held up fully framed. Exactly two arms, wings are feathered sleeves of these same arms. Crop at hips with single continuous clean ink lower edge and true transparent padding below; no thighs or legs, no halos, effects, stray pixels.",
       "file": "isis/isis_portrait.png",
       "bytes": 86057
+    },
+    {
+      "id": "set",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8086c5a8-3357-4ee3-8d5f-bb458f3574cb.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Composition: full body idle_01 standing wary, RIGHT-facing strict profile with one visible red eye. 512x512 square. Head, ears, toes and entire spear visible with ample padding. Body including ears stands about 430px high, head about50px, feet baseline480, hips x256. Spear upright in one hand beside head; opposite empty hand near waist. Exactly TWO arms and TWO legs. Flat red eye, no eye glow. Style references only.",
+      "file": "set/set_idle_01.png",
+      "bytes": 23943
+    },
+    {
+      "id": "set",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-992e00f6-bd4b-439d-a168-fccd40222c60.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Input image1 is approved Set identity; preserve exact curved snout, SQUARE-tipped ears, red eye, physique, kilt and spear. Remaining images style only. Full body RIGHT-facing strict profile, one visible red eye. 512x512 square. Same physical body/head scale across all poses: standing including ears about430px, head50px, hips near x256, feet baseline480. Entire spear, ears, body and limbs fully framed. Exactly2arms and2legs, exactly one spear, no extra hands. Flat red eye no glow. Pose: Walking contact step RIGHT, forward foot plants ahead, rear foot behind. Hunched wary shoulders. Spear upright in one hand, free hand swings slightly back.",
+      "file": "set/set_walk_01.png",
+      "normalization": {
+        "ratio": 0.9154704944178629,
+        "anchor_x": 0.51,
+        "baseline": 480
+      },
+      "bytes": 23948
+    },
+    {
+      "id": "set",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2c941550-38cf-4a5a-a028-5653b176a316.png",
+      "prompt": "Edit production game sprite. Correct only the spear grip and passing step in image1. Move the upright spear to FRONT of the torso in the forward hand, which closes visibly around its shaft; no floating weapon. Other empty arm swings behind. One supporting leg planted, opposite knee visibly bent and raised with foot clearly off ground. Preserve head, curved snout, square ears, wary hunch, costume and physical scale. Exactly two arms and two hands. Image2 approved Set identity, remaining images style. Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. 512x512 square, full body strict RIGHT profile with one eye, no clipping.",
+      "file": "set/set_walk_02.png",
+      "normalization": {
+        "ratio": 0.9242424242424242,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 23226
+    },
+    {
+      "id": "set",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-93ea7f22-85e8-4875-8457-80c2b2d21bb8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Input image1 is approved Set identity; preserve exact curved snout, SQUARE-tipped ears, red eye, physique, kilt and spear. Remaining images style only. Full body RIGHT-facing strict profile, one visible red eye. 512x512 square. Same physical body/head scale across all poses: standing including ears about430px, head50px, hips near x256, feet baseline480. Entire spear, ears, body and limbs fully framed. Exactly2arms and2legs, exactly one spear, no extra hands. Flat red eye no glow. Pose: Spear thrust wind-up: crouch a little, spear drawn back near torso at shoulder height, point aimed RIGHT. Exactly two hands holding the ONE spear. Compact silhouette, bend elbows and hold spear close, both ends wholly inside frame.",
+      "file": "set/set_attack_01.png",
+      "normalization": {
+        "ratio": 0.9242424242424242,
+        "anchor_x": 0.46,
+        "baseline": 480
+      },
+      "bytes": 21692
+    },
+    {
+      "id": "set",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-38052c13-81c9-4e16-b113-3e9673ab7fd1.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Input image1 is approved Set identity; preserve exact curved snout, SQUARE-tipped ears, red eye, physique, kilt and spear. Remaining images style only. Full body RIGHT-facing strict profile, one visible red eye. 512x512 square. Same physical body/head scale across all poses: standing including ears about430px, head50px, hips near x256, feet baseline480. Entire spear, ears, body and limbs fully framed. Exactly2arms and2legs, exactly one spear, no extra hands. Flat red eye no glow. Pose: Spear thrust strike toward RIGHT: slight forward lunge, spear extended horizontally with two hands, moderate reach and bent rear elbow. Entire spear tip and butt visible, no frame clipping. Do not stretch weapon into giant extra-wide silhouette; same physical weapon as idle.",
+      "file": "set/set_attack_02.png",
+      "normalization": {
+        "ratio": 0.8771929824561403,
+        "anchor_x": 0.39,
+        "baseline": 480
+      },
+      "bytes": 19767
+    },
+    {
+      "id": "set",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a00e7365-572b-4ede-b309-adc4cd4f8ca2.png",
+      "prompt": "Edit production game sprite. Correct ONLY spear blade in image1. Restore the complete symmetric pointed spearhead shape of image2, including whole rear/right outline: current blade has a straight vertical chopped edge. Slightly bring/tilt spear inward so the full intact spearhead and butt fit generously inside canvas. Preserve hit recoil body pose, face, ears, hands, scale, costume and every other detail. Image2 approved Set identity, remaining images style. Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. 512x512 square, full body strict RIGHT profile with one eye, no clipping.",
+      "file": "set/set_hit_01.png",
+      "normalization": {
+        "ratio": 0.9242424242424242,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 23825
+    },
+    {
+      "id": "set",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-bc636f00-5465-46af-b1ab-50a199690b8a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Input image1 is approved Set identity; preserve exact curved snout, SQUARE-tipped ears, red eye, physique, kilt and spear. Remaining images style only. Full body RIGHT-facing strict profile, one visible red eye. 512x512 square. Same physical body/head scale across all poses: standing including ears about430px, head50px, hips near x256, feet baseline480. Entire spear, ears, body and limbs fully framed. Exactly2arms and2legs, exactly one spear, no extra hands. Flat red eye no glow. Pose: Defeated fall backward LEFT: knees buckle, hunched body tilts diagonally backward, head remains RIGHT. Spear kept close at diagonal in hands, no detached objects. Both square-tipped ears and whole spear visible. No effects.",
+      "file": "set/set_death_01.png",
+      "normalization": {
+        "ratio": 0.9242424242424242,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 22227
+    },
+    {
+      "id": "set",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b53d2c42-f289-4965-bbcc-4bbc94a68377.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Image1 identity, other images style. Portrait768x1024 vertical3:4. NEW head-to-hips THREE-QUARTER view only15degreesRIGHT, near frontal, BOTH red eyes and BOTH shoulders visible. Curved snout turned onlyslightlyRIGHT, square-tipped tall ears fully inside frame. Face upperhalf. Spear upright beside head: ENTIRE spear INCLUDING TIP AND BUTT visible, angled slightly if necessary, generous margins. Exact identity physique costume and facial shape from image1. Hip crop, no thighs/legs. Clean continuous ink bottom contour and transparent padding below, no stray pixels.",
+      "file": "set/set_portrait.png",
+      "bytes": 73895
     }
   ],
   "completed": [
@@ -3322,13 +3421,13 @@
     "skadi",
     "ra",
     "osiris",
-    "isis"
+    "isis",
+    "set"
   ],
-  "active": "set",
+  "active": "horus",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "set",
       "horus",
       "nephthys",
       "thoth",
@@ -3393,7 +3492,8 @@
       "skadi",
       "ra",
       "osiris",
-      "isis"
+      "isis",
+      "set"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3422,7 +3522,8 @@
     "skadi": "approved",
     "ra": "approved",
     "osiris": "approved",
-    "isis": "approved"
+    "isis": "approved",
+    "set": "approved"
   },
   "rejected_frames": [
     {
@@ -3693,6 +3794,20 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-20044cd2-21a0-4e0b-bd78-bcf49f605d88.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Osiris, murdered and reassembled Egyptian king of the dead. Mummiform heavy upright body in bone wrappings, legs bound together; tall white atef crown in bone with two ink-edged feathers, false beard. Crook and flail crossed on chest. Solemn severe face, no gold. All eight images must have this identical costume and equipment. Image1 is approved identity, remaining images style. Asset: portrait 768x1024 vertical3:4. New head-to-hips three-quarter composition turned ONLY15degrees towardRIGHT, nearly frontal face, BOTH eyes and BOTH shoulders clearly visible, solemn stare. Tall atef crown and both feathers fully framed with generous top/side margins, crook and flail crossed at chest fully visible. Face in upperhalf; lower edge at hips not thighs, no legs. Keep exact identity/costume/face from image1, redraw pose for near-frontal portrait. Entire silhouette within frame, continuous clean lower ink contour, transparent margin underneath. No stray pixels.",
       "rejection_reason": "Portrait has stray colored pixel strip along the lower hip crop; needs clean ink contour and transparent padding."
+    },
+    {
+      "id": "set",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5b0c0e80-e8fb-472a-9c80-2f3726ca3ba1.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Input image1 is approved Set identity; preserve exact curved snout, SQUARE-tipped ears, red eye, physique, kilt and spear. Remaining images style only. Full body RIGHT-facing strict profile, one visible red eye. 512x512 square. Same physical body/head scale across all poses: standing including ears about430px, head50px, hips near x256, feet baseline480. Entire spear, ears, body and limbs fully framed. Exactly2arms and2legs, exactly one spear, no extra hands. Flat red eye no glow. Pose: Walking passing step RIGHT, weight on one leg, other knee clearly raised with foot off ground moving forward; different foot silhouette from contact. Hunched shoulders and head unchanged. Spear upright, free hand swings slightly forward.",
+      "rejection_reason": "Passing frame spear is not gripped by either visible hand."
+    },
+    {
+      "id": "set",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-43df684d-0cd4-4bc1-a6a9-d9f589e832d9.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Input image1 is approved Set identity; preserve exact curved snout, SQUARE-tipped ears, red eye, physique, kilt and spear. Remaining images style only. Full body RIGHT-facing strict profile, one visible red eye. 512x512 square. Same physical body/head scale across all poses: standing including ears about430px, head50px, hips near x256, feet baseline480. Entire spear, ears, body and limbs fully framed. Exactly2arms and2legs, exactly one spear, no extra hands. Flat red eye no glow. Pose: Hit recoil: shoulders lean backward LEFT, head remains RIGHT, knees bend, spear tilts a little toward RIGHT in one hand, other hand draws toward chest. Exactly two hands, entire spear inside frame. No wound or effects.",
+      "rejection_reason": "Spearhead has a chopped straight edge; restore intact pointed blade matching idle."
     }
   ]
 }
