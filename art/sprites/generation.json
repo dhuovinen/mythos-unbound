@@ -888,6 +888,11 @@
       "ratio": 0.8779904306220095,
       "anchor_x": 0.5,
       "baseline": 480
+    },
+    "imhotep": {
+      "ratio": 0.861244019138756,
+      "anchor_x": 0.51,
+      "baseline": 480
     }
   },
   "frames": [
@@ -5171,6 +5176,101 @@
         "baseline": 480
       },
       "bytes": 27393
+    },
+    {
+      "id": "imhotep",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-63b73008-7672-4583-94da-a4a7607167fa.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Architect-physician: a shaved head with a plain skullcap, a long simple linen robe, a papyrus scroll in one hand and a tall measuring rod in the other. No weapon beyond the rod. Calm, thoughtful. The scroll and the rod define the silhouette. No gold.\nInputs 1\u20133 are style references only. Generate Imhotep idle battle frame, square full-body, strict right-facing side profile, ONE visible thoughtful eye. Mature clean-shaven human face, plain fitted ink skullcap on shaved head, no headband, beard or jewelry. Long simple bone linen robe with heavy ink folds and one narrow blood-red waist sash; bare bone feet visible below ankle-length hem. Exactly two arms and two legs. Near arm on the left holds one open bone papyrus scroll at chest level, its two rolled ends clearly visible, blank sheet without text. Far arm on the right holds one upright slender bone measuring rod with a simple ink cap and four short ink measurement ticks; rod reaches just above head height and ends just above the floor, no spear point, no carved head or ornaments. Calm upright stance, feet moderately close. Target 512\u00d7512: top of skullcap about y=50, lowest foot y=480, hips centered x=256. Entire figure, both scroll rolls and both ends of rod visible inside clear transparent padding. No extra weapon, no gold, aura, healing glow, sparks or floating fragments.",
+      "file": "imhotep/imhotep_idle_01.png",
+      "bytes": 25401
+    },
+    {
+      "id": "imhotep",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-22d04fbf-cb17-4773-af5a-f701ce39e594.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Architect-physician: a shaved head with a plain skullcap, a long simple linen robe, a papyrus scroll in one hand and a tall measuring rod in the other. No weapon beyond the rod. Calm, thoughtful. The scroll and the rod define the silhouette. No gold.\nInput 1 is approved Imhotep idle, exact identity reference; inputs 2\u20134 are style only. Preserve exact mature clean-shaven face, fitted ink skullcap, long bone linen robe with broad ink folds, blood-red sash and hanging tie, bare bone feet, blank bone scroll with rolled ends, straight bone measuring rod with simple ink end caps and short ink ticks. Exactly two arms and two legs, one scroll, one rod, no other weapon or ornament. Battle: square full-body strict RIGHT side profile, one visible thoughtful eye; physical scale same as idle, standing figure about 430 pixels high, head about y=50, lowest foot y=480, hips centered x=256. Entire robe, feet, scroll and complete rod fit inside transparent margins. No gold, glow, aura, healing effects, particles, sparks or floating fragments.\nPose: Walk contact: front foot steps forward to the right and heel touches the baseline, rear foot trails with toes touching. Long robe follows the legs without hiding both feet. Near hand holds the open scroll at chest height, far hand carries rod upright. Calm moderate step.",
+      "file": "imhotep/imhotep_walk_01.png",
+      "normalization": {
+        "ratio": 0.89,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 25729
+    },
+    {
+      "id": "imhotep",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-75434e93-a739-48f9-9f79-c4b49cd8893b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Architect-physician: a shaved head with a plain skullcap, a long simple linen robe, a papyrus scroll in one hand and a tall measuring rod in the other. No weapon beyond the rod. Calm, thoughtful. The scroll and the rod define the silhouette. No gold.\nInput 1 is approved Imhotep idle, exact identity reference; inputs 2\u20134 are style only. Preserve exact mature clean-shaven face, fitted ink skullcap, long bone linen robe with broad ink folds, blood-red sash and hanging tie, bare bone feet, blank bone scroll with rolled ends, straight bone measuring rod with simple ink end caps and short ink ticks. Exactly two arms and two legs, one scroll, one rod, no other weapon or ornament. Battle: square full-body strict RIGHT side profile, one visible thoughtful eye; physical scale same as idle, standing figure about 430 pixels high, head about y=50, lowest foot y=480, hips centered x=256. Entire robe, feet, scroll and complete rod fit inside transparent margins. No gold, glow, aura, healing effects, particles, sparks or floating fragments.\nPose: Walk passing: legs cross closely beneath hips, one supporting foot flat under the body and the other foot clearly lifted near the supporting ankle, toes above the baseline. Body slightly raised. Both feet visible below the robe. Keep scroll at chest height and rod upright.",
+      "file": "imhotep/imhotep_walk_02.png",
+      "normalization": {
+        "ratio": 0.884,
+        "anchor_x": 0.51,
+        "baseline": 480
+      },
+      "bytes": 25177
+    },
+    {
+      "id": "imhotep",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8151edf0-85b1-41fe-8292-d16c535964f2.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: identity-preserve. Input 1 is the edit target. Input 2 is approved idle identity. Inputs 3\u20135 are style only.\nCorrection: Correct only the measuring rod: it must be the same full-length tall rod as the idle, about as long as Imhotep's standing body from skullcap to feet. Extend the rod diagonally across the upper part of the frame, from behind and left of the raised hand to above and right of the head. Grip it near its middle, with BOTH complete plain ink caps and the continuous bone shaft visible. Preserve the exact end caps, thickness and ink measurement ticks of the idle. It must not shrink into a baton. Keep the same wind-up, face, skullcap, two arms, robe, sash and lowered scroll, physical body scale and palette. Square transparent battle composition with all ends inside a clear margin.",
+      "file": "imhotep/imhotep_attack_01.png",
+      "normalization": {
+        "ratio": 0.87,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 29682
+    },
+    {
+      "id": "imhotep",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d65b82e0-0fb8-4ada-91b3-8c514bad78d9.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: identity-preserve. Input 1 is the edit target. Input 2 is approved idle identity. Inputs 3\u20135 are style only.\nCorrection: Correct only the measuring rod: restore the idle's full length, approximately as long as Imhotep's standing body height. Keep the forward thrust at chest height, one extended arm gripping near the rod's middle. The rod's front half projects to the right, and its rear half extends left past the shoulder with the rear ink cap visibly emerging behind the upper body. Both ink caps and the continuous straight bone shaft with ink measurement ticks must be visible. Do not leave a short baton or add a second rod. Preserve the same right-profile face, skullcap, two arms, robe, sash, lunge and lowered scroll, body scale and palette. Square transparent battle frame, entire long rod and all limbs fully inside margins.",
+      "file": "imhotep/imhotep_attack_02.png",
+      "normalization": {
+        "ratio": 0.85,
+        "anchor_x": 0.4,
+        "baseline": 480
+      },
+      "bytes": 28868
+    },
+    {
+      "id": "imhotep",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-c3351eec-c6df-4f45-a5d2-f76bb894487e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Architect-physician: a shaved head with a plain skullcap, a long simple linen robe, a papyrus scroll in one hand and a tall measuring rod in the other. No weapon beyond the rod. Calm, thoughtful. The scroll and the rod define the silhouette. No gold.\nInput 1 is approved Imhotep idle, exact identity reference; inputs 2\u20134 are style only. Preserve exact mature clean-shaven face, fitted ink skullcap, long bone linen robe with broad ink folds, blood-red sash and hanging tie, bare bone feet, blank bone scroll with rolled ends, straight bone measuring rod with simple ink end caps and short ink ticks. Exactly two arms and two legs, one scroll, one rod, no other weapon or ornament. Battle: square full-body strict RIGHT side profile, one visible thoughtful eye; physical scale same as idle, standing figure about 430 pixels high, head about y=50, lowest foot y=480, hips centered x=256. Entire robe, feet, scroll and complete rod fit inside transparent margins. No gold, glow, aura, healing effects, particles, sparks or floating fragments.\nPose: Hit reaction: head snaps backward, torso recoils toward left, legs brace. Scroll draws closer to chest and rod tilts slightly backward in the other hand. Robe remains the same. Complete rod fits wholly inside frame.",
+      "file": "imhotep/imhotep_hit_01.png",
+      "normalization": {
+        "ratio": 0.89,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 30263
+    },
+    {
+      "id": "imhotep",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-905050a2-99b9-4825-b4de-ce3412d140ae.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Architect-physician: a shaved head with a plain skullcap, a long simple linen robe, a papyrus scroll in one hand and a tall measuring rod in the other. No weapon beyond the rod. Calm, thoughtful. The scroll and the rod define the silhouette. No gold.\nInput 1 is approved Imhotep idle, exact identity reference; inputs 2\u20134 are style only. Preserve exact mature clean-shaven face, fitted ink skullcap, long bone linen robe with broad ink folds, blood-red sash and hanging tie, bare bone feet, blank bone scroll with rolled ends, straight bone measuring rod with simple ink end caps and short ink ticks. Exactly two arms and two legs, one scroll, one rod, no other weapon or ornament. Battle: square full-body strict RIGHT side profile, one visible thoughtful eye; physical scale same as idle, standing figure about 430 pixels high, head about y=50, lowest foot y=480, hips centered x=256. Entire robe, feet, scroll and complete rod fit inside transparent margins. No gold, glow, aura, healing effects, particles, sparks or floating fragments.\nPose: Falling: body tilts backward toward the left, losing balance over one planted foot, other foot raised beside it. Scroll lowered in one hand and rod tilts toward the right as grip loosens; complete intact scroll and rod, no scraps or duplicated objects. Face still right-facing profile. All limbs, robe and both rod caps inside frame.",
+      "file": "imhotep/imhotep_death_01.png",
+      "normalization": {
+        "ratio": 0.87,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 30580
+    },
+    {
+      "id": "imhotep",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-9f3aa259-be12-4263-a501-aaa6d14fc5f8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Architect-physician: a shaved head with a plain skullcap, a long simple linen robe, a papyrus scroll in one hand and a tall measuring rod in the other. No weapon beyond the rod. Calm, thoughtful. The scroll and the rod define the silhouette. No gold.\nInput 1 is the approved Imhotep idle and exact identity reference; inputs 2\u20134 are style only. Create a NEW vertical 3:4 portrait, export 768\u00d71024, head to hips only, true THREE-QUARTER view toward the viewer and turned slightly right. Both shoulders visible, BOTH thoughtful eyes visible, near eye fully and far eye partly; do not use the side-profile face. Preserve exact clean-shaven mature face, fitted ink skullcap, long bone robe folds, red sash and hanging tie, blank rolled papyrus scroll and plain marked measuring rod. Scroll held open at chest height in one hand, rod upright beside the head in the other. Exactly two arms. Whole skullcap, scroll, both rod caps and lower torso inside clear transparent padding; rod can be held higher so its lower end stays above hips. Face in the upper half. No thighs or full-body framing. No gold, healing glow, aura, sparks or floating fragments.",
+      "file": "imhotep/imhotep_portrait.png",
+      "alpha_noise_floor": 8,
+      "bytes": 81715
     }
   ],
   "completed": [
@@ -5222,13 +5322,13 @@
     "artemis",
     "medjay",
     "shabti",
-    "wepwawet"
+    "wepwawet",
+    "imhotep"
   ],
-  "active": "imhotep",
+  "active": "nefertem",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "imhotep",
       "nefertem",
       "maahes",
       "bes",
@@ -5293,7 +5393,8 @@
       "artemis",
       "medjay",
       "shabti",
-      "wepwawet"
+      "wepwawet",
+      "imhotep"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -5341,7 +5442,8 @@
     "artemis": "approved",
     "medjay": "approved",
     "shabti": "approved",
-    "wepwawet": "approved"
+    "wepwawet": "approved",
+    "imhotep": "approved"
   },
   "rejected_frames": [
     {
@@ -5908,6 +6010,22 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The Opener of Ways: a wolf head with shorter, rounded ears than Anubis and a thicker muzzle, ink-grey fur with a bone muzzle, a war mace and a standard pole bearing a wolf emblem, a short kilt, a broad collar. Fast and forward-leaning. The wolf head and the standard define the silhouette. No gold.\nInput 1 is the approved idle and exact identity reference; inputs 2\u20134 are style only. NEW Wepwawet portrait, vertical 3:4, export 768\u00d71024, HEAD TO HIPS only. True three-quarter view turned slightly right, both shoulders and both wolf eyes visible, far eye partly visible. Preserve exact idle wolf head, short ears, thick bone muzzle, ink-grey fur, broad bone collar with blood-red bars, short kilt and red belt tie. One hand holds the same standard pole beside the head, the entire carved wolf emblem fully visible; other hand holds the same compact bone-headed mace across the waist, full mace visible. Exactly two arms, no tail, no living companion. Face in upper half. Leave clear transparent padding around ears, wolf emblem, pole ends, mace and lower torso. No full-body framing, no thighs. No gold, glow, aura, sparks or fragments.",
       "file": "wepwawet/wepwawet_portrait.png",
       "rejection_reason": "Change only the head and upper-body viewing angle to a true three-quarter portrait, turned slightly right toward the viewer: both wolf eyes must be visible, near eye fully and far eye partly, on opposite sides of the thick muzzle. Show both shoulders. Do not use the side-profile wolf face. Keep the exact short wolf ears, fur and bone muzzle markings, collar, kilt, belt tie, two hands, mace and full standard with identical wolf emblem. Keep head-to-hips framing, face in the upper half, vertical 3:4 and complete weapons inside clear transparent padding. No gold, glow or aura."
+    },
+    {
+      "id": "imhotep",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-215d5ed2-d341-4773-bab7-0b417c552490.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Architect-physician: a shaved head with a plain skullcap, a long simple linen robe, a papyrus scroll in one hand and a tall measuring rod in the other. No weapon beyond the rod. Calm, thoughtful. The scroll and the rod define the silhouette. No gold.\nInput 1 is approved Imhotep idle, exact identity reference; inputs 2\u20134 are style only. Preserve exact mature clean-shaven face, fitted ink skullcap, long bone linen robe with broad ink folds, blood-red sash and hanging tie, bare bone feet, blank bone scroll with rolled ends, straight bone measuring rod with simple ink end caps and short ink ticks. Exactly two arms and two legs, one scroll, one rod, no other weapon or ornament. Battle: square full-body strict RIGHT side profile, one visible thoughtful eye; physical scale same as idle, standing figure about 430 pixels high, head about y=50, lowest foot y=480, hips centered x=256. Entire robe, feet, scroll and complete rod fit inside transparent margins. No gold, glow, aura, healing effects, particles, sparks or floating fragments.\nPose: Attack wind-up: far rod-bearing arm draws the rod backward diagonally over the shoulder, elbow bent, torso coils slightly backward. Near hand holds the same scroll low beside waist. Exactly two arms, complete rod with both ink caps inside frame. No magic effect.",
+      "file": "imhotep/imhotep_attack_01.png",
+      "rejection_reason": "Correct only the measuring rod: it must be the same full-length tall rod as the idle, about as long as Imhotep's standing body from skullcap to feet. Extend the rod diagonally across the upper part of the frame, from behind and left of the raised hand to above and right of the head. Grip it near its middle, with BOTH complete plain ink caps and the continuous bone shaft visible. Preserve the exact end caps, thickness and ink measurement ticks of the idle. It must not shrink into a baton. Keep the same wind-up, face, skullcap, two arms, robe, sash and lowered scroll, physical body scale and palette. Square transparent battle composition with all ends inside a clear margin."
+    },
+    {
+      "id": "imhotep",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b54fe48d-ef4d-47f2-b74f-ba6e61f954e0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Architect-physician: a shaved head with a plain skullcap, a long simple linen robe, a papyrus scroll in one hand and a tall measuring rod in the other. No weapon beyond the rod. Calm, thoughtful. The scroll and the rod define the silhouette. No gold.\nInput 1 is approved Imhotep idle, exact identity reference; inputs 2\u20134 are style only. Preserve exact mature clean-shaven face, fitted ink skullcap, long bone linen robe with broad ink folds, blood-red sash and hanging tie, bare bone feet, blank bone scroll with rolled ends, straight bone measuring rod with simple ink end caps and short ink ticks. Exactly two arms and two legs, one scroll, one rod, no other weapon or ornament. Battle: square full-body strict RIGHT side profile, one visible thoughtful eye; physical scale same as idle, standing figure about 430 pixels high, head about y=50, lowest foot y=480, hips centered x=256. Entire robe, feet, scroll and complete rod fit inside transparent margins. No gold, glow, aura, healing effects, particles, sparks or floating fragments.\nPose: Attack strike: rod-bearing arm thrusts the measuring rod forward toward the right, rod almost horizontal at chest height, front arm extended, body committed into a moderate lunge. Scroll held low beside waist by the other hand. Whole rod including both ink caps visible, no clipped tip or extra staff, exactly two arms.",
+      "file": "imhotep/imhotep_attack_02.png",
+      "rejection_reason": "Correct only the measuring rod: restore the idle's full length, approximately as long as Imhotep's standing body height. Keep the forward thrust at chest height, one extended arm gripping near the rod's middle. The rod's front half projects to the right, and its rear half extends left past the shoulder with the rear ink cap visibly emerging behind the upper body. Both ink caps and the continuous straight bone shaft with ink measurement ticks must be visible. Do not leave a short baton or add a second rod. Preserve the same right-profile face, skullcap, two arms, robe, sash, lunge and lowered scroll, body scale and palette. Square transparent battle frame, entire long rod and all limbs fully inside margins."
     }
   ]
 }
