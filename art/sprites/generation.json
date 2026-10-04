@@ -788,6 +788,11 @@
       "ratio": 0.9800637958532695,
       "anchor_x": 0.54,
       "baseline": 480
+    },
+    "isis": {
+      "ratio": 0.9800637958532695,
+      "anchor_x": 0.53,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3191,6 +3196,100 @@
       "prompt": "Edit image1, Osiris portrait. Change ONLY the lower crop edge and framing: remove the entire stray colored pixel strip underneath hips, finish a single smooth heavy INK #1A1A1E lower contour at hips, with at least30pixels of truly transparent padding below. Give whole silhouette a small margin on all sides, keep crown/feathers/crook/flail fully visible. Keep BOTH eyes, nearly frontal15degreeRIGHT head-to-hips portrait, identical character face, crown, clothing, weapon positions and woodcut style. Strict bone #EDE6D6 ink #1A1A1E blood #8C2F20 palette. No yellow or random pixels, no glow, floor, shadows, background.768x1024 vertical3:4 transparent RGBA. Image2 is identity and images3-5 style.",
       "file": "osiris/osiris_portrait.png",
       "bytes": 82345
+    },
+    {
+      "id": "isis",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b3fd8002-7545-4f95-b0e0-395c26a0e32d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Isis, the capable Egyptian goddess. Throne-glyph headdress, long close-fitting BONE sheath dress, BLOOD-RED sash, winged arms: sleeves open into broad feathered wings in BONE and INK. An INK and BONE ankh in one hand. Wings and throne headdress define silhouette. No halo, glow or gold. Exactly TWO arms with wing feathers integrated into sleeves, no extra separate limbs. Composition:one full body goddess facingRIGHT strict profile, exactly one visible eye.512x512 square sprite, standing idle_01 about430px including throne headdress, head50px, hips x256, feet baseline480. Winged arms spread slightly out of body in a compact downward open position, layered feather fans clear and entirelywithinframe, ankh held close but visibly apart from dress. Crown, feathers, ankh and both feet all visible with padding. Style references only.",
+      "file": "isis/isis_idle_01.png",
+      "bytes": 29774
+    },
+    {
+      "id": "isis",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e68aa0eb-b2da-485e-b5be-8e6f763f5b92.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Isis, the capable Egyptian goddess. Throne-glyph headdress, long close-fitting BONE sheath dress, BLOOD-RED sash, winged arms: sleeves open into broad feathered wings in BONE and INK. An INK and BONE ankh in one hand. Wings and throne headdress define silhouette. No halo, glow or gold. Exactly TWO arms with wing feathers integrated into sleeves, no extra separate limbs. Input image 1 is approved identity: match exact face, headdress, dress, sash, feathers, ankh and physical proportions. Remaining images are style only. Composition: full body facing RIGHT, strict side profile with one visible eye. 512x512 square. Standing scale 430px high including headdress, head about 50px, hips near x256, feet at y480. Entire figure, all feathers, crown and ankh fit with padding. Compact wing silhouettes. Exactly TWO arms and TWO hands with wing feathers on sleeves of those same arms; no extra independent wings or arms. Pose: Walking contact frame toward RIGHT: front foot extended forward, rear foot slightly behind, both feet touch baseline. Dress follows a modest stride. Winged arms lower slightly and move with the stride; ankh retained in one hand.",
+      "file": "isis/isis_walk_01.png",
+      "normalization": {
+        "ratio": 0.9625199362041468,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 30406
+    },
+    {
+      "id": "isis",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e93780f1-7244-42f8-ac27-6fb6f907fd82.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Isis, the capable Egyptian goddess. Throne-glyph headdress, long close-fitting BONE sheath dress, BLOOD-RED sash, winged arms: sleeves open into broad feathered wings in BONE and INK. An INK and BONE ankh in one hand. Wings and throne headdress define silhouette. No halo, glow or gold. Exactly TWO arms with wing feathers integrated into sleeves, no extra separate limbs. Input image 1 is approved identity: match exact face, headdress, dress, sash, feathers, ankh and physical proportions. Remaining images are style only. Composition: full body facing RIGHT, strict side profile with one visible eye. 512x512 square. Standing scale 430px high including headdress, head about 50px, hips near x256, feet at y480. Entire figure, all feathers, crown and ankh fit with padding. Compact wing silhouettes. Exactly TWO arms and TWO hands with wing feathers on sleeves of those same arms; no extra independent wings or arms. Pose: Walking passing frame toward RIGHT: weight on one straight supporting leg; other knee and foot clearly lifted forward beneath sheath dress's moving hem. Distinct compact passing step, not same contact stance. Feathered sleeve-arms swing oppositely a little, ankh retained.",
+      "file": "isis/isis_walk_02.png",
+      "normalization": {
+        "ratio": 0.9641148325358851,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 31153
+    },
+    {
+      "id": "isis",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-9f3f419c-2fa4-4730-b63c-f3c58b7739d1.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Isis, the capable Egyptian goddess. Throne-glyph headdress, long close-fitting BONE sheath dress, BLOOD-RED sash, winged arms: sleeves open into broad feathered wings in BONE and INK. An INK and BONE ankh in one hand. Wings and throne headdress define silhouette. No halo, glow or gold. Exactly TWO arms with wing feathers integrated into sleeves, no extra separate limbs. Input image 1 is approved identity: match exact face, headdress, dress, sash, feathers, ankh and physical proportions. Remaining images are style only. Composition: full body facing RIGHT, strict side profile with one visible eye. 512x512 square. Standing scale 430px high including headdress, head about 50px, hips near x256, feet at y480. Entire figure, all feathers, crown and ankh fit with padding. Compact wing silhouettes. Exactly TWO arms and TWO hands with wing feathers on sleeves of those same arms; no extra independent wings or arms. Pose: Wind-up: both feathered sleeve-arms raise, ankh hand drawn back near shoulder, other hand raised but visible. Exactly two hands. Compact raised wings fan beside shoulders, feather tips all within top and sides; head unobscured. Small knee bend.",
+      "file": "isis/isis_attack_01.png",
+      "normalization": {
+        "ratio": 0.9800637958532695,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 31878
+    },
+    {
+      "id": "isis",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ed6a2b04-f908-4e7b-960c-7738bcf59783.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Isis, the capable Egyptian goddess. Throne-glyph headdress, long close-fitting BONE sheath dress, BLOOD-RED sash, winged arms: sleeves open into broad feathered wings in BONE and INK. An INK and BONE ankh in one hand. Wings and throne headdress define silhouette. No halo, glow or gold. Exactly TWO arms with wing feathers integrated into sleeves, no extra separate limbs. Input image 1 is approved identity: match exact face, headdress, dress, sash, feathers, ankh and physical proportions. Remaining images are style only. Composition: full body facing RIGHT, strict side profile with one visible eye. 512x512 square. Standing scale 430px high including headdress, head about 50px, hips near x256, feet at y480. Entire figure, all feathers, crown and ankh fit with padding. Compact wing silhouettes. Exactly TWO arms and TWO hands with wing feathers on sleeves of those same arms; no extra independent wings or arms. Pose: Strike: ankh hand extends forward RIGHT, wings sweep forward as those same two feathered sleeve-arms, other hand visible behind the striking wrist. Slight forward lean and modest lunge. Exactly TWO arms/two hands. No extra wings. Ankh completely inside image, no magic or glow.",
+      "file": "isis/isis_attack_02.png",
+      "normalization": {
+        "ratio": 0.9800637958532695,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 29835
+    },
+    {
+      "id": "isis",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-87579bab-2303-48fd-b146-25fde4765176.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Isis, the capable Egyptian goddess. Throne-glyph headdress, long close-fitting BONE sheath dress, BLOOD-RED sash, winged arms: sleeves open into broad feathered wings in BONE and INK. An INK and BONE ankh in one hand. Wings and throne headdress define silhouette. No halo, glow or gold. Exactly TWO arms with wing feathers integrated into sleeves, no extra separate limbs. Input image 1 is approved identity: match exact face, headdress, dress, sash, feathers, ankh and physical proportions. Remaining images are style only. Composition: full body facing RIGHT, strict side profile with one visible eye. 512x512 square. Standing scale 430px high including headdress, head about 50px, hips near x256, feet at y480. Entire figure, all feathers, crown and ankh fit with padding. Compact wing silhouettes. Exactly TWO arms and TWO hands with wing feathers on sleeves of those same arms; no extra independent wings or arms. Pose: Hit recoil: shoulders lean backward LEFT, head still faces RIGHT, feathered sleeve-arms fold inward slightly, ankh kept in one hand. Knees bend a little. No blood droplets or particles.",
+      "file": "isis/isis_hit_01.png",
+      "normalization": {
+        "ratio": 0.9800637958532695,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 29803
+    },
+    {
+      "id": "isis",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-285f6a8b-c743-450a-ab80-320a9a059865.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Isis, the capable Egyptian goddess. Throne-glyph headdress, long close-fitting BONE sheath dress, BLOOD-RED sash, winged arms: sleeves open into broad feathered wings in BONE and INK. An INK and BONE ankh in one hand. Wings and throne headdress define silhouette. No halo, glow or gold. Exactly TWO arms with wing feathers integrated into sleeves, no extra separate limbs. Input image 1 is approved identity: match exact face, headdress, dress, sash, feathers, ankh and physical proportions. Remaining images are style only. Composition: full body facing RIGHT, strict side profile with one visible eye. 512x512 square. Standing scale 430px high including headdress, head about 50px, hips near x256, feet at y480. Entire figure, all feathers, crown and ankh fit with padding. Compact wing silhouettes. Exactly TWO arms and TWO hands with wing feathers on sleeves of those same arms; no extra independent wings or arms. Pose: Defeated falling toward LEFT: knees buckle, body tips diagonally backward LEFT, face remains RIGHT. Feathered sleeve-arms fold and trail down, feet low near baseline; crown and ankh intact. Exactly two hands, no disconnected objects, no effects.",
+      "file": "isis/isis_death_01.png",
+      "normalization": {
+        "ratio": 0.9800637958532695,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 30650
+    },
+    {
+      "id": "isis",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ac107ebf-d0e9-42c2-b8b5-b007f94a0d0a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Isis, the capable Egyptian goddess. Throne-glyph headdress, long close-fitting BONE sheath dress, BLOOD-RED sash, winged arms: sleeves open into broad feathered wings in BONE and INK. An INK and BONE ankh in one hand. Wings and throne headdress define silhouette. No halo, glow or gold. Exactly TWO arms with wing feathers integrated into sleeves, no extra separate limbs. Input image 1 is character identity, remaining images are style references. Portrait 768x1024 vertical 3:4, new head-to-hips three-quarter view turned only 15 degrees RIGHT, nearly frontal. BOTH eyes and BOTH shoulders clearly visible; face in upper half. Throne headdress fully visible. Wings opening behind both shoulders, all feather tips inside frame with generous side margins. Ankh held up fully framed. Exactly two arms, wings are feathered sleeves of these same arms. Crop at hips with single continuous clean ink lower edge and true transparent padding below; no thighs or legs, no halos, effects, stray pixels.",
+      "file": "isis/isis_portrait.png",
+      "bytes": 86057
     }
   ],
   "completed": [
@@ -3222,13 +3321,13 @@
     "magni",
     "skadi",
     "ra",
-    "osiris"
+    "osiris",
+    "isis"
   ],
-  "active": "isis",
+  "active": "set",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "isis",
       "set",
       "horus",
       "nephthys",
@@ -3293,7 +3392,8 @@
       "magni",
       "skadi",
       "ra",
-      "osiris"
+      "osiris",
+      "isis"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3321,7 +3421,8 @@
     "magni": "approved",
     "skadi": "approved",
     "ra": "approved",
-    "osiris": "approved"
+    "osiris": "approved",
+    "isis": "approved"
   },
   "rejected_frames": [
     {
