@@ -848,6 +848,11 @@
       "ratio": 0.8732057416267942,
       "anchor_x": 0.54,
       "baseline": 480
+    },
+    "aeneas": {
+      "ratio": 0.9290271132376395,
+      "anchor_x": 0.52,
+      "baseline": 480
     }
   },
   "frames": [
@@ -4379,6 +4384,100 @@
         "baseline": 480
       },
       "bytes": 31903
+    },
+    {
+      "id": "aeneas",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-1fab8fc3-8277-451a-96f0-55756e170242.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aeneas, Greek armored hero in heavy protective braced stance, sheltering as if shielding someone behind him but exactly ONE figure. LARGE ROUND shield over one third visual mass with BLOOD RED rim and BONE boss, heavy BONE armor INK shadows, crested helm, short BONE/INK sword held low. No gold. Input images STYLE only. Fullbody512square battle STRICT RIGHT SIDE PROFILE ONE eye, narrow side torso. Neutral braced idle bent knees, massive round shield guarding front RIGHT shoulder/chest/hip over THIRD entirevisualmass, sword low pointedforward held in otherhand. TWO arms/hands TWO legs, no secondfigure. Bone heavy cuirass/greaves/crestedhelmet red crest, ink shadowplanes, bone armored skirt with red undercloth, sandals. Figure430px including crest, top y50, head/helm~50px excludingcrest, feet480, hipx256. Allshieldedges/swordtip/hilt/crest/feet insidegenerouspadding, no aura/glow/sparks/fragments, no floor or groundshadow.",
+      "file": "aeneas/aeneas_idle_01.png",
+      "bytes": 33059
+    },
+    {
+      "id": "aeneas",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-789bc2c7-f5cf-4cbc-88ec-eab3a6f39b03.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aeneas, Greek armored hero in heavy protective braced stance, sheltering as if shielding someone behind him but exactly ONE figure. LARGE ROUND shield over one third visual mass with BLOOD RED rim and BONE boss, heavy BONE armor INK shadows, crested helm, short BONE/INK sword held low. No gold. Image1 approved Aeneas idle EXACT identity/design/proportions, otherimages STYLE only. Same heavy bone muscle cuirass, angular pauldrons/bracers/greaves, crested closed bone helm with redcrest, red cloak, bone skirtplates over redcloth, sandals. MASSIVE plain round shield with RED rim/bonerivets and BONE boss held in same shieldhand, short bone/ink sword inotherhand. Shield over one third visual mass. Strict RIGHT SIDE PROFILE onehelmeyeslot, fullbody512square. Same physicalhead/body scale asidle standing430px helmcresttop50, feet480,hipx256. TWO arms/hands TWO legs exactly, allshieldedges/swordtip/crest/limbs insidepadding. No otherperson, no gold/glow/aura/sparks/fragments. Pose: WALK CONTACT: heavy braced step frontleg forwardRIGHT HEEL down, rearlegback toe baseline. Shield held ahead protecting torso, swordlow, cloakback.",
+      "file": "aeneas/aeneas_walk_01.png",
+      "normalization": {
+        "ratio": 0.9290271132376395,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 36816
+    },
+    {
+      "id": "aeneas",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-79606870-e6c2-42c7-9466-4fe532a5e588.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aeneas, Greek armored hero in heavy protective braced stance, sheltering as if shielding someone behind him but exactly ONE figure. LARGE ROUND shield over one third visual mass with BLOOD RED rim and BONE boss, heavy BONE armor INK shadows, crested helm, short BONE/INK sword held low. No gold. Image1 approved Aeneas idle EXACT identity/design/proportions, otherimages STYLE only. Same heavy bone muscle cuirass, angular pauldrons/bracers/greaves, crested closed bone helm with redcrest, red cloak, bone skirtplates over redcloth, sandals. MASSIVE plain round shield with RED rim/bonerivets and BONE boss held in same shieldhand, short bone/ink sword inotherhand. Shield over one third visual mass. Strict RIGHT SIDE PROFILE onehelmeyeslot, fullbody512square. Same physicalhead/body scale asidle standing430px helmcresttop50, feet480,hipx256. TWO arms/hands TWO legs exactly, allshieldedges/swordtip/crest/limbs insidepadding. No otherperson, no gold/glow/aura/sparks/fragments. Pose: WALK PASSING: rear bentknee lifted crossing underpelvis, supportinglegstraightfootonbaseline, bodyslightlyraised. Same shieldcoveringforward torso, swordlow, clearcrossingstep notwidecontactstance.",
+      "file": "aeneas/aeneas_walk_02.png",
+      "normalization": {
+        "ratio": 0.9290271132376395,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 34443
+    },
+    {
+      "id": "aeneas",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d25c6fa1-4627-4c6f-94f0-a490638afa82.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aeneas, Greek armored hero in heavy protective braced stance, sheltering as if shielding someone behind him but exactly ONE figure. LARGE ROUND shield over one third visual mass with BLOOD RED rim and BONE boss, heavy BONE armor INK shadows, crested helm, short BONE/INK sword held low. No gold. Image1 approved Aeneas idle EXACT identity/design/proportions, otherimages STYLE only. Same heavy bone muscle cuirass, angular pauldrons/bracers/greaves, crested closed bone helm with redcrest, red cloak, bone skirtplates over redcloth, sandals. MASSIVE plain round shield with RED rim/bonerivets and BONE boss held in same shieldhand, short bone/ink sword inotherhand. Shield over one third visual mass. Strict RIGHT SIDE PROFILE onehelmeyeslot, fullbody512square. Same physicalhead/body scale asidle standing430px helmcresttop50, feet480,hipx256. TWO arms/hands TWO legs exactly, allshieldedges/swordtip/crest/limbs insidepadding. No otherperson, no gold/glow/aura/sparks/fragments. Pose: SWORD WINDUP: short sword drawn BACK LEFT behindhip/shoulder, elbowbent, bodycoiledbackkneesbent. ShieldguardsfrontRIGHT. Exactlyone sword andoneshield, swordtipwholeinside. Protective heavy stance.",
+      "file": "aeneas/aeneas_attack_01.png",
+      "normalization": {
+        "ratio": 0.9290271132376395,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 39327
+    },
+    {
+      "id": "aeneas",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ebb1b268-8a57-4efe-b2f5-c49d85fc74f6.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aeneas, Greek armored hero in heavy protective braced stance, sheltering as if shielding someone behind him but exactly ONE figure. LARGE ROUND shield over one third visual mass with BLOOD RED rim and BONE boss, heavy BONE armor INK shadows, crested helm, short BONE/INK sword held low. No gold. Image1 approved Aeneas idle EXACT identity/design/proportions, otherimages STYLE only. Same heavy bone muscle cuirass, angular pauldrons/bracers/greaves, crested closed bone helm with redcrest, red cloak, bone skirtplates over redcloth, sandals. MASSIVE plain round shield with RED rim/bonerivets and BONE boss held in same shieldhand, short bone/ink sword inotherhand. Shield over one third visual mass. Strict RIGHT SIDE PROFILE onehelmeyeslot, fullbody512square. Same physicalhead/body scale asidle standing430px helmcresttop50, feet480,hipx256. TWO arms/hands TWO legs exactly, allshieldedges/swordtip/crest/limbs insidepadding. No otherperson, no gold/glow/aura/sparks/fragments. Pose: HIT REACTION: helmet/head snappedBACK, torso recoilingbackwardLEFT, kneesbuckled. Shield raised defensively, swordstillinhandtiltedlow. Noimpactsymbols.",
+      "file": "aeneas/aeneas_hit_01.png",
+      "normalization": {
+        "ratio": 0.9290271132376395,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 35701
+    },
+    {
+      "id": "aeneas",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a3fc0673-be14-4c8b-bf98-eb60a880f454.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aeneas, Greek armored hero in heavy protective braced stance, sheltering as if shielding someone behind him but exactly ONE figure. LARGE ROUND shield over one third visual mass with BLOOD RED rim and BONE boss, heavy BONE armor INK shadows, crested helm, short BONE/INK sword held low. No gold. Image1 approved Aeneas idle EXACT identity/design/proportions, otherimages STYLE only. Same heavy bone muscle cuirass, angular pauldrons/bracers/greaves, crested closed bone helm with redcrest, red cloak, bone skirtplates over redcloth, sandals. MASSIVE plain round shield with RED rim/bonerivets and BONE boss held in same shieldhand, short bone/ink sword inotherhand. Shield over one third visual mass. Strict RIGHT SIDE PROFILE onehelmeyeslot, fullbody512square. Same physicalhead/body scale asidle standing430px helmcresttop50, feet480,hipx256. TWO arms/hands TWO legs exactly, allshieldedges/swordtip/crest/limbs insidepadding. No otherperson, no gold/glow/aura/sparks/fragments. Pose: FALLING: body tiltedBACKLEFT losingbalance, frontleg liftedforward, rearlegcollapsing, shield sagginglownearhip and short sworddropping towardlowerleft fromloosenedhand. Unbrokenwhole shield/sword, no fragments, cloakattached, no gore.",
+      "file": "aeneas/aeneas_death_01.png",
+      "normalization": {
+        "ratio": 0.9290271132376395,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 34520
+    },
+    {
+      "id": "aeneas",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-121eaf87-f52f-4c8d-8fc6-4a4c7aa9bb7b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aeneas, Greek armored hero in heavy protective braced stance, sheltering as if shielding someone behind him but exactly ONE figure. LARGE ROUND shield over one third visual mass with BLOOD RED rim and BONE boss, heavy BONE armor INK shadows, crested helm, short BONE/INK sword held low. No gold. Image1 approved Aeneas idle EXACT identity, others STYLE only. NEW portrait768x1024 vertical3:4 HEAD TO HIPS TRUE THREE-QUARTER slightlyRIGHT, BOTH shoulders visible and BOTH eye sockets showing STEADY EYES, fareyepartlyvisible, turnhelmet towardviewer rather than strictprofile. Shield RAISED covers near shoulder, steadyeyes OVER shieldrim, crest/entirehelmet visible, oversized roundshieldwithsameRED rim andBONEboss entirelyinside, short sword heldlow andbladefullyinside frame diagonallytofit. Sameheavyarmor/redcloak/skirtplates. Face upperhalf, no thighs/legs. Generous transparentmargins around crest/shield/sword, continuousclean ink hipcontour no straypixels, no secondfigure or gold/glow/aura/sparks/fragments.",
+      "file": "aeneas/aeneas_portrait.png",
+      "bytes": 114956
+    },
+    {
+      "id": "aeneas",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-591bd6bb-8ee1-42e6-b467-ba4fac2445a8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aeneas, Greek armored hero in heavy protective braced stance, sheltering as if shielding someone behind him but exactly ONE figure. LARGE ROUND shield over one third visual mass with BLOOD RED rim and BONE boss, heavy BONE armor INK shadows, crested helm, short BONE/INK sword held low. No gold. Image1 approved Aeneas idle EXACT identity/design/proportions, otherimages STYLE only. Same heavy bone muscle cuirass, angular pauldrons/bracers/greaves, crested closed bone helm with redcrest, red cloak, bone skirtplates over redcloth, sandals. MASSIVE plain round shield with RED rim/bonerivets and BONE boss held in same shieldhand, short bone/ink sword inotherhand. Shield over one third visual mass. Strict RIGHT SIDE PROFILE onehelmeyeslot, fullbody512square. Same physicalhead/body scale asidle standing430px helmcresttop50, feet480,hipx256. TWO arms/hands TWO legs exactly, allshieldedges/swordtip/crest/limbs insidepadding. No otherperson, no gold/glow/aura/sparks/fragments. Pose: SWORD STRIKE: short sword fullyextended RIGHT past shieldedge, bodyforwardlunge, shieldguardsfronttorso. Swordarm clearlybehindshield extendingpastedge, twohands only, ONE straight shortblade withcontinuoushilt, fullvisible tipinside.",
+      "file": "aeneas/aeneas_attack_02.png",
+      "normalization": {
+        "ratio": 0.835,
+        "anchor_x": 0.42,
+        "baseline": 480
+      },
+      "bytes": 33944
     }
   ],
   "completed": [
@@ -4422,13 +4521,13 @@
     "satyr",
     "asclepius",
     "orpheus",
-    "dionysus"
+    "dionysus",
+    "aeneas"
   ],
-  "active": "aeneas",
+  "active": "aphrodite",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "aeneas",
       "aphrodite",
       "hephaestus",
       "apollo",
@@ -4493,7 +4592,8 @@
       "satyr",
       "asclepius",
       "orpheus",
-      "dionysus"
+      "dionysus",
+      "aeneas"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -4533,7 +4633,8 @@
     "satyr": "approved",
     "asclepius": "approved",
     "orpheus": "approved",
-    "dionysus": "approved"
+    "dionysus": "approved",
+    "aeneas": "approved"
   },
   "rejected_frames": [
     {
