@@ -818,6 +818,11 @@
       "ratio": 0.9760765550239234,
       "anchor_x": 0.515,
       "baseline": 480
+    },
+    "sekhmet": {
+      "ratio": 0.886762360446571,
+      "anchor_x": 0.55,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3785,6 +3790,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Hathor portrait for COMPLETE HEAD-TO-HIPS FRAMING. Preserve EXACT face, smile, THREE-QUARTER view with both eyes and both shoulders, hair, cow ears, horns with RED disc, beaded collar, fitted dress and sistrum. Make entire portrait silhouette slightly smaller on vertical3:4 transparent canvas to provide generous clear margins on EVERY side. Finish dress at hips with SINGLE continuous clean INK lower contour and generous transparent padding UNDERNEATH, NO thighs or legs. Bring free hand up naturally to rest near waist so BOTH hands are fully visible rather than cutting a wrist at bottom. Entire horns, flowing hair and sistrum loop/crossbars/beads/handle inside frame. Rattle beads PLAIN SOLID blood red disks outlined in ink with absolutely NO white spots, glints, sparkle or metallic shine. Other fills uniform flat bone/ink/blood with hard graphic ink shadows, no gradients. Face upperhalf, exactly2 arms/hands, no effects, no stray bottom pixel strips.",
       "file": "hathor/hathor_portrait.png",
       "bytes": 93705
+    },
+    {
+      "id": "sekhmet",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5c567edc-f4e6-4260-828e-a01e681ce979.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Sekhmet idle ONLY palette cleanup. Preserve exact lioness anatomy, snarling muzzle, NO mane, crown cobra and red disc, broad collar, fitted red dress, sandals, HUGE raised khopesh silhouette/position/shape, neutral full body RIGHT profile pose and transparency. Remove ALL tan, yellow, gold, amber, brown, orange and warm cream-shaded highlights. Entire khopesh blade ONE uniform solid #EDE6D6 BONE with only hard-edged #1A1A1E INK carved shapes; especially blade TIP must have NO tan patch, no glow or shine. Feline iris tiny BLOOD RED #8C2F20 with INK pupil, never amber/yellow. Red dress and disc uniform solid blood red with permitted hard-edged litred shapes, no gradients. Skin uniform bone, no soft shaded warm fill. Exactly2 arms/hands/legs, all sword ends/crown fully framed.",
+      "file": "sekhmet/sekhmet_idle_01.png",
+      "bytes": 28107
+    },
+    {
+      "id": "sekhmet",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-cb248c0a-0ab5-4779-b511-8e4e78f15a7c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Sekhmet, Egyptian Eye of Ra in her killing mood. LIONESS head with NO MANE, bared sharp teeth snarling, blood-red sun disc and cobra on crown. BLOOD-RED fitted long dress, broad collar, HUGE khopesh curved sickle sword raised. Powerful athletic female body, hits hardest of gods and looks it. Lioness head and raised khopesh define silhouette. No gold. Image1 approved Sekhmet idle EXACT identity, preserve lioness face/short muzzle/no mane, RED iris and ink pupil, crown cobra/red disc, costume, huge khopesh shape and proportions. Otherimages styleonly. Khopesh blade solid uniform BONE with INK cuts, NO warm shaded tips, tan highlights, shine. RED fitted dress, bone/ink/red collar. 512x512 FULL BODY STRICT RIGHT profile ONE feline eye. Same physical scale as idle, standing crown top to feet430px, hipsx256, feet y480. All sword ends and crown inside with padding. Exactly2 arms/hands,2legs. Pose: Walk CONTACT RIGHT: front heel planted forward RIGHT, rear foot trailing LEFT touching toe. Upright powerful stride, huge khopesh raised beside/above shoulder but completely inside. Free arm naturally balanced. Preserve RED fitted ankle dress with moving hem and same slit.",
+      "file": "sekhmet/sekhmet_walk_01.png",
+      "normalization": {
+        "ratio": 0.886762360446571,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 27683
+    },
+    {
+      "id": "sekhmet",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-de6e8aaf-a646-4213-9487-6a63654c8509.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Sekhmet, Egyptian Eye of Ra in her killing mood. LIONESS head with NO MANE, bared sharp teeth snarling, blood-red sun disc and cobra on crown. BLOOD-RED fitted long dress, broad collar, HUGE khopesh curved sickle sword raised. Powerful athletic female body, hits hardest of gods and looks it. Lioness head and raised khopesh define silhouette. No gold. Image1 approved Sekhmet idle EXACT identity, preserve lioness face/short muzzle/no mane, RED iris and ink pupil, crown cobra/red disc, costume, huge khopesh shape and proportions. Otherimages styleonly. Khopesh blade solid uniform BONE with INK cuts, NO warm shaded tips, tan highlights, shine. RED fitted dress, bone/ink/red collar. 512x512 FULL BODY STRICT RIGHT profile ONE feline eye. Same physical scale as idle, standing crown top to feet430px, hipsx256, feet y480. All sword ends and crown inside with padding. Exactly2 arms/hands,2legs. Pose: Walk PASSING RIGHT: one supporting leg directly beneath pelvis, opposite thigh crossing with knee sharply raised forward and bent, lifted foot visibly above ground. NARROW passing stance, NO wide stride. Body slightly raised. Huge khopesh raised beside shoulder, free arm balanced, preserve fitted red dress and slit.",
+      "file": "sekhmet/sekhmet_walk_02.png",
+      "normalization": {
+        "ratio": 0.886762360446571,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 26423
+    },
+    {
+      "id": "sekhmet",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3636cdd3-426f-463a-be60-459c2b5657cc.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Sekhmet, Egyptian Eye of Ra in her killing mood. LIONESS head with NO MANE, bared sharp teeth snarling, blood-red sun disc and cobra on crown. BLOOD-RED fitted long dress, broad collar, HUGE khopesh curved sickle sword raised. Powerful athletic female body, hits hardest of gods and looks it. Lioness head and raised khopesh define silhouette. No gold. Image1 approved Sekhmet idle EXACT identity, preserve lioness face/short muzzle/no mane, RED iris and ink pupil, crown cobra/red disc, costume, huge khopesh shape and proportions. Otherimages styleonly. Khopesh blade solid uniform BONE with INK cuts, NO warm shaded tips, tan highlights, shine. RED fitted dress, bone/ink/red collar. 512x512 FULL BODY STRICT RIGHT profile ONE feline eye. Same physical scale as idle, standing crown top to feet430px, hipsx256, feet y480. All sword ends and crown inside with padding. Exactly2 arms/hands,2legs. Pose: Huge khopesh drawn BACK LEFT at full wind-up, weapon hand above rear shoulder, blade angled diagonally overhead RIGHT but all blade and handle completely framed. Body coiled, knees bent, fierce snarl. Other arm extended slightly for balance. Exactly2 arms/hands and ONE hand on khopesh. Preserve same huge blade length/shape.",
+      "file": "sekhmet/sekhmet_attack_01.png",
+      "normalization": {
+        "ratio": 0.886762360446571,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 30973
+    },
+    {
+      "id": "sekhmet",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-da9e1816-1fc2-46b7-89ea-8440bc992fc8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Sekhmet, Egyptian Eye of Ra in her killing mood. LIONESS head with NO MANE, bared sharp teeth snarling, blood-red sun disc and cobra on crown. BLOOD-RED fitted long dress, broad collar, HUGE khopesh curved sickle sword raised. Powerful athletic female body, hits hardest of gods and looks it. Lioness head and raised khopesh define silhouette. No gold. Image1 approved Sekhmet idle EXACT identity, preserve lioness face/short muzzle/no mane, RED iris and ink pupil, crown cobra/red disc, costume, huge khopesh shape and proportions. Otherimages styleonly. Khopesh blade solid uniform BONE with INK cuts, NO warm shaded tips, tan highlights, shine. RED fitted dress, bone/ink/red collar. 512x512 FULL BODY STRICT RIGHT profile ONE feline eye. Same physical scale as idle, standing crown top to feet430px, hipsx256, feet y480. All sword ends and crown inside with padding. Exactly2 arms/hands,2legs. Pose: Huge khopesh swung/thrust FORWARD RIGHT at full extension, weapon arm straight and body committed into forward lunge. Blade tipped slightly upward so full huge sword fits inside with padding. Other arm balanced close to body. Exactly2 arms/hands, ONE hand on khopesh. Preserve blade shape/size, no motion arcs, no sparks.",
+      "file": "sekhmet/sekhmet_attack_02.png",
+      "normalization": {
+        "ratio": 0.886762360446571,
+        "anchor_x": 0.35,
+        "baseline": 480
+      },
+      "bytes": 26312
+    },
+    {
+      "id": "sekhmet",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-941aca22-63cd-4d80-b37c-e8147f963906.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Sekhmet, Egyptian Eye of Ra in her killing mood. LIONESS head with NO MANE, bared sharp teeth snarling, blood-red sun disc and cobra on crown. BLOOD-RED fitted long dress, broad collar, HUGE khopesh curved sickle sword raised. Powerful athletic female body, hits hardest of gods and looks it. Lioness head and raised khopesh define silhouette. No gold. Image1 approved Sekhmet idle EXACT identity, preserve lioness face/short muzzle/no mane, RED iris and ink pupil, crown cobra/red disc, costume, huge khopesh shape and proportions. Otherimages styleonly. Khopesh blade solid uniform BONE with INK cuts, NO warm shaded tips, tan highlights, shine. RED fitted dress, bone/ink/red collar. 512x512 FULL BODY STRICT RIGHT profile ONE feline eye. Same physical scale as idle, standing crown top to feet430px, hipsx256, feet y480. All sword ends and crown inside with padding. Exactly2 arms/hands,2legs. Pose: Hit recoil backward LEFT, snarling head snaps back but remains RIGHT profile, upper body leaning back, knees bent. Huge khopesh lowers diagonally but remains held in one hand close to body; freehand near chest. Entire blade/handle/crown framed, exactly2 arms/hands.",
+      "file": "sekhmet/sekhmet_hit_01.png",
+      "normalization": {
+        "ratio": 0.886762360446571,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 28244
+    },
+    {
+      "id": "sekhmet",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-20689010-de51-42d6-bc3a-1061df1c036f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Sekhmet, Egyptian Eye of Ra in her killing mood. LIONESS head with NO MANE, bared sharp teeth snarling, blood-red sun disc and cobra on crown. BLOOD-RED fitted long dress, broad collar, HUGE khopesh curved sickle sword raised. Powerful athletic female body, hits hardest of gods and looks it. Lioness head and raised khopesh define silhouette. No gold. Image1 approved Sekhmet idle EXACT identity, preserve lioness face/short muzzle/no mane, RED iris and ink pupil, crown cobra/red disc, costume, huge khopesh shape and proportions. Otherimages styleonly. Khopesh blade solid uniform BONE with INK cuts, NO warm shaded tips, tan highlights, shine. RED fitted dress, bone/ink/red collar. 512x512 FULL BODY STRICT RIGHT profile ONE feline eye. Same physical scale as idle, standing crown top to feet430px, hipsx256, feet y480. All sword ends and crown inside with padding. Exactly2 arms/hands,2legs. Pose: FALLING backward LEFT, losing balance with knees clearly buckling, torso tilted back and down. Khopesh weapon hand drops low, blade lowered diagonally across front within frame. Free hand reaches RIGHT for balance. Head remains RIGHT, cobra crown intact, all sword parts visible. A distinct falling pose, no fragments, exactly2 arms/hands.",
+      "file": "sekhmet/sekhmet_death_01.png",
+      "normalization": {
+        "ratio": 0.886762360446571,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 28942
+    },
+    {
+      "id": "sekhmet",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e2178c8d-cbe4-4f48-84d2-323bea1080e8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Sekhmet portrait, exact design reference. Correct only composition/framing and finish. Entire portrait silhouette slightly SMALLER, ample clear transparent padding ALL sides. ENTIRE raised khopesh blade TIP and HANDLE MUST be inside with padding, angle steeply diagonal beside head as needed. Preserve EXACT huge blade shape/length, lioness snarl, NO mane, RED eyes and ink pupils, cobra/red disc, collar and red fitted dress. Portrait head-to-hips THREE-QUARTER turned slightly RIGHT, BOTH shoulders and BOTH feline eyes visible, far eye partly but CLEARLY visible, face upperhalf. BOTH hands fully visible, freehand rests near waist. Finish hips with SINGLE smooth continuous clean INK lower contour, generous transparent padding underneath. Remove ALL stray RED pixels/strips beneath bottom contour; absolutely clean alpha cutout edge. NO thighs/legs, no crop at canvas edges. Flat bone/ink/red fills, no gradients or warm gold/tan highlights.",
+      "file": "sekhmet/sekhmet_portrait.png",
+      "bytes": 75094
     }
   ],
   "completed": [
@@ -3822,13 +3921,13 @@
     "horus",
     "nephthys",
     "thoth",
-    "hathor"
+    "hathor",
+    "sekhmet"
   ],
-  "active": "sekhmet",
+  "active": "ptah",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "sekhmet",
       "ptah",
       "satyr",
       "asclepius",
@@ -3893,7 +3992,8 @@
       "horus",
       "nephthys",
       "thoth",
-      "hathor"
+      "hathor",
+      "sekhmet"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3927,7 +4027,8 @@
     "horus": "approved",
     "nephthys": "approved",
     "thoth": "approved",
-    "hathor": "approved"
+    "hathor": "approved",
+    "sekhmet": "approved"
   },
   "rejected_frames": [
     {
@@ -4240,6 +4341,20 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ebd43671-8909-4df1-a1a5-b853069fe8be.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Hathor, cow-eared Egyptian goddess of joy. Long hair, clearly visible cow ears and curving horns holding a BLOOD-RED sun disc, wide beaded collar, long fitted dress, sistrum (loop-topped rattle with crossbars) weapon. Joyful and dangerous. Horns and RED disc define silhouette. NO gold. Image1 approved Hathor idle EXACT identity, remaining images style only. NEW portrait768x1024 vertical3:4 HEAD TO HIPS. THREE-QUARTER turned slightly RIGHT, BOTH shoulders and BOTH eyes far eye partly visible. Smile, face upper half. Horns and plain flat BLOOD RED disc fully visible. Sistrum raised beside head, complete loop/crossbars/beads AND handle fully within image. EXACT same cow ears, long hair, collar, fitted dress and proportions. No full body, no thighs, clean continuous hip lower contour with transparent padding, no stray pixel strip. Flat fills no gradients or shiny beads. Exactly2 arms/hands.",
       "rejection_reason": "Portrait truncates the torso and free wrist at bottom edge; sistrum beads have shiny white glints."
+    },
+    {
+      "id": "sekhmet",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8a337e79-b831-4f15-85d7-bb73b20b952b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Sekhmet, Egyptian Eye of Ra in her killing mood. LIONESS head with NO MANE, bared sharp teeth snarling, blood-red sun disc and cobra on crown. BLOOD-RED fitted long dress, broad collar, HUGE khopesh curved sickle sword raised. Powerful athletic female body, hits hardest of gods and looks it. Lioness head and raised khopesh define silhouette. No gold. All three references STYLE only, no copied human heads/weapons. Neutral battle-ready standing FULL BODY 512x512 square sprite, STRICT RIGHT side profile showing ONE feline eye, snarling short lioness muzzle and round feline ears, NO mane and NO human hair. One hand raises huge khopesh beside head, other hand relaxed. Exactly2 arms/hands/legs. Fitted blood-red ankle-length dress and broad bone/ink/red collar, bone sandals. Sun disc plain SOLID BLOOD RED, cobra compact attached to crown; no separate snake companion. Crown top near y50, feet y480, figure430px including crown, hips x256, head50px. Entire sword tip/handle, cobra and limbs inside ample padding. No aura, glow, fragments or sparks. Uniform flat fills, no gradients.",
+      "rejection_reason": "Khopesh blade tip has a tan/gold warm highlight; feline iris has an amber accent outside the allowed palette."
+    },
+    {
+      "id": "sekhmet",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-58b91763-1eab-46ce-ae93-b6892f448796.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Sekhmet, Egyptian Eye of Ra in her killing mood. LIONESS head with NO MANE, bared sharp teeth snarling, blood-red sun disc and cobra on crown. BLOOD-RED fitted long dress, broad collar, HUGE khopesh curved sickle sword raised. Powerful athletic female body, hits hardest of gods and looks it. Lioness head and raised khopesh define silhouette. No gold. Image1 approved Sekhmet idle EXACT identity; remaining images styleonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS THREE-QUARTER turned slightly RIGHT, BOTH shoulders and BOTH feline eyes, far eye partly visible. Lioness head snarling, NO mane, tiny BLOOD-RED irises with INK pupils, NO amber/gold/yellow eyes. Plain blood-red sun disc and attached crown cobra fully framed, faceupperhalf. Raise khopesh beside head at STEEP DIAGONAL angle so ENTIRE huge blade TIP and HANDLE fit comfortably inside with margin. Blade uniform BONE with hard INK shadows, NO tan/gold shaded patches. Preserve fitted BLOOD RED dress, collar, exact weaponshape/proportions. BOTH hands visible, freehand near waist. Clean continuous INK hip lower contour, transparent padding below; no thighs/legs, no cropped wrists, no stray pixel strips. Exactly2arms/hands.",
+      "rejection_reason": "Portrait hip lower contour has an obvious stray red pixel strip; raised sword has minimal margin at right edge."
     }
   ]
 }
