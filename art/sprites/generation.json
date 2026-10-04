@@ -773,6 +773,11 @@
       "ratio": 0.9393939393939394,
       "anchor_x": 0.46,
       "baseline": 480
+    },
+    "skadi": {
+      "ratio": 0.9473684210526315,
+      "anchor_x": 0.59,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2894,6 +2899,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Magni idle EXACT identity/design reference, other images STYLE only. Preserve exact stocky youthful beardless face, bone/ink braided hair, fur mantle, bare muscled chest, bone/ink fur trousers/boots, blood-red belt and wrist wraps. SAME huge long-handled maul with rough angular bone/ink grey stone head and red binding; no metal Mjolnir. Exactly2arms2legs. No helmet, no beard, no red cloak. Thor's son, stronger than Thor at three days old: a stocky young powerhouse with a beardless face, braided hair, a fur mantle over bare muscled shoulders, and a huge two-handed maul with a rough-hewn stone head (not Mj\u00f6lnir). Deliberately different from Thor: no helm, no red cloak, no beard. The maul and the mantle define the silhouette. No gold. Portrait768x1024vertical3:4 head to hips, NEW near-frontal three-quarter turned15degrees RIGHT showing BOTH eyes/cheeks and BOTH shoulders. Young proud grin, face upper half. Huge stone maul resting on shoulder, complete stone head and full handle INCLUDING butt end inside frame with30px transparent margins; angle handle sideways across upper chest so it fits head-to-hips. Fully include braids/mantle and hands, no legs/full body. Clean continuous ink contour at lower head-to-hips cutout edge with transparent padding, no pixel glitch strips or colored fragments. All stone highlights bone/ink mixed grey, no brown/tan/yellow/gold.\nEdit target image1 is corrected near-frontal portrait, identity idle image2. Preserve this exact face, grin, camera, hair, costume and weapon. Only adjust framing: reduce ENTIRE portrait cutout to about85% of current size and center within same vertical3:4 canvas, leaving spacious transparent margins on ALL four sides. Reconstruct full right contour of huge stone maul head currently touching right canvas edge, whole head must have at least40px space to right. Head-to-hips only; no legs added. Clean ink lower contour with transparent padding, no white/yellow/red glitch strips. Bone/ink/blood only.",
       "file": "magni/magni_portrait.png",
       "bytes": 115273
+    },
+    {
+      "id": "skadi",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-bed0cf39-5275-4997-8ca7-88cdb84dadc0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nAll3 input images STYLE only. Subject: Ska\u00f0i. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Stern female huntress. Deep bone/ink fur hood frames face, heavy bone fur cloak with ink chisel cuts, simple bone/ink tunic and trousers beneath, blood-red binding at belt/wrists only. Bone/ink quiver on back, bone/ink recurved bow with dark string and single bone arrow. Exactly2arms2legs. Distinct WIDE SNOWSHOES: flat oval bone/ink lattice frames strapped beneath both fur-lined boots, broad protruding toes and heels, not skis. No snow scene/ground/floor. 512x512 full body strictly RIGHT profile oneeye, standing hoodtop50, support snowshoebaseline480 hipcenter256 height430. Full bow and snowshoes inside transparent margin. Idle_01: both feet planted, bow held upright ahead with one arrow lightly nocked ready at waist, relaxed string; fixed stern gaze.",
+      "file": "skadi/skadi_idle_01.png",
+      "bytes": 39747
+    },
+    {
+      "id": "skadi",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8a8c4a8c-0718-4712-b96d-0caf35a2e051.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ska\u00f0i idle EXACT identity/design reference; images2-4 STYLE only. Preserve SAME stern female face, deep bone/ink fur hood and cloak, braid, bone/ink tunic/trousers, red wrist binding/belt/boot straps, quiver with bone arrow feathers, recurved bone/ink bow with ink string. Wide oval bone/ink lattice SNOWSHOES strapped beneath both fur boots, toe AND heel frames clearly visible. Exactly2arms2legs2snowshoes. No skis, scene or added accessories. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Battle512x512square full body STRICT RIGHT PROFILE oneeye. Preserve idle physical scale, hoodtop50 standingheight430, hips x256 supporting snowshoe baseline480. Bent/falling head naturally lower; do not enlarge. Full bow tips, arrow, cape and both entire snowshoes visible inside with clear margins. Pose: Walk contact step: front leg forward with entire snowshoe planted flat, rear leg behind snowshoe touching down, carry upright bow with lightly nocked arrow as idle. Two complete oval snowshoes separate and visible.",
+      "file": "skadi/skadi_walk_01.png",
+      "normalization": {
+        "ratio": 0.8851674641148325,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 40913
+    },
+    {
+      "id": "skadi",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7e5fdf7d-efae-44bc-ba8d-e4a41a7388de.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ska\u00f0i idle EXACT identity/design reference; images2-4 STYLE only. Preserve SAME stern female face, deep bone/ink fur hood and cloak, braid, bone/ink tunic/trousers, red wrist binding/belt/boot straps, quiver with bone arrow feathers, recurved bone/ink bow with ink string. Wide oval bone/ink lattice SNOWSHOES strapped beneath both fur boots, toe AND heel frames clearly visible. Exactly2arms2legs2snowshoes. No skis, scene or added accessories. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Battle512x512square full body STRICT RIGHT PROFILE oneeye. Preserve idle physical scale, hoodtop50 standingheight430, hips x256 supporting snowshoe baseline480. Bent/falling head naturally lower; do not enlarge. Full bow tips, arrow, cape and both entire snowshoes visible inside with clear margins. Pose: Walk passing: ONE support foot and full snowshoe planted under hips, OTHER knee raised forwards and full attached snowshoe lifted visibly beside supporting calf, legs crossing. Not long stride/two feet down. Both whole wide oval snowshoes fit frame. Bow ready like idle.",
+      "file": "skadi/skadi_walk_02.png",
+      "normalization": {
+        "ratio": 0.9449760765550239,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 38522
+    },
+    {
+      "id": "skadi",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-262dc80c-4794-4116-ba0b-14a28c55c87e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ska\u00f0i idle EXACT identity/design reference; images2-4 STYLE only. Preserve SAME stern female face, deep bone/ink fur hood and cloak, braid, bone/ink tunic/trousers, red wrist binding/belt/boot straps, quiver with bone arrow feathers, recurved bone/ink bow with ink string. Wide oval bone/ink lattice SNOWSHOES strapped beneath both fur boots, toe AND heel frames clearly visible. Exactly2arms2legs2snowshoes. No skis, scene or added accessories. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Battle512x512square full body STRICT RIGHT PROFILE oneeye. Preserve idle physical scale, hoodtop50 standingheight430, hips x256 supporting snowshoe baseline480. Bent/falling head naturally lower; do not enlarge. Full bow tips, arrow, cape and both entire snowshoes visible inside with clear margins. Pose: Arrow nocked and bow fully drawn to cheek: bow arm extended RIGHT, other hand draws arrow/string to cheek, elbow back. Fixed steady stare aims RIGHT. Bowstring connects both tips through nock; arrow across bow grip. Snowshoes planted in narrow balanced stance; hips stable.",
+      "file": "skadi/skadi_attack_01.png",
+      "normalization": {
+        "ratio": 0.9473684210526315,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 37656
+    },
+    {
+      "id": "skadi",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-36015f7e-5197-49a5-8798-6837543033e9.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ska\u00f0i idle EXACT identity/design reference; images2-4 STYLE only. Preserve SAME stern female face, deep bone/ink fur hood and cloak, braid, bone/ink tunic/trousers, red wrist binding/belt/boot straps, quiver with bone arrow feathers, recurved bone/ink bow with ink string. Wide oval bone/ink lattice SNOWSHOES strapped beneath both fur boots, toe AND heel frames clearly visible. Exactly2arms2legs2snowshoes. No skis, scene or added accessories. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Battle512x512square full body STRICT RIGHT PROFILE oneeye. Preserve idle physical scale, hoodtop50 standingheight430, hips x256 supporting snowshoe baseline480. Bent/falling head naturally lower; do not enlarge. Full bow tips, arrow, cape and both entire snowshoes visible inside with clear margins. Pose: Recoiling backward, hooded head snapped slightly back but face RIGHT, knees bent; both hands retain complete bow and single ready arrow diagonally lowered in front. Both entire snowshoes visible, support snowshoe baseline480.",
+      "file": "skadi/skadi_hit_01.png",
+      "normalization": {
+        "ratio": 0.9473684210526315,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 35370
+    },
+    {
+      "id": "skadi",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8ac34752-4fea-4b11-938c-51c40c34ac48.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ska\u00f0i idle EXACT identity/design reference; images2-4 STYLE only. Preserve SAME stern female face, deep bone/ink fur hood and cloak, braid, bone/ink tunic/trousers, red wrist binding/belt/boot straps, quiver with bone arrow feathers, recurved bone/ink bow with ink string. Wide oval bone/ink lattice SNOWSHOES strapped beneath both fur boots, toe AND heel frames clearly visible. Exactly2arms2legs2snowshoes. No skis, scene or added accessories. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Battle512x512square full body STRICT RIGHT PROFILE oneeye. Preserve idle physical scale, hoodtop50 standingheight430, hips x256 supporting snowshoe baseline480. Bent/falling head naturally lower; do not enlarge. Full bow tips, arrow, cape and both entire snowshoes visible inside with clear margins. Pose: Falling backward, torso sinks and knees fold awkwardly in wide snowshoes. One hand reaches back to catch fall; other loosens bow dropping diagonally beside body. Both snowshoes stay strapped to boots and fully visible. Exactly2arms2legs2snowshoes, no enlargement. Single ready arrow dropping beside bow, quiver stays on back.",
+      "file": "skadi/skadi_death_01.png",
+      "normalization": {
+        "ratio": 0.9,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 38553
+    },
+    {
+      "id": "skadi",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-819b7213-657e-4fe5-b127-418e16e39852.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ska\u00f0i idle EXACT identity/design reference; images2-4 STYLE only. Preserve SAME stern female face, deep bone/ink fur hood and cloak, braid, bone/ink tunic/trousers, red wrist binding/belt/boot straps, quiver with bone arrow feathers, recurved bone/ink bow with ink string. Wide oval bone/ink lattice SNOWSHOES strapped beneath both fur boots, toe AND heel frames clearly visible. Exactly2arms2legs2snowshoes. No skis, scene or added accessories. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Portrait768x1024vertical3:4 HEAD TO HIPS. NEW near-frontal three-quarter turned15degrees RIGHT; BOTH eyes and BOTH cheeks clearly visible, both shoulders, steady eyes under deep fur hood. Face upper half. Bow drawn: one forward hand holds bow, other draws nocked arrow to cheek. Complete BOTH bow tips, string, arrowhead/tail, hood and hands INSIDE canvas with spacious30px transparent margins ALL sides. Angle bow gently across chest so entire bow fits portrait. No legs/snowshoes/full-body framing. Clean continuous ink cutout contour along lower edge with transparent empty padding, no pixel glitches/fragment strip. No gold/glow/aura/particles.",
+      "file": "skadi/skadi_portrait.png",
+      "bytes": 114824
+    },
+    {
+      "id": "skadi",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a59f75fd-f1ca-4ec1-8347-9d188a99a7bc.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ska\u00f0i idle EXACT identity/design reference; images2-4 STYLE only. Preserve SAME stern female face, deep bone/ink fur hood and cloak, braid, bone/ink tunic/trousers, red wrist binding/belt/boot straps, quiver with bone arrow feathers, recurved bone/ink bow with ink string. Wide oval bone/ink lattice SNOWSHOES strapped beneath both fur boots, toe AND heel frames clearly visible. Exactly2arms2legs2snowshoes. No skis, scene or added accessories. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Battle512x512square full body STRICT RIGHT PROFILE oneeye. Preserve idle physical scale, hoodtop50 standingheight430, hips x256 supporting snowshoe baseline480. Bent/falling head naturally lower; do not enlarge. Full bow tips, arrow, cape and both entire snowshoes visible inside with clear margins. Pose: Arrow JUST RELEASED. Edit target image1; approved idle image2 exact identity, others style. REMOVE ONLY the erroneous THIRD HAND at waist and any extra sleeve there; replace that small area with uninterrupted tunic folds and red belt. Exactly TWO ARMS and TWO HANDS total: one extended RIGHT gripping bow, the other bent up with open empty hand beside cheek. Keep these two existing arms unchanged. Preserve hood/costume, released single arrow, quiver, snowshoes, pose, scale, strictRIGHT profile and margins. No hand or arm at waist. No gold/glow/fragments.",
+      "file": "skadi/skadi_attack_02.png",
+      "normalization": {
+        "ratio": 0.9473684210526315,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 35809
     }
   ],
   "completed": [
@@ -2922,13 +3021,13 @@
     "brynhildr",
     "hodr",
     "vali",
-    "magni"
+    "magni",
+    "skadi"
   ],
-  "active": "skadi",
+  "active": "ra",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "skadi",
       "ra",
       "osiris",
       "isis",
@@ -2993,7 +3092,8 @@
       "brynhildr",
       "hodr",
       "vali",
-      "magni"
+      "magni",
+      "skadi"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3018,7 +3118,8 @@
     "brynhildr": "approved",
     "hodr": "approved",
     "vali": "approved",
-    "magni": "approved"
+    "magni": "approved",
+    "skadi": "approved"
   },
   "rejected_frames": [
     {
@@ -3261,6 +3362,13 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ad043d31-6e1c-4b38-84bd-eb354f2286c9.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Magni idle EXACT identity/design reference, other images STYLE only. Preserve exact stocky youthful beardless face, bone/ink braided hair, fur mantle, bare muscled chest, bone/ink fur trousers/boots, blood-red belt and wrist wraps. SAME huge long-handled maul with rough angular bone/ink grey stone head and red binding; no metal Mjolnir. Exactly2arms2legs. No helmet, no beard, no red cloak. Thor's son, stronger than Thor at three days old: a stocky young powerhouse with a beardless face, braided hair, a fur mantle over bare muscled shoulders, and a huge two-handed maul with a rough-hewn stone head (not Mj\u00f6lnir). Deliberately different from Thor: no helm, no red cloak, no beard. The maul and the mantle define the silhouette. No gold. Portrait768x1024vertical3:4 head to hips, NEW near-frontal three-quarter turned15degrees RIGHT showing BOTH eyes/cheeks and BOTH shoulders. Young proud grin, face upper half. Huge stone maul resting on shoulder, complete stone head and full handle INCLUDING butt end inside frame with30px transparent margins; angle handle sideways across upper chest so it fits head-to-hips. Fully include braids/mantle and hands, no legs/full body. Clean continuous ink contour at lower head-to-hips cutout edge with transparent padding, no pixel glitch strips or colored fragments. All stone highlights bone/ink mixed grey, no brown/tan/yellow/gold.\nEdit target image1; approved idle image2 exact identity; remainingimages style. Correct camera and margins: turn head and torso nearly frontally15degrees RIGHT showing BOTH EYES and BOTH CHEEKS clearly, nose close to face center, both shoulders visible. Keep proud young grin. Complete maul head and butt end fully inside with clear transparent margins; rest maul against shoulder. Preserve costume, braid, exact massive stone weapon, proportions. Keep clean complete ink contour along lower head-to-hips cutout, no pixel noise/fragments.",
       "rejection_reason": "Maul outline reaches right canvas edge; requires transparent padding."
+    },
+    {
+      "id": "skadi",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-eb9c5891-57b9-4845-92da-7483247409e0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ska\u00f0i idle EXACT identity/design reference; images2-4 STYLE only. Preserve SAME stern female face, deep bone/ink fur hood and cloak, braid, bone/ink tunic/trousers, red wrist binding/belt/boot straps, quiver with bone arrow feathers, recurved bone/ink bow with ink string. Wide oval bone/ink lattice SNOWSHOES strapped beneath both fur boots, toe AND heel frames clearly visible. Exactly2arms2legs2snowshoes. No skis, scene or added accessories. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Battle512x512square full body STRICT RIGHT PROFILE oneeye. Preserve idle physical scale, hoodtop50 standingheight430, hips x256 supporting snowshoe baseline480. Bent/falling head naturally lower; do not enlarge. Full bow tips, arrow, cape and both entire snowshoes visible inside with clear margins. Pose: Arrow just released: bow arm extended RIGHT, empty drawing hand beside cheek with open fingers, string returned toward rest. Exactly ONE released arrow just past bow pointing gently upward RIGHT wholly inside frame; no duplicate nocked arrow. Snowshoes planted compactly so bow/projectile/body fit without shrinking. Quiver still on back. No effects/motion streaks.",
+      "rejection_reason": "Release pose has a third hand at waist."
     }
   ]
 }
