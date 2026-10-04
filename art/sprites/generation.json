@@ -813,6 +813,11 @@
       "ratio": 0.9649122807017544,
       "anchor_x": 0.53,
       "baseline": 480
+    },
+    "hathor": {
+      "ratio": 0.9760765550239234,
+      "anchor_x": 0.515,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3686,6 +3691,100 @@
         "baseline": 480
       },
       "bytes": 24520
+    },
+    {
+      "id": "hathor",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-20fb86bb-f5d0-497b-bd2a-4598bca66142.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Hathor idle. Preserve EXACT silhouette, cow ears, long hair, horns, collar, fitted dress, sistrum, anatomy, neutral standing RIGHT profile pose, proportions and transparent composition. SINGLE targeted correction: flatten ALL color fills. Sun disc must be ONE uniform solid #8C2F20 blood red with ink rim and carved ink strokes ONLY, no lighter/darker red gradient anywhere inside. Sistrum rattle beads plain solid blood red with ink outline, NO shiny white glints or glowing dots. Skin, dress and horns ONE uniform solid #EDE6D6 bone with hard-edged ink shadow shapes only. Clean flat woodcut, no soft transitions, no gradients, no shine. Entire figure fully visible, exactly2 arms/hands.",
+      "file": "hathor/hathor_idle_01.png",
+      "bytes": 23789
+    },
+    {
+      "id": "hathor",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-622cd033-9d37-4e62-b791-3bb19d710246.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Hathor, cow-eared Egyptian goddess of joy. Long hair, clearly visible cow ears and curving horns holding a BLOOD-RED sun disc, wide beaded collar, long fitted dress, sistrum (loop-topped rattle with crossbars) weapon. Joyful and dangerous. Horns and RED disc define silhouette. NO gold. Image1 approved Hathor idle EXACT identity; preserve long hair, cow ears, horns/red disc, face, collar, fitted dress, sandals and sistrum. Other images STYLE only. ALL fills uniform flat, red disc plain SOLID blood red, no shiny beads/white glints on rattle. 512x512 full body STRICT RIGHT profile ONE eye. Same physical scale as idle, standing crown top to feet430px, hips nearx256, feet baseline480; all limbs, horns and rattle inside with padding. Exactly2 arms/hands and2 legs. Pose: Walk CONTACT: front heel planted forward RIGHT, rear foot trailing LEFT on toe. Readable stride beneath fitted dress, preserve ankle-length fitted dress with naturally moving hem. Sistrum upright held near shoulder, free arm slightly back.",
+      "file": "hathor/hathor_walk_01.png",
+      "normalization": {
+        "ratio": 0.9760765550239234,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 25775
+    },
+    {
+      "id": "hathor",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5540c9f3-9b52-4d91-ba45-f42c1052c240.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Hathor, cow-eared Egyptian goddess of joy. Long hair, clearly visible cow ears and curving horns holding a BLOOD-RED sun disc, wide beaded collar, long fitted dress, sistrum (loop-topped rattle with crossbars) weapon. Joyful and dangerous. Horns and RED disc define silhouette. NO gold. Image1 approved Hathor idle EXACT identity; preserve long hair, cow ears, horns/red disc, face, collar, fitted dress, sandals and sistrum. Other images STYLE only. ALL fills uniform flat, red disc plain SOLID blood red, no shiny beads/white glints on rattle. 512x512 full body STRICT RIGHT profile ONE eye. Same physical scale as idle, standing crown top to feet430px, hips nearx256, feet baseline480; all limbs, horns and rattle inside with padding. Exactly2 arms/hands and2 legs. Pose: Walk PASSING: legs crossing, supporting leg directly beneath pelvis, opposite knee raised clearly RIGHT and bent with lifted foot above ground. NARROW passing stance, NO wide stride. Body slightly raised. Fitted dress bends with raised knee, hem stays ankle length, preserve dress. Sistrum upright near shoulder.",
+      "file": "hathor/hathor_walk_02.png",
+      "normalization": {
+        "ratio": 0.9760765550239234,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 23158
+    },
+    {
+      "id": "hathor",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a18cf806-f807-4d98-9243-6def52c9a89c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Hathor, cow-eared Egyptian goddess of joy. Long hair, clearly visible cow ears and curving horns holding a BLOOD-RED sun disc, wide beaded collar, long fitted dress, sistrum (loop-topped rattle with crossbars) weapon. Joyful and dangerous. Horns and RED disc define silhouette. NO gold. Image1 approved Hathor idle EXACT identity; preserve long hair, cow ears, horns/red disc, face, collar, fitted dress, sandals and sistrum. Other images STYLE only. ALL fills uniform flat, red disc plain SOLID blood red, no shiny beads/white glints on rattle. 512x512 full body STRICT RIGHT profile ONE eye. Same physical scale as idle, standing crown top to feet430px, hips nearx256, feet baseline480; all limbs, horns and rattle inside with padding. Exactly2 arms/hands and2 legs. Pose: Sistrum wind-up: weapon hand drawn BACK LEFT beside shoulder, loop rattle angled diagonally upward over rear shoulder and fully inside image. Body coiled and knees slightly bent, other hand balanced naturally. Two arms/hands only, ONE hand grips rattle. No sound lines.",
+      "file": "hathor/hathor_attack_01.png",
+      "normalization": {
+        "ratio": 0.9760765550239234,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 27590
+    },
+    {
+      "id": "hathor",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-c6f5b146-2d28-41e6-9096-94a072f33445.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Hathor, cow-eared Egyptian goddess of joy. Long hair, clearly visible cow ears and curving horns holding a BLOOD-RED sun disc, wide beaded collar, long fitted dress, sistrum (loop-topped rattle with crossbars) weapon. Joyful and dangerous. Horns and RED disc define silhouette. NO gold. Image1 approved Hathor idle EXACT identity; preserve long hair, cow ears, horns/red disc, face, collar, fitted dress, sandals and sistrum. Other images STYLE only. ALL fills uniform flat, red disc plain SOLID blood red, no shiny beads/white glints on rattle. 512x512 full body STRICT RIGHT profile ONE eye. Same physical scale as idle, standing crown top to feet430px, hips nearx256, feet baseline480; all limbs, horns and rattle inside with padding. Exactly2 arms/hands and2 legs. Pose: Sistrum attack: weapon arm fully extended forward RIGHT mid-shake, loop rattle at longest reach, forward lean and small lunge. Other hand for balance close to body. Exactly2 arms/hands, ONE hand grips rattle. Loop and handle fully framed, no sound lines/magic effects.",
+      "file": "hathor/hathor_attack_02.png",
+      "normalization": {
+        "ratio": 0.9760765550239234,
+        "anchor_x": 0.48,
+        "baseline": 480
+      },
+      "bytes": 27651
+    },
+    {
+      "id": "hathor",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-808b9f09-f42e-46d9-baca-1f395dfbf462.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Hathor, cow-eared Egyptian goddess of joy. Long hair, clearly visible cow ears and curving horns holding a BLOOD-RED sun disc, wide beaded collar, long fitted dress, sistrum (loop-topped rattle with crossbars) weapon. Joyful and dangerous. Horns and RED disc define silhouette. NO gold. Image1 approved Hathor idle EXACT identity; preserve long hair, cow ears, horns/red disc, face, collar, fitted dress, sandals and sistrum. Other images STYLE only. ALL fills uniform flat, red disc plain SOLID blood red, no shiny beads/white glints on rattle. 512x512 full body STRICT RIGHT profile ONE eye. Same physical scale as idle, standing crown top to feet430px, hips nearx256, feet baseline480; all limbs, horns and rattle inside with padding. Exactly2 arms/hands and2 legs. Pose: Hit reaction: upper body recoils backward LEFT, head snaps back while remaining RIGHT profile, knees bend. Sistrum held close and tilted slightly, free hand reaches inward near torso. Horns and disc intact. Exactly2 arms/hands, no loose beads/effects.",
+      "file": "hathor/hathor_hit_01.png",
+      "normalization": {
+        "ratio": 0.9760765550239234,
+        "anchor_x": 0.61,
+        "baseline": 480
+      },
+      "bytes": 26490
+    },
+    {
+      "id": "hathor",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3aaab8d8-046b-4b93-9b26-20f30131185d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Hathor, cow-eared Egyptian goddess of joy. Long hair, clearly visible cow ears and curving horns holding a BLOOD-RED sun disc, wide beaded collar, long fitted dress, sistrum (loop-topped rattle with crossbars) weapon. Joyful and dangerous. Horns and RED disc define silhouette. NO gold. Image1 approved Hathor idle EXACT identity; preserve long hair, cow ears, horns/red disc, face, collar, fitted dress, sandals and sistrum. Other images STYLE only. ALL fills uniform flat, red disc plain SOLID blood red, no shiny beads/white glints on rattle. 512x512 full body STRICT RIGHT profile ONE eye. Same physical scale as idle, standing crown top to feet430px, hips nearx256, feet baseline480; all limbs, horns and rattle inside with padding. Exactly2 arms/hands and2 legs. Pose: FALLING backward LEFT: losing balance, torso tilted back, knees buckle visibly under long dress, sistrum hand low with weapon angled down across body and dropping. Free hand reaching for balance. A clear falling pose, distinct from hit, horns/disc intact and all weapon parts inside, no floating beads.",
+      "file": "hathor/hathor_death_01.png",
+      "normalization": {
+        "ratio": 0.9760765550239234,
+        "anchor_x": 0.65,
+        "baseline": 480
+      },
+      "bytes": 29998
+    },
+    {
+      "id": "hathor",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d0a8fcba-2b4b-42be-a0da-fded3eb74eb5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Hathor portrait for COMPLETE HEAD-TO-HIPS FRAMING. Preserve EXACT face, smile, THREE-QUARTER view with both eyes and both shoulders, hair, cow ears, horns with RED disc, beaded collar, fitted dress and sistrum. Make entire portrait silhouette slightly smaller on vertical3:4 transparent canvas to provide generous clear margins on EVERY side. Finish dress at hips with SINGLE continuous clean INK lower contour and generous transparent padding UNDERNEATH, NO thighs or legs. Bring free hand up naturally to rest near waist so BOTH hands are fully visible rather than cutting a wrist at bottom. Entire horns, flowing hair and sistrum loop/crossbars/beads/handle inside frame. Rattle beads PLAIN SOLID blood red disks outlined in ink with absolutely NO white spots, glints, sparkle or metallic shine. Other fills uniform flat bone/ink/blood with hard graphic ink shadows, no gradients. Face upperhalf, exactly2 arms/hands, no effects, no stray bottom pixel strips.",
+      "file": "hathor/hathor_portrait.png",
+      "bytes": 93705
     }
   ],
   "completed": [
@@ -3722,13 +3821,13 @@
     "set",
     "horus",
     "nephthys",
-    "thoth"
+    "thoth",
+    "hathor"
   ],
-  "active": "hathor",
+  "active": "sekhmet",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "hathor",
       "sekhmet",
       "ptah",
       "satyr",
@@ -3793,7 +3892,8 @@
       "set",
       "horus",
       "nephthys",
-      "thoth"
+      "thoth",
+      "hathor"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3826,7 +3926,8 @@
     "set": "approved",
     "horus": "approved",
     "nephthys": "approved",
-    "thoth": "approved"
+    "thoth": "approved",
+    "hathor": "approved"
   },
   "rejected_frames": [
     {
@@ -4125,6 +4226,20 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-cf7380bc-972b-4f31-847b-ef44c82b3dc2.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Image1 approved Thoth idle EXACT identity, preserve ibis head/beak, moon crown, face, collar, scroll/palette, kilt, staff and proportions. Remaining images style only. Full body strict RIGHT side profile with one eye. 512x512 square battle frame. Same physical scale as idle, standing including crown430px, head50px, hips near x256, feet baseline480. Staff visibly gripped; EXACTLY TWO hands, other hand holds scroll and palette together. Entire beak, scroll and staff ends inside with padding. Pose: Walking passing RIGHT, one supporting leg planted, opposite knee visibly raised with foot clearly above ground. Staff upright visibly gripped, scroll and palette together supported by other hand. Distinct passing contour, no floating objects.",
       "rejection_reason": "Walk passing pose repeats a wide contact stride rather than crossing the legs with a raised passing knee."
+    },
+    {
+      "id": "hathor",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-16017c4d-5a5a-47b1-adc3-882c9b657380.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Hathor, cow-eared Egyptian goddess of joy. Long hair, clearly visible cow ears and curving horns holding a BLOOD-RED sun disc, wide beaded collar, long fitted dress, sistrum (loop-topped rattle with crossbars) weapon. Joyful and dangerous. Horns and RED disc define silhouette. NO gold. References style only, do not copy Zeus/Heracles/Hoplite designs. Full body 512x512 square battle sprite, STRICT RIGHT side profile showing ONE eye, confident small smile. Standing neutral, body center x256, feet y480, crown top near y50 including horns/disc,430px tall, head near50px. Hold sistrum upright in one hand near shoulder, other arm relaxed naturally. Exactly TWO arms/TWO hands. Dress fitted to ankles, sandals and feet visible. Whole hair, horns, disc, rattle and limbs inside with padding, real transparent alpha.",
+      "rejection_reason": "Sun disc has visible soft red gradient instead of a flat graphic fill; sistrum beads contain small shiny highlights."
+    },
+    {
+      "id": "hathor",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ebd43671-8909-4df1-a1a5-b853069fe8be.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Hathor, cow-eared Egyptian goddess of joy. Long hair, clearly visible cow ears and curving horns holding a BLOOD-RED sun disc, wide beaded collar, long fitted dress, sistrum (loop-topped rattle with crossbars) weapon. Joyful and dangerous. Horns and RED disc define silhouette. NO gold. Image1 approved Hathor idle EXACT identity, remaining images style only. NEW portrait768x1024 vertical3:4 HEAD TO HIPS. THREE-QUARTER turned slightly RIGHT, BOTH shoulders and BOTH eyes far eye partly visible. Smile, face upper half. Horns and plain flat BLOOD RED disc fully visible. Sistrum raised beside head, complete loop/crossbars/beads AND handle fully within image. EXACT same cow ears, long hair, collar, fitted dress and proportions. No full body, no thighs, clean continuous hip lower contour with transparent padding, no stray pixel strip. Flat fills no gradients or shiny beads. Exactly2 arms/hands.",
+      "rejection_reason": "Portrait truncates the torso and free wrist at bottom edge; sistrum beads have shiny white glints."
     }
   ]
 }
