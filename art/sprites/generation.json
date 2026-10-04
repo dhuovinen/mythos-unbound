@@ -858,6 +858,11 @@
       "ratio": 0.9098883572567783,
       "anchor_x": 0.565,
       "baseline": 480
+    },
+    "hephaestus": {
+      "ratio": 0.9146730462519936,
+      "anchor_x": 0.515,
+      "baseline": 480
     }
   },
   "frames": [
@@ -4577,6 +4582,100 @@
         "baseline": 480
       },
       "bytes": 33995
+    },
+    {
+      "id": "hephaestus",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-533bc69a-6bd9-43e1-8a89-3a6c0e7a5929.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Input images STYLE only. Neutral standing fullbody512square battle STRICT RIGHT SIDE PROFILE ONE eye, bulkybroadsmith without shrunk height, headtop50 standing430px includinghair, feet480 hipx256 head50px. Bare broadarms/chest BONE inkshadows, heavyplainINK apron withbone tie andtinybloodred clothunderlayer, sootINKbeard/hair, no helmet/crown. ONEhand carries squareheavy forgehammer low byhip, otherONEhand holds ONE pair forgeTONGS jawsopen upright. Exactly2arms/hands2legs, one twistedrearleg visibly BONE/INK brace knee-to-ankle withstraps andrigidhinge, soundfrontlegfirmlyplanted. Feet/brace/hammerhandle/head/tongjaws/hair entirelyinsidepadding. NO forgebackground, fire, sparks, gold,glow,aura,fragments or anvil.",
+      "file": "hephaestus/hephaestus_idle_01.png",
+      "bytes": 27354
+    },
+    {
+      "id": "hephaestus",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-cd390fbe-82e1-4088-8b00-803f44fc2a55.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity/design/proportions, otherimages STYLE only. Same sootinkhair/beard heavybrow, extremely broadsmithmuscles, plainINK apron bonetie/redundercloth, squareheavyforgehammer heldNEAR hand and ONE pair longtongs FAR hand, nootherweapon. Twisted LAME rearleg/NEARleg with exactlysame bone/ink brace hingeandstraps knee-to-ankle, SAME anatomicalleg always, otherleg sound sandals. Fullbody512square STRICT RIGHT SIDE PROFILE ONE eye. Same physicalhead/body scale asidle430px standingtop50 head50px feet480 hipx256, broadbodydoesnotshrink. TWOarms/hands TWOlegs, entirebrace/tools insidepadding, noanvil, fire/forgebackground/gold/glow/aura/sparks/fragments. Pose: LIMPING WALK CONTACT: soundfar/frontleg forwardRIGHT heelplanted, twistedbracednear/rearleg followsback stiffly toeonbaseline. Brace stays sameleg nearviewerside, apronmovesattached. Tools lowheld.",
+      "file": "hephaestus/hephaestus_walk_01.png",
+      "normalization": {
+        "ratio": 0.9146730462519936,
+        "anchor_x": 0.515,
+        "baseline": 480
+      },
+      "bytes": 27315
+    },
+    {
+      "id": "hephaestus",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-6fc87426-03ce-46aa-be3f-20a8bf4391c7.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity/design/proportions, otherimages STYLE only. Same sootinkhair/beard heavybrow, extremely broadsmithmuscles, plainINK apron bonetie/redundercloth, squareheavyforgehammer heldNEAR hand and ONE pair longtongs FAR hand, nootherweapon. Twisted LAME rearleg/NEARleg with exactlysame bone/ink brace hingeandstraps knee-to-ankle, SAME anatomicalleg always, otherleg sound sandals. Fullbody512square STRICT RIGHT SIDE PROFILE ONE eye. Same physicalhead/body scale asidle430px standingtop50 head50px feet480 hipx256, broadbodydoesnotshrink. TWOarms/hands TWOlegs, entirebrace/tools insidepadding, noanvil, fire/forgebackground/gold/glow/aura/sparks/fragments. Pose: HAMMER WINDUP: forgehammer drawn BACK LEFT above nearshoulder, elbowbent, torso coiledback kneesbent, bracednearleg stablebehind. Tongsfarhand close chest. Wholehammerhead/handleinside, exactly2arms.",
+      "file": "hephaestus/hephaestus_attack_01.png",
+      "normalization": {
+        "ratio": 0.9146730462519936,
+        "anchor_x": 0.515,
+        "baseline": 480
+      },
+      "bytes": 29114
+    },
+    {
+      "id": "hephaestus",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7a166958-ab1c-473d-b258-443ecd935e63.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity/design/proportions, otherimages STYLE only. Same sootinkhair/beard heavybrow, extremely broadsmithmuscles, plainINK apron bonetie/redundercloth, squareheavyforgehammer heldNEAR hand and ONE pair longtongs FAR hand, nootherweapon. Twisted LAME rearleg/NEARleg with exactlysame bone/ink brace hingeandstraps knee-to-ankle, SAME anatomicalleg always, otherleg sound sandals. Fullbody512square STRICT RIGHT SIDE PROFILE ONE eye. Same physicalhead/body scale asidle430px standingtop50 head50px feet480 hipx256, broadbodydoesnotshrink. TWOarms/hands TWOlegs, entirebrace/tools insidepadding, noanvil, fire/forgebackground/gold/glow/aura/sparks/fragments. Pose: HAMMER STRIKE: neararm forgehammer atfull extension RIGHT/downward past body, torso forwardcommit kneesbent, soundfarleg forwardbracednearlegback. Tongsfarhand near chest. SameSQUARE hammerhead andlonghandle, no giantnewhammer or extraarms. No fire/sparks.",
+      "file": "hephaestus/hephaestus_attack_02.png",
+      "normalization": {
+        "ratio": 0.9146730462519936,
+        "anchor_x": 0.515,
+        "baseline": 480
+      },
+      "bytes": 29006
+    },
+    {
+      "id": "hephaestus",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d5370c85-96d5-4976-a5bc-d69db3a126b4.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity/design/proportions, otherimages STYLE only. Same sootinkhair/beard heavybrow, extremely broadsmithmuscles, plainINK apron bonetie/redundercloth, squareheavyforgehammer heldNEAR hand and ONE pair longtongs FAR hand, nootherweapon. Twisted LAME rearleg/NEARleg with exactlysame bone/ink brace hingeandstraps knee-to-ankle, SAME anatomicalleg always, otherleg sound sandals. Fullbody512square STRICT RIGHT SIDE PROFILE ONE eye. Same physicalhead/body scale asidle430px standingtop50 head50px feet480 hipx256, broadbodydoesnotshrink. TWOarms/hands TWOlegs, entirebrace/tools insidepadding, noanvil, fire/forgebackground/gold/glow/aura/sparks/fragments. Pose: HIT REACTION: headsnapback torso recoilsleft, kneesbuckled bracednearleg visiblystiff, hammernearhandtiltedlow and tongsfarhand retainedclose. Noimpacteffect.",
+      "file": "hephaestus/hephaestus_hit_01.png",
+      "normalization": {
+        "ratio": 0.9146730462519936,
+        "anchor_x": 0.515,
+        "baseline": 480
+      },
+      "bytes": 29290
+    },
+    {
+      "id": "hephaestus",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3b9e6445-6d8c-402f-ba64-afc8c5726e95.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity/design/proportions, otherimages STYLE only. Same sootinkhair/beard heavybrow, extremely broadsmithmuscles, plainINK apron bonetie/redundercloth, squareheavyforgehammer heldNEAR hand and ONE pair longtongs FAR hand, nootherweapon. Twisted LAME rearleg/NEARleg with exactlysame bone/ink brace hingeandstraps knee-to-ankle, SAME anatomicalleg always, otherleg sound sandals. Fullbody512square STRICT RIGHT SIDE PROFILE ONE eye. Same physicalhead/body scale asidle430px standingtop50 head50px feet480 hipx256, broadbodydoesnotshrink. TWOarms/hands TWOlegs, entirebrace/tools insidepadding, noanvil, fire/forgebackground/gold/glow/aura/sparks/fragments. Pose: FALLING: torso tilted BACKLEFT losingbalance, twistedbracednearleg collapsing butbraceintact, soundfarlegraisedforward, hammer dropslowLEFT fromlooseningnearhand, tongsfarhandlow hip. Bothtoolsintact entireinside, nofloor or fragments/gore.",
+      "file": "hephaestus/hephaestus_death_01.png",
+      "normalization": {
+        "ratio": 0.9146730462519936,
+        "anchor_x": 0.515,
+        "baseline": 480
+      },
+      "bytes": 30790
+    },
+    {
+      "id": "hephaestus",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-87b603fb-cd71-4b7e-9bef-a78eb18cdba8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity, others STYLEonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS TRUE THREE-QUARTER slightlyRIGHT, BOTH shoulders and BOTH EYES visible fareyepartly, soot-darkheavybrow/beard. Hammer RESTS ON SHOULDER headbesideneck, handlegrippedonehand, tongs lowinotherhand whollyinsideheadtohipsframe. Forge-lit side of FACE in FLAT BLOOD RED hardedge fill, no flames/glow/gradient/castglowingbackground. Same broadheavybody, INK apron bonetie/redcloth. Entirehair/beard/hammer/tongs inside generous transparentmargins, faceupperhalf, nolegs/thighs, cleancontinuousinkhipboundary no pixelstrip. No gold/aura/glow/sparks/fragments. Critical correction: create a TRUE THREE-QUARTER face with TWO visible eyes, one smaller far eye, nose pointing slightly right rather than strict side profile. Both cheek planes and both shoulders visible. Near arm on image LEFT holds hammer resting over the near LEFT shoulder, far arm on image RIGHT holds tongs low. Preserve original idle character identity and these tool hands. Entire silhouette within transparent margins.",
+      "file": "hephaestus/hephaestus_portrait.png",
+      "bytes": 96556
+    },
+    {
+      "id": "hephaestus",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2fd28d50-3157-48e2-ac6f-acb9a6f7aad5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity/design/proportions, otherimages STYLE only. Same sootinkhair/beard heavybrow, extremely broadsmithmuscles, plainINK apron bonetie/redundercloth, squareheavyforgehammer heldNEAR hand and ONE pair longtongs FAR hand, nootherweapon. Twisted LAME rearleg/NEARleg with exactlysame bone/ink brace hingeandstraps knee-to-ankle, SAME anatomicalleg always, otherleg sound sandals. Fullbody512square STRICT RIGHT SIDE PROFILE ONE eye. Same physicalhead/body scale asidle430px standingtop50 head50px feet480 hipx256, broadbodydoesnotshrink. TWOarms/hands TWOlegs, entirebrace/tools insidepadding, noanvil, fire/forgebackground/gold/glow/aura/sparks/fragments. Pose: LIMPING WALK PASSING. The SOUND FAR leg supports all weight, foot on baseline directly below pelvis. The NEAR BRACED lame leg bends stiffly and lifts clear of the floor, ankle visibly ABOVE the supporting ankle by 50 pixels at final512 size; this braced foot passes UNDER the pelvis, close to and crossing the supporting leg, NOT a wide stance. One foot is grounded and the braced foot is airborne. Keep SAME near-leg brace hinge/straps, bone/ink sandals, same body scale, hammer near hand low and tongs far hand low. Exactly two legs; no extra feet. Edit target image1: change ONLY the legs to the passing moment. Move the braced knee forward to overlap the supporting knee; the braced shin passes IN FRONT OF the unbraced shin, braced sandal lifted under pelvis at x approximately256 y430. The two legs CROSS in silhouette, close together, not separated to left and right. Preserve everything else including exact head, chest, arms, tools, apron, palette and linework. Image2 original idle identity. Transparent background.",
+      "file": "hephaestus/hephaestus_walk_02.png",
+      "normalization": {
+        "ratio": 0.94,
+        "anchor_x": 0.515,
+        "baseline": 480
+      },
+      "bytes": 26059
     }
   ],
   "completed": [
@@ -4622,13 +4721,13 @@
     "orpheus",
     "dionysus",
     "aeneas",
-    "aphrodite"
+    "aphrodite",
+    "hephaestus"
   ],
-  "active": "hephaestus",
+  "active": "apollo",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "hephaestus",
       "apollo",
       "artemis",
       "medjay",
@@ -4693,7 +4792,8 @@
       "orpheus",
       "dionysus",
       "aeneas",
-      "aphrodite"
+      "aphrodite",
+      "hephaestus"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -4735,7 +4835,8 @@
     "orpheus": "approved",
     "dionysus": "approved",
     "aeneas": "approved",
-    "aphrodite": "approved"
+    "aphrodite": "approved",
+    "hephaestus": "approved"
   },
   "rejected_frames": [
     {
@@ -5139,6 +5240,27 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5ecf0a23-5445-40b1-9c3f-0396cda2ab74.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. Image1 approved Aphrodite idle EXACT identity/design/proportions, otherimages STYLE only. Preserve longbone/inkwavyhair, shellhairclasp and shoulderclasp, elegantfacenotwarrior, opaque boneflowingdress withbloodredsash/trailingfabric, barefeet. ONE small bone/ink WHITE dove and sameoval BONE/INK mirror withflatgreyface no glints. Fullbody512square strict RIGHT SIDE PROFILE ONE eye. Samebody/head scale asidle standing430px headtop50, head50px feet480 hipx256. TWO arms/hands TWO legs, onepermitteddove ONLY. Wholehair/mirror/dove/wings/trailingdress insidepadding. No gold/hearts/sparkles/aura/glow/sparks/floatingfragments, no weapon. Pose: UNARMED STRIKE: dovehandfullyextended RIGHT palmopen RELEASING ONE SMALL dove flyingforward justahead of fingertips, dovewingsspread butentirebirdfullyinside rightpadding. Mirrorheld LOW at hip inotherhand, bodycommittedforwardlunge. Exactlyonebird, neverduplicateperchedone, no weapon/sparkles/hearts/soundeffects.",
       "rejection_reason": "Released dove beak and trailing sash touch raw frame edges; hip fabric includes soft shiny highlight."
+    },
+    {
+      "id": "hephaestus",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-1f519710-e119-4d25-8f69-f4b330222265.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity/design/proportions, otherimages STYLE only. Same sootinkhair/beard heavybrow, extremely broadsmithmuscles, plainINK apron bonetie/redundercloth, squareheavyforgehammer heldNEAR hand and ONE pair longtongs FAR hand, nootherweapon. Twisted LAME rearleg/NEARleg with exactlysame bone/ink brace hingeandstraps knee-to-ankle, SAME anatomicalleg always, otherleg sound sandals. Fullbody512square STRICT RIGHT SIDE PROFILE ONE eye. Same physicalhead/body scale asidle430px standingtop50 head50px feet480 hipx256, broadbodydoesnotshrink. TWOarms/hands TWOlegs, entirebrace/tools insidepadding, noanvil, fire/forgebackground/gold/glow/aura/sparks/fragments. Pose: LIMPING WALK PASSING: soundfarleg supportsfootbaseline, twistedBRACEDnearleg liftedslightly bent passing underneathpelvis close supportleg. Body slightlyraised, restricted limpnotwidehealthyrun. Keep brace nearleg samehingestraps; hammerlow tongsfarhand.",
+      "rejection_reason": "Both feet grounded in a wide stance; passing pose requires braced near foot lifted under pelvis."
+    },
+    {
+      "id": "hephaestus",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a6f471b9-ada3-42f6-94f2-9e68c9325cc4.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity, others STYLEonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS TRUE THREE-QUARTER slightlyRIGHT, BOTH shoulders and BOTH EYES visible fareyepartly, soot-darkheavybrow/beard. Hammer RESTS ON SHOULDER headbesideneck, handlegrippedonehand, tongs lowinotherhand whollyinsideheadtohipsframe. Forge-lit side of FACE in FLAT BLOOD RED hardedge fill, no flames/glow/gradient/castglowingbackground. Same broadheavybody, INK apron bonetie/redcloth. Entirehair/beard/hammer/tongs inside generous transparentmargins, faceupperhalf, nolegs/thighs, cleancontinuousinkhipboundary no pixelstrip. No gold/aura/glow/sparks/fragments.",
+      "rejection_reason": "Strict one-eye side profile and swapped tool hands; portrait requires true three-quarter with both eyes and consistent tool hands."
+    },
+    {
+      "id": "hephaestus",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-085ae705-c55b-4965-ad72-5a93f3267be9.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Hephaestus, Greek smith-god BROAD LOW heavily built body with very wide shoulders, soot-dark INK beard and heavy brow. Forge hammer in onehand, tongs inother, heavy INK apron, visibly twisted lame leg in BONE/INK iron brace. Hammer/brace/broadshoulders define silhouette. No gold, metal boneandink only. Image1 approved Hephaestus idle EXACT identity/design/proportions, otherimages STYLE only. Same sootinkhair/beard heavybrow, extremely broadsmithmuscles, plainINK apron bonetie/redundercloth, squareheavyforgehammer heldNEAR hand and ONE pair longtongs FAR hand, nootherweapon. Twisted LAME rearleg/NEARleg with exactlysame bone/ink brace hingeandstraps knee-to-ankle, SAME anatomicalleg always, otherleg sound sandals. Fullbody512square STRICT RIGHT SIDE PROFILE ONE eye. Same physicalhead/body scale asidle430px standingtop50 head50px feet480 hipx256, broadbodydoesnotshrink. TWOarms/hands TWOlegs, entirebrace/tools insidepadding, noanvil, fire/forgebackground/gold/glow/aura/sparks/fragments. Pose: LIMPING WALK PASSING. The SOUND FAR leg supports all weight, foot on baseline directly below pelvis. The NEAR BRACED lame leg bends stiffly and lifts clear of the floor, ankle visibly ABOVE the supporting ankle by 50 pixels at final512 size; this braced foot passes UNDER the pelvis, close to and crossing the supporting leg, NOT a wide stance. One foot is grounded and the braced foot is airborne. Keep SAME near-leg brace hinge/straps, bone/ink sandals, same body scale, hammer near hand low and tongs far hand low. Exactly two legs; no extra feet.",
+      "rejection_reason": "Braced foot lifted but trailing wide behind; required passing pose has legs crossing under pelvis."
     }
   ]
 }
