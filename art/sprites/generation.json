@@ -823,6 +823,11 @@
       "ratio": 0.886762360446571,
       "anchor_x": 0.55,
       "baseline": 480
+    },
+    "ptah": {
+      "ratio": 0.8803827751196173,
+      "anchor_x": 0.51,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3884,6 +3889,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Sekhmet portrait, exact design reference. Correct only composition/framing and finish. Entire portrait silhouette slightly SMALLER, ample clear transparent padding ALL sides. ENTIRE raised khopesh blade TIP and HANDLE MUST be inside with padding, angle steeply diagonal beside head as needed. Preserve EXACT huge blade shape/length, lioness snarl, NO mane, RED eyes and ink pupils, cobra/red disc, collar and red fitted dress. Portrait head-to-hips THREE-QUARTER turned slightly RIGHT, BOTH shoulders and BOTH feline eyes visible, far eye partly but CLEARLY visible, face upperhalf. BOTH hands fully visible, freehand rests near waist. Finish hips with SINGLE smooth continuous clean INK lower contour, generous transparent padding underneath. Remove ALL stray RED pixels/strips beneath bottom contour; absolutely clean alpha cutout edge. NO thighs/legs, no crop at canvas edges. Flat bone/ink/red fills, no gradients or warm gold/tan highlights.",
       "file": "sekhmet/sekhmet_portrait.png",
       "bytes": 75094
+    },
+    {
+      "id": "ptah",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-336accac-9910-46e9-907d-074fff7ef661.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. References STYLE only; do NOT copy Greek humans' costume. Full body512x512 square battle sprite STRICT RIGHT side profile ONE eye. Neutral standing perfectly upright, legs wrapped TOGETHER in ONE continuous close narrow shroud with only tiny adjacent wrapped feet visible on baseline, absolutely no exposed calves, knees or skin legs. BONE wrappings on body and INK-DARK hands emerging at chest clasping same single tall sceptre. Exactly2 arms/hands. Sceptre held upright in front/right of chest, top combines was stylized animal-head, djed stacked horizontal bars and ankh loopcross in BONE/INK/BLOOD. Tight skullcap clearly distinct from crowns, straight long narrow false beard. Calm face. Skulltopnear y50, feet y480, figure430px high, hipsx256. Entire sceptre top/butt and figure inside padding, no extra staff or other object, no floating fragments, no glow.",
+      "file": "ptah/ptah_idle_01.png",
+      "bytes": 21167
+    },
+    {
+      "id": "ptah",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3f4b9157-becb-48ee-a751-3445c42f0a66.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, preserve face, skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, SINGLE sceptre identical combined was-head/djedbars/ankh/longshaft/butt/proportions. Remaining images STYLEonly. 512x512square FULL BODY STRICT RIGHT profile ONE eye. Standing body about430px excluding taller sceptre; same physical scale, hipsx256, wrapped feet y480. LEGS tightly WRAPPED TOGETHER in continuous close narrow mummy shroud, never bare skin legs, never separated knees or wide stride. Exactly2 arms/hands. Entire sceptre TOP and BUTT fully within padding. Pose: SHORT STIFF SHUFFLE CONTACT RIGHT: legs wrapped together, tiny front wrapped foot just slightly forward with heel down, rear foot remains CLOSE barely offset. Rigid upright narrow shroud, almost no knee bend. Sceptre upright held at chest by same2 ink-dark hands. No normal human stride.",
+      "file": "ptah/ptah_walk_01.png",
+      "normalization": {
+        "ratio": 0.8803827751196173,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 21402
+    },
+    {
+      "id": "ptah",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-9a2e67c6-585e-4ac5-892c-948d0c6a34ef.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, preserve face, skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, SINGLE sceptre identical combined was-head/djedbars/ankh/longshaft/butt/proportions. Remaining images STYLEonly. 512x512square FULL BODY STRICT RIGHT profile ONE eye. Standing body about430px excluding taller sceptre; same physical scale, hipsx256, wrapped feet y480. LEGS tightly WRAPPED TOGETHER in continuous close narrow mummy shroud, never bare skin legs, never separated knees or wide stride. Exactly2 arms/hands. Entire sceptre TOP and BUTT fully within padding. Pose: SHORT STIFF SHUFFLE PASSING RIGHT: legs STILL WRAPPED TOGETHER, weight slightly raised, small trailing wrapped foot close behind supporting foot and barely above ground. Tiny difference in foot contact from walk01, no crossed bare knees, no wide stride, no exposed legskin. Upright narrow rigid mummy silhouette. Sceptre upright same2 hands.",
+      "file": "ptah/ptah_walk_02.png",
+      "normalization": {
+        "ratio": 0.8803827751196173,
+        "anchor_x": 0.515,
+        "baseline": 480
+      },
+      "bytes": 22842
+    },
+    {
+      "id": "ptah",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-4caf756d-88e2-433c-81e4-483d89f28e60.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, preserve face, skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, SINGLE sceptre identical combined was-head/djedbars/ankh/longshaft/butt/proportions. Remaining images STYLEonly. 512x512square FULL BODY STRICT RIGHT profile ONE eye. Standing body about430px excluding taller sceptre; same physical scale, hipsx256, wrapped feet y480. LEGS tightly WRAPPED TOGETHER in continuous close narrow mummy shroud, never bare skin legs, never separated knees or wide stride. Exactly2 arms/hands. Entire sceptre TOP and BUTT fully within padding. Pose: Sceptre brought DOWN like a PILLAR: both ink-dark hands thrust same staff DOWN and slightly forward RIGHT, sceptre almost vertical with BUTT at groundbaseline and symbolic top fully framed beside head. Body leans very slightly into strike, narrow legs remain fully WRAPPED TOGETHER, no human lunge. Exactly2 arms/hands. No impacteffects.",
+      "file": "ptah/ptah_attack_02.png",
+      "normalization": {
+        "ratio": 0.8803827751196173,
+        "anchor_x": 0.49,
+        "baseline": 480
+      },
+      "bytes": 22146
+    },
+    {
+      "id": "ptah",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-0d847979-f9d3-4126-8b9b-7b6901bd12ea.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, preserve face, skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, SINGLE sceptre identical combined was-head/djedbars/ankh/longshaft/butt/proportions. Remaining images STYLEonly. 512x512square FULL BODY STRICT RIGHT profile ONE eye. Standing body about430px excluding taller sceptre; same physical scale, hipsx256, wrapped feet y480. LEGS tightly WRAPPED TOGETHER in continuous close narrow mummy shroud, never bare skin legs, never separated knees or wide stride. Exactly2 arms/hands. Entire sceptre TOP and BUTT fully within padding. Pose: Hit recoil: head snaps backward LEFT while remaining RIGHT profile, upper body tilts back slightly. Narrow mummy shroud bends as one continuous wrapped shape, legs still bound TOGETHER and feet CLOSE. Single staff held close by2 ink-dark hands angled slightly, all top/butt visible. No separated knees.",
+      "file": "ptah/ptah_hit_01.png",
+      "normalization": {
+        "ratio": 0.8803827751196173,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 22093
+    },
+    {
+      "id": "ptah",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-cec2c057-c585-4467-b435-c9a0ba9125c9.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, preserve face, skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, SINGLE sceptre identical combined was-head/djedbars/ankh/longshaft/butt/proportions. Remaining images STYLEonly. 512x512square FULL BODY STRICT RIGHT profile ONE eye. Standing body about430px excluding taller sceptre; same physical scale, hipsx256, wrapped feet y480. LEGS tightly WRAPPED TOGETHER in continuous close narrow mummy shroud, never bare skin legs, never separated knees or wide stride. Exactly2 arms/hands. Entire sceptre TOP and BUTT fully within padding. Pose: REVISED STAFF-RAISING WIND-UP while keeping upright BODY SAME SIZE as idle: skulltop y50, wrapped feet y480, body430px high. Staff tilted diagonally about45degrees with symbolic TOP just above/LEFT of skull, lower BUTT lifted up away from ground toward LEFT side, staff entire length inside512square. Raise by angling the LONG sceptre, not by pushing its top hundreds of pixels above head. Both INK-DARK hands hold shaft near shoulder in a coiled backwards-left wind-up; elbows high/back. Rigid mummy body upright, narrow legs wrapped TOGETHER. Do NOT shrink body or shorten sceptre. All was-head/djedbars/ankh/shaft/butt identical to idle, correct anatomy exactly2arms/hands, no other weapon.",
+      "file": "ptah/ptah_attack_01.png",
+      "normalization": {
+        "ratio": 0.8931419457735247,
+        "anchor_x": 0.545,
+        "baseline": 480
+      },
+      "bytes": 21622
+    },
+    {
+      "id": "ptah",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2fe00e38-d189-43a3-8681-9d5dd6760203.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, preserve face, skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, SINGLE sceptre identical combined was-head/djedbars/ankh/longshaft/butt/proportions. Remaining images STYLEonly. 512x512square FULL BODY STRICT RIGHT profile ONE eye. Standing body about430px excluding taller sceptre; same physical scale, hipsx256, wrapped feet y480. LEGS tightly WRAPPED TOGETHER in continuous close narrow mummy shroud, never bare skin legs, never separated knees or wide stride. Exactly2 arms/hands. Entire sceptre TOP and BUTT fully within padding. Pose: REVISED FALLING backward LEFT, visibly losing balance. Tilt wrapped mummy body diagonally backward about30degrees, head LEFT of pelvis while FACE still RIGHT. Narrow bound legs stay together, wrapped feet nearbaseline. Both ink-dark hands LOWER sceptre so it lies at shallow diagonal ACROSS waist/hips, symbolic TOP RIGHT and rounded BUTT LEFT, well below head and fully inside frame. Staff visibly dropping with hands low, never upright guarding pose. Preserve exact idle staff length/symbols, no shrinking body, no unwrapped skinlegs, no loose debris or extra objects.",
+      "file": "ptah/ptah_death_01.png",
+      "normalization": {
+        "ratio": 0.8803827751196173,
+        "anchor_x": 0.515,
+        "baseline": 480
+      },
+      "bytes": 22990
+    },
+    {
+      "id": "ptah",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-612e8d0a-231a-4a98-ac66-4ddac089be36.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Ptah portrait. Preserve exact identity, calm face, tight skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, upright SINGLE sceptre with full was-head/djedbars/ankh/top/shaft/butt. NEW portrait is THREE-QUARTER slightly RIGHT showing BOTH shoulders and BOTH eyes, far eye CLEARLY partially visible; face upperhalf. Head-to-hips, no thighs/legs. Make entire portrait silhouette slightly smaller with generous margins ALL sides. Finish hips at a SINGLE clean continuous INK lower contour with transparent padding underneath. Remove every stray RED speck/strip below hip contour, especially lower LEFT. Smooth clean alpha edge, no pixel debris. Both hands and complete sceptre TOP and BUTT fully visible. Flatfills no warm highlights, no glow.",
+      "file": "ptah/ptah_portrait.png",
+      "bytes": 73051
     }
   ],
   "completed": [
@@ -3922,13 +4021,13 @@
     "nephthys",
     "thoth",
     "hathor",
-    "sekhmet"
+    "sekhmet",
+    "ptah"
   ],
-  "active": "ptah",
+  "active": "satyr",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "ptah",
       "satyr",
       "asclepius",
       "orpheus",
@@ -3993,7 +4092,8 @@
       "nephthys",
       "thoth",
       "hathor",
-      "sekhmet"
+      "sekhmet",
+      "ptah"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -4028,7 +4128,8 @@
     "nephthys": "approved",
     "thoth": "approved",
     "hathor": "approved",
-    "sekhmet": "approved"
+    "sekhmet": "approved",
+    "ptah": "approved"
   },
   "rejected_frames": [
     {
@@ -4355,6 +4456,27 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-58b91763-1eab-46ce-ae93-b6892f448796.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Sekhmet, Egyptian Eye of Ra in her killing mood. LIONESS head with NO MANE, bared sharp teeth snarling, blood-red sun disc and cobra on crown. BLOOD-RED fitted long dress, broad collar, HUGE khopesh curved sickle sword raised. Powerful athletic female body, hits hardest of gods and looks it. Lioness head and raised khopesh define silhouette. No gold. Image1 approved Sekhmet idle EXACT identity; remaining images styleonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS THREE-QUARTER turned slightly RIGHT, BOTH shoulders and BOTH feline eyes, far eye partly visible. Lioness head snarling, NO mane, tiny BLOOD-RED irises with INK pupils, NO amber/gold/yellow eyes. Plain blood-red sun disc and attached crown cobra fully framed, faceupperhalf. Raise khopesh beside head at STEEP DIAGONAL angle so ENTIRE huge blade TIP and HANDLE fit comfortably inside with margin. Blade uniform BONE with hard INK shadows, NO tan/gold shaded patches. Preserve fitted BLOOD RED dress, collar, exact weaponshape/proportions. BOTH hands visible, freehand near waist. Clean continuous INK hip lower contour, transparent padding below; no thighs/legs, no cropped wrists, no stray pixel strips. Exactly2arms/hands.",
       "rejection_reason": "Portrait hip lower contour has an obvious stray red pixel strip; raised sword has minimal margin at right edge."
+    },
+    {
+      "id": "ptah",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-dee7f070-c456-4381-a64a-357b8c0b55b2.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, preserve face, skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, SINGLE sceptre identical combined was-head/djedbars/ankh/longshaft/butt/proportions. Remaining images STYLEonly. 512x512square FULL BODY STRICT RIGHT profile ONE eye. Standing body about430px excluding taller sceptre; same physical scale, hipsx256, wrapped feet y480. LEGS tightly WRAPPED TOGETHER in continuous close narrow mummy shroud, never bare skin legs, never separated knees or wide stride. Exactly2 arms/hands. Entire sceptre TOP and BUTT fully within padding. Pose: Sceptre RAISED for wind-up: both INK-DARK hands lift single staff upward and slightly back LEFT, elbows flex close to ribs, TOP beside upper head with full margin. Entire long staff incl top/butt visible. Rigid wrapped body straight, narrow legs still WRAPPED TOGETHER, no stride or bent separated legs. Exactly2 arms/hands.",
+      "rejection_reason": "Raised staff makes the upright body substantially smaller than idle after framing."
+    },
+    {
+      "id": "ptah",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e4fe6c0d-a8b9-4085-a021-0d8dbfdfb0d8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, preserve face, skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, SINGLE sceptre identical combined was-head/djedbars/ankh/longshaft/butt/proportions. Remaining images STYLEonly. 512x512square FULL BODY STRICT RIGHT profile ONE eye. Standing body about430px excluding taller sceptre; same physical scale, hipsx256, wrapped feet y480. LEGS tightly WRAPPED TOGETHER in continuous close narrow mummy shroud, never bare skin legs, never separated knees or wide stride. Exactly2 arms/hands. Entire sceptre TOP and BUTT fully within padding. Pose: FALLING backward LEFT as a stiff wrapped pillar: entire mummy body tilts back distinctly, bound legs remain TOGETHER in one continuous bone shroud, no exposed knees or separated legs. Two ink-dark hands loosen but retain sceptre lowering diagonally close across body, full staff top/butt inside frame. Wrapped feet near baseline, no fragments.",
+      "rejection_reason": "Falling pose leans forward holding sceptre upright, without a clear lowering/drop of the weapon."
+    },
+    {
+      "id": "ptah",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-45f657b0-e70b-4324-965e-15d1079bcfe9.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, remainingimages STYLEonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS THREE-QUARTER turned slightly RIGHT, BOTH shoulders and BOTH eyes with far eye partly visible, calm face upperhalf. Tight INK skullcap, same straightfalsebeard, bonewrappings/redsash and INK-DARK hands. Tall sceptre held UPRIGHT in front, complete was-head/djedbars/ankh TOP AND longshaft/BUTT visible with margins, angle slightly diagonal to fit. Exactly2 hands clasp SINGLE sceptre, no extra weapon. No fullbody/legs, clean continuous ink hip lower contour with transparent padding, no straypixels or crops at margins. Flatfills no gold/tan/glow.",
+      "rejection_reason": "Portrait hip lower contour has stray red pixels below its left edge."
     }
   ]
 }
