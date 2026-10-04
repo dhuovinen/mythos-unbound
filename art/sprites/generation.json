@@ -853,6 +853,11 @@
       "ratio": 0.9290271132376395,
       "anchor_x": 0.52,
       "baseline": 480
+    },
+    "aphrodite": {
+      "ratio": 0.9098883572567783,
+      "anchor_x": 0.565,
+      "baseline": 480
     }
   },
   "frames": [
@@ -4478,6 +4483,100 @@
         "baseline": 480
       },
       "bytes": 33944
+    },
+    {
+      "id": "aphrodite",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-6430e26a-9734-42ed-939c-d359dfb4a7dd.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. Input images STYLE only. FULL BODY512square battle STRICT RIGHT PROFILE ONE eye, poised neutral standing grace, long loose bone/ink hair and modest opaque flowing dress with blood-red sash trails LEFT behind, scallop shell clasp clear. ONE hand raised infront toshoulder supports SMALL dove with tuckedwings, other holds round BONE/INK handmirror upright close cheek, reflective surface simple flatgrey bone/ink no glints. Exactly TWO arms/hands TWO legs, ONE dove explicitly permitted companion only no otherfigures. Standing430px headtop50 head50px footbaseline480 hipcenter256, feet visible beneath ankle-length robe, wholehair/drapery/dove/mirror insidepadding. No sparkles/hearts/gold/aura/glow/sparks/fragments or floor/shadow.",
+      "file": "aphrodite/aphrodite_idle_01.png",
+      "bytes": 32234
+    },
+    {
+      "id": "aphrodite",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-1feeab82-49bb-4a72-be7d-1b2ecabd86f4.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. Image1 approved Aphrodite idle EXACT identity/design/proportions, otherimages STYLE only. Preserve longbone/inkwavyhair, shellhairclasp and shoulderclasp, elegantfacenotwarrior, opaque boneflowingdress withbloodredsash/trailingfabric, barefeet. ONE small bone/ink WHITE dove and sameoval BONE/INK mirror withflatgreyface no glints. Fullbody512square strict RIGHT SIDE PROFILE ONE eye. Samebody/head scale asidle standing430px headtop50, head50px feet480 hipx256. TWO arms/hands TWO legs, onepermitteddove ONLY. Wholehair/mirror/dove/wings/trailingdress insidepadding. No gold/hearts/sparkles/aura/glow/sparks/floatingfragments, no weapon. Pose: WALK CONTACT: frontleg forwardRIGHT heelplanted rearlegback toeonbaseline, dressflowingback, smalldove perchedraisedhand mirroruprightother. Keep elegantgrace.",
+      "file": "aphrodite/aphrodite_walk_01.png",
+      "normalization": {
+        "ratio": 0.9098883572567783,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 37700
+    },
+    {
+      "id": "aphrodite",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-32930f02-219c-449a-9da6-293bd57aabb4.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. Image1 approved Aphrodite idle EXACT identity/design/proportions, otherimages STYLE only. Preserve longbone/inkwavyhair, shellhairclasp and shoulderclasp, elegantfacenotwarrior, opaque boneflowingdress withbloodredsash/trailingfabric, barefeet. ONE small bone/ink WHITE dove and sameoval BONE/INK mirror withflatgreyface no glints. Fullbody512square strict RIGHT SIDE PROFILE ONE eye. Samebody/head scale asidle standing430px headtop50, head50px feet480 hipx256. TWO arms/hands TWO legs, onepermitteddove ONLY. Wholehair/mirror/dove/wings/trailingdress insidepadding. No gold/hearts/sparkles/aura/glow/sparks/floatingfragments, no weapon. Pose: WALK PASSING: legs crossbeneathpelvis, rear bentknee foot liftedpassing supportingleg, supportingfootbaseline, body slightlyraised, clearlydifferentfromwidecontactstride. Same dove/mirror held.",
+      "file": "aphrodite/aphrodite_walk_02.png",
+      "normalization": {
+        "ratio": 0.9098883572567783,
+        "anchor_x": 0.59,
+        "baseline": 480
+      },
+      "bytes": 34843
+    },
+    {
+      "id": "aphrodite",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e6be40da-97f7-4f32-9004-9b906597783a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. Image1 approved Aphrodite idle EXACT identity/design/proportions, otherimages STYLE only. Preserve longbone/inkwavyhair, shellhairclasp and shoulderclasp, elegantfacenotwarrior, opaque boneflowingdress withbloodredsash/trailingfabric, barefeet. ONE small bone/ink WHITE dove and sameoval BONE/INK mirror withflatgreyface no glints. Fullbody512square strict RIGHT SIDE PROFILE ONE eye. Samebody/head scale asidle standing430px headtop50, head50px feet480 hipx256. TWO arms/hands TWO legs, onepermitteddove ONLY. Wholehair/mirror/dove/wings/trailingdress insidepadding. No gold/hearts/sparkles/aura/glow/sparks/floatingfragments, no weapon. Pose: UNARMED WINDUP: arms drawn IN close chest, ONE dove gentlyCLASPED/held near chest in dovehand, mirrorinotherhand tuckedclosebody. Bodycoiledbackkneesbent graceful. Noadditionalbird. Dovefoldedwings fullyvisible.",
+      "file": "aphrodite/aphrodite_attack_01.png",
+      "normalization": {
+        "ratio": 0.9098883572567783,
+        "anchor_x": 0.59,
+        "baseline": 480
+      },
+      "bytes": 34194
+    },
+    {
+      "id": "aphrodite",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-01cd63d3-95ac-48f9-9e8c-d6c283a156a5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. Image1 approved Aphrodite idle EXACT identity/design/proportions, otherimages STYLE only. Preserve longbone/inkwavyhair, shellhairclasp and shoulderclasp, elegantfacenotwarrior, opaque boneflowingdress withbloodredsash/trailingfabric, barefeet. ONE small bone/ink WHITE dove and sameoval BONE/INK mirror withflatgreyface no glints. Fullbody512square strict RIGHT SIDE PROFILE ONE eye. Samebody/head scale asidle standing430px headtop50, head50px feet480 hipx256. TWO arms/hands TWO legs, onepermitteddove ONLY. Wholehair/mirror/dove/wings/trailingdress insidepadding. No gold/hearts/sparkles/aura/glow/sparks/floatingfragments, no weapon. Pose: HIT REACTION: headsnapback torso recoilleft kneesbuckling, hair/dressflowback, retainsONE doveonraisedhand andmirrorotherhand closeto chest, nothing drops or duplicates. Noimpactsymbols.",
+      "file": "aphrodite/aphrodite_hit_01.png",
+      "normalization": {
+        "ratio": 0.9098883572567783,
+        "anchor_x": 0.59,
+        "baseline": 480
+      },
+      "bytes": 35999
+    },
+    {
+      "id": "aphrodite",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7d5ea64a-1186-4044-a2ab-e85d4c1adbd6.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. Image1 approved Aphrodite idle EXACT identity/design/proportions, otherimages STYLE only. Preserve longbone/inkwavyhair, shellhairclasp and shoulderclasp, elegantfacenotwarrior, opaque boneflowingdress withbloodredsash/trailingfabric, barefeet. ONE small bone/ink WHITE dove and sameoval BONE/INK mirror withflatgreyface no glints. Fullbody512square strict RIGHT SIDE PROFILE ONE eye. Samebody/head scale asidle standing430px headtop50, head50px feet480 hipx256. TWO arms/hands TWO legs, onepermitteddove ONLY. Wholehair/mirror/dove/wings/trailingdress insidepadding. No gold/hearts/sparkles/aura/glow/sparks/floatingfragments, no weapon. Pose: FALLING: bodytiltedBACKLEFT losingbalance onelegcollapsing otherraisedforward, smalldove lifts justabove lowered dovehand withspreadwings, mirror loweredfalling at hipinloosenedotherhand. ONE dove only, botharms/hands fullyinside, draperyattached, no loosefragments or gore.",
+      "file": "aphrodite/aphrodite_death_01.png",
+      "normalization": {
+        "ratio": 0.9098883572567783,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 37162
+    },
+    {
+      "id": "aphrodite",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-fcd2912a-48b9-41a1-aeea-0e17369120e6.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. Image1 approved Aphrodite idle EXACT identity, others STYLE only. NEW portrait768x1024 vertical3:4 HEAD TO HIPS TRUE THREE-QUARTER turnedslightlyRIGHT, BOTH shoulders and BOTH eyes visible fareyepartly, sidelong glance. Noseclosercenter, face upperhalf, notbattleprofile. ONE small dove at shoulder perchedononehand close shoulder, sameoval handmirror near CHEEK in otherhand, longloosehair, same scallopshellclasp shoulder/hair and bloodredsash/opaque bonegown. Wholehair/dove/mirror/arms inside generous transparentmargins, nolegs/thighs, continuouscleaninklowerhip contour no straypixelstrip. No gold or sparkles/hearts/glow/aura/sparks/fragments.",
+      "file": "aphrodite/aphrodite_portrait.png",
+      "bytes": 105553
+    },
+    {
+      "id": "aphrodite",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-cc76a84f-854b-4e86-9682-1e867b301f70.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. EDIT Image1 Aphrodite release strike; Image2 approved idle identity. Preserve exact forwardlunge, extended dovehand RIGHT with ONE SMALL dove releasing justabove fingertip, mirrorlowotherhand, face strict RIGHT profile ONE eye, same dress/clasps/hair. FRAMING FIX: entire silhouette 12percent smaller centered with broad transparentmargins, shorten trailing red sash slightly and shift dove LEFT nearer fingertip so whole beak/wings/tail and fabric tips are fullyinside, NEVERtouchimageedge. Remove round shiny/glowing pale spot on hip besidemirror and use FLAT bone or ink angular fabricfold instead. Flat grey mirrorface, no gradients/shine/sparkles/hearts/glow/gold/aura/fragments. Exactlytwoarms/hands/legs ONE dove. Fullbody transparent square.",
+      "file": "aphrodite/aphrodite_attack_02.png",
+      "normalization": {
+        "ratio": 0.82,
+        "anchor_x": 0.575,
+        "baseline": 480
+      },
+      "bytes": 33995
     }
   ],
   "completed": [
@@ -4522,13 +4621,13 @@
     "asclepius",
     "orpheus",
     "dionysus",
-    "aeneas"
+    "aeneas",
+    "aphrodite"
   ],
-  "active": "aphrodite",
+  "active": "hephaestus",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "aphrodite",
       "hephaestus",
       "apollo",
       "artemis",
@@ -4593,7 +4692,8 @@
       "asclepius",
       "orpheus",
       "dionysus",
-      "aeneas"
+      "aeneas",
+      "aphrodite"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -4634,7 +4734,8 @@
     "asclepius": "approved",
     "orpheus": "approved",
     "dionysus": "approved",
-    "aeneas": "approved"
+    "aeneas": "approved",
+    "aphrodite": "approved"
   },
   "rejected_frames": [
     {
@@ -5031,6 +5132,13 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-6fd68e18-a4be-4e96-9b1e-08caf76da043.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. Image1 approved Dionysus idle EXACT identity/proportions, images2-4 STYLE only. Preserve curly hair and beard, ink ivy leaves with bone cuts, half-open bone chiton and blood-red sash, vine wrap on staff arm, same bone/ink pinecone thyrsus with attached red ribbons, same wide two-handled cup, sandals. STRICT RIGHT SIDE PROFILE ONE eye, narrow side torso, fullbody512square. Same physical body/head scale as idle, standing430px crown y50, head~50px, feet480, hipx256. Exactly two arms/hands and two legs. One hand carries staff, other cup. Staffpinecone/butt/ribbons/cup/limbs fullyinside padding. No floating leaves, drops, gold, aura/glow/sparks/fragments. Pose: STAFF ATTACK STRIKE: full extension RIGHT with onehand thyrsus thrust steeply diagonal upward RIGHT pinecone upperright butt nearhip, bodylunging forward. Otherhand retainscup chest, no extraarm. Entire staffshaft ONE continuous rod, ribbons attached, pinecone inside square. No magic or wine drops.",
       "rejection_reason": "Strike duplicates vine wrap onto cup arm and turns torso frontal instead of strict right side view."
+    },
+    {
+      "id": "aphrodite",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5ecf0a23-5445-40b1-9c3f-0396cda2ab74.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Aphrodite, Greek goddess graceful, expensive, dangerous. Flowing BONE/INK drapery trailing behind, BLOOD RED sash, long loose hair, BONE scallop-shell clasp at shoulder, ONE small WHITE/BONE dove perched on raised hand and BONE/INK hand mirror in other hand. Unarmed, NO weapon. Dove/mirror/trailing drapery define silhouette. No gold. Image1 approved Aphrodite idle EXACT identity/design/proportions, otherimages STYLE only. Preserve longbone/inkwavyhair, shellhairclasp and shoulderclasp, elegantfacenotwarrior, opaque boneflowingdress withbloodredsash/trailingfabric, barefeet. ONE small bone/ink WHITE dove and sameoval BONE/INK mirror withflatgreyface no glints. Fullbody512square strict RIGHT SIDE PROFILE ONE eye. Samebody/head scale asidle standing430px headtop50, head50px feet480 hipx256. TWO arms/hands TWO legs, onepermitteddove ONLY. Wholehair/mirror/dove/wings/trailingdress insidepadding. No gold/hearts/sparkles/aura/glow/sparks/floatingfragments, no weapon. Pose: UNARMED STRIKE: dovehandfullyextended RIGHT palmopen RELEASING ONE SMALL dove flyingforward justahead of fingertips, dovewingsspread butentirebirdfullyinside rightpadding. Mirrorheld LOW at hip inotherhand, bodycommittedforwardlunge. Exactlyonebird, neverduplicateperchedone, no weapon/sparkles/hearts/soundeffects.",
+      "rejection_reason": "Released dove beak and trailing sash touch raw frame edges; hip fabric includes soft shiny highlight."
     }
   ]
 }
