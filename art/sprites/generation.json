@@ -838,6 +838,11 @@
       "ratio": 0.9178628389154705,
       "anchor_x": 0.465,
       "baseline": 480
+    },
+    "orpheus": {
+      "ratio": 0.8859649122807017,
+      "anchor_x": 0.51,
+      "baseline": 480
     }
   },
   "frames": [
@@ -4181,6 +4186,27 @@
         "baseline": 480
       },
       "bytes": 33927
+    },
+    {
+      "id": "orpheus",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b20dc285-edba-4768-a2bb-d5d1c0dea0fc.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow.  EDIT image1 Orpheus idle. Change ONLY the cap color placement: soft Thracian cap main fabric BONE with INK folds, and wide headband around forehead BLOOD RED. Cap brim/headband red, bent crown bone. Keep exact delicate face, wavy hair, eyes half closed, pose, robes, lyre and strings, two hands, sandals, right profile and full body framing unchanged. Real transparent alpha, no gold, no sound waves/glow/sparks/fragments. All silhouette inside margins.",
+      "file": "orpheus/orpheus_idle_01.png",
+      "bytes": 25904
+    },
+    {
+      "id": "orpheus",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-21e40d12-1298-4efc-a7df-256f5640d760.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Image1 approved Orpheus idle EXACT identity/proportions, images2-4 STYLE only. Preserve bone soft bent Thracian cap with blood-red forehead band, wavy hair, youthful delicate half-closed eyes, flowing bone/ink robes and red cloak, same lyre and fine INK strings, sandals. Battle 512x512 square, STRICT RIGHT PROFILE ONE eye, fullbody, two arms/hands and legs. Physical body/head scale matches idle, head ~50px, standing430px, hip centerx256, feet480. Keep cap/lyre/limbs entirely visible inside padding; no framing zoom change. No loose strings, extra objects, weapons or magic/sound waves/music notes/glow. Pose: WALK PASSING: legs CROSS close below pelvis, rear leg passing forward knee bent and foot LIFTED, supportingleg straight down to baseline. Body slightly raised, clearly different from contact stride. Lyre secure at chest, same hands.",
+      "file": "orpheus/orpheus_walk_02.png",
+      "normalization": {
+        "ratio": 0.8859649122807017,
+        "anchor_x": 0.545,
+        "baseline": 480
+      },
+      "bytes": 25490
     }
   ],
   "completed": [
@@ -4225,10 +4251,9 @@
     "asclepius"
   ],
   "active": "orpheus",
-  "status": "in_progress",
+  "status": "blocked_usage_limit",
   "pending": {
     "remaining_deities": [
-      "orpheus",
       "dionysus",
       "aeneas",
       "aphrodite",
@@ -4250,9 +4275,56 @@
       "ba",
       "apep",
       "ammit"
+    ],
+    "orpheus": [
+      "portrait",
+      "walk_01",
+      "attack_01",
+      "attack_02",
+      "hit_01",
+      "death_01"
     ]
   },
-  "usage_limit": null,
+  "usage_limit": {
+    "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791132807,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":22479}}\")",
+    "resets_at": 1791132807,
+    "reset_utc": "2026-10-04T16:53:27+00:00",
+    "reset_local": "2026-10-04T12:53:27-04:00",
+    "timezone": "America/New_York",
+    "blocked_id": "orpheus",
+    "blocked_frames": [
+      {
+        "pose": "walk_01",
+        "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Image1 approved Orpheus idle EXACT identity/proportions, images2-4 STYLE only. Preserve bone soft bent Thracian cap with blood-red forehead band, wavy hair, youthful delicate half-closed eyes, flowing bone/ink robes and red cloak, same lyre and fine INK strings, sandals. Battle 512x512 square, STRICT RIGHT PROFILE ONE eye, fullbody, two arms/hands and legs. Physical body/head scale matches idle, head ~50px, standing430px, hip centerx256, feet480. Keep cap/lyre/limbs entirely visible inside padding; no framing zoom change. No loose strings, extra objects, weapons or magic/sound waves/music notes/glow. Pose: WALK CONTACT: front leg stretched forward RIGHT with heel planted, rear leg back toe touching baseline. Natural stride, lyre supported securely at chest with both hands, robe/cloak flowing behind. Eyes half closed, singing gently.",
+        "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791132807,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":22479}}\")"
+      },
+      {
+        "pose": "attack_01",
+        "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Image1 approved Orpheus idle EXACT identity/proportions, images2-4 STYLE only. Preserve bone soft bent Thracian cap with blood-red forehead band, wavy hair, youthful delicate half-closed eyes, flowing bone/ink robes and red cloak, same lyre and fine INK strings, sandals. Battle 512x512 square, STRICT RIGHT PROFILE ONE eye, fullbody, two arms/hands and legs. Physical body/head scale matches idle, head ~50px, standing430px, hip centerx256, feet480. Keep cap/lyre/limbs entirely visible inside padding; no framing zoom change. No loose strings, extra objects, weapons or magic/sound waves/music notes/glow. Pose: UNARMED MUSICAL ATTACK WINDUP: draw lyre close to CHEST with holding hand, strumming hand COCKED BACK away from strings, elbow bent behind. Body coiled backwards, knees bent. Lyre fullsize and intact, twohands not duplicating. No sound effects.",
+        "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791132806,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":22478}}\")"
+      },
+      {
+        "pose": "attack_02",
+        "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Image1 approved Orpheus idle EXACT identity/proportions, images2-4 STYLE only. Preserve bone soft bent Thracian cap with blood-red forehead band, wavy hair, youthful delicate half-closed eyes, flowing bone/ink robes and red cloak, same lyre and fine INK strings, sandals. Battle 512x512 square, STRICT RIGHT PROFILE ONE eye, fullbody, two arms/hands and legs. Physical body/head scale matches idle, head ~50px, standing430px, hip centerx256, feet480. Keep cap/lyre/limbs entirely visible inside padding; no framing zoom change. No loose strings, extra objects, weapons or magic/sound waves/music notes/glow. Pose: UNARMED MUSICAL ATTACK STRIKE: thrust lyre forward RIGHT at full extension with holding arm, strumming hand extended across strings. Body committed forward in lunge, robe flowing back. Mouth open singing, strict side profile. TWO hands/arms only, same intact lyre with ink strings, no sound effects.",
+        "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791132806,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":22477}}\")"
+      },
+      {
+        "pose": "hit_01",
+        "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Image1 approved Orpheus idle EXACT identity/proportions, images2-4 STYLE only. Preserve bone soft bent Thracian cap with blood-red forehead band, wavy hair, youthful delicate half-closed eyes, flowing bone/ink robes and red cloak, same lyre and fine INK strings, sandals. Battle 512x512 square, STRICT RIGHT PROFILE ONE eye, fullbody, two arms/hands and legs. Physical body/head scale matches idle, head ~50px, standing430px, hip centerx256, feet480. Keep cap/lyre/limbs entirely visible inside padding; no framing zoom change. No loose strings, extra objects, weapons or magic/sound waves/music notes/glow. Pose: HIT REACTION: head snapped BACK, body recoiling backward away from RIGHT, knees buckled, both hands retain lyre close to chest at tilted angle. Cap stays on. No impact symbols.",
+        "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791132806,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":22476}}\")"
+      },
+      {
+        "pose": "death_01",
+        "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Image1 approved Orpheus idle EXACT identity/proportions, images2-4 STYLE only. Preserve bone soft bent Thracian cap with blood-red forehead band, wavy hair, youthful delicate half-closed eyes, flowing bone/ink robes and red cloak, same lyre and fine INK strings, sandals. Battle 512x512 square, STRICT RIGHT PROFILE ONE eye, fullbody, two arms/hands and legs. Physical body/head scale matches idle, head ~50px, standing430px, hip centerx256, feet480. Keep cap/lyre/limbs entirely visible inside padding; no framing zoom change. No loose strings, extra objects, weapons or magic/sound waves/music notes/glow. Pose: FALLING: body tilted backwards LEFT losing balance, one leg bending underneath and other forward raised, lyre slipping down near hip out of holding hand, strumming arm thrown back for balance. Cap stays on, no loose fragments. Entirely inside square. Face remains right profile, no gore.",
+        "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791132807,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":22475}}\")"
+      },
+      {
+        "pose": "portrait",
+        "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Image1 approved Orpheus idle EXACT identity, others STYLE only. NEW PORTRAIT768x1024 vertical3:4 HEAD TO HIPS, TRUE THREE-QUARTER face slightly RIGHT: both shoulders and BOTH eyes visible, far eye partly visible and half closed. Head tipped BACK, mouth OPEN MID-SONG. Lyre held at chest, both hands visible one holding frame other strumming. Same bone soft bent Thracian cap and RED band, wavy hair, youthful delicate face, robes/cloak/lyre. Face upperhalf. All cap, hair, lyre scrolls, strings and hands visible with generous transparent margins. Head to hips, no thighs/legs, clean continuous ink lower contour no straypixelstrip. No music notes or sound waves or glow/sparks/fragments, no goldstrings.",
+        "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791132807,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":22474}}\")"
+      }
+    ]
+  },
   "review": {
     "small_size_checked": [
       "heracles",
@@ -4293,7 +4365,8 @@
       "sekhmet",
       "ptah",
       "satyr",
-      "asclepius"
+      "asclepius",
+      "orpheus"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -4331,7 +4404,8 @@
     "sekhmet": "approved",
     "ptah": "approved",
     "satyr": "approved",
-    "asclepius": "approved"
+    "asclepius": "approved",
+    "orpheus": "partial: idle_01 and walk_02 approved; six assets pending usage reset"
   },
   "rejected_frames": [
     {
@@ -4700,6 +4774,13 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-0acbacf2-3b83-43ec-9f83-7c92b7b957b4.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Image1 approved Asclepius idle EXACTidentity, otherimages STYLEonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS THREE-QUARTER slightlyRIGHT, BOTH shoulders and BOTH eyes far eye clearlypartlyvisible, calm HOODED eyes and beardedfaceupperhalf. Staff held UPRIGHT in front, EXACTLY ONE serpent with HEAD near shoulder and continuous coils/tail around staff. Entirestaff TOP and BUTT AND snakehead/tongue/tail fullyinside withpadding, slightly diagonalangletofit. Exactsamehair/beard/robe/medicalsatchelandtools, nofullbody/thighs/legs. Bothhands visible, freehand nearhip, continuous clean ink hip lowercontour and transparentpadding below, no straypixelstrip. No brownwood/leather, no2snakes, no caduceuswings, no healingglow.",
       "rejection_reason": "Portrait face remains near one-eye profile and hip lower contour has obvious stray red/bone pixel strip."
+    },
+    {
+      "id": "orpheus",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3c4dcdd8-9ade-4f83-9d07-23612a5f1cac.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Input images are STYLE references only. Full body 512x512 square battle sprite, STRICT RIGHT SIDE PROFILE, ONE eye half closed. Neutral standing pose, lyre upright out in front at chest, one hand holds lyre frame and other rests near strings. Exactly two arms/hands, two legs. Soft bent Thracian cap entirely visible, flowing plain bone/ink robes with blood-red folds, sandals. Delicate proportions, no muscular warrior bulk. Figure top near y50, standing height430px, head50px, hip x256, feet baseline480. Entire character, cap and lyre inside generous padding. Flat fills, no shadow under feet, no aura/glow/sparks/fragments or sound effects.",
+      "rejection_reason": "Cap has red main fabric and bone band; brief requires blood-red band."
     }
   ]
 }
