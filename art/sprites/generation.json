@@ -803,6 +803,11 @@
       "ratio": 0.960127591706539,
       "anchor_x": 0.53,
       "baseline": 480
+    },
+    "nephthys": {
+      "ratio": 0.9043062200956937,
+      "anchor_x": 0.5,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3488,6 +3493,100 @@
       "prompt": "Edit image1, Horus portrait. Correct ONLY complete weapon framing and lower edge: restore the spear's intact pointed butt from image2, show ENTIRE spear tip to butt with transparent margin. Bring spear inward or angle it slightly to fit. Scale entire head-to-hips portrait down slightly for ample margins on all sides. Remove all stray colored pixel strip beneath hip crop; finish a single continuous heavy INK bottom contour with transparent padding beneath. Preserve nearly frontal falcon face, right eye hard stare, left eye scarred shut, double crown, pendant, physique, costume and every other detail. Image2 approved identity, remaining images style. Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. 768x1024 vertical 3:4 transparent RGBA, head to hips, no thighs or legs.",
       "file": "horus/horus_portrait.png",
       "bytes": 89489
+    },
+    {
+      "id": "nephthys",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-9b78f82e-e17f-41a3-baed-f61f5ed68f15.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Nephthys, quiet Egyptian mourner. HOUSE-GLYPH headdress, long close-fitting INK-BLACK dress. BONE and INK feather wings spread from the two arms, smaller and lower than Isis, half-closed. Protective outstretched empty arm, tall INK and BONE staff in the other hand. Quiet solemn face. Dark dress, house-glyph headdress and half-closed wings define silhouette. No glow or gold. Exactly TWO arms, wings are feathered sleeves of these same arms, no extra arms or independent wings. Composition: full body idle_01 standing solemn, RIGHT-facing strict profile, exactly one visible eye. 512x512 square. Standing silhouette including headdress about430px high, head about50px, hips x256, feet baseline480. One arm outstretched gently warding, other visibly gripping tall staff upright close beside body. Small low half-closed feathered sleeves, compact silhouette. Fully frame headdress, both wing tips, staff tip and butt, both feet with ample padding. References are style only.",
+      "file": "nephthys/nephthys_idle_01.png",
+      "bytes": 27915
+    },
+    {
+      "id": "nephthys",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-30776f89-6f30-4012-91fb-d4d9b8465905.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Nephthys, quiet Egyptian mourner. HOUSE-GLYPH headdress, long close-fitting INK-BLACK dress. BONE and INK feather wings spread from the two arms, smaller and lower than Isis, half-closed. Protective outstretched empty arm, tall INK and BONE staff in the other hand. Quiet solemn face. Dark dress, house-glyph headdress and half-closed wings define silhouette. No glow or gold. Exactly TWO arms, wings are feathered sleeves of these same arms, no extra arms or independent wings. Image1 approved Nephthys idle EXACT identity, preserve face, headdress, dark dress, feather pattern, staff and physical proportions. Remaining images style only. Full body strict RIGHT profile with one visible eye. 512x512 square battle frame. Match idle physical head/body scale, standing including crown430px, head50px, hips near x256, feet baseline480. Exactly TWO arms and TWO hands, feather sleeves of these arms; no extra wings or limbs. Staff clearly gripped; all tips and headdress inside canvas with padding. Pose: Walking contact pose RIGHT: front heel plants forward, rear foot trails behind touching ground. Modest measured step under close dark dress. Feathered sleeves small and half-folded low, staff upright clearly gripped in one hand; other hand gently warding.",
+      "file": "nephthys/nephthys_walk_01.png",
+      "normalization": {
+        "ratio": 0.8987240829346093,
+        "anchor_x": 0.51,
+        "baseline": 480
+      },
+      "bytes": 30996
+    },
+    {
+      "id": "nephthys",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2037e817-bf4f-469a-9607-8638b54ad263.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Nephthys, quiet Egyptian mourner. HOUSE-GLYPH headdress, long close-fitting INK-BLACK dress. BONE and INK feather wings spread from the two arms, smaller and lower than Isis, half-closed. Protective outstretched empty arm, tall INK and BONE staff in the other hand. Quiet solemn face. Dark dress, house-glyph headdress and half-closed wings define silhouette. No glow or gold. Exactly TWO arms, wings are feathered sleeves of these same arms, no extra arms or independent wings. Image1 approved Nephthys idle EXACT identity, preserve face, headdress, dark dress, feather pattern, staff and physical proportions. Remaining images style only. Full body strict RIGHT profile with one visible eye. 512x512 square battle frame. Match idle physical head/body scale, standing including crown430px, head50px, hips near x256, feet baseline480. Exactly TWO arms and TWO hands, feather sleeves of these arms; no extra wings or limbs. Staff clearly gripped; all tips and headdress inside canvas with padding. Pose: Walking passing pose RIGHT: weight on one leg, other knee and foot visibly lifted forward under moving dress hem. Different passing contour from planted contact frame. Body slightly raised. Staff upright in visible closed hand; half-folded sleeves swing slightly.",
+      "file": "nephthys/nephthys_walk_02.png",
+      "normalization": {
+        "ratio": 0.9074960127591707,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 30984
+    },
+    {
+      "id": "nephthys",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-aff8fde0-628f-4c59-91e8-e10dc187c147.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Nephthys, quiet Egyptian mourner. HOUSE-GLYPH headdress, long close-fitting INK-BLACK dress. BONE and INK feather wings spread from the two arms, smaller and lower than Isis, half-closed. Protective outstretched empty arm, tall INK and BONE staff in the other hand. Quiet solemn face. Dark dress, house-glyph headdress and half-closed wings define silhouette. No glow or gold. Exactly TWO arms, wings are feathered sleeves of these same arms, no extra arms or independent wings. Image1 approved Nephthys idle EXACT identity, preserve face, headdress, dark dress, feather pattern, staff and physical proportions. Remaining images style only. Full body strict RIGHT profile with one visible eye. 512x512 square battle frame. Match idle physical head/body scale, standing including crown430px, head50px, hips near x256, feet baseline480. Exactly TWO arms and TWO hands, feather sleeves of these arms; no extra wings or limbs. Staff clearly gripped; all tips and headdress inside canvas with padding. Pose: Staff attack wind-up: small knee bend, staff drawn back close beside shoulder, point aimed diagonally RIGHT. Exactly two hands gripping one staff, compact elbows. Feathered sleeves coil inward and lift a little, wings remain small/half-folded. Entire staff ends inside frame.",
+      "file": "nephthys/nephthys_attack_01.png",
+      "normalization": {
+        "ratio": 0.9043062200956937,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 27468
+    },
+    {
+      "id": "nephthys",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d03161d7-fe02-4080-8006-3556b463faa7.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Nephthys, quiet Egyptian mourner. HOUSE-GLYPH headdress, long close-fitting INK-BLACK dress. BONE and INK feather wings spread from the two arms, smaller and lower than Isis, half-closed. Protective outstretched empty arm, tall INK and BONE staff in the other hand. Quiet solemn face. Dark dress, house-glyph headdress and half-closed wings define silhouette. No glow or gold. Exactly TWO arms, wings are feathered sleeves of these same arms, no extra arms or independent wings. Image1 approved Nephthys idle EXACT identity, preserve face, headdress, dark dress, feather pattern, staff and physical proportions. Remaining images style only. Full body strict RIGHT profile with one visible eye. 512x512 square battle frame. Match idle physical head/body scale, standing including crown430px, head50px, hips near x256, feet baseline480. Exactly TWO arms and TWO hands, feather sleeves of these arms; no extra wings or limbs. Staff clearly gripped; all tips and headdress inside canvas with padding. Pose: Staff strike committed forward RIGHT: moderate lunge, staff extended toward RIGHT with both hands. Keep entire staff inside canvas using compact reach and partly bent rear elbow. Feathered sleeves sweep forward on same two arms. Exactly two hands, no effects.",
+      "file": "nephthys/nephthys_attack_02.png",
+      "normalization": {
+        "ratio": 0.9043062200956937,
+        "anchor_x": 0.46,
+        "baseline": 480
+      },
+      "bytes": 27740
+    },
+    {
+      "id": "nephthys",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7698bf7f-1e28-4519-a6e8-cd5f1c9d1b89.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Nephthys, quiet Egyptian mourner. HOUSE-GLYPH headdress, long close-fitting INK-BLACK dress. BONE and INK feather wings spread from the two arms, smaller and lower than Isis, half-closed. Protective outstretched empty arm, tall INK and BONE staff in the other hand. Quiet solemn face. Dark dress, house-glyph headdress and half-closed wings define silhouette. No glow or gold. Exactly TWO arms, wings are feathered sleeves of these same arms, no extra arms or independent wings. Image1 approved Nephthys idle EXACT identity, preserve face, headdress, dark dress, feather pattern, staff and physical proportions. Remaining images style only. Full body strict RIGHT profile with one visible eye. 512x512 square battle frame. Match idle physical head/body scale, standing including crown430px, head50px, hips near x256, feet baseline480. Exactly TWO arms and TWO hands, feather sleeves of these arms; no extra wings or limbs. Staff clearly gripped; all tips and headdress inside canvas with padding. Pose: Hit recoil: shoulders lean backward LEFT, head remains RIGHT, knees bend, staff nearly upright close to body in one visible hand; free hand draws inward defensively. Small feathered sleeves fold close, no detached feathers, no wound effects.",
+      "file": "nephthys/nephthys_hit_01.png",
+      "normalization": {
+        "ratio": 0.9043062200956937,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 26597
+    },
+    {
+      "id": "nephthys",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-40a669c1-701a-437e-bbbc-1abe902fa334.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Nephthys, quiet Egyptian mourner. HOUSE-GLYPH headdress, long close-fitting INK-BLACK dress. BONE and INK feather wings spread from the two arms, smaller and lower than Isis, half-closed. Protective outstretched empty arm, tall INK and BONE staff in the other hand. Quiet solemn face. Dark dress, house-glyph headdress and half-closed wings define silhouette. No glow or gold. Exactly TWO arms, wings are feathered sleeves of these same arms, no extra arms or independent wings. Image1 approved Nephthys idle EXACT identity, preserve face, headdress, dark dress, feather pattern, staff and physical proportions. Remaining images style only. Full body strict RIGHT profile with one visible eye. 512x512 square battle frame. Match idle physical head/body scale, standing including crown430px, head50px, hips near x256, feet baseline480. Exactly TWO arms and TWO hands, feather sleeves of these arms; no extra wings or limbs. Staff clearly gripped; all tips and headdress inside canvas with padding. Pose: Falling backward LEFT: knees buckle, body tips diagonally backward, head still RIGHT. Staff loosens and lowers diagonally close across body, retained in one hand, no disconnected objects. Both feathered sleeve-arms droop half-closed. Entire headdress and staff inside frame.",
+      "file": "nephthys/nephthys_death_01.png",
+      "normalization": {
+        "ratio": 0.9043062200956937,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 31655
+    },
+    {
+      "id": "nephthys",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-6014a30b-14bf-4bf5-965d-8df2c37ca795.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Nephthys, quiet Egyptian mourner. HOUSE-GLYPH headdress, long close-fitting INK-BLACK dress. BONE and INK feather wings spread from the two arms, smaller and lower than Isis, half-closed. Protective outstretched empty arm, tall INK and BONE staff in the other hand. Quiet solemn face. Dark dress, house-glyph headdress and half-closed wings define silhouette. No glow or gold. Exactly TWO arms, wings are feathered sleeves of these same arms, no extra arms or independent wings. Image1 approved identity, remaining images style. NEW head-to-hips portrait768x1024 vertical3:4. Three-quarter viewpoint turned only15degreesRIGHT, nearly frontal, BOTH eyes and BOTH shoulders visible, face upperhalf. House-glyph headdress fully framed. Wings half-folded behind shoulders, small and low. One hand lifted in gentle warding gesture. Other hand visibly holds upright staff close beside head. ENTIRE staff tip AND butt fully visible, angle slightly if needed. Crop at hips, no thighs/legs, continuous clean ink lower contour with transparent padding underneath, no stray colored pixels. All feather tips inside generous frame margins.",
+      "file": "nephthys/nephthys_portrait.png",
+      "bytes": 84295
     }
   ],
   "completed": [
@@ -3522,13 +3621,13 @@
     "osiris",
     "isis",
     "set",
-    "horus"
+    "horus",
+    "nephthys"
   ],
-  "active": "nephthys",
+  "active": "thoth",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "nephthys",
       "thoth",
       "hathor",
       "sekhmet",
@@ -3593,7 +3692,8 @@
       "osiris",
       "isis",
       "set",
-      "horus"
+      "horus",
+      "nephthys"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3624,7 +3724,8 @@
     "osiris": "approved",
     "isis": "approved",
     "set": "approved",
-    "horus": "approved"
+    "horus": "approved",
+    "nephthys": "approved"
   },
   "rejected_frames": [
     {
