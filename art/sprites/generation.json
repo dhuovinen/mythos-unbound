@@ -828,6 +828,11 @@
       "ratio": 0.8803827751196173,
       "anchor_x": 0.51,
       "baseline": 480
+    },
+    "satyr": {
+      "ratio": 0.9170653907496013,
+      "anchor_x": 0.54,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3983,6 +3988,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Ptah portrait. Preserve exact identity, calm face, tight skullcap, straightfalsebeard, bonewrappings/redsash, INK-DARK hands, upright SINGLE sceptre with full was-head/djedbars/ankh/top/shaft/butt. NEW portrait is THREE-QUARTER slightly RIGHT showing BOTH shoulders and BOTH eyes, far eye CLEARLY partially visible; face upperhalf. Head-to-hips, no thighs/legs. Make entire portrait silhouette slightly smaller with generous margins ALL sides. Finish hips at a SINGLE clean continuous INK lower contour with transparent padding underneath. Remove every stray RED speck/strip below hip contour, especially lower LEFT. Smooth clean alpha edge, no pixel debris. Both hands and complete sceptre TOP and BUTT fully visible. Flatfills no warm highlights, no glow.",
       "file": "ptah/ptah_portrait.png",
       "bytes": 73051
+    },
+    {
+      "id": "satyr",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ffa8dd8a-6cd9-4a68-911f-bc132f8cde0b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Satyr, Greek goat-legged reveller, wiry small-built proportions but fills SAME standing sprite height as every humanoid. Short CURLED horns, pointed ears, shaggy GOAT legs with CLOVEN hooves and digitigrade bent hocks, fur INK-and-BONE minimal hatching. Bare chest, grinning mischievous face. PAN PIPES in ONE hand and SHORT KNOTTED CLUB in OTHER hand. Horns/pipes/goat legs define silhouette. BONE and INK ONLY with BLOOD RED ONLY on wine-stained sash. NO brown/tan fur/wood, no gold, no redskin or red eyes. References STYLEonly, never copy Greek armored soldiers. Full body512x512 square sprite STRICT RIGHT profile ONE eye. Neutral lively standing, horns topy50, cloven hooves on y480, body430px high and hipsx256. Head50px, same sprite scale as all tiers, do NOT shrink chaff. Human bare chest/head/arms over shaggy goat lower body with anatomically correct2digitigrade goat legs, bent hocks, visible CLOVEN hooves, no boots/human feet. Panpipe bundle BONE/INK wood in one hand near chest, short knottedclub BONE/INK in other hand resting beside shoulder. Exactly2arms/hands,2legs; no animalcompanion. Bloodred wine sash ONLY red accent, everythingelsebone/ink, no warmcolor onclub/pipes/fur. Whole horns/club/pipes/limbs insidepadding, no aura/glow/floatingfragments.",
+      "file": "satyr/satyr_idle_01.png",
+      "bytes": 25178
+    },
+    {
+      "id": "satyr",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-f510ea28-ae82-4488-a2b8-b037e60c9cb1.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Satyr, Greek goat-legged reveller, wiry small-built proportions but fills SAME standing sprite height as every humanoid. Short CURLED horns, pointed ears, shaggy GOAT legs with CLOVEN hooves and digitigrade bent hocks, fur INK-and-BONE minimal hatching. Bare chest, grinning mischievous face. PAN PIPES in ONE hand and SHORT KNOTTED CLUB in OTHER hand. Horns/pipes/goat legs define silhouette. BONE and INK ONLY with BLOOD RED ONLY on wine-stained sash. NO brown/tan fur/wood, no gold, no redskin or red eyes. Image1 approved Satyr idle EXACT identity: preserve face/grin, curlyhorns, pointedears, hair/beard, barechest, BLOODRED sash onlyred, bone/ink fur goatlegs with CLOVEN hooves, panpipebundle and SHORT knottedclub. Otherimages STYLEonly. 512x512 fullbody STRICT RIGHT profile ONE eye. Same430px standingheight includinghorns, head50px, hipsx256, hoovesy480, NEVER shrink chaff. EXACTLY2 arms/hands and2 digitigrade GOAT legs, correct bent hocks, no human boots/feet or extra limbs. Whole horns/club/pipes insidepadding. No warmbrown wood/fur. Pose: Walk CONTACT RIGHT: front cloven hoof planted forward, rear hoof trails LEFT just touching tip. Lively wiry stride with anatomically correct2 digitigrade goatlegs, bent hocks. Panpipes held near chest in one hand, shortclub on shoulder otherhand. Preserve red winesash and exactfur/costume.",
+      "file": "satyr/satyr_walk_01.png",
+      "normalization": {
+        "ratio": 0.9170653907496013,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 25885
+    },
+    {
+      "id": "satyr",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7e57437d-86ab-414a-9e0e-000a3e0323d2.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Satyr, Greek goat-legged reveller, wiry small-built proportions but fills SAME standing sprite height as every humanoid. Short CURLED horns, pointed ears, shaggy GOAT legs with CLOVEN hooves and digitigrade bent hocks, fur INK-and-BONE minimal hatching. Bare chest, grinning mischievous face. PAN PIPES in ONE hand and SHORT KNOTTED CLUB in OTHER hand. Horns/pipes/goat legs define silhouette. BONE and INK ONLY with BLOOD RED ONLY on wine-stained sash. NO brown/tan fur/wood, no gold, no redskin or red eyes. Image1 approved Satyr idle EXACT identity: preserve face/grin, curlyhorns, pointedears, hair/beard, barechest, BLOODRED sash onlyred, bone/ink fur goatlegs with CLOVEN hooves, panpipebundle and SHORT knottedclub. Otherimages STYLEonly. 512x512 fullbody STRICT RIGHT profile ONE eye. Same430px standingheight includinghorns, head50px, hipsx256, hoovesy480, NEVER shrink chaff. EXACTLY2 arms/hands and2 digitigrade GOAT legs, correct bent hocks, no human boots/feet or extra limbs. Whole horns/club/pipes insidepadding. No warmbrown wood/fur. Pose: Walk PASSING RIGHT: one goatleg supporting under pelvis, other thigh crosses and knee sharply raised with hoof lifted visibly aboveground. NARROW passing pose, no wide stride, preserve correctly bent digitigrade hocks and CLOVEN hooves. Slightly raised body. Panpipes near chest in one hand, clubonshoulder otherhand.",
+      "file": "satyr/satyr_walk_02.png",
+      "normalization": {
+        "ratio": 0.9170653907496013,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 23257
+    },
+    {
+      "id": "satyr",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-dc340b27-dced-4da1-a2e5-7832148323a0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Satyr, Greek goat-legged reveller, wiry small-built proportions but fills SAME standing sprite height as every humanoid. Short CURLED horns, pointed ears, shaggy GOAT legs with CLOVEN hooves and digitigrade bent hocks, fur INK-and-BONE minimal hatching. Bare chest, grinning mischievous face. PAN PIPES in ONE hand and SHORT KNOTTED CLUB in OTHER hand. Horns/pipes/goat legs define silhouette. BONE and INK ONLY with BLOOD RED ONLY on wine-stained sash. NO brown/tan fur/wood, no gold, no redskin or red eyes. Image1 approved Satyr idle EXACT identity: preserve face/grin, curlyhorns, pointedears, hair/beard, barechest, BLOODRED sash onlyred, bone/ink fur goatlegs with CLOVEN hooves, panpipebundle and SHORT knottedclub. Otherimages STYLEonly. 512x512 fullbody STRICT RIGHT profile ONE eye. Same430px standingheight includinghorns, head50px, hipsx256, hoovesy480, NEVER shrink chaff. EXACTLY2 arms/hands and2 digitigrade GOAT legs, correct bent hocks, no human boots/feet or extra limbs. Whole horns/club/pipes insidepadding. No warmbrown wood/fur. Pose: Club drawn BACK over rear LEFT shoulder for wind-up, body coiled and legs slightly crouch with same goat hocks. Panpipes tucked UNDER other arm but still held supported by visible hand. Exactly2arms/hands, ONE hand onclub, ONE retains pipes. Entireclub tip/handle inside, horns/grin same.",
+      "file": "satyr/satyr_attack_01.png",
+      "normalization": {
+        "ratio": 0.9170653907496013,
+        "anchor_x": 0.61,
+        "baseline": 480
+      },
+      "bytes": 26882
+    },
+    {
+      "id": "satyr",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-4c6a2395-999a-4c00-87a8-386a05ee420a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Satyr, Greek goat-legged reveller, wiry small-built proportions but fills SAME standing sprite height as every humanoid. Short CURLED horns, pointed ears, shaggy GOAT legs with CLOVEN hooves and digitigrade bent hocks, fur INK-and-BONE minimal hatching. Bare chest, grinning mischievous face. PAN PIPES in ONE hand and SHORT KNOTTED CLUB in OTHER hand. Horns/pipes/goat legs define silhouette. BONE and INK ONLY with BLOOD RED ONLY on wine-stained sash. NO brown/tan fur/wood, no gold, no redskin or red eyes. Image1 approved Satyr idle EXACT identity: preserve face/grin, curlyhorns, pointedears, hair/beard, barechest, BLOODRED sash onlyred, bone/ink fur goatlegs with CLOVEN hooves, panpipebundle and SHORT knottedclub. Otherimages STYLEonly. 512x512 fullbody STRICT RIGHT profile ONE eye. Same430px standingheight includinghorns, head50px, hipsx256, hoovesy480, NEVER shrink chaff. EXACTLY2 arms/hands and2 digitigrade GOAT legs, correct bent hocks, no human boots/feet or extra limbs. Whole horns/club/pipes insidepadding. No warmbrown wood/fur. Pose: Club swung DOWN and FORWARD RIGHT at full extension, body committed into lunge with goatlegs and clovenhooves. Club in ONE hand. Panpipes tucked UNDER OTHER arm and supported by otherhand near chest. Exactly2arms/hands, no extra hands, no loose pipes, no motionarcs, wholeclubinside.",
+      "file": "satyr/satyr_attack_02.png",
+      "normalization": {
+        "ratio": 0.9170653907496013,
+        "anchor_x": 0.48,
+        "baseline": 480
+      },
+      "bytes": 26441
+    },
+    {
+      "id": "satyr",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e3241bb4-ebe7-4b62-a1a7-664cb9e02214.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Satyr, Greek goat-legged reveller, wiry small-built proportions but fills SAME standing sprite height as every humanoid. Short CURLED horns, pointed ears, shaggy GOAT legs with CLOVEN hooves and digitigrade bent hocks, fur INK-and-BONE minimal hatching. Bare chest, grinning mischievous face. PAN PIPES in ONE hand and SHORT KNOTTED CLUB in OTHER hand. Horns/pipes/goat legs define silhouette. BONE and INK ONLY with BLOOD RED ONLY on wine-stained sash. NO brown/tan fur/wood, no gold, no redskin or red eyes. Image1 approved Satyr idle EXACT identity: preserve face/grin, curlyhorns, pointedears, hair/beard, barechest, BLOODRED sash onlyred, bone/ink fur goatlegs with CLOVEN hooves, panpipebundle and SHORT knottedclub. Otherimages STYLEonly. 512x512 fullbody STRICT RIGHT profile ONE eye. Same430px standingheight includinghorns, head50px, hipsx256, hoovesy480, NEVER shrink chaff. EXACTLY2 arms/hands and2 digitigrade GOAT legs, correct bent hocks, no human boots/feet or extra limbs. Whole horns/club/pipes insidepadding. No warmbrown wood/fur. Pose: Hit recoil backward LEFT, head snaps back while facingRIGHT, upperbody recoils and goathocks flex. Club held close diagonally in one hand, panpipes secured in otherhand near chest. Exactly2arms/hands and2goatlegs, no floating pipes/club.",
+      "file": "satyr/satyr_hit_01.png",
+      "normalization": {
+        "ratio": 0.9170653907496013,
+        "anchor_x": 0.65,
+        "baseline": 480
+      },
+      "bytes": 28985
+    },
+    {
+      "id": "satyr",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-9a54e469-39d5-4e31-9355-0948e737319e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Satyr, Greek goat-legged reveller, wiry small-built proportions but fills SAME standing sprite height as every humanoid. Short CURLED horns, pointed ears, shaggy GOAT legs with CLOVEN hooves and digitigrade bent hocks, fur INK-and-BONE minimal hatching. Bare chest, grinning mischievous face. PAN PIPES in ONE hand and SHORT KNOTTED CLUB in OTHER hand. Horns/pipes/goat legs define silhouette. BONE and INK ONLY with BLOOD RED ONLY on wine-stained sash. NO brown/tan fur/wood, no gold, no redskin or red eyes. Image1 approved Satyr idle EXACT identity: preserve face/grin, curlyhorns, pointedears, hair/beard, barechest, BLOODRED sash onlyred, bone/ink fur goatlegs with CLOVEN hooves, panpipebundle and SHORT knottedclub. Otherimages STYLEonly. 512x512 fullbody STRICT RIGHT profile ONE eye. Same430px standingheight includinghorns, head50px, hipsx256, hoovesy480, NEVER shrink chaff. EXACTLY2 arms/hands and2 digitigrade GOAT legs, correct bent hocks, no human boots/feet or extra limbs. Whole horns/club/pipes insidepadding. No warmbrown wood/fur. Pose: FALLING backward LEFT, losingbalance, torso tilted back and down, goatknees/hocks buckling visibly with clovenhooves nearbaseline. Clubdrops low in onehand angled down acrossbody, otherhand loosely retains panpipes nearwaist. Entireclub/horns/pipes visible, exactly2arms/hands and2goatlegs, no loose fragments.",
+      "file": "satyr/satyr_death_01.png",
+      "normalization": {
+        "ratio": 0.9170653907496013,
+        "anchor_x": 0.62,
+        "baseline": 480
+      },
+      "bytes": 26626
+    },
+    {
+      "id": "satyr",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a0b22047-f2fd-47d7-a3e1-3f1bd6de27e3.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Satyr portrait. PRIMARY CORRECTION: ROTATE HEAD/face toward viewer into TRUE THREE-QUARTER slightly RIGHT, not strict profile. BOTH EYES OPEN and CLEARLY visible simultaneously; far eye partly visible, nose near facial center, show far cheek and BOTH pointed ears. Keep exact identity/mischievous grin, curlyhorns, hair/beard, proportions, bone/ink barechest, same panpipes raised near lips in ONE hand and same fullknottedclub resting on shoulder in OTHER hand. BOTH shoulders visible. Portrait vertical3:4 headtohips, faceupperhalf, no thighs/legs. Red ONLY winesash, all otherfills uniformbone/ink. Whole silhouette with generous clear margins onALL sides, fullclub/pipes/horns/arms fully inside, clean ink hip contour/tufts and transparentpadding below. No warmyellow/tan specks, croppedwrists or straypixels. Exactly2arms/hands.",
+      "file": "satyr/satyr_portrait.png",
+      "bytes": 90826
     }
   ],
   "completed": [
@@ -4022,13 +4121,13 @@
     "thoth",
     "hathor",
     "sekhmet",
-    "ptah"
+    "ptah",
+    "satyr"
   ],
-  "active": "satyr",
+  "active": "asclepius",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "satyr",
       "asclepius",
       "orpheus",
       "dionysus",
@@ -4093,7 +4192,8 @@
       "thoth",
       "hathor",
       "sekhmet",
-      "ptah"
+      "ptah",
+      "satyr"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -4129,7 +4229,8 @@
     "thoth": "approved",
     "hathor": "approved",
     "sekhmet": "approved",
-    "ptah": "approved"
+    "ptah": "approved",
+    "satyr": "approved"
   },
   "rejected_frames": [
     {
@@ -4477,6 +4578,13 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-45f657b0-e70b-4324-965e-15d1079bcfe9.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Ptah, Egyptian creator who spoke world into being. MUMMIFORM body in BONE wrappings with INK-DARK hands, tight INK skullcap, straight false beard, tall sceptre combining WAS animal-head, DJED stacked pillar and ANKH loop-cross. Upright like pillar and immovable. LEGS WRAPPED TOGETHER, barely steps, narrow rigid silhouette. Skullcap and tall sceptre define silhouette. NO gold. Image1 approved Ptah idle EXACT identity, remainingimages STYLEonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS THREE-QUARTER turned slightly RIGHT, BOTH shoulders and BOTH eyes with far eye partly visible, calm face upperhalf. Tight INK skullcap, same straightfalsebeard, bonewrappings/redsash and INK-DARK hands. Tall sceptre held UPRIGHT in front, complete was-head/djedbars/ankh TOP AND longshaft/BUTT visible with margins, angle slightly diagonal to fit. Exactly2 hands clasp SINGLE sceptre, no extra weapon. No fullbody/legs, clean continuous ink hip lower contour with transparent padding, no straypixels or crops at margins. Flatfills no gold/tan/glow.",
       "rejection_reason": "Portrait hip lower contour has stray red pixels below its left edge."
+    },
+    {
+      "id": "satyr",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-f258bc74-9642-4c63-9e85-d59650ebb98e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Satyr, Greek goat-legged reveller, wiry small-built proportions but fills SAME standing sprite height as every humanoid. Short CURLED horns, pointed ears, shaggy GOAT legs with CLOVEN hooves and digitigrade bent hocks, fur INK-and-BONE minimal hatching. Bare chest, grinning mischievous face. PAN PIPES in ONE hand and SHORT KNOTTED CLUB in OTHER hand. Horns/pipes/goat legs define silhouette. BONE and INK ONLY with BLOOD RED ONLY on wine-stained sash. NO brown/tan fur/wood, no gold, no redskin or red eyes. Image1 approved Satyr idle EXACT identity, otherimages STYLEonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS THREE-QUARTER slightlyRIGHT, BOTH shoulders and BOTH eyes far eye partlyvisible. MISCHIEVOUS grin, faceupperhalf, panpipes raised toward LIPS in one hand, knottedclub resting on SHOULDER in other hand. Exactly2arms/hands. Entire curlyhorns, pointedears, hair/beard, panpipebundle and fullclub TIP/HANDLE fully insidepadding. Same BONE/INK only onskin/fur/wood, red ONLY winesash. Clean continuous ink hip lower contour with transparentpadding underneath, no fullbody/thighs/legs, no croppedwrists or straypixels.",
+      "rejection_reason": "Portrait face remains a strict one-eye profile rather than a three-quarter face showing the far eye."
     }
   ]
 }
