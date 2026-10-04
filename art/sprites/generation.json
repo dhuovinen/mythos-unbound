@@ -798,6 +798,11 @@
       "ratio": 0.9242424242424242,
       "anchor_x": 0.51,
       "baseline": 480
+    },
+    "horus": {
+      "ratio": 0.960127591706539,
+      "anchor_x": 0.53,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3389,6 +3394,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Image1 identity, other images style. Portrait768x1024 vertical3:4. NEW head-to-hips THREE-QUARTER view only15degreesRIGHT, near frontal, BOTH red eyes and BOTH shoulders visible. Curved snout turned onlyslightlyRIGHT, square-tipped tall ears fully inside frame. Face upperhalf. Spear upright beside head: ENTIRE spear INCLUDING TIP AND BUTT visible, angled slightly if necessary, generous margins. Exact identity physique costume and facial shape from image1. Hip crop, no thighs/legs. Clean continuous ink bottom contour and transparent padding below, no stray pixels.",
       "file": "set/set_portrait.png",
       "bytes": 73895
+    },
+    {
+      "id": "horus",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-04a69f41-b62f-400a-82ed-6a88bd425ef3.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Horus, Egyptian falcon-headed avenger. INK falcon head with BONE facial shapes, scar across LEFT eye (he lost it), double crown: tall BONE white crown nested with smaller BLOOD-RED crown. Long spear, udjat-eye pendant on collar, short kilt in BONE with BLOOD sash and INK edges. Upright, vengeful, hard stare. Falcon head and double crown define silhouette. No gold. Composition: full body idle_01 upright, RIGHT-facing strict profile with exactly one visible eye. Left eye bears clear scar; other eye dark. 512x512 square battle sprite. Standing silhouette INCLUDING double crown about430px high, head50px, feet baseline480, hips x256. Spear held upright beside head by ONE hand, other empty hand at waist, exactly TWO arms and TWO legs. Full crown, spear tip AND butt, both feet inside with generous padding. Flat color, no effects. References style only.",
+      "file": "horus/horus_idle_01.png",
+      "bytes": 25265
+    },
+    {
+      "id": "horus",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5a5eaeed-e024-426d-9d36-e32ff0d4939e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Horus, Egyptian falcon-headed avenger. INK falcon head with BONE facial shapes, scar across LEFT eye (he lost it), double crown: tall BONE white crown nested with smaller BLOOD-RED crown. Long spear, udjat-eye pendant on collar, short kilt in BONE with BLOOD sash and INK edges. Upright, vengeful, hard stare. Falcon head and double crown define silhouette. No gold. Input image1 is approved Horus identity; preserve exact falcon head, scar, double crown, physique, collar/pendant, kilt and spear. Remaining images style only. Full body RIGHT strict profile, one visible eye. 512x512 square battle sprite. Maintain physical head and body scale across all poses; standing including crown430px, head50px, hips near x256, feet baseline480. Exactly2arms and2legs. Entire crown, spear TIP AND BUTT and all limbs inside with padding. No dropped objects or extra hands. Pose: Walking contact frame RIGHT: front foot plants forward, rear foot trailing behind touching ground. Upright vengeful posture. Spear upright held by visible forward hand, other empty hand swings slightly back.",
+      "file": "horus/horus_walk_01.png",
+      "normalization": {
+        "ratio": 0.960127591706539,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 27942
+    },
+    {
+      "id": "horus",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-6efe2e9c-86c3-4e48-affa-7bfce226d1e1.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Horus, Egyptian falcon-headed avenger. INK falcon head with BONE facial shapes, scar across LEFT eye (he lost it), double crown: tall BONE white crown nested with smaller BLOOD-RED crown. Long spear, udjat-eye pendant on collar, short kilt in BONE with BLOOD sash and INK edges. Upright, vengeful, hard stare. Falcon head and double crown define silhouette. No gold. Input image1 is approved Horus identity; preserve exact falcon head, scar, double crown, physique, collar/pendant, kilt and spear. Remaining images style only. Full body RIGHT strict profile, one visible eye. 512x512 square battle sprite. Maintain physical head and body scale across all poses; standing including crown430px, head50px, hips near x256, feet baseline480. Exactly2arms and2legs. Entire crown, spear TIP AND BUTT and all limbs inside with padding. No dropped objects or extra hands. Pose: Walking passing frame RIGHT: one supporting foot planted, opposite knee clearly raised forward with foot visibly off ground. Spear upright in visible forward hand CLOSED around shaft, empty arm swings backward. Different foot positions from contact frame.",
+      "file": "horus/horus_walk_02.png",
+      "normalization": {
+        "ratio": 0.9569377990430622,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 27093
+    },
+    {
+      "id": "horus",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b3c30d23-1e73-4294-8819-779c09fbe88e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Horus, Egyptian falcon-headed avenger. INK falcon head with BONE facial shapes, scar across LEFT eye (he lost it), double crown: tall BONE white crown nested with smaller BLOOD-RED crown. Long spear, udjat-eye pendant on collar, short kilt in BONE with BLOOD sash and INK edges. Upright, vengeful, hard stare. Falcon head and double crown define silhouette. No gold. Input image1 is approved Horus identity; preserve exact falcon head, scar, double crown, physique, collar/pendant, kilt and spear. Remaining images style only. Full body RIGHT strict profile, one visible eye. 512x512 square battle sprite. Maintain physical head and body scale across all poses; standing including crown430px, head50px, hips near x256, feet baseline480. Exactly2arms and2legs. Entire crown, spear TIP AND BUTT and all limbs inside with padding. No dropped objects or extra hands. Pose: Spear thrust wind-up: small crouch, spear drawn back alongside torso at shoulder height aimed RIGHT. Exactly TWO hands holding ONE spear. Elbows bent, compact reach; entire tip and butt inside frame. Crown stays intact upright.",
+      "file": "horus/horus_attack_01.png",
+      "normalization": {
+        "ratio": 0.960127591706539,
+        "anchor_x": 0.49,
+        "baseline": 480
+      },
+      "bytes": 25864
+    },
+    {
+      "id": "horus",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-35a33a08-3393-4ca1-9baf-eb3814d31b28.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Horus, Egyptian falcon-headed avenger. INK falcon head with BONE facial shapes, scar across LEFT eye (he lost it), double crown: tall BONE white crown nested with smaller BLOOD-RED crown. Long spear, udjat-eye pendant on collar, short kilt in BONE with BLOOD sash and INK edges. Upright, vengeful, hard stare. Falcon head and double crown define silhouette. No gold. Input image1 is approved Horus identity; preserve exact falcon head, scar, double crown, physique, collar/pendant, kilt and spear. Remaining images style only. Full body RIGHT strict profile, one visible eye. 512x512 square battle sprite. Maintain physical head and body scale across all poses; standing including crown430px, head50px, hips near x256, feet baseline480. Exactly2arms and2legs. Entire crown, spear TIP AND BUTT and all limbs inside with padding. No dropped objects or extra hands. Pose: Spear strike: moderate forward lunge, both hands thrust spear toward RIGHT, elbows partly bent so whole same-length spear is inside canvas with padding. Clear forward reach distinct from wind-up. No oversized arms or giant weapon.",
+      "file": "horus/horus_attack_02.png",
+      "normalization": {
+        "ratio": 0.960127591706539,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 23743
+    },
+    {
+      "id": "horus",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-99a04748-38b3-4d50-b85c-cb8d8fa0808f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Horus, Egyptian falcon-headed avenger. INK falcon head with BONE facial shapes, scar across LEFT eye (he lost it), double crown: tall BONE white crown nested with smaller BLOOD-RED crown. Long spear, udjat-eye pendant on collar, short kilt in BONE with BLOOD sash and INK edges. Upright, vengeful, hard stare. Falcon head and double crown define silhouette. No gold. Input image1 is approved Horus identity; preserve exact falcon head, scar, double crown, physique, collar/pendant, kilt and spear. Remaining images style only. Full body RIGHT strict profile, one visible eye. 512x512 square battle sprite. Maintain physical head and body scale across all poses; standing including crown430px, head50px, hips near x256, feet baseline480. Exactly2arms and2legs. Entire crown, spear TIP AND BUTT and all limbs inside with padding. No dropped objects or extra hands. Pose: Hit recoil: shoulders lean backward LEFT, falcon head stays RIGHT, knees bend slightly. Spear held in one hand nearly upright close to body, free hand draws toward chest. ENTIRE intact spearhead and butt inside canvas with generous margins.",
+      "file": "horus/horus_hit_01.png",
+      "normalization": {
+        "ratio": 0.960127591706539,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 26500
+    },
+    {
+      "id": "horus",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b5e98e30-e91a-41b9-80cc-b4528e3969ab.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Horus, Egyptian falcon-headed avenger. INK falcon head with BONE facial shapes, scar across LEFT eye (he lost it), double crown: tall BONE white crown nested with smaller BLOOD-RED crown. Long spear, udjat-eye pendant on collar, short kilt in BONE with BLOOD sash and INK edges. Upright, vengeful, hard stare. Falcon head and double crown define silhouette. No gold. Input image1 is approved Horus identity; preserve exact falcon head, scar, double crown, physique, collar/pendant, kilt and spear. Remaining images style only. Full body RIGHT strict profile, one visible eye. 512x512 square battle sprite. Maintain physical head and body scale across all poses; standing including crown430px, head50px, hips near x256, feet baseline480. Exactly2arms and2legs. Entire crown, spear TIP AND BUTT and all limbs inside with padding. No dropped objects or extra hands. Pose: Defeated falling backward LEFT: knees buckle, body tips backward diagonally, falcon head stays RIGHT. Spear close diagonally across body retained in both hands; no detached objects, whole double crown and spear fit. No effects.",
+      "file": "horus/horus_death_01.png",
+      "normalization": {
+        "ratio": 0.960127591706539,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 25170
+    },
+    {
+      "id": "horus",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-42f94ba7-2f7b-4577-94cf-069c2eeff2f1.png",
+      "prompt": "Edit image1, Horus portrait. Correct ONLY complete weapon framing and lower edge: restore the spear's intact pointed butt from image2, show ENTIRE spear tip to butt with transparent margin. Bring spear inward or angle it slightly to fit. Scale entire head-to-hips portrait down slightly for ample margins on all sides. Remove all stray colored pixel strip beneath hip crop; finish a single continuous heavy INK bottom contour with transparent padding beneath. Preserve nearly frontal falcon face, right eye hard stare, left eye scarred shut, double crown, pendant, physique, costume and every other detail. Image2 approved identity, remaining images style. Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. 768x1024 vertical 3:4 transparent RGBA, head to hips, no thighs or legs.",
+      "file": "horus/horus_portrait.png",
+      "bytes": 89489
     }
   ],
   "completed": [
@@ -3422,13 +3521,13 @@
     "ra",
     "osiris",
     "isis",
-    "set"
+    "set",
+    "horus"
   ],
-  "active": "horus",
+  "active": "nephthys",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "horus",
       "nephthys",
       "thoth",
       "hathor",
@@ -3493,7 +3592,8 @@
       "ra",
       "osiris",
       "isis",
-      "set"
+      "set",
+      "horus"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3523,7 +3623,8 @@
     "ra": "approved",
     "osiris": "approved",
     "isis": "approved",
-    "set": "approved"
+    "set": "approved",
+    "horus": "approved"
   },
   "rejected_frames": [
     {
@@ -3808,6 +3909,13 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-43df684d-0cd4-4bc1-a6a9-d9f589e832d9.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Set, Egyptian god of storms and red desert. SET-ANIMAL head, not a jackal: elongated snout curves distinctly DOWNWARD at tip, tall vertical ears with SQUARE flat tips. INK fur, BLOOD-RED eyes without glow, hunched muscular body, short BLOOD-RED kilt. One tall spear with INK shaft and BONE pointed blade. Hunched and wary. Curved snout and tall square ears define silhouette. No gold. Input image1 is approved Set identity; preserve exact curved snout, SQUARE-tipped ears, red eye, physique, kilt and spear. Remaining images style only. Full body RIGHT-facing strict profile, one visible red eye. 512x512 square. Same physical body/head scale across all poses: standing including ears about430px, head50px, hips near x256, feet baseline480. Entire spear, ears, body and limbs fully framed. Exactly2arms and2legs, exactly one spear, no extra hands. Flat red eye no glow. Pose: Hit recoil: shoulders lean backward LEFT, head remains RIGHT, knees bend, spear tilts a little toward RIGHT in one hand, other hand draws toward chest. Exactly two hands, entire spear inside frame. No wound or effects.",
       "rejection_reason": "Spearhead has a chopped straight edge; restore intact pointed blade matching idle."
+    },
+    {
+      "id": "horus",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a1e28221-b76f-41d5-bc37-0da68793bf51.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Horus, Egyptian falcon-headed avenger. INK falcon head with BONE facial shapes, scar across LEFT eye (he lost it), double crown: tall BONE white crown nested with smaller BLOOD-RED crown. Long spear, udjat-eye pendant on collar, short kilt in BONE with BLOOD sash and INK edges. Upright, vengeful, hard stare. Falcon head and double crown define silhouette. No gold. Image1 identity, other images style only. NEW head-to-hips portrait 768x1024 vertical3:4. Turn only15degrees RIGHT, nearly FRONTAL falcon head so BOTH eye locations and BOTH shoulders clearly visible: left eye is scarred shut, right eye hard stare. Complete double crown fullyframed. Face upper half. Entire spear held upright beside head, TIP AND BUTT inside with padding; angle slightly if necessary. Same physique and costume. Crop at hips, no thighs/legs. Single continuous clean ink lower outline with transparent margin underneath. No random colored pixels.",
+      "rejection_reason": "Portrait spear butt is truncated and lower hip crop has stray pixel strip."
     }
   ]
 }
