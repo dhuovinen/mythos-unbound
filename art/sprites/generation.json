@@ -833,6 +833,11 @@
       "ratio": 0.9170653907496013,
       "anchor_x": 0.54,
       "baseline": 480
+    },
+    "asclepius": {
+      "ratio": 0.9178628389154705,
+      "anchor_x": 0.465,
+      "baseline": 480
     }
   },
   "frames": [
@@ -4082,6 +4087,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Satyr portrait. PRIMARY CORRECTION: ROTATE HEAD/face toward viewer into TRUE THREE-QUARTER slightly RIGHT, not strict profile. BOTH EYES OPEN and CLEARLY visible simultaneously; far eye partly visible, nose near facial center, show far cheek and BOTH pointed ears. Keep exact identity/mischievous grin, curlyhorns, hair/beard, proportions, bone/ink barechest, same panpipes raised near lips in ONE hand and same fullknottedclub resting on shoulder in OTHER hand. BOTH shoulders visible. Portrait vertical3:4 headtohips, faceupperhalf, no thighs/legs. Red ONLY winesash, all otherfills uniformbone/ink. Whole silhouette with generous clear margins onALL sides, fullclub/pipes/horns/arms fully inside, clean ink hip contour/tufts and transparentpadding below. No warmyellow/tan specks, croppedwrists or straypixels. Exactly2arms/hands.",
       "file": "satyr/satyr_portrait.png",
       "bytes": 90826
+    },
+    {
+      "id": "asclepius",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-98b07cce-d1d1-4acd-b7bd-0fc9148e02bf.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Three references STYLEonly, don't copyZeus/Heracles. Fullbody512x512 square battleframe STRICT RIGHT profile ONE eye. Neutralstanding physician, plainanklelengthbone/ink robe with smallred folds, shaggybeard andhair, noarmor/crown. Upright staff held byonehand beside shoulder, ONE serpent visibly coiled around staff with SINGLE head near shoulder and SINGLE tail winding down shaft, bone/ink serpent with tinybloodredtongue. Satchel at hip, otherarm relaxed naturally. Exactly2arms/hands,2legs. Figuretopnear y50, feetbaseline480, standing430px high, head50px, hipsx256. Entirestaff TOP/BUTT, serpent head/tail and limbs insidepadding. No wings onstaff, nevercaduceus, no extraanimalcompanion, no magic/glow/sparks/fragments. Uniformflatfills.",
+      "file": "asclepius/asclepius_idle_01.png",
+      "bytes": 29389
+    },
+    {
+      "id": "asclepius",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-970e7af1-a95f-48bf-8f81-8f727fe76894.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Image1 approved Asclepius idle EXACT identity, preserve calmbeardedface/hair, plainrobe bone/ink/red, medicalsatchel/tools, wooden staff BONE/INK with EXACTLY ONE continuous BONE/INK patterned serpent with ONE HEAD/ONE TAIL/tinybloodredforkedtongue. Otherimages STYLEonly. Fullbody512x512 STRICT RIGHT sideprofile ONE eye. Samestanding430px, head50px, hipsx256, feetbaseline480, no shrinkbody to fitstaff. Whole staff TOP/BUTT and serpent fullyinside padding, angle asneeded. Exactly2arms/hands,2legs, one handonstaff, other balanced. No2snakes, no caduceus wings, no healingglow/magiceffects. Pose: Walking CONTACT RIGHT: front heel planted forward, rear foot trails LEFT touchingtoe. Plain longrobe moves naturally with readable stride and sandals. Upright staff inonehand with ONE serpent coiled continuously, otherarm swingsnaturally. Satchel staysat hip with same instruments.",
+      "file": "asclepius/asclepius_walk_01.png",
+      "normalization": {
+        "ratio": 0.9178628389154705,
+        "anchor_x": 0.49,
+        "baseline": 480
+      },
+      "bytes": 31364
+    },
+    {
+      "id": "asclepius",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-40e7a328-855e-4dda-9418-baab7fae7724.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Image1 approved Asclepius idle EXACT identity, preserve calmbeardedface/hair, plainrobe bone/ink/red, medicalsatchel/tools, wooden staff BONE/INK with EXACTLY ONE continuous BONE/INK patterned serpent with ONE HEAD/ONE TAIL/tinybloodredforkedtongue. Otherimages STYLEonly. Fullbody512x512 STRICT RIGHT sideprofile ONE eye. Samestanding430px, head50px, hipsx256, feetbaseline480, no shrinkbody to fitstaff. Whole staff TOP/BUTT and serpent fullyinside padding, angle asneeded. Exactly2arms/hands,2legs, one handonstaff, other balanced. No2snakes, no caduceus wings, no healingglow/magiceffects. Pose: Walking PASSING RIGHT: one supporting leg directlybeneath pelvis, other thigh crosses with knee clearly raised and bent, foot lifted wellaboveground. NARROW passingpose, NO widestride, robe folds aroundraisedknee, body slightlyraised. Staffupright inonehand, ONE serpent, satchelstillathip.",
+      "file": "asclepius/asclepius_walk_02.png",
+      "normalization": {
+        "ratio": 0.9178628389154705,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 29334
+    },
+    {
+      "id": "asclepius",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-21a69774-011d-4ceb-b430-1639b281706e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Image1 approved Asclepius idle EXACT identity, preserve calmbeardedface/hair, plainrobe bone/ink/red, medicalsatchel/tools, wooden staff BONE/INK with EXACTLY ONE continuous BONE/INK patterned serpent with ONE HEAD/ONE TAIL/tinybloodredforkedtongue. Otherimages STYLEonly. Fullbody512x512 STRICT RIGHT sideprofile ONE eye. Samestanding430px, head50px, hipsx256, feetbaseline480, no shrinkbody to fitstaff. Whole staff TOP/BUTT and serpent fullyinside padding, angle asneeded. Exactly2arms/hands,2legs, one handonstaff, other balanced. No2snakes, no caduceus wings, no healingglow/magiceffects. Pose: Staff DRAWN BACK LEFT for wind-up, serpent COILED TIGHT on same staff, ONE head and tail. Weaponarm drawnback beside shoulder, longstaff tilted diagonally across rear side, its TOP near headheight and BUTT lifted fromground, everyend fullyvisible. Bodycoiled, knees slightlybend, preservebodyphysicalscale. Freearmbalanced close, exactly2arms/hands, no secondserpent.",
+      "file": "asclepius/asclepius_attack_01.png",
+      "normalization": {
+        "ratio": 0.9178628389154705,
+        "anchor_x": 0.575,
+        "baseline": 480
+      },
+      "bytes": 31130
+    },
+    {
+      "id": "asclepius",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-fa94f496-2111-4d4c-9437-a4b3dd1b8d0c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Image1 approved Asclepius idle EXACT identity, preserve calmbeardedface/hair, plainrobe bone/ink/red, medicalsatchel/tools, wooden staff BONE/INK with EXACTLY ONE continuous BONE/INK patterned serpent with ONE HEAD/ONE TAIL/tinybloodredforkedtongue. Otherimages STYLEonly. Fullbody512x512 STRICT RIGHT sideprofile ONE eye. Samestanding430px, head50px, hipsx256, feetbaseline480, no shrinkbody to fitstaff. Whole staff TOP/BUTT and serpent fullyinside padding, angle asneeded. Exactly2arms/hands,2legs, one handonstaff, other balanced. No2snakes, no caduceus wings, no healingglow/magiceffects. Pose: Hit recoil backwardLEFT, head snapsback while stillRIGHT, shouldersback and kneesbend. Staff held close almostupright inonehand, ONE serpent coiledtight, satchelandinstruments secure, freehand near torso. Exactly2arms/hands, no loose instruments orfragments.",
+      "file": "asclepius/asclepius_hit_01.png",
+      "normalization": {
+        "ratio": 0.9178628389154705,
+        "anchor_x": 0.51,
+        "baseline": 480
+      },
+      "bytes": 31044
+    },
+    {
+      "id": "asclepius",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-cbf62638-5593-43f4-b36d-66e0a785561b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Image1 approved Asclepius idle EXACT identity, preserve calmbeardedface/hair, plainrobe bone/ink/red, medicalsatchel/tools, wooden staff BONE/INK with EXACTLY ONE continuous BONE/INK patterned serpent with ONE HEAD/ONE TAIL/tinybloodredforkedtongue. Otherimages STYLEonly. Fullbody512x512 STRICT RIGHT sideprofile ONE eye. Samestanding430px, head50px, hipsx256, feetbaseline480, no shrinkbody to fitstaff. Whole staff TOP/BUTT and serpent fullyinside padding, angle asneeded. Exactly2arms/hands,2legs, one handonstaff, other balanced. No2snakes, no caduceus wings, no healingglow/magiceffects. Pose: FALLING backwardLEFT, losingbalance with bucklingknees, torso tiltedback distinctly. Staff hand dropsLOW, longstaff lowered diagonally acrossbody andwaist, ONE serpent remainscoiled onstaff. Freehand reachesforbalance, satchel/instruments stayattached. Whole snake/staff inside, exactly2arms/hands, no floatingobjects.",
+      "file": "asclepius/asclepius_death_01.png",
+      "normalization": {
+        "ratio": 0.9178628389154705,
+        "anchor_x": 0.62,
+        "baseline": 480
+      },
+      "bytes": 32502
+    },
+    {
+      "id": "asclepius",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-09b87c23-56c2-4b69-9545-8f18da217001.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. EDIT Image1 Asclepius portrait. TWO corrections. First ROTATE FACE toward viewer into TRUE THREE-QUARTER slightly RIGHT, show BOTH calm hooded EYES clearly atsame time, far eye partlyvisible with farcheek; nose nearcenter of face, BOTH shoulders visible. Preserve exactbeardedface/hair/robe/medicalsatchel/tools and SINGLE staff with EXACTLY ONE continuous patterned serpent, ONE head nearshoulder and ONE tail. Second CLEAN hip lower contour: single continuous INK boundary, absolutely removeall strayred/bone specks or pixelstrip below waist. Entire silhouette slightlysmaller with generous transparentmargins ALL sides, realalpha; headtohips, no thighs/legs. Whole staffTOP/BUTT andsnake/tongue/tail inside. BOTH hands visible, faceupperhalf. Samebone/ink/bloodflatfills, no warmgold/tan, magicglow or sparkle.",
+      "file": "asclepius/asclepius_portrait.png",
+      "bytes": 94648
+    },
+    {
+      "id": "asclepius",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-9aed0777-e1ea-48cd-8288-9f46cc1115bb.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Image1 approved Asclepius idle EXACT identity, preserve calmbeardedface/hair, plainrobe bone/ink/red, medicalsatchel/tools, wooden staff BONE/INK with EXACTLY ONE continuous BONE/INK patterned serpent with ONE HEAD/ONE TAIL/tinybloodredforkedtongue. Otherimages STYLEonly. Fullbody512x512 STRICT RIGHT sideprofile ONE eye. Samestanding430px, head50px, hipsx256, feetbaseline480, no shrinkbody to fitstaff. Whole staff TOP/BUTT and serpent fullyinside padding, angle asneeded. Exactly2arms/hands,2legs, one handonstaff, other balanced. No2snakes, no caduceus wings, no healingglow/magiceffects. Pose: REVISED FORWARD STAFF THRUST RIGHT at full extension. ONE hand grips ONE SINGLE CONTINUOUS STRAIGHT long staff shaft on RIGHT SIDE of body: shaft TOP near upperrightcorner, shaft BUTT near front foot/lowercenter, stafftilted steeply45-60degrees upward RIGHT. FULL staff visible and uninterrupted except grippinghand, NO brokenrod, no secondstick, NO staff segment in freehand. Other hand EMPTY, OPEN forbalance close to chest. Bodylungesforward, samebodysize asidle. EXACTLY ONE serpent remains coiled with onehead extending outofuppercoil toward RIGHT and ONEtail windingdown shaft, tinyredtongue, no2snakes. All staffends andsnake completelyinside padding. Exactly2arms/hands, no loose instruments or VFX.",
+      "file": "asclepius/asclepius_attack_02.png",
+      "normalization": {
+        "ratio": 0.9178628389154705,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 33927
     }
   ],
   "completed": [
@@ -4122,13 +4221,13 @@
     "hathor",
     "sekhmet",
     "ptah",
-    "satyr"
+    "satyr",
+    "asclepius"
   ],
-  "active": "asclepius",
+  "active": "orpheus",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "asclepius",
       "orpheus",
       "dionysus",
       "aeneas",
@@ -4193,7 +4292,8 @@
       "hathor",
       "sekhmet",
       "ptah",
-      "satyr"
+      "satyr",
+      "asclepius"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -4230,7 +4330,8 @@
     "hathor": "approved",
     "sekhmet": "approved",
     "ptah": "approved",
-    "satyr": "approved"
+    "satyr": "approved",
+    "asclepius": "approved"
   },
   "rejected_frames": [
     {
@@ -4585,6 +4686,20 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-f258bc74-9642-4c63-9e85-d59650ebb98e.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Satyr, Greek goat-legged reveller, wiry small-built proportions but fills SAME standing sprite height as every humanoid. Short CURLED horns, pointed ears, shaggy GOAT legs with CLOVEN hooves and digitigrade bent hocks, fur INK-and-BONE minimal hatching. Bare chest, grinning mischievous face. PAN PIPES in ONE hand and SHORT KNOTTED CLUB in OTHER hand. Horns/pipes/goat legs define silhouette. BONE and INK ONLY with BLOOD RED ONLY on wine-stained sash. NO brown/tan fur/wood, no gold, no redskin or red eyes. Image1 approved Satyr idle EXACT identity, otherimages STYLEonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS THREE-QUARTER slightlyRIGHT, BOTH shoulders and BOTH eyes far eye partlyvisible. MISCHIEVOUS grin, faceupperhalf, panpipes raised toward LIPS in one hand, knottedclub resting on SHOULDER in other hand. Exactly2arms/hands. Entire curlyhorns, pointedears, hair/beard, panpipebundle and fullclub TIP/HANDLE fully insidepadding. Same BONE/INK only onskin/fur/wood, red ONLY winesash. Clean continuous ink hip lower contour with transparentpadding underneath, no fullbody/thighs/legs, no croppedwrists or straypixels.",
       "rejection_reason": "Portrait face remains a strict one-eye profile rather than a three-quarter face showing the far eye."
+    },
+    {
+      "id": "asclepius",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-9138fc3c-4a80-45e9-a9c4-8299ac71d295.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Image1 approved Asclepius idle EXACT identity, preserve calmbeardedface/hair, plainrobe bone/ink/red, medicalsatchel/tools, wooden staff BONE/INK with EXACTLY ONE continuous BONE/INK patterned serpent with ONE HEAD/ONE TAIL/tinybloodredforkedtongue. Otherimages STYLEonly. Fullbody512x512 STRICT RIGHT sideprofile ONE eye. Samestanding430px, head50px, hipsx256, feetbaseline480, no shrinkbody to fitstaff. Whole staff TOP/BUTT and serpent fullyinside padding, angle asneeded. Exactly2arms/hands,2legs, one handonstaff, other balanced. No2snakes, no caduceus wings, no healingglow/magiceffects. Pose: Staff THRUST FORWARD RIGHT at full extension, committedforward lunge. Tilt staff steeply upward RIGHT to keep FULL longstaff inside, staffgrip forward, butt extends behindhand lowerleft. ONE serpent striking OUT of uppercoil towardRIGHT, ONE visiblehead with forkedbloodredtongue, body stillcontinuous/coiled/tail onstaff. Whole snakehead/tongue/tail andstaffends inside. Exactly2arms/hands, onehandstaff. No2snakes orglowinghealing.",
+      "rejection_reason": "Strike adds a separate differently oriented rod in the free hand instead of one continuous staff."
+    },
+    {
+      "id": "asclepius",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-0acbacf2-3b83-43ec-9f83-7c92b7b957b4.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Asclepius, Greek bearded physician-god in PLAIN DRAPED ROBE. Carries staff wound with EXACTLY ONE SERPENT, never2 snakes/caduceus. ONE BONE serpent with INK pattern and BLOOD-RED tongue, one continuous windingbody, ONE head and ONE tail. Satchel of medical instruments at hip in bone/ink/red, NO brownleather. Staffandserpent define silhouette. Calm hooded eyes. NO gold/glow/healingeffects. Image1 approved Asclepius idle EXACTidentity, otherimages STYLEonly. NEW portrait768x1024 vertical3:4 HEAD TO HIPS THREE-QUARTER slightlyRIGHT, BOTH shoulders and BOTH eyes far eye clearlypartlyvisible, calm HOODED eyes and beardedfaceupperhalf. Staff held UPRIGHT in front, EXACTLY ONE serpent with HEAD near shoulder and continuous coils/tail around staff. Entirestaff TOP and BUTT AND snakehead/tongue/tail fullyinside withpadding, slightly diagonalangletofit. Exactsamehair/beard/robe/medicalsatchelandtools, nofullbody/thighs/legs. Bothhands visible, freehand nearhip, continuous clean ink hip lowercontour and transparentpadding below, no straypixelstrip. No brownwood/leather, no2snakes, no caduceuswings, no healingglow.",
+      "rejection_reason": "Portrait face remains near one-eye profile and hip lower contour has obvious stray red/bone pixel strip."
     }
   ]
 }
