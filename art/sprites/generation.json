@@ -763,6 +763,11 @@
       "ratio": 0.9322169059011164,
       "anchor_x": 0.51,
       "baseline": 480
+    },
+    "vali": {
+      "ratio": 0.8732057416267942,
+      "anchor_x": 0.49,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2701,6 +2706,95 @@
         "baseline": 480
       },
       "bytes": 20279
+    },
+    {
+      "id": "vali",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-76e32d78-1f08-41f2-8bc7-d7b5224a568f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImages1-3 style only. Subject: V\u00e1li. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. No beard; youthful slim male face with one intense visible eye. Bone/ink loose hair, plain bone tunic with blood-red sash, simple bone/ink boots, ink quiver on back with bone arrows. Slender bone/ink bow, ink string. Exactly2arms2legs. 512x512 full body strict side view RIGHT; hipcenter256 feetbaseline480 scalp50 height430. All bow/string/arrows and body inside frame. Idle_01: cautious neutral standing stance, holding upright bow out ahead toward right and a single nocked arrow lightly ready, string at rest rather than fully drawn; furious stare toward right. Both feet planted.",
+      "file": "vali/vali_idle_01.png",
+      "bytes": 28567
+    },
+    {
+      "id": "vali",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-850669ca-b748-4541-b44a-f968438f9319.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved V\u00e1li idle EXACT identity/design reference; images2-4 STYLE only. Preserve EXACT youthful beardless face, bone/ink loose unbraided hair, sleeveless bone tunic, red quiver strap and sash tails, ink/bone quiver with3arrow feathers, bone/ink boots, bone/ink bow with dark string and single bone arrow. No extra armour, helmet, cape, shields or weapons. Exactly2arms2legs, arrows in quiver allowed. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. 512x512 square full body strictly facing RIGHT profile with ONE eye. Same physical scale as idle, standing head near50 feetbaseline480 hipcenter256 height430. All limbs, bow and arrows fully inside with margin, no clipping. Crouches/falls naturally lower head at same limb scale. Pose: Walk contact step: front heel planted forwards, rear foot touching behind, bow held upright and single arrow lightly nocked ready like idle, string at rest.",
+      "file": "vali/vali_walk_01.png",
+      "normalization": {
+        "ratio": 0.8843700159489634,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 29535
+    },
+    {
+      "id": "vali",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5f109896-bb76-474a-9369-971147d950eb.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved V\u00e1li idle EXACT identity/design reference; images2-4 STYLE only. Preserve EXACT youthful beardless face, bone/ink loose unbraided hair, sleeveless bone tunic, red quiver strap and sash tails, ink/bone quiver with3arrow feathers, bone/ink boots, bone/ink bow with dark string and single bone arrow. No extra armour, helmet, cape, shields or weapons. Exactly2arms2legs, arrows in quiver allowed. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. 512x512 square full body strictly facing RIGHT profile with ONE eye. Same physical scale as idle, standing head near50 feetbaseline480 hipcenter256 height430. All limbs, bow and arrows fully inside with margin, no clipping. Crouches/falls naturally lower head at same limb scale. Pose: Distinct passing step: ONE leg straight vertically with foot planted under hip, OTHER knee raised forwards with bent shin, foot visibly lifted at supporting calf height, legs crossing/overlapping. NOT two feet down or extended stride. Bow upright, single arrow lightly nocked, same upper body as idle.",
+      "file": "vali/vali_walk_02.png",
+      "normalization": {
+        "ratio": 0.861244019138756,
+        "anchor_x": 0.48,
+        "baseline": 480
+      },
+      "bytes": 28747
+    },
+    {
+      "id": "vali",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-41033eda-24c8-4bff-be1d-52a43dd2b503.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved V\u00e1li idle EXACT identity/design reference; images2-4 STYLE only. Preserve EXACT youthful beardless face, bone/ink loose unbraided hair, sleeveless bone tunic, red quiver strap and sash tails, ink/bone quiver with3arrow feathers, bone/ink boots, bone/ink bow with dark string and single bone arrow. No extra armour, helmet, cape, shields or weapons. Exactly2arms2legs, arrows in quiver allowed. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. 512x512 square full body strictly facing RIGHT profile with ONE eye. Same physical scale as idle, standing head near50 feetbaseline480 hipcenter256 height430. All limbs, bow and arrows fully inside with margin, no clipping. Crouches/falls naturally lower head at same limb scale. Pose: Arrow nocked and bow FULLY DRAWN taut to cheek. Front bow arm extended RIGHT, rear hand draws arrow nock/string to cheek, rear elbow drawn back. Torso coiled, narrow stance, furious eye aiming RIGHT along arrow. Bowstring connects both tips through nock, arrow crosses grip pointing RIGHT. Complete bow and arrow inside.",
+      "file": "vali/vali_attack_01.png",
+      "bytes": 28262
+    },
+    {
+      "id": "vali",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-c5506d62-c01e-4ceb-bc72-ceff729c4d6b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved V\u00e1li idle EXACT identity/design reference; images2-4 STYLE only. Preserve EXACT youthful beardless face, bone/ink loose unbraided hair, sleeveless bone tunic, red quiver strap and sash tails, ink/bone quiver with3arrow feathers, bone/ink boots, bone/ink bow with dark string and single bone arrow. No extra armour, helmet, cape, shields or weapons. Exactly2arms2legs, arrows in quiver allowed. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. 512x512 square full body strictly facing RIGHT profile with ONE eye. Same physical scale as idle, standing head near50 feetbaseline480 hipcenter256 height430. All limbs, bow and arrows fully inside with margin, no clipping. Crouches/falls naturally lower head at same limb scale. Pose: Arrow JUST RELEASED. Bow held fully forward toward RIGHT in one hand, empty drawing hand beside cheek with fingers opened, bowstring returned toward rest. Exactly ONE physical arrow just clear of bow on a gentle upward RIGHT trajectory above extended hand, completely inside canvas, keep compact composition so body scale matches idle. No duplicate nocked arrow; quiver arrows unchanged. Narrow stance with torso committed forward. No effects or motion streaks.",
+      "file": "vali/vali_attack_02.png",
+      "normalization": {
+        "ratio": 0.9,
+        "anchor_x": 0.46,
+        "baseline": 480
+      },
+      "bytes": 26341
+    },
+    {
+      "id": "vali",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-0eca0f04-100f-4bfa-bdaf-56c15f094d69.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved V\u00e1li idle EXACT identity/design reference; images2-4 STYLE only. Preserve EXACT youthful beardless face, bone/ink loose unbraided hair, sleeveless bone tunic, red quiver strap and sash tails, ink/bone quiver with3arrow feathers, bone/ink boots, bone/ink bow with dark string and single bone arrow. No extra armour, helmet, cape, shields or weapons. Exactly2arms2legs, arrows in quiver allowed. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. 512x512 square full body strictly facing RIGHT profile with ONE eye. Same physical scale as idle, standing head near50 feetbaseline480 hipcenter256 height430. All limbs, bow and arrows fully inside with margin, no clipping. Crouches/falls naturally lower head at same limb scale. Pose: Hit reaction: recoiling backward with head snapped back, face still RIGHT, knees bent. Both hands retain bow and single ready arrow lowered diagonally in front, complete bow visible.",
+      "file": "vali/vali_hit_01.png",
+      "normalization": {
+        "ratio": 0.8732057416267942,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 30569
+    },
+    {
+      "id": "vali",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-baa154b2-b494-41c7-8072-f72fec313ab1.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved V\u00e1li idle EXACT identity/design reference; images2-4 STYLE only. Preserve EXACT youthful beardless face, bone/ink loose unbraided hair, sleeveless bone tunic, red quiver strap and sash tails, ink/bone quiver with3arrow feathers, bone/ink boots, bone/ink bow with dark string and single bone arrow. No extra armour, helmet, cape, shields or weapons. Exactly2arms2legs, arrows in quiver allowed. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. 512x512 square full body strictly facing RIGHT profile with ONE eye. Same physical scale as idle, standing head near50 feetbaseline480 hipcenter256 height430. All limbs, bow and arrows fully inside with margin, no clipping. Crouches/falls naturally lower head at same limb scale. Pose: Losing balance and falling backward, torso sinks, knees fold, right-facing head still visible, one hand reaching to catch fall, bow tipping down out of loosening other hand. Single ready arrow slipping beside bow; quiver still on back. Maintain same physical head/limb size, no enlargement. No ground shadow.",
+      "file": "vali/vali_death_01.png",
+      "normalization": {
+        "ratio": 1.05,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 24764
+    },
+    {
+      "id": "vali",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-85ffcc0d-d3e4-4162-b1f5-18c382683d4f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved V\u00e1li idle EXACT identity/design reference; images2-4 STYLE only. Preserve EXACT youthful beardless face, bone/ink loose unbraided hair, sleeveless bone tunic, red quiver strap and sash tails, ink/bone quiver with3arrow feathers, bone/ink boots, bone/ink bow with dark string and single bone arrow. No extra armour, helmet, cape, shields or weapons. Exactly2arms2legs, arrows in quiver allowed. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. Portrait768x1024 vertical3:4, head to hips, NEW near-frontal three-quarter turned15degrees RIGHT, BOTH eyes and BOTH cheeks visible, far eye partially. Both shoulders visible, face upper half. Bow drawn to cheek, fierce unblinking eyes; bow held in forward hand and nocked arrow drawn back toward cheek with other hand. COMPLETE bow BOTH tips, string, arrowhead and arrow tail within frame; no full body/legs. Avoid copying strict profile idle camera. No gold, aura/glow/fragments.\nEdit target image1 corrected portrait, approved idle image2 identity, other images style only. Change ONLY lower edge cleanup and tiny margin: eliminate every stray yellow, red or white pixel fragment below tunic. Redraw a single smooth black ink contour along the lower head-to-hips cutout edge, with transparent empty space below it. Keep bow tips, arrows, exact face/pose/costume unchanged. Entire palette strictly bone/ink/blood; NO yellow, gold or neon anywhere, NO fragmented/glitched pixels or floor/baseline. Keep all bow tips and arrowhead fully within transparent margins.",
+      "file": "vali/vali_portrait.png",
+      "bytes": 88700
     }
   ],
   "completed": [
@@ -2727,13 +2821,13 @@
     "sigurd",
     "vidar",
     "brynhildr",
-    "hodr"
+    "hodr",
+    "vali"
   ],
-  "active": "vali",
+  "active": "magni",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "vali",
       "magni",
       "skadi",
       "ra",
@@ -2798,7 +2892,8 @@
       "sigurd",
       "vidar",
       "brynhildr",
-      "hodr"
+      "hodr",
+      "vali"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -2821,7 +2916,8 @@
     "sigurd": "approved",
     "vidar": "approved",
     "brynhildr": "approved",
-    "hodr": "approved"
+    "hodr": "approved",
+    "vali": "approved"
   },
   "rejected_frames": [
     {
@@ -3022,6 +3118,20 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage 1: approved H\u00f6\u00f0r idle, EXACT identity/design reference. Images 2-4 style only. Preserve his bone/ink hair and beard, blood-red cloth blindfold covering both eyes, blindfold tails, plain sleeveless bone tunic, red sash, ink/bone wrapped boots, exact proportions and line weight. Exactly two arms and two legs. No armour, cape, shield or additional weapons. Weapon is the SAME slender bone/ink mistletoe dart with ink leaves at its tip, no gold and no green. Blind gentle warrior, not a villain. 512x512 square full body strict RIGHT profile. Same physical body scale as idle, hip anchor x256 and support baseline480, standing scalp near50, height430; crouching/falling head naturally lower, do not enlarge. Fully include all limbs and the complete dart with margin, no clipping. Pose: Throw strike: right-facing torso committed forward, throwing arm fully extended RIGHT with EMPTY open hand, mistletoe dart just released visible wholly in flight to RIGHT of hand. Exactly one dart, no duplicate held weapon, no effects or motion streaks. Other arm counterbalances. Forward support foot planted. The single in-flight physical dart is required.",
       "id": "hodr",
       "rejection_reason": "Extended projectile layout forced smaller body scale."
+    },
+    {
+      "id": "vali",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-88e8eced-1577-480c-a15b-d2d5b8840202.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved V\u00e1li idle EXACT identity/design reference; images2-4 STYLE only. Preserve EXACT youthful beardless face, bone/ink loose unbraided hair, sleeveless bone tunic, red quiver strap and sash tails, ink/bone quiver with3arrow feathers, bone/ink boots, bone/ink bow with dark string and single bone arrow. No extra armour, helmet, cape, shields or weapons. Exactly2arms2legs, arrows in quiver allowed. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. Portrait768x1024 vertical3:4, head to hips, NEW near-frontal three-quarter turned15degrees RIGHT, BOTH eyes and BOTH cheeks visible, far eye partially. Both shoulders visible, face upper half. Bow drawn to cheek, fierce unblinking eyes; bow held in forward hand and nocked arrow drawn back toward cheek with other hand. COMPLETE bow BOTH tips, string, arrowhead and arrow tail within frame; no full body/legs. Avoid copying strict profile idle camera. No gold, aura/glow/fragments.",
+      "rejection_reason": "Upper bow tip and sash tails intersect the canvas boundary; reframe with transparent margin."
+    },
+    {
+      "id": "vali",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-42efdb16-07a4-4292-9028-54ed54de4915.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved V\u00e1li idle EXACT identity/design reference; images2-4 STYLE only. Preserve EXACT youthful beardless face, bone/ink loose unbraided hair, sleeveless bone tunic, red quiver strap and sash tails, ink/bone quiver with3arrow feathers, bone/ink boots, bone/ink bow with dark string and single bone arrow. No extra armour, helmet, cape, shields or weapons. Exactly2arms2legs, arrows in quiver allowed. Boy born, grown and armed in a single day for revenge: slender young archer with a drawn bow, a quiver, loose unbraided hair, a plain tunic, a fixed, furious stare. Younger and thinner than the other demigods but the same standing height. The bow and the stare define the silhouette. No gold. Portrait768x1024 vertical3:4, head to hips, NEW near-frontal three-quarter turned15degrees RIGHT, BOTH eyes and BOTH cheeks visible, far eye partially. Both shoulders visible, face upper half. Bow drawn to cheek, fierce unblinking eyes; bow held in forward hand and nocked arrow drawn back toward cheek with other hand. COMPLETE bow BOTH tips, string, arrowhead and arrow tail within frame; no full body/legs. Avoid copying strict profile idle camera. No gold, aura/glow/fragments.\nEdit target image1 is this portrait, approved idle image2 identity, others style only. Keep face viewpoint, drawn-bow pose and all design exactly. Reframe/zoom out the whole head-to-hips composition slightly within the same vertical3:4 canvas so BOTH bow tips, arrowhead, elbows and full sash tails are separated from all canvas edges by a CLEAR transparent margin of at least30px at delivery size. Fully draw the upper bow tip currently cut at top. Clean head-to-hips lower crop may remain, but bow lower tip must stay fully visible. No legs, no full body, no added background, no gold/yellow/glow/particles.",
+      "rejection_reason": "Reframing introduced yellow/red pixel glitch strip along lower edge."
     }
   ]
 }
