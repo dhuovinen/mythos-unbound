@@ -808,6 +808,11 @@
       "ratio": 0.9043062200956937,
       "anchor_x": 0.5,
       "baseline": 480
+    },
+    "thoth": {
+      "ratio": 0.9649122807017544,
+      "anchor_x": 0.53,
+      "baseline": 480
     }
   },
   "frames": [
@@ -3587,6 +3592,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Nephthys, quiet Egyptian mourner. HOUSE-GLYPH headdress, long close-fitting INK-BLACK dress. BONE and INK feather wings spread from the two arms, smaller and lower than Isis, half-closed. Protective outstretched empty arm, tall INK and BONE staff in the other hand. Quiet solemn face. Dark dress, house-glyph headdress and half-closed wings define silhouette. No glow or gold. Exactly TWO arms, wings are feathered sleeves of these same arms, no extra arms or independent wings. Image1 approved identity, remaining images style. NEW head-to-hips portrait768x1024 vertical3:4. Three-quarter viewpoint turned only15degreesRIGHT, nearly frontal, BOTH eyes and BOTH shoulders visible, face upperhalf. House-glyph headdress fully framed. Wings half-folded behind shoulders, small and low. One hand lifted in gentle warding gesture. Other hand visibly holds upright staff close beside head. ENTIRE staff tip AND butt fully visible, angle slightly if needed. Crop at hips, no thighs/legs, continuous clean ink lower contour with transparent padding underneath, no stray colored pixels. All feather tips inside generous frame margins.",
       "file": "nephthys/nephthys_portrait.png",
       "bytes": 84295
+    },
+    {
+      "id": "thoth",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e2e268f0-6e9b-4c7a-9628-547d5300a729.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Composition: single full body idle_01 standing thoughtful, strict RIGHT-facing side profile, one visible eye. 512x512 square battle frame. Standing silhouette including moon crown about430px high, head50px, hips x256, feet baseline480. One hand visibly grips staff upright beside body, opposite hand holds partially open papyrus scroll and scribe palette together close to torso. Entire long curved beak, crown, scroll, staff tip AND butt, both feet inside ample padding. Style references only.",
+      "file": "thoth/thoth_idle_01.png",
+      "bytes": 25793
+    },
+    {
+      "id": "thoth",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-71a15149-4ba2-4c0f-8a92-41063d3e15a3.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Image1 approved Thoth idle EXACT identity, preserve ibis head/beak, moon crown, face, collar, scroll/palette, kilt, staff and proportions. Remaining images style only. Full body strict RIGHT side profile with one eye. 512x512 square battle frame. Same physical scale as idle, standing including crown430px, head50px, hips near x256, feet baseline480. Staff visibly gripped; EXACTLY TWO hands, other hand holds scroll and palette together. Entire beak, scroll and staff ends inside with padding. Pose: Walking contact RIGHT, front heel plants forward, rear foot trails behind touching ground. Upright scribe posture. Staff upright clearly held in one visible hand; scroll and palette together in other hand at chest.",
+      "file": "thoth/thoth_walk_01.png",
+      "normalization": {
+        "ratio": 0.9649122807017544,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 26245
+    },
+    {
+      "id": "thoth",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-356da285-bbc8-4bed-93db-c4b897357285.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Image1 approved Thoth idle EXACT identity, preserve ibis head/beak, moon crown, face, collar, scroll/palette, kilt, staff and proportions. Remaining images style only. Full body strict RIGHT side profile with one eye. 512x512 square battle frame. Same physical scale as idle, standing including crown430px, head50px, hips near x256, feet baseline480. Staff visibly gripped; EXACTLY TWO hands, other hand holds scroll and palette together. Entire beak, scroll and staff ends inside with padding. Pose: Longest-range staff attack wind-up: staff arm drawn BACK at full reach, staff aimed diagonally upward RIGHT close beside shoulder. Other hand keeps scroll and palette together against chest. Exactly TWO arms and TWO hands, ONE hand on staff, no third hand. Knees bend slightly, all staff ends visible.",
+      "file": "thoth/thoth_attack_01.png",
+      "normalization": {
+        "ratio": 0.9649122807017544,
+        "anchor_x": 0.63,
+        "baseline": 480
+      },
+      "bytes": 27220
+    },
+    {
+      "id": "thoth",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-dbdb1be4-afa7-471d-9dc4-1f55f3c2d3ac.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Image1 approved Thoth idle EXACT identity, preserve ibis head/beak, moon crown, face, collar, scroll/palette, kilt, staff and proportions. Remaining images style only. Full body strict RIGHT side profile with one eye. 512x512 square battle frame. Same physical scale as idle, standing including crown430px, head50px, hips near x256, feet baseline480. Staff visibly gripped; EXACTLY TWO hands, other hand holds scroll and palette together. Entire beak, scroll and staff ends inside with padding. Pose: Longest-range staff strike RIGHT: staff hand reaches fully forward, long staff thrust RIGHT at slight upward angle, body committed into lunge. Other hand retains scroll and palette at chest. Exactly TWO arms and TWO hands, one hand on staff. Match same-length staff from idle; all staff ends fully framed, no clipping. No magic or healing glow.",
+      "file": "thoth/thoth_attack_02.png",
+      "normalization": {
+        "ratio": 0.9649122807017544,
+        "anchor_x": 0.35,
+        "baseline": 480
+      },
+      "bytes": 23187
+    },
+    {
+      "id": "thoth",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-91309de2-f50f-4af9-942c-b9b9157fa071.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Image1 approved Thoth idle EXACT identity, preserve ibis head/beak, moon crown, face, collar, scroll/palette, kilt, staff and proportions. Remaining images style only. Full body strict RIGHT side profile with one eye. 512x512 square battle frame. Same physical scale as idle, standing including crown430px, head50px, hips near x256, feet baseline480. Staff visibly gripped; EXACTLY TWO hands, other hand holds scroll and palette together. Entire beak, scroll and staff ends inside with padding. Pose: Hit recoil backward LEFT, head still RIGHT, shoulders tilt and knees bend. Staff held nearly upright close to body in one hand; other hand keeps scroll/palette close to chest. Exactly two hands, no loose pages or fragments.",
+      "file": "thoth/thoth_hit_01.png",
+      "normalization": {
+        "ratio": 0.9649122807017544,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 28554
+    },
+    {
+      "id": "thoth",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3e275268-3f9b-4419-a67b-bcc06402ea15.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Image1 approved Thoth idle EXACT identity, preserve ibis head/beak, moon crown, face, collar, scroll/palette, kilt, staff and proportions. Remaining images style only. Full body strict RIGHT side profile with one eye. 512x512 square battle frame. Same physical scale as idle, standing including crown430px, head50px, hips near x256, feet baseline480. Staff visibly gripped; EXACTLY TWO hands, other hand holds scroll and palette together. Entire beak, scroll and staff ends inside with padding. Pose: Falling backward LEFT, knees buckle, head stays RIGHT, staff lowers diagonally close across body in one hand. Other hand loosens but still cradles scroll and palette. Body tilted, both feet near baseline, crown intact, full staff inside, no disconnected pages or effects.",
+      "file": "thoth/thoth_death_01.png",
+      "normalization": {
+        "ratio": 0.9649122807017544,
+        "anchor_x": 0.61,
+        "baseline": 480
+      },
+      "bytes": 28739
+    },
+    {
+      "id": "thoth",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-65298b9f-32e7-41bb-b726-9eefa27ba007.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Image1 exact identity, others style. NEW head-to-hips portrait768x1024 vertical3:4. Torso and shoulders THREE-QUARTER slightly RIGHT, BOTH shoulders visible. Species-specific portrait instruction: LONG CURVED IBIS BEAK IN PROFILE toward RIGHT with near eye clear. Moon-disc crown fully visible, face upperhalf. Papyrus scroll held open close to chest with scribe palette in SAME hand, other hand holds staff upright beside head. ENTIRE staff tip AND butt inside with padding, angle slightly to fit. Exact anatomy, costume and proportions from idle. Hip crop, no thighs/legs, continuous clean ink bottom contour with transparent padding below. No stray pixels or text.",
+      "file": "thoth/thoth_portrait.png",
+      "bytes": 92083
+    },
+    {
+      "id": "thoth",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e4dd58c5-a3a9-4bd4-839a-ca39a115519f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Image1 approved Thoth idle EXACT identity, preserve ibis head/beak, moon crown, face, collar, scroll/palette, kilt, staff and proportions. Remaining images style only. Full body strict RIGHT side profile with one eye. 512x512 square battle frame. Same physical scale as idle, standing including crown430px, head50px, hips near x256, feet baseline480. Staff visibly gripped; EXACTLY TWO hands, other hand holds scroll and palette together. Entire beak, scroll and staff ends inside with padding. Pose: WALK PASSING POSE, visually distinct from wide-stride contact. One supporting leg nearly vertical directly under pelvis, its foot at baseline. Other thigh crosses IN FRONT of supporting thigh, knee sharply bent and raised forward RIGHT, lifted foot directly below raised knee and well above ground. NARROW stance, crossed thighs, NO wide stride and NO second planted foot. Body slightly raised. Tall staff upright in one hand, papyrus scroll and scribe palette cradled together in other hand. Preserve exact idle costume/anatomy/beak/crown/staff, no effects.",
+      "file": "thoth/thoth_walk_02.png",
+      "normalization": {
+        "ratio": 0.9649122807017544,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 24520
     }
   ],
   "completed": [
@@ -3622,13 +3721,13 @@
     "isis",
     "set",
     "horus",
-    "nephthys"
+    "nephthys",
+    "thoth"
   ],
-  "active": "thoth",
+  "active": "hathor",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "thoth",
       "hathor",
       "sekhmet",
       "ptah",
@@ -3693,7 +3792,8 @@
       "isis",
       "set",
       "horus",
-      "nephthys"
+      "nephthys",
+      "thoth"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3725,7 +3825,8 @@
     "isis": "approved",
     "set": "approved",
     "horus": "approved",
-    "nephthys": "approved"
+    "nephthys": "approved",
+    "thoth": "approved"
   },
   "rejected_frames": [
     {
@@ -4017,6 +4118,13 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a1e28221-b76f-41d5-bc37-0da68793bf51.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Horus, Egyptian falcon-headed avenger. INK falcon head with BONE facial shapes, scar across LEFT eye (he lost it), double crown: tall BONE white crown nested with smaller BLOOD-RED crown. Long spear, udjat-eye pendant on collar, short kilt in BONE with BLOOD sash and INK edges. Upright, vengeful, hard stare. Falcon head and double crown define silhouette. No gold. Image1 identity, other images style only. NEW head-to-hips portrait 768x1024 vertical3:4. Turn only15degrees RIGHT, nearly FRONTAL falcon head so BOTH eye locations and BOTH shoulders clearly visible: left eye is scarred shut, right eye hard stare. Complete double crown fullyframed. Face upper half. Entire spear held upright beside head, TIP AND BUTT inside with padding; angle slightly if necessary. Same physique and costume. Crop at hips, no thighs/legs. Single continuous clean ink lower outline with transparent margin underneath. No random colored pixels.",
       "rejection_reason": "Portrait spear butt is truncated and lower hip crop has stray pixel strip."
+    },
+    {
+      "id": "thoth",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-cf7380bc-972b-4f31-847b-ef44c82b3dc2.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Thoth, Egyptian ibis-headed scribe. LONG DOWNWARD-CURVED slender ibis beak in INK and BONE, moon-disc crown, papyrus scroll and scribe's palette held together in ONE hand, tall staff in OTHER hand. Linen BONE kilt, collar. Long ibis beak defines silhouette. No glow or gold. Exactly TWO arms and TWO hands; no floating scroll or palette. Image1 approved Thoth idle EXACT identity, preserve ibis head/beak, moon crown, face, collar, scroll/palette, kilt, staff and proportions. Remaining images style only. Full body strict RIGHT side profile with one eye. 512x512 square battle frame. Same physical scale as idle, standing including crown430px, head50px, hips near x256, feet baseline480. Staff visibly gripped; EXACTLY TWO hands, other hand holds scroll and palette together. Entire beak, scroll and staff ends inside with padding. Pose: Walking passing RIGHT, one supporting leg planted, opposite knee visibly raised with foot clearly above ground. Staff upright visibly gripped, scroll and palette together supported by other hand. Distinct passing contour, no floating objects.",
+      "rejection_reason": "Walk passing pose repeats a wide contact stride rather than crossing the legs with a raised passing knee."
     }
   ]
 }
