@@ -778,6 +778,11 @@
       "ratio": 0.9473684210526315,
       "anchor_x": 0.59,
       "baseline": 480
+    },
+    "ra": {
+      "ratio": 0.9417862838915471,
+      "anchor_x": 0.53,
+      "baseline": 480
     }
   },
   "frames": [
@@ -2993,6 +2998,100 @@
         "baseline": 480
       },
       "bytes": 35809
+    },
+    {
+      "id": "ra",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d57cfbb3-40be-4c1a-a6fc-1ae9649280c8.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInputimages1-3 STYLE only. Subject: Ra. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Exactly one upright biped human body with one FALCON HEAD, bird beak ink/bone and hard eye. Crown blood-red disc with bone border and a SMALL bone/ink rearing cobra wrapped at its base as a crown ornament, not a second separate figure. Broad bone/ink collar with blood-red band, bare bone chest, short bone/ink kilt, simple bone/ink sandals/wrist cuffs. Long bone/ink spear, bone triangular spearhead, no gold. 512x512square fullbody STRICT RIGHT profile oneeye, disc crown top50 supportfeet480 height430 INCLUDING disc. Hips x256. Full spear fits frame beside body with tip near30 and butt abovebaseline, no clipping. Poseidle_01 upright neutral stance, spear held upright in forward hand beside head, other hand relaxed by waist, both feet planted. No ankh or shield.\nEdit image1 EXACT design/pose, other images style. Change ONLY sun disc fill: solid FLAT BLOOD RED #8C2F20, a single uniform opaque color across entire disc. Keep current bone ring, ink chiseled contour/shadow and cobra, falcon head, all costume, spear and pose unchanged. No soft gradients, mottled red, orange or pink highlights, no glowing sun. Disc is a flat carved symbolic crown ornament, not a luminous orb.",
+      "file": "ra/ra_idle_01.png",
+      "bytes": 22156
+    },
+    {
+      "id": "ra",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-0eb0668c-0fc6-4725-a34d-c75c53abfba9.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Battle512x512square fullbody STRICT RIGHT PROFILE one visible falcon eye. Same physical scale as idle, crown/disc top50 standingheight430 feetbaseline480 hipanchor256. Crouches/falls naturally lower without enlarging body. Complete disc/cobra/beak/spear including tip AND butt fully inside margin. Pose: Walk CONTACT: front leg forward heel down, back foot behind touches floor, spear upright beside head held in forward hand, other arm swings back naturally.",
+      "file": "ra/ra_walk_01.png",
+      "normalization": {
+        "ratio": 0.9465709728867624,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 23124
+    },
+    {
+      "id": "ra",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e135921b-76c3-4ce4-92de-53ff11f30486.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Battle512x512square fullbody STRICT RIGHT PROFILE one visible falcon eye. Same physical scale as idle, crown/disc top50 standingheight430 feetbaseline480 hipanchor256. Crouches/falls naturally lower without enlarging body. Complete disc/cobra/beak/spear including tip AND butt fully inside margin. Pose: Walk PASSING: ONE support leg vertical with foot planted beneath hip, OTHER knee raised forward with foot clearly lifted beside supporting calf. Legs crossing. Spear upright, free arm swings slightly forward. Not two feet down/long stride.",
+      "file": "ra/ra_walk_02.png",
+      "normalization": {
+        "ratio": 0.9744816586921851,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 21854
+    },
+    {
+      "id": "ra",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-bf6831c3-3f64-4ce0-babc-9b32fbcdbbbd.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Battle512x512square fullbody STRICT RIGHT PROFILE one visible falcon eye. Same physical scale as idle, crown/disc top50 standingheight430 feetbaseline480 hipanchor256. Crouches/falls naturally lower without enlarging body. Complete disc/cobra/beak/spear including tip AND butt fully inside margin. Pose: Spear wind-up: shaft drawn back in BOTH hands near shoulder, spearhead points RIGHT, body coiled with knees slightly bent, hips stable. Complete shaft tip and butt within margins, compact stance.",
+      "file": "ra/ra_attack_01.png",
+      "normalization": {
+        "ratio": 0.9417862838915471,
+        "anchor_x": 0.49,
+        "baseline": 480
+      },
+      "bytes": 22768
+    },
+    {
+      "id": "ra",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b6e023d6-6cd4-4e02-980d-059420550c32.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Battle512x512square fullbody STRICT RIGHT PROFILE one visible falcon eye. Same physical scale as idle, crown/disc top50 standingheight430 feetbaseline480 hipanchor256. Crouches/falls naturally lower without enlarging body. Complete disc/cobra/beak/spear including tip AND butt fully inside margin. Pose: Spear STRIKE: BOTH hands thrust complete spear forward RIGHT at full extension, torso committed forward, forward knee bent. Tight backward arm/body and compact lunge so complete LONG spear and body fit without scale shrink. Tip toward right edge, butt inside left; no clipping, no projectile/effects/particles.",
+      "file": "ra/ra_attack_02.png",
+      "normalization": {
+        "ratio": 0.9417862838915471,
+        "anchor_x": 0.44,
+        "baseline": 480
+      },
+      "bytes": 19385
+    },
+    {
+      "id": "ra",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-0a3495d2-2c5e-4b8e-9e46-c32f1fa5867a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Battle512x512square fullbody STRICT RIGHT PROFILE one visible falcon eye. Same physical scale as idle, crown/disc top50 standingheight430 feetbaseline480 hipanchor256. Crouches/falls naturally lower without enlarging body. Complete disc/cobra/beak/spear including tip AND butt fully inside margin. Pose: Hit reaction: falcon head/disc crown snapped back slightly while beak points RIGHT, body recoils, knees bend; both hands clutch full spear diagonally across waist for balance. Crown and complete spear visible.",
+      "file": "ra/ra_hit_01.png",
+      "normalization": {
+        "ratio": 0.9417862838915471,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 22828
+    },
+    {
+      "id": "ra",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-86f48b16-43bf-4f54-a8da-c30b97e8bf52.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Battle512x512square fullbody STRICT RIGHT PROFILE one visible falcon eye. Same physical scale as idle, crown/disc top50 standingheight430 feetbaseline480 hipanchor256. Crouches/falls naturally lower without enlarging body. Complete disc/cobra/beak/spear including tip AND butt fully inside margin. Pose: Falling backward: torso sinking, knees fold, falcon beak faces RIGHT, head/crown tilts back. One hand reaching to catch fall, other loosening spear as it tips down beside figure. Crown/disc/cobra remain attached and complete, entire spear inside, same physical size as idle without enlargement. Exactly2arms2legs.",
+      "file": "ra/ra_death_01.png",
+      "normalization": {
+        "ratio": 0.9417862838915471,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 24440
+    },
+    {
+      "id": "ra",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-bbcaef7e-4f2f-4380-95bc-e9c6724917b5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Portrait768x1024vertical3:4 head-to-hips NEW near-frontal three-quarter turned15degreesRIGHT, both sides of falcon face and BOTH hard eyes visible, both shoulders visible, face in upper half. Crown red disc and complete cobra fully included. SPEAR upright beside head, complete triangular spearhead and butt end in frame; angle long shaft slightly across shoulder so it fits head-to-hips portrait without adding legs. Generous30px transparent margin on ALL sides. Clean lower head-to-hips continuous ink contour, transparent padding below, no glitch fragments. Disc fully flat blood red, no gold/yellow/glow/aura/particles.\nEdit image1 portrait, image2 approved idle identity, other images style only. CHANGE viewpoint: turn FALCON HEAD almost FRONTALLY toward viewer, 15degreesRIGHT, explicitly show TWO EYES on opposite sides of beak, BOTH cheek feather patches; beak points mostly toward viewer with slightRIGHT turn, not silhouette side profile. Both shoulders visible. Keep exact spear/crown/cobra/collar/kilt and palette. Head-to-HIPS, stop lower body at belt/upper kilt; no thighs or legs. Clean continuous ink contour at lower cutout with empty transparent padding, remove ALL yellow/red/white glitch pixels beneath figure. Include full spear tip/butt and whole disc with generous margins. Disc flatblood-red.",
+      "file": "ra/ra_portrait.png",
+      "bytes": 76621
     }
   ],
   "completed": [
@@ -3022,13 +3121,13 @@
     "hodr",
     "vali",
     "magni",
-    "skadi"
+    "skadi",
+    "ra"
   ],
-  "active": "ra",
+  "active": "osiris",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "ra",
       "osiris",
       "isis",
       "set",
@@ -3093,7 +3192,8 @@
       "hodr",
       "vali",
       "magni",
-      "skadi"
+      "skadi",
+      "ra"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -3119,7 +3219,8 @@
     "hodr": "approved",
     "vali": "approved",
     "magni": "approved",
-    "skadi": "approved"
+    "skadi": "approved",
+    "ra": "approved"
   },
   "rejected_frames": [
     {
@@ -3369,6 +3470,20 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-eb9c5891-57b9-4845-92da-7483247409e0.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ska\u00f0i idle EXACT identity/design reference; images2-4 STYLE only. Preserve SAME stern female face, deep bone/ink fur hood and cloak, braid, bone/ink tunic/trousers, red wrist binding/belt/boot straps, quiver with bone arrow feathers, recurved bone/ink bow with ink string. Wide oval bone/ink lattice SNOWSHOES strapped beneath both fur boots, toe AND heel frames clearly visible. Exactly2arms2legs2snowshoes. No skis, scene or added accessories. Giantess huntress of the snows: a hooded fur cloak (bone fur with ink hatching), a drawn bow, a quiver, fur-lined boots with wide snowshoes, a stern frozen face. The fur hood and the bow define the silhouette. No gold. Battle512x512square full body STRICT RIGHT PROFILE oneeye. Preserve idle physical scale, hoodtop50 standingheight430, hips x256 supporting snowshoe baseline480. Bent/falling head naturally lower; do not enlarge. Full bow tips, arrow, cape and both entire snowshoes visible inside with clear margins. Pose: Arrow just released: bow arm extended RIGHT, empty drawing hand beside cheek with open fingers, string returned toward rest. Exactly ONE released arrow just past bow pointing gently upward RIGHT wholly inside frame; no duplicate nocked arrow. Snowshoes planted compactly so bow/projectile/body fit without shrinking. Quiver still on back. No effects/motion streaks.",
       "rejection_reason": "Release pose has a third hand at waist."
+    },
+    {
+      "id": "ra",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-21895400-d8a3-4751-ab7c-a04c59b8a349.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInputimages1-3 STYLE only. Subject: Ra. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Exactly one upright biped human body with one FALCON HEAD, bird beak ink/bone and hard eye. Crown blood-red disc with bone border and a SMALL bone/ink rearing cobra wrapped at its base as a crown ornament, not a second separate figure. Broad bone/ink collar with blood-red band, bare bone chest, short bone/ink kilt, simple bone/ink sandals/wrist cuffs. Long bone/ink spear, bone triangular spearhead, no gold. 512x512square fullbody STRICT RIGHT profile oneeye, disc crown top50 supportfeet480 height430 INCLUDING disc. Hips x256. Full spear fits frame beside body with tip near30 and butt abovebaseline, no clipping. Poseidle_01 upright neutral stance, spear held upright in forward hand beside head, other hand relaxed by waist, both feet planted. No ankh or shield.",
+      "rejection_reason": "Sun disc fill has a soft red gradient; replace with flat blood red."
+    },
+    {
+      "id": "ra",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d449e232-cdab-41ac-a39d-5fdf6f1dc347.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nImage1 approved Ra idle EXACT identity/design reference; images2-4 STYLE only. Same FALCON bird head ink feathers/bone hooked beak, large flat blood-red sun disc with bone ring and SMALL rearing bone/ink cobra crown ornament, broad bone/red/ink collar, bare muscled chest, short bone/ink kilt with red center band, bone/ink/red wrist and shin cuffs/sandals. Exact long bone/ink spear with triangular point, tiny red band and pointed butt; no extra weapons. Exactly2arms2legs1birdhead and attached cobra ornament. Sun disc solid FLAT blood-red fill, NO soft shading, gradient or glow. The sun: a falcon head (ink feathers, bone beak) crowned with a large blood-red sun disc ringed in bone and wrapped by a rearing cobra, a long spear, a broad collar, a short kilt, a bare muscled chest. The disc is blood red, never gold. The falcon head and the red disc define the silhouette. Portrait768x1024vertical3:4 head-to-hips NEW near-frontal three-quarter turned15degreesRIGHT, both sides of falcon face and BOTH hard eyes visible, both shoulders visible, face in upper half. Crown red disc and complete cobra fully included. SPEAR upright beside head, complete triangular spearhead and butt end in frame; angle long shaft slightly across shoulder so it fits head-to-hips portrait without adding legs. Generous30px transparent margin on ALL sides. Clean lower head-to-hips continuous ink contour, transparent padding below, no glitch fragments. Disc fully flat blood red, no gold/yellow/glow/aura/particles.",
+      "rejection_reason": "Portrait has profile falcon head and stray pixel noise at lower crop; needs near-frontal head-to-hips."
     }
   ]
 }
