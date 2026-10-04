@@ -843,6 +843,11 @@
       "ratio": 0.8859649122807017,
       "anchor_x": 0.51,
       "baseline": 480
+    },
+    "dionysus": {
+      "ratio": 0.8732057416267942,
+      "anchor_x": 0.54,
+      "baseline": 480
     }
   },
   "frames": [
@@ -4280,6 +4285,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Image1 approved Orpheus idle EXACT identity, others STYLE only. NEW PORTRAIT768x1024 vertical3:4 HEAD TO HIPS, TRUE THREE-QUARTER face slightly RIGHT: both shoulders and BOTH eyes visible, far eye partly visible and half closed. Head tipped BACK, mouth OPEN MID-SONG. Lyre held at chest, both hands visible one holding frame other strumming. Same bone soft bent Thracian cap and RED band, wavy hair, youthful delicate face, robes/cloak/lyre. Face upperhalf. All cap, hair, lyre scrolls, strings and hands visible with generous transparent margins. Head to hips, no thighs/legs, clean continuous ink lower contour no straypixelstrip. No music notes or sound waves or glow/sparks/fragments, no goldstrings. EDIT target Image1 portrait. Rotate face toward viewer into TRUE THREE-QUARTER with BOTH EYES visible (far eye partially but unmistakably visible), nose closer to center, far cheek and BOTH shoulders visible. Keep head tipped back, mouth open mid-song, exact youthful face and wavy hair, bone Thracian cap and RED band, same robe/cloak/lyre and two hands. Do NOT keep profile. Cap and lyre wholly inside. Remove all tiny stray red/bone pixels below clean continuous ink hip contour. Head to hips on transparent 3:4 canvas, face upper half.",
       "file": "orpheus/orpheus_portrait.png",
       "bytes": 102650
+    },
+    {
+      "id": "dionysus",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-73688fdd-5f1f-4d1b-b449-f114c44eafad.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold.  EDIT Image1 Dionysus idle into battle SIDE VIEW: turn whole torso, face and pelvis STRICT RIGHT PROFILE with ONE eye, shoulders overlapping, chest narrow sideways, not front torso or three-quarter face. Keep exact laughing bearded curly-haired identity, half-open bone chiton RED sash, thyrsus ONE hand and cup other hand, vine arm wrap and sandals. All ivy leaves crown and vine wrap solid INK with small bone edge cuts ONLY, no bone-filled leaves. Slightly shorten upright thyrsus: pinecone TOP just above ivy crown; staff BUTT by ankle, entire staff within margins. Staff with same pinecone and attached ribbons, same cup two handles, loose swaying posture. Character headtop~y50, standing430px foot480 centerx256. Exactly two arms/hands/two legs; no extra figures, gold, aura, glow, sparks or fragments. Fullbody square real transparent alpha.",
+      "file": "dionysus/dionysus_idle_01.png",
+      "bytes": 28419
+    },
+    {
+      "id": "dionysus",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d77bca1a-7e5f-49c0-9e45-4e7b86d34edb.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. Image1 approved Dionysus idle EXACT identity/proportions, images2-4 STYLE only. Preserve curly hair and beard, ink ivy leaves with bone cuts, half-open bone chiton and blood-red sash, vine wrap on staff arm, same bone/ink pinecone thyrsus with attached red ribbons, same wide two-handled cup, sandals. STRICT RIGHT SIDE PROFILE ONE eye, narrow side torso, fullbody512square. Same physical body/head scale as idle, standing430px crown y50, head~50px, feet480, hipx256. Exactly two arms/hands and two legs. One hand carries staff, other cup. Staffpinecone/butt/ribbons/cup/limbs fullyinside padding. No floating leaves, drops, gold, aura/glow/sparks/fragments. Pose: WALK CONTACT: front leg extended RIGHT heel planted, rear leg back toe on baseline. Loose swaying stride, staff upright next to head and cup near chest. Same crown/sash/vines.",
+      "file": "dionysus/dionysus_walk_01.png",
+      "normalization": {
+        "ratio": 0.8732057416267942,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 31357
+    },
+    {
+      "id": "dionysus",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-11fff532-b333-4e91-842d-a70b8bd013e7.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. Image1 approved Dionysus idle EXACT identity/proportions, images2-4 STYLE only. Preserve curly hair and beard, ink ivy leaves with bone cuts, half-open bone chiton and blood-red sash, vine wrap on staff arm, same bone/ink pinecone thyrsus with attached red ribbons, same wide two-handled cup, sandals. STRICT RIGHT SIDE PROFILE ONE eye, narrow side torso, fullbody512square. Same physical body/head scale as idle, standing430px crown y50, head~50px, feet480, hipx256. Exactly two arms/hands and two legs. One hand carries staff, other cup. Staffpinecone/butt/ribbons/cup/limbs fullyinside padding. No floating leaves, drops, gold, aura/glow/sparks/fragments. Pose: WALK PASSING: legs cross beneath pelvis, rear knee bent foot lifted passing supporting leg, supporting foot baseline480. Body slightly raised, distinct from contact pose. Staff upright, cup steady, tips grin.",
+      "file": "dionysus/dionysus_walk_02.png",
+      "normalization": {
+        "ratio": 0.8732057416267942,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 31011
+    },
+    {
+      "id": "dionysus",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-fdcca9be-7b17-4d23-99b0-8565d24d4c79.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. Image1 approved Dionysus idle EXACT identity/proportions, images2-4 STYLE only. Preserve curly hair and beard, ink ivy leaves with bone cuts, half-open bone chiton and blood-red sash, vine wrap on staff arm, same bone/ink pinecone thyrsus with attached red ribbons, same wide two-handled cup, sandals. STRICT RIGHT SIDE PROFILE ONE eye, narrow side torso, fullbody512square. Same physical body/head scale as idle, standing430px crown y50, head~50px, feet480, hipx256. Exactly two arms/hands and two legs. One hand carries staff, other cup. Staffpinecone/butt/ribbons/cup/limbs fullyinside padding. No floating leaves, drops, gold, aura/glow/sparks/fragments. Pose: STAFF ATTACK WINDUP: thyrsus drawn BACK diagonally LEFT behind shoulder, pinecone near upperleft, shaftbutt near torso/hip. Body coiled backwards kneesbent, cup held close chest in otherhand. Entire staff visible, NEVER secondstaff; one staffgrippinghand, othercuponly.",
+      "file": "dionysus/dionysus_attack_01.png",
+      "normalization": {
+        "ratio": 0.8732057416267942,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 34263
+    },
+    {
+      "id": "dionysus",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-c7a0a982-ab9f-4f76-9a69-59b6c6d96623.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. Image1 approved Dionysus idle EXACT identity/proportions, images2-4 STYLE only. Preserve curly hair and beard, ink ivy leaves with bone cuts, half-open bone chiton and blood-red sash, vine wrap on staff arm, same bone/ink pinecone thyrsus with attached red ribbons, same wide two-handled cup, sandals. STRICT RIGHT SIDE PROFILE ONE eye, narrow side torso, fullbody512square. Same physical body/head scale as idle, standing430px crown y50, head~50px, feet480, hipx256. Exactly two arms/hands and two legs. One hand carries staff, other cup. Staffpinecone/butt/ribbons/cup/limbs fullyinside padding. No floating leaves, drops, gold, aura/glow/sparks/fragments. Pose: HIT REACTION: head snapped BACK, body recoiling left, knees buckle. Staffgripping hand retains thyrsus upright tiltedleft and cup retainednear chest. No impact symbols.",
+      "file": "dionysus/dionysus_hit_01.png",
+      "normalization": {
+        "ratio": 0.8732057416267942,
+        "anchor_x": 0.59,
+        "baseline": 480
+      },
+      "bytes": 33787
+    },
+    {
+      "id": "dionysus",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3aa17ce6-692c-4a40-9a4d-9fbf1bfd7547.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. Image1 approved Dionysus idle EXACT identity/proportions, images2-4 STYLE only. Preserve curly hair and beard, ink ivy leaves with bone cuts, half-open bone chiton and blood-red sash, vine wrap on staff arm, same bone/ink pinecone thyrsus with attached red ribbons, same wide two-handled cup, sandals. STRICT RIGHT SIDE PROFILE ONE eye, narrow side torso, fullbody512square. Same physical body/head scale as idle, standing430px crown y50, head~50px, feet480, hipx256. Exactly two arms/hands and two legs. One hand carries staff, other cup. Staffpinecone/butt/ribbons/cup/limbs fullyinside padding. No floating leaves, drops, gold, aura/glow/sparks/fragments. Pose: FALLING: losing balance backward LEFT, body tiltedleft, onelegcollapsing andotherraisedforward. Thyrsus drops downward onleft diagonally, cup lowerednear hip. Staff remains ONE continuous rod fullyvisible and inside, both objects unbroken no splashes orlooseleaves/ribbons. No gore.",
+      "file": "dionysus/dionysus_death_01.png",
+      "normalization": {
+        "ratio": 0.8732057416267942,
+        "anchor_x": 0.54,
+        "baseline": 480
+      },
+      "bytes": 34663
+    },
+    {
+      "id": "dionysus",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-f75be76b-3058-4441-a671-5eee2dc7cbd0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. Image1 approved Dionysus idle EXACT identity, otherimages STYLE only. NEW portrait768x1024 vertical3:4 HEAD TO HIPS, TRUE THREE-QUARTER turned slightly RIGHT, nose closer to center, BOTH EYES visible far eye clearly partly visible, BOTH shoulders visible. Ivy crown with INK leaves and smallbonecuts, curly beard/hair, DRUNKEN GRIN. CUP RAISED in onehand, pinecone thyrsus held beside head otherhand, ribbons attached red, samevinearmwrap, halfopenchiton and redsash. Head/hair/crown/cup/entirestafftop/butt and ribbons visible within generous transparentmargins, shorten orangle staff to fit head-to-hips. Face upperhalf. No legs/thighs, continuous ink lowerhip contour no straypixelstrip. No sound/wine effects, no gold, aura/glow/sparks/fragments.",
+      "file": "dionysus/dionysus_portrait.png",
+      "bytes": 101010
+    },
+    {
+      "id": "dionysus",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-21c77d11-88fa-4c0d-bb95-29eb6e7031b7.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. EDIT target Image1 Dionysus strike, Image2 approved idle identity. Keep exact strike lunge, ONE continuous forward-upward RIGHT thyrsus in extended arm, otherhand cup close chest, pinecone/ribbons fullyinside. Correct TWO issues: REMOVE ALL vine leaves and stems from CUP-holding arm, keeping wrap ONLY on STAFF-holding arm as idle. Rotate torso STRICT RIGHT SIDE VIEW, narrow chest with ONE visible pectoral/ONE nipple, shoulders overlapping, face RIGHT PROFILE with ONE eye. Preserve costume, curly hair/beard, ink ivy crown, red sash, bonechiton/sandals, drunken grin, exactly2arms/hands/legs, body scale. No gold/aura/glow/sparks/fragment, transparent fullbody square512x512 withpadding.",
+      "file": "dionysus/dionysus_attack_02.png",
+      "normalization": {
+        "ratio": 0.8732057416267942,
+        "anchor_x": 0.45,
+        "baseline": 480
+      },
+      "bytes": 31903
     }
   ],
   "completed": [
@@ -4322,13 +4421,13 @@
     "ptah",
     "satyr",
     "asclepius",
-    "orpheus"
+    "orpheus",
+    "dionysus"
   ],
-  "active": "dionysus",
+  "active": "aeneas",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "dionysus",
       "aeneas",
       "aphrodite",
       "hephaestus",
@@ -4393,7 +4492,8 @@
       "ptah",
       "satyr",
       "asclepius",
-      "orpheus"
+      "orpheus",
+      "dionysus"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -4432,7 +4532,8 @@
     "ptah": "approved",
     "satyr": "approved",
     "asclepius": "approved",
-    "orpheus": "approved"
+    "orpheus": "approved",
+    "dionysus": "approved"
   },
   "rejected_frames": [
     {
@@ -4815,6 +4916,20 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a42919b9-a9d1-4cdb-bdbb-662f4a15c426.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Orpheus, Greek delicate poet-musician with bone-and-ink lyre held out in front, flowing poet's robes, soft Thracian cap with blood-red band. Unarmed, no weapon. Delicate singing expression, eyes half closed. Lyre and cap define silhouette. Lyre strings are fine ink lines on bone, NEVER gold. No sound waves, musical notes or glow. Image1 approved Orpheus idle EXACT identity, others STYLE only. NEW PORTRAIT768x1024 vertical3:4 HEAD TO HIPS, TRUE THREE-QUARTER face slightly RIGHT: both shoulders and BOTH eyes visible, far eye partly visible and half closed. Head tipped BACK, mouth OPEN MID-SONG. Lyre held at chest, both hands visible one holding frame other strumming. Same bone soft bent Thracian cap and RED band, wavy hair, youthful delicate face, robes/cloak/lyre. Face upperhalf. All cap, hair, lyre scrolls, strings and hands visible with generous transparent margins. Head to hips, no thighs/legs, clean continuous ink lower contour no straypixelstrip. No music notes or sound waves or glow/sparks/fragments, no goldstrings.",
       "rejection_reason": "Portrait retains strict one-eye profile; brief requires true three-quarter face with far eye visible."
+    },
+    {
+      "id": "dionysus",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e19ad3cc-2fc8-4174-ba4b-8d801432283f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. Three input images STYLE only. Neutral standing idle, fullbody512x512 square battle frame, STRICT RIGHT PROFILE ONE eye, relaxed swaying hips and drunken grin, curly hair with INK ivy crown, half-open bone chiton exposing chest, red waist sash, sandals. ONE hand holds ONE thyrsus UPRIGHT beside head and other hand holds wide TWO-HANDLED cup before chest, exactly TWO arms/hands and TWO legs, vines visibly wrapped on arm no dangling extra arms. Staff height only just above head, entire pinecone top, ribbons attached and shaft BUTT visible within margins. Standing character430px height crown near50, feet480, hipx256, head50px. No wine spills or loose leaves/particles, no companions, no aura/glow/sparks.",
+      "rejection_reason": "Idle is three-quarter instead of strict right profile, and ivy leaves are bone-filled rather than ink."
+    },
+    {
+      "id": "dionysus",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-6fd68e18-a4be-4e96-9b1e-08caf76da043.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.Subject: Dionysus, Greek god with loose swaying posture, INK ivy-leaf crown, thyrsus (ONE staff topped with BONE/INK pinecone and attached trailing BLOOD-RED ribbons), wide two-handled BONE/INK drinking cup, INK vines wrapped around one arm, half-open BONE chiton and BLOOD-RED sash. Laughing, unguarded. Thyrsus and cup define silhouette. No gold. Image1 approved Dionysus idle EXACT identity/proportions, images2-4 STYLE only. Preserve curly hair and beard, ink ivy leaves with bone cuts, half-open bone chiton and blood-red sash, vine wrap on staff arm, same bone/ink pinecone thyrsus with attached red ribbons, same wide two-handled cup, sandals. STRICT RIGHT SIDE PROFILE ONE eye, narrow side torso, fullbody512square. Same physical body/head scale as idle, standing430px crown y50, head~50px, feet480, hipx256. Exactly two arms/hands and two legs. One hand carries staff, other cup. Staffpinecone/butt/ribbons/cup/limbs fullyinside padding. No floating leaves, drops, gold, aura/glow/sparks/fragments. Pose: STAFF ATTACK STRIKE: full extension RIGHT with onehand thyrsus thrust steeply diagonal upward RIGHT pinecone upperright butt nearhip, bodylunging forward. Otherhand retainscup chest, no extraarm. Entire staffshaft ONE continuous rod, ribbons attached, pinecone inside square. No magic or wine drops.",
+      "rejection_reason": "Strike duplicates vine wrap onto cup arm and turns torso frontal instead of strict right side view."
     }
   ]
 }
