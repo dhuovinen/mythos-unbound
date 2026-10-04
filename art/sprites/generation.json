@@ -883,6 +883,11 @@
       "ratio": 0.8955342902711324,
       "anchor_x": 0.52,
       "baseline": 480
+    },
+    "wepwawet": {
+      "ratio": 0.8779904306220095,
+      "anchor_x": 0.5,
+      "baseline": 480
     }
   },
   "frames": [
@@ -5072,6 +5077,100 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Funerary servant figurine: a mummiform wrapped body in bone linen with blood-red hieroglyph bands, a false beard, a striped nemes headcloth, arms crossed holding a hoe and a pick. Stiff and doll-like, with a fixed painted face. The tools in the crossed arms and the stiff mummiform body define the silhouette. No gold.\nInput 1 is the approved idle and exact identity reference; inputs 2\u20134 are style only. Create a NEW Shabti portrait in vertical 3:4 composition, intended export 768\u00d71024. Head to hips only, true three-quarter view turned slightly right, both shoulders visible and both painted eyes visible, the far eye partly visible. Preserve the idle's exact striped nemes, fixed painted face, long bone false beard, linen wraps, red abstract hieroglyph bands and short hoe and pick. Arms crossed with one hand gripping each tool, exactly two arms. Full headcloth, beard, both complete tools and handles visible inside clear transparent padding. Face in the upper half. No thighs or full-body framing. No pedestal or other figures. No gold, glow, aura, sparks, particles or floating fragments.",
       "file": "shabti/shabti_portrait.png",
       "bytes": 75535
+    },
+    {
+      "id": "wepwawet",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b07cef92-7a85-4133-98ce-75677d8b7d5b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The Opener of Ways: a wolf head with shorter, rounded ears than Anubis and a thicker muzzle, ink-grey fur with a bone muzzle, a war mace and a standard pole bearing a wolf emblem, a short kilt, a broad collar. Fast and forward-leaning. The wolf head and the standard define the silhouette. No gold.\nInputs 1\u20133 are style references only. Generate Wepwawet's idle battle frame: square full-body, strict right-facing side profile. Humanoid body with exactly two arms and two legs and ONE wolf head, only one visible eye. Distinct thick bone muzzle and SHORT rounded wolf ears, ink-grey fur with hard bone facial cuts, no jackal head or tall Anubis ears. Athletic forward-leaning stance, bare ink-grey torso, broad bone collar with simple blood-red inset bars, bone short kilt with ink folds and one blood-red belt tie, bare clawed wolf feet. Near arm on the left holds one compact ink war mace with a bone faceted head near the hip, far arm on the right grips one upright bone standard pole. Standard topped by a small solid ink wolf emblem in strict side profile with a bone edge cut; the emblem is a rigid carving, not a second living creature. Pole is only slightly taller than the head, from above ground to a compact wolf emblem near the head level. No long banner or pennant, no armor or extra jewelry. Target 512\u00d7512: body from ear tips around y=50 to lowest foot y=480, hips centered x=256. Both hands and complete mace, pole and wolf emblem must be fully visible inside clear transparent margins. No ground shadow, pedestal, aura, gold, glow or sparks.",
+      "file": "wepwawet/wepwawet_idle_01.png",
+      "bytes": 28228
+    },
+    {
+      "id": "wepwawet",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e03145c5-01bb-47e8-9e5e-451e7433ac02.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The Opener of Ways: a wolf head with shorter, rounded ears than Anubis and a thicker muzzle, ink-grey fur with a bone muzzle, a war mace and a standard pole bearing a wolf emblem, a short kilt, a broad collar. Fast and forward-leaning. The wolf head and the standard define the silhouette. No gold.\nInput 1 is Wepwawet's approved idle and exact identity reference; inputs 2\u20134 are style only. Preserve exactly its athletic ink-grey furred body, short wolf ears and thick bone muzzle, bone facial cuts, broad bone collar with blood-red inset bars, short bone kilt, blood belt tie, clawed wolf feet, compact faceted bone-headed war mace, bone standard pole and small rigid standing-wolf emblem. Exactly two arms and two legs, ONE mace and ONE standard; the emblem is a carved ornament. No living companion, no tail, no new ornaments. Battle: square full-body, strict right-facing side profile, one visible eye, muzzle facing right. Physical body scale same as idle, standing height about 430 pixels, hips centered x=256, lowest foot y=480. Entire wolf ears, all limbs and both complete weapons inside transparent padding. No gold, glow, aura, sparks or fragments.\nPose: Walk contact: front leg reaches a moderate step to the right, heel touches down, trailing foot behind with toes touching. Torso leans forward. Near hand carries mace low beside the hip, far hand holds standard upright beside the head.",
+      "file": "wepwawet/wepwawet_walk_01.png",
+      "normalization": {
+        "ratio": 0.835,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 30685
+    },
+    {
+      "id": "wepwawet",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2dd4131c-706d-4a3b-9866-90d70d8689f2.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The Opener of Ways: a wolf head with shorter, rounded ears than Anubis and a thicker muzzle, ink-grey fur with a bone muzzle, a war mace and a standard pole bearing a wolf emblem, a short kilt, a broad collar. Fast and forward-leaning. The wolf head and the standard define the silhouette. No gold.\nInput 1 is Wepwawet's approved idle and exact identity reference; inputs 2\u20134 are style only. Preserve exactly its athletic ink-grey furred body, short wolf ears and thick bone muzzle, bone facial cuts, broad bone collar with blood-red inset bars, short bone kilt, blood belt tie, clawed wolf feet, compact faceted bone-headed war mace, bone standard pole and small rigid standing-wolf emblem. Exactly two arms and two legs, ONE mace and ONE standard; the emblem is a carved ornament. No living companion, no tail, no new ornaments. Battle: square full-body, strict right-facing side profile, one visible eye, muzzle facing right. Physical body scale same as idle, standing height about 430 pixels, hips centered x=256, lowest foot y=480. Entire wolf ears, all limbs and both complete weapons inside transparent padding. No gold, glow, aura, sparks or fragments.\nPose: Attack wind-up: near arm draws the mace back and upward behind the wolf head, elbow bent, torso coils backward. Far arm holds standard upright close to the chest, whole wolf emblem visible. Exactly two arms and one mace. Raised mace stays wholly inside the square.",
+      "file": "wepwawet/wepwawet_attack_01.png",
+      "normalization": {
+        "ratio": 0.87,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 30508
+    },
+    {
+      "id": "wepwawet",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e39d4ad5-5d57-480e-b88e-3981de0c5c14.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The Opener of Ways: a wolf head with shorter, rounded ears than Anubis and a thicker muzzle, ink-grey fur with a bone muzzle, a war mace and a standard pole bearing a wolf emblem, a short kilt, a broad collar. Fast and forward-leaning. The wolf head and the standard define the silhouette. No gold.\nInput 1 is Wepwawet's approved idle and exact identity reference; inputs 2\u20134 are style only. Preserve exactly its athletic ink-grey furred body, short wolf ears and thick bone muzzle, bone facial cuts, broad bone collar with blood-red inset bars, short bone kilt, blood belt tie, clawed wolf feet, compact faceted bone-headed war mace, bone standard pole and small rigid standing-wolf emblem. Exactly two arms and two legs, ONE mace and ONE standard; the emblem is a carved ornament. No living companion, no tail, no new ornaments. Battle: square full-body, strict right-facing side profile, one visible eye, muzzle facing right. Physical body scale same as idle, standing height about 430 pixels, hips centered x=256, lowest foot y=480. Entire wolf ears, all limbs and both complete weapons inside transparent padding. No gold, glow, aura, sparks or fragments.\nPose: Attack strike: near arm swings mace fully forward to the right at shoulder height, elbow extended, body lunges forward over front leg. Far hand still grips standard, which leans slightly backward beside the body. Keep complete mace, full pole and wolf emblem inside the square, no extended tool beyond frame.",
+      "file": "wepwawet/wepwawet_attack_02.png",
+      "normalization": {
+        "ratio": 0.84,
+        "anchor_x": 0.41,
+        "baseline": 480
+      },
+      "bytes": 29200
+    },
+    {
+      "id": "wepwawet",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-4d18efa6-78d5-4a31-b208-02f765112733.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The Opener of Ways: a wolf head with shorter, rounded ears than Anubis and a thicker muzzle, ink-grey fur with a bone muzzle, a war mace and a standard pole bearing a wolf emblem, a short kilt, a broad collar. Fast and forward-leaning. The wolf head and the standard define the silhouette. No gold.\nInput 1 is Wepwawet's approved idle and exact identity reference; inputs 2\u20134 are style only. Preserve exactly its athletic ink-grey furred body, short wolf ears and thick bone muzzle, bone facial cuts, broad bone collar with blood-red inset bars, short bone kilt, blood belt tie, clawed wolf feet, compact faceted bone-headed war mace, bone standard pole and small rigid standing-wolf emblem. Exactly two arms and two legs, ONE mace and ONE standard; the emblem is a carved ornament. No living companion, no tail, no new ornaments. Battle: square full-body, strict right-facing side profile, one visible eye, muzzle facing right. Physical body scale same as idle, standing height about 430 pixels, hips centered x=256, lowest foot y=480. Entire wolf ears, all limbs and both complete weapons inside transparent padding. No gold, glow, aura, sparks or fragments.\nPose: Hit reaction: wolf head snaps backward and torso recoils to the left, legs brace, near hand lowers mace defensively, far hand keeps standard upright with a slight rearward tilt. Whole standard stays inside the frame.",
+      "file": "wepwawet/wepwawet_hit_01.png",
+      "normalization": {
+        "ratio": 0.875,
+        "anchor_x": 0.57,
+        "baseline": 480
+      },
+      "bytes": 29918
+    },
+    {
+      "id": "wepwawet",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ab87ae61-6794-4470-b872-93e774a2dc7f.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The Opener of Ways: a wolf head with shorter, rounded ears than Anubis and a thicker muzzle, ink-grey fur with a bone muzzle, a war mace and a standard pole bearing a wolf emblem, a short kilt, a broad collar. Fast and forward-leaning. The wolf head and the standard define the silhouette. No gold.\nInput 1 is Wepwawet's approved idle and exact identity reference; inputs 2\u20134 are style only. Preserve exactly its athletic ink-grey furred body, short wolf ears and thick bone muzzle, bone facial cuts, broad bone collar with blood-red inset bars, short bone kilt, blood belt tie, clawed wolf feet, compact faceted bone-headed war mace, bone standard pole and small rigid standing-wolf emblem. Exactly two arms and two legs, ONE mace and ONE standard; the emblem is a carved ornament. No living companion, no tail, no new ornaments. Battle: square full-body, strict right-facing side profile, one visible eye, muzzle facing right. Physical body scale same as idle, standing height about 430 pixels, hips centered x=256, lowest foot y=480. Entire wolf ears, all limbs and both complete weapons inside transparent padding. No gold, glow, aura, sparks or fragments.\nPose: Falling: body tips backward toward the left, losing balance over one foot, other foot lifted. Mace lowers in its hand, standard tilts toward the right, both complete with no fragments or duplicates. Keep wolf muzzle facing right and every part inside transparent margins.",
+      "file": "wepwawet/wepwawet_death_01.png",
+      "normalization": {
+        "ratio": 0.875,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 26758
+    },
+    {
+      "id": "wepwawet",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-f21600b7-4fd8-45c2-acc1-b42ed11bdbac.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: identity-preserve. Input 1 is the edit target. Input 2 is the approved idle identity reference. Inputs 3\u20135 are style only.\nCorrection: Change only the head and upper-body viewing angle to a true three-quarter portrait, turned slightly right toward the viewer: both wolf eyes must be visible, near eye fully and far eye partly, on opposite sides of the thick muzzle. Show both shoulders. Do not use the side-profile wolf face. Keep the exact short wolf ears, fur and bone muzzle markings, collar, kilt, belt tie, two hands, mace and full standard with identical wolf emblem. Keep head-to-hips framing, face in the upper half, vertical 3:4 and complete weapons inside clear transparent padding. No gold, glow or aura.",
+      "file": "wepwawet/wepwawet_portrait.png",
+      "bytes": 86653
+    },
+    {
+      "id": "wepwawet",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7cd353a8-cbc8-4c70-8a93-bd23ec4e810c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: identity-preserve. Input 1 is the edit target. Input 2 is the approved idle identity reference. Inputs 3\u20135 are style only.\nCorrection: Change only the walking legs to a true passing pose. The supporting leg is nearly straight directly beneath the hips, its clawed foot flat on the baseline. The other thigh crosses in front of the supporting thigh, knee just slightly forward, lower leg and lifted clawed foot close beneath the hips with toes visibly above the baseline. The lifted foot is near the supporting ankle, NOT far behind the body. Exactly two legs and two feet. Keep the head, torso, arms, costume, tools, fur, palette, line weight, transparent square and upper-body scale unchanged.",
+      "file": "wepwawet/wepwawet_walk_02.png",
+      "normalization": {
+        "ratio": 0.84,
+        "anchor_x": 0.52,
+        "baseline": 480
+      },
+      "bytes": 27393
     }
   ],
   "completed": [
@@ -5122,13 +5221,13 @@
     "apollo",
     "artemis",
     "medjay",
-    "shabti"
+    "shabti",
+    "wepwawet"
   ],
-  "active": "wepwawet",
+  "active": "imhotep",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "wepwawet",
       "imhotep",
       "nefertem",
       "maahes",
@@ -5193,7 +5292,8 @@
       "apollo",
       "artemis",
       "medjay",
-      "shabti"
+      "shabti",
+      "wepwawet"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -5240,7 +5340,8 @@
     "apollo": "approved",
     "artemis": "approved",
     "medjay": "approved",
-    "shabti": "approved"
+    "shabti": "approved",
+    "wepwawet": "approved"
   },
   "rejected_frames": [
     {
@@ -5791,6 +5892,22 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-dc2637c1-f353-42ec-a484-2ebdd66b8492.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments. Subject: Desert patrol turned royal guard: a plain striped headcloth, kohl-lined eyes, a short linen kilt, a spear and a tall rectangular shield with a blood-red bar, a short khopesh at the belt. Competent and unremarkable. The headcloth and the tall shield define the silhouette. No gold. Plain Egyptian guard with a BONE/INK striped headcloth (no cobra, crown or ornaments), clean-shaven kohl-lined face, bare BONE torso with flat INK shadows, short BONE linen kilt and narrow BLOOD waist tie, simple bone/ink sandals. ONE slender straight spear with BONE leaf-shaped point and INK/BONE shaft in near hand. ONE tall rectangular BONE shield with heavy INK border and a single horizontal BLOOD bar across centre in far hand. Short BONE/INK curved khopesh secured at belt. No armour or jewellery; all materials bone/ink/blood only. Image1 approved Medjay idle EXACT identity/design reference, other images STYLE only. NEW portrait768x1024 vertical3:4 HEAD TO HIPS TRUE THREE-QUARTER slightlyRIGHT with BOTH shoulders and BOTH kohl-lined EYES visible, far eye partly. Competent calm face in upperhalf, same striped headcloth no crown/cobra. Tall shield RAISED in front on far arm, single blood bar and entire shield outline inside portrait (perspective foreshortened, covers torso), spear held upright beside head near hand with entire leafpoint/shaft inside head-to-hips framing, shaft may slope for fit. Short curved khopesh secured at belt. Generous transparent margin ALL sides especially spear tip and bottom shield/hip boundary; no thighs/fullbody. No gold, aura, glow, sparks or fragments.",
       "rejection_reason": "Portrait spear shaft ends in a flat cut and omits idle's rounded decorated butt cap."
+    },
+    {
+      "id": "wepwawet",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-6f7196a6-6233-4d28-9b8e-9df97d1665fb.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The Opener of Ways: a wolf head with shorter, rounded ears than Anubis and a thicker muzzle, ink-grey fur with a bone muzzle, a war mace and a standard pole bearing a wolf emblem, a short kilt, a broad collar. Fast and forward-leaning. The wolf head and the standard define the silhouette. No gold.\nInput 1 is Wepwawet's approved idle and exact identity reference; inputs 2\u20134 are style only. Preserve exactly its athletic ink-grey furred body, short wolf ears and thick bone muzzle, bone facial cuts, broad bone collar with blood-red inset bars, short bone kilt, blood belt tie, clawed wolf feet, compact faceted bone-headed war mace, bone standard pole and small rigid standing-wolf emblem. Exactly two arms and two legs, ONE mace and ONE standard; the emblem is a carved ornament. No living companion, no tail, no new ornaments. Battle: square full-body, strict right-facing side profile, one visible eye, muzzle facing right. Physical body scale same as idle, standing height about 430 pixels, hips centered x=256, lowest foot y=480. Entire wolf ears, all limbs and both complete weapons inside transparent padding. No gold, glow, aura, sparks or fragments.\nPose: Walk passing: legs cross beneath the hips, one supporting foot planted and the other clearly raised with toes above ground. Body slightly raised and forward-leaning. Mace carried low beside hip, standard still upright. No duplicate feet.",
+      "file": "wepwawet/wepwawet_walk_02.png",
+      "rejection_reason": "Change only the walking legs to a true passing pose. The supporting leg is nearly straight directly beneath the hips, its clawed foot flat on the baseline. The other thigh crosses in front of the supporting thigh, knee just slightly forward, lower leg and lifted clawed foot close beneath the hips with toes visibly above the baseline. The lifted foot is near the supporting ankle, NOT far behind the body. Exactly two legs and two feet. Keep the head, torso, arms, costume, tools, fur, palette, line weight, transparent square and upper-body scale unchanged."
+    },
+    {
+      "id": "wepwawet",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2e5bae6a-d22a-471f-9b36-9b5c6e0a7ab5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The Opener of Ways: a wolf head with shorter, rounded ears than Anubis and a thicker muzzle, ink-grey fur with a bone muzzle, a war mace and a standard pole bearing a wolf emblem, a short kilt, a broad collar. Fast and forward-leaning. The wolf head and the standard define the silhouette. No gold.\nInput 1 is the approved idle and exact identity reference; inputs 2\u20134 are style only. NEW Wepwawet portrait, vertical 3:4, export 768\u00d71024, HEAD TO HIPS only. True three-quarter view turned slightly right, both shoulders and both wolf eyes visible, far eye partly visible. Preserve exact idle wolf head, short ears, thick bone muzzle, ink-grey fur, broad bone collar with blood-red bars, short kilt and red belt tie. One hand holds the same standard pole beside the head, the entire carved wolf emblem fully visible; other hand holds the same compact bone-headed mace across the waist, full mace visible. Exactly two arms, no tail, no living companion. Face in upper half. Leave clear transparent padding around ears, wolf emblem, pole ends, mace and lower torso. No full-body framing, no thighs. No gold, glow, aura, sparks or fragments.",
+      "file": "wepwawet/wepwawet_portrait.png",
+      "rejection_reason": "Change only the head and upper-body viewing angle to a true three-quarter portrait, turned slightly right toward the viewer: both wolf eyes must be visible, near eye fully and far eye partly, on opposite sides of the thick muzzle. Show both shoulders. Do not use the side-profile wolf face. Keep the exact short wolf ears, fur and bone muzzle markings, collar, kilt, belt tie, two hands, mace and full standard with identical wolf emblem. Keep head-to-hips framing, face in the upper half, vertical 3:4 and complete weapons inside clear transparent padding. No gold, glow or aura."
     }
   ]
 }
