@@ -949,6 +949,12 @@
       "width_ratio": 0.94896331738437,
       "anchor_x": 0.5,
       "baseline": 480
+    },
+    "ammit": {
+      "target_width": 460,
+      "width_ratio": 0.9712918660287081,
+      "anchor_x": 0.5,
+      "baseline": 480
     }
   },
   "frames": [
@@ -6361,6 +6367,114 @@
       "file": "apep/apep_portrait.png",
       "alpha_noise_floor": 8,
       "bytes": 98017
+    },
+    {
+      "id": "ammit",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d0023e6a-c690-4a44-9a9a-d08947da8c5e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nEdit target image 1, Ammit idle. Change ONLY the mane color: replace EVERY red fur shape in the mane with deep INK #1A1A1E; add sparse angular BONE #EDE6D6 chisel cuts to separate the locks while keeping the mane predominantly dark. No red mane whatsoever. Keep the exact mane outline, crocodile head and snout, teeth, small red eye, two lion forelegs, two heavy hippo hind legs, rump, short tail, pose, proportions and transparent background unchanged. Do not add extra body parts. Flat hard graphic shapes, no gradients, gold, aura, glow, sparks or floating fragments.",
+      "file": "ammit/ammit_idle_01.png",
+      "alpha_noise_floor": 8,
+      "bytes": 31566
+    },
+    {
+      "id": "ammit",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a1e42c01-6523-45f2-a42e-88a202ab2007.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nEDIT image 1. Change ONLY the TWO FRONT LION LEGS. The rear HIPPO legs are already correct: KEEP THEM PIXEL-FOR-PIXEL, along with torso, tail, mane and crocodile head.\nThe large bent lion leg whose raised clawed paw is currently under the body near x=55% must be STRAIGHTENED FORWARD toward RIGHT: from its existing visible shoulder, reach down-right so that its BIG clawed paw touches ground at x=88%, with paw y approximately 84% of this raw canvas. This must be the FRONTMOST leg overlapping the other lion leg.\nThe other lion front leg currently slanting down-right to a planted paw at x=87% must instead BEND BACK LEFT under the chest, with a smaller clawed foot clearly RAISED at x=55%, y about 77%. It is the BACKGROUND foreleg, partly hidden by the big foreground extending leg. SWAP their pose positions while preserving their shoulder attachment and correct anatomy. Exactly FOUR legs remain: two lion front, two hippo rear. Do not add or remove any paws. Do not alter body size or head position. Whole right-facing animal on genuinely transparent background. No gold, aura, glow, sparks, floating fragments, ground shadow or red mane.",
+      "file": "ammit/ammit_walk_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9840510366826156,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 30501
+    },
+    {
+      "id": "ammit",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a4c8d298-a6d4-4bdd-8df3-120374a82a37.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Ammit's exact approved identity; inputs 2\u20134 style only. Preserve this same ONE composite quadruped: long broad toothed CROCODILE head with one small red eye, muscular LION forequarters with TWO clawed lion front paws and a heavy INK-BLACK mane with sparse bone chisel cuts, bulky rounded HIPPO rear with TWO stout hippo hind legs and one short down-curved hippo tail. Exactly FOUR legs total, one head and tail. No red mane or added limbs. Match head, body proportions and style, while changing the joints and silhouette substantially for the requested pose. Strict RIGHT side profile, full body within 512 \u00d7 512 square transparent canvas, about 460 px wide nose to tail, grounded contact points y=480, center x=256. Natural heavy beast height, all snout, mane, paws and tail inside clear padding. No gold, glow, aura, sparks, floating fragments, weapons, ornaments, floor shadow or gradients.\nPose: heavy diagonal TROT B. NEAR hippo hindleg swings FORWARD and plants under belly; FAR lion foreleg reaches FORWARD RIGHT and plants. NEAR lion foreleg folds BACK and is visibly lifted under chest, FAR hippo hindleg folds beneath rump and lifts. Four separate legs, opposite grounded diagonal from phase A. Body slightly raised, head steady.",
+      "file": "ammit/ammit_walk_02.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9633173843700159,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 26651
+    },
+    {
+      "id": "ammit",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a8e9e449-801d-4267-a9aa-039d284b9450.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Ammit's exact approved identity; inputs 2\u20134 style only. Preserve this same ONE composite quadruped: long broad toothed CROCODILE head with one small red eye, muscular LION forequarters with TWO clawed lion front paws and a heavy INK-BLACK mane with sparse bone chisel cuts, bulky rounded HIPPO rear with TWO stout hippo hind legs and one short down-curved hippo tail. Exactly FOUR legs total, one head and tail. No red mane or added limbs. Match head, body proportions and style, while changing the joints and silhouette substantially for the requested pose. Strict RIGHT side profile, full body within 512 \u00d7 512 square transparent canvas, about 460 px wide nose to tail, grounded contact points y=480, center x=256. Natural heavy beast height, all snout, mane, paws and tail inside clear padding. No gold, glow, aura, sparks, floating fragments, weapons, ornaments, floor shadow or gradients.\nPose: bite wind-up, VERY LOW CROUCH. Chest and belly close to baseline, both lion forelegs deeply bent at elbows with paws tucked directly beneath shoulders, both hippo hind legs folded powerfully under rump. Crocodile head RETRACTED back over chest and low, jaws bared partly open. Shortened, low coiled silhouette, not the idle standing stance.",
+      "file": "ammit/ammit_attack_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9633173843700159,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 30293
+    },
+    {
+      "id": "ammit",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-758744ed-b779-4ca5-9a28-558fd0ccc3a1.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Ammit's exact approved identity; inputs 2\u20134 style only. Preserve this same ONE composite quadruped: long broad toothed CROCODILE head with one small red eye, muscular LION forequarters with TWO clawed lion front paws and a heavy INK-BLACK mane with sparse bone chisel cuts, bulky rounded HIPPO rear with TWO stout hippo hind legs and one short down-curved hippo tail. Exactly FOUR legs total, one head and tail. No red mane or added limbs. Match head, body proportions and style, while changing the joints and silhouette substantially for the requested pose. Strict RIGHT side profile, full body within 512 \u00d7 512 square transparent canvas, about 460 px wide nose to tail, grounded contact points y=480, center x=256. Natural heavy beast height, all snout, mane, paws and tail inside clear padding. No gold, glow, aura, sparks, floating fragments, weapons, ornaments, floor shadow or gradients.\nPose: powerful LUNGING BITE RIGHT. Long crocodile neck and snout extend fully forward, jaws VERY WIDE. Both lion front legs stretch forward in the lunge, paws lifted slightly, both heavy hippo hind legs drive backward from baseline. Body lengthened horizontally and fully committed forward. Exactly four legs and one short tail. Clear extension compared to crouch.",
+      "file": "ammit/ammit_attack_02.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9840510366826156,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 27721
+    },
+    {
+      "id": "ammit",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8d58461d-8c8e-4b51-83a4-0fe442973e65.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Ammit's exact approved identity; inputs 2\u20134 style only. Preserve this same ONE composite quadruped: long broad toothed CROCODILE head with one small red eye, muscular LION forequarters with TWO clawed lion front paws and a heavy INK-BLACK mane with sparse bone chisel cuts, bulky rounded HIPPO rear with TWO stout hippo hind legs and one short down-curved hippo tail. Exactly FOUR legs total, one head and tail. No red mane or added limbs. Match head, body proportions and style, while changing the joints and silhouette substantially for the requested pose. Strict RIGHT side profile, full body within 512 \u00d7 512 square transparent canvas, about 460 px wide nose to tail, grounded contact points y=480, center x=256. Natural heavy beast height, all snout, mane, paws and tail inside clear padding. No gold, glow, aura, sparks, floating fragments, weapons, ornaments, floor shadow or gradients.\nPose: impact recoil BACK LEFT, crocodile head snapped UP and backward while muzzle still faces RIGHT. Lion chest tilts back with front paws bracing/lifting, heavy hippo hind legs planted to catch body. Same four legs, heavy mane pulled back by motion, no effects.",
+      "file": "ammit/ammit_hit_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9641148325358851,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 35316
+    },
+    {
+      "id": "ammit",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ee00678d-515e-4f1d-9760-62121b6beb96.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Ammit's exact approved identity; inputs 2\u20134 style only. Preserve this same ONE composite quadruped: long broad toothed CROCODILE head with one small red eye, muscular LION forequarters with TWO clawed lion front paws and a heavy INK-BLACK mane with sparse bone chisel cuts, bulky rounded HIPPO rear with TWO stout hippo hind legs and one short down-curved hippo tail. Exactly FOUR legs total, one head and tail. No red mane or added limbs. Match head, body proportions and style, while changing the joints and silhouette substantially for the requested pose. Strict RIGHT side profile, full body within 512 \u00d7 512 square transparent canvas, about 460 px wide nose to tail, grounded contact points y=480, center x=256. Natural heavy beast height, all snout, mane, paws and tail inside clear padding. No gold, glow, aura, sparks, floating fragments, weapons, ornaments, floor shadow or gradients.\nPose: DEAD BEAST LYING FULLY ON ITS SIDE. Heavy torso rolls onto its near flank; the flank, shoulders and crocodile head rest at ground level. FOUR limp legs stretch outward horizontally from belly, two lion forelegs toward RIGHT and two hippo hindlegs toward LEFT; no planted paws or legs supporting the body. Jaw slack and partly open, eye closed; one short hippo tail lies left behind rump. Long low collapsed silhouette, not a crouch or standing stance.",
+      "file": "ammit/ammit_death_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9723788049605412,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 18721
+    },
+    {
+      "id": "ammit",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-cea9236d-64c8-442b-8ca4-b4b81ce9f9c2.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 exact Ammit identity, inputs 2\u20134 style only. NEW vertical 3:4 portrait 768 \u00d7 1024, crocodile HEAD and lion SHOULDERS/chest only. True three-quarter head turned slightly RIGHT toward viewer, BOTH small red eyes visible with far eye partly, BOTH lion shoulders. Same long broad toothed crocodile snout, jaws partly open, heavy low watchful gaze, dark INK-BLACK mane behind with sparse angular bone chisel cuts. Face in UPPER HALF. Fully include long snout, teeth, entire mane and shoulders with 6% clear transparent padding; no full body, paws or hippo rear. No red mane, weapons, gold, glow, aura, sparks, floating fragments or floor shadow.",
+      "file": "ammit/ammit_portrait.png",
+      "alpha_noise_floor": 8,
+      "bytes": 102986
     }
   ],
   "completed": [
@@ -6423,14 +6537,13 @@
     "fenrir",
     "jormungandr",
     "ba",
-    "apep"
+    "apep",
+    "ammit"
   ],
-  "active": "ammit",
-  "status": "in_progress",
+  "active": null,
+  "status": "complete",
   "pending": {
-    "remaining_deities": [
-      "ammit"
-    ]
+    "remaining_deities": []
   },
   "usage_limit": null,
   "review": {
@@ -6494,7 +6607,8 @@
       "fenrir",
       "jormungandr",
       "ba",
-      "apep"
+      "apep",
+      "ammit"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -6553,7 +6667,8 @@
     "fenrir": "approved",
     "jormungandr": "approved",
     "ba": "approved",
-    "apep": "approved"
+    "apep": "approved",
+    "ammit": "approved"
   },
   "rejected_frames": [
     {
@@ -7306,6 +7421,34 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-57adc642-e90b-4e10-b43e-0a2adaa90196.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 exact Ba identity, inputs 2\u20134 style only. NEW vertical 3:4 portrait 768 \u00d7 1024, head and feathered chest ONLY. Calm BEARDED HUMAN FACE on the same falcon body, three-quarter view turned slightly RIGHT, BOTH human eyes visible, both bird shoulders. Same long carved hair and bone/ink feathers with red tips. Wings raised behind as a framing shape, fully include all wing tips inside 6% clear padding. Face in UPPER HALF, no full bird body, talons or tail. No human arms or torso. Genuine transparent background. No gold, halo, glow, aura, sparks, floating fragments or floor shadow.",
       "rejection_reason": "Wing tips touch canvas edges; portrait needs clear transparent padding and complete feather contours."
+    },
+    {
+      "id": "ammit",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-c0e880f3-0cc8-467f-b213-3d26155dd399.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images 1\u20133: style references only.\nSubject: Ammit, the devourer. ONE four-legged composite beast: a CROCODILE HEAD with long broad toothed snout, a LION'S muscular forequarters and two clawed lion forepaws with a heavy INK mane, and the heavy rounded HIPPopotamus rear with two stout hippo hind legs. All seamlessly joined into ONE low heavy animal. Waits and watches, then devours. Ink skin and mane, bone chisel highlights and teeth, optional small red eye. No gold.\nPose: idle, weight on all FOUR legs, watching RIGHT with crocodile jaws partly open. Exactly one crocodile head, two lion front legs, two hippo rear legs, one short hippo tail. Strict RIGHT side profile, one visible eye. Full beast inside square 512 \u00d7 512 transparent canvas, width about 460 px nose to tail, paws resting y=480, body center x=256. Natural heavy quadruped height, all head, mane, paws and tail within 5% clear padding. No human parts, extra limbs, wings, weapons, ornaments, gold, aura, glow, sparks, floating fragments or ground shadow. Flat carved woodcut, no gradients or glossy skin.",
+      "rejection_reason": "Mane is predominantly blood red instead of the requested heavy ink mane."
+    },
+    {
+      "id": "ammit",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5599ff97-556c-4878-9d5e-cb0c8fd7526e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Ammit's exact approved identity; inputs 2\u20134 style only. Preserve this same ONE composite quadruped: long broad toothed CROCODILE head with one small red eye, muscular LION forequarters with TWO clawed lion front paws and a heavy INK-BLACK mane with sparse bone chisel cuts, bulky rounded HIPPO rear with TWO stout hippo hind legs and one short down-curved hippo tail. Exactly FOUR legs total, one head and tail. No red mane or added limbs. Match head, body proportions and style, while changing the joints and silhouette substantially for the requested pose. Strict RIGHT side profile, full body within 512 \u00d7 512 square transparent canvas, about 460 px wide nose to tail, grounded contact points y=480, center x=256. Natural heavy beast height, all snout, mane, paws and tail inside clear padding. No gold, glow, aura, sparks, floating fragments, weapons, ornaments, floor shadow or gradients.\nPose: heavy diagonal TROT A. NEAR lion foreleg extends FORWARD RIGHT, planted paw ahead of chest; FAR hippo hindleg extends BACK LEFT, planted. FAR lion foreleg and NEAR hippo hindleg bend forward beneath body, lifted. Four separate legs and paws, near front and far rear supporting diagonal pair. Crocodile head steady, weighty gait.",
+      "rejection_reason": "Uses same supporting near-rear/far-front diagonal as walk_02; must alternate diagonals."
+    },
+    {
+      "id": "ammit",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-64f19511-8a18-4e0d-960d-d68fd261479e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is the EDIT TARGET, Ammit trot A. Image 2 is the approved idle, identity reference only. Change ONLY the four leg positions, keep the exact crocodile head, jaws, red eye, dark ink mane, body and hippo rump, short tail and right-facing profile unchanged.\nRedraw the LARGE NEAR lion foreleg from its foreground shoulder: it must extend FORWARD RIGHT in a long diagonal with its clawed paw firmly DOWN at the front. The smaller FAR lion foreleg folds BACK under the chest with its paw lifted. The LARGE NEAR hippo hind leg attached to the foreground rump bends FORWARD RIGHT toward the belly with its blunt-toed foot lifted. The smaller FAR hippo hind leg extends BACK LEFT and plants on the ground. Exactly four legs: near front plus far rear down, far front plus near rear UP. Make the two lifted feet clearly higher than the two grounded feet. Do not add paws or alter paw species. Whole beast inside square transparent canvas with clear padding, final 460 px width and ground contact baseline y=480. No gold, red mane, aura, glow, sparks, floating fragments, shadows or extra objects.",
+      "rejection_reason": "Edit preserved old supporting diagonal instead of changing the specified leg positions."
+    },
+    {
+      "id": "ammit",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-94fcfd09-4dcb-460f-9d6e-44ed6381dbe0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is Ammit's IDENTITY reference only, not a pose to copy. Style references 2\u20134 are style only. Create a NEW heavy trot pose for this crocodile-headed lion/hippo composite. Same long toothed crocodile head facing RIGHT, red eye, ink mane with bone chisel cuts, heavy hippo rump, one short tail. Exactly TWO lion front legs and TWO hippo rear legs. Do NOT reproduce the reference idle stance.\nMost important pose: The BIG FOREGROUND LION FORELEG attached to the visible shoulder must extend toward the RIGHT in a long stride, ending in a LARGE CLAWED PAW planted AHEAD of the chest. This near front leg is straightened forward, not folded or raised. The other smaller BACKGROUND lion foreleg is bent back under the chest, its foot clearly raised. The BIG FOREGROUND HIPPO HINDLEG is bent FORWARD beneath the belly with foot clearly RAISED off the ground. The background hippo hindleg is straightened BACK LEFT, planted behind the rump. Only the big foreground front paw and small background rear foot touch baseline; opposite diagonal pair airborne. Four separate feet and anatomically continuous legs. Side view right, whole beast within 512 \u00d7 512 transparent square, roughly 460 px wide, baseline y=480, center x=256. All snout, mane, paws and tail inside clear padding. No red mane, gold, aura, glow, sparks, floating fragments or ground shadow.",
+      "rejection_reason": "Hind legs now alternate correctly, but foreground front paw still lifted; forelegs must switch positions."
     }
   ]
 }
