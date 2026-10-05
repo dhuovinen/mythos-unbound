@@ -930,6 +930,12 @@
       "width_ratio": 0.966131907308378,
       "anchor_x": 0.5,
       "baseline": 480
+    },
+    "jormungandr": {
+      "target_width": 460,
+      "width_ratio": 0.9529505582137161,
+      "anchor_x": 0.5,
+      "baseline": 480
     }
   },
   "frames": [
@@ -6013,6 +6019,114 @@
         "baseline": 480
       },
       "bytes": 20383
+    },
+    {
+      "id": "jormungandr",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a1778ea0-0d79-4845-bda9-7eac471bbe47.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images 1\u20133: style references only.\nSubject: J\u00f6rmungandr, the world-serpent: a thick scaled body coiled on the ground in loops, the front third reared high with a heavy wedge-shaped head and open jaws, a ridge of spines along the neck, ink-black scales with bone belly plates and a diamond pattern along the back, one blood-red eye. No fire or water effects.\nPose: idle, head reared above the resting coils and swaying subtly. Strict RIGHT side profile, ONE head, ONE continuous serpent body ending in ONE tapered tail. No legs, arms or wings. Neck spines and back diamonds must be clearly distinct from belly plates. Full serpent inside a 512 \u00d7 512 square canvas, about 460 px wide, resting coils on y=480, center x=256. Natural coiled serpent height. Clear 5% transparent padding on every side, all spines, jaw, tail and coils fully visible. No gold, aura, glow, sparks or floating fragments. Sharp flat woodcut shapes without gradients or floor shadow.",
+      "file": "jormungandr/jormungandr_idle_01.png",
+      "alpha_noise_floor": 8,
+      "bytes": 48696
+    },
+    {
+      "id": "jormungandr",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3abc7908-5a9b-4317-b058-ab04a4d257bf.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is the exact J\u00f6rmungandr identity reference. Images 2\u20134 are style only. Preserve this same ONE continuous thick ink-black serpent with bone belly plates, blood-red diamond markings along its back, red and ink neck spines, heavy wedge head, bone fangs and one red eye. One head and one tapered tail, no legs or wings. Generate a new pose; preserve head size, body thickness and carved scale style while changing the coils and neck. Strict RIGHT side profile. Full serpent within square 512 \u00d7 512 transparent canvas, resting coils at y=480, x=256, about 460 px wide. Entire jaw, tongue, spines, coils and tail inside clear padding. No gold, aura, glow, sparks, floating fragments, fire, water or floor shadow.\nPose: slither phase A. Shift the grounded coils into a longer shallow lateral S shape with the left body hump higher, head reared facing right. Coils visibly differ from idle, all connected.",
+      "file": "jormungandr/jormungandr_walk_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9768740031897927,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 44849
+    },
+    {
+      "id": "jormungandr",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3453ee17-4e9d-4708-abbb-4a4e746874bb.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nEdit target image 1: J\u00f6rmungandr slither phase B. Change ONLY the lower body's coil arrangement to show an alternate undulation. The large mound currently behind the neck on the LEFT must become lower and flatter. Add the corresponding raised arch of that same continuous body on the RIGHT behind the neck. Move the foreground loop's highest point from left to center-right, and let the single tapered tail snake out toward the LEFT. The neck and wedge head retain their exact appearance and lower phase-B head position. Match the ink scales, bone belly plates, red back diamonds and red/ink neck spines without adding limbs, heads or tails. One physically connected serpent. Whole creature inside square transparent canvas with clear padding, full width about 460 px, coils on baseline 480. No gold, aura, glow, sparks, floating fragments, water, fire or floor shadow.",
+      "file": "jormungandr/jormungandr_walk_02.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9848484848484849,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 41523
+    },
+    {
+      "id": "jormungandr",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-eb9f84cb-9c13-4af5-a106-526b38e6d4c6.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is the exact J\u00f6rmungandr identity reference. Images 2\u20134 are style only. Preserve this same ONE continuous thick ink-black serpent with bone belly plates, blood-red diamond markings along its back, red and ink neck spines, heavy wedge head, bone fangs and one red eye. One head and one tapered tail, no legs or wings. Generate a new pose; preserve head size, body thickness and carved scale style while changing the coils and neck. Strict RIGHT side profile. Full serpent within square 512 \u00d7 512 transparent canvas, resting coils at y=480, x=256, about 460 px wide. Entire jaw, tongue, spines, coils and tail inside clear padding. No gold, aura, glow, sparks, floating fragments, fire, water or floor shadow.\nPose: bite wind-up. Neck bends sharply BACK LEFT into a compressed S curve above tightened coils. Head pulled back over the body's center with jaws partly open pointing RIGHT. Coils compressed beneath, visibly poised to strike.",
+      "file": "jormungandr/jormungandr_attack_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 450.37437603993345,
+        "width_ratio": 0.9593301435406698,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 44965
+    },
+    {
+      "id": "jormungandr",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8f702b14-f1da-4311-a725-dac88c30d724.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is the exact J\u00f6rmungandr identity reference. Images 2\u20134 are style only. Preserve this same ONE continuous thick ink-black serpent with bone belly plates, blood-red diamond markings along its back, red and ink neck spines, heavy wedge head, bone fangs and one red eye. One head and one tapered tail, no legs or wings. Generate a new pose; preserve head size, body thickness and carved scale style while changing the coils and neck. Strict RIGHT side profile. Full serpent within square 512 \u00d7 512 transparent canvas, resting coils at y=480, x=256, about 460 px wide. Entire jaw, tongue, spines, coils and tail inside clear padding. No gold, aura, glow, sparks, floating fragments, fire, water or floor shadow.\nPose: full bite strike. The neck uncoils and shoots FORWARD RIGHT and DOWN in a long horizontal arc; jaws WIDE OPEN at full extension near the right side. Head lower than idle. Ground coils support the stretched neck, tail remains left. One continuous body.",
+      "file": "jormungandr/jormungandr_attack_02.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9856459330143541,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 35736
+    },
+    {
+      "id": "jormungandr",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7c1fea06-29bb-4bcf-b86f-5233c7bd5ed6.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is the exact J\u00f6rmungandr identity reference. Images 2\u20134 are style only. Preserve this same ONE continuous thick ink-black serpent with bone belly plates, blood-red diamond markings along its back, red and ink neck spines, heavy wedge head, bone fangs and one red eye. One head and one tapered tail, no legs or wings. Generate a new pose; preserve head size, body thickness and carved scale style while changing the coils and neck. Strict RIGHT side profile. Full serpent within square 512 \u00d7 512 transparent canvas, resting coils at y=480, x=256, about 460 px wide. Entire jaw, tongue, spines, coils and tail inside clear padding. No gold, aura, glow, sparks, floating fragments, fire, water or floor shadow.\nPose: recoil. Head flung UP and BACK LEFT while muzzle still points right, neck bending away from impact, jaw open. Ground coils tighten and shift backward. No extra body parts or effects.",
+      "file": "jormungandr/jormungandr_hit_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 453.38628762541805,
+        "width_ratio": 0.9609250398724083,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 43192
+    },
+    {
+      "id": "jormungandr",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-401f84fc-5ed3-4452-8e80-6bbcd6370f1a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is the exact J\u00f6rmungandr identity reference. Images 2\u20134 are style only. Preserve this same ONE continuous thick ink-black serpent with bone belly plates, blood-red diamond markings along its back, red and ink neck spines, heavy wedge head, bone fangs and one red eye. One head and one tapered tail, no legs or wings. Generate a new pose; preserve head size, body thickness and carved scale style while changing the coils and neck. Strict RIGHT side profile. Full serpent within square 512 \u00d7 512 transparent canvas, resting coils at y=480, x=256, about 460 px wide. Entire jaw, tongue, spines, coils and tail inside clear padding. No gold, aura, glow, sparks, floating fragments, fire, water or floor shadow.\nPose: dead world-serpent FLAT ON THE GROUND. Neck fully lowered and stretched horizontally toward RIGHT, heavy head rests near baseline with open slack jaws and closed eye. All coils sag low and spread along ground, no reared neck. Long low silhouette, one head and one tail.",
+      "file": "jormungandr/jormungandr_death_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9840510366826156,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 23877
+    },
+    {
+      "id": "jormungandr",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ed65f0bd-83be-461f-9ed2-2c71fc27cfd5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 exact J\u00f6rmungandr identity, inputs 2\u20134 style only. NEW vertical 3:4 portrait 768 \u00d7 1024. Three-quarter view of this same wedge-shaped serpent head and thick neck, turned slightly RIGHT toward viewer, BOTH red eyes visible with far eye partly, jaws parted. Same bone belly plates, ink scales, blood-red back diamonds and neck spines. Face in the UPPER HALF. Thick coiled body visible only at the lower part of the frame, not a full-body sprite. Entire head, jaw, neck spines and tongue within 6% transparent padding. No legs, wings, gold, aura, glow, sparks, floating fragments, fire, water or floor shadow.",
+      "file": "jormungandr/jormungandr_portrait.png",
+      "alpha_noise_floor": 8,
+      "bytes": 119004
     }
   ],
   "completed": [
@@ -6072,13 +6186,13 @@
     "khonsu",
     "harpy",
     "typhon",
-    "fenrir"
+    "fenrir",
+    "jormungandr"
   ],
-  "active": "jormungandr",
+  "active": "ba",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "jormungandr",
       "ba",
       "apep",
       "ammit"
@@ -6143,7 +6257,8 @@
       "khonsu",
       "harpy",
       "typhon",
-      "fenrir"
+      "fenrir",
+      "jormungandr"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -6199,7 +6314,8 @@
     "khonsu": "approved",
     "harpy": "approved",
     "typhon": "approved",
-    "fenrir": "approved"
+    "fenrir": "approved",
+    "jormungandr": "approved"
   },
   "rejected_frames": [
     {
@@ -6931,6 +7047,13 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-19a57322-bd30-4549-8415-aedbfefbaa09.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is the approved Fenrir identity reference ONLY: match his wolf head, ink and bone fur, raised hackles, one red eye, tail and heavy broken dark chain. Images 2\u20134 are style references only. Draw a NEW animation pose with substantially changed joints and silhouette; do not retain the reference standing stance. Exactly one wolf, four legs, one head and one tail. Strict side view facing RIGHT. Whole creature inside a square transparent canvas, width about 460 px in final 512 \u00d7 512 frame; lowest weight-bearing point y=480, center x=256. Natural wolf height. Clear padding around every extremity, no ground shadow. Chains stay attached to the neck, dark ink link bodies with flat bone chisel edge highlights, no gloss or gradients.\nPose: explosive LUNGING BITE to the RIGHT. Body stretches horizontally, shoulders drive forward; long neck reaches fully forward and jaws gape VERY WIDE. Two front legs project forward, lifted just above the baseline, and two rear legs extend backward pushing off the baseline. Four legs only. Belly raised off the ground. One tail sweeps backward left. Head remains strict right profile, one red eye. Match massive fur and fang identity but clearly draw an extended airborne-front lunge, rather than standing with an open mouth.",
       "rejection_reason": "Correct lunge, but adds a detached chain fragment beneath the belly and a forbidden soft grey halo."
+    },
+    {
+      "id": "jormungandr",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-becd574d-9471-4449-89a3-6982f893dc36.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is the exact J\u00f6rmungandr identity reference. Images 2\u20134 are style only. Preserve this same ONE continuous thick ink-black serpent with bone belly plates, blood-red diamond markings along its back, red and ink neck spines, heavy wedge head, bone fangs and one red eye. One head and one tapered tail, no legs or wings. Generate a new pose; preserve head size, body thickness and carved scale style while changing the coils and neck. Strict RIGHT side profile. Full serpent within square 512 \u00d7 512 transparent canvas, resting coils at y=480, x=256, about 460 px wide. Entire jaw, tongue, spines, coils and tail inside clear padding. No gold, aura, glow, sparks, floating fragments, fire, water or floor shadow.\nPose: slither phase B. Alternate the undulating body: the right hump lifts while left hump lowers and slides forward, shifting grounded loops. Reared head slightly lower and further forward than phase A. One connected snake.",
+      "rejection_reason": "Head moves, but ground coils are almost unchanged from walk_01; alternate slither needs clearer hump shift."
     }
   ]
 }
