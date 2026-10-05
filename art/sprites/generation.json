@@ -913,6 +913,11 @@
       "ratio": 0.9720893141945773,
       "anchor_x": 0.49,
       "baseline": 480
+    },
+    "harpy": {
+      "ratio": 1.1139704297599033,
+      "anchor_x": 0.58,
+      "baseline": 400
     }
   },
   "frames": [
@@ -5678,6 +5683,57 @@
       },
       "alpha_noise_floor": 8,
       "bytes": 25222
+    },
+    {
+      "id": "harpy",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7d648c95-5e55-438d-857d-cf0391b5888d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.\nNEW Harpy idle identity seed. One gaunt fierce ADULT winged bird-woman, bone skin, hungry human face, wild jagged ink-black shoulder-length hair, bare shoulders and arms, simple tattered BLOOD-RED cloth wrapped securely around torso/chest and waist to upper thighs, ink belt and bone torn edges. Exactly TWO human arms ending in sharply clawed hands and TWO bird legs ending in hooked bone talons, TWO huge feathered wings attached anatomically behind shoulder blades, bone-and-ink feathers with blood-red outer feather tips. Strict RIGHT PROFILE with ONE visible human eye, face looking RIGHT. Wings HALF RAISED behind both shoulders, far wing partly visible offset behind near wing, both entire wing tips visible. Arms slightly forward bent, taloned legs bent underneath in an airborne neutral HOVER. Square transparent full creature, wingspan around460px, head aroundy100, talons aroundy400 leaving80px of emptyair below; pelvis centeredx256. No floor line or ground shadow, no glow, no aura, no particles, no extra wings or legs, no gold. Bothcompletewings, entirehair andalltalons insidepadding.",
+      "file": "harpy/harpy_idle_01.png",
+      "alpha_noise_floor": 8,
+      "bytes": 32633
+    },
+    {
+      "id": "harpy",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.\nInput1 approved Harpy idle exactidentity; inputs2\u20134 styleonly. Preserve gaunt adult woman fierce narrow human face, ONE visible eye strictly RIGHTprofile, wild jagged ink-black hair with bone streaks, bare shoulders and thin bone arms, tattered blood-red chest wrap and torn red waist cloth, bareboneabdomen, bone/ink upperbirdlegs scaly lowerlegs and darkhookedtalons. Exactly TWO human arms with clawed hands, TWO bird legs with hookedtalons, TWO huge feathered wings attached behind shoulders, bonefeathers inkshadows bloodred outer feather tips. Same anatomical proportions as idle, no extra limbs. Square FULL CREATURE transparent. Flight poses HOVER with talons aroundy400, pelviscenterx256, clear empty80pxair below. All hair, hands, talons and bothcompletewingtips INSIDE clearpadding, nevercropfeathers. No gold, yellow, brown, glow, aura, sparks, particles, floatingfeathers, floor or shadow. Wingposechangesarewingbeats, nothumanwalking.\nPose: FLIGHT UPSTROKE: both wings lifted FULL UP over shoulders with feather tips directed upward and slightly backward, distinct high silhouette. Bend wing elbows to keep full tips inside square image. Body floating upright, birdknees gently bent, two hooked feet aroundy400. Arms clawedhands ready in front.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-978d8bdd-2ec5-462b-b6bc-31b64df28ca8.png",
+      "file": "harpy/harpy_walk_01.png",
+      "normalization": {
+        "ratio": 1.1139704297599033,
+        "anchor_x": 0.57,
+        "baseline": 400
+      },
+      "alpha_noise_floor": 8,
+      "bytes": 30083
+    },
+    {
+      "id": "harpy",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.\nInput1 approved Harpy idle exactidentity; inputs2\u20134 styleonly. Preserve gaunt adult woman fierce narrow human face, ONE visible eye strictly RIGHTprofile, wild jagged ink-black hair with bone streaks, bare shoulders and thin bone arms, tattered blood-red chest wrap and torn red waist cloth, bareboneabdomen, bone/ink upperbirdlegs scaly lowerlegs and darkhookedtalons. Exactly TWO human arms with clawed hands, TWO bird legs with hookedtalons, TWO huge feathered wings attached behind shoulders, bonefeathers inkshadows bloodred outer feather tips. Same anatomical proportions as idle, no extra limbs. Square FULL CREATURE transparent. Flight poses HOVER with talons aroundy400, pelviscenterx256, clear empty80pxair below. All hair, hands, talons and bothcompletewingtips INSIDE clearpadding, nevercropfeathers. No gold, yellow, brown, glow, aura, sparks, particles, floatingfeathers, floor or shadow. Wingposechangesarewingbeats, nothumanwalking.\nPose: FLIGHT DOWNSTROKE: both wings sweep FULL DOWN and BACK, feather tips angled diagonally downward-left behind body with clear gaps around both clawed hands. Wings remain entirely inside image. Body slightly raised duringpowerbeat, two bent birdlegs keep talons aroundy400; wings can extend lower than talons ifneeded, nofloorcontact. Same head/body physicalscale.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-8f1c2a0f-e703-44c6-95d5-f1e6fc44c501.png",
+      "file": "harpy/harpy_walk_02.png",
+      "normalization": {
+        "ratio": 1.1139704297599033,
+        "anchor_x": 0.58,
+        "baseline": 400
+      },
+      "alpha_noise_floor": 8,
+      "bytes": 28235
+    },
+    {
+      "id": "harpy",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.\nInput1 approved Harpy idle exactidentity; inputs2\u20134 styleonly. Preserve gaunt adult woman fierce narrow human face, ONE visible eye strictly RIGHTprofile, wild jagged ink-black hair with bone streaks, bare shoulders and thin bone arms, tattered blood-red chest wrap and torn red waist cloth, bareboneabdomen, bone/ink upperbirdlegs scaly lowerlegs and darkhookedtalons. Exactly TWO human arms with clawed hands, TWO bird legs with hookedtalons, TWO huge feathered wings attached behind shoulders, bonefeathers inkshadows bloodred outer feather tips. Same anatomical proportions as idle, no extra limbs. Square FULL CREATURE transparent. Flight poses HOVER with talons aroundy400, pelviscenterx256, clear empty80pxair below. All hair, hands, talons and bothcompletewingtips INSIDE clearpadding, nevercropfeathers. No gold, yellow, brown, glow, aura, sparks, particles, floatingfeathers, floor or shadow. Wingposechangesarewingbeats, nothumanwalking.\nPose: Attack wind-up: wings RAISED HIGH, body coiled backward and both taloned feet DRAWN UP toward waist beneathbody, clawed human hands tucked nearby. Exactlytwofeet, noextra claws. Prepare a talon strike. Allwingtipsinsidecanvas, nofloor.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2f85c95f-a301-41f7-bd4a-6c27a85338df.png",
+      "file": "harpy/harpy_attack_01.png",
+      "normalization": {
+        "ratio": 1.1139704297599033,
+        "anchor_x": 0.58,
+        "baseline": 400
+      },
+      "alpha_noise_floor": 8,
+      "bytes": 34304
     }
   ],
   "completed": [
@@ -5737,19 +5793,33 @@
     "khonsu"
   ],
   "active": "harpy",
-  "status": "in_progress",
+  "status": "blocked_usage_limit",
   "pending": {
     "remaining_deities": [
-      "harpy",
       "typhon",
       "fenrir",
       "jormungandr",
       "ba",
       "apep",
       "ammit"
+    ],
+    "harpy": [
+      "portrait",
+      "attack_02",
+      "hit_01",
+      "death_01"
     ]
   },
-  "usage_limit": null,
+  "usage_limit": {
+    "type": "usage_limit_reached",
+    "message": "The usage limit has been reached",
+    "plan_type": "plus",
+    "resets_at": 1791233776,
+    "reset_utc": "2026-10-05T20:56:16Z",
+    "reset_local": "2026-10-05T16:56:16-04:00",
+    "timezone": "America/New_York",
+    "raw_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791233776,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":71591}}\")"
+  },
   "review": {
     "small_size_checked": [
       "heracles",
@@ -5858,7 +5928,14 @@
     "nefertem": "approved",
     "maahes": "approved",
     "bes": "approved",
-    "khonsu": "approved"
+    "khonsu": "approved",
+    "harpy": "partial: idle, both flight frames and wind-up approved; strike, hit, death and portrait pending",
+    "harpy_small_size_checked": [
+      "idle_01",
+      "walk_01",
+      "walk_02",
+      "attack_01"
+    ]
   },
   "rejected_frames": [
     {
@@ -6506,6 +6583,32 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-c7f7be1c-79a1-4b87-b88c-c488b542b7f3.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Young moon god: a sidelock of youth, a crescent-and-disc headdress (bone crescent holding a blood-red disc), a long close-fitting robe, a collar, holding a heqa crook and a was staff together. Thin and watchful. No glow, no gold. The crescent headdress and the crook define the silhouette.\nInput 1 is approved Khonsu idle and exact identity reference; inputs 2\u20134 style only. Preserve thin young male bone face clean-shaven, fitted ink skullcap with bone diagonal trim and ONE long ink braided sidelock tassel, bone crescent open upward holding attached blood-red disc, broad bone collar with red band, bone sleeveless ankle-length close-fitting robe with ink folds, slim blood-red sash and long hanging tie, red-banded wrist cuffs, ink sandals. TWO continuous distinct full-length staffs: same bone heqa crook with red alternating bands at large hook and stem, and same ink was staff with bone animal-head top and two-prong forked base. Exactly two arms and two legs, one staff in each hand. Strict RIGHT profile, ONE visible eye. Full body square battle pose, figure standing about430px from crown top y50 to feet y480, hips x256, physical head and body scale same as idle. Whole headgear, limbs and both complete staffs inside transparent padding. NO gold, yellow, brown, glow, aura, sparks or fragments.\nPose: Attack strike: near arm swings the ENTIRE same full-length crook toward RIGHT at full reach, horizontal staff shaft with large hook at far-right, torso lunges forward. Other arm holds ENTIRE same was staff upright close to torso. Deepen stance and bend elbow if needed to keep both long staffs fully inside frame; never shorten the crook into a wand. Exactly two arms.",
       "rejection_reason": "Crook shortened and hooked outer edge clipped by canvas."
+    }
+  ],
+  "pending_generation": [
+    {
+      "id": "harpy",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.\nInput1 approved Harpy idle exactidentity; inputs2\u20134 styleonly. Preserve gaunt adult woman fierce narrow human face, ONE visible eye strictly RIGHTprofile, wild jagged ink-black hair with bone streaks, bare shoulders and thin bone arms, tattered blood-red chest wrap and torn red waist cloth, bareboneabdomen, bone/ink upperbirdlegs scaly lowerlegs and darkhookedtalons. Exactly TWO human arms with clawed hands, TWO bird legs with hookedtalons, TWO huge feathered wings attached behind shoulders, bonefeathers inkshadows bloodred outer feather tips. Same anatomical proportions as idle, no extra limbs. Square FULL CREATURE transparent. Flight poses HOVER with talons aroundy400, pelviscenterx256, clear empty80pxair below. All hair, hands, talons and bothcompletewingtips INSIDE clearpadding, nevercropfeathers. No gold, yellow, brown, glow, aura, sparks, particles, floatingfeathers, floor or shadow. Wingposechangesarewingbeats, nothumanwalking.\nPose: Attack strike: dynamic DIVE towardRIGHT, torso leaningforward nearly diagonal, wings swept back behind shoulders, BOTH hooked taloned bird feet THRUST FORWARD and SPREAD towardRIGHT, strikingwith claws. Clawedhumanhands closebody, oneface strictlyrightprofile. Entirewingshairfeetinsidepadding, lowesttalonaround400, noeffects.",
+      "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791233776,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":71591}}\")"
+    },
+    {
+      "id": "harpy",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.\nInput1 approved Harpy idle exactidentity; inputs2\u20134 styleonly. Preserve gaunt adult woman fierce narrow human face, ONE visible eye strictly RIGHTprofile, wild jagged ink-black hair with bone streaks, bare shoulders and thin bone arms, tattered blood-red chest wrap and torn red waist cloth, bareboneabdomen, bone/ink upperbirdlegs scaly lowerlegs and darkhookedtalons. Exactly TWO human arms with clawed hands, TWO bird legs with hookedtalons, TWO huge feathered wings attached behind shoulders, bonefeathers inkshadows bloodred outer feather tips. Same anatomical proportions as idle, no extra limbs. Square FULL CREATURE transparent. Flight poses HOVER with talons aroundy400, pelviscenterx256, clear empty80pxair below. All hair, hands, talons and bothcompletewingtips INSIDE clearpadding, nevercropfeathers. No gold, yellow, brown, glow, aura, sparks, particles, floatingfeathers, floor or shadow. Wingposechangesarewingbeats, nothumanwalking.\nPose: Hit reaction: thrown BACKWARD towardLEFT, head snappedback butstillrightprofile, TWO wings FLUNG UP, arms recoil and two bent birdlegs hangunderbody. Entire wings inside squareframe, talonsaround400, nofeathersfalling.",
+      "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791233776,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":71590}}\")"
+    },
+    {
+      "id": "harpy",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.\nInput1 approved Harpy idle exactidentity; inputs2\u20134 styleonly. Preserve gaunt adult woman fierce narrow human face, ONE visible eye strictly RIGHTprofile, wild jagged ink-black hair with bone streaks, bare shoulders and thin bone arms, tattered blood-red chest wrap and torn red waist cloth, bareboneabdomen, bone/ink upperbirdlegs scaly lowerlegs and darkhookedtalons. Exactly TWO human arms with clawed hands, TWO bird legs with hookedtalons, TWO huge feathered wings attached behind shoulders, bonefeathers inkshadows bloodred outer feather tips. Same anatomical proportions as idle, no extra limbs. Square FULL CREATURE transparent. Flight poses HOVER with talons aroundy400, pelviscenterx256, clear empty80pxair below. All hair, hands, talons and bothcompletewingtips INSIDE clearpadding, nevercropfeathers. No gold, yellow, brown, glow, aura, sparks, particles, floatingfeathers, floor or shadow. Wingposechangesarewingbeats, nothumanwalking.\nPose: Death: CRUMPLED ON GROUND, body collapsed sideways below, head still turnedright lowered, two wings FOLDED OVER THE BODY, TWO humanarms limp, TWObirdlegs foldednearbody, noextrafeet. Compact low heap rests on ground baseliney480, nohovergap fordeath, nogroundline/shadow. Samebirdwoman anatomy andcostume completelyintact.",
+      "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791233776,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":71589}}\")"
+    },
+    {
+      "id": "harpy",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.\nInput1 Harpyidle exactidentity, othersstyle. NEW VERTICAL3:4 portrait768x1024, HEAD TO HIPS only, TRUE THREE-QUARTER view turnedslightlyRIGHT towardviewer with BOTH humaneyes and BOTH shouldersvisible, fareyepartly. Hungry gauntadultfemale face inupperhalf, samewildinkblackhairbonestreaks, bareboneshoulders thinclawedarms, tatteredbloodredchestwrap and waistcloth with inkfolds, bareboneabdomen. TWO enormous bone/ink FEATHERED wings with redtip feathers FLARED UP behind BOTHshoulders, showBOTHcompletewingtipsinside portrait clearpadding. ONE clawedhumanhand raisedbeside face, otherclawedhandnearwaist, exactlytwo arms. Fullhair and allwingtipsfit central88%image, faceupperhalf, cleanHIPLEVELloweredge, NO thighs birdlegs talonsorfullbody. Noextraeyes, no gold yellow brown glow aura sparks fragments orfloatfeathers.",
+      "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791233776,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":71588}}\")"
     }
   ]
 }
