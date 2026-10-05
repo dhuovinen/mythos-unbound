@@ -943,6 +943,12 @@
       "anchor_x": 0.5,
       "anchor_y": 0.87,
       "baseline": 400
+    },
+    "apep": {
+      "target_width": 460,
+      "width_ratio": 0.94896331738437,
+      "anchor_x": 0.5,
+      "baseline": 480
     }
   },
   "frames": [
@@ -6247,6 +6253,114 @@
       "file": "ba/ba_portrait.png",
       "alpha_noise_floor": 8,
       "bytes": 104409
+    },
+    {
+      "id": "apep",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-bbc33931-50ac-43f8-bad7-2b958c34d620.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images 1\u20133: style only.\nSubject: Apep, the serpent of chaos. A huge ink-black serpent with a broad FLAT cobra head, broad cobra HOOD, open jaws, one blood-red eye in profile, bone belly bands. Several small bone knives are still embedded in the neck and coils from the nightly fight. No diamond pattern or back markings, no neck spines. Clearly a cobra rather than a dragon. No fire or gold.\nPose: idle, head reared and swaying above thick grounded coils. Strict RIGHT side profile. ONE head, ONE continuous snake body ending in ONE tapered tail; no limbs or wings. FOUR small bone/ink knives lodged into the serpent: TWO in the side of the lower neck below the hood and TWO in the near coil, blades partly buried and handles projecting. No loose or floating knives. Entire hood, jaws, coils, tail and knife handles inside 5% clear transparent padding. Square 512 \u00d7 512 canvas, beast width about 460 px, coils on y=480 and center x=256. Flat bold woodcut, no gloss, ground shadow, gold, aura, glow, sparks or floating fragments.",
+      "file": "apep/apep_idle_01.png",
+      "alpha_noise_floor": 8,
+      "bytes": 36629
+    },
+    {
+      "id": "apep",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-4445a060-d4b2-40d1-8ab7-26301f044b3a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Apep's exact approved identity; inputs 2\u20134 style only. Same huge black COBRA with broad flat head and broad hood, bone belly bands and angular chisel scale highlights, one red eye, bone fangs and forked blood-red tongue. Exactly ONE head, ONE continuous serpent body and ONE tapered tail. No diamond pattern, neck spines, wings or legs. FOUR embedded bone/ink knives stay lodged in the SAME anatomical regions: TWO lower-neck knives below the hood and TWO near-coil knives. Preserve their simple handles and flat blood wound marks, no extra knives, floating fragments or detached blades. Change the neck and coils substantially for each animation pose, while preserving proportions and markings. Strict RIGHT side profile. Square 512 \u00d7 512 transparent canvas, width about 460 px, coils on y=480 and center x=256; all hood, jaws, tail and knives inside padding. No gold, aura, glow, sparks, floating fragments, fire or floor shadow.\nPose: slither A, left body hump raised and near loop stretched forward, reared head gently swaying toward RIGHT. A long grounded undulation, not the same tight idle coil arrangement.",
+      "file": "apep/apep_walk_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9736842105263158,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 34189
+    },
+    {
+      "id": "apep",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-4bb08d56-2510-4698-ad81-054a7eb8e870.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Apep's exact approved identity; inputs 2\u20134 style only. Same huge black COBRA with broad flat head and broad hood, bone belly bands and angular chisel scale highlights, one red eye, bone fangs and forked blood-red tongue. Exactly ONE head, ONE continuous serpent body and ONE tapered tail. No diamond pattern, neck spines, wings or legs. FOUR embedded bone/ink knives stay lodged in the SAME anatomical regions: TWO lower-neck knives below the hood and TWO near-coil knives. Preserve their simple handles and flat blood wound marks, no extra knives, floating fragments or detached blades. Change the neck and coils substantially for each animation pose, while preserving proportions and markings. Strict RIGHT side profile. Square 512 \u00d7 512 transparent canvas, width about 460 px, coils on y=480 and center x=256; all hood, jaws, tail and knives inside padding. No gold, aura, glow, sparks, floating fragments, fire or floor shadow.\nPose: slither B, clearly SHIFT the raised body hump from LEFT to RIGHT. Flatten the left loop and raise an arch at center-right beneath the neck; tapered tail extends farther LEFT. Head slightly lower than phase A. Keep one continuous snake and the same four embedded knives moving with their body regions.",
+      "file": "apep/apep_walk_02.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9657097288676236,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 34289
+    },
+    {
+      "id": "apep",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-18b6b87a-5356-43a5-bcf2-a6fb380f1554.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Apep's exact approved identity; inputs 2\u20134 style only. Same huge black COBRA with broad flat head and broad hood, bone belly bands and angular chisel scale highlights, one red eye, bone fangs and forked blood-red tongue. Exactly ONE head, ONE continuous serpent body and ONE tapered tail. No diamond pattern, neck spines, wings or legs. FOUR embedded bone/ink knives stay lodged in the SAME anatomical regions: TWO lower-neck knives below the hood and TWO near-coil knives. Preserve their simple handles and flat blood wound marks, no extra knives, floating fragments or detached blades. Change the neck and coils substantially for each animation pose, while preserving proportions and markings. Strict RIGHT side profile. Square 512 \u00d7 512 transparent canvas, width about 460 px, coils on y=480 and center x=256; all hood, jaws, tail and knives inside padding. No gold, aura, glow, sparks, floating fragments, fire or floor shadow.\nPose: wind-up. Hood FLARED wide, neck bent BACK LEFT into a compressed S curve, head drawn back over grounded coils, muzzle still RIGHT and jaws partly open. Body coiled tightly beneath. Neck knives move with the retracted neck.",
+      "file": "apep/apep_attack_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 443.4334763948498,
+        "width_ratio": 0.9154704944178629,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 41154
+    },
+    {
+      "id": "apep",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-917023ce-3c60-4e19-92fd-93e301659dc5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Apep's exact approved identity; inputs 2\u20134 style only. Same huge black COBRA with broad flat head and broad hood, bone belly bands and angular chisel scale highlights, one red eye, bone fangs and forked blood-red tongue. Exactly ONE head, ONE continuous serpent body and ONE tapered tail. No diamond pattern, neck spines, wings or legs. FOUR embedded bone/ink knives stay lodged in the SAME anatomical regions: TWO lower-neck knives below the hood and TWO near-coil knives. Preserve their simple handles and flat blood wound marks, no extra knives, floating fragments or detached blades. Change the neck and coils substantially for each animation pose, while preserving proportions and markings. Strict RIGHT side profile. Square 512 \u00d7 512 transparent canvas, width about 460 px, coils on y=480 and center x=256; all hood, jaws, tail and knives inside padding. No gold, aura, glow, sparks, floating fragments, fire or floor shadow.\nPose: bite STRIKE, neck stretched fully FORWARD RIGHT and DOWN into a long low horizontal arc. Flat head at full extension with jaws VERY WIDE, hood follows extended neck, coils remain gathered on ground to LEFT. Distinct forward/down attack, not an upright open-mouth idle. Same four knives attached.",
+      "file": "apep/apep_attack_02.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9864433811802232,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 26161
+    },
+    {
+      "id": "apep",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-da3ca975-d1cd-46a9-aa23-f7ae7e89e888.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Apep's exact approved identity; inputs 2\u20134 style only. Same huge black COBRA with broad flat head and broad hood, bone belly bands and angular chisel scale highlights, one red eye, bone fangs and forked blood-red tongue. Exactly ONE head, ONE continuous serpent body and ONE tapered tail. No diamond pattern, neck spines, wings or legs. FOUR embedded bone/ink knives stay lodged in the SAME anatomical regions: TWO lower-neck knives below the hood and TWO near-coil knives. Preserve their simple handles and flat blood wound marks, no extra knives, floating fragments or detached blades. Change the neck and coils substantially for each animation pose, while preserving proportions and markings. Strict RIGHT side profile. Square 512 \u00d7 512 transparent canvas, width about 460 px, coils on y=480 and center x=256; all hood, jaws, tail and knives inside padding. No gold, aura, glow, sparks, floating fragments, fire or floor shadow.\nPose: impact recoil, head thrown UP and BACK LEFT while muzzle faces RIGHT, hood and neck bent away, jaw open. Coils recoil back; all four embedded knives stay in place.",
+      "file": "apep/apep_hit_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 435.11749347258484,
+        "width_ratio": 0.8859649122807017,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 39738
+    },
+    {
+      "id": "apep",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-50120b7b-e780-413b-8ca3-a058835c5d64.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 is Apep's exact approved identity; inputs 2\u20134 style only. Same huge black COBRA with broad flat head and broad hood, bone belly bands and angular chisel scale highlights, one red eye, bone fangs and forked blood-red tongue. Exactly ONE head, ONE continuous serpent body and ONE tapered tail. No diamond pattern, neck spines, wings or legs. FOUR embedded bone/ink knives stay lodged in the SAME anatomical regions: TWO lower-neck knives below the hood and TWO near-coil knives. Preserve their simple handles and flat blood wound marks, no extra knives, floating fragments or detached blades. Change the neck and coils substantially for each animation pose, while preserving proportions and markings. Strict RIGHT side profile. Square 512 \u00d7 512 transparent canvas, width about 460 px, coils on y=480 and center x=256; all hood, jaws, tail and knives inside padding. No gold, aura, glow, sparks, floating fragments, fire or floor shadow.\nPose: DEAD COBRA FLAT ON GROUND. Hood collapsed sideways, entire neck lies horizontally along baseline, flat head rests at RIGHT with closed eye and slack jaws. Ground coils sag and spread low, no reared head. All four embedded knives remain lodged, handles visible and none floating.",
+      "file": "apep/apep_death_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9665071770334929,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 19379
+    },
+    {
+      "id": "apep",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7898737a-ead9-41ec-858c-5a1be391d358.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 Apep exact identity, inputs 2\u20134 style only. NEW vertical 3:4 portrait 768 \u00d7 1024 showing broad flat cobra HEAD, HOOD and neck only. Three-quarter view turned slightly RIGHT toward viewer, BOTH red eyes visible with far eye partly; jaws wide, bone fangs and blood-red tongue. Same black scales, bone belly bands, no diamond pattern or spines. Show the TWO existing bone/ink knives stuck in lower neck below hood with same blood marks. Ground coils and their knives stay outside this head-and-neck close-up. Face in UPPER HALF; fully include broad hood, jaw, tongue and both knife handles with 6% clear padding. No full-body framing, legs, wings, gold, fire, aura, glow, sparks, floating fragments or floor shadow.",
+      "file": "apep/apep_portrait.png",
+      "alpha_noise_floor": 8,
+      "bytes": 98017
     }
   ],
   "completed": [
@@ -6308,13 +6422,13 @@
     "typhon",
     "fenrir",
     "jormungandr",
-    "ba"
+    "ba",
+    "apep"
   ],
-  "active": "apep",
+  "active": "ammit",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "apep",
       "ammit"
     ]
   },
@@ -6379,7 +6493,8 @@
       "typhon",
       "fenrir",
       "jormungandr",
-      "ba"
+      "ba",
+      "apep"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -6437,7 +6552,8 @@
     "typhon": "approved",
     "fenrir": "approved",
     "jormungandr": "approved",
-    "ba": "approved"
+    "ba": "approved",
+    "apep": "approved"
   },
   "rejected_frames": [
     {
