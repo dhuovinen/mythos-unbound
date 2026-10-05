@@ -893,6 +893,11 @@
       "ratio": 0.861244019138756,
       "anchor_x": 0.51,
       "baseline": 480
+    },
+    "nefertem": {
+      "ratio": 0.970494417862839,
+      "anchor_x": 0.52,
+      "baseline": 480
     }
   },
   "frames": [
@@ -5271,6 +5276,101 @@
       "file": "imhotep/imhotep_portrait.png",
       "alpha_noise_floor": 8,
       "bytes": 81715
+    },
+    {
+      "id": "nefertem",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2901b133-4271-473b-afaa-73b2a0305f7a.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: God of the lotus: a lotus-blossom crown with two tall plumes (bone petals, ink outline), a short kilt, a broad collar, a bare chest, and a curved knife with a single lotus flower in the other hand. Beauty as a weapon. The lotus crown and the two plumes define the silhouette. No gold.\nInputs 1\u20133 are style references only. Generate Nefertem idle battle sprite: square full-body strict RIGHT side profile, ONE visible eye. Beautiful youthful clean-shaven Egyptian man, bone skin, short simple ink hair, bare chest. A lotus-blossom crown with bone petals and exactly TWO tall upright bone plumes with ink outlines and simple ink shafts, no sun disk or horns. Broad bone collar with a few blood-red inset bars, bone short kilt with ink folds and blood-red belt tie, simple ink sandals with bone straps. Near arm on the left holds ONE short curved ink knife with bone edge cut low beside hip; far arm on the right holds ONE lotus flower near the chest, bone petals, ink stem and leaves. Calm poised stance, slight half smile. Exactly two arms and two legs. Target 512\u00d7512: from tallest crown plume tip at y\u224850 to lowest sandal at y=480, hips centered x=256, overall standing height including crown about 430 pixels. Whole plumes, lotus flower, knife blade and all limbs inside clear transparent margins. No gold, bronze, brown, aura, glow, sparks, pollen or floating petals.",
+      "file": "nefertem/nefertem_idle_01.png",
+      "bytes": 18940
+    },
+    {
+      "id": "nefertem",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-52adc097-97fa-46a1-83f2-47fdedc89696.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: God of the lotus: a lotus-blossom crown with two tall plumes (bone petals, ink outline), a short kilt, a broad collar, a bare chest, and a curved knife with a single lotus flower in the other hand. Beauty as a weapon. The lotus crown and the two plumes define the silhouette. No gold.\nInput 1 is approved Nefertem idle, exact identity reference; inputs 2\u20134 are style only. Preserve its youthful clean-shaven face and half smile, ink hair, exact bone lotus crown and TWO tall bone plumes, broad bone collar with red inset bars, bare bone chest, short bone kilt with ink folds, blood-red belt tie, ink-and-bone sandals, same short curved knife and single bone lotus with ink stem and leaves. Exactly two arms and two legs, one knife and one held flower. Battle square full-body strict right-facing profile, ONE eye visible. Physical scale same as idle, overall standing height including plume tips about 430 pixels, tallest plume around y=50, lowest sandal y=480, hips centered x=256. Complete plumes, knife and flower fit inside transparent margins. No extra crown plumes, flower blossoms, gold, glow, aura, sparks, pollen or floating petals.\nPose: Walk contact: front leg steps right with heel touching down, trailing foot behind with toes touching. Near hand carries curved knife low beside the hip, far hand holds lotus near chest. Upright elegant body, crown stable.",
+      "file": "nefertem/nefertem_walk_01.png",
+      "normalization": {
+        "ratio": 0.966,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 20694
+    },
+    {
+      "id": "nefertem",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3d5dec76-94bf-4a2b-bdc0-8c253f75aea3.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: God of the lotus: a lotus-blossom crown with two tall plumes (bone petals, ink outline), a short kilt, a broad collar, a bare chest, and a curved knife with a single lotus flower in the other hand. Beauty as a weapon. The lotus crown and the two plumes define the silhouette. No gold.\nInput 1 is approved Nefertem idle, exact identity reference; inputs 2\u20134 are style only. Preserve its youthful clean-shaven face and half smile, ink hair, exact bone lotus crown and TWO tall bone plumes, broad bone collar with red inset bars, bare bone chest, short bone kilt with ink folds, blood-red belt tie, ink-and-bone sandals, same short curved knife and single bone lotus with ink stem and leaves. Exactly two arms and two legs, one knife and one held flower. Battle square full-body strict right-facing profile, ONE eye visible. Physical scale same as idle, overall standing height including plume tips about 430 pixels, tallest plume around y=50, lowest sandal y=480, hips centered x=256. Complete plumes, knife and flower fit inside transparent margins. No extra crown plumes, flower blossoms, gold, glow, aura, sparks, pollen or floating petals.\nPose: Walk passing. Supporting leg nearly straight directly beneath hips, one sandal flat on baseline. Other leg crosses in front of supporting thigh, knee slightly forward; lifted sandal close beside supporting ankle with toes visibly above the baseline. Body slightly raised. Knife held low and lotus held near chest. Square battle-sprite composition, all body and plume tips inside clear transparent padding.\nBackground: ABSOLUTELY EMPTY transparent alpha outside the hard character outline, matching input 1. No visible pixels behind or around the figure: no dark backdrop, no diffuse halo, no rim glow, no haze, no atmospheric light, no shadow or gradient. Only flat opaque character fills and hard chisel ink outlines.",
+      "file": "nefertem/nefertem_walk_02.png",
+      "normalization": {
+        "ratio": 0.96,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 18271
+    },
+    {
+      "id": "nefertem",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-04f2fbb2-b0d7-4495-bd8b-87f8d3cd5465.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: God of the lotus: a lotus-blossom crown with two tall plumes (bone petals, ink outline), a short kilt, a broad collar, a bare chest, and a curved knife with a single lotus flower in the other hand. Beauty as a weapon. The lotus crown and the two plumes define the silhouette. No gold.\nInput 1 is approved Nefertem idle, exact identity reference; inputs 2\u20134 are style only. Preserve its youthful clean-shaven face and half smile, ink hair, exact bone lotus crown and TWO tall bone plumes, broad bone collar with red inset bars, bare bone chest, short bone kilt with ink folds, blood-red belt tie, ink-and-bone sandals, same short curved knife and single bone lotus with ink stem and leaves. Exactly two arms and two legs, one knife and one held flower. Battle square full-body strict right-facing profile, ONE eye visible. Physical scale same as idle, overall standing height including plume tips about 430 pixels, tallest plume around y=50, lowest sandal y=480, hips centered x=256. Complete plumes, knife and flower fit inside transparent margins. No extra crown plumes, flower blossoms, gold, glow, aura, sparks, pollen or floating petals.\nPose: Attack wind-up: near knife arm draws the same curved blade backward and upward behind the shoulder, elbow bent, body coiled slightly backward. Far hand holds lotus close to chest. Both complete plumes and knife visible with clear padding, exactly two arms.",
+      "file": "nefertem/nefertem_attack_01.png",
+      "normalization": {
+        "ratio": 0.955,
+        "anchor_x": 0.58,
+        "baseline": 480
+      },
+      "bytes": 19372
+    },
+    {
+      "id": "nefertem",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e90499d1-9901-4a7a-8623-eb8717ef3f60.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: God of the lotus: a lotus-blossom crown with two tall plumes (bone petals, ink outline), a short kilt, a broad collar, a bare chest, and a curved knife with a single lotus flower in the other hand. Beauty as a weapon. The lotus crown and the two plumes define the silhouette. No gold.\nInput 1 is approved Nefertem idle, exact identity reference; inputs 2\u20134 are style only. Preserve its youthful clean-shaven face and half smile, ink hair, exact bone lotus crown and TWO tall bone plumes, broad bone collar with red inset bars, bare bone chest, short bone kilt with ink folds, blood-red belt tie, ink-and-bone sandals, same short curved knife and single bone lotus with ink stem and leaves. Exactly two arms and two legs, one knife and one held flower. Battle square full-body strict right-facing profile, ONE eye visible. Physical scale same as idle, overall standing height including plume tips about 430 pixels, tallest plume around y=50, lowest sandal y=480, hips centered x=256. Complete plumes, knife and flower fit inside transparent margins. No extra crown plumes, flower blossoms, gold, glow, aura, sparks, pollen or floating petals.\nPose: Attack strike: near knife arm extends fully toward the right with the same curved blade, torso commits into a moderate lunge over front leg. Other arm holds the single lotus near chest. Crown stays on head, no extra petals or effects. Whole blade and flower visible inside frame.",
+      "file": "nefertem/nefertem_attack_02.png",
+      "normalization": {
+        "ratio": 0.965,
+        "anchor_x": 0.45,
+        "baseline": 480
+      },
+      "bytes": 21087
+    },
+    {
+      "id": "nefertem",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-7537a024-813f-4c5b-b77b-6f0f7781ad10.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: God of the lotus: a lotus-blossom crown with two tall plumes (bone petals, ink outline), a short kilt, a broad collar, a bare chest, and a curved knife with a single lotus flower in the other hand. Beauty as a weapon. The lotus crown and the two plumes define the silhouette. No gold.\nInput 1 is approved Nefertem idle, exact identity reference; inputs 2\u20134 are style only. Preserve its youthful clean-shaven face and half smile, ink hair, exact bone lotus crown and TWO tall bone plumes, broad bone collar with red inset bars, bare bone chest, short bone kilt with ink folds, blood-red belt tie, ink-and-bone sandals, same short curved knife and single bone lotus with ink stem and leaves. Exactly two arms and two legs, one knife and one held flower. Battle square full-body strict right-facing profile, ONE eye visible. Physical scale same as idle, overall standing height including plume tips about 430 pixels, tallest plume around y=50, lowest sandal y=480, hips centered x=256. Complete plumes, knife and flower fit inside transparent margins. No extra crown plumes, flower blossoms, gold, glow, aura, sparks, pollen or floating petals.\nPose: Hit reaction: head snaps backward, body recoils slightly toward left, feet brace. Knife lowered and lotus drawn protectively near chest. The exact two crown plumes remain intact and attached, no floating petals.",
+      "file": "nefertem/nefertem_hit_01.png",
+      "normalization": {
+        "ratio": 0.94,
+        "anchor_x": 0.59,
+        "baseline": 480
+      },
+      "bytes": 20304
+    },
+    {
+      "id": "nefertem",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-2026163a-fcf4-44e4-bede-ab075d01b779.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: God of the lotus: a lotus-blossom crown with two tall plumes (bone petals, ink outline), a short kilt, a broad collar, a bare chest, and a curved knife with a single lotus flower in the other hand. Beauty as a weapon. The lotus crown and the two plumes define the silhouette. No gold.\nInput 1 is approved Nefertem idle, exact identity reference; inputs 2\u20134 are style only. Preserve its youthful clean-shaven face and half smile, ink hair, exact bone lotus crown and TWO tall bone plumes, broad bone collar with red inset bars, bare bone chest, short bone kilt with ink folds, blood-red belt tie, ink-and-bone sandals, same short curved knife and single bone lotus with ink stem and leaves. Exactly two arms and two legs, one knife and one held flower. Battle square full-body strict right-facing profile, ONE eye visible. Physical scale same as idle, overall standing height including plume tips about 430 pixels, tallest plume around y=50, lowest sandal y=480, hips centered x=256. Complete plumes, knife and flower fit inside transparent margins. No extra crown plumes, flower blossoms, gold, glow, aura, sparks, pollen or floating petals.\nPose: Falling: body tips backward toward left, losing balance over one planted foot, other foot lifted beside it. Knife arm lowers with loosening grip, lotus lowers in other hand. Entire crown with TWO plumes stays attached, complete flower and curved blade intact, no detached petals or duplicates. Face remains right profile, every part inside frame.",
+      "file": "nefertem/nefertem_death_01.png",
+      "normalization": {
+        "ratio": 0.95,
+        "anchor_x": 0.56,
+        "baseline": 480
+      },
+      "bytes": 21123
+    },
+    {
+      "id": "nefertem",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-f5e6d7ee-d133-4049-a5b9-2ee7359dfb16.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: God of the lotus: a lotus-blossom crown with two tall plumes (bone petals, ink outline), a short kilt, a broad collar, a bare chest, and a curved knife with a single lotus flower in the other hand. Beauty as a weapon. The lotus crown and the two plumes define the silhouette. No gold.\nInput 1 is approved Nefertem idle, exact identity reference; inputs 2\u20134 are style only. NEW vertical 3:4 portrait, export 768\u00d71024, HEAD TO HIPS only. True three-quarter view turned slightly right toward the viewer, BOTH eyes visible (far eye partly), BOTH shoulders visible, slight half smile. Preserve the exact idle face, ink hair, bone lotus crown with exactly TWO tall plumes, broad bone collar with blood-red inset bars, bare chest, short bone kilt and red belt tie. One hand holds the same single lotus flower near chest, other holds the same complete curved knife low across waist. Entire plume tips, lotus crown, flower, knife and hands fully included with generous transparent padding. Face in upper half. No thighs or full-body framing. No gold, glow, aura, sparks, pollen, floating petals or fragments.",
+      "file": "nefertem/nefertem_portrait.png",
+      "alpha_noise_floor": 8,
+      "bytes": 66617
     }
   ],
   "completed": [
@@ -5323,13 +5423,13 @@
     "medjay",
     "shabti",
     "wepwawet",
-    "imhotep"
+    "imhotep",
+    "nefertem"
   ],
-  "active": "nefertem",
+  "active": "maahes",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "nefertem",
       "maahes",
       "bes",
       "khonsu",
@@ -5394,7 +5494,8 @@
       "medjay",
       "shabti",
       "wepwawet",
-      "imhotep"
+      "imhotep",
+      "nefertem"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -5443,7 +5544,8 @@
     "medjay": "approved",
     "shabti": "approved",
     "wepwawet": "approved",
-    "imhotep": "approved"
+    "imhotep": "approved",
+    "nefertem": "approved"
   },
   "rejected_frames": [
     {
@@ -6026,6 +6128,21 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Architect-physician: a shaved head with a plain skullcap, a long simple linen robe, a papyrus scroll in one hand and a tall measuring rod in the other. No weapon beyond the rod. Calm, thoughtful. The scroll and the rod define the silhouette. No gold.\nInput 1 is approved Imhotep idle, exact identity reference; inputs 2\u20134 are style only. Preserve exact mature clean-shaven face, fitted ink skullcap, long bone linen robe with broad ink folds, blood-red sash and hanging tie, bare bone feet, blank bone scroll with rolled ends, straight bone measuring rod with simple ink end caps and short ink ticks. Exactly two arms and two legs, one scroll, one rod, no other weapon or ornament. Battle: square full-body strict RIGHT side profile, one visible thoughtful eye; physical scale same as idle, standing figure about 430 pixels high, head about y=50, lowest foot y=480, hips centered x=256. Entire robe, feet, scroll and complete rod fit inside transparent margins. No gold, glow, aura, healing effects, particles, sparks or floating fragments.\nPose: Attack strike: rod-bearing arm thrusts the measuring rod forward toward the right, rod almost horizontal at chest height, front arm extended, body committed into a moderate lunge. Scroll held low beside waist by the other hand. Whole rod including both ink caps visible, no clipped tip or extra staff, exactly two arms.",
       "file": "imhotep/imhotep_attack_02.png",
       "rejection_reason": "Correct only the measuring rod: restore the idle's full length, approximately as long as Imhotep's standing body height. Keep the forward thrust at chest height, one extended arm gripping near the rod's middle. The rod's front half projects to the right, and its rear half extends left past the shoulder with the rear ink cap visibly emerging behind the upper body. Both ink caps and the continuous straight bone shaft with ink measurement ticks must be visible. Do not leave a short baton or add a second rod. Preserve the same right-profile face, skullcap, two arms, robe, sash, lunge and lowered scroll, body scale and palette. Square transparent battle frame, entire long rod and all limbs fully inside margins."
+    },
+    {
+      "id": "nefertem",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-eb1adc55-40fe-4f6a-9037-99e3d10bf201.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: God of the lotus: a lotus-blossom crown with two tall plumes (bone petals, ink outline), a short kilt, a broad collar, a bare chest, and a curved knife with a single lotus flower in the other hand. Beauty as a weapon. The lotus crown and the two plumes define the silhouette. No gold.\nInput 1 is approved Nefertem idle, exact identity reference; inputs 2\u20134 are style only. Preserve its youthful clean-shaven face and half smile, ink hair, exact bone lotus crown and TWO tall bone plumes, broad bone collar with red inset bars, bare bone chest, short bone kilt with ink folds, blood-red belt tie, ink-and-bone sandals, same short curved knife and single bone lotus with ink stem and leaves. Exactly two arms and two legs, one knife and one held flower. Battle square full-body strict right-facing profile, ONE eye visible. Physical scale same as idle, overall standing height including plume tips about 430 pixels, tallest plume around y=50, lowest sandal y=480, hips centered x=256. Complete plumes, knife and flower fit inside transparent margins. No extra crown plumes, flower blossoms, gold, glow, aura, sparks, pollen or floating petals.\nPose: Walk passing: one leg supports body directly under hips with flat foot, other leg crosses close in front, lifted foot close beside the supporting ankle and clearly above ground. Body slightly raised; no trailing leg far behind. Knife low, lotus near chest, crown stable.",
+      "file": "nefertem/nefertem_walk_02.png",
+      "rejection_reason": "Soft glow and dark atmospheric matte surround the passing-step figure; requires clean transparent cutout."
+    },
+    {
+      "id": "nefertem",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-c8fea439-d2f7-4e37-a3b7-4bea3f328b69.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: background-extraction. Input 1 is the edit target, Nefertem passing-step sprite. Input 2 is approved idle identity, inputs 3\u20135 are style only.\nRemove the entire soft halo, dark matte and atmospheric glow surrounding the character. Produce a genuinely transparent RGBA cutout with alpha exactly zero outside the hard ink outline. No outer glow, soft edge haze, drop shadow or ground shadow. Keep the passing pose, anatomy, crossed legs and lifted foot, exact two-plume crown, half-smiling profile face, hair, collar, kilt, sash, sandals, knife and lotus unchanged. Preserve all flat bone, ink and blood fills, line weight and hard shadow shapes. Entire character within clear transparent padding, no clipping.",
+      "rejection_reason": "Background-extraction edit retained the visible soft halo and matte; regenerate from clean approved idle."
     }
   ]
 }
