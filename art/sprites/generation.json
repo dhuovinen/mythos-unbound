@@ -898,6 +898,11 @@
       "ratio": 0.970494417862839,
       "anchor_x": 0.52,
       "baseline": 480
+    },
+    "maahes": {
+      "ratio": 0.9218500797448166,
+      "anchor_x": 0.53,
+      "baseline": 480
     }
   },
   "frames": [
@@ -5371,6 +5376,101 @@
       "file": "nefertem/nefertem_portrait.png",
       "alpha_noise_floor": 8,
       "bytes": 66617
+    },
+    {
+      "id": "maahes",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a18bdae0-64a8-4da4-96f6-50b43bef2f4d.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: precise-object-edit. Input 1 is Maahes idle edit target, inputs 2\u20134 style only.\nCorrect ONLY the weapons: exactly ONE large khopesh and ONE short knife. Remove the disconnected crescent blade floating beside the right thigh and remove the small straight blade attached to the near left hand. The near left hand must instead grip a complete, continuous Egyptian khopesh with the existing simple ink handle: an unbroken bone blade extends down and diagonally left beside the body, away from the kilt and legs, and curves into its broad sickle hook with a pointed tip. The whole blade from grip to tip is visible and connected, no blade part hidden by the thigh, no separate crescent. Retain the ONE short straight knife already held by the far right hand at the waist. Exactly two arms and two hands. Keep the lion head, snarling face, mane, bare chest, kilt, red sash, sandals, stance, proportions, physical scale, square transparent background and palette unchanged. All weapons fit fully inside clear transparent margins. No extra knife, scabbard, detached blade, gold, glow, aura, sparks or floating fragments.",
+      "file": "maahes/maahes_idle_01.png",
+      "bytes": 25278
+    },
+    {
+      "id": "maahes",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-39e3d081-562e-4edc-866d-14df023c524c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lion-headed warrior son of a plague goddess: a maned lion head with bared teeth (ink mane, bone muzzle), a large curved khopesh and a knife, a short kilt, a heavy bare chest, a blood-red sash. The maned lion head and the khopesh define the silhouette. No gold.\nInput 1 is corrected approved Maahes idle and exact identity reference; inputs 2\u20134 are style only. Preserve exact snarling lion profile, bared bone teeth, broad ink-and-bone mane, heavy bare bone chest, short bone kilt with ink folds, blood-red sash and long tie, ink-and-bone crisscross sandals. Exactly two arms and two legs, one LARGE continuous curved bone khopesh with ink outline in the near arm, ONE SHORT straight bone knife in other hand. Preserve the khopesh's full hooked sickle silhouette from handle to tip; do not break it into separate blade pieces or replace it with a dagger. No extra blades, scabbards, crown, jewelry, armor, tail or companions. Battle: square full-body strict RIGHT side profile, one lion eye visible. Physical scale same as idle, standing body about 430 pixels, mane top y\u224850, lowest sandal y=480, hips centered x=256. Full mane, all limbs and both complete weapons fit inside transparent margins. No gold, yellow, brown, glow, aura, sparks or floating fragments.\nPose: Walk contact: front leg steps toward right with heel touching down, rear foot trails with toes down. Large khopesh carried downward and diagonally left beside near leg, its whole blade unobstructed. Short knife held near waist, lion head snarling right.",
+      "file": "maahes/maahes_walk_01.png",
+      "normalization": {
+        "ratio": 0.944,
+        "anchor_x": 0.59,
+        "baseline": 480
+      },
+      "bytes": 25830
+    },
+    {
+      "id": "maahes",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-6d49c41c-46b6-4e15-8309-810d8c3e536b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lion-headed warrior son of a plague goddess: a maned lion head with bared teeth (ink mane, bone muzzle), a large curved khopesh and a knife, a short kilt, a heavy bare chest, a blood-red sash. The maned lion head and the khopesh define the silhouette. No gold.\nInput 1 is corrected approved Maahes idle and exact identity reference; inputs 2\u20134 are style only. Preserve exact snarling lion profile, bared bone teeth, broad ink-and-bone mane, heavy bare bone chest, short bone kilt with ink folds, blood-red sash and long tie, ink-and-bone crisscross sandals. Exactly two arms and two legs, one LARGE continuous curved bone khopesh with ink outline in the near arm, ONE SHORT straight bone knife in other hand. Preserve the khopesh's full hooked sickle silhouette from handle to tip; do not break it into separate blade pieces or replace it with a dagger. No extra blades, scabbards, crown, jewelry, armor, tail or companions. Battle: square full-body strict RIGHT side profile, one lion eye visible. Physical scale same as idle, standing body about 430 pixels, mane top y\u224850, lowest sandal y=480, hips centered x=256. Full mane, all limbs and both complete weapons fit inside transparent margins. No gold, yellow, brown, glow, aura, sparks or floating fragments.\nPose: Walk passing: one foot flat directly beneath hips, other leg crosses in front of supporting leg with lifted sandal near supporting ankle and clearly above ground, body slightly raised. Khopesh low diagonally left, short knife near waist. No long trailing leg.",
+      "file": "maahes/maahes_walk_02.png",
+      "normalization": {
+        "ratio": 0.943,
+        "anchor_x": 0.59,
+        "baseline": 480
+      },
+      "bytes": 23512
+    },
+    {
+      "id": "maahes",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ce1870b8-9490-4979-a0b8-6e4eaa7ef584.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lion-headed warrior son of a plague goddess: a maned lion head with bared teeth (ink mane, bone muzzle), a large curved khopesh and a knife, a short kilt, a heavy bare chest, a blood-red sash. The maned lion head and the khopesh define the silhouette. No gold.\nInput 1 is corrected approved Maahes idle and exact identity reference; inputs 2\u20134 are style only. Preserve exact snarling lion profile, bared bone teeth, broad ink-and-bone mane, heavy bare bone chest, short bone kilt with ink folds, blood-red sash and long tie, ink-and-bone crisscross sandals. Exactly two arms and two legs, one LARGE continuous curved bone khopesh with ink outline in the near arm, ONE SHORT straight bone knife in other hand. Preserve the khopesh's full hooked sickle silhouette from handle to tip; do not break it into separate blade pieces or replace it with a dagger. No extra blades, scabbards, crown, jewelry, armor, tail or companions. Battle: square full-body strict RIGHT side profile, one lion eye visible. Physical scale same as idle, standing body about 430 pixels, mane top y\u224850, lowest sandal y=480, hips centered x=256. Full mane, all limbs and both complete weapons fit inside transparent margins. No gold, yellow, brown, glow, aura, sparks or floating fragments.\nPose: Wind-up: near khopesh arm draws the full large hooked blade back and upward behind the lion's head, elbow bent, body coiled backward. Other hand keeps short knife low beside waist. Exact TWO arms, ONE khopesh and ONE knife. Whole curved blade and handle fully connected and inside frame.",
+      "file": "maahes/maahes_attack_01.png",
+      "normalization": {
+        "ratio": 0.865,
+        "anchor_x": 0.6,
+        "baseline": 480
+      },
+      "bytes": 26493
+    },
+    {
+      "id": "maahes",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d0c3929a-b1db-4cb4-a960-376b81933ab5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lion-headed warrior son of a plague goddess: a maned lion head with bared teeth (ink mane, bone muzzle), a large curved khopesh and a knife, a short kilt, a heavy bare chest, a blood-red sash. The maned lion head and the khopesh define the silhouette. No gold.\nInput 1 is corrected approved Maahes idle and exact identity reference; inputs 2\u20134 are style only. Preserve exact snarling lion profile, bared bone teeth, broad ink-and-bone mane, heavy bare bone chest, short bone kilt with ink folds, blood-red sash and long tie, ink-and-bone crisscross sandals. Exactly two arms and two legs, one LARGE continuous curved bone khopesh with ink outline in the near arm, ONE SHORT straight bone knife in other hand. Preserve the khopesh's full hooked sickle silhouette from handle to tip; do not break it into separate blade pieces or replace it with a dagger. No extra blades, scabbards, crown, jewelry, armor, tail or companions. Battle: square full-body strict RIGHT side profile, one lion eye visible. Physical scale same as idle, standing body about 430 pixels, mane top y\u224850, lowest sandal y=480, hips centered x=256. Full mane, all limbs and both complete weapons fit inside transparent margins. No gold, yellow, brown, glow, aura, sparks or floating fragments.\nPose: Strike: near khopesh arm fully extends toward right, swinging the large hooked blade forward at chest height, body committed into moderate lunge. Other hand keeps short knife low beside waist. Full curved blade connected continuously to gripping hand and fully inside frame, no duplicate blade.",
+      "file": "maahes/maahes_attack_02.png",
+      "normalization": {
+        "ratio": 0.84,
+        "anchor_x": 0.41,
+        "baseline": 480
+      },
+      "bytes": 28461
+    },
+    {
+      "id": "maahes",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-6ab3bf1c-3147-493a-bf91-50d137d9ff80.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lion-headed warrior son of a plague goddess: a maned lion head with bared teeth (ink mane, bone muzzle), a large curved khopesh and a knife, a short kilt, a heavy bare chest, a blood-red sash. The maned lion head and the khopesh define the silhouette. No gold.\nInput 1 is corrected approved Maahes idle and exact identity reference; inputs 2\u20134 are style only. Preserve exact snarling lion profile, bared bone teeth, broad ink-and-bone mane, heavy bare bone chest, short bone kilt with ink folds, blood-red sash and long tie, ink-and-bone crisscross sandals. Exactly two arms and two legs, one LARGE continuous curved bone khopesh with ink outline in the near arm, ONE SHORT straight bone knife in other hand. Preserve the khopesh's full hooked sickle silhouette from handle to tip; do not break it into separate blade pieces or replace it with a dagger. No extra blades, scabbards, crown, jewelry, armor, tail or companions. Battle: square full-body strict RIGHT side profile, one lion eye visible. Physical scale same as idle, standing body about 430 pixels, mane top y\u224850, lowest sandal y=480, hips centered x=256. Full mane, all limbs and both complete weapons fit inside transparent margins. No gold, yellow, brown, glow, aura, sparks or floating fragments.\nPose: Hit reaction: lion head snaps back, body recoils left, feet brace. Khopesh lowered diagonally left beside body, short knife held close to waist. Keep each weapon completely visible and attached to its own hand, no fragments.",
+      "file": "maahes/maahes_hit_01.png",
+      "normalization": {
+        "ratio": 0.9,
+        "anchor_x": 0.64,
+        "baseline": 480
+      },
+      "bytes": 27456
+    },
+    {
+      "id": "maahes",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-9cfc9b28-522f-4535-b76d-a9f4ca55f8ac.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lion-headed warrior son of a plague goddess: a maned lion head with bared teeth (ink mane, bone muzzle), a large curved khopesh and a knife, a short kilt, a heavy bare chest, a blood-red sash. The maned lion head and the khopesh define the silhouette. No gold.\nInput 1 is corrected approved Maahes idle and exact identity reference; inputs 2\u20134 are style only. Preserve exact snarling lion profile, bared bone teeth, broad ink-and-bone mane, heavy bare bone chest, short bone kilt with ink folds, blood-red sash and long tie, ink-and-bone crisscross sandals. Exactly two arms and two legs, one LARGE continuous curved bone khopesh with ink outline in the near arm, ONE SHORT straight bone knife in other hand. Preserve the khopesh's full hooked sickle silhouette from handle to tip; do not break it into separate blade pieces or replace it with a dagger. No extra blades, scabbards, crown, jewelry, armor, tail or companions. Battle: square full-body strict RIGHT side profile, one lion eye visible. Physical scale same as idle, standing body about 430 pixels, mane top y\u224850, lowest sandal y=480, hips centered x=256. Full mane, all limbs and both complete weapons fit inside transparent margins. No gold, yellow, brown, glow, aura, sparks or floating fragments.\nPose: Falling: body tips backward toward left, losing balance over one planted foot, other foot lifts beside it. Near arm loosens and khopesh lowers toward left, other hand lowers the short knife. Both blades complete and intact, no extra or detached blade shapes. Lion muzzle remains right-facing profile; every limb and blade inside frame.",
+      "file": "maahes/maahes_death_01.png",
+      "normalization": {
+        "ratio": 0.915,
+        "anchor_x": 0.59,
+        "baseline": 480
+      },
+      "bytes": 27018
+    },
+    {
+      "id": "maahes",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b82174c2-1f81-40f1-88fe-bcbc18a21be6.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: precise-object-edit. Input 1 is Maahes portrait edit target; input 2 approved idle identity; inputs 3\u20135 style only.\nChange ONLY the lower portrait cutoff: remove both tiny exposed bone thigh sections protruding below the kilt at the bottom, and terminate the torso at the hip-level kilt with a clean finished lower silhouette. There must be no visible thighs or legs. Keep the complete short knife and its tip and butt cap fully visible; keep the kilt and red sash, both hands, all body above hips, true three-quarter lion face with partly visible far eye, mane and raised complete khopesh unchanged. Retain all transparent padding and existing vertical 3:4 composition, palette, proportions and heavy line weights. No new content, no ground, no gold, glow or aura.",
+      "file": "maahes/maahes_portrait.png",
+      "alpha_noise_floor": 8,
+      "bytes": 71246
     }
   ],
   "completed": [
@@ -5424,13 +5524,13 @@
     "shabti",
     "wepwawet",
     "imhotep",
-    "nefertem"
+    "nefertem",
+    "maahes"
   ],
-  "active": "maahes",
+  "active": "bes",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "maahes",
       "bes",
       "khonsu",
       "harpy",
@@ -5495,7 +5595,8 @@
       "shabti",
       "wepwawet",
       "imhotep",
-      "nefertem"
+      "nefertem",
+      "maahes"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -5545,7 +5646,8 @@
     "shabti": "approved",
     "wepwawet": "approved",
     "imhotep": "approved",
-    "nefertem": "approved"
+    "nefertem": "approved",
+    "maahes": "approved"
   },
   "rejected_frames": [
     {
@@ -6143,6 +6245,35 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-c8fea439-d2f7-4e37-a3b7-4bea3f328b69.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: background-extraction. Input 1 is the edit target, Nefertem passing-step sprite. Input 2 is approved idle identity, inputs 3\u20135 are style only.\nRemove the entire soft halo, dark matte and atmospheric glow surrounding the character. Produce a genuinely transparent RGBA cutout with alpha exactly zero outside the hard ink outline. No outer glow, soft edge haze, drop shadow or ground shadow. Keep the passing pose, anatomy, crossed legs and lifted foot, exact two-plume crown, half-smiling profile face, hair, collar, kilt, sash, sandals, knife and lotus unchanged. Preserve all flat bone, ink and blood fills, line weight and hard shadow shapes. Entire character within clear transparent padding, no clipping.",
       "rejection_reason": "Background-extraction edit retained the visible soft halo and matte; regenerate from clean approved idle."
+    },
+    {
+      "id": "maahes",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-644b5078-175f-40a9-a5be-e80d4e78d38e.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lion-headed warrior son of a plague goddess: a maned lion head with bared teeth (ink mane, bone muzzle), a large curved khopesh and a knife, a short kilt, a heavy bare chest, a blood-red sash. The maned lion head and the khopesh define the silhouette. No gold.\nInputs 1\u20133 are style references only. Generate Maahes idle battle sprite: square full body in strict RIGHT-facing side profile, one visible lion eye, thick bone lion muzzle with bared bone teeth and broad ink mane. ONE lion head on a strong heavy humanoid body with exactly two arms and two legs. Bare bone chest, short bone kilt with ink folds, blood-red sash tied at waist, ink-and-bone strapped sandals. No armor, crown, jewelry, tail or living companions. Near arm on the left grips one LARGE curved Egyptian khopesh: bone blade with ink outline, straight lower blade flowing into a broad hooked sickle upper blade, simple ink grip, held downward beside body. Far arm on the right grips one SHORT straight bone knife with ink edge, held near waist. Khopesh and knife must be clearly different sizes. Athletic grounded neutral stance, head snarls toward right. Target 512\u00d7512: top of mane near y=50, lowest sandal y=480, hips centered x=256, standing body about 430 pixels high. Every mane tuft, both complete blades, handles and limbs inside clear transparent padding. No gold, yellow, bronze, brown, fire, glow, aura, sparks or floating fragments.",
+      "rejection_reason": "Two short knife-like blades and disconnected crescent khopesh emerging from thigh; requires one complete connected khopesh and one knife."
+    },
+    {
+      "id": "maahes",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-f3d13fb9-6b20-4a9d-9f8f-8c464cb8385c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lion-headed warrior son of a plague goddess: a maned lion head with bared teeth (ink mane, bone muzzle), a large curved khopesh and a knife, a short kilt, a heavy bare chest, a blood-red sash. The maned lion head and the khopesh define the silhouette. No gold.\nInput 1 is corrected approved Maahes idle and exact identity reference; inputs 2\u20134 are style only. NEW portrait, vertical 3:4, export 768\u00d71024, head to hips only. True THREE-QUARTER view turned slightly right toward viewer, BOTH lion eyes visible (far eye partly) and BOTH shoulders visible, lion mid-snarl with bared teeth. Preserve exact thick bone muzzle, ink-and-bone mane, heavy bare chest, short bone kilt and blood-red sash, no collar or crown. Near hand raises the same LARGE curved khopesh beside the head, entire continuous blade and grip visible, other hand holds ONE short straight knife low beside waist. Exactly two arms, one khopesh and one knife, no duplicated or detached blades. All mane tufts, complete khopesh, knife and hands inside generous transparent padding, face in upper half. No thighs or full body. No gold, glow, aura, sparks or fragments.",
+      "file": "maahes/maahes_portrait.png",
+      "rejection_reason": "Portrait clips knife butt cap and right arm at right boundary and lower torso at bottom; add complete framing with transparent margins."
+    },
+    {
+      "id": "maahes",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-71cc7ab4-935a-4523-a094-3c5c3dcdcd76.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nUse case: identity-preserve. Input 1 is Maahes portrait edit target, input 2 approved idle identity, inputs 3\u20135 style only.\nChange ONLY framing: pull back slightly, about 10%, to add clear transparent margins around the complete head-to-hips figure and both weapons. Restore and fully include the knife handle's entire butt cap at the right edge, the entire right forearm and elbow, and the lower torso ending at hips with a clean horizontal silhouette above the bottom edge. Keep exactly the current true three-quarter lion face with both eyes, snarl, mane, body anatomy, two arms, raised continuous khopesh, short knife, kilt and red sash. Preserve both blades' shapes, colors and all line weights. All headgear, fur and weapon tips fully inside about 25\u201340 pixels transparent padding. Vertical 3:4, face in upper half, head to hips only, no thighs or full-body zoom out, no gold, aura or glow.",
+      "rejection_reason": "Framing edit retained tight right-edge arm and knife butt cap; regenerate portrait with clear margins from approved idle."
+    },
+    {
+      "id": "maahes",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d288c60f-c777-4630-a0dd-0e5e7118ec98.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Lion-headed warrior son of a plague goddess: a maned lion head with bared teeth (ink mane, bone muzzle), a large curved khopesh and a knife, a short kilt, a heavy bare chest, a blood-red sash. The maned lion head and the khopesh define the silhouette. No gold.\nInput 1 is corrected approved Maahes idle and exact identity reference; inputs 2\u20134 are style only. NEW portrait, vertical 3:4, export 768\u00d71024, head to hips only. True THREE-QUARTER view turned slightly right toward viewer, BOTH lion eyes visible (far eye partly) and BOTH shoulders visible, lion mid-snarl with bared teeth. Preserve exact thick bone muzzle, ink-and-bone mane, heavy bare chest, short bone kilt and blood-red sash, no collar or crown. Near hand raises the same LARGE curved khopesh beside the head, entire continuous blade and grip visible, other hand holds ONE short straight knife low beside waist. Exactly two arms, one khopesh and one knife, no duplicated or detached blades. All mane tufts, complete khopesh, knife and hands inside generous transparent padding, face in upper half. No thighs or full body. No gold, glow, aura, sparks or fragments.\nComposition constraint: place the COMPLETE head-to-hips artwork and BOTH entire weapons within the central 85% of the vertical canvas. Leave an obvious transparent margin of at least 6% of the canvas width on BOTH left and right, and 3% above the khopesh tip and below the clean hip-level lower edge. Bring the lowered knife hand closer to the body's center so its complete butt cap has clear empty space on the right. Do not crop at image boundaries or zoom in to fill the entire width. This is a head-to-hips portrait only, not full body. Character must be newly posed from the idle reference.",
+      "rejection_reason": "Fresh portrait exposes upper thigh sections below kilt, outside required head-to-hips framing."
     }
   ]
 }
