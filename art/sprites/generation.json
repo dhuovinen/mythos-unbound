@@ -918,6 +918,12 @@
       "ratio": 1.1139704297599033,
       "anchor_x": 0.58,
       "baseline": 400
+    },
+    "typhon": {
+      "target_width": 460,
+      "width_ratio": 0.9409888357256778,
+      "anchor_x": 0.55,
+      "baseline": 480
     }
   },
   "frames": [
@@ -5785,6 +5791,114 @@
       "file": "harpy/harpy_portrait.png",
       "alpha_noise_floor": 8,
       "bytes": 114382
+    },
+    {
+      "id": "typhon",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5a6c6eab-2178-4a61-9985-5c275b0bb4e0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The monster: a vast torso with several snarling heads (three to five) on writhing serpent necks, huge bat-like wings, clawed arms, and instead of legs thick serpentine coils that pile up on the ground. Ink-black scales with bone belly plates and blood-red eyes. Least human shape in the roster. Nothing about it is dignified. No fire, smoke or lightning effects. No gold.\nNEW Typhon idle exactidentityseed. ONE grotesque monstrous creature, leasthumanoid roster shape. Huge hunched ink-scaled torso with bone belly armorplates, EXACTLY THREE snarling angular reptilian heads each on its own long thick writhing serpent neck emergingfrom shoulder/upperchest cluster, allheadedRIGHT in sideprofile, ONE bloodred visibleeye perhead. Distinct heads at staggered heights, bone teeth and fangs, no human hair or beard, no crown. EXACTLY TWO huge batlike wings attached behind shoulders, inkmembranes with angularbone spars and limited flatbloodred membraneaccentpanels, fullyvisible. EXACTLY TWO clawed reptilian arms, no weapons. INSTEAD OF LEGS a SINGLE thick continuous serpentine LOWER BODY piled in several ground coils, inkblack scales bone bellyplates and one tapering pointedtail, NO humanlegs/paws. Neutralidle heads swaying in separate Scurves, clawhands poised. StrictRIGHT-facing battleview, squarefullcreature512x512, fullwingsandcoils fillabout460pxWIDTH and430pxHEIGHT, widestpoints x26..486, baseofcoils y480, torso/coils centerx256. Wholewingtips claws teeth tailinsidepadding. NO gold yellow bronze tan brown orange, fire smoke lightning glow aura sparks floatingfragments orgroundshadow.",
+      "file": "typhon/typhon_idle_01.png",
+      "alpha_noise_floor": 8,
+      "bytes": 55160
+    },
+    {
+      "id": "typhon",
+      "pose": "walk_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The monster: a vast torso with several snarling heads (three to five) on writhing serpent necks, huge bat-like wings, clawed arms, and instead of legs thick serpentine coils that pile up on the ground. Ink-black scales with bone belly plates and blood-red eyes. Least human shape in the roster. Nothing about it is dignified. No fire, smoke or lightning effects. No gold.\nInput1 approved Typhon idle exact identity; inputs2\u20134 style only. Preserve EXACTLY THREE snarling angular dragon/reptile heads on THREE separate writhing serpent necks, each with jagged ink spines and scales, bone cheek/brow cuts, ONE red eye visible strictly facing RIGHT, bone pointedteeth and ink forkedtongue. Huge hunched ink-scaled torso with same broad bone bellyplates, EXACTLY TWO clawed reptilian arms with bone talons, EXACTLY TWO bat wings ink membranes flat blood-red panels and bone structural spars. Same ONE thick lowerbodyserpent in overlapping ground coils with bone bellybands, one taperingtail curlingupatleft. NO legs or feet. Allneck basesattached to sametorso, samehead designs andproportions. Square fullmonster fills about460px width and430px height, baseofgroundcoils y480, torso/coils centeredx256, strictRIGHTfacing battleview. Whole3heads, wings, talons andtailtip fullyINSIDEpadding. No gold yellow brown fire smoke lightning glow aura sparks fragments orshadow.\nPose: Coil shuffle firstframe: serpentine lowerbody loop at frontRIGHT extends and pressesground, rearleft loopscompress beneath torso. Three necks sway slightly forward at staggeredheights, two clawsheldready, wings halfspreadsameidle. NO feet. Onecontinuousserpentbodyone tail.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-3fdd197a-70e4-48a5-90d3-f3f92e2c2028.png",
+      "file": "typhon/typhon_walk_01.png",
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9522342064714946,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "alpha_noise_floor": 8,
+      "bytes": 54727
+    },
+    {
+      "id": "typhon",
+      "pose": "walk_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The monster: a vast torso with several snarling heads (three to five) on writhing serpent necks, huge bat-like wings, clawed arms, and instead of legs thick serpentine coils that pile up on the ground. Ink-black scales with bone belly plates and blood-red eyes. Least human shape in the roster. Nothing about it is dignified. No fire, smoke or lightning effects. No gold.\nInput1 approved Typhon idle exact identity; inputs2\u20134 style only. Preserve EXACTLY THREE snarling angular dragon/reptile heads on THREE separate writhing serpent necks, each with jagged ink spines and scales, bone cheek/brow cuts, ONE red eye visible strictly facing RIGHT, bone pointedteeth and ink forkedtongue. Huge hunched ink-scaled torso with same broad bone bellyplates, EXACTLY TWO clawed reptilian arms with bone talons, EXACTLY TWO bat wings ink membranes flat blood-red panels and bone structural spars. Same ONE thick lowerbodyserpent in overlapping ground coils with bone bellybands, one taperingtail curlingupatleft. NO legs or feet. Allneck basesattached to sametorso, samehead designs andproportions. Square fullmonster fills about460px width and430px height, baseofgroundcoils y480, torso/coils centeredx256, strictRIGHTfacing battleview. Whole3heads, wings, talons andtailtip fullyINSIDEpadding. No gold yellow brown fire smoke lightning glow aura sparks fragments orshadow.\nPose: Coil shuffle alternateframe: rearcoil pushesforward underneath torso while frontcoil loop drawsback, change overlap/hump positions visibly fromidle. Torso slightlyraised and THREE necks sway a little backward, stillallheadsright. Twoarms, twowings, nobeastlegs.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-42d26027-a990-45e6-840d-a2c5079011ce.png",
+      "file": "typhon/typhon_walk_02.png",
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9521531100478469,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "alpha_noise_floor": 8,
+      "bytes": 53702
+    },
+    {
+      "id": "typhon",
+      "pose": "attack_02",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The monster: a vast torso with several snarling heads (three to five) on writhing serpent necks, huge bat-like wings, clawed arms, and instead of legs thick serpentine coils that pile up on the ground. Ink-black scales with bone belly plates and blood-red eyes. Least human shape in the roster. Nothing about it is dignified. No fire, smoke or lightning effects. No gold.\nInput1 approved Typhon idle exact identity; inputs2\u20134 style only. Preserve EXACTLY THREE snarling angular dragon/reptile heads on THREE separate writhing serpent necks, each with jagged ink spines and scales, bone cheek/brow cuts, ONE red eye visible strictly facing RIGHT, bone pointedteeth and ink forkedtongue. Huge hunched ink-scaled torso with same broad bone bellyplates, EXACTLY TWO clawed reptilian arms with bone talons, EXACTLY TWO bat wings ink membranes flat blood-red panels and bone structural spars. Same ONE thick lowerbodyserpent in overlapping ground coils with bone bellybands, one taperingtail curlingupatleft. NO legs or feet. Allneck basesattached to sametorso, samehead designs andproportions. Square fullmonster fills about460px width and430px height, baseofgroundcoils y480, torso/coils centeredx256, strictRIGHTfacing battleview. Whole3heads, wings, talons andtailtip fullyINSIDEpadding. No gold yellow brown fire smoke lightning glow aura sparks fragments orshadow.\nPose: Strike: ALL THREE heads lunge FULLY FORWARD towardRIGHT on extended serpent necks, jawswide, staggeredverticallevels keep allthreeclear. Torsoleansforward, TWO clawedarms reachtowardright, groundcoilsanchorbody, wings sweepback. Entirethreeheads andwingtipswithinpadding, NO clipping/detachedheads/additionalarms.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b7409b25-1d73-4e21-917e-e5ee856e7468.png",
+      "file": "typhon/typhon_attack_02.png",
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9799537393986122,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "alpha_noise_floor": 8,
+      "bytes": 50437
+    },
+    {
+      "id": "typhon",
+      "pose": "hit_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The monster: a vast torso with several snarling heads (three to five) on writhing serpent necks, huge bat-like wings, clawed arms, and instead of legs thick serpentine coils that pile up on the ground. Ink-black scales with bone belly plates and blood-red eyes. Least human shape in the roster. Nothing about it is dignified. No fire, smoke or lightning effects. No gold.\nInput1 approved Typhon idle exact identity; inputs2\u20134 style only. Preserve EXACTLY THREE snarling angular dragon/reptile heads on THREE separate writhing serpent necks, each with jagged ink spines and scales, bone cheek/brow cuts, ONE red eye visible strictly facing RIGHT, bone pointedteeth and ink forkedtongue. Huge hunched ink-scaled torso with same broad bone bellyplates, EXACTLY TWO clawed reptilian arms with bone talons, EXACTLY TWO bat wings ink membranes flat blood-red panels and bone structural spars. Same ONE thick lowerbodyserpent in overlapping ground coils with bone bellybands, one taperingtail curlingupatleft. NO legs or feet. Allneck basesattached to sametorso, samehead designs andproportions. Square fullmonster fills about460px width and430px height, baseofgroundcoils y480, torso/coils centeredx256, strictRIGHTfacing battleview. Whole3heads, wings, talons andtailtip fullyINSIDEpadding. No gold yellow brown fire smoke lightning glow aura sparks fragments orshadow.\nPose: Hit: Three heads RECOIL backandup with necks recoiling in distinctcurves, torso thrownback left andclawhands spread defensively, batwingstiltbackward. Groundcoilsbrace, fullbodytailsheadswingsvisibleinsideframe.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-9b29890f-df66-4d6d-805a-19483cdb93fe.png",
+      "file": "typhon/typhon_hit_01.png",
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9768740031897927,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "alpha_noise_floor": 8,
+      "bytes": 57835
+    },
+    {
+      "id": "typhon",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EDIT TARGET Typhonwindup; input2 approvedidle exactidentity; otherinputsstyleonly. Preserve exactTHREE reptileheads inkspinesboneteethredeyes, hugeinkscaled torso bonebellyplates, TWOclawedarms, TWObatwingsboneinkred andONEcoiledserpentlowerbodywithonetail, squaretransparentart. CHANGE neck/headPOSE ONLY into clearanticipation: allTHREEnecksfoldback LEFT in deepS-curves, the threejaw tips form a closelyclusteredverticalstack directlyABOVE LEFT HALF OF CHEST, heads lookingRIGHT whiledrawnback. Notstretchednecks forward beyond chest. Upperheadjustaboveleftshoulder, middleheadnearupperchest, lowerheadbesidechest, ALL THREE jawtips SHORT OF rightclaw. Jawssnarl,rightprofileoneeye perhead. Clawarmsdrawbacknearbelly. Entirebodytailwingsandallheadsinside5%padding, nolossofheads orextralimbs. No gold/glow/aura/sparks/fragments, baselinecoils480.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-69e64065-29ad-491f-8ca2-8e896cc173fd.png",
+      "file": "typhon/typhon_attack_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 450,
+        "width_ratio": 0.9258373205741627,
+        "anchor_x": 0.55,
+        "baseline": 480
+      },
+      "bytes": 52500
+    },
+    {
+      "id": "typhon",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EDIT TARGET Typhondeath; input2 approvedidleidentity, othersstyleonly. PreserveexactTHREE reptileheads/necks, inkbone scales/bellyplates, TWOclawarms,TWObatwingsboneinkred, ONEsinglecoiledserpentlowerbodyandtail. CHANGE collapsepose: monsterisDEAD inLOWHEAP oncoils, torsofallsforward, allTHREEheadsloweredlimp neargroundtowardright, red eyes now narrow/slackjaws. BOTHBATWINGS collapseFOLDED/SLACK overandbehind lowtorso. NO upright wingpeaks: bendallwingbones downso uppermostwingfold is no higher than lowshoulder. Batwingmembranesdrapelike foldedangularcloth, recognizably same wings but collapsed. Wholeheadstonguesarmsfullcoilsandtailinside squarepadding, baseheap480. Nolegs, nogroundshadow, no gold glow aura sparks fragments.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-230661aa-d962-450e-ad32-ea75040c801d.png",
+      "file": "typhon/typhon_death_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9920255183413078,
+        "anchor_x": 0.53,
+        "baseline": 480
+      },
+      "bytes": 36054
+    },
+    {
+      "id": "typhon",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput1 EDIT TARGET Typhonportrait. KeepexactidentityTHREE dragonheads connectedvia THREE necks tosametorso, mainheadtrueTHREEQUARTERslightlyrightBOTHred eyesvisible, otherheads snarlingdifferentangles, bothshoulders bonebellyplatesinkscales, EXACTLYTWOclawedarmsandTWObatwings. RecomposeONLYto giveclearTRANSPARENT MARGINS: scaleentireupperbody heads necks wings andclaws down tofitcentral84% ofvertical3:4canvas. Bothcompletewingtips, ALLteeth tongues skullspines, BOTHcompleteclawhands entirelyvisibleandseparatedfromEVERYedgeby6\u20138%cleartransparentpadding. Faceclusterupperhalf, finishloweredgeatchestonly, NO lowergroundcoilsorfullbody. Maintainboneinkbloodpaletteflatboldwoodcut, noextraheads/limbs, NO gold yellow brown glow aura sparks fragments.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-a1d55ebb-96e4-4be4-b2b0-0d56aa8ff457.png",
+      "file": "typhon/typhon_portrait.png",
+      "alpha_noise_floor": 8,
+      "bytes": 123480
     }
   ],
   "completed": [
@@ -5842,13 +5956,13 @@
     "maahes",
     "bes",
     "khonsu",
-    "harpy"
+    "harpy",
+    "typhon"
   ],
-  "active": "typhon",
+  "active": "fenrir",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "typhon",
       "fenrir",
       "jormungandr",
       "ba",
@@ -5913,7 +6027,8 @@
       "maahes",
       "bes",
       "khonsu",
-      "harpy"
+      "harpy",
+      "typhon"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -5967,7 +6082,8 @@
     "maahes": "approved",
     "bes": "approved",
     "khonsu": "approved",
-    "harpy": "approved"
+    "harpy": "approved",
+    "typhon": "approved"
   },
   "rejected_frames": [
     {
@@ -6629,6 +6745,27 @@
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: Winged bird-woman: gaunt human face with wild ink-black hair, bare shoulders, tattered cloth about the waist, huge feathered wings in bone and ink with blood-red feather tips, bird legs ending in hooked talons. Wings and talons define the silhouette. No gold.\nInput1 Harpyidle exactidentity, othersstyle. NEW VERTICAL3:4 portrait768x1024, HEAD TO HIPS only, TRUE THREE-QUARTER view turnedslightlyRIGHT towardviewer with BOTH humaneyes and BOTH shouldersvisible, fareyepartly. Hungry gauntadultfemale face inupperhalf, samewildinkblackhairbonestreaks, bareboneshoulders thinclawedarms, tatteredbloodredchestwrap and waistcloth with inkfolds, bareboneabdomen. TWO enormous bone/ink FEATHERED wings with redtip feathers FLARED UP behind BOTHshoulders, showBOTHcompletewingtipsinside portrait clearpadding. ONE clawedhumanhand raisedbeside face, otherclawedhandnearwaist, exactlytwo arms. Fullhair and allwingtipsfit central88%image, faceupperhalf, cleanHIPLEVELloweredge, NO thighs birdlegs talonsorfullbody. Noextraeyes, no gold yellow brown glow aura sparks fragments orfloatfeathers.\nCORRECTION to input1 portrait: preserve exact face, true3/4both eyes, both shoulders, wild hair, TWO clawed arms, cloth and TWO wing anatomy and woodcut style. Recompose with entire upper body AND BOTH complete feathered wings shown inside the canvas, shrink artwork slightly to fit 8% transparent padding LEFT and RIGHT and above full wings. No feather or wing touches any canvas edge. Remove the bare thigh/leg wedge at lowercenter and finish at clean hip-level edge in red waistcloth, NO bare thighs or legparts. Remove any colored glitch/speck pixels. Clean alpha exterior with no softglow/matte. Keepfaceupperhalf and singlecharacter, no additionalobjects. NO gold yellow amber bronze tan brown orange glow aura sparks floating fragments.",
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-dde05a5c-bd48-4883-9bc6-6d9ef3f99108.png",
       "rejection_reason": "First portrait correction retained bare thigh wedge and insufficient wing padding."
+    },
+    {
+      "id": "typhon",
+      "pose": "attack_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The monster: a vast torso with several snarling heads (three to five) on writhing serpent necks, huge bat-like wings, clawed arms, and instead of legs thick serpentine coils that pile up on the ground. Ink-black scales with bone belly plates and blood-red eyes. Least human shape in the roster. Nothing about it is dignified. No fire, smoke or lightning effects. No gold.\nInput1 approved Typhon idle exact identity; inputs2\u20134 style only. Preserve EXACTLY THREE snarling angular dragon/reptile heads on THREE separate writhing serpent necks, each with jagged ink spines and scales, bone cheek/brow cuts, ONE red eye visible strictly facing RIGHT, bone pointedteeth and ink forkedtongue. Huge hunched ink-scaled torso with same broad bone bellyplates, EXACTLY TWO clawed reptilian arms with bone talons, EXACTLY TWO bat wings ink membranes flat blood-red panels and bone structural spars. Same ONE thick lowerbodyserpent in overlapping ground coils with bone bellybands, one taperingtail curlingupatleft. NO legs or feet. Allneck basesattached to sametorso, samehead designs andproportions. Square fullmonster fills about460px width and430px height, baseofgroundcoils y480, torso/coils centeredx256, strictRIGHTfacing battleview. Whole3heads, wings, talons andtailtip fullyINSIDEpadding. No gold yellow brown fire smoke lightning glow aura sparks fragments orshadow.\nPose: Wind-up: ALL THREE heads and serpent necks DRAWN BACK TOGETHER in tighter backward Scurves above chest, jawsopen preparingstrike. Torso coiled backward, armsclawscurl towardchest, groundcoilscompressed, wings raised behind. Keep3distinct heads, fullwingsandtailinsideframe.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-add6feda-61f3-431a-9204-13dff7c61bb1.png",
+      "rejection_reason": "Wind-up lacks pronounced backward grouped S-curves of all three heads."
+    },
+    {
+      "id": "typhon",
+      "pose": "death_01",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The monster: a vast torso with several snarling heads (three to five) on writhing serpent necks, huge bat-like wings, clawed arms, and instead of legs thick serpentine coils that pile up on the ground. Ink-black scales with bone belly plates and blood-red eyes. Least human shape in the roster. Nothing about it is dignified. No fire, smoke or lightning effects. No gold.\nInput1 approved Typhon idle exact identity; inputs2\u20134 style only. Preserve EXACTLY THREE snarling angular dragon/reptile heads on THREE separate writhing serpent necks, each with jagged ink spines and scales, bone cheek/brow cuts, ONE red eye visible strictly facing RIGHT, bone pointedteeth and ink forkedtongue. Huge hunched ink-scaled torso with same broad bone bellyplates, EXACTLY TWO clawed reptilian arms with bone talons, EXACTLY TWO bat wings ink membranes flat blood-red panels and bone structural spars. Same ONE thick lowerbodyserpent in overlapping ground coils with bone bellybands, one taperingtail curlingupatleft. NO legs or feet. Allneck basesattached to sametorso, samehead designs andproportions. Square fullmonster fills about460px width and430px height, baseofgroundcoils y480, torso/coils centeredx256, strictRIGHTfacing battleview. Whole3heads, wings, talons andtailtip fullyINSIDEpadding. No gold yellow brown fire smoke lightning glow aura sparks fragments orshadow.\nPose: Death: collapsed LOW HEAP of serpentcoils, torso fallenforward, allTHREE necks limp downward with heads restinglow towardRIGHT, allthreeheadsvisible, TWO batwings SLACK/FOLDED overandbehindtorso, twoclaws limp. Singlecontinuousserpentlowerbodywithonetail, nofeet or legs. Wholeheap andfullwingsinsideframe, lowestcoilsbaseline480, nofloor/shadow.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-dcd63308-c5da-47f6-a26c-80d76edd3484.png",
+      "rejection_reason": "Death wings remained upright instead of folded/slack over collapsed torso."
+    },
+    {
+      "id": "typhon",
+      "pose": "portrait",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nSubject: The monster: a vast torso with several snarling heads (three to five) on writhing serpent necks, huge bat-like wings, clawed arms, and instead of legs thick serpentine coils that pile up on the ground. Ink-black scales with bone belly plates and blood-red eyes. Least human shape in the roster. Nothing about it is dignified. No fire, smoke or lightning effects. No gold.\nInput1 Typhonidle exactidentity, othersstyle. NEW VERTICAL3:4 portrait768x1024, uppermonster heads, necks, shoulders and upperchest only; NO fullbody or lowergroundcoils. TrueTHREE-QUARTER view turnedslightlyRIGHT towardviewer: EXACTLY THREE same angular reptile heads snarling at DIFFERENT ANGLES, mainhead threequarter BOTH redeyes visible farpartly, twootherheadsprofile/oblique, completefullsnouts fangsjaws tongue spines. Three serpentine necks allattachedsamevastink-scaled torso bonebellyplateupperchest. EXACTLY TWO samebatwings risingbehindBOTHshoulders, bone sparsinkmembranesflatredpanels, both fullwingtipsinsideverticalframeclear5\u20138%padding. Exactlytworeptileclawedarms nearlowerchest, noextraheads orlimbs. Heads/eyes situpperhalf; loweredgeatupperchest naturalcrop, nothumanoidhips. No gold yellow brown glow aura sparks fragments fire smoke lightning.",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-e1459080-c5e8-4715-b011-be559904aa9d.png",
+      "rejection_reason": "Portrait wing/claw outlines clipped at canvas edges."
     }
   ]
 }
