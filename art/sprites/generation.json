@@ -936,6 +936,13 @@
       "width_ratio": 0.9529505582137161,
       "anchor_x": 0.5,
       "baseline": 480
+    },
+    "ba": {
+      "target_width": 333.5559838928224,
+      "width_ratio": 0.7743221690590112,
+      "anchor_x": 0.5,
+      "anchor_y": 0.87,
+      "baseline": 400
     }
   },
   "frames": [
@@ -6127,6 +6134,119 @@
       "file": "jormungandr/jormungandr_portrait.png",
       "alpha_noise_floor": 8,
       "bytes": 119004
+    },
+    {
+      "id": "ba",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-cf6ed96d-1d91-4693-9410-f44d41112b81.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nEdit target image 1: Ba hovering sprite. Change ONLY the geometry of the ring held by the rightward talon. It must be an Egyptian SHEN RING: an open circular or oval loop with a short straight horizontal tie-bar tangent to the BOTTOM, extending a little beyond the two sides at its base. Remove the bar crossing through its CENTER; the interior of the ring must be empty transparent space. Bone-colored loop with ink outlines and simple flat chisel marks, no gold or shine. Keep the same talon grip at the TOP of the ring. Preserve the exact human face, beard, hair, falcon body, two wings, two talons, tail, pose, proportions, palette and true transparency. Do not alter any other part, add objects or effects. No gold, aura, glow, sparks or floating fragments.",
+      "file": "ba/ba_idle_01.png",
+      "alpha_noise_floor": 8,
+      "bytes": 29988
+    },
+    {
+      "id": "ba",
+      "pose": "walk_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5ea2789d-14a1-4d9e-b202-6fef139814d5.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is Ba's approved exact identity; images 2\u20134 style only. Same serene bearded human head with long carved hair on a FALCON body, bone and ink feathers with blood-red tips. Exactly one human head, TWO falcon wings, TWO small bird talons, ONE falcon tail. No human arms, hands or legs. ONE talon grips the TOP of ONE bone/ink Egyptian shen ring: empty circular loop with a short straight bar tangent to its BOTTOM, never a center crossbar. Preserve face, beard, feather colors and proportions while creating a substantially new pose. Strict RIGHT side profile, one visible human eye. Full bird within square 512 \u00d7 512 transparent canvas, body centered x=256, talons hover around y=400. All wing tips, hair, ring and tail fully inside clear padding, no clipping. No gold, halo, glow, aura, sparks, floating fragments or floor shadow.\nPose: flight UPSTROKE. Both wings stretched FULL UP above shoulders, long feather tips nearly vertical. Bird body slightly raised, talons relaxed below, one holding the shen ring. Keep complete human head unobscured.",
+      "file": "ba/ba_walk_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 314.01050849477554,
+        "width_ratio": 0.751993620414673,
+        "anchor_x": 0.5,
+        "anchor_y": 0.918,
+        "baseline": 400
+      },
+      "bytes": 28859
+    },
+    {
+      "id": "ba",
+      "pose": "walk_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-d01f424d-33fd-49f5-8e34-b9c18934ed7b.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is Ba's approved exact identity; images 2\u20134 style only. Same serene bearded human head with long carved hair on a FALCON body, bone and ink feathers with blood-red tips. Exactly one human head, TWO falcon wings, TWO small bird talons, ONE falcon tail. No human arms, hands or legs. ONE talon grips the TOP of ONE bone/ink Egyptian shen ring: empty circular loop with a short straight bar tangent to its BOTTOM, never a center crossbar. Preserve face, beard, feather colors and proportions while creating a substantially new pose. Strict RIGHT side profile, one visible human eye. Full bird within square 512 \u00d7 512 transparent canvas, body centered x=256, talons hover around y=400. All wing tips, hair, ring and tail fully inside clear padding, no clipping. No gold, halo, glow, aura, sparks, floating fragments or floor shadow.\nPose: flight DOWNSTROKE. Both wings swept FULL DOWN below and outward from bird shoulders. Wing tips point down and left/right, visibly opposite to upstroke. Talons still around y=400 with shen ring held securely; wing tips may fall lower than talons but remain inside canvas. Head upright and body horizontal.",
+      "file": "ba/ba_walk_02.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 430,
+        "width_ratio": 0.9529505582137161,
+        "anchor_x": 0.5,
+        "anchor_y": 0.771,
+        "baseline": 400
+      },
+      "bytes": 32533
+    },
+    {
+      "id": "ba",
+      "pose": "attack_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-5a8ba3e7-78e4-4157-9eb9-fd0a3ee476b0.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is Ba's approved exact identity; images 2\u20134 style only. Same serene bearded human head with long carved hair on a FALCON body, bone and ink feathers with blood-red tips. Exactly one human head, TWO falcon wings, TWO small bird talons, ONE falcon tail. No human arms, hands or legs. ONE talon grips the TOP of ONE bone/ink Egyptian shen ring: empty circular loop with a short straight bar tangent to its BOTTOM, never a center crossbar. Preserve face, beard, feather colors and proportions while creating a substantially new pose. Strict RIGHT side profile, one visible human eye. Full bird within square 512 \u00d7 512 transparent canvas, body centered x=256, talons hover around y=400. All wing tips, hair, ring and tail fully inside clear padding, no clipping. No gold, halo, glow, aura, sparks, floating fragments or floor shadow.\nPose: attack wind-up, wings lifted HIGH overhead, body coiled back and TWO talons pulled UP toward feathered belly. The ring remains held by one talon. Human face calm and focused facing right.",
+      "file": "ba/ba_attack_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 380.1188595012451,
+        "width_ratio": 0.7854864433811802,
+        "anchor_x": 0.5,
+        "anchor_y": 0.798,
+        "baseline": 400
+      },
+      "bytes": 37873
+    },
+    {
+      "id": "ba",
+      "pose": "attack_02",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-ea848151-a1e1-4d20-8e78-0e2fbed42938.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is Ba's approved exact identity; images 2\u20134 style only. Same serene bearded human head with long carved hair on a FALCON body, bone and ink feathers with blood-red tips. Exactly one human head, TWO falcon wings, TWO small bird talons, ONE falcon tail. No human arms, hands or legs. ONE talon grips the TOP of ONE bone/ink Egyptian shen ring: empty circular loop with a short straight bar tangent to its BOTTOM, never a center crossbar. Preserve face, beard, feather colors and proportions while creating a substantially new pose. Strict RIGHT side profile, one visible human eye. Full bird within square 512 \u00d7 512 transparent canvas, body centered x=256, talons hover around y=400. All wing tips, hair, ring and tail fully inside clear padding, no clipping. No gold, halo, glow, aura, sparks, floating fragments or floor shadow.\nPose: forward talon STRIKE. Body pitches toward RIGHT, both hooked talons thrust FORWARD RIGHT and spread claws, wings sweep BACK LEFT for propulsion. Ring still held by one talon. Clear extension from wind-up, human head looks right, entire wings and ring inside canvas.",
+      "file": "ba/ba_attack_02.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 428.4384348022859,
+        "width_ratio": 0.9059011164274322,
+        "anchor_x": 0.5,
+        "anchor_y": 0.829,
+        "baseline": 400
+      },
+      "bytes": 35060
+    },
+    {
+      "id": "ba",
+      "pose": "hit_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-b0c927fd-652a-455b-8918-ce95f6430529.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is Ba's approved exact identity; images 2\u20134 style only. Same serene bearded human head with long carved hair on a FALCON body, bone and ink feathers with blood-red tips. Exactly one human head, TWO falcon wings, TWO small bird talons, ONE falcon tail. No human arms, hands or legs. ONE talon grips the TOP of ONE bone/ink Egyptian shen ring: empty circular loop with a short straight bar tangent to its BOTTOM, never a center crossbar. Preserve face, beard, feather colors and proportions while creating a substantially new pose. Strict RIGHT side profile, one visible human eye. Full bird within square 512 \u00d7 512 transparent canvas, body centered x=256, talons hover around y=400. All wing tips, hair, ring and tail fully inside clear padding, no clipping. No gold, halo, glow, aura, sparks, floating fragments or floor shadow.\nPose: recoil backward LEFT. Body tipped back, human head snapped upward and back while facing RIGHT, both wings flung UP and apart, two talons bracing forward. Ring stays gripped, no floating feathers or effects.",
+      "file": "ba/ba_hit_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 430,
+        "width_ratio": 0.9202551834130781,
+        "anchor_x": 0.5,
+        "anchor_y": 0.798,
+        "baseline": 400
+      },
+      "bytes": 36963
+    },
+    {
+      "id": "ba",
+      "pose": "death_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-0162fc65-4554-47d0-962e-9571a7823d51.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is Ba's approved exact identity; images 2\u20134 style only. Same serene bearded human head with long carved hair on a FALCON body, bone and ink feathers with blood-red tips. Exactly one human head, TWO falcon wings, TWO small bird talons, ONE falcon tail. No human arms, hands or legs. ONE talon grips the TOP of ONE bone/ink Egyptian shen ring: empty circular loop with a short straight bar tangent to its BOTTOM, never a center crossbar. Preserve face, beard, feather colors and proportions while creating a substantially new pose. Strict RIGHT side profile, one visible human eye. Full bird within square 512 \u00d7 512 transparent canvas, body centered x=256, talons hover around y=400. All wing tips, hair, ring and tail fully inside clear padding, no clipping. No gold, halo, glow, aura, sparks, floating fragments or floor shadow.\nPose: dead bird CRUMPLED ON GROUND, body and two folded wings resting at y=480. Human head bowed limp toward RIGHT, closed eye, two talons slack with ONE still touching/gripping the shen ring lying at its side. Two wings folded over the body, low collapsed silhouette; no hover, upright perch or raised wings.",
+      "file": "ba/ba_death_01.png",
+      "alpha_noise_floor": 8,
+      "normalization": {
+        "target_width": 460,
+        "width_ratio": 0.9609250398724083,
+        "anchor_x": 0.5,
+        "baseline": 480
+      },
+      "bytes": 28408
+    },
+    {
+      "id": "ba",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-917f189e-d117-45de-a540-0c3a2c90c18c.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nEdit target image 1, Ba portrait. Preserve the exact three-quarter human face, beard, hair, BOTH eyes, feathered falcon chest, two raised wings, red/bone/ink palette and carved style. Fix ONLY framing: pull back slightly so the ENTIRE silhouette including every wing tip is visible with at least 6% clear transparent padding at top, left, right and bottom. Do not crop a single feather tip. Keep vertical 3:4 aspect, face in upper half, head and chest only, no full body or legs. No gold, glow, aura, halo, sparks, floating fragments or shadow. True transparent alpha surrounds every contour.",
+      "file": "ba/ba_portrait.png",
+      "alpha_noise_floor": 8,
+      "bytes": 104409
     }
   ],
   "completed": [
@@ -6187,13 +6307,13 @@
     "harpy",
     "typhon",
     "fenrir",
-    "jormungandr"
+    "jormungandr",
+    "ba"
   ],
-  "active": "ba",
+  "active": "apep",
   "status": "in_progress",
   "pending": {
     "remaining_deities": [
-      "ba",
       "apep",
       "ammit"
     ]
@@ -6258,7 +6378,8 @@
       "harpy",
       "typhon",
       "fenrir",
-      "jormungandr"
+      "jormungandr",
+      "ba"
     ],
     "athena_battle": "approved",
     "athena_portrait": "approved_three_quarter",
@@ -6315,7 +6436,8 @@
     "harpy": "approved",
     "typhon": "approved",
     "fenrir": "approved",
-    "jormungandr": "approved"
+    "jormungandr": "approved",
+    "ba": "approved"
   },
   "rejected_frames": [
     {
@@ -7054,6 +7176,20 @@
       "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-becd574d-9471-4449-89a3-6982f893dc36.png",
       "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput image 1 is the exact J\u00f6rmungandr identity reference. Images 2\u20134 are style only. Preserve this same ONE continuous thick ink-black serpent with bone belly plates, blood-red diamond markings along its back, red and ink neck spines, heavy wedge head, bone fangs and one red eye. One head and one tapered tail, no legs or wings. Generate a new pose; preserve head size, body thickness and carved scale style while changing the coils and neck. Strict RIGHT side profile. Full serpent within square 512 \u00d7 512 transparent canvas, resting coils at y=480, x=256, about 460 px wide. Entire jaw, tongue, spines, coils and tail inside clear padding. No gold, aura, glow, sparks, floating fragments, fire, water or floor shadow.\nPose: slither phase B. Alternate the undulating body: the right hump lifts while left hump lowers and slides forward, shifting grounded loops. Reared head slightly lower and further forward than phase A. One connected snake.",
       "rejection_reason": "Head moves, but ground coils are almost unchanged from walk_01; alternate slither needs clearer hump shift."
+    },
+    {
+      "id": "ba",
+      "pose": "idle_01",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-de45e817-d723-482b-99e9-ffb7a23102ed.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput images 1\u20133: style references only.\nSubject: Ba, the soul-bird. A falcon's body with a calm BEARDED HUMAN HEAD, wings half-raised, small hooked bird talons, ONE talon holding ONE shen ring. Bone and ink feathers with blood-red wing tips. Quick and light. Human head on the bird body defines the silhouette. Shen ring is bone and ink, never gold.\nPose: hovering idle, wings HALF RAISED behind bird shoulders. Exactly one human head, two falcon wings, two bird legs/talons, one falcon tail. NO human arms, hands, torso or legs. Strict RIGHT side profile, one visible human eye. Full bird inside square 512 \u00d7 512 transparent canvas, body centered x=256; lowest talons around y=400, generous empty gap below to show flight. Bird feathers and shen ring fully included with 5% clear padding, width about 430 px. Upper-left hard light, flat carved print. No halo, glow, aura, gold, sparks, floating fragments, ground shadow or floor.",
+      "rejection_reason": "Held ring has a center crossbar, resembling theta rather than a shen ring with its bar at the base."
+    },
+    {
+      "id": "ba",
+      "pose": "portrait",
+      "path": "/Users/dhuovinen/.codex/generated_images/01a0fbc8-9f38-73f2-92e1-ab82fb28bbe7/exec-57adc642-e90b-4e10-b43e-0a2adaa90196.png",
+      "prompt": "Use case: stylized-concept. Asset: single production game sprite, Bold Woodcut (Clean), exactly one character. Match the approved references' chisel-edged thick ink outlines, flat graphic fills and severe mythic hand-carved style; do NOT copy their gold, backgrounds or floor marks. Uniform heavy line weight, minimal hatching, simple hard-edged shadow shapes, light upper left. Strict palette bone #EDE6D6, ink #1A1A1E, blood #8C2F20 (lit red #C4442E), optional bone/ink mixed greys. NO gold, yellow, amber, bronze, metallic shine, golden trim, gold ornaments or gold weapon highlights. No brown, tan, orange or leather-brown accents: materials use bone, ink and blood only. Team neutral. Genuine transparent RGBA alpha background, no matte, no checkerboard baked into pixels, no ground shadow, floor, baseline drawing, text, border, watermark. No gradients, airbrush, soft brushwork, photorealism, 3D. Keep the entire character and weapon visible with no clipping. NO aura, glow, sparks, particles or floating fragments.\nInput 1 exact Ba identity, inputs 2\u20134 style only. NEW vertical 3:4 portrait 768 \u00d7 1024, head and feathered chest ONLY. Calm BEARDED HUMAN FACE on the same falcon body, three-quarter view turned slightly RIGHT, BOTH human eyes visible, both bird shoulders. Same long carved hair and bone/ink feathers with red tips. Wings raised behind as a framing shape, fully include all wing tips inside 6% clear padding. Face in UPPER HALF, no full bird body, talons or tail. No human arms or torso. Genuine transparent background. No gold, halo, glow, aura, sparks, floating fragments or floor shadow.",
+      "rejection_reason": "Wing tips touch canvas edges; portrait needs clear transparent padding and complete feather contours."
     }
   ]
 }
