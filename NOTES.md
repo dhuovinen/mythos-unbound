@@ -114,16 +114,17 @@ The game performs no diagnostic analysis and makes no model requests.
 
 ## Branches
 
-- `main` — the original line of development.
-- `olympus` — a variant of Mythos Unbound that evolves independently of `main`. It was forked from
+- `main` is the current game and the GitHub default branch. Every push runs the tests and deploys
+  the landing page and game to https://dhuovinen.github.io/mythos-unbound/
+  (`.github/workflows/pages.yml`). It was named `olympus` until 2026-10-06. It was forked from
   `feat/status-readout` (commit `2280032`, the Mythos Unbound rename), which carries everything
-  through the Egyptian pantheon, deck building, the battle report and the admin panel; `main` had
-  none of that at the time. `olympus` is not expected to merge back, so changes made on one line do
-  not flow to the other automatically — port them deliberately (cherry-pick) when wanted.
+  through the Egyptian pantheon, deck building, the battle report and the admin panel.
+- `legacy-main` is the original line of development, previously named `main`. It is archived, and
+  changes don't flow between it and `main`.
 
 ## Olympus: visual overhaul (in progress)
 
-The `olympus` branch is about looks; gameplay is unchanged.
+The Olympus work (formerly the `olympus` branch, now `main`) is about looks; gameplay is unchanged.
 
 - **Backdrops — done.** `src/render/backdrops.ts`: Greek, Norse, Egyptian and an open-world city,
   plus a themed base for each. The admin panel's *Battlefield* setting is `Auto` by default: one
