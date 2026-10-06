@@ -5,3 +5,6 @@ dist/
 
 # WP-9 art tooling artefacts
 art/roster/__pycache__/
+
+# Landing page + game bundle for GitHub Pages (npm run build:site)
+_site/

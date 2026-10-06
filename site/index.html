@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mythos Unbound</title>
+<meta name="description" content="A browser battler where 66 gods, titans and heroes fight harder, or refuse to fight at all, depending on who they face. Greek, Norse and Egyptian pantheons. Free to play." />
+<meta name="theme-color" content="#141010" />
+<meta property="og:title" content="Mythos Unbound" />
+<meta property="og:description" content="Gods remember their grudges. A free browser battler where family ties decide every fight." />
+<meta property="og:image" content="assets/scenes/battle.webp" />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #141010;
+    --ink-2: #1c1716;
+    --ink-3: #26201e;
+    --line: #3a3229;
+    --bone: #ede6d6;
+    --bone-dim: #b8ac95;
+    --blood: #b8402a;
+    --blood-dark: #8c2f20;
+    --greek: #8fb4e8;
+    --norse: #7fd6d0;
+    --egyptian: #e19a7e;
+    --display: 'Cinzel', Georgia, serif;
+    --body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --max: 1180px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--bone);
+    font: 400 17px/1.6 var(--body);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  .wrap { width: min(var(--max), 100% - 32px); margin-inline: auto; }
+  .eyebrow {
+    font: 600 12px/1 var(--body);
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--blood);
+  }
+  h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: .02em; margin: 0; }
+  h2 { font-size: clamp(30px, 4.4vw, 50px); line-height: 1.1; margin: 14px 0 16px; }
+  .lede { color: var(--bone-dim); max-width: 62ch; font-size: 18px; margin: 0; }
+  section { padding: clamp(72px, 10vw, 128px) 0; position: relative; }
+
+  /* ---------- buttons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 15px 26px; border-radius: 4px;
+    font: 600 15px/1 var(--body); letter-spacing: .06em; text-transform: uppercase;
+    text-decoration: none; border: 1px solid var(--line);
+    transition: transform .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn.primary { background: var(--blood-dark); border-color: var(--blood); color: var(--bone); box-shadow: 0 8px 30px -10px rgba(184,64,42,.7); }
+  .btn.primary:hover { background: var(--blood); }
+  .btn.ghost { background: rgba(237,230,214,.04); }
+  .btn.ghost:hover { border-color: var(--bone-dim); }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+
+  /* ---------- nav ---------- */
+  nav {
+    position: fixed; inset: 0 0 auto; z-index: 20;
+    transition: background .25s ease, border-color .25s ease;
+    border-bottom: 1px solid transparent;
+  }
+  nav.scrolled { background: rgba(20,16,16,.88); backdrop-filter: blur(10px); border-color: var(--line); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+  .brand { font: 700 18px/1 var(--display); letter-spacing: .08em; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+  .brand img { width: 26px; height: 26px; }
+  .nav-links { display: flex; align-items: center; gap: 28px; font-size: 14px; }
+  .nav-links a { text-decoration: none; color: var(--bone-dim); }
+  .nav-links a:hover { color: var(--bone); }
+  .nav-links .btn { padding: 10px 18px; font-size: 13px; color: var(--bone); }
+  @media (max-width: 760px) { .nav-links a:not(.btn) { display: none; } }
+
+  /* ---------- hero ---------- */
+  .hero {
+    min-height: 100svh; padding: 110px 0 60px;
+    display: grid; align-items: center;
+    background:
+      radial-gradient(ellipse 70% 55% at 50% 62%, rgba(140,47,32,.30), transparent 70%),
+      radial-gradient(ellipse 120% 80% at 50% 120%, #2a1714, transparent 60%),
+      var(--ink);
+    overflow: hidden;
+  }
+  .hero-grid { display: grid; grid-template-columns: .9fr 1.35fr; gap: 40px; align-items: center; }
+  .hero h1 {
+    font-size: clamp(48px, 6.6vw, 92px); font-weight: 900; line-height: .92;
+    letter-spacing: .01em; margin: 18px 0 22px;
+    text-shadow: 0 4px 40px rgba(0,0,0,.6);
+  }
+  .hero h1 span { display: block; color: var(--blood); }
+  .hero .tag { font: 500 clamp(20px, 2.2vw, 26px)/1.35 var(--display); margin: 0 0 18px; max-width: 26ch; }
+  .hero .lede { margin-bottom: 34px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 14px; }
+  .hero-meta { display: flex; gap: 28px; margin-top: 40px; color: var(--bone-dim); font-size: 14px; flex-wrap: wrap; }
+  .hero-meta b { display: block; font: 700 28px/1 var(--display); color: var(--bone); margin-bottom: 6px; }
+
+  .trio {
+    position: relative; height: min(74vh, 640px); margin-inline: -4% -18%;
+    -webkit-mask-image: linear-gradient(to bottom, #000 74%, transparent 99%);
+            mask-image: linear-gradient(to bottom, #000 74%, transparent 99%);
+  }
+  .trio figure { position: absolute; margin: 0; bottom: 0; filter: drop-shadow(0 20px 30px rgba(0,0,0,.75)); }
+  .trio img { height: 100%; width: auto; max-width: none; }
+  .trio .t-odin { left: 0; height: 70%; bottom: 4%; z-index: 1; }
+  .trio .t-anubis { right: 0; height: 72%; bottom: 4%; z-index: 1; }
+  .trio .t-odin img, .trio .t-anubis img { filter: brightness(.8); }
+  .trio .t-zeus { left: 50%; transform: translateX(-47%); height: 94%; z-index: 2; }
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .trio { height: 70vw; max-height: 520px; order: -1; margin: 0 -16px; }
+    .trio .t-odin { left: -8%; }
+    .trio .t-anubis { right: -10%; }
+  }
+
+  /* ---------- blood remembers ---------- */
+  .bonds { background: linear-gradient(to bottom, var(--ink), var(--ink-2) 30%, var(--ink-2) 70%, var(--ink)); }
+  .bond-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 54px; }
+  .bond {
+    background: var(--ink); border: 1px solid var(--line); border-radius: 8px;
+    padding: 26px 26px 24px; display: grid; gap: 18px;
+    position: relative; overflow: hidden;
+  }
+  .bond::before {
+    content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: var(--accent);
+  }
+  .duel { display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 6px; }
+  .duel figure { margin: 0; text-align: center; }
+  .duel img {
+    width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top;
+    border-radius: 6px;
+    background: radial-gradient(ellipse at 50% 40%, #2c2422, #171212 75%);
+  }
+  .duel figure.mirror img { transform: scaleX(-1); }
+  .duel figcaption { font: 700 16px/1 var(--display); margin-top: 10px; }
+  .duel .vs {
+    align-self: center; font: 900 20px/1 var(--display); color: var(--accent);
+    width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center;
+    border: 1px solid var(--accent); background: var(--ink); margin-bottom: 26px;
+  }
+  .mods { display: grid; gap: 10px; }
+  .mod { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: baseline; }
+  .mod .name {
+    font: 700 12px/1 var(--body); letter-spacing: .14em; text-transform: uppercase;
+    padding: 6px 9px; border-radius: 3px; color: var(--ink); background: var(--accent); white-space: nowrap;
+  }
+  .mod p { margin: 0; color: var(--bone-dim); font-size: 15px; line-height: 1.5; }
+  .mod p b { color: var(--bone); font-weight: 600; }
+  .bond-note { margin-top: 34px; color: var(--bone-dim); font-size: 15px; display: flex; gap: 12px; align-items: flex-start; max-width: 80ch; }
+  .bond-note::before { content: "✦"; color: var(--blood); }
+  @media (max-width: 860px) { .bond-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- battle shot ---------- */
+  .shot {
+    margin-top: 48px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+    box-shadow: 0 40px 80px -30px rgba(0,0,0,.9);
+  }
+  .shot-caption { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: 16px; color: var(--bone-dim); font-size: 14px; }
+
+  /* ---------- pantheons ---------- */
+  .realm {
+    position: relative; padding: clamp(64px, 8vw, 104px) 0; overflow: hidden; isolation: isolate;
+    border-top: 1px solid var(--line);
+  }
+  .realm-bg { position: absolute; inset: 0; z-index: -1; }
+  .realm-bg::before {
+    content: ""; position: absolute; inset: 0;
+    background: var(--bg) center 42% / cover no-repeat;
+    filter: brightness(1.55) saturate(1.15);
+  }
+  .realm-bg::after {
+    content: ""; position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(20,16,16,.72) 0%, rgba(20,16,16,.4) 30%, transparent 56%),
+      linear-gradient(to bottom, rgba(20,16,16,.35), transparent 16%, transparent 84%, rgba(20,16,16,.85));
+  }
+  .realm .reveal:first-child { text-shadow: 0 2px 14px rgba(0,0,0,.85), 0 1px 2px rgba(0,0,0,.9); }
+  .realm p { color: var(--bone) !important; }
+  .realm-inner { display: grid; grid-template-columns: minmax(260px, 340px) 1fr; gap: 48px; align-items: center; }
+  .realm h3 { font-size: clamp(34px, 4.4vw, 54px); color: var(--accent); margin: 10px 0 14px; }
+  .realm .eyebrow { color: var(--bone-dim); }
+  .realm p { color: var(--bone-dim); margin: 0 0 18px; }
+  .realm .feud { font-family: var(--display); color: var(--bone); font-size: 18px; line-height: 1.45; border-left: 2px solid var(--accent); padding-left: 16px; }
+  .lineup { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; align-items: end; }
+  .lineup figure { margin: 0; text-align: center; }
+  .lineup img {
+    width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top;
+    filter: drop-shadow(0 14px 18px rgba(0,0,0,.7));
+    transition: transform .25s ease;
+  }
+  .lineup figure:hover img { transform: translateY(-6px) scale(1.03); }
+  .lineup figcaption {
+    font: 600 13px/1.2 var(--body); margin-top: 8px; display: inline-block; padding: 5px 9px 6px;
+    background: rgba(20,16,16,.72); border-radius: 4px; backdrop-filter: blur(4px);
+  }
+  .lineup figcaption small { display: block; color: var(--accent); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; margin-top: 4px; }
+  @media (max-width: 900px) {
+    .realm-inner { grid-template-columns: 1fr; gap: 30px; }
+    .lineup { grid-template-columns: repeat(3, 1fr); }
+    .realm-bg::after { background: linear-gradient(to bottom, rgba(20,16,16,.6), rgba(20,16,16,.25) 45%, rgba(20,16,16,.8)); }
+  }
+
+  /* ---------- how it plays ---------- */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 50px; }
+  .step { border-top: 1px solid var(--line); padding-top: 22px; }
+  .step .n { font: 900 15px/1 var(--display); color: var(--blood); letter-spacing: .1em; }
+  .step h3 { font-size: 22px; margin: 12px 0 10px; }
+  .step p { margin: 0; color: var(--bone-dim); font-size: 15.5px; }
+  .tree-shot { margin-top: 56px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 36px; align-items: center; }
+  .tree-shot img { border-radius: 8px; border: 1px solid var(--line); box-shadow: 0 40px 80px -30px rgba(0,0,0,.9); }
+  .tree-shot blockquote { margin: 0; font: 500 clamp(22px, 2.4vw, 28px)/1.35 var(--display); }
+  .tree-shot blockquote span { color: var(--blood); }
+  .tree-shot cite { display: block; margin-top: 16px; font: 400 15px/1.5 var(--body); font-style: normal; color: var(--bone-dim); }
+  @media (max-width: 860px) { .steps, .tree-shot { grid-template-columns: 1fr; } }
+
+  /* ---------- roster ---------- */
+  .roster { background: var(--ink-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .roster-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; }
+  .filters button {
+    font: 600 13px/1 var(--body); letter-spacing: .06em; color: var(--bone-dim);
+    background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 10px 16px; cursor: pointer;
+  }
+  .filters button[aria-pressed="true"] { color: var(--ink); background: var(--bone); border-color: var(--bone); }
+  .grid66 { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 12px; margin-top: 36px; }
+  .unit {
+    margin: 0; background: var(--ink); border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
+    border-bottom: 2px solid var(--accent);
+  }
+  .unit img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; background: radial-gradient(ellipse at 50% 35%, #2a2321, #141010 75%); }
+  .unit figcaption { padding: 8px 10px 10px; font: 600 13px/1.2 var(--body); }
+  .unit figcaption small { display: block; color: var(--bone-dim); font-weight: 400; font-size: 11px; margin-top: 3px; letter-spacing: .04em; }
+  .unit[hidden] { display: none; }
+
+  /* ---------- final cta ---------- */
+  .final { text-align: center; padding-bottom: 90px; background: radial-gradient(ellipse 60% 70% at 50% 100%, rgba(140,47,32,.28), transparent 70%); }
+  .final h2 { font-size: clamp(36px, 5.6vw, 66px); }
+  .final .lede { margin: 0 auto 34px; }
+  .final .cta { justify-content: center; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--bone-dim); font-size: 13px; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--bone-dim); }
+
+  [data-p="g"] { --accent: var(--greek); }
+  [data-p="n"] { --accent: var(--norse); }
+  [data-p="e"] { --accent: var(--egyptian); }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .btn, .lineup img { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="favicon.svg" alt="" />Mythos Unbound</a>
+    <div class="nav-links">
+      <a href="#bonds">Blood ties</a>
+      <a href="#realms">Pantheons</a>
+      <a href="#roster">Roster</a>
+      <a class="btn primary" href="play/">Play free</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">A free browser battler</div>
+      <h1>Mythos <span>Unbound</span></h1>
+      <p class="tag">Gods remember their grudges.</p>
+      <p class="lede">Summon gods, titans and heroes into a battle line where every fight depends on family. Cronus strikes harder at his own children. Zeus strikes back harder at his father. Ares and Aphrodite won't fight each other.</p>
+      <div class="cta">
+        <a class="btn primary" href="play/">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5Z"/></svg>
+          Play in your browser
+        </a>
+        <a class="btn ghost" href="https://www.youtube.com/channel/UCBpBE4U2oinlcRt12nOFMgg" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12c0 1.6.2 3.2.5 4.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.3-1.6.5-3.2.5-4.8s-.2-3.2-.5-4.8ZM9.7 15.1V8.9l5.8 3.1-5.8 3.1Z"/></svg>
+          Watch the trailer
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div><b>66</b>units</div>
+        <div><b>3</b>pantheons</div>
+        <div><b>14</b>blood-tie effects</div>
+        <div><b>$0</b>no install</div>
+      </div>
+    </div>
+    <div class="trio" aria-hidden="true">
+      <figure class="t-odin"><img src="assets/units/odin-lg.webp" alt="" /></figure>
+      <figure class="t-anubis"><img src="assets/units/anubis-lg.webp" alt="" /></figure>
+      <figure class="t-zeus"><img src="assets/units/zeus-lg.webp" alt="" /></figure>
+    </div>
+  </div>
+</header>
+
+<section class="bonds" id="bonds">
+  <div class="wrap">
+    <div class="eyebrow reveal">The idea</div>
+    <h2 class="reveal">Blood remembers.</h2>
+    <p class="lede reveal">Every unit knows who it is facing. Parents, children, lovers, rivals and killers all change how a unit fights, and the effects are taken straight from the myths. Pick your deck with the family tree in mind.</p>
+
+    <div class="bond-grid">
+      <article class="bond reveal" data-p="g">
+        <div class="duel">
+          <figure><img src="assets/units/cronus-lg.webp" alt="Cronus" loading="lazy" /><figcaption>Cronus</figcaption></figure>
+          <div class="vs">vs</div>
+          <figure class="mirror"><img src="assets/units/zeus-lg.webp" alt="Zeus" loading="lazy" /><figcaption>Zeus</figcaption></figure>
+        </div>
+        <div class="mods">
+          <div class="mod"><span class="name">Filicide</span><p>The Devourer hits his own children for <b>×1.5 damage</b>.</p></div>
+          <div class="mod"><span class="name">Usurpation</span><p>A child turned on its father hits back for <b>×1.6</b>.</p></div>
+        </div>
+      </article>
+
+      <article class="bond reveal" data-p="g">
+        <div class="duel">
+          <figure><img src="assets/units/ares-lg.webp" alt="Ares" loading="lazy" /><figcaption>Ares</figcaption></figure>
+          <div class="vs">♥</div>
+          <figure class="mirror"><img src="assets/units/aphrodite-lg.webp" alt="Aphrodite" loading="lazy" /><figcaption>Aphrodite</figcaption></figure>
+        </div>
+        <div class="mods">
+          <div class="mod"><span class="name">Entranced</span><p>Lovers <b>refuse to strike each other</b>. One well-placed lover can take an enemy god out of the fight.</p></div>
+        </div>
+      </article>
+
+      <article class="bond reveal" data-p="n">
+        <div class="duel">
+          <figure><img src="assets/units/thor-lg.webp" alt="Thor" loading="lazy" /><figcaption>Thor</figcaption></figure>
+          <div class="vs">vs</div>
+          <figure class="mirror"><img src="assets/units/jormungandr-lg.webp" alt="Jörmungandr" loading="lazy" /><figcaption>Jörmungandr</figcaption></figure>
+        </div>
+        <div class="mods">
+          <div class="mod"><span class="name">Vengeance</span><p>Each killed the other at Ragnarök, so both deal <b>double damage and ignore armour</b>.</p></div>
+        </div>
+      </article>
+
+      <article class="bond reveal" data-p="e">
+        <div class="duel">
+          <figure><img src="assets/units/osiris-lg.webp" alt="Osiris" loading="lazy" /><figcaption>Osiris</figcaption></figure>
+          <div class="vs">vs</div>
+          <figure class="mirror"><img src="assets/units/set-lg.webp" alt="Set" loading="lazy" /><figcaption>Set</figcaption></figure>
+        </div>
+        <div class="mods">
+          <div class="mod"><span class="name">Vengeance</span><p>The murdered king strikes his brother for <b>×2, straight through armour</b>.</p></div>
+          <div class="mod"><span class="name">Wrath</span><p>Set hunts Horus at <b>×1.5</b>, and the hunted son fights back with <b>Defiance</b>.</p></div>
+        </div>
+      </article>
+    </div>
+
+    <p class="bond-note reveal">Blood doesn't cross pantheons. Fight a different mythology and every grudge goes quiet, which can also be a deliberate strategy. Allies matter too: family fighting side by side gains Kinship, and a blessing from a parent adds damage.</p>
+
+    <figure class="shot reveal" style="margin-inline:0">
+      <img src="assets/scenes/battle.webp" alt="A battle on Olympus. A Kinship effect fires over the battle line." loading="lazy" width="2028" height="1143" />
+    </figure>
+    <div class="shot-caption reveal"><span>In-game: a <b style="color:var(--norse)">Kinship</b> effect fires on the lane below Olympus.</span><span>Damage numbers show each effect as it happens.</span></div>
+  </div>
+</section>
+
+<div id="realms">
+  <section class="realm" data-p="g">
+    <div class="realm-bg" style="--bg:url(assets/scenes/greek.webp)"></div>
+    <div class="wrap realm-inner">
+      <div class="reveal">
+        <div class="eyebrow">Pantheon I</div>
+        <h3>Greek</h3>
+        <p>Olympus. Titans, gods and heroes, and the family that devoured its own children.</p>
+        <p class="feud">Hera persecutes Heracles. Athena and Ares are rivals. Cronus waits at the top of the tree.</p>
+      </div>
+      <div class="lineup reveal">
+        <figure><img src="assets/units/cronus.webp" alt="" loading="lazy" /><figcaption>Cronus<small>Titan</small></figcaption></figure>
+        <figure><img src="assets/units/zeus.webp" alt="" loading="lazy" /><figcaption>Zeus<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/hera.webp" alt="" loading="lazy" /><figcaption>Hera<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/athena.webp" alt="" loading="lazy" /><figcaption>Athena<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/heracles.webp" alt="" loading="lazy" /><figcaption>Heracles<small>Demigod</small></figcaption></figure>
+        <figure><img src="assets/units/typhon.webp" alt="" loading="lazy" /><figcaption>Typhon<small>Titan</small></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="realm" data-p="n">
+    <div class="realm-bg" style="--bg:url(assets/scenes/norse.webp)"></div>
+    <div class="wrap realm-inner">
+      <div class="reveal">
+        <div class="eyebrow">Pantheon II</div>
+        <h3>Norse</h3>
+        <p>Asgard and the fjords. Gods who know exactly how they die, and fight anyway.</p>
+        <p class="feud">Fenrir swallows Odin. Víðarr avenges him. Loki schemes against Baldr. Every fate is waiting for its moment.</p>
+      </div>
+      <div class="lineup reveal">
+        <figure><img src="assets/units/odin.webp" alt="" loading="lazy" /><figcaption>Odin<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/thor.webp" alt="" loading="lazy" /><figcaption>Thor<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/loki.webp" alt="" loading="lazy" /><figcaption>Loki<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/freyja.webp" alt="" loading="lazy" /><figcaption>Freyja<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/valkyrie.webp" alt="" loading="lazy" /><figcaption>Valkyrie<small>Legion</small></figcaption></figure>
+        <figure><img src="assets/units/fenrir.webp" alt="" loading="lazy" /><figcaption>Fenrir<small>Titan</small></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="realm" data-p="e">
+    <div class="realm-bg" style="--bg:url(assets/scenes/egyptian.webp)"></div>
+    <div class="wrap realm-inner">
+      <div class="reveal">
+        <div class="eyebrow">Pantheon III</div>
+        <h3>Egyptian</h3>
+        <p>The Nile. A murdered king, a vengeful son and the brother who killed him.</p>
+        <p class="feud">Set murders Osiris. Horus wants his throne back. Apep circles the sun.</p>
+      </div>
+      <div class="lineup reveal">
+        <figure><img src="assets/units/ra.webp" alt="" loading="lazy" /><figcaption>Ra<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/osiris.webp" alt="" loading="lazy" /><figcaption>Osiris<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/horus.webp" alt="" loading="lazy" /><figcaption>Horus<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/set.webp" alt="" loading="lazy" /><figcaption>Set<small>God</small></figcaption></figure>
+        <figure><img src="assets/units/anubis.webp" alt="" loading="lazy" /><figcaption>Anubis<small>Demigod</small></figcaption></figure>
+        <figure><img src="assets/units/apep.webp" alt="" loading="lazy" /><figcaption>Apep<small>Titan</small></figcaption></figure>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow reveal">How it plays</div>
+    <h2 class="reveal">Draft the family. Then break it.</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="n">01</div>
+        <h3>Pick from the family tree</h3>
+        <p>Choose a pantheon and build a deck from its family tree. Your three opening picks are revealed to the opponent, who drafts blind at the same time you do.</p>
+      </div>
+      <div class="step reveal">
+        <div class="n">02</div>
+        <h3>Summon with faith</h3>
+        <p>Faith builds up over time. Spend it to send units down the lane. You can have up to eight units on the field, but only two of them can be gods or titans.</p>
+      </div>
+      <div class="step reveal">
+        <div class="n">03</div>
+        <h3>Read your rival</h3>
+        <p>A strategy consultant explains the board as the battle goes. Its advice uses the same reasoning your opponent uses to make its moves.</p>
+      </div>
+    </div>
+    <div class="tree-shot">
+      <img class="reveal" src="assets/scenes/family-tree.webp" alt="The Greek family tree team picker, showing portraits joined by parent, spouse, lover and rival lines." loading="lazy" width="2000" height="1125" />
+      <div class="reveal">
+        <blockquote>Every line on the tree is a <span>reason to fight</span>, or a reason not to.</blockquote>
+        <cite>Hover a deity to light up its family: who it hesitates against, who it hunts, and who it would never touch.</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="roster" id="roster">
+  <div class="wrap">
+    <div class="roster-head">
+      <div>
+        <div class="eyebrow reveal">The roster</div>
+        <h2 class="reveal">Sixty-six legends.</h2>
+        <p class="lede reveal">Each unit has its own inked portrait and its own battle animations.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter by pantheon">
+        <button type="button" data-f="all" aria-pressed="true">All 66</button>
+        <button type="button" data-f="g" aria-pressed="false">Greek</button>
+        <button type="button" data-f="n" aria-pressed="false">Norse</button>
+        <button type="button" data-f="e" aria-pressed="false">Egyptian</button>
+      </div>
+    </div>
+    <div class="grid66" id="grid66"></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="eyebrow">Free · Runs in your browser · No account</div>
+    <h2>Choose your family.</h2>
+    <p class="lede">No download and no account. Open the page and pick a pantheon.</p>
+    <div class="cta">
+      <a class="btn primary" href="play/">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5Z"/></svg>
+        Play Mythos Unbound
+      </a>
+      <a class="btn ghost" href="https://www.youtube.com/channel/UCBpBE4U2oinlcRt12nOFMgg" target="_blank" rel="noopener">YouTube</a>
+      <a class="btn ghost" href="https://github.com/dhuovinen/mythos-unbound" target="_blank" rel="noopener">Source on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mythos Unbound</span>
+    <span><a href="https://github.com/dhuovinen/mythos-unbound">GitHub</a> · <a href="https://www.youtube.com/channel/UCBpBE4U2oinlcRt12nOFMgg">YouTube</a></span>
+  </div>
+</footer>
+
+<script>
+  const ROSTER = [["hoplite","Hoplite","g","c"],["satyr","Satyr","g","c"],["harpy","Harpy","g","c"],["heracles","Heracles","g","d"],["perseus","Perseus","g","d"],["achilles","Achilles","g","d"],["asclepius","Asclepius","g","d"],["orpheus","Orpheus","g","d"],["dionysus","Dionysus","g","d"],["aeneas","Aeneas","g","d"],["zeus","Zeus","g","g"],["hera","Hera","g","g"],["poseidon","Poseidon","g","g"],["hades","Hades","g","g"],["athena","Athena","g","g"],["ares","Ares","g","g"],["aphrodite","Aphrodite","g","g"],["hephaestus","Hephaestus","g","g"],["apollo","Apollo","g","g"],["artemis","Artemis","g","g"],["cronus","Cronus","g","t"],["typhon","Typhon","g","t"],["einherjar","Einherjar","n","c"],["draugr","Draugr","n","c"],["valkyrie","Valkyrie","n","c"],["sigurd","Sigurd","n","d"],["vidar","Víðarr","n","d"],["brynhildr","Brynhildr","n","d"],["hodr","Höðr","n","d"],["vali","Váli","n","d"],["magni","Magni","n","d"],["skadi","Skaði","n","d"],["odin","Odin","n","g"],["thor","Thor","n","g"],["loki","Loki","n","g"],["baldr","Baldr","n","g"],["frigg","Frigg","n","g"],["freyja","Freyja","n","g"],["freyr","Freyr","n","g"],["tyr","Týr","n","g"],["heimdall","Heimdall","n","g"],["njord","Njörðr","n","g"],["fenrir","Fenrir","n","t"],["jormungandr","Jörmungandr","n","t"],["medjay","Medjay","e","c"],["shabti","Shabti","e","c"],["ba","Ba","e","c"],["anubis","Anubis","e","d"],["wepwawet","Wepwawet","e","d"],["imhotep","Imhotep","e","d"],["nefertem","Nefertem","e","d"],["maahes","Maahes","e","d"],["bes","Bes","e","d"],["khonsu","Khonsu","e","d"],["ra","Ra","e","g"],["osiris","Osiris","e","g"],["isis","Isis","e","g"],["set","Set","e","g"],["horus","Horus","e","g"],["nephthys","Nephthys","e","g"],["thoth","Thoth","e","g"],["hathor","Hathor","e","g"],["sekhmet","Sekhmet","e","g"],["ptah","Ptah","e","g"],["apep","Apep","e","t"],["ammit","Ammit","e","t"]];
+  const PANTHEON = { g: 'Greek', n: 'Norse', e: 'Egyptian' };
+  const TIER = { c: 'Legion', d: 'Demigod', g: 'God', t: 'Titan' };
+  const TIER_ORDER = { t: 0, g: 1, d: 2, c: 3 };
+
+  const grid = document.getElementById('grid66');
+  const sorted = [...ROSTER].sort((a, b) => TIER_ORDER[a[3]] - TIER_ORDER[b[3]]);
+  for (const [id, name, p, tier] of sorted) {
+    const fig = document.createElement('figure');
+    fig.className = 'unit';
+    fig.dataset.p = p;
+    fig.innerHTML = `<img src="assets/units/${id}.webp" alt="${name}" loading="lazy" width="360" height="480"><figcaption>${name}<small>${PANTHEON[p]} · ${TIER[tier]}</small></figcaption>`;
+    grid.append(fig);
+  }
+
+  document.querySelectorAll('.filters button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filters button').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      const f = btn.dataset.f;
+      grid.querySelectorAll('.unit').forEach((u) => { u.hidden = f !== 'all' && u.dataset.p !== f; });
+    });
+  });
+
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', scrollY > 30);
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>
+</body>
+</html>

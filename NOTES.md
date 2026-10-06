@@ -28,6 +28,12 @@ npm run typecheck # tsc --noEmit
 npm run build     # typecheck + vite build
 ```
 
+Landing page: `site/index.html` (static, no build step). While the dev server runs, preview it at
+**http://localhost:3033/site/index.html**. `npm run build:site` produces the deployable bundle in
+`_site/` (git-ignored): the landing page at the root and the game, built with relative paths, at
+`_site/play/`. Its art lives in `site/assets/` (WebP exports of the roster portraits and the three
+pantheon backdrops).
+
 The main game keeps options, faith and summon cards in a vertical side rail. The battlefield uses
 the remaining space; on phones the controls move below it. Bases and figures have extra edge
 clearance, and the framing fits long rigs and the full unit-size range. This changes rendering only;
