@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@700;800&display=block" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1280px; height: 720px; overflow: hidden; background: #0b0808; }
+  .t { position: relative; width: 1280px; height: 720px; overflow: hidden; color: #ede6d6; font-family: Inter, sans-serif; }
+  .bg { position: absolute; inset: 0; background-size: cover; background-position: center 40%; filter: brightness(.55) saturate(1.1); }
+  .glow { position: absolute; inset: 0; background: radial-gradient(ellipse 55% 70% at 50% 45%, rgba(190,50,28,.55), transparent 70%), linear-gradient(to top, rgba(8,6,6,.95) 0%, rgba(8,6,6,.2) 40%, transparent 60%); }
+  .p { position: absolute; bottom: -20px; filter: drop-shadow(0 0 2px #000) drop-shadow(0 20px 30px rgba(0,0,0,.9)); }
+  .p img { height: 100%; display: block; }
+  .mirror img { transform: scaleX(-1); }
+  .scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 230px; background: linear-gradient(to top, rgba(8,6,6,.97) 0%, rgba(8,6,6,.9) 45%, transparent 100%); }
+  .title { position: absolute; left: 0; right: 0; bottom: 40px; text-align: center; font: 900 100px/0.95 Cinzel, serif; letter-spacing: .01em;
+    -webkit-text-stroke: 3px #0b0808; paint-order: stroke fill; text-shadow: 0 6px 0 #0b0808, 0 10px 40px rgba(0,0,0,.95); }
+  .title span { color: #d8482e; }
+  .hook { position: absolute; top: 30px; left: 0; right: 0; text-align: center; font: 900 54px/1 Cinzel, serif; letter-spacing: .02em;
+    -webkit-text-stroke: 2px #0b0808; paint-order: stroke fill; text-shadow: 0 4px 0 #0b0808, 0 8px 30px #000; }
+  .bolt { position: absolute; left: 50%; top: 120px; transform: translateX(-50%); font: 900 150px/1 Cinzel, serif; color: #d8482e; text-shadow: 0 0 40px rgba(216,72,46,.9), 0 6px 0 #0b0808; -webkit-text-stroke: 3px #0b0808; paint-order: stroke fill; }
+  .chip { position: absolute; font: 800 26px/1 Inter, sans-serif; letter-spacing: .1em; color: #120d0c; background: #8fb4e8; padding: 10px 14px; border-radius: 5px; border: 3px solid #0b0808; box-shadow: 0 8px 20px rgba(0,0,0,.7); }
+</style>
+</head>
+<body>
+<!-- Option A: Cronus vs Zeus -->
+<div class="t" id="a">
+  <div class="bg" style="background-image:url(site/assets/scenes/greek.webp)"></div>
+  <div class="glow"></div>
+  <div class="p" style="height:640px;left:40px"><img src="site/assets/units/cronus-lg.webp" /></div>
+  <div class="p mirror" style="height:660px;right:30px"><img src="site/assets/units/zeus-lg.webp" /></div>
+  <div class="bolt">VS</div>
+  <div class="chip" style="left:120px;top:420px;transform:rotate(-4deg)">FILICIDE ×1.5</div>
+  <div class="chip" style="right:110px;top:420px;transform:rotate(4deg)">USURPATION ×1.6</div>
+  <div class="hook">Gods hold grudges</div>
+  <div class="scrim"></div>
+  <div class="title">Mythos <span>Unbound</span></div>
+</div>
+<!-- Option B: three pantheons -->
+<div class="t" id="b">
+  <div class="bg" style="background-image:url(site/assets/scenes/norse.webp);clip-path:inset(0 66.6% 0 0)"></div>
+  <div class="bg" style="background-image:url(site/assets/scenes/greek.webp);clip-path:inset(0 33.3% 0 33.3%)"></div>
+  <div class="bg" style="background-image:url(site/assets/scenes/egyptian.webp);clip-path:inset(0 0 0 66.6%)"></div>
+  <div class="glow"></div>
+  <div class="p" style="height:560px;left:10px"><img src="site/assets/units/odin-lg.webp" /></div>
+  <div class="p" style="height:560px;right:-10px"><img src="site/assets/units/anubis-lg.webp" /></div>
+  <div class="p" style="height:690px;left:50%;transform:translateX(-50%)"><img src="site/assets/units/zeus-lg.webp" /></div>
+  <div class="hook">66 gods · 3 pantheons</div>
+  <div class="scrim"></div>
+  <div class="title">Mythos <span>Unbound</span></div>
+</div>
+</body>
+</html>
