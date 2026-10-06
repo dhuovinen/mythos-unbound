@@ -34,6 +34,14 @@ Landing page: `site/index.html` (static, no build step). While the dev server ru
 `_site/play/`. Its art lives in `site/assets/` (WebP exports of the roster portraits and the three
 pantheon backdrops).
 
+Trailer: the source is in `promo/trailer-src/`, and the rendered `.mp4` files in `promo/` are git-ignored.
+With the dev server running, work from a scratch folder that contains `node_modules/playwright`, the
+copied scripts and a `clips/` folder. Record footage with `capture.mjs` (one battle per run; deck and
+opponent deck are passed as JSON) and `tree.mjs`. Generate the score with
+`uv run --no-project --with numpy --with scipy python score.py score.wav`, render frames with
+`node render.mjs h` (16:9) or `node render.mjs v` (9:16), then encode with ffmpeg: `loudnorm` to
+-14 LUFS, libx264 at CRF 17, AAC at 320k. `render.mjs` reads the landing-page art from `site/`.
+
 The main game keeps options, faith and summon cards in a vertical side rail. The battlefield uses
 the remaining space; on phones the controls move below it. Bases and figures have extra edge
 clearance, and the framing fits long rigs and the full unit-size range. This changes rendering only;
@@ -148,6 +156,13 @@ The `olympus` branch is about looks; gameplay is unchanged.
   Scripted stage waves are exempt but count toward the totals. The battlefield also fills the window
   and fans units across four depth rows (visual only).
 - **Next:** evaluate the full rig roster and pantheon feel, then refine the selected direction; hand-drawn portraits still take priority over rig portraits.
+
+## Backlog
+
+- **Trailer intro: show god names with their portraits.** Every portrait shown in the opening and the
+  pairing shots (Cronus, Zeus, Ares, Aphrodite, Thor, Jörmungandr) needs its name on screen. Source:
+  `promo/trailer-src/trailer.html` (`s1` and `duel`). Re-render with `render.mjs`, then re-encode
+  (see How to run).
 
 ## Status
 

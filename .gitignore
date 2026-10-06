@@ -8,3 +8,6 @@ art/roster/__pycache__/
 
 # Landing page + game bundle for GitHub Pages (npm run build:site)
 _site/
+
+# Rendered trailer videos (large; uploaded to YouTube instead)
+promo/*.mp4

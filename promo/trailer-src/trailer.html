@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@500;600;700&display=block" rel="stylesheet" />
+<style>
+  :root { --bone: #ede6d6; --dim: #b8ac95; --blood: #c4442c; --greek: #8fb4e8; --norse: #7fd6d0; --egyptian: #e19a7e; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #0b0808; overflow: hidden; }
+  #root { position: relative; overflow: hidden; background: #0b0808; color: var(--bone); font-family: Inter, sans-serif; }
+  #stage { position: absolute; inset: 0; }
+  .layer { position: absolute; inset: 0; display: none; }
+  .center { display: grid; place-items: center; text-align: center; }
+  canvas { position: absolute; inset: 0; }
+  .glow { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 55% at 50% 60%, rgba(150,40,24,.38), transparent 70%); }
+  .vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 85% 80% at 50% 50%, transparent 55%, rgba(0,0,0,.75)); }
+  h1, .cin { font-family: Cinzel, serif; }
+  .line { font-family: Cinzel, serif; font-weight: 700; letter-spacing: .04em; text-shadow: 0 4px 30px rgba(0,0,0,.9); }
+  .portrait { position: absolute; bottom: 0; filter: drop-shadow(0 30px 40px rgba(0,0,0,.8)); }
+  .portrait img { height: 100%; width: auto; display: block; }
+  .tag { position: absolute; z-index: 6; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .tag b { font: 700 var(--tagsize, 30px)/1 Inter, sans-serif; letter-spacing: .16em; color: #120d0c; background: var(--accent); padding: 12px 18px 11px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,.6); }
+  .tag span { font: 600 var(--subsize, 22px)/1.2 Inter, sans-serif; color: var(--bone); letter-spacing: .06em; background: rgba(12,9,9,.82); padding: 7px 12px; border-radius: 4px; }
+  .vs { position: absolute; z-index: 5; font: 900 var(--vssize, 64px)/1 Cinzel, serif; color: var(--blood); text-shadow: 0 0 30px rgba(196,68,44,.8); }
+  .label { position: absolute; left: 6%; bottom: 9%; }
+  .label b { display: block; font: 900 var(--labsize, 72px)/1 Cinzel, serif; color: var(--accent); text-shadow: 0 4px 24px rgba(0,0,0,.95); letter-spacing: .04em; }
+  .label span { display: block; font: 600 var(--labsub, 22px)/1 Inter, sans-serif; letter-spacing: .3em; text-transform: uppercase; color: var(--bone); margin-top: 12px; text-shadow: 0 2px 10px #000; }
+  #wall { position: absolute; inset: 0; display: grid; }
+  #wall div { overflow: hidden; background: radial-gradient(ellipse at 50% 35%, #2a2321, #120e0e 75%); border: 1px solid #000; }
+  #wall img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+  .band { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); padding: 34px 0; background: rgba(12,9,9,.86); text-align: center; border-top: 2px solid var(--blood); border-bottom: 2px solid var(--blood); }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+  #black { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; }
+  #grain { position: absolute; inset: 0; opacity: .07; mix-blend-mode: overlay; pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div id="stage">
+    <!-- S1 intro -->
+    <div class="layer" id="s1">
+      <div class="glow"></div>
+      <div class="portrait" id="s1p"><img src="site/assets/units/cronus-lg.webp" /></div>
+      <div class="center" style="position:absolute;inset:0"><div class="line" id="s1t">Every god has a family.</div></div>
+    </div>
+    <!-- duel layers S2-S4 -->
+    <div class="layer" id="duel">
+      <div class="glow"></div>
+      <div class="line" id="duelHead" style="position:absolute;left:0;right:0;text-align:center"></div>
+      <div class="portrait" id="pa"><img /></div>
+      <div class="portrait" id="pb"><img /></div>
+      <div class="vs" id="vs">VS</div>
+      <div class="tag" id="ta"><b></b><span></span></div>
+      <div class="tag" id="tb"><b></b><span></span></div>
+    </div>
+    <!-- footage -->
+    <div class="layer" id="foot">
+      <canvas id="fc"></canvas>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(8,6,6,.85), transparent 38%), linear-gradient(to right, rgba(8,6,6,.55), transparent 45%)"></div>
+      <div class="label" id="flabel"><b></b><span></span></div>
+    </div>
+    <!-- roster flashes -->
+    <div class="layer" id="flashes">
+      <div class="glow" id="fg"></div>
+      <div class="portrait" id="fp"><img /></div>
+      <div class="label" id="fpl" style="left:auto;right:6%;text-align:right"><b></b><span></span></div>
+    </div>
+    <!-- wall -->
+    <div class="layer" id="wallL">
+      <div id="wall"></div>
+      <div class="band" id="wallBand"><div class="line" id="wallText">66 legends · 3 pantheons</div></div>
+    </div>
+    <!-- title -->
+    <div class="layer" id="title">
+      <div class="glow" style="background: radial-gradient(ellipse 70% 60% at 50% 55%, rgba(160,42,24,.5), transparent 72%)"></div>
+      <div id="trio" style="position:absolute;left:0;right:0;bottom:0">
+        <div class="portrait" id="tOdin"><img src="site/assets/units/odin-lg.webp" /></div>
+        <div class="portrait" id="tAnubis"><img src="site/assets/units/anubis-lg.webp" /></div>
+        <div class="portrait" id="tZeus"><img src="site/assets/units/zeus-lg.webp" /></div>
+      </div>
+      <div id="titleBox" style="position:absolute;left:0;right:0;text-align:center">
+        <h1 id="tt" style="font-weight:900;line-height:.92;letter-spacing:.02em;text-shadow:0 6px 50px rgba(0,0,0,.95)">Mythos<br><span style="color:var(--blood)">Unbound</span></h1>
+        <div id="tsub" style="font:600 var(--tsub,30px)/1.3 Inter,sans-serif;letter-spacing:.24em;text-transform:uppercase;margin-top:28px;text-shadow:0 2px 14px #000">Free · Play in your browser</div>
+        <div id="turl" style="font:600 var(--turl,34px)/1 Inter,sans-serif;margin-top:22px;color:var(--bone);display:inline-block;padding:14px 26px;border:1px solid rgba(237,230,214,.35);border-radius:6px;background:rgba(12,9,9,.7)">dhuovinen.github.io/mythos-unbound</div>
+      </div>
+    </div>
+  </div>
+  <div class="vignette"></div>
+  <canvas id="grain"></canvas>
+  <div id="flash"></div>
+  <div id="black"></div>
+</div>
+<script>
+const V = new URLSearchParams(location.search).get('ar') === 'v';
+const W = V ? 1080 : 1920, H = V ? 1920 : 1080;
+const root = document.getElementById('root');
+root.style.width = W + 'px'; root.style.height = H + 'px';
+document.documentElement.style.setProperty('--tagsize', V ? '34px' : '30px');
+document.documentElement.style.setProperty('--subsize', V ? '26px' : '22px');
+const $ = (id) => document.getElementById(id);
+
+// ---------- helpers
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const prog = (t, a, b) => clamp((t - a) / (b - a));
+const eOut = (u) => 1 - Math.pow(1 - u, 3);
+const eIO = (u) => u < .5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2;
+const eBack = (u) => { const c = 1.9; return 1 + (c + 1) * Math.pow(u - 1, 3) + c * Math.pow(u - 1, 2); };
+const show = (id) => { for (const l of document.querySelectorAll('.layer')) l.style.display = l.id === id ? 'block' : 'none'; };
+// deterministic hash noise
+const hsh = (n) => { let x = Math.imul((n | 0) ^ 0x9e3779b9, 0x85ebca6b); x ^= x >>> 13; x = Math.imul(x, 0xc2b2ae35); x ^= x >>> 16; return (x >>> 0) / 4294967296; };
+
+// shake: decaying jitter from impact times
+const IMPACTS = [[3.5, 1], [6.5, .6], [9.5, 1], [12, 1], [14.5, .6], [17, .6], [18.5, .5], [20, .7], [21, .5], [22, .5], [23, .6], [24, 1.6]];
+function shake(t) {
+  let s = 0;
+  for (const [ti, a] of IMPACTS) if (t >= ti && t < ti + .45) s += a * Math.exp(-(t - ti) * 9);
+  if (t > 10.6 && t < 12) s += .25 * prog(t, 10.6, 12);
+  if (t > 22 && t < 24) s += .35 * prog(t, 22, 24);
+  const f = Math.floor(t * 30);
+  return [(hsh(f * 3) - .5) * 34 * s, (hsh(f * 7 + 1) - .5) * 34 * s];
+}
+function flash(t) {
+  let o = 0;
+  for (const [ti, a] of IMPACTS) if (t >= ti && t < ti + .2) o = Math.max(o, (a > .55 ? .75 : .45) * (1 - (t - ti) / .2));
+  return o;
+}
+
+// ---------- grain
+const g = $('grain'); g.width = W / 3; g.height = H / 3; g.style.width = W + 'px'; g.style.height = H + 'px';
+const gc = g.getContext('2d'); const gimg = gc.createImageData(g.width, g.height);
+function grain(f) {
+  const d = gimg.data;
+  for (let i = 0, n = f * 99991; i < d.length; i += 4) { const v = hsh(n + i) * 255; d[i] = d[i + 1] = d[i + 2] = v; d[i + 3] = 255; }
+  gc.putImageData(gimg, 0, 0);
+}
+
+// ---------- S1
+function s1(t) {
+  show('s1');
+  const p = $('s1p'); const h = V ? 1500 : 1150;
+  p.style.height = h + 'px'; p.style.left = '50%';
+  p.style.transform = `translateX(-50%) translateY(${V ? 120 : 260}px) scale(${1.12 + .1 * t / 3})`;
+  p.style.opacity = .42 * eOut(prog(t, .2, 2.4)) * (1 - prog(t, 2.75, 3));
+  p.style.filter = 'blur(2px) brightness(.8) drop-shadow(0 30px 40px #000)';
+  const tx = $('s1t'); tx.style.fontSize = (V ? 74 : 86) + 'px'; tx.style.maxWidth = V ? '900px' : 'none';
+  tx.style.opacity = eOut(prog(t, .35, 1.3)) * (1 - prog(t, 2.6, 2.95));
+  tx.style.letterSpacing = (.02 + .06 * t / 3) + 'em';
+  tx.style.transform = `translateY(${(1 - eOut(prog(t, .35, 1.3))) * 20}px)`;
+}
+
+// ---------- duels
+const DUELS = [
+  { t0: 3, head: 'Every family has a grudge.', a: 'cronus', b: 'zeus', mark: 'VS', accent: 'var(--greek)', ta: ['FILICIDE ×1.5', 'vs his own children'], tb: ['USURPATION ×1.6', 'vs his father'], bMirror: true },
+  { t0: 6, head: 'Lovers won’t strike.', a: 'ares', b: 'aphrodite', mark: '♥', accent: 'var(--greek)', ta: ['ENTRANCED', 'attacks refused'], tb: null, bMirror: true, gentle: true },
+  { t0: 9, head: 'Old deaths are never forgotten.', a: 'thor', b: 'jormungandr', mark: 'VS', accent: 'var(--norse)', ta: ['VENGEANCE ×2', 'armour ignored'], tb: ['VENGEANCE ×2', 'armour ignored'], bMirror: true },
+];
+function duel(t, d) {
+  show('duel');
+  const u = t - d.t0; // 0..3
+  const lay = $('duel'); lay.style.setProperty('--accent', d.accent);
+  const head = $('duelHead'); head.textContent = d.head;
+  head.style.fontSize = (V ? 62 : 64) + 'px'; head.style.top = (V ? 170 : 70) + 'px';
+  head.style.padding = V ? '0 60px' : '0';
+  head.style.opacity = eOut(prog(u, 0, .35)) * (1 - prog(u, 2.8, 3));
+  const slam = eOut(prog(u, .15, .5));         // arrive at 0.5 → impact
+  const push = 1 + .06 * prog(u, .5, 3);
+  const pa = $('pa'), pb = $('pb');
+  pa.querySelector('img').src = `site/assets/units/${d.a}-lg.webp`;
+  pb.querySelector('img').src = `site/assets/units/${d.b}-lg.webp`;
+  pb.querySelector('img').style.transform = d.bMirror ? 'scaleX(-1)' : '';
+  const out = 1 - prog(u, 2.85, 3);
+  if (!V) {
+    const h = 820; pa.style.height = pb.style.height = h + 'px';
+    const off = (1 - slam) * 900;
+    pa.style.left = (W / 2 - 80 - h * .75 - off) + 'px'; pb.style.left = (W / 2 + 80 + off) + 'px';
+    pa.style.bottom = pb.style.bottom = '-30px';
+    pa.style.transform = pb.style.transform = `scale(${push})`;
+  } else {
+    const h = 760; pa.style.height = pb.style.height = h + 'px';
+    const off = (1 - slam) * 800;
+    pa.style.left = (60 - off) + 'px'; pb.style.left = (W - h * .75 - 60 + off) + 'px';
+    pa.style.bottom = (H - 330 - h) + 'px'; pb.style.bottom = '300px';
+    pa.style.transform = pb.style.transform = `scale(${push})`;
+  }
+  pa.style.opacity = pb.style.opacity = out;
+  const vs = $('vs'); vs.textContent = d.mark;
+  vs.style.setProperty('--vssize', (d.mark === '♥' ? 110 : 96) + 'px');
+  vs.style.color = d.mark === '♥' ? '#e86aa0' : 'var(--blood)';
+  const vsu = prog(u, .45, .7);
+  vs.style.opacity = (vsu > 0 ? 1 : 0) * out;
+  vs.style.left = '50%'; vs.style.top = V ? '50%' : '46%';
+  const pulse = d.gentle ? 1 + .08 * Math.sin(u * 10) * prog(u, .7, 1.2) : 1;
+  vs.style.transform = `translate(-50%,-50%) scale(${(vsu > 0 ? (2.2 - 1.2 * eOut(vsu)) : 1) * pulse})`;
+  const tag = (el, data, at, pos) => {
+    if (!data) { el.style.display = 'none'; return; }
+    el.style.display = 'flex'; el.querySelector('b').textContent = data[0]; el.querySelector('span').textContent = data[1];
+    const k = prog(u, at, at + .25);
+    el.style.opacity = (k > 0 ? 1 : 0) * out;
+    Object.assign(el.style, pos);
+    el.style.transform = `translateX(-50%) scale(${k > 0 ? .6 + .4 * eBack(k) : .6})`;
+  };
+  if (!V) {
+    tag($('ta'), d.ta, .85, { left: d.tb ? '30%' : '50%', top: 'auto', bottom: '120px' });
+    tag($('tb'), d.tb, 1.15, { left: '70%', top: 'auto', bottom: '120px' });
+  } else {
+    tag($('ta'), d.ta, .85, { left: '50%', top: '880px', bottom: 'auto' });
+    tag($('tb'), d.tb, 1.15, { left: '50%', top: 'auto', bottom: '210px' });
+    if (!d.tb) { $('ta').style.top = '1000px'; }
+  }
+}
+
+// ---------- footage
+const fc = $('fc'); fc.width = W; fc.height = H; const fx = fc.getContext('2d');
+const CLIPS = [
+  { t0: 12, t1: 14.5, dir: 'greek', start: 30, cx: .52, cy: .6, z0: 1.45, z1: 1.62, name: 'Olympus', sub: 'Greek', accent: 'var(--greek)' },
+  { t0: 14.5, t1: 17, dir: 'norse', start: 120, cx: .52, cy: .6, z0: 1.3, z1: 1.45, name: 'Asgard', sub: 'Norse', accent: 'var(--norse)' },
+  { t0: 17, t1: 18.5, dir: 'egyptian', start: 155, cx: .42, cy: .62, z0: 1.5, z1: 1.62, name: 'The Nile', sub: 'Egyptian', accent: 'var(--egyptian)' },
+  { t0: 18.5, t1: 20, dir: 'tree', start: 12, cx: .34, cy: .46, z0: 1.55, z1: 1.7, name: 'Draft the family', sub: 'Pick from the tree', accent: 'var(--bone)', step: 1 },
+];
+const imgCache = new Map();
+function loadImg(src) {
+  if (imgCache.has(src)) return imgCache.get(src);
+  const im = new Image(); im.src = src; const p = im.decode().then(() => im);
+  imgCache.set(src, p); if (imgCache.size > 12) imgCache.delete(imgCache.keys().next().value);
+  return p;
+}
+async function footage(t, c) {
+  show('foot');
+  const u = t - c.t0;
+  const f = c.start + Math.floor(u * 30) * (c.step || 1);
+  const im = await loadImg(`clips/${c.dir}/${String(f).padStart(4, '0')}.jpg`);
+  const z = c.z0 + (c.z1 - c.z0) * (u / (c.t1 - c.t0)) + .06 * Math.exp(-u * 10);
+  const sw = im.width, sh = im.height;
+  let cw, ch;
+  if (!V) { cw = sw / z; ch = cw * H / W; }
+  else { ch = sh * .8 * 1.45 / z; cw = ch * W / H; }
+  let x = clamp(c.cx * sw - cw / 2, 0, sw - cw), y = clamp(c.cy * sh - ch / 2, 0, sh - ch);
+  fx.drawImage(im, x, y, cw, ch, 0, 0, W, H);
+  const lab = $('flabel'); lab.style.setProperty('--accent', c.accent);
+  lab.querySelector('b').textContent = c.name; lab.querySelector('span').textContent = c.sub;
+  lab.style.setProperty('--labsize', (V ? 84 : 76) + 'px');
+  if (V) { lab.style.bottom = '16%'; lab.style.left = '8%'; }
+  const k = eOut(prog(u, .08, .4));
+  lab.style.opacity = k * (1 - prog(u, c.t1 - c.t0 - .12, c.t1 - c.t0));
+  lab.style.transform = `translateX(${(1 - k) * -60}px)`;
+}
+
+// ---------- roster flashes 20-21.5
+const FLASHES = [['odin', 'Odin', 'Norse', 'var(--norse)'], ['ra', 'Ra', 'Egyptian', 'var(--egyptian)'], ['ares', 'Ares', 'Greek', 'var(--greek)'],
+  ['fenrir', 'Fenrir', 'Norse', 'var(--norse)'], ['set', 'Set', 'Egyptian', 'var(--egyptian)'], ['cronus', 'Cronus', 'Greek', 'var(--greek)']];
+function flashes(t) {
+  show('flashes');
+  const i = Math.min(5, Math.floor((t - 20) / .25)); const u = (t - 20) - i * .25;
+  const [id, name, p, acc] = FLASHES[i];
+  const lay = $('flashes'); lay.style.setProperty('--accent', acc);
+  $('fg').style.background = `radial-gradient(ellipse 60% 60% at ${i % 2 ? 62 : 38}% 55%, color-mix(in srgb, ${acc} 45%, transparent), transparent 70%)`;
+  const fp = $('fp'); fp.querySelector('img').src = `site/assets/units/${id}-lg.webp`;
+  const h = V ? 1400 : 1050; fp.style.height = h + 'px';
+  fp.style.left = V ? `${(W - h * .75) / 2}px` : (i % 2 ? `${W * .5}px` : `${W * .5 - h * .75}px`);
+  fp.style.bottom = V ? '200px' : '-60px';
+  fp.style.transform = `scale(${1.12 - .12 * eOut(u / .25)})`;
+  const l = $('fpl'); l.querySelector('b').textContent = name; l.querySelector('span').textContent = p;
+  l.style.setProperty('--labsize', (V ? 96 : 110) + 'px');
+  if (V) { l.style.right = 'auto'; l.style.left = '50%'; l.style.bottom = '120px'; l.style.textAlign = 'center'; l.style.transform = 'translateX(-50%)'; }
+  else { if (i % 2) { l.style.left = '8%'; l.style.right = 'auto'; l.style.textAlign = 'left'; } else { l.style.left = 'auto'; l.style.right = '8%'; l.style.textAlign = 'right'; } l.style.bottom = '42%'; }
+}
+
+// ---------- wall 21.5-24
+const ROSTER = ["cronus","typhon","fenrir","jormungandr","apep","ammit","zeus","hera","poseidon","hades","athena","ares","aphrodite","hephaestus","apollo","artemis","odin","thor","loki","baldr","frigg","freyja","freyr","tyr","heimdall","njord","ra","osiris","isis","set","horus","nephthys","thoth","hathor","sekhmet","ptah","heracles","perseus","achilles","asclepius","orpheus","dionysus","aeneas","sigurd","vidar","brynhildr","hodr","vali","magni","skadi","anubis","wepwawet","imhotep","nefertem","maahes","bes","khonsu","hoplite","satyr","harpy","einherjar","draugr","valkyrie","medjay","shabti","ba"];
+const wall = $('wall'); const cols = V ? 6 : 11, rows = V ? 11 : 6;
+wall.style.gridTemplateColumns = `repeat(${cols}, 1fr)`; wall.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+// shuffle deterministically so pantheons mix
+const order = ROSTER.map((id, i) => [hsh(i * 13 + 5), id]).sort((a, b) => a[0] - b[0]).map((x) => x[1]);
+const cells = order.map((id) => { const d = document.createElement('div'); d.innerHTML = `<img src="site/assets/units/${id}.webp">`; wall.append(d); return d; });
+function wallScene(t) {
+  show('wallL');
+  const u = t - 21.5;
+  cells.forEach((c, i) => {
+    const r = Math.floor(i / cols), col = i % cols;
+    const delay = (hsh(i * 31) * .55);
+    const k = eOut(prog(u, delay, delay + .25));
+    c.style.opacity = k; c.style.transform = `scale(${1.25 - .25 * k})`;
+  });
+  const z = 1 + .55 * Math.pow(prog(u, 1.5, 2.5), 2);
+  wall.style.transform = `scale(${z})`;
+  const band = $('wallBand'); const bk = eOut(prog(u, .5, .8));
+  band.style.opacity = bk; band.style.transform = `translateY(-50%) scaleY(${.3 + .7 * bk})`;
+  const wt = $('wallText'); wt.style.fontSize = (V ? 66 : 80) + 'px';
+}
+
+// ---------- title 24-28
+function title(t) {
+  show('title');
+  const u = t - 24;
+  const k = prog(u, 0, .28);
+  const tt = $('tt'); tt.style.fontSize = (V ? 150 : 170) + 'px';
+  tt.style.transform = `scale(${1.45 - .45 * eOut(k)})`; tt.style.opacity = k > 0 ? 1 : 0;
+  const box = $('titleBox'); box.style.top = V ? '300px' : '120px';
+  const s = $('tsub'); s.style.setProperty('--tsub', (V ? 34 : 30) + 'px');
+  s.style.opacity = eOut(prog(u, .7, 1.1)); s.style.transform = `translateY(${(1 - eOut(prog(u, .7, 1.1))) * 16}px)`;
+  const url = $('turl'); url.style.setProperty('--turl', (V ? 36 : 34) + 'px');
+  url.style.opacity = eOut(prog(u, 1.2, 1.6)); url.style.transform = `translateY(${(1 - eOut(prog(u, 1.2, 1.6))) * 16}px)`;
+  const trio = $('trio'); trio.style.height = (V ? 900 : 640) + 'px';
+  trio.style.opacity = .55 * eOut(prog(u, .1, 1.2));
+  const hz = V ? 900 : 640;
+  const z = $('tZeus'), o = $('tOdin'), a = $('tAnubis');
+  z.style.height = hz + 'px'; o.style.height = a.style.height = hz * .78 + 'px';
+  z.style.left = `${W / 2 - hz * .375}px`;
+  o.style.left = `${W / 2 - hz * .375 - hz * .78 * .62}px`; a.style.left = `${W / 2 + hz * .375 - hz * .78 * .14}px`;
+  o.querySelector('img').style.filter = a.querySelector('img').style.filter = 'brightness(.7)';
+  trio.style.transform = `translateY(${(1 - eOut(prog(u, .1, 1.4))) * 80}px) scale(${1 + .03 * u})`;
+}
+
+window.renderFrame = async (t) => {
+  const f = Math.round(t * 30);
+  if (t < 3) s1(t);
+  else if (t < 6) duel(t, DUELS[0]);
+  else if (t < 9) duel(t, DUELS[1]);
+  else if (t < 12) duel(t, DUELS[2]);
+  else if (t < 20) { const c = CLIPS.find((c) => t >= c.t0 && t < c.t1); await footage(t, c); }
+  else if (t < 21.5) flashes(t);
+  else if (t < 24) wallScene(t);
+  else title(t);
+  const [sx, sy] = shake(t);
+  $('stage').style.transform = `translate(${sx}px, ${sy}px)`;
+  $('flash').style.opacity = flash(t);
+  // dip to black at the very start and end
+  $('black').style.opacity = Math.max(1 - prog(t, 0, .25), prog(t, 27.2, 27.95));
+  grain(f);
+  await Promise.all([...document.images].filter((i) => i.offsetParent !== null && !i.complete).map((i) => i.decode().catch(() => {})));
+};
+window.ready = (async () => { await document.fonts.ready; await Promise.all([...document.images].map((i) => i.decode().catch(() => {}))); })();
+</script>
+</body>
+</html>
