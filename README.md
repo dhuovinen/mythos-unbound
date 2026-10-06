@@ -3,9 +3,9 @@
 **Gods remember their grudges.** Mythos Unbound is a free browser battler where 66 gods, titans and
 heroes fight harder, or refuse to fight at all, depending on who they're facing.
 
-### [▶ Play in your browser](https://dhuovinen.github.io/mythos-unbound/play/) · [Website](https://dhuovinen.github.io/mythos-unbound/) · [Trailer](https://www.youtube.com/channel/UCBpBE4U2oinlcRt12nOFMgg)
+### [▶ Play in your browser](https://dhuovinen.github.io/mythos-unbound/play/) · [Website](https://dhuovinen.github.io/mythos-unbound/) · [Trailer](https://www.youtube.com/watch?v=BoG3OJ8pdCE)
 
-![A battle on Olympus: a Kinship effect fires over the battle line](site/assets/scenes/battle.webp)
+[![Watch the Mythos Unbound trailer](promo/thumbnail-a-cronus-vs-zeus.jpg)](https://www.youtube.com/watch?v=BoG3OJ8pdCE)
 
 ## Blood remembers
 
@@ -22,6 +22,8 @@ unit fights, and the effects come straight from the myths:
 
 Blood doesn't cross pantheons: fight a different mythology and every grudge goes quiet. That can
 also be a deliberate strategy.
+
+![A battle on Olympus: a Kinship effect fires over the battle line](site/assets/scenes/battle.webp)
 
 ## Features
 

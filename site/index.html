@@ -127,6 +127,15 @@
     .trio .t-anubis { right: -10%; }
   }
 
+  /* ---------- trailer ---------- */
+  .trailer { padding: 0 0 clamp(56px, 8vw, 96px); }
+  section[id], #realms { scroll-margin-top: 84px; }
+  .video {
+    position: relative; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+    background: #000; box-shadow: 0 40px 80px -30px rgba(0,0,0,.9);
+  }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
   /* ---------- blood remembers ---------- */
   .bonds { background: linear-gradient(to bottom, var(--ink), var(--ink-2) 30%, var(--ink-2) 70%, var(--ink)); }
   .bond-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 54px; }
@@ -274,6 +283,7 @@
   <div class="wrap">
     <a class="brand" href="#top"><img src="favicon.svg" alt="" />Mythos Unbound</a>
     <div class="nav-links">
+      <a href="#trailer">Trailer</a>
       <a href="#bonds">Blood ties</a>
       <a href="#realms">Pantheons</a>
       <a href="#roster">Roster</a>
@@ -294,7 +304,7 @@
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5Z"/></svg>
           Play in your browser
         </a>
-        <a class="btn ghost" href="https://www.youtube.com/channel/UCBpBE4U2oinlcRt12nOFMgg" target="_blank" rel="noopener">
+        <a class="btn ghost" href="#trailer">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12c0 1.6.2 3.2.5 4.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.3-1.6.5-3.2.5-4.8s-.2-3.2-.5-4.8ZM9.7 15.1V8.9l5.8 3.1-5.8 3.1Z"/></svg>
           Watch the trailer
         </a>
@@ -313,6 +323,16 @@
     </div>
   </div>
 </header>
+
+<section class="trailer" id="trailer">
+  <div class="wrap">
+    <div class="video reveal">
+      <iframe src="https://www.youtube-nocookie.com/embed/BoG3OJ8pdCE?rel=0" title="Mythos Unbound – Official Trailer" loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
 
 <section class="bonds" id="bonds">
   <div class="wrap">
@@ -499,7 +519,7 @@
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5L7 4.5Z"/></svg>
         Play Mythos Unbound
       </a>
-      <a class="btn ghost" href="https://www.youtube.com/channel/UCBpBE4U2oinlcRt12nOFMgg" target="_blank" rel="noopener">YouTube</a>
+      <a class="btn ghost" href="https://www.youtube.com/watch?v=BoG3OJ8pdCE" target="_blank" rel="noopener">Watch the trailer</a>
       <a class="btn ghost" href="https://github.com/dhuovinen/mythos-unbound" target="_blank" rel="noopener">Source on GitHub</a>
     </div>
   </div>
@@ -508,7 +528,7 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Mythos Unbound</span>
-    <span><a href="https://github.com/dhuovinen/mythos-unbound">GitHub</a> · <a href="https://www.youtube.com/channel/UCBpBE4U2oinlcRt12nOFMgg">YouTube</a></span>
+    <span><a href="https://github.com/dhuovinen/mythos-unbound">GitHub</a> · <a href="https://www.youtube.com/@donaldhuovinen4404">YouTube</a></span>
   </div>
 </footer>
 
