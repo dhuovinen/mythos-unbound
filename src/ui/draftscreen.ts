@@ -858,7 +858,7 @@ export function mountDraftScreen(roster: readonly Deity[], graph: RelationGraph,
         : `Step 2 of 2 — reinforcements (${reinforcements.length}/${REINFORCEMENT_SIZE})`;
     instruction.textContent =
       phase === 'opening'
-        ? 'Pick three to open with. They are revealed to your opponent and become your starting hand, so this also tells them which family you intend to fight as. They are choosing theirs blind, at the same time.'
+        ? 'Pick three to open with. They are revealed to your opponent, so this also tells them which family you intend to fight as. They are choosing theirs blind, at the same time.'
         : 'Their opening is face up. Lock in six reinforcements knowing it. Share their pantheon and blood cuts both ways; go foreign and neither side can use it against the other, leaving a fight decided by raw statistics.';
     advance.textContent = phase === 'opening' ? 'Reveal openings' : 'Begin battle';
     advance.disabled = picked().length !== limit();

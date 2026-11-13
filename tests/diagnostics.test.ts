@@ -6,7 +6,6 @@ import { createBattleLog, recordEvents } from '../src/sim/battlelog';
 import { TICK_DT } from '../src/sim/constants';
 import { createDiagnosticLog, diagnosticCombatObserver, diagnosticState, noteDiagnostic } from '../src/sim/diagnostics';
 import { buildDiagnosticPacket, diagnosticModifierRules, packetJson, packetMarkdown } from '../src/sim/diagnosticexport';
-import { createHand, playFrom } from '../src/sim/hand';
 import { buildGraph } from '../src/sim/relations';
 import { createRng } from '../src/sim/rng';
 import type { Stage } from '../src/sim/types';
@@ -128,24 +127,26 @@ describe('diagnostic combat evidence', () => {
 });
 
 describe('availability and export', () => {
-  it('captures slots, queue, funds and field-capacity gates without mutating the hand', () => {
-    const s=setup(); const hand=createHand(stage.playerDeck);
-    const state=diagnosticState(s.world,deities,hand,['zeus','hoplite'],200,true);
+  it('captures the whole deck, funds and field-capacity gates as a frozen snapshot', () => {
+    const s=setup(); const deck=[...stage.playerDeck];
+    const state=diagnosticState(s.world,deities,deck,['zeus','hoplite'],200,true);
+    expect(state.player.deck).toEqual(['hoplite','zeus','ares','hera']);
+    expect(state.player.available.map((a)=>[a.index,a.deityId])).toEqual([[0,'hoplite'],[1,'zeus'],[2,'ares'],[3,'hera']]);
     expect(state.player.available.find((a)=>a.deityId==='zeus')?.affordable).toBe(false);
-    expect(state.player.hand.queue).toEqual(['hera']);
+    expect(state.player.available.find((a)=>a.deityId==='hoplite')?.summonable).toBe(true);
     noteDiagnostic(s.log,0,'snapshot','state',{state});
-    playFrom(hand,0); s.world.faith=0;
+    deck.reverse(); s.world.faith=0;
     expect((s.log.events[0].data.state as typeof state).player.faith).toBe(200);
-    expect((s.log.events[0].data.state as typeof state).player.hand.slots).toEqual(['hoplite','zeus','ares']);
+    expect((s.log.events[0].data.state as typeof state).player.deck).toEqual(['hoplite','zeus','ares','hera']);
     for(let i=0;i<8;i++) s.spawn('hoplite','player',100+i);
-    const full=diagnosticState(s.world,deities,hand,[],900,true);
+    const full=diagnosticState(s.world,deities,deck,[],900,true);
     expect(full.player.available.every((a)=>a.fieldBlock==='field'&&!a.summonable)).toBe(true);
   });
   it('makes disabled opponent AI and ended battles unavailable to summon', () => {
     const s=setup();
-    expect(diagnosticState(s.world,deities,createHand(stage.playerDeck),['hoplite'],900,false).enemy.available[0].summonable).toBe(false);
+    expect(diagnosticState(s.world,deities,stage.playerDeck,['hoplite'],900,false).enemy.available[0].summonable).toBe(false);
     s.world.outcome='victory';
-    expect(diagnosticState(s.world,deities,createHand(stage.playerDeck),['hoplite'],900,true).player.available.every((a)=>!a.summonable)).toBe(true);
+    expect(diagnosticState(s.world,deities,stage.playerDeck,['hoplite'],900,true).player.available.every((a)=>!a.summonable)).toBe(true);
   });
   it('freezes initial roster, decks and configuration metadata', () => {
     const s=setup(); expect(s.log.metadata.roster).not.toBe(all);
@@ -161,7 +162,7 @@ describe('availability and export', () => {
   it('exports every event beyond the old 120-row report limit and retains exact precision', () => {
     const s=setup();
     for(let i=0;i<151;i++) noteDiagnostic(s.log,i*TICK_DT,'attack',`unmodified attack ${i}`,{damage:12.3456789012345});
-    const state=diagnosticState(s.world,deities,createHand(stage.playerDeck),['hoplite'],200,true);
+    const state=diagnosticState(s.world,deities,stage.playerDeck,['hoplite'],200,true);
     const packet=buildDiagnosticPacket({log:s.log,state,time:s.world.time},'2026-10-02T12:01:00Z');
     const parsed=JSON.parse(packetJson(packet));
     expect(parsed.battle.events).toHaveLength(151);
@@ -176,7 +177,7 @@ describe('availability and export', () => {
   });
   it('labels a completed export explicitly and carries the final field', () => {
     const s=setup(); s.world.outcome='defeat'; s.world.units[0].hp=-20;
-    const state=diagnosticState(s.world,deities,createHand(stage.playerDeck),[],200,true);
+    const state=diagnosticState(s.world,deities,stage.playerDeck,[],200,true);
     const p=buildDiagnosticPacket({log:s.log,state,time:s.world.time},'2026-10-02T12:01:00Z');
     expect(p.status).toBe('completed battle'); expect(p.battle.currentState.outcome).toBe('defeat');
     expect(p.battle.currentState.units).toEqual(s.world.units);

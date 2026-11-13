@@ -2,7 +2,7 @@
 import combatSource from './combat.ts?raw';
 import relationsSource from './relations.ts?raw';
 import worldSource from './world.ts?raw';
-import handSource from './hand.ts?raw';
+import summonSource from './summon.ts?raw';
 import limitsSource from './limits.ts?raw';
 import constantsSource from './constants.ts?raw';
 import advisorSource from './advisor.ts?raw';
@@ -15,7 +15,7 @@ import type { DiagnosticLog } from './diagnostics';
 export const ANALYSIS_PROMPT = `You are reviewing an exported Mythos Unbound battle diagnostic packet. The game has recorded evidence; it has not performed this review. Use the game instructions, roster, relationship graph, engine source snapshot and complete event log in the attachment.
 
 1. Establish the battle context: stage, decks, starting resources, configuration changes, scripted waves, manual decisions and any fast-forward periods. Distinguish normal player control from auto-player control.
-2. Reconstruct what each side could summon at decision points, including the player's cycling hand, queue, faith and field limits. List what actually entered the field, when, why, and what was paid. Scripted waves are free and exempt from summon limits.
+2. Reconstruct what each side could summon at decision points, including each side's full deck, faith and field limits. List what actually entered the field, when, why, and what was paid. Scripted waves are free and exempt from summon limits.
 3. Audit attacks against the supplied implementation. Check nearest-target selection and tie-breaking, range, cooldowns, directional relationships, same-pantheon checks, allied proximity, field-wide auras, modifier deduplication and stacking, the damage ceiling, defender armour, armour penetration, suppression, damage floor, HP changes, overkill, deaths and base outcome.
 4. Show worked calculations for representative attacks and every suspected inconsistency. Cite event sequence numbers, tick numbers and unit instance IDs; different copies of one deity are different units. Separate declared modifier parameters from parameters the combat implementation actually consumes.
 5. Separate observed facts, verified inconsistencies, possible design issues and unanswered questions. Do not infer movement or input timing between the recorded checkpoints beyond what the attack/target/action records and engine support. Distinguish calculated damage from HP actually removed. The no-relations per-hit baseline and report swing are not a counterfactual simulation of attack-rate changes or the whole battle.
@@ -59,9 +59,9 @@ export function gameInstructions(log: DiagnosticLog): string {
 
 ## How to play
 
-Destroy the enemy base while keeping your base alive. Pick a mythology and draft a deck, or use the stage's default deck. Drafting either side selects a roster battle with no scripted reinforcements; only an undrafted showcase runs its demonstration waves. The effective stage and both battle rosters are recorded in metadata. Click a visible summon card or press its numbered shortcut to spend faith and deploy it. The first three deck entries form your initial hand. Playing a card moves it to the back of the queue and replaces its slot with the next queued card; a deck with no queue keeps its current cards. These choices are distinct from the units already on the field. Deployment counts include repeated summons, and a roster member may never be summoned.
+Destroy the enemy base while keeping your base alive. Pick a mythology and draft a deck, or use the stage's default deck. Drafting either side selects a roster battle with no scripted reinforcements; only an undrafted showcase runs its demonstration waves. The effective stage and both battle rosters are recorded in metadata. Every member of your deck has a summon card for the whole battle; click one or press its number key (1–9, in deck order) to spend faith and deploy it. Any member may be summoned at any time, as often as faith and the field limits allow. These choices are distinct from the units already on the field. Deployment counts include repeated summons, and a roster member may never be summoned.
 
-Faith regenerates to the cap. Each side's normal summons are limited to ${c.maxUnits} units and ${c.maxHeavy} gods/titans combined; bases do not count. A rejected summon spends nothing and does not cycle the hand. Scripted waves are free, bypass those limits, and still count toward later field capacity. Opponent AI considers its entire configured deck rather than a cycling hand. Without an opponent draft, that deck is the full roster. Its economy advances only while AI is enabled. Existing rule-based AI decisions are recorded as decisions, not as a diagnostic assessment.
+Faith regenerates to the cap. Each side's normal summons are limited to ${c.maxUnits} units and ${c.maxHeavy} gods/titans combined; bases do not count. A rejected summon spends nothing. Scripted waves are free, bypass those limits, and still count toward later field capacity. Opponent AI, like the player, considers its entire configured deck. Without an opponent draft, that deck is the full roster. Its economy advances only while AI is enabled. Existing rule-based AI decisions are recorded as decisions, not as a diagnostic assessment.
 
 ## Simulation order and combat
 
@@ -87,7 +87,7 @@ ${table}
 
 - Sequence numbers order every recorded event. Tick numbers are derived from simulation time; several events may share a time/tick. Spawns and decisions before a combat step use that step's starting time; attacks use the advanced world time.
 - Unit IDs identify instances, including both bases; deity IDs identify roster entries. The same deity may be summoned repeatedly or on both sides.
-- Start and roughly one-second snapshots include the full field, both economies, the player's slots/queue, and each side's affordability and field-capacity availability. Summon attempts, deployments and AI decisions include exact action-time context. Periodic snapshots are not a recording of every movement tick.
+- Start and roughly one-second snapshots include the full field, both economies, the player's deck, and each side's affordability and field-capacity availability. Summon attempts, deployments and AI decisions include exact action-time context. Periodic snapshots are not a recording of every movement tick.
 - Target changes record positions and range. Every resolved or refused attack records its entire field immediately before resolution, unit states before/after, direct combat edges, exact modifier parameters, attacker and defender ally pools, evaluated armour, damage arithmetic, assigned cooldown, applied damage, HP removed and overkill. Defender aura evaluation may be skipped for suppression, armour penetration, bases or zero base armour; skipped does not mean no theoretical aura exists.
 - Per-hit baseDamage = max(1, unmodified roster damage − unmodified roster armour). This is the same-hit baseline, not a simulated alternate battle. It cannot measure the full effect of attack-rate changes, altered survival or movement. Report modifier swing splits are accounting allocations, not proof of each modifier's causal contribution.
 - A live export is explicitly partial. The final field and outcome at capture time are included. Exports contain every event recorded since this page's battle began, regardless of viewer filters or pagination. A reload starts a new log. No diagnostic analysis or external model request is performed by the application.
@@ -101,7 +101,7 @@ export function buildDiagnosticPacket(capture: DiagnosticCapture, exportedAt: st
     status: capture.state.outcome === 'ongoing' ? 'in-progress snapshot' : 'completed battle',
     gameInstructions: gameInstructions(capture.log), exampleAnalysisPrompt: ANALYSIS_PROMPT,
     engineSources: { 'src/sim/combat.ts': combatSource, 'src/sim/relations.ts': relationsSource,
-      'src/sim/world.ts': worldSource, 'src/sim/hand.ts': handSource, 'src/sim/limits.ts': limitsSource,
+      'src/sim/world.ts': worldSource, 'src/sim/summon.ts': summonSource, 'src/sim/limits.ts': limitsSource,
       'src/sim/constants.ts': constantsSource, 'src/sim/advisor.ts': advisorSource,
       'src/sim/scenario.ts': scenarioSource, 'src/main.ts': mainSource },
     battle: { ...capture.log, currentState: capture.state },

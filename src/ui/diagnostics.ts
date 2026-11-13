@@ -155,11 +155,11 @@ export function mountDiagnostics(getCapture: () => DiagnosticCapture): () => voi
     } else {
       const state = (event.data.state ?? event.data.stateBefore ?? event.data.stateAfter) as ReturnType<typeof import('../sim/diagnostics').diagnosticState> | undefined;
       if (state) {
-        table(detail, ['Economy', 'Value'], [['Player faith', state.player.faith], ['Enemy faith', state.enemy.faith], ['Enemy AI enabled', state.enemy.aiEnabled], ['Player hand', state.player.hand.slots.join(', ')], ['Player queue', state.player.hand.queue.join(', ')]]);
+        table(detail, ['Economy', 'Value'], [['Player faith', state.player.faith], ['Enemy faith', state.enemy.faith], ['Enemy AI enabled', state.enemy.aiEnabled], ['Player deck', state.player.deck.join(', ')]]);
         for (const side of ['player', 'enemy'] as const) {
           const host = side === 'enemy' ? el('details') : detail;
           host.append(side === 'enemy' ? el('summary', undefined, `Opponent summon availability · ${state.enemy.available.length} candidates`) : el('h3', undefined, 'Player summon availability'));
-          table(host, ['Slot / index', 'Character', 'Cost', 'Affordable', 'Field block', 'Summonable'], state[side].available.map((a) => [a.slot + 1, names.get(a.deityId) ?? a.deityId, a.cost, a.affordable, a.fieldBlock ?? '—', a.summonable]));
+          table(host, ['Deck #', 'Character', 'Cost', 'Affordable', 'Field block', 'Summonable'], state[side].available.map((a) => [a.index + 1, names.get(a.deityId) ?? a.deityId, a.cost, a.affordable, a.fieldBlock ?? '—', a.summonable]));
           if (side === 'enemy') detail.append(host);
         }
         field(detail, state.units, 'Field at this event');

@@ -1,5 +1,5 @@
 /**
- * Tests for the cycling hand and the two-phase draft.
+ * Tests for the two-phase draft.
  */
 
 import { describe, expect, it } from 'vitest';
@@ -14,56 +14,11 @@ import {
   draftReinforcements,
   pantheonsOf,
 } from '../src/sim/draft';
-import { HAND_SIZE, createHand, playFrom, turnsUntilAvailable } from '../src/sim/hand';
 import { buildGraph } from '../src/sim/relations';
 import { createRng } from '../src/sim/rng';
 
 const ROSTER = [...GREEK_DEITIES, ...NORSE_DEITIES, ...EGYPTIAN_DEITIES];
 const GRAPH = buildGraph([...GREEK_EDGES, ...NORSE_EDGES, ...EGYPTIAN_EDGES]);
-
-const DECK = ['a', 'b', 'c', 'd', 'e', 'f'];
-
-describe('the cycling hand', () => {
-  it('opens with the first HAND_SIZE of the deck, in draft order', () => {
-    const hand = createHand(DECK);
-    expect(hand.slots).toEqual(['a', 'b', 'c']);
-    expect(hand.queue).toEqual(['d', 'e', 'f']);
-  });
-
-  it('cycles a played unit to the back and draws the next into its slot', () => {
-    const hand = playFrom(createHand(DECK), 1);
-    expect(hand.slots).toEqual(['a', 'd', 'c']);
-    expect(hand.queue).toEqual(['e', 'f', 'b']);
-  });
-
-  it('never consumes a unit — the deck is a loop, not a supply', () => {
-    let hand = createHand(DECK);
-    for (let i = 0; i < 40; i++) hand = playFrom(hand, i % HAND_SIZE);
-    const all = [...hand.slots, ...hand.queue].sort();
-    expect(all).toEqual([...DECK].sort());
-  });
-
-  it('returns the hand untouched on an out-of-range index', () => {
-    const hand = createHand(DECK);
-    expect(playFrom(hand, 9)).toBe(hand);
-    expect(playFrom(hand, -1)).toBe(hand);
-  });
-
-  it('reports how far away a unit is, which is the whole point of cycling', () => {
-    const hand = createHand(DECK);
-    expect(turnsUntilAvailable(hand, 'a')).toBe(0);
-    expect(turnsUntilAvailable(hand, 'd')).toBe(1);
-    expect(turnsUntilAvailable(hand, 'f')).toBe(3);
-    expect(turnsUntilAvailable(hand, 'zeus')).toBeNull();
-  });
-
-  it('is immutable — playing returns a new hand and leaves the old one alone', () => {
-    const before = createHand(DECK);
-    const after = playFrom(before, 0);
-    expect(before.slots).toEqual(['a', 'b', 'c']);
-    expect(after).not.toBe(before);
-  });
-});
 
 describe('the blind opening', () => {
   it('commits to a single pantheon', () => {

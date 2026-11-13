@@ -18,7 +18,7 @@
 import { combineModifiers, resolveAuras, resolveCombat } from './relations';
 import type { Deity, DeityId, Pantheon, RelationGraph, Rng, Tier } from './types';
 
-/** Units revealed up front. Equal to HAND_SIZE, so your opening is literally your opening hand. */
+/** Units revealed up front, before either side picks the rest of its deck. */
 export const OPENING_SIZE = 3;
 
 /** Total deck size. The remainder after the opening is locked in after the reveal. */

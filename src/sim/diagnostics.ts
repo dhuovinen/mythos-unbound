@@ -1,7 +1,6 @@
 /** Factual, serialisable recording only. Never evaluates the correctness or strategy of a battle. */
 import { AURA_RADIUS, MAX_DAMAGE_MULT, TICK_DT } from './constants';
 import { deployBlock, fieldCounts, MAX_FIELD_UNITS, MAX_HEAVY_UNITS } from './limits';
-import type { Hand } from './hand';
 import type { CombatObserver } from './combat';
 import type { Deity, DeityIndex, Edge, Stage, Unit, World } from './types';
 
@@ -28,7 +27,7 @@ export interface DiagnosticMetadata {
   resolveBudget: number;
 }
 export interface DiagnosticLog {
-  schemaVersion: 'mythos-battle-diagnostics/1';
+  schemaVersion: 'mythos-battle-diagnostics/2';
   metadata: DiagnosticMetadata;
   constants: { tickDt: number; auraRadius: number; maxDamageMult: number; maxUnits: number; maxHeavy: number };
   events: DiagnosticEvent[];
@@ -37,7 +36,7 @@ export interface DiagnosticLog {
 /** Clone at the recording boundary so later changes can never rewrite the evidence. */
 export function createDiagnosticLog(metadata: DiagnosticMetadata): DiagnosticLog {
   return {
-    schemaVersion: 'mythos-battle-diagnostics/1', metadata: structuredClone(metadata),
+    schemaVersion: 'mythos-battle-diagnostics/2', metadata: structuredClone(metadata),
     constants: { tickDt: TICK_DT, auraRadius: AURA_RADIUS, maxDamageMult: MAX_DAMAGE_MULT, maxUnits: MAX_FIELD_UNITS, maxHeavy: MAX_HEAVY_UNITS },
     events: [],
   };
@@ -46,20 +45,20 @@ export function noteDiagnostic(log: DiagnosticLog, time: number, kind: Diagnosti
   log.events.push({ sequence: log.events.length + 1, time, tick: Math.round(time / TICK_DT), kind, message, data: structuredClone(data) });
 }
 export function availability(world: World, deities: DeityIndex, ids: readonly string[], side: 'player' | 'enemy', faith: number) {
-  return ids.map((id, slot) => {
+  return ids.map((id, index) => {
     const deity = deities.get(id);
     const fieldBlock = deity ? deployBlock(world, deities, deity, side) : null;
     const affordable = deity ? faith >= deity.cost : false;
-    return { slot, deityId: id, cost: deity?.cost ?? null, affordable, fieldBlock,
+    return { index, deityId: id, cost: deity?.cost ?? null, affordable, fieldBlock,
       summonable: world.outcome === 'ongoing' && deity !== undefined && affordable && fieldBlock === null };
   });
 }
-export function diagnosticState(world: World, deities: DeityIndex, hand: Hand, enemyDeck: readonly string[], enemyFaith: number, enemyAi: boolean) {
+export function diagnosticState(world: World, deities: DeityIndex, playerDeck: readonly string[], enemyDeck: readonly string[], enemyFaith: number, enemyAi: boolean) {
   return {
     outcome: world.outcome, units: world.units.map((u) => ({ ...u })),
     player: { faith: world.faith, faithMax: world.faithMax, faithRegen: world.faithRegen,
-      hand: { slots: [...hand.slots], queue: [...hand.queue] }, fieldCounts: fieldCounts(world, deities, 'player'),
-      available: availability(world, deities, hand.slots, 'player', world.faith) },
+      deck: [...playerDeck], fieldCounts: fieldCounts(world, deities, 'player'),
+      available: availability(world, deities, playerDeck, 'player', world.faith) },
     enemy: { faith: enemyFaith, faithMax: world.faithMax, faithRegen: enemyAi ? world.faithRegen : 0,
       aiEnabled: enemyAi, candidates: [...enemyDeck], fieldCounts: fieldCounts(world, deities, 'enemy'),
       available: availability(world, deities, enemyDeck, 'enemy', enemyFaith).map((a) => ({ ...a, summonable: enemyAi && a.summonable })) },
