@@ -25,9 +25,6 @@ import {
 import { drawFigureUnit, drawGhosts, updateRigs } from './rig/animator';
 import { drawStrikes, scheduleStrikes } from './strikes';
 
-// Geometry lives in layout.ts; re-exported so existing importers keep working.
-export { unitBodyHeight, unitFootY, unitScreenX, worldToScreen };
-
 const INK = '#1A1A1E';
 const BONE = '#EDE6D6';
 const BLOOD = '#C4442E';
