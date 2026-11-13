@@ -22,8 +22,8 @@ import { preloadArt } from './render/art/sprites';
 import { chooseSummon } from './sim/advisor';
 import { createBattleLog, noteDeployment, recordEvents } from './sim/battlelog';
 import { createDiagnosticLog, diagnosticCombatObserver, diagnosticState, noteDiagnostic, unitLabel } from './sim/diagnostics';
-import { createHand, playFrom } from './sim/hand';
 import { BLOCK_LABEL, deployBlock, fieldCounts, MAX_FIELD_UNITS, MAX_HEAVY_UNITS } from './sim/limits';
+import { checkSummon, fieldAllowed } from './sim/summon';
 import { createWorld, spawnUnit, tickWorldObserved } from './sim/world';
 import type { ResolveResult } from './ui/admin';
 import { mountAdminPanel } from './ui/admin';
@@ -77,8 +77,11 @@ const graph = buildGraph(ALL_EDGES);
 const rng = createRng(0x5eed);
 const world = createWorld(stage, deities);
 
-/** The player's chosen deck, falling back to whatever the stage supplies. */
-const playerDeck: readonly DeityId[] = stage.playerDeck;
+/**
+ * The player's chosen deck, falling back to whatever the stage supplies. Every member can be summoned
+ * at any time; unknown ids are dropped so a card's position always matches its deck index.
+ */
+const playerDeck: readonly DeityId[] = stage.playerDeck.filter((id) => deities.has(id));
 
 // One pantheon fights in its own realm; a mixed deck fights in the open-world city.
 const deckRealms = pantheonsOf(playerDeck, ALL_DEITIES);
@@ -88,18 +91,10 @@ setAutoBackdrop(deckRealms.length === 1 ? (deckRealms[0] as Pantheon) : 'openwor
 const pendingWaves: StageWave[] = [...stage.waves].sort((a, b) => a.at - b.at);
 
 /**
- * Slot indices requested since the last tick. Drained on a tick boundary so input never desyncs the
- * sim. Slots, not ids: which unit occupies a slot changes as the hand cycles, and the player is
- * pressing a position on screen.
+ * Deck indices requested since the last tick. Drained on a tick boundary so input never desyncs the
+ * sim.
  */
-const summonQueue: { slot: number; source: 'manual' | 'auto-player' }[] = [];
-
-/** The cycling hand. Only its visible slots are summonable; the rest arrive as cards are played. */
-let hand = createHand(playerDeck);
-
-/** Resolves a list of ids to deities, dropping anything unknown. */
-const toDeities = (ids: readonly DeityId[]): Deity[] =>
-  ids.map((id) => deities.get(id)).filter((deity): deity is Deity => deity !== undefined);
+const summonQueue: { deckIndex: number; source: 'manual' | 'auto-player' }[] = [];
 
 /**
  * Records every attack for the post-match report. Deployments are noted here rather than derived
@@ -117,7 +112,11 @@ function deploy(deity: Deity, side: 'player' | 'enemy', source: 'scripted-wave' 
   });
 }
 
-const hud = mountHud(hudRoot, (slotIndex) => summonQueue.push({ slot: slotIndex, source: 'manual' }));
+const hud = mountHud(
+  hudRoot,
+  playerDeck.map((id) => deities.get(id) as Deity),
+  (deckIndex) => summonQueue.push({ deckIndex, source: 'manual' }),
+);
 for (const base of world.units) battleLog.identities.set(base.id, { deityId: base.deityId, side: base.side });
 
 mountCodex(ALL_DEITIES, ALL_EDGES);
@@ -154,7 +153,7 @@ const diagnosticLog = createDiagnosticLog({
 });
 const combatObserver = diagnosticCombatObserver(diagnosticLog, world, deities);
 function currentDiagnosticState() {
-  return diagnosticState(world, deities, hand, enemyDeck, enemyFaith, getSettings().enemyAi);
+  return diagnosticState(world, deities, playerDeck, enemyDeck, enemyFaith, getSettings().enemyAi);
 }
 noteDiagnostic(diagnosticLog, 0, 'start', 'Battle initialised', { state: currentDiagnosticState() });
 let nextSnapshotAt = 1;
@@ -174,20 +173,15 @@ function processSpawns(): void {
   for (;;) {
     const request = summonQueue.shift();
     if (request === undefined) break;
-    const slotIndex = request.slot;
-    const deityId = hand.slots[slotIndex];
-    const deity = deityId === undefined ? undefined : deities.get(deityId);
-    const block = deity === undefined ? null : deployBlock(world, deities, deity, 'player');
-    const reason = deity === undefined ? 'invalid-slot-or-deity' : world.faith < deity.cost ? 'insufficient-faith' : block;
-    noteDiagnostic(diagnosticLog, world.time, 'summon-attempt', `${request.source} slot ${slotIndex + 1}: ${reason ?? 'accepted'}`, {
-      slotIndex, deityId: deityId ?? null, source: request.source, accepted: reason === null, reason, stateBefore: currentDiagnosticState(),
+    const { deckIndex, source } = request;
+    const { deity, reason } = checkSummon(world, deities, playerDeck, deckIndex, 'player', world.faith);
+    noteDiagnostic(diagnosticLog, world.time, 'summon-attempt', `${source} card ${deckIndex + 1}: ${reason ?? 'accepted'}`, {
+      deckIndex, deityId: playerDeck[deckIndex] ?? null, source, accepted: reason === null, reason, stateBefore: currentDiagnosticState(),
     });
     if (deity === undefined || reason !== null) continue;
     // A refused summon costs nothing: the faith is only spent once the unit is allowed on the field.
     world.faith -= deity.cost;
-    // Played units cycle to the back; the next reinforcement takes the slot they vacated.
-    hand = playFrom(hand, slotIndex);
-    deploy(deity, 'player', request.source, deity.cost);
+    deploy(deity, 'player', source, deity.cost);
   }
 
   if (!getSettings().enemyAi || world.outcome !== 'ongoing') return;
@@ -198,10 +192,7 @@ function processSpawns(): void {
   enemyThinkTimer = ENEMY_THINK_INTERVAL;
 
   // The opponent obeys the same field limits, so it only considers what it may actually summon.
-  const allowed = enemyDeck.filter((id) => {
-    const candidate = deities.get(id);
-    return candidate !== undefined && deployBlock(world, deities, candidate, 'enemy') === null;
-  });
+  const allowed = fieldAllowed(world, deities, enemyDeck, 'enemy');
   const choice = chooseSummon(world, deities, graph, allowed, 'enemy', enemyFaith, stage.faithMax);
   noteDiagnostic(diagnosticLog, world.time, 'decision', `Opponent decision: ${choice ?? 'wait'}`, {
     side: 'enemy', source: 'enemy-ai', choice, allowed, stateBefore: currentDiagnosticState(),
@@ -217,25 +208,22 @@ function processSpawns(): void {
 let autoThinkTimer = 0;
 
 /**
- * Plays the player's side with the same rule engine the opponent uses, respecting the cycling hand
- * — it can only summon what is actually in a slot. Used only while fast-forwarding.
+ * Plays the player's side with the same rule engine the opponent uses, choosing from the whole deck
+ * under the same field limits. Used only while fast-forwarding.
  */
 function autoSummonForPlayer(): void {
   autoThinkTimer -= TICK_DT;
   if (autoThinkTimer > 0) return;
   autoThinkTimer = AUTO_THINK_INTERVAL;
 
-  const summonable = hand.slots.filter((id) => {
-    const candidate = deities.get(id);
-    return candidate !== undefined && deployBlock(world, deities, candidate, 'player') === null;
-  });
+  const summonable = fieldAllowed(world, deities, playerDeck, 'player');
   const choice = chooseSummon(world, deities, graph, summonable, 'player', world.faith, stage.faithMax);
   noteDiagnostic(diagnosticLog, world.time, 'decision', `Auto-player decision: ${choice ?? 'wait'}`, {
     side: 'player', source: 'auto-player', choice, allowed: summonable, stateBefore: currentDiagnosticState(),
   });
   if (choice === null) return;
-  const slot = hand.slots.indexOf(choice);
-  if (slot >= 0) summonQueue.push({ slot, source: 'auto-player' });
+  const deckIndex = playerDeck.indexOf(choice);
+  if (deckIndex >= 0) summonQueue.push({ deckIndex, source: 'auto-player' });
 }
 
 /** Record hits at their exact simulation tick, even when a rendered frame advances several steps. */
@@ -326,19 +314,19 @@ function frame(now: number): void {
   drawWorld(ctx, world, deities);
   drawEffects(ctx, world, deities, graph, elapsed);
   world.events.length = 0;
-  hud.update(world, toDeities(hand.slots), toDeities(hand.queue));
   const mine = fieldCounts(world, deities, 'player');
   setFieldStatus({
     units: mine.units,
     unitsMax: MAX_FIELD_UNITS,
     heavy: mine.heavy,
     heavyMax: MAX_HEAVY_UNITS,
-    blocked: hand.slots.map((id) => {
+    blocked: playerDeck.map((id) => {
       const candidate = deities.get(id);
       const block = candidate === undefined ? null : deployBlock(world, deities, candidate, 'player');
       return block === null ? null : BLOCK_LABEL[block];
     }),
   });
+  hud.update(world);
   consultant.update(world, world.faith, elapsed);
   report.update(world.outcome);
 

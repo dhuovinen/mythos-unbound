@@ -1,16 +1,18 @@
 /**
- * Player HUD — faith meter and the cycling hand.
+ * Player HUD — faith meter and one summon card per deck member.
  *
- * The hand is what drives this layout. Only the summonable slots are large and interactive;
- * everything else is a small "next up" strip showing what is arriving and in what order. That
- * distinction is the tension the cycling deck exists to create — the counter you need may be
- * visible, and still two summons away.
+ * Every drafted unit is on offer for the whole battle. Number keys 1–9 follow draft order, the same
+ * order the cards are listed in. A card greys out with its reason when the player cannot afford it
+ * or the field limits block it, so the only questions are what to summon and when.
  *
  * DOM nodes are built once and only mutated in update(), which runs every frame.
  */
 
-import { HAND_SIZE } from '../sim/hand';
+import { DRAFT_DECK_SIZE } from '../sim/draft';
 import type { HudHandle, MountHud } from '../sim/types';
+
+/** Number keys 1–9 reach this many cards; any beyond are click-only. */
+const KEYED_CARDS = Math.min(9, DRAFT_DECK_SIZE);
 
 let activeKeyHandler: ((event: KeyboardEvent) => void) | null = null;
 
@@ -20,13 +22,13 @@ export interface FieldStatus {
   readonly unitsMax: number;
   readonly heavy: number;
   readonly heavyMax: number;
-  /** Per hand slot: why that card cannot be played right now, or null. */
+  /** Per deck index: which field limit blocks that card right now, or null. */
   readonly blocked: readonly (string | null)[];
 }
 
 let applyFieldStatus: ((status: FieldStatus) => void) | null = null;
 
-/** Updates the field counter and marks any summon card the limits are currently blocking. */
+/** Updates the field counter and the field-limit reasons the cards show. Call before update(). */
 export function setFieldStatus(status: FieldStatus): void {
   applyFieldStatus?.(status);
 }
@@ -65,26 +67,28 @@ function ensureStyles(): void {
     .hud-field { font-weight: 600; font-size: 12px; color: #a99c85; }
     .hud-field b { color: #e8dcc4; }
     .hud-field .full { color: #e0614a; }
-    .hud-blocked {
+    .hud-reason {
       position: absolute; left: 0; right: 0; bottom: 6px; text-align: center; font-size: 10px; font-weight: 800;
-      letter-spacing: .6px; text-transform: uppercase; color: #e0614a; display: none;
+      letter-spacing: .6px; text-transform: uppercase; color: #a99c85; display: none;
     }
-    .hud-slot.blocked .hud-blocked { display: block; }
-    .hud-slot.blocked .hud-progress, .hud-slot.blocked .hud-pantheon { display: none; }
-    .hud-hand { display: flex; gap: 10px; justify-content: center; align-items: stretch; }
-    .hud-slot {
+    .hud-card.blocked .hud-reason { color: #e0614a; }
+    .hud-card.blocked .hud-reason, .hud-card.short .hud-reason { display: block; }
+    .hud-card.blocked .hud-progress, .hud-card.blocked .hud-pantheon,
+    .hud-card.short .hud-pantheon { display: none; }
+    .hud-cards { display: flex; gap: 10px; justify-content: center; align-items: stretch; flex-wrap: wrap; }
+    .hud-card {
       position: relative; flex: 1 1 0; max-width: 200px; min-width: 118px;
       display: flex; flex-direction: column; align-items: center;
       background: #1a1616; border: 2px solid #3a3030; border-radius: 10px;
       padding: 10px 10px 13px; cursor: pointer; overflow: hidden;
       transition: transform .15s ease, border-color .15s ease, opacity .15s ease;
     }
-    .hud-slot:hover:not(.disabled) { transform: translateY(-3px); border-color: #e8dcc4; }
-    .hud-slot.disabled { opacity: .45; cursor: not-allowed; transform: none; }
-    .hud-slot.tier-chaff { border-color: #7a8b9e; }
-    .hud-slot.tier-demigod { border-color: #4fe3e0; }
-    .hud-slot.tier-god { border-color: #c9a227; }
-    .hud-slot.tier-titan { border-color: #c4442e; }
+    .hud-card:hover:not(.disabled) { transform: translateY(-3px); border-color: #e8dcc4; }
+    .hud-card.disabled { opacity: .45; cursor: not-allowed; transform: none; }
+    .hud-card.tier-chaff { border-color: #7a8b9e; }
+    .hud-card.tier-demigod { border-color: #4fe3e0; }
+    .hud-card.tier-god { border-color: #c9a227; }
+    .hud-card.tier-titan { border-color: #c4442e; }
     .hud-key {
       position: absolute; top: 5px; left: 7px; font-size: 10px; font-weight: 700;
       background: rgba(0,0,0,.7); padding: 1px 6px; border-radius: 3px;
@@ -99,18 +103,6 @@ function ensureStyles(): void {
       position: absolute; bottom: 0; left: 0; height: 3px;
       background: #c9a227; transition: width .1s linear;
     }
-    .hud-next {
-      display: flex; align-items: center; gap: 7px; justify-content: center;
-      margin-top: 9px; flex-wrap: wrap;
-    }
-    .hud-next-label {
-      text-transform: uppercase; letter-spacing: .6px; font-size: 10px; color: #6d6355;
-    }
-    .hud-next-item {
-      padding: 3px 9px; border-radius: 4px; background: #161313;
-      border: 1px solid #2b2620; color: #857a68; font-size: 11px;
-    }
-    .hud-next-item.first { border-color: #4a4038; color: #cabfa9; }
   `;
   document.head.append(style);
 }
@@ -122,17 +114,16 @@ function el(tag: string, className?: string, text?: string): HTMLElement {
   return node;
 }
 
-interface SlotRefs {
+interface CardRefs {
   readonly root: HTMLElement;
-  readonly name: HTMLElement;
-  readonly cost: HTMLElement;
-  readonly pantheon: HTMLElement;
   readonly progress: HTMLElement;
-  readonly blocked: HTMLElement;
+  readonly reason: HTMLElement;
+  /** Last reason text written, so the DOM is only touched when it changes. */
+  shown: string;
 }
 
-/** Builds the faith bar and the cycling hand into `root`. */
-export const mountHud: MountHud = (root, onSummonSlot) => {
+/** Builds the faith bar and the deck's summon cards into `root`. */
+export const mountHud: MountHud = (root, deck, onSummon) => {
   root.replaceChildren();
   ensureStyles();
 
@@ -161,65 +152,54 @@ export const mountHud: MountHud = (root, onSummonSlot) => {
   faithWrap.append(faithHeader, faithTrack);
   container.append(faithWrap);
 
-  const handRow = el('div', 'hud-hand');
-  container.append(handRow);
+  const cardRow = el('div', 'hud-cards');
+  container.append(cardRow);
 
-  const slots: SlotRefs[] = [];
-  for (let i = 0; i < HAND_SIZE; i++) {
-    const slot = el('div', 'hud-slot');
-    const name = el('div', 'hud-name');
-    const cost = el('div', 'hud-cost');
-    const pantheon = el('div', 'hud-pantheon');
+  const cards: CardRefs[] = deck.map((deity, i) => {
+    const card = el('div', `hud-card tier-${deity.tier}`);
     const progress = el('div', 'hud-progress');
     progress.style.width = '0%';
-    const blocked = el('div', 'hud-blocked');
-    slot.append(el('div', 'hud-key', `${i + 1}`), name, cost, pantheon, blocked, progress);
-    slot.addEventListener('click', () => onSummonSlot(i));
-    handRow.append(slot);
-    slots.push({ root: slot, name, cost, pantheon, progress, blocked });
-  }
-
-  const nextRow = el('div', 'hud-next');
-  nextRow.append(el('span', 'hud-next-label', 'Next up'));
-  const nextItems: HTMLElement[] = [];
-  for (let i = 0; i < 4; i++) {
-    const item = el('span', 'hud-next-item');
-    nextRow.append(item);
-    nextItems.push(item);
-  }
-  container.append(nextRow);
+    const reason = el('div', 'hud-reason');
+    if (i < KEYED_CARDS) card.append(el('div', 'hud-key', `${i + 1}`));
+    card.append(
+      el('div', 'hud-name', deity.name),
+      el('div', 'hud-cost', `${deity.cost} faith`),
+      el('div', 'hud-pantheon', deity.pantheon),
+      reason,
+      progress,
+    );
+    card.addEventListener('click', () => onSummon(i));
+    cardRow.append(card);
+    return { root: card, progress, reason, shown: '' };
+  });
 
   const handleKeyDown = (event: KeyboardEvent): void => {
     const target = event.target;
     if (
       target instanceof HTMLInputElement ||
       target instanceof HTMLTextAreaElement ||
-      target instanceof HTMLSelectElement
+      target instanceof HTMLSelectElement ||
+      event.repeat || event.metaKey || event.ctrlKey || event.altKey
     ) {
       return;
     }
-    const index = Number.parseInt(event.key, 10) - 1;
-    if (Number.isInteger(index) && index >= 0 && index < HAND_SIZE) onSummonSlot(index);
+    if (!/^[1-9]$/.test(event.key)) return;
+    const index = Number(event.key) - 1;
+    if (index < Math.min(deck.length, KEYED_CARDS)) onSummon(index);
   };
   activeKeyHandler = handleKeyDown;
   window.addEventListener('keydown', handleKeyDown);
 
+  let blockedBy: readonly (string | null)[] = [];
   applyFieldStatus = (status): void => {
     const unitsFull = status.units >= status.unitsMax;
     const heavyFull = status.heavy >= status.heavyMax;
     fieldInfo.innerHTML = `<span>Field <b class="${unitsFull ? 'full' : ''}">${status.units}/${status.unitsMax}</b></span><span>Gods &amp; titans <b class="${heavyFull ? 'full' : ''}">${status.heavy}/${status.heavyMax}</b></span>`;
-    slots.forEach((refs, i) => {
-      const reason = status.blocked[i] ?? null;
-      refs.root.classList.toggle('blocked', reason !== null);
-      refs.blocked.textContent = reason ?? '';
-    });
+    blockedBy = status.blocked;
   };
 
-  let lastSlotIds = '';
-  let lastQueueIds = '';
-
   const handle: HudHandle = {
-    update(world, handSlots, queued): void {
+    update(world): void {
       faithText.textContent = `Faith: ${Math.floor(world.faith)} / ${world.faithMax}`;
       faithRegen.textContent = `+${world.faithRegen.toFixed(1)}/s`;
       faithFill.style.width = `${Math.min(100, (world.faith / world.faithMax) * 100)}%`;
@@ -234,41 +214,21 @@ export const mountHud: MountHud = (root, onSummonSlot) => {
         banner.style.display = 'none';
       }
 
-      // Slot contents only change when the hand cycles, so skip the DOM work otherwise.
-      const slotIds = handSlots.map((d) => d.id).join(',');
-      if (slotIds !== lastSlotIds) {
-        lastSlotIds = slotIds;
-        slots.forEach((refs, i) => {
-          const deity = handSlots[i];
-          if (deity === undefined) {
-            refs.root.style.visibility = 'hidden';
-            return;
-          }
-          refs.root.style.visibility = '';
-          refs.root.className = `hud-slot tier-${deity.tier}`;
-          refs.name.textContent = deity.name;
-          refs.cost.textContent = `${deity.cost} faith`;
-          refs.pantheon.textContent = deity.pantheon;
-        });
-      }
-
-      const queueIds = queued.map((d) => d.id).join(',');
-      if (queueIds !== lastQueueIds) {
-        lastQueueIds = queueIds;
-        nextItems.forEach((item, i) => {
-          const deity = queued[i];
-          item.textContent = deity === undefined ? '' : deity.name;
-          item.style.display = deity === undefined ? 'none' : '';
-          item.className = `hud-next-item${i === 0 ? ' first' : ''}`;
-        });
-      }
-
-      // Affordability shifts continuously, so this part does run every frame.
-      slots.forEach((refs, i) => {
-        const deity = handSlots[i];
+      // Affordability and field limits shift continuously, so this runs every frame.
+      cards.forEach((refs, i) => {
+        const deity = deck[i];
         if (deity === undefined) return;
-        const affordable = !over && world.faith >= deity.cost && !refs.root.classList.contains('blocked');
-        refs.root.classList.toggle('disabled', !affordable);
+        const blocked = over ? null : (blockedBy[i] ?? null);
+        const shortBy = Math.ceil(deity.cost - world.faith);
+        const short = !over && blocked === null && shortBy > 0;
+        const text = blocked ?? (short ? `${shortBy} faith short` : '');
+        if (text !== refs.shown) {
+          refs.shown = text;
+          refs.reason.textContent = text;
+        }
+        refs.root.classList.toggle('blocked', blocked !== null);
+        refs.root.classList.toggle('short', short);
+        refs.root.classList.toggle('disabled', over || blocked !== null || short);
         refs.progress.style.width = `${Math.min(100, (world.faith / deity.cost) * 100)}%`;
       });
     },

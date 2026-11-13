@@ -64,6 +64,14 @@ the remaining space; on phones the controls move below it. Bases and figures hav
 clearance, and the framing fits long rigs and the full unit-size range. This changes rendering only;
 simulation positions, movement, ranges and battle timing stay the same.
 
+**Summoning: the whole team, any order.** Every drafted team member (up to 9) has its own summon
+card for the whole battle; click it or press its number key (1–9, in draft order). There is no
+cycling hand or "Next up" queue any more. A card greys out with its reason when you are short of
+faith ("40 faith short") or a field limit blocks it ("Field full", "God limit"); nothing else limits
+what you may summon. The check lives in `src/sim/summon.ts` (`checkSummon`, `fieldAllowed`, tested
+in `tests/summon.test.ts`). The fast-forward auto-player and the opponent both choose from their full
+decks under the same limits. Without a saved draft, the showcase deck's nine units are all offered.
+
 **Battle readability (render-only).** `src/render/layout.ts` draws units away from their simulated
 spot so fights stay legible: duelling units share one of five ground rows with open ground between
 them, extra attackers fan onto neighbouring rows, and allies stack backwards into staggered ranks
@@ -129,7 +137,7 @@ starting a new deck begins a new log. The viewer freezes a snapshot while the ba
 
 Filter or search the chronological events and select one to inspect exact attack arithmetic,
 relationships, unit instance IDs, positions, cooldowns, HP, full field state and summon availability.
-The log includes both economies, the cycling hand, decisions, successful/refused summons, free
+The log includes both economies, the player's deck, decisions, successful/refused summons, free
 scripted waves, deaths, settings, fast-forward periods and outcomes. Field checkpoints are roughly
 once per second; every attack has its own full pre-attack field. It does not record every movement tick.
 
