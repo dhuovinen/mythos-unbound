@@ -32,6 +32,8 @@ export interface Settings {
   showStatusPips: boolean;
   /** Floating proc tags and damage numbers. */
   showFloatingText: boolean;
+  /** Health bars on units that have not been hurt yet. Off = bars appear once a unit takes damage. */
+  showFullHealthBars: boolean;
   /** Append the underlying figures to the consultant's advice. Off = prose only. */
   quantifyAdvice: boolean;
   /** Let the opponent summon its own counters instead of only running the scripted timeline. */
@@ -56,6 +58,7 @@ const DEFAULTS: Settings = {
   showTethers: true,
   showStatusPips: true,
   showFloatingText: true,
+  showFullHealthBars: false,
   quantifyAdvice: false,
   enemyAi: true,
   deck: null,
@@ -92,6 +95,7 @@ function load(): void {
       'showTethers',
       'showStatusPips',
       'showFloatingText',
+      'showFullHealthBars',
       'quantifyAdvice',
       'enemyAi',
     ] as const;

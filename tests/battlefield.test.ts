@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import { CANVAS_HEIGHT, CANVAS_WIDTH, ENEMY_BASE_X, PLAYER_BASE_X } from '../src/sim/constants';
-import { unitBodyHeight, worldToScreen } from '../src/render/draw';
+import { fitFigureX, maxFootY, unitBodyHeight, worldToScreen } from '../src/render/layout';
 import { FIGURE_BY_ID, RIG_ROSTER } from '../src/render/rig/figures';
 import { getSettings, setSetting } from '../src/ui/settings';
 
@@ -54,7 +54,9 @@ describe('battlefield framing', () => {
       for (const x of [PLAYER_BASE_X, ENEMY_BASE_X]) for (const facing of [-1, 1]) {
         for (const anim of ['idle', 'walk', 'attack', 'hit', 'death'] as const) for (const t of [0, 0.28, 0.4, 0.7, 1]) {
           const { ctx, bounds } = pathBounds();
-          ctx.translate(worldToScreen(x), 445);
+          // Each side always faces the enemy; the layout fits long figures inward near the bases.
+          const side = facing > 0 ? 'player' : 'enemy';
+          ctx.translate(fitFigureX(deity, side, worldToScreen(x)), maxFootY());
           const scale = unitBodyHeight(deity) / 100;
           ctx.scale(facing * scale, scale); figure.draw(ctx, anim, t, 1.23);
           const label = `${deity.id} ${anim} t=${t} x=${x} facing=${facing}`;

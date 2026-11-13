@@ -240,6 +240,7 @@ export function mountAdminPanel(onResolve?: () => ResolveResult, deities: readon
     { key: 'showStatusPips', label: 'Status pips under units' },
     { key: 'showTethers', label: 'Relationship tethers' },
     { key: 'showFloatingText', label: 'Proc tags & damage numbers' },
+    { key: 'showFullHealthBars', label: 'Health bars on unhurt units' },
   ];
 
   const consultToggles: readonly { key: ToggleKey; label: string }[] = [

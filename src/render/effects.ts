@@ -24,7 +24,8 @@ import type {
   World,
 } from '../sim/types';
 import { getSettings } from '../ui/settings';
-import { unitBodyHeight, unitFootY, worldToScreen } from './draw';
+import { unitBodyHeight, unitFootY, unitScreenX } from './layout';
+import { dueImpacts } from './strikes';
 
 /** Hard caps keep a thirty-unit brawl from turning into soup. Legibility beats spectacle. */
 const MAX_FLOATERS = 36;
@@ -114,48 +115,55 @@ function drawText(
   ctx.globalAlpha = 1;
 }
 
-/** Turns each 'hit' event into a proc tag over the attacker and a damage number over the defender. */
+/** Raises the dominant modifier's name over the attacker. */
+function spawnTag(attackerId: number, dominant: ModifierName): void {
+  const from = lastPos.get(attackerId);
+  if (from === undefined) return;
+  pushFloater({
+    text: dominant.toUpperCase(),
+    color: MODIFIER_COLORS[dominant],
+    x: from.x,
+    y: from.y - 12,
+    vy: -26,
+    life: TAG_LIFE,
+    maxLife: TAG_LIFE,
+    size: 13,
+    weight: 800,
+  });
+}
+
+/**
+ * Turns each 'hit' into a proc tag over the attacker and a damage number over the defender, both at
+ * the moment the blow visibly lands (strikes.ts schedules it). A prevented attack never lands, so
+ * its tag is raised at once.
+ */
 function spawnFromEvents(world: World): void {
   for (const event of world.events) {
-    if (event.kind !== 'hit') continue;
+    if (event.kind !== 'hit' || event.damage > 0) continue;
+    const dominant: ModifierName | undefined = event.modifiers[0];
+    if (dominant !== undefined) spawnTag(event.attackerId, dominant);
+  }
 
+  // damage === 0 means the attack was prevented (Entranced) and never reaches dueImpacts: a
+  // floating "0" would read as a miss rather than as a refusal to fight.
+  for (const event of dueImpacts()) {
     // WP-1 sorts by precedence, so element 0 is the dominant modifier.
     const dominant: ModifierName | undefined = event.modifiers[0];
     const tint = dominant === undefined ? NEUTRAL_DAMAGE_COLOR : MODIFIER_COLORS[dominant];
-
-    if (dominant !== undefined) {
-      const from = lastPos.get(event.attackerId);
-      if (from !== undefined) {
-        pushFloater({
-          text: dominant.toUpperCase(),
-          color: tint,
-          x: from.x,
-          y: from.y - 12,
-          vy: -26,
-          life: TAG_LIFE,
-          maxLife: TAG_LIFE,
-          size: 13,
-          weight: 800,
-        });
-      }
-    }
-
-    // damage === 0 means the attack was prevented (Entranced). Keep the proc tag, drop the number:
-    // a floating "0" reads as a miss rather than as a refusal to fight.
-    const to = event.damage > 0 ? lastPos.get(event.defenderId) : undefined;
-    if (to !== undefined) {
-      pushFloater({
-        text: `${Math.round(event.damage)}`,
-        color: tint,
-        x: to.x,
-        y: to.y,
-        vy: -38,
-        life: DAMAGE_LIFE,
-        maxLife: DAMAGE_LIFE,
-        size: damageSize(event.damage),
-        weight: 700,
-      });
-    }
+    if (dominant !== undefined) spawnTag(event.attackerId, dominant);
+    const to = lastPos.get(event.defenderId);
+    if (to === undefined) continue;
+    pushFloater({
+      text: `${Math.round(event.damage)}`,
+      color: tint,
+      x: to.x,
+      y: to.y,
+      vy: -38,
+      life: DAMAGE_LIFE,
+      maxLife: DAMAGE_LIFE,
+      size: damageSize(event.damage),
+      weight: 700,
+    });
   }
 }
 
@@ -350,7 +358,7 @@ export const drawEffects: DrawEffects = (ctx, world, deities, graph, dt) => {
   // Refresh positions before reading events, so a unit that died this tick still has a position.
   for (const unit of world.units) {
     const deity = deities.get(unit.deityId);
-    lastPos.set(unit.id, { x: worldToScreen(unit.x), y: anchorY(unit, deity) });
+    lastPos.set(unit.id, { x: unitScreenX(unit), y: anchorY(unit, deity) });
   }
 
   const settings = getSettings();
@@ -370,7 +378,7 @@ export const drawEffects: DrawEffects = (ctx, world, deities, graph, dt) => {
     for (const unit of world.units) {
       if (unit.isBase || unit.hp <= 0) continue;
       const status = computeStatus(unit, world, deities, graph, byId);
-      if (status !== null) drawStatus(ctx, unit, status, worldToScreen(unit.x));
+      if (status !== null) drawStatus(ctx, unit, status, unitScreenX(unit));
     }
   }
 

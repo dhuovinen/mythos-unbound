@@ -11,3 +11,6 @@ _site/
 
 # Rendered trailer videos (large; uploaded to YouTube instead)
 promo/*.mp4
+
+# Unlabelled battle recordings and the revised drafting capture
+promo/trailer-media/*.mp4

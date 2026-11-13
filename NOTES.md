@@ -42,10 +42,40 @@ opponent deck are passed as JSON) and `tree.mjs`. Generate the score with
 `node render.mjs h` (16:9) or `node render.mjs v` (9:16), then encode with ffmpeg: `loudnorm` to
 -14 LUFS, libx264 at CRF 17, AAC at 320k. `render.mjs` reads the landing-page art from `site/`.
 
+The revised **26-second landscape trailer** is `promo/mythos-unbound-trailer-16x9-revised.mp4`.
+It uses `trailer-revised.html` and `score-revised.py`; the original landscape and vertical
+trailers retain their own source. Its four unlabelled recordings are saved in
+`promo/trailer-media/` (git-ignored). With those recordings present, rebuild it using the
+installed Codex browser runtime, Chrome, ffmpeg, and uv:
+
+```bash
+NODE_PATH=/Users/dhuovinen/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules \
+  node promo/trailer-src/render-revised.mjs --work /tmp/mythos-trailer-revision
+```
+
+Add `--stills 0.5,3.8,8,12.8,15.5,23` to render review images without producing a video.
+To refresh the real Zeus selection, run the game at port 3033 and add `--capture-draft`.
+To recover the original battle media, add `--clips <folder-containing-greek-norse-egyptian-frame-folders>`.
+The renderer loads art/fonts locally, reports missing assets, retimes the score, and exports
+1920×1080 H.264 at 30 fps with stereo AAC. See `promo/trailer-src/revised-edit.md` for its cut list.
+
 The main game keeps options, faith and summon cards in a vertical side rail. The battlefield uses
 the remaining space; on phones the controls move below it. Bases and figures have extra edge
 clearance, and the framing fits long rigs and the full unit-size range. This changes rendering only;
 simulation positions, movement, ranges and battle timing stay the same.
+
+**Battle readability (render-only).** `src/render/layout.ts` draws units away from their simulated
+spot so fights stay legible: duelling units share one of five ground rows with open ground between
+them, extra attackers fan onto neighbouring rows, and allies stack backwards into staggered ranks
+(never ahead of the simulation, at most 120 px behind). The lane now takes ~79% of the width;
+figures keep their previous size, and long figures are fitted inward at the canvas edges instead.
+Each unit stands on a team-coloured ring (blue = player, red = enemy) with a chevron pointing the
+way it fights. `src/render/strikes.ts` draws every damaging hit: projectiles for reach ≥ 44, a
+slash for melee, a spark on impact. Hits are *shown* landing on the attack animation's strike frame,
+so the flinch, damage number, proc tag and a dying unit's fall all wait for the blow. Health bars
+are team-coloured, appear once a unit is hurt (**Display settings → Health bars on unhurt units**
+shows them always), trail a pale chip of lost health, get a red frame at ≤35%, and lift apart
+when they would overlap. Simulation, ranges and timing are unchanged.
 
 Beginning a drafted battle uses the selected rosters for both sides, with no free scripted
 reinforcements. The original showcase timeline runs only when neither side has a saved draft.
@@ -160,8 +190,8 @@ The Olympus work (formerly the `olympus` branch, now `main`) is about looks; gam
 
 ## Backlog
 
-- **Trailer intro: show god names with their portraits.** Every portrait shown in the opening and the
-  pairing shots (Cronus, Zeus, Ares, Aphrodite, Thor, Jörmungandr) needs its name on screen. Source:
+- **Original trailer intro: show god names with their portraits.** The revised landscape trailer
+  now names Cronus, Zeus, Ares, Aphrodite, Thor and Jörmungandr. The original exports still need this change. Source:
   `promo/trailer-src/trailer.html` (`s1` and `duel`). Re-render with `render.mjs`, then re-encode
   (see How to run).
 
