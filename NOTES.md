@@ -64,6 +64,19 @@ the remaining space; on phones the controls move below it. Bases and figures hav
 clearance, and the framing fits long rigs and the full unit-size range. This changes rendering only;
 simulation positions, movement, ranges and battle timing stay the same.
 
+**Battle readability (render-only).** `src/render/layout.ts` draws units away from their simulated
+spot so fights stay legible: duelling units share one of five ground rows with open ground between
+them, extra attackers fan onto neighbouring rows, and allies stack backwards into staggered ranks
+(never ahead of the simulation, at most 120 px behind). The lane now takes ~79% of the width;
+figures keep their previous size, and long figures are fitted inward at the canvas edges instead.
+Each unit stands on a team-coloured ring (blue = player, red = enemy) with a chevron pointing the
+way it fights. `src/render/strikes.ts` draws every damaging hit: projectiles for reach ≥ 44, a
+slash for melee, a spark on impact. Hits are *shown* landing on the attack animation's strike frame,
+so the flinch, damage number, proc tag and a dying unit's fall all wait for the blow. Health bars
+are team-coloured, appear once a unit is hurt (**Display settings → Health bars on unhurt units**
+shows them always), trail a pale chip of lost health, get a red frame at ≤35%, and lift apart
+when they would overlap. Simulation, ranges and timing are unchanged.
+
 Beginning a drafted battle uses the selected rosters for both sides, with no free scripted
 reinforcements. The original showcase timeline runs only when neither side has a saved draft.
 The completed report lists both battle rosters; **What was fielded** counts repeat summons and

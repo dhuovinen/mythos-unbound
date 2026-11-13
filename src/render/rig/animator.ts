@@ -14,6 +14,7 @@ import type { AnimName, Figure } from './figure';
 import { ANIM_SECONDS, hitFlash } from './figure';
 import { getSettings } from '../../ui/settings';
 import { figureFor } from './figures';
+import { dueImpacts, pendingImpactUntil } from '../strikes';
 
 interface Snapshot {
   figure: Figure;
@@ -90,23 +91,27 @@ export function updateRigs(world: World, now: number): void {
         attacker.anim = 'attack';
         attacker.since = now;
       }
-      const defender = states.get(event.defenderId);
-      if (defender !== undefined && event.damage > 0) {
-        const swinging = defender.anim === 'attack' && now - defender.since > ANIM_SECONDS.attack * 0.35;
-        if (!swinging) {
-          defender.anim = 'hit';
-          defender.since = now;
-        }
-      }
     } else if (event.kind === 'death') {
+      // The killing blow is still on its way (see strikes.ts): stand until it lands, then fall.
       const state = states.get(event.unitId);
-      if (state?.snap != null) ghosts.push({ snap: state.snap, since: now, seed: state.seed });
+      if (state?.snap != null) ghosts.push({ snap: state.snap, since: Math.max(now, pendingImpactUntil(event.unitId)), seed: state.seed });
       states.delete(event.unitId);
     }
   }
 
+  // The defender flinches when the blow lands, not when the simulation resolved it.
+  for (const event of dueImpacts()) {
+    const defender = states.get(event.defenderId);
+    if (defender === undefined) continue;
+    const swinging = defender.anim === 'attack' && now - defender.since > ANIM_SECONDS.attack * 0.35;
+    if (!swinging) {
+      defender.anim = 'hit';
+      defender.since = now;
+    }
+  }
+
   for (const id of states.keys()) if (!live.has(id)) states.delete(id);
-  while (ghosts.length > 0 && now - (ghosts[0] as Ghost).since > GHOST_LINGER) ghosts.shift();
+  for (let i = ghosts.length - 1; i >= 0; i--) if (now - (ghosts[i] as Ghost).since > GHOST_LINGER) ghosts.splice(i, 1);
 }
 
 function paint(
@@ -179,8 +184,15 @@ export function drawFigureUnit(
   paint(ctx, figure, state.snap, state.anim, now - state.since, state.seed, now);
 }
 
-/** Draws units that have just died, mid-fall or lying where they dropped. */
-export function drawGhosts(ctx: CanvasRenderingContext2D, now: number): void {
+/**
+ * Draws units that have just died, mid-fall or lying where they dropped. `standing` is called for
+ * each one still on its feet waiting for its killing blow, so the caller can keep its team marker.
+ */
+export function drawGhosts(
+  ctx: CanvasRenderingContext2D,
+  now: number,
+  standing?: (sx: number, footY: number, scale: number, side: Side) => void,
+): void {
   for (const ghost of ghosts) {
     const figure = ghost.snap.figure;
     const t = now - ghost.since;
@@ -188,7 +200,12 @@ export function drawGhosts(ctx: CanvasRenderingContext2D, now: number): void {
     const fade = Math.min(1, (GHOST_LINGER - t) / 0.5);
     ctx.save();
     ctx.globalAlpha = Math.max(0, fade);
-    paint(ctx, figure, ghost.snap, 'death', t, ghost.seed, now);
+    // Before the killing blow lands the unit is still on its feet.
+    if (t < 0) {
+      standing?.(ghost.snap.sx, ghost.snap.footY, ghost.snap.scale, ghost.snap.side);
+      paint(ctx, figure, ghost.snap, 'idle', now, ghost.seed, now);
+    }
+    else paint(ctx, figure, ghost.snap, 'death', t, ghost.seed, now);
     ctx.restore();
   }
 }

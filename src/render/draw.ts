@@ -13,73 +13,24 @@
  * derived from unit.id, or it would shimmer every frame.
  */
 
-import { CANVAS_HEIGHT, CANVAS_WIDTH, LANE_LENGTH, LANE_Y, PLAYER_BASE_X } from '../sim/constants';
-import type { Deity, DrawWorld, Tier, Unit } from '../sim/types';
+import { CANVAS_HEIGHT, CANVAS_WIDTH, LANE_Y } from '../sim/constants';
+import type { Deity, DrawWorld, Side, Tier, Unit } from '../sim/types';
 import { getSettings } from '../ui/settings';
 import { BASE_HEIGHT, drawBackdropScene, drawBaseStructure } from './backdrops';
 import type { BackdropId } from './backdrops';
-import { drawFigureUnit, drawGhosts, hasFigure, updateRigs } from './rig/animator';
+import {
+  TEAM_COLOR, TIER_SIZE, drawsAsFigure, figureHeight, unitBodyHeight, unitFootY, unitHalfWidth, unitScreenX,
+  updateLayout, worldToScreen,
+} from './layout';
+import { drawFigureUnit, drawGhosts, updateRigs } from './rig/animator';
+import { drawStrikes, scheduleStrikes } from './strikes';
+
+// Geometry lives in layout.ts; re-exported so existing importers keep working.
+export { unitBodyHeight, unitFootY, unitScreenX, worldToScreen };
 
 const INK = '#1A1A1E';
 const BONE = '#EDE6D6';
 const BLOOD = '#C4442E';
-
-/** Screen footprint per tier. Size is the primary signal for cost — it must read at a glance. */
-const TIER_SIZE: Readonly<Record<Tier, { w: number; h: number }>> = {
-  chaff: { w: 13, h: 19 },
-  demigod: { w: 17, h: 27 },
-  god: { w: 21, h: 35 },
-  titan: { w: 29, h: 47 },
-};
-
-/** Minimum framing space outside the original lane, before it is fitted to the canvas. */
-const BATTLEFIELD_PADDING = 128;
-/** Widest rig overhang: the long serpent bodies, with room for outlines and pose motion. */
-const FIGURE_OVERHANG = 185;
-
-/** Fit the lane plus full figures to the screen, including the largest unit-size setting. */
-function battlefieldScale(): number {
-  const settings = getSettings();
-  const overhang = settings.unitGraphics === 'blocks' ? 0 : FIGURE_OVERHANG * SPRITE_BASE / 100 * settings.unitScale;
-  const baseOffset = PLAYER_BASE_X / LANE_LENGTH * CANVAS_WIDTH;
-  const padding = Math.max(BATTLEFIELD_PADDING, overhang - baseOffset + 20);
-  return CANVAS_WIDTH / (CANVAS_WIDTH + padding * 2);
-}
-
-/** World-space x to screen-space x. Shared with effects; gameplay coordinates stay unchanged. */
-export function worldToScreen(x: number): number {
-  const scale = battlefieldScale();
-  return CANVAS_WIDTH * (1 - scale) / 2 + (x / LANE_LENGTH) * CANVAS_WIDTH * scale;
-}
-
-/**
- * Depth rows. The simulation is a single lane, so units at the same position overlap exactly. The
- * renderer fans them across four rows of ground instead, assigned from the unit id so consecutive
- * summons land on different rows and a stack stays readable. Purely visual: nothing in the sim knows.
- */
-const DEPTH_ROWS: readonly number[] = [0, 30, 15, 45];
-
-/**
- * Screen y of a unit's feet, depth row included. Exported so the effects layer can anchor to exactly
- * the same spot — otherwise tags and status pips drift off their unit.
- */
-export function unitFootY(unit: Unit): number {
-  return unit.isBase ? LANE_Y : LANE_Y + (DEPTH_ROWS[unit.id % DEPTH_ROWS.length] ?? 0);
-}
-
-/** Screen height of a unit's body, by tier. */
-export function unitBodyHeight(deity: Deity | undefined): number {
-  const tier = deity?.tier ?? 'chaff';
-  // Figures (sprites, rigs) stand far taller than the placeholder blocks, and everything anchored
-  // above a unit — health bar, tags, pips — has to clear the body actually on screen.
-  if (deity !== undefined && drawnAsFigure(deity)) return figureHeight(tier);
-  return TIER_SIZE[tier].h;
-}
-
-/** True when this deity is currently drawn as a full figure rather than a placeholder block. */
-function drawnAsFigure(deity: Deity): boolean {
-  return hasFigure(deity);
-}
 
 /** Draws a filled shape with the heavy ink outline the woodcut direction calls for. */
 function inked(ctx: CanvasRenderingContext2D, fill: string, lineWidth: number, path: () => void): void {
@@ -105,37 +56,12 @@ export function activeBackdrop(): BackdropId {
   return choice === 'auto' ? autoBackdrop : choice;
 }
 
-/** On-screen height of a titan's sprite frame; every other tier is a fraction of this. */
-const SPRITE_BASE = 98;
-
-/** On-screen height of a figure of this tier, after the player's size setting. */
-function figureHeight(tier: Tier): number {
-  return SPRITE_BASE * SPRITE_TIER_SCALE[tier] * getSettings().unitScale * battlefieldScale();
-}
-
-/**
- * Per-tier sprite scale.
- *
- * WP-9 asked for tier to be encoded in the art — chaff filling ~55% of its frame, titans 100% — so
- * that drawing every frame at one size would reproduce the cost curve for free. The delivered art
- * does not do that: measured figure heights run 86–100% of frame regardless of tier, which would
- * render a Satyr at very nearly the size of Cronus and destroy the most important read on the
- * battlefield. So the renderer imposes the scale itself rather than trusting 22 separate images to
- * agree on a ratio. This stays correct even if the art is later regenerated to spec.
- */
-const SPRITE_TIER_SCALE: Readonly<Record<Tier, number>> = {
-  chaff: 0.62,
-  demigod: 0.76,
-  god: 0.88,
-  titan: 1,
-};
-
 /** A unit: tier-sized body, ink outline, facing notch, and its initial for identity. */
 function drawUnit(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | undefined): void {
-  const sx = worldToScreen(unit.x);
+  const sx = unitScreenX(unit);
 
   // Figure modes fall back per unit, not globally, so a half-delivered roster still renders.
-  if (deity !== undefined && hasFigure(deity)) {
+  if (deity !== undefined && drawsAsFigure(deity)) {
     const scale = figureHeight(deity.tier) / 100;
     drawFigureUnit(ctx, unit, deity, sx, unitFootY(unit), scale, performance.now() / 1000);
     return;
@@ -184,28 +110,142 @@ function drawUnit(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | unde
   }
 }
 
-/** Health bar. Bases get a wider one, since their health is the win condition. */
-function drawHealth(ctx: CanvasRenderingContext2D, unit: Unit, deity: Deity | undefined): void {
-  const sx = worldToScreen(unit.x);
-  const frac = Math.max(0, Math.min(1, unit.hp / unit.maxHp));
-  const figure = deity !== undefined && !unit.isBase && drawnAsFigure(deity);
-  const width = unit.isBase ? 46 : figure ? Math.max(34, unitBodyHeight(deity) * 0.42) : Math.max(20, TIER_SIZE[deity?.tier ?? 'chaff'].w + 8);
-  const height = unit.isBase ? 6 : 4;
-  const y = unit.isBase ? LANE_Y - BASE_HEIGHT - 22 : unitFootY(unit) - unitBodyHeight(deity) - 9;
+/**
+ * Team ring: a coloured disc on the ground under every unit with a chevron pointing the way it
+ * fights. In a same-pantheon battle both sides use identical art, so this is what tells them apart.
+ */
+function drawTeamRing(ctx: CanvasRenderingContext2D, sx: number, footY: number, half: number, side: Side): void {
+  const y = footY + 1;
+  const rx = half * 1.15 + 4;
+  const ry = Math.max(3.5, rx * 0.2);
+  const color = TEAM_COLOR[side];
+  const facing = side === 'player' ? 1 : -1;
 
-  ctx.fillStyle = INK;
-  ctx.fillRect(sx - width / 2 - 1, y - 1, width + 2, height + 2);
-  ctx.fillStyle = '#0d0b0b';
-  ctx.fillRect(sx - width / 2, y, width, height);
-  ctx.fillStyle = frac > 0.35 ? (unit.side === 'player' ? BONE : BLOOD) : '#D62828';
-  ctx.fillRect(sx - width / 2, y, width * frac, height);
+  ctx.save();
+  ctx.globalAlpha = 0.26;
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.ellipse(sx, y, rx, ry, 0, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.globalAlpha = 0.95;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1.8;
+  ctx.stroke();
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.moveTo(sx + facing * (rx + 7), y);
+  ctx.lineTo(sx + facing * (rx + 1), y - 3.5);
+  ctx.lineTo(sx + facing * (rx + 1), y + 3.5);
+  ctx.closePath();
+  ctx.fill();
+  ctx.restore();
 }
 
-/** Draws lane, bases, units and health bars. */
+/** Per-unit health bar state: the trailing "chip" of recently lost health. */
+interface BarState {
+  chip: number;
+  holdUntil: number;
+  shownSince: number;
+}
+const bars = new Map<number, BarState>();
+/** The chip waits this long, then drains at CHIP_DRAIN of full health per second. */
+const CHIP_HOLD = 0.35;
+const CHIP_DRAIN = 0.9;
+const BAR_FADE_IN = 0.18;
+/** At or below this fraction of health a bar gets a warning frame. */
+const LOW_HEALTH = 0.35;
+const LOW_HEALTH_FRAME = '#FF3B2F';
+
+interface BarRect {
+  unit: Unit;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  alpha: number;
+}
+
+/** Where each visible health bar goes. Unhurt units show none unless the setting asks for it. */
+function layoutBars(units: readonly Unit[], deities: ReadonlyMap<string, Deity>, now: number): BarRect[] {
+  const showFull = getSettings().showFullHealthBars;
+  const rects: BarRect[] = [];
+  for (const unit of units) {
+    const deity = unit.isBase ? undefined : deities.get(unit.deityId);
+    const hurt = unit.hp < unit.maxHp;
+    let state = bars.get(unit.id);
+    if (!unit.isBase && !hurt && !showFull) continue;
+    if (state === undefined) {
+      // Units start at full health, so a bar first shown by damage still trails that first hit.
+      state = { chip: 1, holdUntil: 0, shownSince: now };
+      bars.set(unit.id, state);
+    }
+    const figure = deity !== undefined && drawsAsFigure(deity);
+    const w = unit.isBase ? 46 : figure ? Math.max(30, unitBodyHeight(deity) * 0.38) : Math.max(20, TIER_SIZE[deity?.tier ?? 'chaff'].w + 8);
+    const h = unit.isBase ? 6 : 3;
+    const y = unit.isBase ? LANE_Y - BASE_HEIGHT - 22 : unitFootY(unit) - unitBodyHeight(deity) - 9;
+    const alpha = unit.isBase ? 1 : Math.min(1, (now - state.shownSince) / BAR_FADE_IN);
+    rects.push({ unit, x: unitScreenX(unit) - w / 2, y, w, h, alpha });
+  }
+
+  // Lift any bar that would sit on top of one already placed, nearest the ground first.
+  rects.sort((a, b) => b.y - a.y || a.x - b.x);
+  for (let i = 0; i < rects.length; i++) {
+    const r = rects[i] as BarRect;
+    for (let pass = 0; pass < 6; pass++) {
+      let clash = false;
+      for (let j = 0; j < i && !clash; j++) {
+        const o = rects[j] as BarRect;
+        clash = r.x < o.x + o.w + 2 && o.x < r.x + r.w + 2 && Math.abs(r.y - o.y) < o.h + 3;
+      }
+      if (!clash) break;
+      r.y -= r.h + 3;
+    }
+  }
+  return rects;
+}
+
+/** Health bar in the unit's team colour, with a pale chip showing what was just lost. */
+function drawHealth(ctx: CanvasRenderingContext2D, r: BarRect, now: number, dt: number): void {
+  const unit = r.unit;
+  const frac = Math.max(0, Math.min(1, unit.hp / unit.maxHp));
+  const state = bars.get(unit.id);
+  if (state === undefined) return;
+  if (frac < state.chip) {
+    if (state.holdUntil === 0) state.holdUntil = now + CHIP_HOLD;
+    if (now >= state.holdUntil) state.chip = Math.max(frac, state.chip - CHIP_DRAIN * dt);
+  } else {
+    state.chip = frac;
+  }
+  if (state.chip <= frac) state.holdUntil = 0;
+
+  ctx.save();
+  ctx.globalAlpha = r.alpha;
+  // The frame turns warning red when a unit is nearly dead; the fill keeps its team colour.
+  ctx.fillStyle = frac <= LOW_HEALTH ? LOW_HEALTH_FRAME : INK;
+  ctx.fillRect(r.x - 1, r.y - 1, r.w + 2, r.h + 2);
+  ctx.fillStyle = '#0d0b0b';
+  ctx.fillRect(r.x, r.y, r.w, r.h);
+  ctx.fillStyle = '#F4ECD8';
+  ctx.fillRect(r.x + r.w * frac, r.y, r.w * (state.chip - frac), r.h);
+  ctx.fillStyle = TEAM_COLOR[unit.side];
+  ctx.fillRect(r.x, r.y, r.w * frac, r.h);
+  ctx.restore();
+}
+
+let lastFrame = 0;
+
+/** Draws lane, bases, units, attack traces and health bars. */
 export const drawWorld: DrawWorld = (ctx, world, deities) => {
+  const now = performance.now() / 1000;
+  const dt = lastFrame === 0 ? 0 : Math.min(0.25, now - lastFrame);
+  lastFrame = now;
+
   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   ctx.save();
-  drawBackdropScene(ctx, activeBackdrop(), performance.now() / 1000);
+  drawBackdropScene(ctx, activeBackdrop(), now);
+
+  updateLayout(world, deities, dt);
+  scheduleStrikes(world, deities, now);
 
   // Bases first so units read as standing in front of them. Units further back (higher on screen)
   // draw first so nearer rows overlap them; within a row, descending tier so a big unit never hides
@@ -221,11 +261,18 @@ export const drawWorld: DrawWorld = (ctx, world, deities) => {
 
   const realm = activeBackdrop();
   for (const base of bases) drawBaseStructure(ctx, realm, worldToScreen(base.x), base.side);
-  updateRigs(world, performance.now() / 1000);
+  updateRigs(world, now);
+  for (const unit of mobile) drawTeamRing(ctx, unitScreenX(unit), unitFootY(unit), unitHalfWidth(deities.get(unit.deityId)), unit.side);
   for (const unit of mobile) drawUnit(ctx, unit, deities.get(unit.deityId));
-  drawGhosts(ctx, performance.now() / 1000);
-  for (const base of bases) drawHealth(ctx, base, undefined);
-  for (const unit of mobile) drawHealth(ctx, unit, deities.get(unit.deityId));
+  // A unit whose killing blow is still in flight stays marked until it falls (biped body width).
+  drawGhosts(ctx, now, (sx, footY, scale, side) => drawTeamRing(ctx, sx, footY, 21 * scale, side));
+  drawStrikes(ctx, now);
+  for (const rect of layoutBars([...bases, ...mobile], deities, now)) drawHealth(ctx, rect, now, dt);
 
+  // Forget bars of units that have left the field.
+  if (bars.size > 128) {
+    const alive = new Set(world.units.map((u) => u.id));
+    for (const id of bars.keys()) if (!alive.has(id)) bars.delete(id);
+  }
   ctx.restore();
 };
